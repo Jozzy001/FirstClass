@@ -105,6 +105,68 @@
           "correctIndex": 2,
           "explanation": "Focal length f = R/2 = 4cm. Since the object (u=2cm) is inside the focal length, the mirror produces a virtual image: 1/v = 1/f − 1/u gives v = −4cm (behind the mirror). Magnification m = −v/u = 2, so the image is erect and magnified 2×.",
           "source": "PHY104 June 2025, Q11"
+        },
+        {
+          "id": "phy104-mir-02",
+          "prompt": "A man 1.8m tall, whose eye is 1.6m above the ground, looks at his image in a vertical mirror. Calculate the minimum length of the mirror needed for the man to see the whole of himself.",
+          "options": ["0.9m", "0.8m", "0.7m", "0.6m", "0.5m"],
+          "correctIndex": 0,
+          "explanation": "The minimum mirror length needed to see your full height is always exactly half your height, regardless of how far you stand from the mirror or where your eyes are: 1.8/2 = 0.9m.",
+          "source": "PHY104 Oct 2023, Q3"
+        }
+      ]
+    },
+    {
+      "id": "optics-lenses-refraction",
+      "title": "Optics — Lenses & Refraction",
+      "questions": [
+        {
+          "id": "phy104-lens-01",
+          "prompt": "An object 5cm tall is placed 60cm from a converging lens whose focal length is 20cm. Calculate the size of the image formed.",
+          "options": ["0.15cm", "1.50cm", "1.57cm", "2.51cm", "0.51cm"],
+          "correctIndex": 3,
+          "explanation": "1/v = 1/f − 1/u = 1/20 − 1/60 → v = 30cm. Magnification m = −v/u = −30/60 = −0.5. Image height = m × object height = −0.5 × 5 = −2.5cm (inverted), magnitude closest to 2.51cm.",
+          "source": "PHY104 Sept 2024, Q1"
+        },
+        {
+          "id": "phy104-lens-02",
+          "prompt": "To read a book 20cm away, a man requires a lens of focal length 22cm. What is his distance of distinct vision (his natural near point)?",
+          "options": ["−200cm", "−210cm", "−220cm", "−230cm", "−240cm"],
+          "correctIndex": 2,
+          "explanation": "The corrective lens creates a virtual image at the person's actual near point: 1/v = 1/f − 1/u = 1/22 − 1/20 → v ≈ −220cm.",
+          "source": "PHY104 Sept 2024, Q26"
+        },
+        {
+          "id": "phy104-lens-03",
+          "prompt": "If an object is placed in front of a converging lens such that its distance from the lens is thrice the focal length, determine the location of the image (expressed in terms of the focal length).",
+          "options": ["1.1f", "1.3f", "1.5f", "1.7f"],
+          "correctIndex": 2,
+          "explanation": "With u = 3f: 1/v = 1/f − 1/(3f) = 2/(3f), so v = 1.5f.",
+          "source": "PHY104 Sept 2024, Q33"
+        },
+        {
+          "id": "phy104-lens-04",
+          "prompt": "An object is placed 14cm in front of a converging lens of 10cm focal length. Another converging lens of 7cm focal length is placed 40cm to the right of the first lens. What is the magnification of the final image?",
+          "options": ["−9.65", "9.65", "−8.75", "8.75"],
+          "correctIndex": 2,
+          "explanation": "For lens 1: 1/v₁ = 1/10 − 1/14 → v₁ = 35cm, m₁ = −35/14 = −2.5. This image becomes the object for lens 2, at distance u₂ = 40−35 = 5cm. For lens 2: 1/v₂ = 1/7 − 1/5 → v₂ = −17.5cm, m₂ = −(−17.5)/5 = 3.5. Total magnification = m₁×m₂ = −2.5×3.5 = −8.75.",
+          "source": "PHY104 Oct 2023, Q2"
+        },
+        {
+          "id": "phy104-lens-05",
+          "prompt": "The refractive index of water relative to air is 1.55, and that of oil relative to air is 1.73. Calculate the refractive index of water with respect to oil.",
+          "options": ["0.90", "0.81", "1.11", "1.12"],
+          "correctIndex": 0,
+          "explanation": "n(water/oil) = n(water/air) ÷ n(oil/air) = 1.55/1.73 ≈ 0.90.",
+          "source": "PHY104 Oct 2023, Q6"
+        },
+        {
+          "id": "phy104-lens-06",
+          "prompt": "A diver is 3.5m beneath the surface of still water (n=1.33). At what angle must the diver shine a beam of light towards the surface for a person on a distant bank to just be able to see it?",
+          "options": ["22.3°", "48.8°", "46.8°", "95.2°"],
+          "correctIndex": 1,
+          "explanation": "Light can only escape water at or below the critical angle. Critical angle θ_c = sin⁻¹(1/n) = sin⁻¹(1/1.33) ≈ 48.75° ≈ 48.8°.",
+          "source": "PHY104 June 2025, Q12"
         }
       ]
     },
@@ -127,6 +189,31 @@
           "correctIndex": 2,
           "explanation": "A system that returns to equilibrium without any oscillation, but more slowly than the critically-damped case, is overdamped. (Critically damped returns as fast as possible without any overshoot; underdamped oscillates before settling.)",
           "source": "PHY104 Oct 2023, Q40"
+        }
+      ]
+    },
+    {
+      "id": "unresolved-needs-original-paper",
+      "title": "Flagged — needs the original paper to resolve",
+      "note": "Same standard as PHY101/PHY103: these had numbers or wording that didn't resolve cleanly against any option even after working the physics through directly. Kept visible rather than silently dropped, but not usable as live quiz content yet.",
+      "questions": [
+        {
+          "id": "phy104-flag-01",
+          "prompt": "What is the focal length of a convex spherical mirror which produces an image one-sixth the size of an object located 12cm from the mirror?",
+          "options": ["4.714cm", "2.714cm", "3.714cm", "5.714cm", "1.714cm"],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "Computed f = mu/(1−m) = 2.4cm using the standard convex mirror magnification relation — doesn't match any option closely.",
+          "source": "PHY104 Sept 2024, Q9"
+        },
+        {
+          "id": "phy104-flag-02",
+          "prompt": "The image of a pin formed by a diverging lens of focal length 12cm is 5cm from the lens. Calculate the distance of the pin from the lens.",
+          "options": ["10cm", "14cm", "18cm", "12cm", "16cm"],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "Computed object distance ≈ 8.57cm using the thin lens equation with a diverging lens (f=−12cm, virtual image v=−5cm) — doesn't land on any given option.",
+          "source": "PHY104 Sept 2024, Q10"
         }
       ]
     }
