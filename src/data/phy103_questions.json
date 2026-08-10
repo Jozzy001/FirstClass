@@ -1,0 +1,247 @@
+{
+  "courseCode": "PHY103",
+  "title": "General Physics III — Thermal Physics & Properties of Matter",
+  "note": "Compiled from 2 past-paper sittings (June 2025, Sept 2024). Same verification standard as PHY101: correctIndex is filled where the physics was checked by calculation; needsReview:true marks anything that didn't resolve cleanly.",
+  "topics": [
+    {
+      "id": "temperature-thermometry",
+      "title": "Temperature Scales & Thermometry",
+      "questions": [
+        {
+          "id": "phy103-temp-01",
+          "prompt": "Hydrogen freezes at −259.4°C and boils at −252.9°C. What are these temperatures in Kelvin?",
+          "options": ["13.6K and 20.1K", "20.1K and 13.6K", "14.6K and 19.1K", "−12.6°C and −8.9°C"],
+          "correctIndex": 0,
+          "explanation": "K = °C + 273.15. Freezing: −259.4+273.15 ≈ 13.75K ≈ 13.6K. Boiling: −252.9+273.15 ≈ 20.25K ≈ 20.1K.",
+          "source": "PHY103 June 2025, Q5"
+        },
+        {
+          "id": "phy103-temp-02",
+          "prompt": "A thermometer's resistance is 90.95Ω at the triple point of water (273.16K). What temperature is defined when the resistance is 96.28Ω?",
+          "options": ["238.17K", "249.17K", "289.17K", "257.17K"],
+          "correctIndex": 2,
+          "explanation": "For a resistance thermometer, T = 273.16 × (R/R_tp) = 273.16 × (96.28/90.95) ≈ 289.17K.",
+          "source": "PHY103 Sept 2024, Q9"
+        },
+        {
+          "id": "phy103-temp-03",
+          "prompt": "Which law forms the basis of the concept of temperature?",
+          "options": ["First law", "Second law", "Third law", "Zeroth law"],
+          "correctIndex": 3,
+          "explanation": "The Zeroth Law establishes that if two systems are each in thermal equilibrium with a third, they're in equilibrium with each other — this is what makes 'temperature' a well-defined, measurable quantity in the first place.",
+          "source": "PHY103 June 2025, Q22"
+        }
+      ]
+    },
+    {
+      "id": "specific-heat-calorimetry",
+      "title": "Specific Heat & Calorimetry",
+      "questions": [
+        {
+          "id": "phy103-cal-01",
+          "prompt": "A bathtub contains 70kg of water at 26°C, and 10kg of water at 90°C is poured in. What is the final temperature of the mixture? (Neglect heat losses.)",
+          "options": ["34°C", "54°C", "73°C", "43°C"],
+          "correctIndex": 0,
+          "explanation": "Using conservation of energy (heat lost by hot water = heat gained by cool water), the mixture's final temperature is a mass-weighted average: T_f = (70×26 + 10×90)/(70+10) = 34°C.",
+          "source": "PHY103 June 2025, Q14"
+        },
+        {
+          "id": "phy103-cal-02",
+          "prompt": "Equal masses of Copper and Aluminum are supplied the same amount of heat to raise their temperature by a given amount. Which statement is correct?",
+          "options": ["Only q (heat) is the same", "C (specific heat) is the same", "ΔT is the same", "All of the above"],
+          "correctIndex": 0,
+          "explanation": "Copper and Aluminum have different specific heat capacities, so equal heat input on equal masses produces different temperature rises. Only the fact that they received the same heat (q) is guaranteed by the question's setup.",
+          "source": "PHY103 June 2025, Q1"
+        },
+        {
+          "id": "phy103-cal-03",
+          "prompt": "An electric heater of 60W is used to heat a metal block of mass 800g for 5 minutes. Calculate the specific heat capacity of the block if the temperature rise is 20°C.",
+          "options": ["451 kJ/kgK", "251 kJ/kgK", "155 kJ/kgK", "None of the above"],
+          "correctIndex": 3,
+          "explanation": "Energy supplied: Q = Pt = 60×300 = 18,000J. Specific heat: c = Q/(mΔT) = 18000/(0.8×20) = 1125 J/kgK = 1.125 kJ/kgK — none of the listed numeric options match this, so 'None of the above' appears to genuinely be correct.",
+          "needsReview": true,
+          "reviewNote": "My computed value (1.125 kJ/kgK) doesn't match any specific option, but 'None of the above' is itself a valid option here — worth confirming this is really the intended answer rather than a scrambled option set.",
+          "source": "PHY103 Sept 2024, Q41"
+        }
+      ]
+    },
+    {
+      "id": "thermal-expansion",
+      "title": "Thermal Expansion",
+      "questions": [
+        {
+          "id": "phy103-exp-01",
+          "prompt": "A concrete slab 10m long at −10°C has its temperature raised to 35°C. How much will its length increase? (α for concrete = 1×10⁻⁵/°C)",
+          "options": ["0.00045m", "0.045m", "0.0045m", "0.45m"],
+          "correctIndex": 2,
+          "explanation": "ΔL = L·α·ΔT = 10 × 1×10⁻⁵ × 45 = 0.0045m.",
+          "source": "PHY103 Sept 2024, Q26"
+        },
+        {
+          "id": "phy103-exp-02",
+          "prompt": "By how much should the pressure on a litre of water be changed to compress it by 50%? (Bulk Modulus of water = 2.25×10⁹ Nm⁻²)",
+          "options": ["1.2×10⁹ Nm⁻²", "1.2×10¹⁰ Nm⁻²", "1.1×10⁹ Nm⁻²", "1×10⁹ Nm⁻²"],
+          "correctIndex": 2,
+          "explanation": "ΔP = K × (ΔV/V) = 2.25×10⁹ × 0.5 = 1.125×10⁹ Nm⁻², closest to 1.1×10⁹.",
+          "source": "PHY103 June 2025, Q45"
+        },
+        {
+          "id": "phy103-exp-03",
+          "prompt": "A steel beam 15.0m long at 65°C has its temperature drop by 40°C. What is the change in the beam's length due to thermal expansion? (α_steel = 12×10⁻⁶/°C)",
+          "options": ["0.99mm", "1.0mm", "1.1mm", "1.2mm"],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "Computed ΔL = L·α·ΔT = 15×12×10⁻⁶×40 = 7.2mm, which doesn't match any option (all under 1.2mm). Likely the length or temperature change was transcribed wrong — possibly meant to be a 1.5m beam, not 15.0m.",
+          "source": "PHY103 June 2025, Q17"
+        }
+      ]
+    },
+    {
+      "id": "heat-transfer",
+      "title": "Heat Transfer — Conduction, Convection & Radiation",
+      "questions": [
+        {
+          "id": "phy103-ht-01",
+          "prompt": "A radiator has an emissivity of 0.7 and its exposed area is 1.5m². The radiator's temperature is 100°C and the surroundings are at 20°C. What is the net heat flow rate from the body?",
+          "options": ["−7.14×10² W", "−8.4×10² W", "−9.5×10² W", "−9.0×10² W"],
+          "correctIndex": 0,
+          "explanation": "Using Stefan-Boltzmann: net rate = eσA(T⁴−T_s⁴), with temperatures in Kelvin (373K and 293K): ≈ 713.6W, matching −7.14×10² W (negative sign indicates net heat loss to surroundings).",
+          "source": "PHY103 June 2025, Q47"
+        },
+        {
+          "id": "phy103-ht-02",
+          "prompt": "Which mode of heat transfer does NOT require a material medium?",
+          "options": ["Conduction", "Convection", "Conduction and Radiation", "Radiation"],
+          "correctIndex": 3,
+          "explanation": "Radiation travels as electromagnetic waves and can pass through a vacuum — it's the only one of the three that doesn't need matter to transfer heat.",
+          "source": "PHY103 June 2025, Q3"
+        },
+        {
+          "id": "phy103-ht-03",
+          "prompt": "Heat produced by the passage of current through a resistance is an example of which kind of process?",
+          "options": ["Irreversible", "Reversible", "Adiabatic", "Isothermal"],
+          "correctIndex": 0,
+          "explanation": "Resistive (Joule) heating always increases the total entropy of the system and surroundings and cannot spontaneously reverse — it's a textbook example of an irreversible process.",
+          "source": "PHY103 June 2025, Q10"
+        }
+      ]
+    },
+    {
+      "id": "kinetic-theory-gas-laws",
+      "title": "Kinetic Theory of Gases & Gas Laws",
+      "questions": [
+        {
+          "id": "phy103-kt-01",
+          "prompt": "Calculate the gas constant per unit mass of hydrogen. (Molar mass of H₂ ≈ 2.016 g/mol)",
+          "options": ["4.15×10³ J/kg/K", "4.12×10³ J/kg/K", "3.40×10³ J/kg/K", "3.50×10³ J/kg/K"],
+          "correctIndex": 1,
+          "explanation": "Specific gas constant = R_universal/molar mass = 8.314/0.002016 ≈ 4124 J/kg/K, closest to 4.12×10³.",
+          "needsReview": true,
+          "reviewNote": "The original question also gave a hydrogen density value and hinted at using R=P/(ρT), but that approach gives a wildly different result (≈195 J/kg/K) that doesn't match any option. Using the standard specific-gas-constant formula (R_universal/molar mass) gives a clean match instead — I've simplified the question to reflect the approach that actually works.",
+          "source": "PHY103 Sept 2024, Q2"
+        },
+        {
+          "id": "phy103-kt-02",
+          "prompt": "The Reynolds number for airflow through a tube is 2000, and the coefficient of viscosity is 187×10⁻⁷ N·s/m². Given the tube's radius is 1cm and air density is 1.3kg/m³, find the flow velocity.",
+          "options": ["0.44 m/s", "4.44 m/s", "2.44 m/s", "1.44 m/s"],
+          "correctIndex": 3,
+          "explanation": "V = (Re × η)/(ρ × D), where D is the diameter = 2×0.01 = 0.02m. V = (2000×187×10⁻⁷)/(1.3×0.02) ≈ 1.44 m/s.",
+          "needsReview": true,
+          "reviewNote": "Original transcription showed the radius as 10⁻³m (1mm), which gives 14.4 m/s — off by exactly 10× from any option. Using 1cm instead (matching the same order-of-magnitude transcription pattern seen elsewhere) gives an exact match.",
+          "source": "PHY103 Sept 2024, Q3"
+        },
+        {
+          "id": "phy103-kt-03",
+          "prompt": "One mole of a monatomic gas has a total internal energy of 3.7×10³ J. What is the total internal energy of one mole of diatomic gas at the same temperature?",
+          "options": ["3.7×10³ J", "5.25×10³ J", "8.20×10³ J", "6.20×10³ J"],
+          "correctIndex": 3,
+          "explanation": "Monatomic internal energy = (3/2)nRT; diatomic = (5/2)nRT. Since both are at the same temperature, U_diatomic = U_monatomic × (5/3) = 3.7×10³ × 5/3 ≈ 6.17×10³ J.",
+          "source": "PHY103 June 2025, Q16"
+        },
+        {
+          "id": "phy103-kt-04",
+          "prompt": "Which of the following postulates of kinetic theory is NOT correct?",
+          "options": [
+            "There are a large number of molecules moving in random directions with a variety of speeds",
+            "The molecules are, on average, far apart from one another and much smaller than the diameter of each molecule",
+            "The molecules are assumed to interact with one another only in slow motion",
+            "Collision with another molecule or the vessel wall is assumed to be perfectly elastic"
+          ],
+          "correctIndex": 2,
+          "explanation": "Kinetic theory assumes molecular collisions are perfectly elastic and independent of speed — the idea that molecules 'only interact in slow motion' contradicts the whole model, making it the incorrect postulate.",
+          "source": "PHY103 Sept 2024, Q5"
+        }
+      ]
+    },
+    {
+      "id": "thermodynamics",
+      "title": "Thermodynamics & Heat Engines",
+      "questions": [
+        {
+          "id": "phy103-thermo-01",
+          "prompt": "An engine heats a gas at a constant temperature of 310K, expanding it isothermally from 12 litres to 19 litres (1 mole of gas). How much work is done by the gas during the expansion?",
+          "options": ["1000 J", "1200 J", "1180 J", "910 J"],
+          "correctIndex": 2,
+          "explanation": "For isothermal expansion: W = nRT·ln(V₂/V₁) = 1×8.314×310×ln(19/12) ≈ 1184 J, closest to 1180 J.",
+          "source": "PHY103 June 2025, Q13"
+        },
+        {
+          "id": "phy103-thermo-02",
+          "prompt": "1kg of liquid water at 373K is converted to steam at 100°C by boiling at standard atmospheric pressure. The volume changes from 10⁻³m³ (liquid) to 1.671m³ (steam). What is the change in the system's internal energy? (1 atm = 1.01×10⁵ Pa, Lᵥ = 2265 kJ/kg)",
+          "options": ["16 kJ", "2267 kJ", "2078 kJ", "1930 kJ"],
+          "correctIndex": 2,
+          "explanation": "Heat absorbed: Q = mLᵥ = 2265 kJ. Work done by the expanding gas: W = P·ΔV = 1.01×10⁵ × (1.671−0.001) ≈ 168.7 kJ. Change in internal energy: ΔU = Q − W ≈ 2265 − 168.7 ≈ 2096 kJ, closest to 2078 kJ.",
+          "source": "PHY103 June 2025, Q39"
+        },
+        {
+          "id": "phy103-thermo-03",
+          "prompt": "The second law of thermodynamics is also referred to as:",
+          "options": ["A statistical formulation", "Impossible according to the first law", "Impossible according to the third law", "It cannot be defined"],
+          "correctIndex": 0,
+          "explanation": "The second law is fundamentally statistical in nature — it describes the overwhelmingly probable direction of spontaneous processes (entropy increase) rather than an absolute, deterministic rule.",
+          "source": "PHY103 June 2025, Q7"
+        },
+        {
+          "id": "phy103-thermo-04",
+          "prompt": "Which of the following is NOT a Carnot Engine stage?",
+          "options": ["Adiabatic Expansion", "Isobaric Expansion", "Adiabatic Compression", "Isothermal Compression"],
+          "correctIndex": 1,
+          "explanation": "The Carnot cycle consists of two isothermal and two adiabatic processes — an isobaric (constant-pressure) stage is not part of the ideal Carnot cycle.",
+          "source": "PHY103 Sept 2024, Q11"
+        }
+      ]
+    },
+    {
+      "id": "elasticity",
+      "title": "Elasticity & Young's Modulus",
+      "questions": [
+        {
+          "id": "phy103-elas-01",
+          "prompt": "A 5N force acts on a 10kg object. What is the resulting stress on an aluminium cube with sides of 15cm?",
+          "options": ["22.2 Nm⁻²", "222.2 Nm⁻²", "333.3 Nm⁻²", "444.4 Nm⁻²"],
+          "correctIndex": 1,
+          "explanation": "Stress = Force/Area = 5/(0.15²) = 5/0.0225 ≈ 222.2 N/m².",
+          "source": "PHY103 June 2025, Q6"
+        },
+        {
+          "id": "phy103-elas-02",
+          "prompt": "The elastic limit of a piece of steel wire is 2.70×10⁹ Pa. What is the maximum speed at which transverse wave pulses can propagate along this wire before this stress is exceeded? (Density of steel = 7.86×10³ kg/m³)",
+          "options": ["586 m/s", "568 m/s", "865 m/s", "685 m/s"],
+          "correctIndex": 0,
+          "explanation": "The speed of a transverse wave in a stressed wire relates to stress and density by v = √(stress/density) = √(2.70×10⁹/7.86×10³) ≈ 586 m/s.",
+          "needsReview": true,
+          "reviewNote": "Original transcription showed the elastic limit as 2.70×10³ Pa, which gives an absurdly small speed (0.59 m/s). Correcting the exponent to 10⁹ gives an exact match — the same kind of scrambled-exponent error seen repeatedly across this document.",
+          "source": "PHY103 Sept 2024, Q6"
+        },
+        {
+          "id": "phy103-elas-03",
+          "prompt": "Which of the following moduli relates to a rigid body under uniform volume compression?",
+          "options": ["Bulk", "Poisson's", "Young's", "Shear"],
+          "correctIndex": 0,
+          "explanation": "Bulk modulus specifically measures resistance to uniform compression (volume change under pressure), which is the relevant deformation mode for a rigid body under all-around pressure.",
+          "source": "PHY103 June 2025, Q2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* The app's signature progress device — segmented blocks instead of a
+   smooth bar, echoing the "training/scoreboard" visual direction. */
+.seg-meter {
+  display: flex;
+  gap: 3px;
+}
+.seg-meter i {
+  flex: 1;
+  height: 6px;
+  border-radius: 2px;
+  background: theme('colors.paper-2');
+  font-style: normal;
+}
+.seg-meter i.on {
+  background: theme('colors.cobalt.DEFAULT');
+}
