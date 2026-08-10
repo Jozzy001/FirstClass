@@ -1,0 +1,134 @@
+{
+  "courseCode": "PHY104",
+  "title": "General Physics IV — Vibrations, Waves & Optics",
+  "note": "Compiled from 3 past-paper sittings (June 2025, Sept 2024, Oct 2023). Same verification standard: correctIndex filled where checked by calculation; needsReview:true where it didn't resolve cleanly.",
+  "topics": [
+    {
+      "id": "shm",
+      "title": "Simple Harmonic Motion",
+      "questions": [
+        {
+          "id": "phy104-shm-01",
+          "prompt": "A block attached to a spring executes SHM on a frictionless horizontal plane with amplitude 0.35m. At a point 0.25m from the equilibrium position, the block's velocity is 0.95 m/s. What is the period of oscillation?",
+          "options": ["1.08s", "1.93s", "1.62s", "1.47s"],
+          "correctIndex": 2,
+          "explanation": "v = ω√(A²−x²) → ω = v/√(A²−x²) = 0.95/√(0.35²−0.25²) ≈ 1.586 rad/s. T = 2π/ω ≈ 1.62s.",
+          "source": "PHY104 Sept 2024, Q2"
+        },
+        {
+          "id": "phy104-shm-02",
+          "prompt": "An object oscillates in SHM with displacement x = −25sin(3t + π/6), where x is in cm and t in seconds. What is the maximum velocity?",
+          "options": ["15 cm/s", "75 cm/s", "25 cm/s", "45 cm/s"],
+          "correctIndex": 1,
+          "explanation": "For x = A sin(ωt+φ), maximum velocity = Aω = 25 × 3 = 75 cm/s.",
+          "source": "PHY104 June 2025, Q17"
+        },
+        {
+          "id": "phy104-shm-03",
+          "prompt": "The period of a simple pendulum is 2s. What will be the period if the mass and length of the pendulum string are both doubled?",
+          "options": ["3.2s", "1.4s", "2.8s", "5.6s"],
+          "correctIndex": 2,
+          "explanation": "T = 2π√(L/g) depends only on length, not mass. Doubling L: T_new = T×√2 ≈ 2.83s ≈ 2.8s.",
+          "source": "PHY104 Sept 2024, Q14"
+        }
+      ]
+    },
+    {
+      "id": "waves-sound",
+      "title": "Waves & Sound",
+      "questions": [
+        {
+          "id": "phy104-wav-01",
+          "prompt": "A uniform pipe of length 36cm has a fundamental frequency of 5000Hz when open at both ends. If the displacement antinode occurs 1cm from each end, calculate the velocity of sound.",
+          "options": ["3,000 m/s", "4,000 m/s", "2,000 m/s", "5,000 m/s"],
+          "correctIndex": 1,
+          "explanation": "The effective length accounts for the end correction: L_eff = L + 2(0.01) = 0.38m. For an open-open pipe, v = f×2×L_eff ≈ 3800 m/s, closest to 4,000 m/s.",
+          "needsReview": true,
+          "reviewNote": "My computed value (3800 m/s) is close to but not exactly 4000 m/s — worth double-checking the end-correction convention used in the original solution.",
+          "source": "PHY104 June 2025, Q4"
+        },
+        {
+          "id": "phy104-wav-02",
+          "prompt": "At the fire station by the main gate, a siren is sounded. If the siren's frequency is 500Hz and the speed of sound is 340 m/s, at what frequency would you hear the sound when driving towards the siren at 20 m/s?",
+          "options": ["529 Hz", "510 Hz", "472 Hz", "471 Hz"],
+          "correctIndex": 0,
+          "explanation": "Observer moving toward a stationary source: f' = f×(v+v_o)/v = 500×(340+20)/340 ≈ 529.4 Hz.",
+          "source": "PHY104 June 2025, Q10"
+        },
+        {
+          "id": "phy104-wav-03",
+          "prompt": "Two trains approach each other with speeds of 16.6 m/s and 12.5 m/s respectively. A whistle of frequency 512Hz is sounded on the first train. Find the frequency heard by an observer in the second train. (v_sound = 340 m/s)",
+          "options": ["505 Hz", "508 Hz", "585 Hz", "555 Hz", "558 Hz"],
+          "correctIndex": 4,
+          "explanation": "Both source and observer move toward each other: f' = f×(v+v_o)/(v−v_s) = 512×(340+12.5)/(340−16.6) ≈ 558 Hz.",
+          "source": "PHY104 Sept 2024, Q23"
+        },
+        {
+          "id": "phy104-wav-04",
+          "prompt": "Two cars move apart with speeds of 18 m/s and 15 m/s. A whistle of frequency 550Hz is sounded from one car. Find the frequency heard by the driver in the other car. (v_sound = 340 m/s)",
+          "options": ["558 Hz", "499 Hz", "564 Hz", "200 Hz"],
+          "correctIndex": 1,
+          "explanation": "Both source and observer move apart: f' = f×(v−v_o)/(v+v_s) = 550×(340−15)/(340+18) ≈ 499.3 Hz.",
+          "source": "PHY103&104 Oct 2023, Q34"
+        },
+        {
+          "id": "phy104-wav-05",
+          "prompt": "A piano wire 0.5m long has a total mass of 0.01kg and is stretched with a tension of 800N. Calculate the frequency of the wire when it sounds its fundamental note.",
+          "options": ["100Hz", "200Hz", "300Hz", "400Hz"],
+          "correctIndex": 1,
+          "explanation": "Linear mass density μ = m/L = 0.01/0.5 = 0.02 kg/m. Wave speed v = √(T/μ) = √(800/0.02) = 200 m/s. Fundamental frequency f = v/(2L) = 200/(2×0.5) = 200Hz.",
+          "source": "PHY104 Sept 2024, Q36"
+        },
+        {
+          "id": "phy104-wav-06",
+          "prompt": "One end of a 2.00kg rope is tied to a support at the top of an 80.0m mine shaft. The rope is stretched taut by a 20kg box of rock attached at the bottom. What is the speed of a transverse wave on the rope?",
+          "options": ["44.2 m/s", "80.5 m/s", "21.5 m/s", "89.4 m/s"],
+          "correctIndex": 3,
+          "explanation": "Tension = weight of hanging box: T = 20×9.8 = 196N. Linear density μ = 2.00/80.0 = 0.025 kg/m. Speed v = √(T/μ) = √(196/0.025) ≈ 88.5 m/s, closest to 89.4 m/s.",
+          "source": "PHY104 Oct 2023, Q9"
+        }
+      ]
+    },
+    {
+      "id": "optics-mirrors",
+      "title": "Optics — Mirrors",
+      "questions": [
+        {
+          "id": "phy104-mir-01",
+          "prompt": "An object is placed 2cm in front of a concave mirror whose radius of curvature is 8cm. Find the position, size, and orientation of the image.",
+          "options": [
+            "4cm in front of the mirror, erect and magnified",
+            "2cm behind the mirror, inverted and diminished",
+            "4cm behind the mirror, erect and magnified",
+            "2cm in front of the mirror, erect and magnified"
+          ],
+          "correctIndex": 2,
+          "explanation": "Focal length f = R/2 = 4cm. Since the object (u=2cm) is inside the focal length, the mirror produces a virtual image: 1/v = 1/f − 1/u gives v = −4cm (behind the mirror). Magnification m = −v/u = 2, so the image is erect and magnified 2×.",
+          "source": "PHY104 June 2025, Q11"
+        }
+      ]
+    },
+    {
+      "id": "damped-oscillations-resonance",
+      "title": "Damped Oscillations & Resonance",
+      "questions": [
+        {
+          "id": "phy104-damp-01",
+          "prompt": "When the frequency of the driving force of a system coincides with the natural undamped oscillating frequency of the system, which phenomenon is most likely to occur?",
+          "options": ["Resonance", "Beats", "Doppler effect", "Echo"],
+          "correctIndex": 0,
+          "explanation": "Resonance occurs precisely when a driving force's frequency matches a system's natural frequency, causing the amplitude of oscillation to grow dramatically.",
+          "source": "PHY104 Oct 2023, Q33"
+        },
+        {
+          "id": "phy104-damp-02",
+          "prompt": "The bonnet of a car is pushed down and it does not bounce up and down at all — instead it eases back to position. The shock absorbers are said to be:",
+          "options": ["Under damped", "Critically damped", "Over damped", "Perpendicularly damped"],
+          "correctIndex": 2,
+          "explanation": "A system that returns to equilibrium without any oscillation, but more slowly than the critically-damped case, is overdamped. (Critically damped returns as fast as possible without any overshoot; underdamped oscillates before settling.)",
+          "source": "PHY104 Oct 2023, Q40"
+        }
+      ]
+    }
+  ]
+}

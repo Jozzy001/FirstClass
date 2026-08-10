@@ -2,6 +2,8 @@ import phy101Notes from './phy101_notes.json'
 import phy101Questions from './phy101_questions.json'
 import phy103Notes from './phy103_notes.json'
 import phy103Questions from './phy103_questions.json'
+import phy104Notes from './phy104_notes.json'
+import phy104Questions from './phy104_questions.json'
 
 // Content is bundled directly in the app — no database read needed to
 // browse notes or take quizzes. User accounts, scores, streaks, and CGPA
@@ -44,6 +46,13 @@ const courses = {
     faculty: 'Sciences',
     creditUnits: 2,
     topics: buildCourseTopics(phy103Notes, phy103Questions)
+  },
+  PHY104: {
+    code: 'PHY104',
+    title: 'General Physics IV — Vibrations, Waves & Optics',
+    faculty: 'Sciences',
+    creditUnits: 2,
+    topics: buildCourseTopics(phy104Notes, phy104Questions)
   }
 }
 
