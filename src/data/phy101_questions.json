@@ -10,7 +10,12 @@
         {
           "id": "phy101-kin-01",
           "prompt": "A body set in motion in the positive x-direction has displacement x = 3t³ + 2t² + 4t + 5. What is the acceleration of the body after 0.5 sec?",
-          "options": ["11 m/s²", "13 m/s²", "0.15 m/s²", "18 m/s²"],
+          "options": [
+            "11 m/s²",
+            "13 m/s²",
+            "0.15 m/s²",
+            "18 m/s²"
+          ],
           "correctIndex": 1,
           "explanation": "v = dx/dt = 9t²+4t+4. a = dv/dt = 18t+4. At t=0.5: a = 18(0.5)+4 = 13 m/s².",
           "source": "PHY101 June 2025, Q1"
@@ -18,7 +23,12 @@
         {
           "id": "phy101-kin-02",
           "prompt": "A stone is projected vertically upward from a point with an initial velocity of 10 m/s. What is its velocity when it is 10m below the point of projection? (g = 10 m/s²)",
-          "options": ["10 m/s", "20 m/s", "17.32 m/s", "28.3 m/s"],
+          "options": [
+            "10 m/s",
+            "20 m/s",
+            "17.32 m/s",
+            "28.3 m/s"
+          ],
           "correctIndex": 2,
           "explanation": "v² = u² + 2gd = 10² + 2(10)(10) = 300, v = √300 ≈ 17.32 m/s.",
           "needsReview": true,
@@ -28,7 +38,12 @@
         {
           "id": "phy101-kin-03",
           "prompt": "A car starts from rest, accelerates at 4 m/s² for 5 sec, maintains that velocity for 10 sec, then decelerates at 2 m/s² for 4 sec. What is the final speed?",
-          "options": ["12.15 m/s", "12.10 m/s", "12 m/s", "11.5 m/s"],
+          "options": [
+            "12.15 m/s",
+            "12.10 m/s",
+            "12 m/s",
+            "11.5 m/s"
+          ],
           "correctIndex": 2,
           "explanation": "Speed after acceleration phase: v = 0 + 4(5) = 20 m/s. It's held for 10s, then decelerates: v_final = 20 − 2(4) = 12 m/s.",
           "source": "PHY101 June 2025, Q12"
@@ -36,7 +51,12 @@
         {
           "id": "phy101-kin-04",
           "prompt": "A stone is thrown vertically upward with a speed of 20 m/s from the top of a 35m building. What is the speed of the stone when it reaches a point 15m above the ground?",
-          "options": ["21.6 m/s", "20.7 m/s", "18.0 m/s", "15.0 m/s"],
+          "options": [
+            "21.6 m/s",
+            "20.7 m/s",
+            "18.0 m/s",
+            "15.0 m/s"
+          ],
           "correctIndex": 0,
           "explanation": "Net fall from launch point to target height: 35−15 = 20m. v² = u² + 2gd = 20² + 2(9.8)(20) = 400+392 = 792, v ≈ 28.1 m/s — doesn't match cleanly either; flagging for review alongside kin-02.",
           "needsReview": true,
@@ -46,7 +66,12 @@
         {
           "id": "phy101-kin-05",
           "prompt": "A car 2,500kg moving with a constant speed of 120km/h overtook a truck of 38,000kg moving at 40km/h. What is their net force?",
-          "options": ["0N", "1,750N", "2,875N", "5,420N"],
+          "options": [
+            "0N",
+            "1,750N",
+            "2,875N",
+            "5,420N"
+          ],
           "correctIndex": 0,
           "explanation": "Both are moving at constant (non-accelerating) speed — net force on each is zero by Newton's first law. This tests the concept, not a calculation.",
           "source": "PHY101 Sept 2024, Q4"
@@ -54,7 +79,12 @@
         {
           "id": "phy101-kin-06",
           "prompt": "A racing car travels round a circular racetrack at a constant speed of 100km/h. What is the radius of the track if the centripetal acceleration is 7.72 m/s²?",
-          "options": ["102m", "100m", "107m", "177m"],
+          "options": [
+            "102m",
+            "100m",
+            "107m",
+            "177m"
+          ],
           "correctIndex": 0,
           "explanation": "v = 100km/h = 27.78 m/s. r = v²/a = 27.78²/7.72 ≈ 100m. (100m is closest given the rounding in the source figures — verify precise value against the paper.)",
           "needsReview": true,
@@ -64,7 +94,12 @@
         {
           "id": "phy101-kin-07",
           "prompt": "A man of mass 50kg is dropped from a height h. When he is at a height of 15.0m from the ground level, his velocity is 24.5 m/s. At what height was he dropped? (g = 9.8 m/s²)",
-          "options": ["30m", "45m", "60m", "75m"],
+          "options": [
+            "30m",
+            "45m",
+            "60m",
+            "75m"
+          ],
           "correctIndex": 1,
           "explanation": "Using v² = 2g·(drop so far): drop = v²/(2g) = 24.5²/19.6 ≈ 30.6m. Total drop height = 15 + 30.6 ≈ 45.6m ≈ 45m.",
           "source": "PHY101 Sept 2024, Q2"
@@ -72,7 +107,12 @@
         {
           "id": "phy101-kin-08",
           "prompt": "A body projected horizontally with a speed of 45 m/s from the top of a cliff hits the ground after 3 seconds. Calculate the speed at touchdown.",
-          "options": ["84 m/s", "74 m/s", "64 m/s", "54 m/s"],
+          "options": [
+            "84 m/s",
+            "74 m/s",
+            "64 m/s",
+            "54 m/s"
+          ],
           "correctIndex": 3,
           "explanation": "Horizontal speed stays 45 m/s. Vertical speed gained: v_y = gt = 9.8×3 = 29.4 m/s. Resultant: √(45²+29.4²) ≈ 53.75 m/s ≈ 54 m/s.",
           "source": "PHY101 Sept 2024, Q3"
@@ -80,7 +120,12 @@
         {
           "id": "phy101-kin-09",
           "prompt": "A projectile is thrown horizontally with a speed of 20 m/s. What will be the speed of the projectile after 5 seconds? (g = 9.8 m/s²)",
-          "options": ["52 m/s", "53 m/s", "51 m/s", "54 m/s"],
+          "options": [
+            "52 m/s",
+            "53 m/s",
+            "51 m/s",
+            "54 m/s"
+          ],
           "correctIndex": 1,
           "explanation": "v_y = gt = 9.8×5 = 49 m/s. Resultant speed = √(20²+49²) ≈ 52.9 m/s ≈ 53 m/s.",
           "source": "PHY101 Sept 2024, Q11"
@@ -88,7 +133,13 @@
         {
           "id": "phy101-kin-10",
           "prompt": "During an acceleration, the angular speed of an engine increases from 900rpm to 4000rpm in 7.0 seconds. What is the average angular acceleration of the engine?",
-          "options": ["64.37 rad/s²", "46.73 rad/s²", "46.37 rad/s²", "37.46 rad/s²", "34.76 rad/s²"],
+          "options": [
+            "64.37 rad/s²",
+            "46.73 rad/s²",
+            "46.37 rad/s²",
+            "37.46 rad/s²",
+            "34.76 rad/s²"
+          ],
           "correctIndex": 2,
           "explanation": "ω₁ = 900×2π/60 = 94.25 rad/s. ω₂ = 4000×2π/60 = 418.88 rad/s. α = (ω₂−ω₁)/7 ≈ 46.37 rad/s².",
           "source": "PHY101 Sept 2024, Q12"
@@ -96,20 +147,15 @@
         {
           "id": "phy101-kin-11",
           "prompt": "A particle is projected with a velocity of 25 m/s at an angle of elevation of 65°. Find the velocity magnitude after 0.65sec. (g = 9.8 m/s²)",
-          "options": ["19.42 m/s", "15.13 m/s", "14.13 m/s", "21.31 m/s"],
+          "options": [
+            "19.42 m/s",
+            "15.13 m/s",
+            "14.13 m/s",
+            "21.31 m/s"
+          ],
           "correctIndex": 0,
           "explanation": "u_x = 25cos65° ≈ 10.57 m/s (unchanged throughout flight). u_y = 25sin65° ≈ 22.66 m/s. v_y at t=0.65s: 22.66 − 9.8(0.65) ≈ 16.29 m/s. Resultant: √(10.57²+16.29²) ≈ 19.42 m/s.",
           "source": "PHY101&103 Oct 2023, Q9"
-        },
-        {
-          "id": "phy101-kin-12",
-          "prompt": "A car of mass 52.1kg moving at 10 m/s comes to rest in a distance of 10m. What is the air resistance?",
-          "options": ["270.0 N", "74.6 N", "76.4 N", "80.5 N"],
-          "correctIndex": 0,
-          "explanation": "Using work-energy theorem: F = mv²/(2d) = 52.1×10²/(2×10) ≈ 260.5N, closest to 270.0N.",
-          "needsReview": true,
-          "reviewNote": "Original transcription showed mass as 521kg, which gives a wildly-off 2605N. Using 52.1kg (matching the same decimal-shift pattern found in the grasshopper question) lands close to option A. Worth confirming the actual mass against the paper.",
-          "source": "PHY101 June 2025, Q21"
         }
       ]
     },
@@ -120,7 +166,12 @@
         {
           "id": "phy101-nlf-01",
           "prompt": "Two particles of masses 7kg and 9kg are connected by a light inextensible string passing over a smooth fixed pulley. Find the force on the pulley. (g = 9.8 m/s²)",
-          "options": ["122.5 N", "77.18 N", "154.36 N", "88.25 N"],
+          "options": [
+            "122.5 N",
+            "77.18 N",
+            "154.36 N",
+            "88.25 N"
+          ],
           "correctIndex": 2,
           "explanation": "Tension T = 2m₁m₂g/(m₁+m₂) = 2(7)(9)(9.8)/16 ≈ 77.18 N. The force ON THE PULLEY is 2T (both string segments pull down on it) ≈ 154.36 N.",
           "source": "PHY101 June 2025, Q9"
@@ -128,7 +179,12 @@
         {
           "id": "phy101-nlf-02",
           "prompt": "Two bodies of masses M₁ and M₂ are connected by a light string over a smooth pulley with a common tension T. Find their common acceleration.",
-          "options": ["(M₁+M₂)/(M₁−M₂)", "(M₁−M₂)/(M₁+M₂)", "(2M₁M₂)/(M₁+M₂)", "(2M₁M₂)/(M₁−M₂)"],
+          "options": [
+            "(M₁+M₂)/(M₁−M₂)",
+            "(M₁−M₂)/(M₁+M₂)",
+            "(2M₁M₂)/(M₁+M₂)",
+            "(2M₁M₂)/(M₁−M₂)"
+          ],
           "correctIndex": 1,
           "explanation": "Standard Atwood machine result: a = (M₁−M₂)g/(M₁+M₂) — dimensionally, the acceleration ratio (excluding g) is (M₁−M₂)/(M₁+M₂).",
           "source": "PHY101 June 2025, Q11"
@@ -136,7 +192,12 @@
         {
           "id": "phy101-nlf-03",
           "prompt": "A normal force is applied on a 1.5kg book pushed against a vertical wall, minimum coefficient of static friction 0.6. If the book remains static, find the normal force. (g = 10 m/s²)",
-          "options": ["20.0N", "25.0N", "30.0N", "15.0N"],
+          "options": [
+            "20.0N",
+            "25.0N",
+            "30.0N",
+            "15.0N"
+          ],
           "correctIndex": 1,
           "explanation": "For the book to stay up, friction must support its weight: f = μN ≥ mg, so N = mg/μ = (1.5)(10)/0.6 = 25.0N.",
           "source": "PHY101&103 Oct 2023, Q10"
@@ -144,7 +205,12 @@
         {
           "id": "phy101-nlf-04",
           "prompt": "A car of 2.00×10³ N is brought to rest with a uniform retardation of 7.5 m/s². Calculate the retardation force experienced by the car. (g = 10 m/s²)",
-          "options": ["5.10×10⁻⁴ N", "5.01×10⁻⁴ N", "1.60×10² N", "1.50×10³ N"],
+          "options": [
+            "5.10×10⁻⁴ N",
+            "5.01×10⁻⁴ N",
+            "1.60×10² N",
+            "1.50×10³ N"
+          ],
           "correctIndex": 3,
           "explanation": "Mass m = Weight/g = 2000/10 = 200kg. Force = ma = 200 × 7.5 = 1,500N = 1.50×10³ N.",
           "source": "PHY101&103 Oct 2023, Q11"
@@ -152,7 +218,13 @@
         {
           "id": "phy101-nlf-05",
           "prompt": "Two bodies of masses 5kg and 8kg are connected by a light string over a smooth pulley. Find their common acceleration. (g = 10 m/s²)",
-          "options": ["2.3 m/s²", "1.3 m/s²", "3.3 m/s²", "4.3 m/s²", "5.3 m/s²"],
+          "options": [
+            "2.3 m/s²",
+            "1.3 m/s²",
+            "3.3 m/s²",
+            "4.3 m/s²",
+            "5.3 m/s²"
+          ],
           "correctIndex": 0,
           "explanation": "a = (m₂−m₁)g/(m₁+m₂) = (8−5)(10)/13 ≈ 2.31 m/s².",
           "source": "PHY101&103 Oct 2023, Q3"
@@ -160,22 +232,113 @@
         {
           "id": "phy101-nlf-06",
           "prompt": "An air-track glider of mass 2kg is connected to a mass of 5kg with a spring over a frictionless air track and massless pulley. What is the force on the pulley? (g = 9.8 m/s²)",
-          "options": ["29.8 N", "49.0 N", "19.8 N", "68.8 N"],
+          "options": [
+            "29.8 N",
+            "49.0 N",
+            "19.8 N",
+            "68.8 N"
+          ],
           "correctIndex": 3,
           "explanation": "The spring lets the system settle to equilibrium rather than free-fall: the hanging 5kg mass's weight sets the string tension, T = m₂g = 5×9.8 = 49N. The pulley redirects the string from horizontal (along the track) to vertical (to the hanging mass) — the net force ON the pulley is the vector sum of the two tension segments at 90°: F = T√2 ≈ 69.3N, closest to the 68.8N option.",
           "needsReview": true,
           "reviewNote": "Computed 69.3N is close but not exact to 68.8N — likely just rounding in the source's original working. Reasonably confident in D, but worth a second look.",
           "source": "PHY101 June 2025, Q20"
+        },
+        {
+          "id": "phy101-nlf-07",
+          "prompt": "A car of mass 1.5×10³kg rounds a circular road of radius 20m. If the road is flat and the coefficient of friction between the tyres and road is 0.5, how fast can the car travel without skidding?",
+          "options": [
+            "9.9 m/s",
+            "9.5 m/s",
+            "9.3 m/s",
+            "9.1 m/s"
+          ],
+          "correctIndex": 0,
+          "explanation": "Friction provides the centripetal force: μmg = mv²/r, so v = √(μgr) = √(0.5×9.8×20) ≈ 9.9 m/s.",
+          "source": "PHY101 June 2025, Q47 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-nlf-08",
+          "prompt": "A 15kg block rests on a smooth plane inclined at 30° to the horizontal, connected by a string over a pulley to a 13kg block hanging freely. Find the acceleration. (g = 9.8 m/s²)",
+          "options": [
+            "4.92 m/s²",
+            "1.93 m/s²",
+            "1.02 m/s²",
+            "2.30 m/s²"
+          ],
+          "correctIndex": 1,
+          "explanation": "Net force = m₂g − m₁g·sin(30°) = (13×9.8) − (15×9.8×0.5) = 127.4−73.5 = 53.9N. Total mass = 28kg. a = 53.9/28 ≈ 1.93 m/s².",
+          "source": "PHY101 June 2025, Q33 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-nlf-09",
+          "prompt": "A block on a rough inclined plane is kept stationary by how many forces?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ],
+          "correctIndex": 2,
+          "explanation": "Three forces act: gravity (weight), the normal force from the incline, and friction along the surface — these three balance to keep the block stationary.",
+          "source": "PHY101 June 2025, Q30 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-nlf-10",
+          "prompt": "If F₁ is the least force parallel to a frictionless inclined plane that can prevent a block from sliding down, and F₂ is the least horizontal force that can also prevent it from sliding, find the ratio F₁/F₂.",
+          "options": [
+            "cos θ",
+            "sin θ",
+            "tan θ",
+            "cosec θ"
+          ],
+          "correctIndex": 0,
+          "explanation": "The minimum parallel force needed is F₁ = mg·sinθ. The minimum horizontal force needed is F₂ = mg·tanθ (its component along the incline must equal mg·sinθ). So F₁/F₂ = sinθ/tanθ = cosθ.",
+          "source": "PHY101 June 2025, Q36 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-nlf-11",
+          "prompt": "The force responsible for holding atoms and molecules together is called:",
+          "options": [
+            "Strong force",
+            "Weak force",
+            "Electromagnetic force",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The strong nuclear force holds protons and neutrons together WITHIN a nucleus, but it's the electromagnetic force (attraction between electrons and nuclei, and between atoms in molecular bonds) that holds atoms and molecules together.",
+          "source": "PHY101 June 2025, Q29 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-nlf-12",
+          "prompt": "Which of the following statements about the force of friction is NOT correct? (I) Kinetic friction is always opposite to the motion. (II) Kinetic friction is always opposite to the direction of motion. (III) Static friction is perpendicular to the contact surface when there is no relative motion. (IV) Kinetic friction is parallel to the contact surface when there is relative motion between the objects.",
+          "options": [
+            "I and II",
+            "II and III",
+            "II only",
+            "IV only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Statement III is wrong: static friction acts PARALLEL to the contact surface (opposing potential sliding), not perpendicular — the perpendicular force is the normal force, a separate thing entirely. Statement II is essentially a redundant restatement of I, which is itself correct, but the question groups it with III as the marked wrong pairing.",
+          "needsReview": true,
+          "reviewNote": "Statement III is confidently wrong (static friction is parallel, not perpendicular, to the surface). Less certain about why II is grouped as also 'not correct' since it seems to just restate I — worth checking the source's own answer key if available.",
+          "source": "PHY101 June 2025, Q27 (hand-typed retype)"
         }
       ]
     },
     {
       "id": "work-energy-power",
       "title": "Work, Energy & Power",
-      "questions": [        {
+      "questions": [
+        {
           "id": "phy101-wep-01",
           "prompt": "What amount of work is done by a man who carries a load of 10kg on his head through a square distance of sides 1.0m, if he moves through the full loop ABCDA? (g = 9.8 m/s²)",
-          "options": ["40 J", "400 J", "392 J", "0 J"],
+          "options": [
+            "40 J",
+            "400 J",
+            "392 J",
+            "0 J"
+          ],
           "correctIndex": 3,
           "explanation": "ABCDA is a closed loop — the man returns to his starting point, so net vertical displacement is zero. Work done against gravity over a closed path on a level square is 0J. (This question tests understanding that work depends on net displacement, not path length.)",
           "source": "PHY101 June 2025, Q4"
@@ -183,7 +346,12 @@
         {
           "id": "phy101-wep-02",
           "prompt": "A car of mass 800kg moving on a horizontal road at a steady velocity of 10 m/s has a total frictional force of 400N acting on it. Find the power due to the engine.",
-          "options": ["3.95 kW", "3.96 kW", "3.98 kW", "4.00 kW"],
+          "options": [
+            "3.95 kW",
+            "3.96 kW",
+            "3.98 kW",
+            "4.00 kW"
+          ],
           "correctIndex": 3,
           "explanation": "At steady velocity, engine force = frictional force = 400N. Power = Force × velocity = 400 × 10 = 4,000W = 4.00 kW.",
           "source": "PHY101 June 2025, Q15"
@@ -191,7 +359,12 @@
         {
           "id": "phy101-wep-03",
           "prompt": "A pickup truck of 2000kg is moving at 90km/h. How fast does a 1,000kg sports car have to go to have the same kinetic energy?",
-          "options": ["33.4 m/s", "35.4 m/s", "31.4 m/s", "34.4 m/s"],
+          "options": [
+            "33.4 m/s",
+            "35.4 m/s",
+            "31.4 m/s",
+            "34.4 m/s"
+          ],
           "correctIndex": 1,
           "explanation": "90km/h = 25 m/s. Equal KE: ½(2000)(25²) = ½(1000)(v²) → v² = 2×25² = 1250 → v ≈ 35.4 m/s.",
           "source": "PHY101 Sept 2024, Q15"
@@ -199,7 +372,12 @@
         {
           "id": "phy101-wep-04",
           "prompt": "What will be the mass of a truck moving at 25 m/s, if it has the same kinetic energy as a car of mass 1×10³kg travelling at 35.4 m/s?",
-          "options": ["3000kg", "2000kg", "2005kg", "1005kg"],
+          "options": [
+            "3000kg",
+            "2000kg",
+            "2005kg",
+            "1005kg"
+          ],
           "correctIndex": 2,
           "explanation": "Equal KE: ½m_car·v_car² = ½m_truck·v_truck² → m_truck = m_car(v_car/v_truck)² = 1000×(35.4/25)² ≈ 2005kg.",
           "source": "PHY101&103 Oct 2023, Q13"
@@ -207,7 +385,12 @@
         {
           "id": "phy101-wep-05",
           "prompt": "How high can a grasshopper of mass 2×10⁻²kg jump if its kinetic energy is 1176×10⁻⁴ J? (g = 10 m/s²)",
-          "options": ["0.6m", "0.4m", "0.2m", "0.1m"],
+          "options": [
+            "0.6m",
+            "0.4m",
+            "0.2m",
+            "0.1m"
+          ],
           "correctIndex": 0,
           "explanation": "KE = mgh → h = KE/(mg) = 0.1176/(0.02×10) = 0.588m ≈ 0.6m.",
           "needsReview": true,
@@ -217,7 +400,12 @@
         {
           "id": "phy101-wep-06",
           "prompt": "A woman cleaning a floor pulls a vacuum cleaner with a force of magnitude 80N at an angle of 60° with the vertical. Calculate the work done by the force as it displaces 5m to the right.",
-          "options": ["300J", "436.3J", "346.4J", "400J"],
+          "options": [
+            "300J",
+            "436.3J",
+            "346.4J",
+            "400J"
+          ],
           "correctIndex": 2,
           "explanation": "The horizontal component of the force does the work: W = F·sin(60°)·d = 80×0.866×5 ≈ 346.4J.",
           "needsReview": true,
@@ -233,7 +421,12 @@
         {
           "id": "phy101-mom-01",
           "prompt": "A ball of mass 0.4kg is thrown against a brick wall. It hits the wall moving horizontally left at 30m/s and rebounds horizontally right at 20m/s. If the ball is in contact with the wall for 0.01s, find the average horizontal force the wall exerts on the ball.",
-          "options": ["2×10³ N", "2×10⁻³ N", "2×10² N", "2×10⁻² N"],
+          "options": [
+            "2×10³ N",
+            "2×10⁻³ N",
+            "2×10² N",
+            "2×10⁻² N"
+          ],
           "correctIndex": 0,
           "explanation": "Taking rightward as positive: impulse = m(v_f−v_i) = 0.4×(20−(−30)) = 20 kg·m/s. Force = impulse/time = 20/0.01 = 2000N = 2×10³N.",
           "source": "PHY101 Sept 2024, Q7"
@@ -241,7 +434,12 @@
         {
           "id": "phy101-mom-02",
           "prompt": "A baseball of mass 0.145kg is moving in the +x direction at 3.40 m/s, and a tennis ball of mass 0.0570kg is moving in the −x direction at 6.20 m/s. What is the total momentum of the system?",
-          "options": ["0.14 kgm/s, −x direction", "0.41 kgm/s, −x direction", "0.41 kgm/s, +x direction", "0.14 kgm/s, +x direction"],
+          "options": [
+            "0.14 kgm/s, −x direction",
+            "0.41 kgm/s, −x direction",
+            "0.41 kgm/s, +x direction",
+            "0.14 kgm/s, +x direction"
+          ],
           "correctIndex": 3,
           "explanation": "p = m₁v₁ + m₂v₂ = (0.145×3.40) + (0.0570×−6.20) = 0.493 − 0.353 ≈ 0.14 kg·m/s, positive — so in the +x direction.",
           "source": "PHY101 Sept 2024, Q16"
@@ -249,12 +447,43 @@
         {
           "id": "phy101-mom-03",
           "prompt": "A truck moving right at 5 m/s hits a car moving at 4 m/s in the same direction. After collision the truck and car move at 4 m/s and 3 m/s respectively (to the right). Determine the coefficient of restitution.",
-          "options": ["−0.5", "0.5", "−1.0", "1.0", "0.1"],
+          "options": [
+            "−0.5",
+            "0.5",
+            "−1.0",
+            "1.0",
+            "0.1"
+          ],
           "correctIndex": 2,
           "explanation": "e = (separation speed)/(approach speed) = (v_car'−v_truck')/(v_truck−v_car) = (3−4)/(5−4) = −1.0. Note: this comes out negative and outside the normal 0–1 range for restitution, which is physically unusual — but it's what the given numbers produce, and it matches one of the offered options exactly.",
           "needsReview": true,
           "reviewNote": "A negative coefficient of restitution is not physically standard — this usually signals a typo in the original numbers (e.g. one of the 'after' speeds). Flagging even though it matches an option, since the physical result doesn't quite make sense.",
           "source": "PHY101 Sept 2024, Q19"
+        },
+        {
+          "id": "phy101-mom-04",
+          "prompt": "A photographer in a helicopter descending vertically at a constant rate of 12.5 m/s accidentally drops a camera out of the window when the helicopter is 60m above the ground. What will be the speed of the camera when it hits the ground?",
+          "options": [
+            "36.5 m/s",
+            "30.5 m/s",
+            "−30.5 m/s"
+          ],
+          "correctIndex": 0,
+          "explanation": "The camera starts with the helicopter's downward velocity (12.5 m/s) and continues accelerating downward: v² = u² + 2gh = 12.5² + 2(9.8)(60) = 156.25+1176 = 1332.25, v ≈ 36.5 m/s.",
+          "source": "PHY101 June 2025, Q40 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-mom-05",
+          "prompt": "A particle of mass 3kg moving with a certain velocity collides with another particle of mass 4kg at rest. If the two move together at 2.14 m/s after collision, find the initial velocity of the moving particle.",
+          "options": [
+            "7.50 m/s",
+            "8.25 m/s",
+            "3.05 m/s",
+            "4.99 m/s"
+          ],
+          "correctIndex": 3,
+          "explanation": "By conservation of momentum: m₁v₁ = (m₁+m₂)v_common. v₁ = v_common×(m₁+m₂)/m₁ = 2.14×7/3 ≈ 4.99 m/s.",
+          "source": "PHY101 June 2025, Q46 (hand-typed retype)"
         }
       ]
     },
@@ -278,7 +507,12 @@
         {
           "id": "phy101-cmg-02",
           "prompt": "Two satellites move in circular orbits around the earth. The outer satellite's orbital radius is 4 times the inner one's. If V is the outer satellite's orbital speed and v is the inner's, what is the relationship?",
-          "options": ["v = ½V", "v = V/√2", "v = √2V", "v = 2V"],
+          "options": [
+            "v = ½V",
+            "v = V/√2",
+            "v = √2V",
+            "v = 2V"
+          ],
           "correctIndex": 3,
           "explanation": "Orbital speed v = √(GM/r), so v ∝ 1/√r. If r_outer = 4·r_inner, then v_inner/v_outer = √(r_outer/r_inner) = √4 = 2, so v = 2V.",
           "source": "PHY101 June 2025, Q13"
@@ -286,7 +520,12 @@
         {
           "id": "phy101-cmg-03",
           "prompt": "A communication satellite in a circular orbit moves around the earth at an altitude of 500km. The satellite makes one revolution every 90 minutes. What is its centripetal acceleration?",
-          "options": ["9.34 m/s²", "9.45 m/s²", "9.43 m/s²", "9.54 m/s²"],
+          "options": [
+            "9.34 m/s²",
+            "9.45 m/s²",
+            "9.43 m/s²",
+            "9.54 m/s²"
+          ],
           "correctIndex": 0,
           "explanation": "r = Rₑ + h = 6.4×10⁶ + 5×10⁵ = 6.9×10⁶m. ω = 2π/T = 2π/(90×60). Centripetal acceleration a = ω²r ≈ 9.34 m/s².",
           "source": "PHY101 Sept 2024, Q14"
@@ -316,6 +555,58 @@
           "correctIndex": 3,
           "explanation": "The first three are Kepler's actual three laws (elliptical orbits, equal areas in equal times, and the period-distance relationship). The fourth statement describes Newton's law of universal gravitation, not one of Kepler's laws — it's the odd one out.",
           "source": "PHY101 Sept 2024, Q8"
+        },
+        {
+          "id": "phy101-cmg-06",
+          "prompt": "Determine the acceleration due to gravity at a distance of 10km above the Earth's surface. (Radius of Earth = 6,380km, Mass of Earth = 5.93×10²⁴kg, G = 6.67×10⁻¹¹ N·m²/kg²)",
+          "options": [
+            "9.77 m/s²",
+            "5.85 m/s²",
+            "7.25 m/s²",
+            "4.25 m/s²"
+          ],
+          "correctIndex": 0,
+          "explanation": "g_h = GM/(R+h)² = (6.67×10⁻¹¹ × 5.93×10²⁴)/((6.38×10⁶+10⁴)²) ≈ 9.69 m/s², closest to 9.77 m/s².",
+          "source": "PHY101 June 2025, Q39 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-cmg-07",
+          "prompt": "At what altitude above the Earth's surface would the acceleration due to gravity be 2/3 of g? (Radius of Earth = 6.4×10⁶m)",
+          "options": [
+            "7.834×10³ m",
+            "1.384×10³ m",
+            "1.438×10⁶ m",
+            "7.734×10³ m"
+          ],
+          "correctIndex": 2,
+          "explanation": "g_h/g₀ = (R/(R+h))² = 2/3, so (R+h) = R×√(3/2). Solving: h = R(√1.5 − 1) ≈ 1.438×10⁶ m.",
+          "source": "PHY101 June 2025, Q49 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-cmg-08",
+          "prompt": "The dimensions of the universal gravitational constant G are:",
+          "options": [
+            "M L² T⁻²",
+            "M⁻¹ L³ T⁻²",
+            "M L³ T⁻²",
+            "M⁻² L³ T⁻¹"
+          ],
+          "correctIndex": 1,
+          "explanation": "From F = Gm₁m₂/r², rearranging: G = Fr²/(m₁m₂). Dimensionally: [MLT⁻²][L²]/[M²] = M⁻¹L³T⁻².",
+          "source": "PHY101 June 2025, Q25 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-cmg-09",
+          "prompt": "If the force of attraction between two masses separated by a distance of 2d is F, what will the new force be if the distance between them is doubled (to 4d)?",
+          "options": [
+            "4F",
+            "F/4",
+            "2F",
+            "F/2"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gravitational force follows an inverse-square law: F ∝ 1/r². Doubling the distance means the force drops to (1/2)² = 1/4 of its original value: F_new = F/4.",
+          "source": "PHY101 June 2025, Q48 (hand-typed retype)"
         }
       ]
     },
@@ -326,7 +617,12 @@
         {
           "id": "phy101-rot-01",
           "prompt": "Calculate the moment of inertia of a solid sphere of mass 3kg and diameter 50cm, about an axis through its center.",
-          "options": ["0.072 kgm²", "0.073 kgm²", "0.074 kgm²", "0.075 kgm²"],
+          "options": [
+            "0.072 kgm²",
+            "0.073 kgm²",
+            "0.074 kgm²",
+            "0.075 kgm²"
+          ],
           "correctIndex": 3,
           "explanation": "For a solid sphere, I = (2/5)mr². Radius = 0.25m. I = 0.4 × 3 × 0.25² = 0.075 kgm².",
           "source": "PHY101 June 2025, Q2"
@@ -334,7 +630,12 @@
         {
           "id": "phy101-rot-02",
           "prompt": "A uniform solid cylinder rotating about its longitudinal axis has mass 2kg and angular speed 200 rad/s. Calculate its rotational kinetic energy if its radius is 0.25m.",
-          "options": ["1250 J", "1520 J", "1052 J", "1025 J"],
+          "options": [
+            "1250 J",
+            "1520 J",
+            "1052 J",
+            "1025 J"
+          ],
           "correctIndex": 0,
           "explanation": "For a solid cylinder, I = ½mr² = 0.5×2×0.25² = 0.0625 kgm². KE = ½Iω² = 0.5×0.0625×200² = 1250 J.",
           "source": "PHY101 June 2025, Q3"
@@ -342,7 +643,12 @@
         {
           "id": "phy101-rot-03",
           "prompt": "A bicycle wheel has radius 0.25m, mass 0.80kg, and moment of inertia about its axle of 4×10⁻² kg/m². What is its total kinetic energy when it rolls at 7 rotations per second?",
-          "options": ["78.1J", "87.1J", "17.8J", "18.7J"],
+          "options": [
+            "78.1J",
+            "87.1J",
+            "17.8J",
+            "18.7J"
+          ],
           "correctIndex": 1,
           "explanation": "ω = 2π(7) ≈ 43.98 rad/s. Rotational KE = ½Iω² = ½(0.04)(43.98²) ≈ 38.7J. Translational KE: v=ωr=10.996 m/s, ½mv² = ½(0.8)(10.996²) ≈ 48.4J. Total ≈ 87.1J.",
           "source": "PHY101 Sept 2024, Q9"
@@ -350,12 +656,70 @@
         {
           "id": "phy101-rot-04",
           "prompt": "What is the correct expression for the total kinetic energy of a solid cylinder of mass M rolling without slipping at speed V?",
-          "options": ["½MR²ω²", "½MV²", "¾MV²", "½MRV"],
+          "options": [
+            "½MR²ω²",
+            "½MV²",
+            "¾MV²",
+            "½MRV"
+          ],
           "correctIndex": 2,
           "explanation": "Total KE = translational + rotational = ½MV² + ½Iω², where I=½MR² and ω=V/R for rolling without slipping. This gives ½MV² + ¼MV² = ¾MV².",
           "needsReview": true,
           "reviewNote": "Original option C was transcribed as '¾MR²V²' which is dimensionally inconsistent — the correct physics gives ¾MV² with no extra R² factor, which I've corrected here.",
           "source": "PHY101 June 2025, Q19"
+        },
+        {
+          "id": "phy101-rot-05",
+          "prompt": "An ideal fluid flows at 4.0 m/s in a horizontal circular pipe. If the pipe narrows to half its original radius, what will be the flow speed in the narrow section?",
+          "options": [
+            "12 m/s",
+            "1.2 m/s",
+            "8 m/s",
+            "14 m/s",
+            "16 m/s"
+          ],
+          "correctIndex": 4,
+          "explanation": "By the continuity equation, A₁v₁ = A₂v₂. Since area scales with radius², halving the radius quarters the area, so the speed must quadruple: v₂ = 4×4.0 = 16 m/s.",
+          "source": "PHY101 June 2025, Q26 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-rot-06",
+          "prompt": "Calculate the radius of gyration of a uniform rod of mass 20kg and length 6m (about its center).",
+          "options": [
+            "4√3 m",
+            "3√3 m",
+            "2√3 m",
+            "√3 m"
+          ],
+          "correctIndex": 3,
+          "explanation": "For a uniform rod about its center, I = (1/12)mL². Radius of gyration k = √(I/m) = √(L²/12) = L/(2√3) = 6/(2√3) = √3 m.",
+          "source": "PHY101 June 2025, Q35 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-rot-07",
+          "prompt": "A flywheel of mass 10kg and radius of gyration 3m is rotating once every second. Find its kinetic energy.",
+          "options": [
+            "120,000 J",
+            "40,000 J",
+            "180π² J",
+            "90,000π² J"
+          ],
+          "correctIndex": 2,
+          "explanation": "I = mk² = 10×3² = 90 kg·m². ω = 2πf = 2π rad/s. KE = ½Iω² = ½×90×(2π)² = 180π² J.",
+          "source": "PHY101 June 2025, Q42 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-rot-08",
+          "prompt": "The angular momentum of a rotating flywheel is given by:",
+          "options": [
+            "Iω",
+            "τω",
+            "I²ω",
+            "τω²"
+          ],
+          "correctIndex": 0,
+          "explanation": "Angular momentum L = Iω — the rotational analog of linear momentum p = mv, with moment of inertia I playing the role of mass and angular velocity ω playing the role of velocity.",
+          "source": "PHY101 June 2025, Q28 (hand-typed retype)"
         }
       ]
     },
@@ -366,7 +730,12 @@
         {
           "id": "phy101-shm-01",
           "prompt": "A body vibrates in simple harmonic motion with frequency 50Hz and amplitude 6cm. Find the velocity at a distance of 3cm from the center of oscillation.",
-          "options": ["15.33 m/s", "16.33 m/s", "17.33 m/s", "18.33 m/s"],
+          "options": [
+            "15.33 m/s",
+            "16.33 m/s",
+            "17.33 m/s",
+            "18.33 m/s"
+          ],
           "correctIndex": 1,
           "explanation": "ω = 2πf = 2π(50) = 314.16 rad/s. v = ω√(A²−x²) = 314.16 × √(0.06²−0.03²) ≈ 16.32 m/s.",
           "source": "PHY101 June 2025, Q14"
@@ -380,7 +749,12 @@
         {
           "id": "phy101-ktg-01",
           "prompt": "Calculate the root-mean-square speed of hydrogen molecules at 0°C and 1 atmosphere pressure, assuming it to be a perfect gas. Hydrogen density under these conditions is 8.99×10⁻² kg/m³. (1 atm = 1.013×10⁵ Pa)",
-          "options": ["1930 m/s", "1838 m/s", "1730 m/s", "320 m/s"],
+          "options": [
+            "1930 m/s",
+            "1838 m/s",
+            "1730 m/s",
+            "320 m/s"
+          ],
           "correctIndex": 1,
           "explanation": "v_rms = √(3P/ρ) = √(3 × 1.013×10⁵ / 8.99×10⁻²) ≈ 1838.6 m/s.",
           "source": "PHY101 June 2025, Q8"
@@ -388,7 +762,12 @@
         {
           "id": "phy101-ktg-02",
           "prompt": "What is the dimensional formula for volume elasticity (bulk modulus)?",
-          "options": ["ML⁻²T⁻²", "ML⁻¹T⁻²", "ML²T⁻²", "ML⁻¹T⁻¹"],
+          "options": [
+            "ML⁻²T⁻²",
+            "ML⁻¹T⁻²",
+            "ML²T⁻²",
+            "ML⁻¹T⁻¹"
+          ],
           "correctIndex": 1,
           "explanation": "Bulk modulus = stress/strain = Pressure ÷ (dimensionless volume ratio) = Pressure's dimension = ML⁻¹T⁻².",
           "source": "PHY101 Sept 2024, Q10"
@@ -403,7 +782,12 @@
         {
           "id": "phy101-flag-01",
           "prompt": "For what dimension of k is the equation s = vt − (1/3)kt³ dimensionally correct?",
-          "options": ["T⁻¹", "T²", "1", "1/T"],
+          "options": [
+            "T⁻¹",
+            "T²",
+            "1",
+            "1/T"
+          ],
           "correctIndex": null,
           "needsReview": true,
           "reviewNote": "Standard dimensional analysis gives [k]=LT⁻³, which doesn't match the dimensionless-looking option set at all — likely the equation or options were garbled in transcription.",
@@ -412,7 +796,12 @@
         {
           "id": "phy101-flag-02",
           "prompt": "A particle moves in a circle with centripetal acceleration of 5 m/s² towards the center, radius 5/π m. Find the angular velocity in revolutions per minute.",
-          "options": ["90π rev/min", "60/π rev/min", "30/π rev/min", "10/π rev/min"],
+          "options": [
+            "90π rev/min",
+            "60/π rev/min",
+            "30/π rev/min",
+            "10/π rev/min"
+          ],
           "correctIndex": null,
           "needsReview": true,
           "reviewNote": "Computed ω = √(a/r) = √π rad/s ≈ 16.9 rev/min, which doesn't match any option even approximately.",
@@ -436,11 +825,30 @@
         {
           "id": "phy101-flag-04",
           "prompt": "A constant force acts on a body of mass 4kg and changes its velocity from 2 m/s to 6 m/s in 2 sec. If the body moves a distance of 1.0m, what is the work done?",
-          "options": ["16J", "20J", "24J", "19J"],
+          "options": [
+            "16J",
+            "20J",
+            "24J",
+            "19J"
+          ],
           "correctIndex": null,
           "needsReview": true,
           "reviewNote": "The numbers as given are physically inconsistent — a body accelerating from 2 to 6 m/s over 2s under constant acceleration would cover about 8m, not 1.0m. Neither W=F·d (using the stated 1.0m) nor W=ΔKE match any option. The question likely has a typo in either the time, the velocities, or the distance.",
           "source": "PHY101 June 2025, Q23"
+        },
+        {
+          "id": "phy101-flag-05",
+          "prompt": "The air resistance acting on a car of mass 521kg moving at 10 m/s, which comes to rest over a distance of 10m, is:",
+          "options": [
+            "270 N",
+            "74.6 N",
+            "76.4 N",
+            "80.5 N"
+          ],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "The person who typed this out by hand confirmed the mass really is 521kg (not a scanning error as I'd guessed earlier) — but F=mv²/(2d) still gives 2605N, which doesn't match any option even approximately. This is a genuine error in the original source material itself, not a transcription issue. Superseding my earlier guess in phy101-kin-12.",
+          "source": "PHY101 June 2025, Q21 (confirmed via clean hand-typed retype)"
         }
       ]
     }
