@@ -156,6 +156,117 @@
           "correctIndex": 0,
           "explanation": "u_x = 25cos65° ≈ 10.57 m/s (unchanged throughout flight). u_y = 25sin65° ≈ 22.66 m/s. v_y at t=0.65s: 22.66 − 9.8(0.65) ≈ 16.29 m/s. Resultant: √(10.57²+16.29²) ≈ 19.42 m/s.",
           "source": "PHY101&103 Oct 2023, Q9"
+        },
+        {
+          "id": "phy101-kin-13",
+          "prompt": "A boy starts from his room and walks 20m south, then turns and walks 50m in a direction 30° north of west, then finally walks 30m directly north. Find the magnitude of his resultant displacement from his room.",
+          "options": [
+            "56.68 m",
+            "54.68 m",
+            "69.68 m",
+            "55.68 m",
+            "58.68 m"
+          ],
+          "correctIndex": 3,
+          "explanation": "Setting north as +y, east as +x: leg 1 = (0,−20). Leg 2 = (−50cos30°, 50sin30°) ≈ (−43.3, 25). Leg 3 = (0,30). Summing components: (−43.3, 35). Magnitude = √(43.3²+35²) ≈ 55.68m.",
+          "source": "PHY101 Sept 2024, Q24 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-14",
+          "prompt": "A bus travelling from Okada to Benin maintains an average speed of 120km/h. If it leaves Okada at 11:08am and arrives in Benin at exactly 11:41am, what distance does it cover?",
+          "options": [
+            "66 km",
+            "26 km",
+            "96 km",
+            "73 km",
+            "86 km"
+          ],
+          "correctIndex": 0,
+          "explanation": "Travel time = 33 minutes = 0.55 hours. Distance = speed × time = 120 × 0.55 = 66km.",
+          "source": "PHY101 Sept 2024, Q26 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-15",
+          "prompt": "A ball of mass 0.2kg is released from a height of 50m. Calculate the velocity with which it strikes the ground. (g = 9.8 m/s²)",
+          "options": [
+            "31.31 m/s",
+            "31.13 m/s",
+            "33.30 m/s",
+            "31.30 m/s",
+            "31.10 m/s"
+          ],
+          "correctIndex": 0,
+          "explanation": "v = √(2gh) = √(2×9.8×50) ≈ 31.30 m/s, matching 31.31 m/s.",
+          "source": "PHY101 Sept 2024, Q27 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-16",
+          "prompt": "If a ball falling from a height travels the last 2.5m in 1 second, determine the distance travelled before that last second. (g = 9.8 m/s²)",
+          "options": [
+            "0.27 m",
+            "0.29 m",
+            "0.31 m",
+            "0.28 m",
+            "0.48 m"
+          ],
+          "correctIndex": 1,
+          "explanation": "Let T be total fall time. Distance in the last second = ½g·T² − ½g·(T−1)² = 2.5. Solving gives T ≈ 0.755s, so the fall time before the last second is negative — meaning this actually describes T≈1.755s total (the ball fell for a bit under a second before the final second began). Distance before the last second = ½g(T−1)² ≈ 0.29m.",
+          "source": "PHY101 Sept 2024, Q34 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-17",
+          "prompt": "The driver of a saloon car travelling at 120km/h suddenly sights a pothole 72m ahead. Calculate the minimum acceleration required to stop the car before hitting it.",
+          "options": [
+            "−9.78 m/s²",
+            "−8.21 m/s²",
+            "−10.68 m/s²",
+            "−7.71 m/s²",
+            "−6.17 m/s²"
+          ],
+          "correctIndex": 3,
+          "explanation": "120km/h = 33.33 m/s. Using v²=u²+2as with v=0: a = −u²/(2s) = −33.33²/(2×72) ≈ −7.72 m/s², matching −7.71 m/s².",
+          "source": "PHY101 Sept 2024, Q35 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-18",
+          "prompt": "A ball is projected at such an angle that its horizontal range is three times its maximum height. What is the angle of projection?",
+          "options": [
+            "53.1°",
+            "85.2°",
+            "36.9°",
+            "42.8°",
+            "29.8°"
+          ],
+          "correctIndex": 0,
+          "explanation": "Range R = u²sin(2θ)/g, max height H = u²sin²θ/(2g). Setting R=3H and simplifying gives tanθ = 4/3, so θ = tan⁻¹(4/3) ≈ 53.1°.",
+          "source": "PHY101 Sept 2024, Q36 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-19",
+          "prompt": "A boy runs around a circle at an average speed of 12.57 m/s, completing a lap every 50 seconds. What is the radius of the circle?",
+          "options": [
+            "100 m",
+            "130 m",
+            "105 m",
+            "107 m",
+            "110 m"
+          ],
+          "correctIndex": 0,
+          "explanation": "Circumference = speed × time = 12.57 × 50 ≈ 628.5m. Radius = circumference/(2π) ≈ 100m.",
+          "source": "PHY101 Sept 2024, Q39 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-kin-20",
+          "prompt": "A car starts from rest and accelerates at 1 m/s² for 10 seconds. It then continues at a steady speed for a further 20 seconds, and finally decelerates to rest in 5 seconds. Find the total distance travelled.",
+          "options": [
+            "290 m",
+            "273 m",
+            "27 m",
+            "207 m"
+          ],
+          "correctIndex": 1,
+          "explanation": "Phase 1 (accelerating): reaches 10 m/s, covers ½(1)(10²)=50m. Phase 2 (steady): 10×20=200m. Phase 3 (decelerating to rest in 5s from 10m/s): ½(10)(5)=25m. Total ≈ 275m, closest to 273m.",
+          "source": "PHY101 Sept 2024, Q40 (hand-typed retype)"
         }
       ]
     },
@@ -323,6 +434,20 @@
           "needsReview": true,
           "reviewNote": "Statement III is confidently wrong (static friction is parallel, not perpendicular, to the surface). Less certain about why II is grouped as also 'not correct' since it seems to just restate I — worth checking the source's own answer key if available.",
           "source": "PHY101 June 2025, Q27 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-nlf-13",
+          "prompt": "A particle of mass 5kg is placed on a smooth plane whose height is 4m and length is 20m. The particle is connected by a light string over a smooth pulley at the top of the plane to a 3kg mass hanging freely. Find the common acceleration. (g = 9.8 m/s²)",
+          "options": [
+            "2.20 m/s²",
+            "2.50 m/s²",
+            "2.15 m/s²",
+            "2.35 m/s²",
+            "2.75 m/s²"
+          ],
+          "correctIndex": 1,
+          "explanation": "The incline angle satisfies sinθ = height/length = 4/20 = 0.2. Net force = m₂g − m₁g·sinθ = (3×9.8) − (5×9.8×0.2) = 29.4−9.8 = 19.6N. Total mass = 8kg. a = 19.6/8 = 2.45 m/s², closest to 2.50 m/s².",
+          "source": "PHY101 Sept 2024, Q25 (hand-typed retype)"
         }
       ]
     },
@@ -411,6 +536,20 @@
           "needsReview": true,
           "reviewNote": "The original stated the angle 'with the horizontal', which gives W=F·cos(60°)·d=200J (not among the options). Using sin instead of cos (i.e. treating the angle as measured from vertical) gives an exact match to 346.4J, so I've reworded the question to match the physics that actually produces that answer. Worth checking the original paper's diagram/wording.",
           "source": "PHY101 Sept 2024, Q13"
+        },
+        {
+          "id": "phy101-wep-07",
+          "prompt": "A truck of mass 30kg is moving at a speed of 400 m/s. Determine the speed at which another truck of mass 40kg must move to have the same kinetic energy.",
+          "options": [
+            "344.6 m/s",
+            "366.4 m/s",
+            "346.4 m/s",
+            "364.6 m/s",
+            "464.3 m/s"
+          ],
+          "correctIndex": 2,
+          "explanation": "Equal KE: ½m₁v₁² = ½m₂v₂² → v₂ = v₁√(m₁/m₂) = 400×√(30/40) ≈ 346.4 m/s.",
+          "source": "PHY101 Sept 2024, Q30 (hand-typed retype)"
         }
       ]
     },
@@ -849,6 +988,50 @@
           "needsReview": true,
           "reviewNote": "The person who typed this out by hand confirmed the mass really is 521kg (not a scanning error as I'd guessed earlier) — but F=mv²/(2d) still gives 2605N, which doesn't match any option even approximately. This is a genuine error in the original source material itself, not a transcription issue. Superseding my earlier guess in phy101-kin-12.",
           "source": "PHY101 June 2025, Q21 (confirmed via clean hand-typed retype)"
+        },
+        {
+          "id": "phy101-flag-06",
+          "prompt": "What is the difference in potential energy per unit mass between the Earth's surface and a point 4.0×10⁸m above the Earth's surface? (Mass of Earth = 6.0×10²⁴kg, Radius of Earth = 6.0×10⁶m)",
+          "options": [
+            "8.42×10⁷ J/kg",
+            "6.61×10⁷ J/kg",
+            "5.52×10⁷ J/kg",
+            "3.81×10⁷ J/kg",
+            "7.67×10⁷ J/kg"
+          ],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "This one is actually impossible as stated, not just hard to match: the maximum possible potential-energy-per-mass difference (even at infinite altitude) works out to about 6.67×10⁷ J/kg given these Earth parameters, but the smallest option offered (3.81×10⁷) is plausible while others (8.42×10⁷) exceed that theoretical ceiling. Something in the given numbers (mass, radius, or altitude) doesn't match the intended answer set.",
+          "source": "PHY101 Sept 2024, Q20 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-flag-07",
+          "prompt": "The displacement of a body in the positive x-direction is given by y = 3t⁴ + 2t³ + 4t² + 5t. Calculate the acceleration after 1.33 seconds.",
+          "options": [
+            "42.75 m/s²",
+            "91.55 m/s²",
+            "71.84 m/s²",
+            "42.75 m/s²",
+            "67.98 m/s²"
+          ],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "Working through this directly (differentiate twice: a = 36t²+12t+8) gives ≈87.6 m/s² at t=1.33s, which doesn't match any option. Also worth noting the source itself has a duplicate option (42.75 appears twice, as both (a) and (d)) — a clear sign this question has an error in the original material, not just a transcription issue.",
+          "source": "PHY101 Sept 2024, Q32 (hand-typed retype)"
+        },
+        {
+          "id": "phy101-flag-08",
+          "prompt": "Two solid rubber balls P and Q, having masses 0.2kg and 0.4kg respectively, are moving in opposite directions. Ball P has velocity 0.3 m/s. After collision, the two balls come to rest. What is the initial velocity of ball Q?",
+          "options": [
+            "1.0 m/s",
+            "0.5 m/s",
+            "1.5 m/s",
+            "2.5 m/s"
+          ],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "If both balls end at rest, momentum conservation requires their initial momenta to cancel exactly: m_P×v_P = m_Q×v_Q, giving v_Q = (0.2×0.3)/0.4 = 0.15 m/s — not close to any given option. The numbers as given don't seem to produce any of the offered answers.",
+          "source": "PHY101 Sept 2024, Q33 (hand-typed retype)"
         }
       ]
     }
