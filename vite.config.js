@@ -11,7 +11,7 @@ export default defineConfig({
       manifest: {
         name: 'FirstClass',
         short_name: 'FirstClass',
-        description: 'Notes and topical practice for every 100 level course.',
+        description: 'Notes and topical practice for every course.',
         theme_color: '#14171C',
         background_color: '#FAFAF8',
         display: 'standalone',

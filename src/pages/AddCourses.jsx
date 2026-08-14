@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext.jsx'
 
 // Placeholder catalog — swap for a Firestore `courses` query, filtered
 // by the student's faculty (with an option to add courses outside it,
-// since some 100L students take cross-faculty electives).
+// since some students take cross-faculty electives).
 const COURSE_CATALOG = [
   { code: 'MTH101', title: 'Elementary Mathematics I', faculty: 'Sciences' },
   { code: 'PHY101', title: 'General Physics I', faculty: 'Sciences' },

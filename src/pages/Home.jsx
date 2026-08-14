@@ -43,14 +43,14 @@ export default function Home() {
         <div className="max-w-[1120px] mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
           <div>
             <div className="font-mono text-xs tracking-wider text-cobalt uppercase mb-4 font-medium">
-              100 level · every faculty
+              Every faculty · every course
             </div>
             <h1 className="font-display text-3xl md:text-[40px] font-semibold leading-tight mb-5 -tracking-wide">
               Train for your <span className="text-flame">first class</span>, course by course.
             </h1>
             <p className="text-[16.5px] text-graphite/60 max-w-[440px] mb-8">
               Track mastery topic by topic, drill past questions, and watch your score climb —
-              for every 100 level course across every faculty.
+              for every course across every faculty.
             </p>
             <div className="flex gap-3.5 flex-wrap">
               <a href="/signup" className="bg-cobalt text-white px-6 py-3 rounded font-medium text-sm">
@@ -120,6 +120,23 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section className="bg-graphite text-white text-center py-20 px-7">
+        <h2 className="font-display text-3xl font-semibold mb-3.5">
+          Start with the free chapters
+        </h2>
+        <p className="text-white/60 text-[15.5px] mb-7">
+          Every course opens its first chapter for free. Unlock the rest as you go.
+        </p>
+        <a href="/signup" className="bg-cobalt text-white px-6 py-3 rounded font-medium text-sm inline-block">
+          Create your account
+        </a>
+        <div className="text-[12.5px] text-white/50 mt-4">No card required to start</div>
+      </section>
+
+      <footer className="bg-graphite border-t border-white/10 py-6 text-center text-xs text-white/50">
+        © FirstClass · Built for students across every faculty
+      </footer>
     </div>
   )
 }
