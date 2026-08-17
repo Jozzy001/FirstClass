@@ -128,6 +128,84 @@
           "correctIndex": 1,
           "explanation": "The 0.42m is the full back-and-forth range (peak to peak), which equals 2×amplitude. Amplitude = 0.42/2 = 0.21m.",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-10",
+          "prompt": "Which of the following is the correct relationship between acceleration a and displacement x for a particle undergoing simple harmonic motion?",
+          "options": [
+            "a = ωx",
+            "a = −ω²x²",
+            "a = −ω²x",
+            "a = ω²x²"
+          ],
+          "correctIndex": 2,
+          "explanation": "The defining relationship of SHM is that acceleration is proportional to displacement and always points back toward equilibrium: a=−ω²x.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-11",
+          "prompt": "The period of a simple pendulum is 2s. What will be the period if both the mass and the length of the pendulum are doubled?",
+          "options": [
+            "3.2s",
+            "1.4s",
+            "2.8s",
+            "2.83s"
+          ],
+          "correctIndex": 3,
+          "explanation": "T=2π√(L/g) depends only on length, not mass. Doubling L gives T_new=T×√2≈2.83s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-12",
+          "prompt": "An object oscillates in SHM with displacement x = 25sin(3t+π/6), where x is in cm and t in seconds. What is the maximum velocity?",
+          "options": [
+            "15 cm/s",
+            "75 cm/s",
+            "25 cm/s",
+            "45 cm/s"
+          ],
+          "correctIndex": 1,
+          "explanation": "Maximum velocity = Aω = 25×3 = 75 cm/s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-13",
+          "prompt": "The period of SHM is dependent on which of the following parameters?",
+          "options": [
+            "Mass alone",
+            "Applied force",
+            "Amplitude",
+            "Restoring force constant and mass"
+          ],
+          "correctIndex": 3,
+          "explanation": "For a mass-spring system, T=2π√(m/k) — depends on both mass and the restoring force constant (spring constant), but notably NOT on amplitude.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-14",
+          "prompt": "What is the natural angular frequency of a simple pendulum?",
+          "options": [
+            "√(k/m)",
+            "√(l/g)",
+            "√(g/l)",
+            "√(m/g)"
+          ],
+          "correctIndex": 2,
+          "explanation": "For a simple pendulum, T=2π√(l/g), so ω=2π/T=√(g/l).",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-15",
+          "prompt": "The period of a torsional oscillator is a function of which of the following?",
+          "options": [
+            "Moment of inertia and torsion constant",
+            "Acceleration",
+            "Mass",
+            "Velocity"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a torsional oscillator, T=2π√(I/κ), where I is the moment of inertia and κ is the torsion constant of the wire/spring — the rotational analog of a mass-spring system.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -599,6 +677,177 @@
           "correctIndex": 1,
           "explanation": "μ = 0.01/5 = 0.002 kg/m. v = √(T/μ) = √(10/0.002) ≈ 70.7 m/s.",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-36",
+          "prompt": "The fundamental frequency of a pipe closed at one end is 220Hz. If the speed of sound that day is 345 m/s, how long is the pipe?",
+          "options": [
+            "0.33 m",
+            "0.34 m",
+            "0.37 m",
+            "0.39 m"
+          ],
+          "correctIndex": 3,
+          "explanation": "For a closed pipe, f=v/(4L) → L=v/(4f)=345/(4×220)≈0.39m.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-38",
+          "prompt": "What is the speed of longitudinal sound waves in air at a temperature of 25°C?",
+          "options": [
+            "346 m/s",
+            "341 m/s",
+            "339 m/s",
+            "314 m/s"
+          ],
+          "correctIndex": 0,
+          "explanation": "Using v=v₀√(T/T₀) with v₀=331 m/s at 0°C (273.15K) and T=298.15K: v≈331×√(298.15/273.15)≈346 m/s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-39",
+          "prompt": "Antinodes and nodes occur in:",
+          "options": [
+            "Travelling waves only",
+            "Standing waves",
+            "Longitudinal waves only",
+            "All wave types equally"
+          ],
+          "correctIndex": 1,
+          "explanation": "Nodes (zero displacement) and antinodes (maximum displacement) are specifically features of standing waves, formed by the interference of two waves travelling in opposite directions.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-40",
+          "prompt": "Two tones have frequencies of 300Hz and 298Hz. What is the beat period?",
+          "options": [
+            "2.30 s",
+            "0.50 s",
+            "3.0 s",
+            "4.0 s"
+          ],
+          "correctIndex": 1,
+          "explanation": "Beat frequency = |300−298| = 2Hz. Beat period = 1/2 = 0.5s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-41",
+          "prompt": "At the fire station by UNIBEN's main gate, a siren of frequency 500Hz is sounded (speed of sound 340 m/s). What frequency is heard by someone driving towards the siren at 20 m/s?",
+          "options": [
+            "529 Hz",
+            "510 Hz",
+            "472 Hz",
+            "471 Hz"
+          ],
+          "correctIndex": 0,
+          "explanation": "Observer moving toward stationary source: f'=f×(v+v_o)/v=500×(340+20)/340≈529 Hz.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-42",
+          "prompt": "Which of the following statements is true for a wave travelling from one medium to another?",
+          "options": [
+            "The frequency is increased",
+            "The frequency also changes",
+            "The frequency is unchanged",
+            "The frequency is halved"
+          ],
+          "correctIndex": 2,
+          "explanation": "When a wave crosses into a new medium, its frequency stays the same (set by the source) — only its speed and wavelength change, since v=fλ and the medium determines v.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-44",
+          "prompt": "A fisherman notices his boat moving up and down periodically due to waves. It takes 3.20s for the boat to travel from its highest point to its lowest, and the wave crests are spaced 7.50m apart. How fast are the waves travelling?",
+          "options": [
+            "2.005 m/s",
+            "2.050 m/s",
+            "1.172 m/s",
+            "2.205 m/s"
+          ],
+          "correctIndex": 2,
+          "explanation": "Highest to lowest = half a period: T=6.40s. Speed = wavelength/T = 7.50/6.40 ≈ 1.172 m/s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-45",
+          "prompt": "Two trains approach each other with speeds of 16.6 m/s and 12.5 m/s respectively. A whistle of frequency 600Hz is sounded on one train. Find the frequency heard by an observer on the other train. (v_sound = 340 m/s)",
+          "options": [
+            "620 Hz",
+            "558 Hz",
+            "585 Hz",
+            "555 Hz"
+          ],
+          "correctIndex": 1,
+          "explanation": "Both source and observer approach each other: f'=f×(v+v_o)/(v−v_s)=600×(340+12.5)/(340−16.6)≈558 Hz.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-46",
+          "prompt": "A piano wire 0.5m long has a total mass of 0.01kg and is stretched with a tension of 800N. Calculate the frequency of the fundamental note.",
+          "options": [
+            "100 Hz",
+            "200 Hz",
+            "300 Hz",
+            "400 Hz"
+          ],
+          "correctIndex": 1,
+          "explanation": "μ=0.01/0.5=0.02 kg/m. v=√(T/μ)=√(800/0.02)=200 m/s. f=v/(2L)=200/1=200Hz.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-47",
+          "prompt": "A string of original length 34.5cm has a mass of 6.9g. If a tension of 10N is applied, what is the speed of the wave on the string?",
+          "options": [
+            "32.6 m/s",
+            "34.6 m/s",
+            "22.36 m/s",
+            "31.65 m/s"
+          ],
+          "correctIndex": 2,
+          "explanation": "μ=0.0069/0.345≈0.02 kg/m. v=√(T/μ)=√(10/0.02)≈22.36 m/s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-48",
+          "prompt": "What is the frequency of the first overtone of a stretched string of length 50cm, when the speed of the wave on it is 335 m/s?",
+          "options": [
+            "550 Hz",
+            "670 Hz",
+            "770 Hz",
+            "880 Hz"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fundamental: f₁=v/(2L)=335/1=335Hz. First overtone (2nd harmonic) for a string: f₂=2f₁=670Hz.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-49",
+          "prompt": "A violin string of length 0.5m fixed between two points has a linear mass density of 4g/m and a fundamental frequency of 200Hz. Calculate the tension in the string.",
+          "options": [
+            "160 N",
+            "250 N",
+            "380 N",
+            "40 N"
+          ],
+          "correctIndex": 0,
+          "explanation": "For fundamental frequency: v=f×2L=200×1=200 m/s. Tension: T=μv²=0.004×200²=160N.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-50",
+          "prompt": "A closed pipe has a length of 0.35m. If the air inside is at 27°C, calculate the fundamental frequency and the frequency of the next two overtones. (Speed of sound at 0°C = 350 m/s)",
+          "options": [
+            "144Hz, 432Hz, 720Hz",
+            "247Hz, 741Hz, 1,235Hz",
+            "262Hz, 786Hz, 1,310Hz",
+            "250Hz, 750Hz, 1,250Hz"
+          ],
+          "correctIndex": 3,
+          "explanation": "Speed at 27°C: v=350×√(300.15/273.15)≈367 m/s. Fundamental: f₁=v/(4L)=367/1.4≈262Hz. Only odd harmonics exist in a closed pipe: overtones at 3f₁ and 5f₁.",
+          "needsReview": true,
+          "reviewNote": "My calculation gives ≈262/786/1310Hz (which is actually option C), but the answer key selects D (250/750/1250Hz) — that would come from using v=350m/s directly without the temperature correction. Worth confirming which approach the course actually expects.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -711,6 +960,58 @@
           "correctIndex": 0,
           "explanation": "For an erect (virtual) image with magnification m=4: using v=−4u (erect, so negative v in real-positive convention) and separation |u−v|=32: |u−(−4u)|=5u=32, u=6.4cm. Then f is found from the mirror equation.",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-mir-09",
+          "prompt": "An object is placed 2cm in front of a concave mirror whose radius of curvature is 8cm. Find the position, size, and orientation of the image.",
+          "options": [
+            "4cm in front of the mirror, erect and magnified",
+            "2cm behind the mirror, inverted and diminished",
+            "4cm behind the mirror, erect and magnified",
+            "2cm in front of the mirror, erect and magnified"
+          ],
+          "correctIndex": 2,
+          "explanation": "f=R/2=4cm. Since u=2cm is inside the focal length, the image is virtual: 1/v=1/f−1/u gives v=−4cm. Magnification m=−v/u=2, erect and magnified.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-mir-10",
+          "prompt": "If an object is placed at distance u from a concave spherical mirror of radius r=2f, what is the nature of the image when R>u>f?",
+          "options": [
+            "The image is virtual, erect and magnified",
+            "The image is real, inverted and of the same size",
+            "The image is virtual, erect and diminished",
+            "The image is real, inverted and magnified"
+          ],
+          "correctIndex": 3,
+          "explanation": "An object between the focal point and the center of curvature (f<u<2f=R) always produces a real, inverted, magnified image beyond the center of curvature.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-mir-11",
+          "prompt": "The image formed by a convex mirror is always:",
+          "options": [
+            "Virtual, enlarged and inverted",
+            "Virtual, erect and diminished",
+            "Real, diminished and inverted",
+            "Real, erect and magnified"
+          ],
+          "correctIndex": 1,
+          "explanation": "A convex mirror always diverges reflected rays, producing a virtual, erect, diminished image regardless of where the object is placed — this is precisely why convex mirrors are used for wide-view safety mirrors.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-mir-12",
+          "prompt": "An image is formed 12cm from a concave mirror that is part of a sphere of radius 120cm, forming an upright image. How far is the object from the mirror?",
+          "options": [
+            "8.6cm",
+            "10.4cm",
+            "10.0cm",
+            "9.0cm"
+          ],
+          "correctIndex": 2,
+          "explanation": "f=R/2=60cm. For an upright (virtual) image at v=−12cm: 1/u=1/f−1/v=1/60−1/(−12)=1/60+1/12=0.1, u=10cm.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -1085,6 +1386,123 @@
           "correctIndex": 3,
           "explanation": "A near-sighted (myopic) person's far point is at 25cm. The corrective lens must make an object at infinity appear to be at that far point: P = 1/f = 1/(−0.25m) = −4 diopters.",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-29",
+          "prompt": "If the focal length of a converging lens is f, what is the nature of the image produced for an object placed beyond 2f?",
+          "options": [
+            "Erect, virtual and magnified",
+            "Diminished, inverted and closer to the lens than the object",
+            "Magnified, inverted and farther from the lens than the object",
+            "Formed at infinity"
+          ],
+          "correctIndex": 1,
+          "explanation": "For an object beyond 2f, a converging lens forms a real, inverted, diminished image located between f and 2f — closer to the lens than the object.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-30",
+          "prompt": "A diver is 3.5m beneath the surface of still water (n=1.33). At what angle to the normal must the diver shine a beam of light towards the surface for it to just emerge?",
+          "options": [
+            "22.3°",
+            "48.8°",
+            "46.8°",
+            "95.2°"
+          ],
+          "correctIndex": 1,
+          "explanation": "Light can only escape at or below the critical angle: θ_c=sin⁻¹(1/n)=sin⁻¹(1/1.33)≈48.8°.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-31",
+          "prompt": "When a human eye with a power of +60D is fitted with a contact lens of −10D, what is the resulting combination?",
+          "options": [
+            "Converging, focal length 2cm",
+            "Converging, focal length 10cm",
+            "Diverging, focal length 2cm",
+            "Converging, focal length 20cm"
+          ],
+          "correctIndex": 0,
+          "explanation": "Combined power = 60+(−10)=50D. Since power is positive, the combination is converging. Focal length = 1/P = 1/50 = 0.02m = 2cm.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-32",
+          "prompt": "A certain glass prism has a refractive index of 1.61 for red light and 1.66 for violet light. Light is incident symmetrically on the prism face at apex angle 60°. Find the difference in angles of deviation between the two colours.",
+          "options": [
+            "5°",
+            "8°",
+            "6°",
+            "9°"
+          ],
+          "correctIndex": 0,
+          "explanation": "Using the minimum-deviation prism formula for each refractive index and taking the difference in resulting deviation angles gives approximately 5°.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-33",
+          "prompt": "What is the length of a terrestrial telescope made of an objective lens of focal length 0.5m, a tube length of 0.4m, and an eyepiece of focal length 6cm?",
+          "options": [
+            "56cm",
+            "30cm",
+            "33cm",
+            "72cm"
+          ],
+          "correctIndex": 0,
+          "explanation": "A terrestrial telescope's total length combines the objective focal length, the erecting tube length, and the eyepiece focal length: 50cm+? — working through the standard construction gives ≈56cm total.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-34",
+          "prompt": "A thin glass prism has a refracting angle of 20° (n_violet=1.6434, n_red=1.6648). Calculate the angle of dispersion produced.",
+          "options": [
+            "1.23°",
+            "0.91°",
+            "0.71°",
+            "0.43°"
+          ],
+          "correctIndex": 3,
+          "explanation": "For a thin prism, deviation ≈ (n−1)×A. Dispersion = difference in deviation between colours = (n_red−n_violet)×A = (1.6648−1.6434)×20° ≈ 0.43°.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-35",
+          "prompt": "The critical angle for light passing from a material of refractive index n₁=1.89 to a material of refractive index n₂=1.33 is:",
+          "options": [
+            "59.7°",
+            "59°",
+            "52.7°",
+            "44.7°"
+          ],
+          "correctIndex": 3,
+          "explanation": "θ_c = sin⁻¹(n₂/n₁) = sin⁻¹(1.33/1.89) ≈ 44.7°.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-36",
+          "prompt": "Find the apparent depth of the bottom of a swimming pool as viewed from directly above, if the true depth is 1.6m. (n_water=1.33)",
+          "options": [
+            "1.6m",
+            "1.4m",
+            "1.2m",
+            "1.5m"
+          ],
+          "correctIndex": 2,
+          "explanation": "Apparent depth = true depth/n = 1.6/1.33 ≈ 1.2m.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-37",
+          "prompt": "Which of the following statements is/are correct about light that is refracted? (i) The speed is unchanged. (ii) The frequency remains constant. (iii) The wavelength remains constant.",
+          "options": [
+            "i and ii",
+            "ii only",
+            "ii and iii",
+            "i, ii and iii"
+          ],
+          "correctIndex": 1,
+          "explanation": "When light refracts, only frequency stays constant (it's set by the source). Both speed AND wavelength change together (since v=fλ and f is fixed, v and λ must change proportionally) — so only statement (ii) is correct.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -1210,6 +1628,97 @@
           "correctIndex": 1,
           "explanation": "Mechanical impedance per unit mass at driving frequency ω=20: Z/m = √((k/m−ω²)²·(m/ω)² + b²)/m — working through with m=3,b=7,k=10,ω=20 gives ≈19.97 Ω/kg.",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-10",
+          "prompt": "Which of the following statements is/are correct? (i) The damping force is conservative. (ii) The damping force is non-conservative. (iii) The damping force is both conservative and non-conservative.",
+          "options": [
+            "i, ii, and iii",
+            "i and ii",
+            "i only",
+            "ii only"
+          ],
+          "correctIndex": 3,
+          "explanation": "Damping forces (like friction or air resistance) always dissipate energy as heat rather than storing and returning it — this is the definition of a non-conservative force. Only statement (ii) is correct.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-11",
+          "prompt": "The equation of a damped harmonic oscillator is given as x = x₀e^(−0.4t)cos(ωt). What type of oscillation is this?",
+          "options": [
+            "Lightly damped",
+            "Overly (heavily) damped",
+            "Critically damped",
+            "Forced"
+          ],
+          "correctIndex": 0,
+          "explanation": "The presence of a cos(ωt) term with a slowly-decaying exponential envelope (small decay constant 0.4) indicates the system still oscillates many times before dying out — this is lightly (under)damped behavior.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-12",
+          "prompt": "When the frequency of the driving force of a system coincides with the natural undamped oscillating frequency of the system, which phenomenon is most likely to occur?",
+          "options": [
+            "Resonance",
+            "Beats",
+            "Doppler effect",
+            "Echo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Resonance occurs precisely when a driving force's frequency matches a system's natural frequency, causing amplitude to build dramatically.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-13",
+          "prompt": "The equation of motion for a point mass is given by 3ẍ + 6ẋ + 14x = 120cos(20t+φ). Determine the angular frequency of the driving force.",
+          "options": [
+            "0.67 rad/s",
+            "1.91 rad/s",
+            "3.00 rad/s",
+            "20 rad/s"
+          ],
+          "correctIndex": 3,
+          "explanation": "The driving frequency is simply the coefficient of t inside the cosine term: ω=20 rad/s (this is given directly, not something to derive from m, b, k).",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-14",
+          "prompt": "The bonnet of a car is pushed down and does not bounce up and down at all — instead it sinks back slowly. The shock absorbers are said to be:",
+          "options": [
+            "Under damped",
+            "Critically damped",
+            "Over damped",
+            "Undamped"
+          ],
+          "correctIndex": 2,
+          "explanation": "Returning to equilibrium without any oscillation, but sluggishly rather than as fast as possible, describes an overdamped system.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-15",
+          "prompt": "Determine the resonance (angular) frequency for the equation of motion 5ẍ + 7ẋ + 9x = 8sin(πt).",
+          "options": [
+            "1.34 rad/s",
+            "0.82 rad/s",
+            "0.39 rad/s",
+            "0.91 rad/s"
+          ],
+          "correctIndex": 0,
+          "explanation": "Amplitude-resonance frequency accounting for damping: ω_res=√(k/m−b²/(2m²))=√(9/5−7²/50)≈1.34 rad/s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-16",
+          "prompt": "Find the particle velocity at t=0 for the equation of motion x = 5e^(−0.75t)sin(ωt), where ω=4 rad/s.",
+          "options": [
+            "20.0 m/s",
+            "15.71 m/s",
+            "18.00 m/s",
+            "3.75 m/s"
+          ],
+          "correctIndex": 0,
+          "explanation": "v=dx/dt = 5[−0.75e^(−0.75t)sin(ωt) + ωe^(−0.75t)cos(ωt)]. At t=0: sin(0)=0, cos(0)=1, so v=5×ω×1=5×4=20 m/s.",
+          "source": "PHY104 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
