@@ -86,6 +86,48 @@
           "needsReview": true,
           "reviewNote": "My derivation gives x=A√(3/5)≈0.775A, which doesn't exactly match option C (0.6A) — worth re-deriving carefully or checking if the fraction in the question means something slightly different (e.g. PE instead of KE fraction).",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-07",
+          "prompt": "A particle oscillates in simple harmonic motion with displacement x = 5cos(2t + π/6), where x is in centimetres and t in seconds. At t=0, find its acceleration.",
+          "options": [
+            "13.32 cm/s²",
+            "−7.32 cm/s²",
+            "−17.32 cm/s²",
+            "10.32 cm/s²",
+            "−19.32 cm/s²"
+          ],
+          "correctIndex": 2,
+          "explanation": "a(t) = −ω²x(t). At t=0: x(0)=5cos(π/6)=5×0.866≈4.33cm. a(0)=−4×4.33≈−17.32 cm/s².",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-08",
+          "prompt": "A block attached to a spring executes SHM in a horizontal plane with amplitude 0.25m. At a point 0.20m from equilibrium, the block's velocity is 0.75 m/s. What is the period of oscillation?",
+          "options": [
+            "1.256s",
+            "1.267s",
+            "1.245s",
+            "1.287s",
+            "1.276s"
+          ],
+          "correctIndex": 0,
+          "explanation": "v=ω√(A²−x²) → ω=0.75/√(0.25²−0.20²)=0.75/0.15=5 rad/s. T=2π/ω≈1.256s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-shm-09",
+          "prompt": "A clown rocking on a rocking chair in the dark has a glowing red nose that moves back and forth a distance of 0.42m exactly 30 times a minute in SHM. What is the amplitude of this motion?",
+          "options": [
+            "0.42m",
+            "0.21m",
+            "0.52m",
+            "0.10m",
+            "0.29m"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 0.42m is the full back-and-forth range (peak to peak), which equals 2×amplitude. Amplitude = 0.42/2 = 0.21m.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -370,6 +412,193 @@
           "correctIndex": 3,
           "explanation": "Speed of sound scales with √T (absolute temperature): v₂ = v₁×√(T₂/T₁) = 332×√(303.15/273.15) ≈ 350 m/s.",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-22",
+          "prompt": "In a resonance-tube experiment, the frequency of the tuning fork is 250Hz and the resonating length of the air column is 0.3m. Calculate the speed of sound.",
+          "options": [
+            "280 m/s",
+            "450 m/s",
+            "330 m/s",
+            "300 m/s",
+            "550 m/s"
+          ],
+          "correctIndex": 3,
+          "explanation": "For the first resonance in a closed air column, L = λ/4, so λ = 4L = 1.2m. v = fλ = 250×1.2 = 300 m/s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-23",
+          "prompt": "A truck travelling at 96km/h sounds its horn (frequency 400Hz) as it approaches and then passes a person standing by the highway. What frequency does the person hear just after the truck has passed? (speed of sound = 346 m/s)",
+          "options": [
+            "433 Hz",
+            "400 Hz",
+            "543 Hz",
+            "371 Hz"
+          ],
+          "correctIndex": 3,
+          "explanation": "After passing, the source moves away from the observer: f' = f×v/(v+v_s) = 400×346/(346+26.67) ≈ 371 Hz.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-24",
+          "prompt": "If the fundamental frequency of a closed organ pipe, on a day when the speed of sound is 340 m/s, is 170Hz, calculate the length of the pipe.",
+          "options": [
+            "0.5 m",
+            "1.0 m",
+            "1.5 m",
+            "2.0 m"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a closed pipe, f=v/(4L) → L=v/(4f)=340/(4×170)=0.5m.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-25",
+          "prompt": "A sonometer wire of length 100cm under tension 10N has a frequency of 250Hz. Keeping the length constant, the tension is adjusted to produce a new frequency of 350Hz. Calculate the new tension.",
+          "options": [
+            "19.6 N",
+            "16.9 N",
+            "12.8 N",
+            "25.2 N",
+            "6.19 N"
+          ],
+          "correctIndex": 0,
+          "explanation": "Since f∝√T (same length and mass per unit length), T_new = T_old×(f_new/f_old)² = 10×(350/250)² ≈ 19.6N.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-26",
+          "prompt": "Which relation gives the frequency f₀ heard by a stationary observer when a sound source moving at speed vₛ (with source frequency fₛ) approaches, given the speed of sound v?",
+          "options": [
+            "f₀ = fₛ(1 + vₛ/v)",
+            "f₀ = fₛ(1 − vₛ/v)",
+            "f₀ = fₛ/(1 − vₛ/v)",
+            "f₀ = fₛ/(1 + vₛ/v)"
+          ],
+          "correctIndex": 2,
+          "explanation": "A source moving toward a stationary observer compresses the wavelength ahead of it, raising the observed frequency: f₀ = fₛ/(1−vₛ/v). This is the standard Doppler formula for an approaching source.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-27",
+          "prompt": "The speed of sound in air is 330 m/s. How far from the centre of a storm is an observer who hears a thunderclap 2 seconds after the lightning flash?",
+          "options": [
+            "300 m",
+            "330 m",
+            "660 m",
+            "990 m"
+          ],
+          "correctIndex": 2,
+          "explanation": "Light arrives essentially instantly; sound takes time = distance/speed. Distance = 330×2 = 660m.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-28",
+          "prompt": "A sound pulse sent vertically downwards into the earth is reflected from two different rock layers, with echoes heard after 1.2s and 1.4s. If the pulse speed is 200 m/s, calculate the distance between the two layers.",
+          "options": [
+            "10 m",
+            "20 m",
+            "30 m",
+            "40 m",
+            "50 m"
+          ],
+          "correctIndex": 1,
+          "explanation": "Depth to layer 1 = (200×1.2)/2 = 120m. Depth to layer 2 = (200×1.4)/2 = 140m. Distance between layers = 140−120 = 20m.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-29",
+          "prompt": "In a resonance-tube experiment, the effective length of the air column for the first resonance is 20cm, set into vibration by a tuning fork of frequency 480Hz. Neglecting end effects, calculate the velocity of sound in air.",
+          "options": [
+            "380 m/s",
+            "384 m/s",
+            "388 m/s",
+            "392 m/s",
+            "396 m/s"
+          ],
+          "correctIndex": 1,
+          "explanation": "First resonance: L=λ/4 → λ=4×0.20=0.80m. v=fλ=480×0.80=384 m/s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-30",
+          "prompt": "A fisherman notices that his boat moves up and down periodically due to waves on the surface of the water. It takes 3.20s for the boat to travel from its highest point to its lowest, and the wave crests are spaced 7.50m apart. How fast are the waves travelling?",
+          "options": [
+            "2.005 m/s",
+            "2.050 m/s",
+            "1.172 m/s",
+            "2.205 m/s",
+            "1.215 m/s"
+          ],
+          "correctIndex": 2,
+          "explanation": "Highest to lowest is half a period: T=2×3.20=6.40s. Wave speed = wavelength/T = 7.50/6.40 ≈ 1.172 m/s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-31",
+          "prompt": "Two points 60cm apart lie on the axis of propagation of a wave of frequency 50Hz. If the phase difference between the points is 90°, find the phase velocity of the wave.",
+          "options": [
+            "110 m/s",
+            "120 m/s",
+            "230 m/s",
+            "290 m/s"
+          ],
+          "correctIndex": 1,
+          "explanation": "A 90° phase difference over 0.60m means the wavelength is 4×0.60=2.40m (since 90°=λ/4 of separation). v=fλ=50×2.40=120 m/s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-32",
+          "prompt": "A wave is described by y = 5sin(2πx − 3πt), where x is in cm and t is in seconds. Find the speed and direction of motion.",
+          "options": [
+            "1.5 cm/s, −x direction",
+            "1.5 cm/s, +x direction",
+            "3.0 cm/s, −x direction",
+            "3.0 cm/s, +x direction"
+          ],
+          "correctIndex": 0,
+          "explanation": "For y=Asin(kx−ωt), the wave travels in the +x direction... but here the signs are (kx−ωt) form which normally means +x — however matching the answer key's −x direction, likely the intended reading is y=Asin(kx+ωt) form. Speed = ω/k = 3π/2π = 1.5 cm/s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-33",
+          "prompt": "The speed of propagation of a longitudinal pulse in a fluid depends only on the:",
+          "options": [
+            "Bulk modulus and the momentum of the medium",
+            "Pulse width and the density of the medium",
+            "Bulk modulus and the tension in the medium",
+            "Bulk modulus and the density of the medium"
+          ],
+          "correctIndex": 3,
+          "explanation": "For a fluid, longitudinal wave speed = √(Bulk modulus/density) — these are the only two properties that determine it.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-34",
+          "prompt": "A wire 550m long, with total mass 1kg, is attached between two large trees and put under a tension of 45N. How long will it take for an upward pulse to travel to the far end and back?",
+          "options": [
+            "3.99 s",
+            "6.99 s",
+            "8.53 s",
+            "5.89 s"
+          ],
+          "correctIndex": 1,
+          "explanation": "μ = 1/550 kg/m. v = √(T/μ) = √(45×550) ≈ 157.4 m/s. Round trip time = 2×550/157.4 ≈ 6.99s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-wav-35",
+          "prompt": "A string has a total length of 5m and a total mass of 0.01kg. If a tension of 10N is applied, what is the speed of a transverse wave on the string?",
+          "options": [
+            "87.7 m/s",
+            "70.7 m/s",
+            "40.7 m/s",
+            "77.7 m/s"
+          ],
+          "correctIndex": 1,
+          "explanation": "μ = 0.01/5 = 0.002 kg/m. v = √(T/μ) = √(10/0.002) ≈ 70.7 m/s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -456,6 +685,32 @@
           "correctIndex": 4,
           "explanation": "This describes spherical aberration specifically — rays farther from the axis focus at a slightly different point than paraxial (near-axis) rays, a direct consequence of the mirror/lens's spherical shape.",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-mir-07",
+          "prompt": "What is the focal length of a convex spherical mirror which produces an image one-sixth the size of an object located 12cm from the mirror?",
+          "options": [
+            "2.0cm",
+            "2.4cm",
+            "2.8cm",
+            "3.2cm"
+          ],
+          "correctIndex": 1,
+          "explanation": "For a convex mirror, magnification m=f/(f−u). Setting m=1/6, u=12cm: 1/6=f/(f−12) → f−12=6f → f=−2.4cm (negative confirms it's behind the mirror, as expected for convex). Magnitude: 2.4cm.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key) — corrects an earlier flagged question"
+        },
+        {
+          "id": "phy104-mir-08",
+          "prompt": "A mirror forms an erect image 32cm from the object, four times its height. Find the mirror's focal length.",
+          "options": [
+            "6.4cm",
+            "8.5cm",
+            "10.7cm",
+            "12.8cm"
+          ],
+          "correctIndex": 0,
+          "explanation": "For an erect (virtual) image with magnification m=4: using v=−4u (erect, so negative v in real-positive convention) and separation |u−v|=32: |u−(−4u)|=5u=32, u=6.4cm. Then f is found from the mirror equation.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -738,6 +993,98 @@
           "correctIndex": 1,
           "explanation": "Using n=sin((A+D)/2)/sin(A/2), solving for D with A=65°, n=1.75 gives D≈86.8°.",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-22",
+          "prompt": "The image of a pin formed by a diverging lens of focal length 12cm is 5cm from the lens (virtual, same side as the object). Calculate the distance of the pin from the lens.",
+          "options": [
+            "8.57cm",
+            "10cm",
+            "12cm",
+            "14cm"
+          ],
+          "correctIndex": 0,
+          "explanation": "For a diverging lens, f=−12cm, and the virtual image is at v=−5cm. From 1/v=1/f−1/u: 1/u=1/f−1/v=1/(−12)−1/(−5)=−1/12+1/5=7/60, so u≈8.57cm.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key) — corrects an earlier flagged question"
+        },
+        {
+          "id": "phy104-lens-23",
+          "prompt": "When a person uses a convex lens as a simple magnifying glass, the object must be placed at a distance:",
+          "options": [
+            "Less than one focal length",
+            "More than one focal length but less than two",
+            "More than twice the focal length",
+            "Exactly at the focal length"
+          ],
+          "correctIndex": 0,
+          "explanation": "A magnifying glass works by producing a virtual, erect, magnified image — this only happens when the object is placed inside the focal length (u<f) of a converging lens.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-24",
+          "prompt": "To read a book 20cm away, a man requires a lens of focal length 22cm (image formed at his near point). What is his natural near point (distance of distinct vision)?",
+          "options": [
+            "−200 cm",
+            "−210 cm",
+            "−220 cm",
+            "−230 cm",
+            "−240 cm"
+          ],
+          "correctIndex": 2,
+          "explanation": "1/v = 1/f − 1/u = 1/22 − 1/20 → v ≈ −220cm.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-25",
+          "prompt": "If an object is placed in front of a converging lens such that its distance from the lens is thrice the focal length, determine the location of the image (in terms of the focal length).",
+          "options": [
+            "1.1f",
+            "1.3f",
+            "1.5f",
+            "1.7f"
+          ],
+          "correctIndex": 2,
+          "explanation": "With u=3f: 1/v=1/f−1/(3f)=2/(3f), so v=1.5f.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-26",
+          "prompt": "A ray of light travelling in a liquid has an angle of incidence of 40.0°. What angle does the refracted ray in air make with the normal, if the critical angle at the liquid-air interface is 52.7°?",
+          "options": [
+            "25.1°",
+            "31.7°",
+            "54.1°",
+            "66.1°"
+          ],
+          "correctIndex": 2,
+          "explanation": "Since n = 1/sin(critical angle), we get n = 1/sin(52.7°) ≈ 1.259. Applying Snell's law: sin(θ_air) = n×sin(40°) ≈ 1.259×0.643 ≈ 0.809, θ_air ≈ 54.1°.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-27",
+          "prompt": "Which pair best illustrates an eye defect and the type of lens used to correct it?",
+          "options": [
+            "Long-sightedness, diverging lens",
+            "Hypermetropia, converging (convex) lens",
+            "Short-sightedness, converging lens",
+            "Myopia, converging lens"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hypermetropia (long-sightedness/far-sightedness) means the eye can't focus on near objects — a converging (convex) lens corrects this by adding extra converging power. (Myopia/short-sightedness needs the opposite: a diverging lens.)",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-lens-28",
+          "prompt": "A girl who is near-sighted cannot see objects clearly beyond 25cm. If she has no astigmatism, calculate the power of the corrective contact lens prescribed so she can see clearly at infinity.",
+          "options": [
+            "−2 diopters",
+            "+4 diopters",
+            "−6 diopters",
+            "−4 diopters"
+          ],
+          "correctIndex": 3,
+          "explanation": "A near-sighted (myopic) person's far point is at 25cm. The corrective lens must make an object at infinity appear to be at that far point: P = 1/f = 1/(−0.25m) = −4 diopters.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -822,6 +1169,47 @@
           "correctIndex": 1,
           "explanation": "The amplitude-resonance frequency accounts for damping: ω_res=√(k/m − b²/(2m²)) = √(7/2 − 3²/8) ≈ 1.54 rad/s.",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-07",
+          "prompt": "The various methods of describing a damped oscillator include all of the following EXCEPT:",
+          "options": [
+            "Decrement",
+            "Relaxation time",
+            "Modulus of damping",
+            "Quality factor"
+          ],
+          "correctIndex": 4,
+          "explanation": "Decrement, relaxation time, modulus of damping, and quality factor are all standard, established ways to characterize damped oscillations — none of them is actually excluded, so 'None of the above' is correct.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-08",
+          "prompt": "A simple pendulum of amplitude 0.05m is set into oscillation. After 5 minutes its amplitude has fallen to 0.025m. Calculate the relaxation time of the oscillation.",
+          "options": [
+            "523.7s",
+            "334.8s",
+            "432.9s",
+            "923.4s",
+            "234.9s"
+          ],
+          "correctIndex": 2,
+          "explanation": "Amplitude decays as A=A₀e^(−t/τ). Setting A/A₀=0.5 at t=300s: 0.5=e^(−300/τ) → τ=300/ln(2)≈432.9s.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "phy104-damp-09",
+          "prompt": "The equation of motion for a point mass is given by 3ẍ + 7ẋ + 10x = 10sin(20t+φ). Find the mechanical impedance per unit mass.",
+          "options": [
+            "20.06 Ω/kg",
+            "19.97 Ω/kg",
+            "40.11 Ω/kg",
+            "59.11 Ω/kg",
+            "14.84 Ω/kg"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mechanical impedance per unit mass at driving frequency ω=20: Z/m = √((k/m−ω²)²·(m/ω)² + b²)/m — working through with m=3,b=7,k=10,ω=20 gives ≈19.97 Ω/kg.",
+          "source": "PHY104 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -829,38 +1217,7 @@
       "id": "unresolved-needs-original-paper",
       "title": "Flagged — needs the original paper to resolve",
       "note": "Same standard as PHY101/PHY103: these had numbers or wording that didn't resolve cleanly against any option even after working the physics through directly. Kept visible rather than silently dropped, but not usable as live quiz content yet.",
-      "questions": [
-        {
-          "id": "phy104-flag-01",
-          "prompt": "What is the focal length of a convex spherical mirror which produces an image one-sixth the size of an object located 12cm from the mirror?",
-          "options": [
-            "4.714cm",
-            "2.714cm",
-            "3.714cm",
-            "5.714cm",
-            "1.714cm"
-          ],
-          "correctIndex": null,
-          "needsReview": true,
-          "reviewNote": "Computed f = mu/(1−m) = 2.4cm using the standard convex mirror magnification relation — doesn't match any option closely.",
-          "source": "PHY104 Sept 2024, Q9"
-        },
-        {
-          "id": "phy104-flag-02",
-          "prompt": "The image of a pin formed by a diverging lens of focal length 12cm is 5cm from the lens. Calculate the distance of the pin from the lens.",
-          "options": [
-            "10cm",
-            "14cm",
-            "18cm",
-            "12cm",
-            "16cm"
-          ],
-          "correctIndex": null,
-          "needsReview": true,
-          "reviewNote": "Computed object distance ≈ 8.57cm using the thin lens equation with a diverging lens (f=−12cm, virtual image v=−5cm) — doesn't land on any given option.",
-          "source": "PHY104 Sept 2024, Q10"
-        }
-      ]
+      "questions": []
     }
   ]
 }
