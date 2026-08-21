@@ -1,0 +1,18 @@
+{
+  "courseCode": "CHM101",
+  "note": "Notes for CHM101 topics as they're built out.",
+  "topics": [
+    {
+      "id": "mole-stoichiometry",
+      "title": "The Mole Concept & Stoichiometry",
+      "notes": "The mole is chemistry's way of counting atoms and molecules in numbers small enough to work with — one mole is exactly 6.022×10²³ particles (Avogadro's number), chosen specifically so that a substance's molar mass in grams contains that many particles. This is the bridge between the microscopic world (individual atoms) and the macroscopic world (grams on a scale) that makes every stoichiometry calculation possible.\n\nMolar mass is found by summing the atomic masses of every atom in a formula — for a compound like ZnSO₄·7H₂O, don't forget the water of crystallization; it counts fully toward the molar mass. Moles = mass/molar mass is the single most-used formula in this topic, and nearly every 'how many moles/grams' question is this equation rearranged for whichever variable is missing.\n\nEmpirical formulas (the simplest whole-number ratio of atoms) are found from percentage composition by converting each percentage to moles (using each element's atomic mass), then dividing by the smallest mole value to get a ratio. If that ratio isn't close to whole numbers, multiply all values by the same small integer until it is.\n\nMolecular formulas are always a whole-number multiple of the empirical formula. Once you know the compound's actual molar mass, divide it by the empirical formula's mass to find that multiplier, then multiply every subscript in the empirical formula by it.\n\nKEY FORMULA: moles = mass/molar mass, and molecular formula multiplier = molecular mass/empirical formula mass.",
+      "keyFormula": "n = mass / molar mass"
+    },
+    {
+      "id": "gas-laws",
+      "title": "Gas Laws",
+      "notes": "Gas behavior is remarkably predictable because gas particles are far apart and interact weakly — this is why a handful of simple laws describe almost any gas under normal conditions. The ideal gas law, PV=nRT, unifies all of them: pressure, volume, and temperature are all connected through the number of moles present and the gas constant R.\n\nWhen comparing a gas under two different sets of conditions (common in past questions), the combined gas law P₁V₁/T₁ = P₂V₂/T₂ is usually faster than re-deriving from PV=nRT each time — it's just PV=nRT with n and R held constant and cancelled out. Always convert temperature to Kelvin before using any gas law; using Celsius directly is the single most common error in this topic.\n\nDalton's Law of partial pressures says that in a gas mixture, each component contributes a pressure proportional to its mole fraction: P_component = (mole fraction) × P_total. This is why 'atmosphere composition' questions reduce to simple multiplication once you have the percentages.\n\nGas density connects directly to molar mass through the ideal gas law: density = PM/(RT). This is a favorite exam pattern — rearranging PV=nRT with n=mass/M gives this relationship, letting you find an unknown gas's molar mass from a measured density, or vice versa.\n\nAt Standard Temperature and Pressure (STP: 0°C, 1 atm), one mole of any ideal gas occupies 22.4L — a constant worth memorizing outright, since it shows up in nearly every 'volume of gas produced' question.\n\nKEY FORMULA: PV = nRT, and at STP: 1 mol gas = 22.4L.",
+      "keyFormula": "PV = nRT"
+    }
+  ]
+}

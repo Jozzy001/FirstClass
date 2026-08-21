@@ -8,7 +8,6 @@ const placeholderCourses = [
   { code: 'MTH101', title: 'Elementary Mathematics I', faculty: 'Sciences', chaptersCompleted: 0, chaptersTotal: 12 },
   { code: 'ENG102', title: 'Engineering Drawing', faculty: 'Engineering', chaptersCompleted: 0, chaptersTotal: 9 },
   { code: 'ECO101', title: 'Principles of Economics I', faculty: 'Social sciences', chaptersCompleted: 0, chaptersTotal: 8 },
-  { code: 'CHM101', title: 'General Chemistry I', faculty: 'Sciences', chaptersCompleted: 0, chaptersTotal: 12 },
   { code: 'GST101', title: 'Use of English', faculty: 'General studies', chaptersCompleted: 0, chaptersTotal: 10 }
 ]
 

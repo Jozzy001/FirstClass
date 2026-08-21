@@ -4,6 +4,8 @@ import phy103Notes from './phy103_notes.json'
 import phy103Questions from './phy103_questions.json'
 import phy104Notes from './phy104_notes.json'
 import phy104Questions from './phy104_questions.json'
+import chm101Notes from './chm101_notes.json'
+import chm101Questions from './chm101_questions.json'
 
 // Content is bundled directly in the app — no database read needed to
 // browse notes or take quizzes. User accounts, scores, streaks, and CGPA
@@ -53,6 +55,13 @@ const courses = {
     faculty: 'Sciences',
     creditUnits: 2,
     topics: buildCourseTopics(phy104Notes, phy104Questions)
+  },
+  CHM101: {
+    code: 'CHM101',
+    title: 'General Chemistry I',
+    faculty: 'Sciences',
+    creditUnits: 2,
+    topics: buildCourseTopics(chm101Notes, chm101Questions)
   }
 }
 
