@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
+import { recordTopicPractice } from '../lib/store.js'
 
 export default function Practice() {
   const { code, topicId } = useParams()
@@ -43,6 +44,13 @@ export default function Practice() {
       setQIndex((i) => i + 1)
       setSelected(null)
     } else {
+      recordTopicPractice({
+        courseCode: course.code,
+        topicId: topic.id,
+        topicTitle: topic.title,
+        correct: correctCount,
+        total: topic.questions.length
+      })
       setFinished(true)
     }
   }

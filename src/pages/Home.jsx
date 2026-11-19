@@ -1,6 +1,9 @@
 import React from 'react'
 import CourseCard from '../components/CourseCard.jsx'
+import { Link } from 'react-router-dom'
 import { getAllCourses } from '../data/courseData.js'
+import { calculateGPA, classify } from '../lib/grading.js'
+import { getCourseScores } from '../lib/store.js'
 
 // MTH101/ENG102/etc are placeholders showing where future courses will
 // slot in once their content is built.
@@ -27,6 +30,14 @@ export default function Home() {
   }))
 
   const sampleCourses = [...realCourses, ...placeholderCourses]
+
+  // real scoreboard: the student's own latest test scores
+  const scores = getCourseScores()
+  const scored = getAllCourses()
+    .filter((c) => scores[c.code])
+    .map((c) => ({ courseCode: c.code, creditUnits: c.creditUnits, score: scores[c.code].latest.score }))
+  const gpa = calculateGPA(scored)
+  const cls = classify(gpa.gpa)
 
   return (
     <div>
@@ -77,24 +88,40 @@ export default function Home() {
 
             <div className="relative z-10">
               <div className="flex justify-between items-center mb-5">
-                <span className="font-mono text-[11px] text-white/60 uppercase tracking-wide">Overall mastery</span>
-                <span className="font-mono text-[11px] text-white/60">4 courses</span>
+                <span className="font-mono text-[11px] text-white/60 uppercase tracking-wide">Your scoreboard</span>
+                <span className="font-mono text-[11px] text-white/60">
+                  {scored.length} course{scored.length === 1 ? '' : 's'} tested
+                </span>
               </div>
-              <div className="font-display text-5xl font-bold leading-none mb-1">
-                78<span className="text-flame text-2xl">%</span>
-              </div>
-              <div className="text-xs text-white/60 mb-5">Up 12% this week</div>
-              {[
-                { code: 'MTH101', grade: '84%' },
-                { code: 'PHY101', grade: '61%' },
-                { code: 'CHM101', grade: '77%' },
-                { code: 'GST101', grade: '90%' }
-              ].map((row) => (
-                <div key={row.code} className="flex justify-between items-center py-2 border-t border-white/10 text-[13px]">
-                  <span className="font-mono text-[11.5px] text-white/60 w-16">{row.code}</span>
-                  <span className="font-mono">{row.grade}</span>
-                </div>
-              ))}
+              {gpa.gpa === null ? (
+                <>
+                  <div className="font-display text-3xl font-bold leading-tight mb-2">
+                    Take a test to start your CGPA
+                  </div>
+                  <div className="text-xs text-white/60 mb-5">
+                    Each course test is out of 100. Your grade and class appear here.
+                  </div>
+                  <Link to="/course/PHY101/test" className="inline-block bg-flame text-white px-4 py-2 rounded text-sm font-medium">
+                    Try a test
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <div className="font-display text-5xl font-bold leading-none mb-1">
+                    {gpa.gpa.toFixed(2)}<span className="text-flame text-2xl"> / 5</span>
+                  </div>
+                  <div className="text-xs text-white/60 mb-5">{cls?.name}</div>
+                  {scored.map((row) => (
+                    <div key={row.courseCode} className="flex justify-between items-center py-2 border-t border-white/10 text-[13px]">
+                      <span className="font-mono text-[11.5px] text-white/60 w-16">{row.courseCode}</span>
+                      <span className="font-mono">{row.score}/100</span>
+                    </div>
+                  ))}
+                  <Link to="/results" className="inline-block text-sm text-white/80 underline underline-offset-4 mt-4">
+                    Full result slip
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>

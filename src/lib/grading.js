@@ -53,3 +53,35 @@ export function findWeakTopics(attempts, threshold = 0.6) {
     .filter((a) => a.accuracy < threshold)
     .sort((a, b) => a.accuracy - b.accuracy)
 }
+
+/**
+ * Degree classification on the standard Nigerian 5.0 scale.
+ * Returns the class plus how far the student is from the next one up.
+ */
+const CLASSES = [
+  { min: 4.5, name: 'First Class' },
+  { min: 3.5, name: 'Second Class Upper' },
+  { min: 2.4, name: 'Second Class Lower' },
+  { min: 1.5, name: 'Third Class' },
+  { min: 1.0, name: 'Pass' },
+  { min: 0, name: 'Below Pass' }
+]
+
+export function classify(gpa) {
+  if (gpa === null || gpa === undefined) return null
+  const idx = CLASSES.findIndex((c) => gpa >= c.min)
+  const current = CLASSES[idx]
+  const next = idx > 0 ? CLASSES[idx - 1] : null
+  return {
+    name: current.name,
+    nextName: next ? next.name : null,
+    pointsToNext: next ? +(next.min - gpa).toFixed(2) : 0
+  }
+}
+
+/** Overall percentage = total correct / total answered, across a set of topic stats. */
+export function overallAccuracy(stats) {
+  const total = stats.reduce((s, t) => s + t.total, 0)
+  const correct = stats.reduce((s, t) => s + t.correct, 0)
+  return total ? Math.round((correct / total) * 100) : null
+}

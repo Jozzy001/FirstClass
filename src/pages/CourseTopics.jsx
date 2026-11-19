@@ -1,10 +1,13 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
+import { getCourseScores } from '../lib/store.js'
+import { scoreToGrade } from '../lib/grading.js'
 
 export default function CourseTopics() {
   const { code } = useParams()
   const course = getCourse(code)
+  const last = getCourseScores()[code]?.latest
 
   if (!course) {
     return (
@@ -22,6 +25,18 @@ export default function CourseTopics() {
       </div>
       <h1 className="font-display text-3xl font-semibold mb-2">{course.code}</h1>
       <p className="text-graphite/60 mb-10">{course.title}</p>
+
+      <div className="bg-graphite text-white rounded-2xl p-5 sm:p-6 mb-8 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div className="font-mono text-[11px] text-white/60 uppercase tracking-wide mb-1">Course test</div>
+          <div className="font-display text-lg font-semibold">
+            {last ? `Latest: ${last.score}/100 · Grade ${scoreToGrade(last.score).letter}` : 'Scored out of 100 · counts toward your CGPA'}
+          </div>
+        </div>
+        <Link to={`/course/${course.code}/test`} className="bg-flame text-white px-5 py-2.5 rounded font-medium text-sm">
+          {last ? 'Retake test' : 'Take the test'}
+        </Link>
+      </div>
 
       <div className="space-y-3">
         {course.topics.map((topic, i) => (

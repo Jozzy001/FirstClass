@@ -87,3 +87,11 @@ One per cross-course "exam" — the full result-slip experience.
 - Weak topics aren't a separate collection — they're derived on the fly from
   `topicResults` in test attempts via `findWeakTopics()`, so there's nothing
   to keep in sync.
+
+## Where results are stored today (important)
+Tests, practice runs and the in-progress test draft are saved **on the student's own device**
+(`src/lib/store.js`, browser localStorage), so scores, CGPA and weak topics work with no account
+and offline. Nothing about results is in Firestore yet. Consequence: results do not follow a
+student to another phone or browser. To add cloud sync later, mirror `recordTest` and
+`recordTopicPractice` into `users/{uid}/testAttempts` and `users/{uid}/topicResults`; no screen
+needs to change because every screen reads through `store.js`.

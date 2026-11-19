@@ -686,14 +686,15 @@
           "id": "phy103-thermo-13",
           "prompt": "For an ideal gas, the work done in an isothermal process is given as:",
           "options": [
-            "W = RT·ln(V₁/V₂)",
-            "W = RT·ln(V₂/V₁)",
-            "W = P(V₂−V₁)",
-            "W = nCᵥ(T₂−T₁)"
+            "W = nRT ln(V₂/V₁)",
+            "W = P(V₂ − V₁)",
+            "W = nCᵥ(T₂ − T₁)",
+            "W = 2nCᵥ(T₂ − T₁)"
           ],
           "correctIndex": 0,
-          "explanation": "This option lists the correct general form for isothermal work — though note the more commonly used version is W=RT·ln(V₂/V₁) for expansion; check the exact sign convention matches your course's notes.",
-          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)"
+          "explanation": "For an isothermal ideal-gas process, W = ∫P dV with P = nRT/V, which gives W = nRT ln(V₂/V₁). W = P(V₂ − V₁) is for constant pressure, and nCᵥ(T₂ − T₁) is the change in internal energy.",
+          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy103-thermo-14",

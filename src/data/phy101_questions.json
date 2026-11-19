@@ -273,26 +273,28 @@
           "prompt": "Which of the following has the same dimension as time?",
           "options": [
             "x/v",
-            "√(2x/a)",
-            "v/a",
+            "x/a",
+            "a/v",
             "vx"
           ],
           "correctIndex": 0,
-          "explanation": "x/v has dimension L/(LT⁻¹) = T, matching time directly. (Also v/a has dimension (LT⁻¹)/(LT⁻²)=T, so both A and C are dimensionally time — the answer key selects A.)",
-          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)"
+          "explanation": "x/v has dimension L ÷ (L·T⁻¹) = T, the dimension of time. x/a has dimension T², a/v has T⁻¹ and vx has L²T⁻¹.",
+          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)",
+          "sourceNote": "Reworked: the original option set had several time-dimension answers."
         },
         {
           "id": "phy101-kin-22",
           "prompt": "Which of the following equations of motion is dimensionally correct?",
           "options": [
-            "x = ut + at",
-            "v² = u² + 2at",
-            "s = xt + vt²",
-            "v² = u² + 2ax"
+            "s = ut + at",
+            "v = u + at²",
+            "s = ut + a/t",
+            "v² = u² + 2as"
           ],
-          "correctIndex": 4,
-          "explanation": "None of the first four options are dimensionally consistent as written (each has a term mismatched in dimension) — the standard correct kinematic equation v²=u²+2as isn't cleanly represented among these choices, so 'None of the above' is correct.",
-          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)"
+          "correctIndex": 3,
+          "explanation": "Check dimensions: in s = ut + at the term at has dimension L·T⁻¹, not L. In v = u + at² the term at² is L, not L·T⁻¹. In s = ut + a/t the term a/t is L·T⁻³. Only v² = u² + 2as is consistent: every term has dimension L²·T⁻².",
+          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)",
+          "sourceNote": "Reworked: the original paper listed more than one dimensionally valid equation."
         },
         {
           "id": "phy101-kin-23",
@@ -318,7 +320,9 @@
           ],
           "correctIndex": 1,
           "explanation": "Resolving each velocity into x,y components at its given angle and summing gives a resultant of approximately 2 m/s at 120°.",
-          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)"
+          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)",
+          "needsReview": true,
+          "reviewNote": "Components of the given velocities sum to about 2.6 m/s at about -19 deg, which matches neither the printed key (1 m/s, 120 deg) nor the earlier keyed option. Needs the original paper."
         },
         {
           "id": "phy101-kin-25",
@@ -344,11 +348,12 @@
             "175m",
             "205m"
           ],
-          "correctIndex": 3,
-          "explanation": "Phase 1: reaches 10 m/s, covers ½(1)(10²)=50m. Phase 2 (steady 30s at 10 m/s): 300m. Phase 3 (decelerating to rest in 5s): ½(10)(5)=25m.",
+          "correctIndex": 1,
+          "explanation": "Phase 1: v = 0 + 1×10 = 10 m/s, distance ½(1)(10²) = 50 m. Phase 2: 10 m/s for 30 s = 300 m. Phase 3: decelerating uniformly to rest in 5 s covers ½(10)(5) = 25 m. Total = 50 + 300 + 25 = 375 m.",
           "needsReview": true,
           "reviewNote": "My calculation gives 375m using the stated durations (10s, 30s, 5s), which is actually option B — but the answer key selects D (205m). Worth double-checking which option the key actually intends, or whether one of the durations differs from what was transcribed.",
-          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)"
+          "source": "PHY101&103 Oct 2023 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy101-kin-28",
@@ -822,12 +827,13 @@
           "options": [
             "Orbital speed is constant; least at perigee, greatest at apogee",
             "Orbital speed varies; least at apogee, greatest at perigee",
-            "Orbital speed is constant; least at perigee, greatest at apogee",
+            "Orbital speed varies; least at perigee, greatest at apogee",
             "Orbital speed is constant; least at perigee, greater at apogee"
           ],
           "correctIndex": 1,
           "explanation": "By Kepler's second law, a satellite in an elliptical orbit sweeps equal areas in equal time — so it moves fastest at perigee (closest point) and slowest at apogee (farthest point). Orbital speed varies, it is not constant.",
-          "source": "PHY101 June 2025, Q7 (confirmed by the source's own solution key)"
+          "source": "PHY101 June 2025, Q7 (confirmed by the source's own solution key)",
+          "sourceNote": "Duplicate option text in the original was made distinct."
         },
         {
           "id": "phy101-cmg-02",

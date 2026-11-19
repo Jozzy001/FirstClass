@@ -22,3 +22,9 @@ html {
 .seg-meter i.on {
   background: theme('colors.cobalt.DEFAULT');
 }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white !important; }
+  .print-slip { border: 1px solid #14171C !important; border-radius: 0 !important; }
+}

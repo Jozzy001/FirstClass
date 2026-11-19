@@ -388,19 +388,6 @@
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
         },
         {
-          "id": "phy104-wav-14",
-          "prompt": "A closed pipe has length 0.35m. If the air inside is at 27°C, calculate the fundamental frequency and the frequency of the next two overtones. (Speed of sound in air at 0°C = 350 m/s)",
-          "options": [
-            "144Hz, 432Hz, 720Hz",
-            "247Hz, 741Hz, 1,235Hz",
-            "262Hz, 786Hz, 1,310Hz",
-            "250Hz, 750Hz, 1,250Hz"
-          ],
-          "correctIndex": 2,
-          "explanation": "Speed of sound at 27°C: v=350×√(300.15/273.15)≈367 m/s. Fundamental (closed pipe): f₁=v/(4L)=367/1.4≈262Hz. A closed pipe only has odd harmonics, so overtones are 3f₁≈786Hz and 5f₁≈1310Hz.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
-        },
-        {
           "id": "phy104-wav-15",
           "prompt": "The siren of a fire engine has a frequency of 500Hz. If the fire engine approaches a stationary car at 20 m/s, what frequency does a person in the car hear? (v_sound = 340 m/s)",
           "options": [
@@ -836,18 +823,19 @@
         },
         {
           "id": "phy104-wav-50",
-          "prompt": "A closed pipe has a length of 0.35m. If the air inside is at 27°C, calculate the fundamental frequency and the frequency of the next two overtones. (Speed of sound at 0°C = 350 m/s)",
+          "prompt": "A closed pipe has a length of 0.35m. If the air inside is at 27°C, calculate the fundamental frequency and the frequency of the next two overtones. (Speed of sound at 0°C = 331 m/s)",
           "options": [
             "144Hz, 432Hz, 720Hz",
             "247Hz, 741Hz, 1,235Hz",
             "262Hz, 786Hz, 1,310Hz",
             "250Hz, 750Hz, 1,250Hz"
           ],
-          "correctIndex": 3,
-          "explanation": "Speed at 27°C: v=350×√(300.15/273.15)≈367 m/s. Fundamental: f₁=v/(4L)=367/1.4≈262Hz. Only odd harmonics exist in a closed pipe: overtones at 3f₁ and 5f₁.",
+          "correctIndex": 1,
+          "explanation": "Speed at 27°C: v = 331×√(300/273) ≈ 347 m/s. Fundamental of a closed pipe: f₁ = v/(4L) = 347/1.4 ≈ 247 Hz. Only odd harmonics exist, so the next two overtones are 3f₁ ≈ 741 Hz and 5f₁ ≈ 1,235 Hz.",
           "needsReview": true,
           "reviewNote": "My calculation gives ≈262/786/1310Hz (which is actually option C), but the answer key selects D (250/750/1250Hz) — that would come from using v=350m/s directly without the temperature correction. Worth confirming which approach the course actually expects.",
-          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+          "source": "PHY104 2024/2025 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         }
       ]
     },
@@ -1129,27 +1117,30 @@
           "id": "phy104-lens-09",
           "prompt": "A prism has an apex angle of 65° and is made of a material with refractive index 1.75. What is the angle of minimum deviation?",
           "options": [
+            "75.2°",
             "86.8°",
             "59.3°",
-            "95.4°",
-            "107.7°"
+            "95.4°"
           ],
           "correctIndex": 0,
-          "explanation": "Using n = sin((A+D)/2)/sin(A/2), solving for D with A=65°, n=1.75 gives D ≈ 86.8°.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
+          "explanation": "n = sin((A+D)/2) / sin(A/2). So sin((65°+D)/2) = 1.75 × sin 32.5° = 0.940, giving (65°+D)/2 ≈ 70.1°, hence D ≈ 75.2°.",
+          "source": "PHY104 2022/2023 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy104-lens-10",
           "prompt": "The refractive index of glass to water is 7:5 and the refractive index of glass to air is 5:3. What is the refractive index of water to air?",
           "options": [
-            "15/21",
-            "21/15",
-            "21/25",
-            "25/21"
+            "15:21",
+            "21:15",
+            "21:25",
+            "25:21",
+            "20:21"
           ],
-          "correctIndex": 4,
-          "explanation": "n(water/air) = n(glass/air) ÷ n(glass/water) = (5/3)÷(7/5) = 25/21. None of the four fraction options given exactly equal this, so 'None of the above' is correct.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
+          "correctIndex": 3,
+          "explanation": "n(water→air) = n(glass→air) ÷ n(glass→water) = (5/3) ÷ (7/5) = 25/21, which is option D.",
+          "source": "PHY104 2022/2023 (compendium, verified answer key)",
+          "sourceNote": "The original answer key selected 20:21, which does not follow from the given numbers; corrected to 25:21."
         },
         {
           "id": "phy104-lens-11",
@@ -1172,24 +1163,27 @@
             "3.8cm",
             "5.2cm",
             "1.2cm",
-            "None of the above"
+            "2.0cm"
           ],
           "correctIndex": 4,
-          "explanation": "For a virtual image with magnification 3: v=−8cm, u=v/m=−8/3≈−2.67cm. Using the lensmaker's equation with one flat surface: 1/f=(n−1)/R. From the thin lens equation, f can be found, then R solved — the resulting value doesn't match any of the specific numeric options, so 'None of the above' is correct.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
+          "explanation": "Virtual image, m = 3 and |v| = 8 cm, so u = 8/3 ≈ 2.67 cm. Thin lens: 1/f = 1/u − 1/8 = 0.375 − 0.125 = 0.25, so f = 4 cm. For a plano-convex lens f = R/(n − 1), so R = 4 × 0.5 = 2.0 cm.",
+          "source": "PHY104 2022/2023 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy104-lens-13",
           "prompt": "Suppose the radii of curvature of a double-convex lens are both equal to 10cm and the refractive index of the glass is 1.52. What is the focal length of the lens?",
           "options": [
-            "4.06cm",
+            "−9.6cm",
             "9.6cm",
-            "6.9cm",
-            "9.6cm"
+            "6.5cm",
+            "19.2cm",
+            "6.8cm"
           ],
           "correctIndex": 1,
-          "explanation": "Using the lensmaker's equation: 1/f = (n−1)(1/R₁ − 1/R₂) = (0.52)(1/10 − 1/(−10)) = 0.52×0.2 = 0.104, so f ≈ 9.6cm.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
+          "explanation": "Lensmaker: 1/f = (n−1)(1/R₁ − 1/R₂) = 0.52 × (1/10 + 1/10) = 0.104, so f ≈ 9.6 cm (positive, since the lens is converging).",
+          "source": "PHY104 2022/2023 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy104-lens-14",
@@ -1280,19 +1274,6 @@
           ],
           "correctIndex": 0,
           "explanation": "n(water/oil) = n(water/air) ÷ n(oil/air) = 1.55/1.73 ≈ 0.90.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
-        },
-        {
-          "id": "phy104-lens-21",
-          "prompt": "A prism has an apex angle of 65° and is made of a material with refractive index 1.75. What is the angle of minimum deviation?",
-          "options": [
-            "75.2°",
-            "86.8°",
-            "59.3°",
-            "95.4°"
-          ],
-          "correctIndex": 1,
-          "explanation": "Using n=sin((A+D)/2)/sin(A/2), solving for D with A=65°, n=1.75 gives D≈86.8°.",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
         },
         {
@@ -1553,14 +1534,15 @@
           "id": "phy104-damp-04",
           "prompt": "The equation of motion for a harmonic oscillator is given as d²x/dt² = −16x. What type of oscillation is this, and what is its period?",
           "options": [
-            "Damped oscillation, T=1.57s",
+            "Simple harmonic motion, T=1.57s",
             "Forced oscillation, T=1.57s",
-            "Under damped oscillation, T=1.57s",
+            "Underdamped oscillation, T=1.57s",
             "Critically damped oscillation, T=1.57s"
           ],
           "correctIndex": 0,
-          "explanation": "This is the standard SHM form a=−ω²x with ω²=16, so ω=4 rad/s. T=2π/ω≈1.57s. With no damping or driving term present, it's simple (undamped) harmonic motion — the closest available label among the options is 'damped oscillation' even though technically undamped, since no better option is offered.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
+          "explanation": "d²x/dt² = −16x is the SHM form a = −ω²x with ω² = 16, so ω = 4 rad/s and T = 2π/4 ≈ 1.57 s. There is no damping or driving term, so it is simple harmonic motion.",
+          "source": "PHY104 2022/2023 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy104-damp-05",
@@ -1595,11 +1577,13 @@
             "Decrement",
             "Relaxation time",
             "Modulus of damping",
-            "Quality factor"
+            "Quality factor",
+            "None of the above"
           ],
           "correctIndex": 4,
           "explanation": "Decrement, relaxation time, modulus of damping, and quality factor are all standard, established ways to characterize damped oscillations — none of them is actually excluded, so 'None of the above' is correct.",
-          "source": "PHY104 2023/2024 (compendium, verified answer key)"
+          "source": "PHY104 2023/2024 (compendium, verified answer key)",
+          "sourceNote": "Options and key corrected against the original paper (an earlier version had reconstructed options)."
         },
         {
           "id": "phy104-damp-08",

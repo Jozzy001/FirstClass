@@ -3943,11 +3943,12 @@
             "Adding Fe",
             "Removing H₂",
             "Cannot increase since Fe is a solid",
-            "Both removing H₂ and adding more Fe (up to a limit)"
+            "None of these"
           ],
-          "correctIndex": 4,
-          "explanation": "By Le Chatelier's Principle, removing H₂ (a product) shifts equilibrium toward products, increasing Fe₂O₃. Adding more solid Fe (a reactant, though solids don't appear in K itself) provides more reactant available to react, which can also drive the reaction forward until either reactant is exhausted. Both actions push toward more Fe₂O₃ — removing H₂O (a reactant) would do the opposite.",
-          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+          "correctIndex": 2,
+          "explanation": "Fe₂O₃ increases when the equilibrium shifts right. Removing H₂ (a product) does that. Removing H₂O (a reactant) shifts it left, and adding a solid like Fe changes nothing because solids do not appear in the equilibrium expression.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)",
+          "sourceNote": "The printed key was \"(a) and (c)\", but removing H₂O would shift the equilibrium left. Corrected to Removing H₂ only."
         },
         {
           "id": "chm101-eq-06",
