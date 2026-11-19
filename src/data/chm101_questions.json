@@ -840,6 +840,90 @@
           "correctIndex": 1,
           "explanation": "Moles = 0.15 × 0.250 = 0.0375 mol. M(Na₂CrO₄) = 46 + 52 + 64 = 162 g/mol. Mass = 0.0375 × 162 = 6.08 g.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-62",
+          "prompt": "A compound was analyzed and found to contain 69.94% iron and 30.06% oxygen. What is the empirical formula of the compound?",
+          "options": [
+            "FeO",
+            "Fe(OH)₃",
+            "Fe₂O₃",
+            "FeO₂",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fe = 69.94/55.85 = 1.252 mol; O = 30.06/16 = 1.879 mol. Ratio 1 : 1.5 = 2 : 3, so Fe₂O₃.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-63",
+          "prompt": "The percentage by weight of Zn in white vitriol, ZnSO₄·7H₂O, is approximately (Zn=65, S=32, O=16, H=1)",
+          "options": [
+            "23%",
+            "33%",
+            "43%",
+            "13%",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "M(ZnSO₄·7H₂O) = 65 + 32 + 64 + 7(18) = 287. %Zn = 65/287 × 100 ≈ 23%.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-64",
+          "prompt": "The atomic weight of a metal M is 56. The empirical formula of its oxide, containing 70% M by mass, is",
+          "options": [
+            "MO",
+            "M₂O₃",
+            "M₂O₅",
+            "MO₃",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "M = 70/56 = 1.25 mol; O = 30/16 = 1.875 mol. Ratio 1 : 1.5 = 2 : 3, so M₂O₃.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-65",
+          "prompt": "If 10.0 g of sodium and 20.0 g of chlorine gas are mixed, they react completely to form 25.4 g of sodium chloride. Calculate the mass of chlorine that does not react. (Na=23, Cl=35.5)",
+          "options": [
+            "4.6 g",
+            "2.3 g",
+            "1.15 g",
+            "0 g (all reacts)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Law of conservation of mass: 10.0 + 20.0 = 30.0 g in, 25.4 g of NaCl formed, so 30.0 − 25.4 = 4.6 g of chlorine is left over.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-66",
+          "prompt": "An overall equation for the degradation of glucose is C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. If 98 g of glucose is consumed by a person, what mass of carbon(IV) oxide is produced?",
+          "options": [
+            "1.44 × 10² g",
+            "1.42 × 10² g",
+            "1.52 × 10² g",
+            "3.16 × 10² g",
+            "5.75 × 10² g"
+          ],
+          "correctIndex": 0,
+          "explanation": "98 g/180 = 0.544 mol glucose gives 6 × 0.544 = 3.27 mol CO₂ = 3.27 × 44 ≈ 1.44×10² g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-67",
+          "prompt": "Determine the mass of carbon(IV) oxide produced from the complete combustion of 182 g of ethyne, C₂H₂. (C=12, O=16, H=1)",
+          "options": [
+            "600 g",
+            "606 g",
+            "616 g",
+            "645 g",
+            "654 g"
+          ],
+          "correctIndex": 2,
+          "explanation": "2C₂H₂ + 5O₂ → 4CO₂ + 2H₂O. 182/26 = 7 mol C₂H₂ gives 14 mol CO₂ = 14 × 44 = 616 g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -1301,6 +1385,104 @@
           "correctIndex": 3,
           "explanation": "n(H₂) = 5.00/2.016 = 2.48 mol; n(N₂) = 7.00/28.0 = 0.25 mol. Total 2.73 mol. P = nRT/V = 2.73 × 0.08206 × 273 / 10 ≈ 6.1 atm, closest to 6.16 atm.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-34",
+          "prompt": "The density of a gaseous organic compound is 3.38 g/L at 40°C and 1.97 atm. What is its molar mass? (R = 0.0821 L·atm/K·mol)",
+          "options": [
+            "22.05 g/mol",
+            "26.46 g/mol",
+            "33.2 g/mol",
+            "44.10 g/mol",
+            "66.15 g/mol"
+          ],
+          "correctIndex": 3,
+          "explanation": "M = ρRT/P = 3.38 × 0.0821 × 313 / 1.97 ≈ 44.1 g/mol.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-35",
+          "prompt": "Estimate the pressure (in atm) inside a television picture tube given that its volume is 5.0 L, its temperature is 25°C, and it contains 0.01 mg of nitrogen gas. (molar mass of N₂ = 28.02 g/mol)",
+          "options": [
+            "1.7 × 10⁻⁶ atm",
+            "1.7 × 10⁻⁵ atm",
+            "1.6 × 10⁻⁵ atm",
+            "1.4 × 10⁻⁵ atm",
+            "1.6 × 10⁻⁶ atm"
+          ],
+          "correctIndex": 0,
+          "explanation": "n = 1.0×10⁻⁵ g / 28.02 = 3.57×10⁻⁷ mol. P = nRT/V = 3.57×10⁻⁷ × 0.08206 × 298 / 5.0 ≈ 1.7×10⁻⁶ atm.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-36",
+          "prompt": "Given R = 0.08205 L·atm/mol·K and the molar mass of fluorine gas (F₂) is 38.00 g/mol, what is the density of fluorine gas, in g/L, in a sample that exerts a pressure of 95 torr at 0°C?",
+          "options": [
+            "1.6 g/L",
+            "0.21 g/L",
+            "0.10 g/L",
+            "1.11 g/L",
+            "0.11 g/L"
+          ],
+          "correctIndex": 1,
+          "explanation": "P = 95/760 = 0.125 atm. ρ = PM/RT = 0.125 × 38.00 / (0.08205 × 273) ≈ 0.21 g/L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-37",
+          "prompt": "An unknown gas diffuses at a rate of 16.0 mL per second in a diffusion apparatus, while a second gas of molecular weight 28.0 diffuses at 24.2 mL per second under the same conditions. Calculate the molecular weight of the unknown (first) gas.",
+          "options": [
+            "46.50 g/mol",
+            "64.05 g/mol",
+            "45.60 g/mol",
+            "66.00 g/mol",
+            "65.05 g/mol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Graham's law: r₁/r₂ = √(M₂/M₁). 16.0/24.2 = 0.661, so M₁ = 28.0/0.437 ≈ 64 g/mol.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-38",
+          "prompt": "A 8.30-litre sample of gas at 150 K and 1.00 atm is warmed at constant pressure until its temperature reaches 19°C. What is the new volume of the gas?",
+          "options": [
+            "8.01 L",
+            "10.15 L",
+            "16.15 L",
+            "20.30 L",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Charles's law: V₂ = V₁ × T₂/T₁ = 8.30 × 292/150 ≈ 16.2 L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-39",
+          "prompt": "A sample of an ideal gas occupies a volume of 2 L at 27°C. If the temperature is increased to 327°C at constant pressure, what is the new volume of the gas?",
+          "options": [
+            "3 L",
+            "6 L",
+            "4 L",
+            "8 L",
+            "4.5 L"
+          ],
+          "correctIndex": 2,
+          "explanation": "Charles's law with Kelvin temperatures: V₂ = 2 × 600/300 = 4 L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-40",
+          "prompt": "A sample of oxygen occupies 47.2 litres under a pressure of 1,240 torr at 25°C. What volume would it occupy at 25°C and 730 torr?",
+          "options": [
+            "27.8 L",
+            "29.3 L",
+            "32.2 L",
+            "47.8 L",
+            "80.2 L"
+          ],
+          "correctIndex": 4,
+          "explanation": "Boyle's law: V₂ = V₁P₁/P₂ = 47.2 × 1240/730 ≈ 80.2 L.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -1788,6 +1970,76 @@
           "correctIndex": 4,
           "explanation": "Mn is [Ar]3d⁵4s². The five 3d electrons occupy separate orbitals: 5 unpaired electrons.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-36",
+          "prompt": "The maximum number of electrons that can be accommodated in a subshell for which l = 3 is",
+          "options": [
+            "2",
+            "10",
+            "6",
+            "14",
+            "8"
+          ],
+          "correctIndex": 3,
+          "explanation": "For l = 3 (f subshell) there are 2l + 1 = 7 orbitals, each holding 2 electrons: 14 electrons.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-37",
+          "prompt": "A species that contains 24 protons, 26 neutrons and 22 electrons would be represented by the symbol",
+          "options": [
+            "⁵⁰₂₄Cr²⁺",
+            "⁵⁰₂₄Mn²⁺",
+            "⁵⁰₂₄Cr²⁻",
+            "⁴⁶₂₄Cr²⁺",
+            "⁵⁰₂₄Cr⁺"
+          ],
+          "correctIndex": 0,
+          "explanation": "24 protons means Cr. Mass number = 24 + 26 = 50. 22 electrons means a charge of +2: ⁵⁰₂₄Cr²⁺.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-38",
+          "prompt": "The electronic configuration for an element in the halogen group should always end with",
+          "options": [
+            "ns² np⁰",
+            "ns² np⁵",
+            "ns² np⁶",
+            "ns² np⁴",
+            "ns¹"
+          ],
+          "correctIndex": 1,
+          "explanation": "Halogens (Group 17) have seven valence electrons: ns² np⁵.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-39",
+          "prompt": "What is the correct ground-state electronic configuration of the chromium atom? (Z = 24)",
+          "options": [
+            "[Ar]3d⁴4s²",
+            "[Ar]3d⁵4s¹",
+            "[Ar]3d⁶",
+            "[Ar]4s²3d⁴",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cr is an exception: a half-filled 3d subshell is extra stable, so Cr = [Ar]3d⁵4s¹.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-40",
+          "prompt": "Calculate the (ionization) energy required to remove the electron from a hydrogen atom in its ground state. (Rᴴ = 2.179 × 10⁻¹⁸ J)",
+          "options": [
+            "−4.36 × 10⁻¹⁸ J",
+            "−3.27 × 10⁻¹⁸ J",
+            "−2.18 × 10⁻¹⁸ J",
+            "2.18 × 10⁻¹⁸ J",
+            "4.36 × 10⁻¹⁸ J"
+          ],
+          "correctIndex": 3,
+          "explanation": "Ionization energy from n = 1 is +R_H = +2.18×10⁻¹⁸ J (energy is absorbed, so it is positive).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -2113,6 +2365,146 @@
           "correctIndex": 4,
           "explanation": "PCl₆⁻: P has six bonding pairs and no lone pairs (6 electron domains), giving an octahedral geometry.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-24",
+          "prompt": "Which molecule contains an sp-hybridized orbital on its central atom?",
+          "options": [
+            "HCO₃⁻",
+            "HNO₃",
+            "HNO₂",
+            "HCN",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "In HCN the carbon has two electron domains (one C–H σ bond and a C≡N triple bond), so it is sp-hybridized and linear.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-25",
+          "prompt": "Which of the following types of overlap results in the formation of a pi bond?",
+          "options": [
+            "Overlap of two s-orbitals",
+            "Head-on overlap of two p-orbitals along their axis",
+            "Sideways overlap of two p-orbitals",
+            "Overlap of one s and one p-orbital",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A π bond forms by sideways (lateral) overlap of two p-orbitals. Head-on overlap gives a σ bond.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-26",
+          "prompt": "What is the geometric structure of PCl₅?",
+          "options": [
+            "Tetrahedral",
+            "Octahedral",
+            "Trigonal planar",
+            "Trigonal bipyramidal",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "PCl₅ has five bonding pairs and no lone pairs on P: trigonal bipyramidal.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-27",
+          "prompt": "The spatial arrangement of five electron pairs (VSEPR) around a central atom is",
+          "options": [
+            "Linear",
+            "Trigonal planar",
+            "Trigonal bipyramidal",
+            "Bent",
+            "Octahedral"
+          ],
+          "correctIndex": 2,
+          "explanation": "Five electron pairs around a central atom adopt a trigonal bipyramidal arrangement (VSEPR).",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-28",
+          "prompt": "What is the F−B−F bond angle of a planar BF₃ molecule?",
+          "options": [
+            "180°",
+            "109°",
+            "107°",
+            "104°",
+            "120°"
+          ],
+          "correctIndex": 4,
+          "explanation": "BF₃ is trigonal planar (three bonding pairs, no lone pairs): F–B–F = 120°.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-29",
+          "prompt": "The H−O−H bond angle in the H₂O molecule is reduced from the tetrahedral 109.5° to about 104.5° because",
+          "options": [
+            "H₂O is sp² hybridized, not sp³",
+            "The two lone pairs on oxygen repel the bonding pairs more strongly than bonding pairs repel each other, compressing the H−O−H angle",
+            "The O−H bonds and H atoms occupy the same region of space",
+            "There is overcrowding between the lone pairs only, with no effect on bonding pairs",
+            "H₂O has no lone pairs on oxygen"
+          ],
+          "correctIndex": 1,
+          "explanation": "The two lone pairs on oxygen repel bonding pairs more strongly than bonding pairs repel each other, squeezing the H–O–H angle from 109.5° to about 104.5°.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-30",
+          "prompt": "Which of the following pairs of elements would be expected to form an ionic bond (rather than a covalent bond)?",
+          "options": [
+            "C and O",
+            "N and O",
+            "Na and Cl",
+            "H and Cl",
+            "O and O"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ionic bonds form between a metal and a non-metal with a large electronegativity difference: Na and Cl.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-31",
+          "prompt": "What is the molecular geometry of XeF₄?",
+          "options": [
+            "Trigonal planar",
+            "Tetrahedral",
+            "Trigonal bipyramidal",
+            "Trigonal pyramidal",
+            "Square planar"
+          ],
+          "correctIndex": 4,
+          "explanation": "XeF₄ has four bonding pairs and two lone pairs (six domains, octahedral arrangement), so the shape is square planar.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-32",
+          "prompt": "Which of the following is the hardest synthetic substance after diamond?",
+          "options": [
+            "Al₂O₃",
+            "B₄C",
+            "AlN",
+            "BeC",
+            "CaC₂"
+          ],
+          "correctIndex": 1,
+          "explanation": "Boron carbide (B₄C) is the hardest synthetic substance after diamond (and cubic boron nitride).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-33",
+          "prompt": "What is the bond angle in methane, CH₄?",
+          "options": [
+            "104.5°",
+            "109.5°",
+            "180°",
+            "120°",
+            "90°"
+          ],
+          "correctIndex": 1,
+          "explanation": "Methane is tetrahedral with H–C–H bond angles of 109.5°.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -2435,6 +2827,146 @@
           "correctIndex": 3,
           "explanation": "Non-metal oxides such as SO₃ are acidic (SO₃ + H₂O → H₂SO₄). Li₂O, CaO, BaO and MgO are basic.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-24",
+          "prompt": "All of the following are Group VIA elements except",
+          "options": [
+            "Selenium",
+            "Potassium",
+            "Tellurium",
+            "Oxygen",
+            "Sulfur"
+          ],
+          "correctIndex": 1,
+          "explanation": "Group VIA (16) contains O, S, Se, Te. Potassium is in Group IA.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-25",
+          "prompt": "Which of the following Group 1 trioxocarbonate(IV) salts is the most resistant to thermal decomposition (i.e. does NOT decompose on ordinary heating)?",
+          "options": [
+            "CaCO₃",
+            "Na₂CO₃",
+            "PbCO₃",
+            "Li₂CO₃",
+            "MgCO₃"
+          ],
+          "correctIndex": 1,
+          "explanation": "Na₂CO₃ (like other Group 1 carbonates except Li₂CO₃) is stable to ordinary heating. Li₂CO₃, CaCO₃, MgCO₃ and PbCO₃ all decompose.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-26",
+          "prompt": "Which of the following properties increases across a period (left to right)?",
+          "options": [
+            "Atomic radius",
+            "Electropositivity",
+            "Ionization energy",
+            "Metallic character",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ionization energy increases across a period as nuclear charge rises and radius shrinks. Atomic radius and electropositivity decrease.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-27",
+          "prompt": "Which of the following is true?",
+          "options": [
+            "Rb₂O is a basic oxide",
+            "B₂O₃ is a basic oxide",
+            "As₂O₃ is a basic oxide",
+            "Rb₂O is an amphoteric oxide",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Oxides of metals such as Rb₂O are basic. B₂O₃ is acidic and As₂O₃ is amphoteric.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-28",
+          "prompt": "An element with atomic number 12 is likely to have the same chemical properties as elements in",
+          "options": [
+            "Group IA",
+            "Group IIA",
+            "Group IIIA",
+            "Group IVA",
+            "Group VA"
+          ],
+          "correctIndex": 1,
+          "explanation": "Z = 12 is magnesium, an alkaline earth metal in Group IIA.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-29",
+          "prompt": "An element with atomic number 38 belongs to period",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correctIndex": 3,
+          "explanation": "Z = 38 is strontium: [Kr]5s². The highest shell is n = 5, so period 5.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-30",
+          "prompt": "The atomic radii of Be, Mg and Ca are 1.13 Å, 1.60 Å and 1.97 Å respectively. This progression in atomic radius is due to the fact that",
+          "options": [
+            "Electronegativity decreases from Be to Mg to Ca",
+            "Metallicity decreases from Be to Mg to Ca",
+            "The elements are all in the same period",
+            "The number of electron shells increases from Be to Mg to Ca",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Atomic radius increases down a group because each element has one more occupied electron shell.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-31",
+          "prompt": "All of the following properties decrease down a group in the periodic table except",
+          "options": [
+            "Electron affinity",
+            "Atomic radius",
+            "Ionization energy",
+            "Electronegativity",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Down a group, electron affinity, ionization energy and electronegativity decrease, but atomic radius increases.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-32",
+          "prompt": "The products formed in the thermal decomposition of magnesium trioxonitrate(V), Mg(NO₃)₂, are",
+          "options": [
+            "Magnesium, oxygen and nitrogen(IV) oxide",
+            "Magnesium oxide, nitrogen(IV) oxide and oxygen",
+            "Magnesium oxide, nitrogen(I) oxide and oxygen",
+            "Magnesium, nitrogen and oxygen",
+            "Magnesium oxide and nitrogen"
+          ],
+          "correctIndex": 1,
+          "explanation": "Group 2 nitrates decompose on heating: 2Mg(NO₃)₂ → 2MgO + 4NO₂ + O₂.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-periodic-33",
+          "prompt": "The element with the smallest atomic size among the main-group elements in the second period is",
+          "options": [
+            "Li",
+            "Ne",
+            "N",
+            "F",
+            "Mg"
+          ],
+          "correctIndex": 3,
+          "explanation": "Atomic radius decreases across a period, so F is the smallest main-group atom listed from period 2 (Ne is excluded by convention).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -2748,6 +3280,51 @@
           "explanation": "Pb (Z = 82) → Tl (Z = 81) with mass 212 → 208: the mass drops by 4 and Z by 1, which is alpha emission. (Beta decay would leave the mass number unchanged.)",
           "source": "CHM101 2024/2025 (compendium, verified answer key)",
           "sourceNote": "Source answer key gave A (beta decay), which is inconsistent with the mass number change; corrected to alpha."
+        },
+        {
+          "id": "chm101-nuclear-23",
+          "prompt": "What is X in the following nuclear reaction equation: ⁶⁴₂₈Ni + ²₁H → ⁶⁵₂₉Cu + X",
+          "options": [
+            "⁴He",
+            "²H",
+            "¹He",
+            "¹n",
+            "2n"
+          ],
+          "correctIndex": 3,
+          "explanation": "Balance mass numbers (64 + 2 = 65 + 1) and atomic numbers (28 + 1 = 29 = 29 + 0). X has A = 1, Z = 0: a neutron.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)",
+          "sourceNote": "Source printed the product as ⁶⁵₂₇Co, which cannot balance; corrected to ⁶⁵₂₉Cu (the real reaction) so the keyed answer (neutron) is right."
+        },
+        {
+          "id": "chm101-nuclear-24",
+          "prompt": "In the following nuclear equation: ²⁷₁₃Al + X → ³⁰₁₅P + n, X is",
+          "options": [
+            "An alpha particle",
+            "A beta particle",
+            "A proton",
+            "A positron",
+            "Tritium"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mass: 27 + A = 30 + 1, so A = 4. Charge: 13 + Z = 15 + 0, so Z = 2. X = ⁴₂He, an alpha particle.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuclear-25",
+          "prompt": "The binding energy of ⁶⁰Ni in MeV per nucleon is required. The exact mass of this nuclide is 59.9332 amu. (mp = 1.00728 amu, mn = 1.00866 amu, 1 amu = 931.5 MeV)",
+          "options": [
+            "8.70",
+            "7.80",
+            "6.98",
+            "5.25",
+            "524.81"
+          ],
+          "correctIndex": 0,
+          "explanation": "Binding energy = (Zm_p + Nm_n − M) × 931.5 MeV, divided by the number of nucleons (60).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)",
+          "needsReview": true,
+          "reviewNote": "With the data as printed (nuclear-mass reading), BE/A = 8.50 MeV, which is not an option. The keyed 8.70 only works with hydrogen-atom masses. Needs the original paper."
         }
       ]
     },
@@ -3179,6 +3756,62 @@
           "correctIndex": 0,
           "explanation": "N₂H₅⁺ donates a proton to become N₂H₄, so N₂H₄ is its conjugate base.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-32",
+          "prompt": "A sample of apple cider has a pH of 3.15. What is the hydroxide ion concentration of this solution?",
+          "options": [
+            "7.14 × 10⁻⁴ M",
+            "4.20 × 10⁻¹¹ M",
+            "2.80 × 10⁻¹¹ M",
+            "1.40 × 10⁻¹¹ M",
+            "7.14 × 10⁻¹¹ M"
+          ],
+          "correctIndex": 3,
+          "explanation": "[H⁺] = 10⁻³·¹⁵ = 7.08×10⁻⁴ M. [OH⁻] = 10⁻¹⁴/7.08×10⁻⁴ ≈ 1.4×10⁻¹¹ M.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-33",
+          "prompt": "Calculate the concentration of an acetic acid (CH₃COOH) solution whose pH is 2.68. (Ka = 1.8 × 10⁻⁵)",
+          "options": [
+            "0.65 M",
+            "0.52 M",
+            "0.44 M",
+            "0.36 M",
+            "0.24 M"
+          ],
+          "correctIndex": 4,
+          "explanation": "[H⁺] = 10⁻²·⁶⁸ = 2.09×10⁻³ M. Ka = [H⁺]²/(C − [H⁺]), so C = (2.09×10⁻³)²/1.8×10⁻⁵ + 0.0021 ≈ 0.24 M.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-34",
+          "prompt": "Which of these solutions is NOT a buffer system?",
+          "options": [
+            "NaClO₂/HClO₂",
+            "KH₂PO₄/H₃PO₄",
+            "CH₃NH₂/CH₃NH₃Cl",
+            "Na₂CO₃/NaHCO₃",
+            "NaOH/HCl"
+          ],
+          "correctIndex": 4,
+          "explanation": "A buffer needs a weak acid/base with its conjugate partner. NaOH and HCl are a strong base and a strong acid and just neutralise each other.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-35",
+          "prompt": "Which of the following solutions is the most acidic?",
+          "options": [
+            "0.10 M CH₃COOH; Ka = 1.8 × 10⁻⁵",
+            "0.10 M HCOOH; Ka = 1.8 × 10⁻⁴",
+            "0.10 M ClCH₂COOH; Ka = 1.4 × 10⁻³",
+            "0.10 M Cl₂CHCOOH; Ka = 5.1 × 10⁻²",
+            "All have the same acidity"
+          ],
+          "correctIndex": 3,
+          "explanation": "For equal concentrations, the acid with the largest Ka (Cl₂CHCOOH, 5.1×10⁻²) is the strongest and gives the most acidic solution.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -3427,6 +4060,20 @@
           "correctIndex": 3,
           "explanation": "Temperature, concentration, volume and pressure can shift an equilibrium. A catalyst speeds both directions equally and changes no equilibrium position.",
           "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-equil-14",
+          "prompt": "According to Le Chatelier's principle, increasing the pressure on a gaseous equilibrium system by decreasing its volume will shift the equilibrium towards the side with",
+          "options": [
+            "More moles of gas",
+            "Fewer moles of gas",
+            "Equal moles on both sides, no shift",
+            "Higher temperature",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Le Chatelier: raising pressure (reducing volume) shifts the equilibrium toward the side with fewer moles of gas.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
         }
       ]
     },
