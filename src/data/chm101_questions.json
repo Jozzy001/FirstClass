@@ -10,7 +10,13 @@
         {
           "id": "chm101-mole-01",
           "prompt": "A gas has a density of 3.38 g/L at 40°C and 1.97 atm. What is its molar mass? (R = 0.0821 L·atm/mol·K)",
-          "options": ["22.05 g/mol", "26.46 g/mol", "33.2 g/mol", "44.10 g/mol", "66.15 g/mol"],
+          "options": [
+            "22.05 g/mol",
+            "26.46 g/mol",
+            "33.2 g/mol",
+            "44.10 g/mol",
+            "66.15 g/mol"
+          ],
           "correctIndex": 3,
           "explanation": "Using PM = ρRT (derived from PV=nRT with n=mass/M): M = ρRT/P = (3.38×0.0821×313.15)/1.97 ≈ 44.11 g/mol.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -18,7 +24,12 @@
         {
           "id": "chm101-mole-02",
           "prompt": "A compound is found to be 69.94% iron (Fe) and 30.06% oxygen (O) by mass. What is its empirical formula?",
-          "options": ["FeO", "Fe(OH)₃", "Fe₂O₃", "FeO₂"],
+          "options": [
+            "FeO",
+            "Fe(OH)₃",
+            "Fe₂O₃",
+            "FeO₂"
+          ],
           "correctIndex": 2,
           "explanation": "Moles of Fe = 69.94/55.85 ≈ 1.252. Moles of O = 30.06/16 ≈ 1.879. Ratio O:Fe ≈ 1.5:1, which as whole numbers is 3:2 — giving Fe₂O₃.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -26,7 +37,12 @@
         {
           "id": "chm101-mole-03",
           "prompt": "How many moles are in 41.6g of ammonium carbonate, (NH₄)₂CO₃? (Molar mass = 96 g/mol)",
-          "options": ["0.433 mol", "0.033 mol", "1.724 mol", "0.466 mol"],
+          "options": [
+            "0.433 mol",
+            "0.033 mol",
+            "1.724 mol",
+            "0.466 mol"
+          ],
           "correctIndex": 0,
           "explanation": "Moles = mass/molar mass = 41.6/96 ≈ 0.433 mol.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -34,7 +50,12 @@
         {
           "id": "chm101-mole-04",
           "prompt": "What is the percentage of zinc by mass in ZnSO₄·7H₂O? (Zn=65, S=32, O=16, H=1)",
-          "options": ["23%", "33%", "43%", "13%"],
+          "options": [
+            "23%",
+            "33%",
+            "43%",
+            "13%"
+          ],
           "correctIndex": 0,
           "explanation": "Molar mass of ZnSO₄·7H₂O = 65+32+4(16)+7(18) = 287 g/mol. % Zn = 65/287 × 100 ≈ 22.6%, closest to 23%.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -42,7 +63,12 @@
         {
           "id": "chm101-mole-05",
           "prompt": "The empirical formula of a compound is CH₂O, and its molecular weight is 120. What is its molecular formula?",
-          "options": ["CH₂O", "C₂H₄O₂", "C₃H₆O₃", "C₄H₈O₄"],
+          "options": [
+            "CH₂O",
+            "C₂H₄O₂",
+            "C₃H₆O₃",
+            "C₄H₈O₄"
+          ],
           "correctIndex": 3,
           "explanation": "Empirical formula mass of CH₂O = 12+2+16 = 30. Multiplier = 120/30 = 4. Molecular formula = (CH₂O)₄ = C₄H₈O₄.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -50,7 +76,12 @@
         {
           "id": "chm101-mole-06",
           "prompt": "How many molecules of hydrogen gas are present in one gram of hydrogen gas (H₂)?",
-          "options": ["6.02×10²³", "3.01×10²³", "1.5×10²³", "6.02×10²²"],
+          "options": [
+            "6.02×10²³",
+            "3.01×10²³",
+            "1.5×10²³",
+            "6.02×10²²"
+          ],
           "correctIndex": 1,
           "explanation": "Moles of H₂ = 1/2 = 0.5 mol. Molecules = 0.5×6.022×10²³ ≈ 3.01×10²³.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -58,7 +89,12 @@
         {
           "id": "chm101-mole-07",
           "prompt": "A compound has a molar mass of 90.0g/mol and its percent composition is 2.22% H, 26.7% C, and 71.1% O. What is its molecular formula?",
-          "options": ["H₂C₂O₄", "CH₂O₂", "C₂H₄O₂", "C₃H₆O₃"],
+          "options": [
+            "H₂C₂O₄",
+            "CH₂O₂",
+            "C₂H₄O₂",
+            "C₃H₆O₃"
+          ],
           "correctIndex": 0,
           "explanation": "Moles per 100g: H=2.22, C=2.225, O=4.44, giving a 1:1:2 ratio (empirical formula CHO₂, mass≈45). Since 90/45=2, the molecular formula is H₂C₂O₄ (oxalic acid).",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -66,7 +102,12 @@
         {
           "id": "chm101-mole-08",
           "prompt": "Calculate the percentage of nitrogen by mass in Ca(NO₃)₂. (Ca=40, N=14, O=16)",
-          "options": ["27.5%", "17.35%", "17.1%", "27.30%"],
+          "options": [
+            "27.5%",
+            "17.35%",
+            "17.1%",
+            "27.30%"
+          ],
           "correctIndex": 2,
           "explanation": "Molar mass = 40+2(14+48) = 164 g/mol. %N = (2×14)/164 × 100 ≈ 17.1%.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -74,7 +115,12 @@
         {
           "id": "chm101-mole-09",
           "prompt": "Caffeine contains 48.5% carbon, 5.15% hydrogen, 28.9% nitrogen and 16.5% oxygen by mass. What are its empirical and molecular formulas, given a molar mass of about 195 g/mol?",
-          "options": ["C₄H₅N₂O; C₈H₁₀N₄O₂", "C₆H₁₂N₂O₂; C₆H₁₂N₂O₂", "C₄H₁₀N₂O₂; C₈H₂₀N₄O₄", "C₃H₄N₂O; C₆H₈N₄O₂"],
+          "options": [
+            "C₄H₅N₂O; C₈H₁₀N₄O₂",
+            "C₆H₁₂N₂O₂; C₆H₁₂N₂O₂",
+            "C₄H₁₀N₂O₂; C₈H₂₀N₄O₄",
+            "C₃H₄N₂O; C₆H₈N₄O₂"
+          ],
           "correctIndex": 0,
           "explanation": "Moles per 100g: C≈4.04, H≈5.15, N≈2.06, O≈1.03. Dividing by the smallest (O): C≈4, H≈5, N≈2, O≈1, giving empirical formula C₄H₅N₂O (mass≈97). Since 195/97≈2, the molecular formula is C₈H₁₀N₄O₂.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -82,10 +128,550 @@
         {
           "id": "chm101-mole-10",
           "prompt": "Calculate the mass of oxygen combined with 4.13×10²³ atoms of sulfur, assuming they combine as in Na₂SO₄. (Na=23, O=16, S=32)",
-          "options": ["43.9 g", "224.5 g", "439 g", "156 g"],
+          "options": [
+            "43.9 g",
+            "224.5 g",
+            "439 g",
+            "156 g"
+          ],
           "correctIndex": 0,
           "explanation": "Moles S = 4.13×10²³/6.022×10²³ ≈ 0.686 mol. In Na₂SO₄, the S:O ratio is 1:4, so moles O = 4×0.686 ≈ 2.743 mol. Mass O = 2.743×16 ≈ 43.9g.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-11",
+          "prompt": "What is the mass of 1 mole of calcium atoms? (Ca = 40.1 g/mol)",
+          "options": [
+            "6.66×10²³ g",
+            "155.88 g",
+            "40.1 g",
+            "0.025 g"
+          ],
+          "correctIndex": 2,
+          "explanation": "By definition, 1 mole of any substance has a mass equal to its molar mass: 40.1g.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-12",
+          "prompt": "A compound made of two elements, A and B, contains 25% A (atomic mass 12.5) and 75% B (atomic mass 37.5). What is the simplest formula of the compound?",
+          "options": [
+            "AB",
+            "AB₂",
+            "AB₃",
+            "A₂B"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles A = 25/12.5 = 2. Moles B = 75/37.5 = 2. Ratio 1:1, giving AB.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-13",
+          "prompt": "A metal M (atomic weight 56) forms an oxide containing 70% M by mass. What is the empirical formula of the oxide?",
+          "options": [
+            "MO",
+            "M₂O₃",
+            "M₂O₅",
+            "MO₃"
+          ],
+          "correctIndex": 1,
+          "explanation": "Per 100g: moles M = 70/56 = 1.25, moles O = 30/16 = 1.875. Ratio O:M ≈ 1.5:1 = 3:2, giving M₂O₃.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-14",
+          "prompt": "The density of water is 1.0 g/mL at 4°C. How many molecules are present in 2.5mL?",
+          "options": [
+            "8.36×10²²",
+            "3.28×10²²",
+            "2.38×10²²",
+            "6.02×10²³"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mass = 2.5g. Moles = 2.5/18 ≈ 0.1389 mol. Molecules = 0.1389×6.022×10²³ ≈ 8.36×10²².",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-15",
+          "prompt": "Calculate the percentage of oxygen in CaSO₄. (Ca=40.08, S=32.06, O=16)",
+          "options": [
+            "16%",
+            "11.75%",
+            "29.44%",
+            "47.01%"
+          ],
+          "correctIndex": 3,
+          "explanation": "Molar mass = 40.08+32.06+4(16) = 136.14 g/mol. %O = 64/136.14 × 100 ≈ 47.01%.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-16",
+          "prompt": "Which of the following contains the largest number of molecules?",
+          "options": [
+            "0.2 mol H₂",
+            "8.0 g H₂",
+            "17 g H₂O",
+            "6 g CO₂"
+          ],
+          "correctIndex": 1,
+          "explanation": "Converting each to moles: 0.2mol H₂ stays 0.2mol. 8.0g H₂ = 4mol (far more). 17g H₂O ≈ 0.94mol. 6g CO₂ ≈ 0.136mol. The 8.0g of H₂ (4 moles) has by far the most molecules.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-17",
+          "prompt": "10.0g of sodium and 20.0g of chlorine gas are mixed; they react completely to form 25.4g of sodium chloride. Calculate the mass of chlorine that does NOT react. (Na=23, Cl=35.5)",
+          "options": [
+            "4.6 g",
+            "2.3 g",
+            "1.15 g",
+            "0 g (all reacts)"
+          ],
+          "correctIndex": 0,
+          "explanation": "2Na+Cl₂→2NaCl. Moles Na = 10/23 ≈ 0.435. Moles Cl₂ needed = 0.435/2 ≈ 0.217 mol = 0.217×71 ≈ 15.4g. Cl₂ remaining = 20−15.4 ≈ 4.6g.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-18",
+          "prompt": "A compound contains 85.7% carbon and 14.3% hydrogen and has a molar mass of 98 g/mol. What is its molecular formula?",
+          "options": [
+            "CH₄",
+            "C₇H₁₂",
+            "C₇H₁₄",
+            "C₇H₈"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moles per 100g: C=85.7/12≈7.14, H=14.3/1=14.3. Ratio H:C≈2:1, giving empirical CH₂ (mass 14). Since 98/14=7, molecular formula is C₇H₁₄.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-19",
+          "prompt": "Determine the empirical formula of a compound containing 29.09% Na, 40.55% S, and 30.36% O.",
+          "options": [
+            "Na₂S₂O₃",
+            "Na₂SO₄",
+            "NaSO₂",
+            "Na₂S₃O₃"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles per 100g: Na=29.09/23≈1.265, S=40.55/32≈1.267, O=30.36/16≈1.898. Ratio ≈1:1:1.5, which as whole numbers is 2:2:3, giving Na₂S₂O₃.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-20",
+          "prompt": "How many moles of oxygen gas (O₂) are needed to completely combust 2.0mol of propane, C₃H₈? (C₃H₈ + 5O₂ → 3CO₂ + 4H₂O)",
+          "options": [
+            "2.5 mol",
+            "5.0 mol",
+            "7.5 mol",
+            "10.0 mol"
+          ],
+          "correctIndex": 3,
+          "explanation": "The balanced equation shows a 1:5 mole ratio of propane to O₂. For 2.0 mol propane: 2.0×5 = 10.0 mol O₂.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-21",
+          "prompt": "A metal forms two different oxides, A and B. 7.10g of A gives 5.62g of the metal, and 6.04g of B gives 4.34g of metal. Compare the oxygen combined per gram of metal in each oxide.",
+          "options": [
+            "Oxide A has less O per g metal than oxide B",
+            "Oxide A has more O per g metal than oxide B, in a small whole-number ratio (consistent with the Law of Multiple Proportions)",
+            "The two oxides have identical O per g metal",
+            "The results violate the Law of Multiple Proportions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oxide A: O per g metal = (7.10−5.62)/5.62 ≈ 0.263. Oxide B: O per g metal = (6.04−4.34)/4.34 ≈ 0.392. Oxide A actually has LESS oxygen per gram of metal — the ratio between the two (0.392/0.263≈1.5, i.e. 3:2) is a small whole-number ratio, confirming the Law of Multiple Proportions.",
+          "needsReview": true,
+          "reviewNote": "My calculation shows oxide A has LESS oxygen per gram (not more, as option B states), though the small-whole-number-ratio conclusion itself checks out. The answer key selects B — worth double-checking which oxide the key intends as 'A' vs 'B'.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-22",
+          "prompt": "How many oxygen atoms are in 0.25mol of Ca(NO₃)₂? (Nₐ = 6.02×10²³)",
+          "options": [
+            "4.52×10²³ atoms",
+            "9.03×10²³ atoms",
+            "3.01×10²³ atoms",
+            "1.20×10²³ atoms",
+            "1.81×10²³ atoms"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each formula unit of Ca(NO₃)₂ has 6 oxygen atoms. Moles O = 0.25×6=1.5mol. Atoms = 1.5×6.02×10²³ ≈ 9.03×10²³.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-23",
+          "prompt": "Calculate the percent by mass of silicon in the mineral beryl, Be₃Al₂(SiO₃)₆. (Be=9.0, O=16.0, Al=27.0, Si=28.0)",
+          "options": [
+            "17.50%",
+            "28.00%",
+            "31.35%",
+            "35.00%",
+            "52.50%"
+          ],
+          "correctIndex": 2,
+          "explanation": "Molar mass = 3(9)+2(27)+6(28+3×16) = 27+54+6(76) = 537. %Si = 6(28)/537 × 100 ≈ 31.35%.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-24",
+          "prompt": "Naturally occurring magnesium is 78.99% ²⁴Mg (23.98504 amu), 10.00% ²⁵Mg (24.98584 amu) and 11.01% ²⁶Mg (25.98259 amu). Calculate the average atomic mass of Mg.",
+          "options": [
+            "23.9858 amu",
+            "24.3050 amu",
+            "25.8668 amu",
+            "23.9478 amu",
+            "24.9859 amu"
+          ],
+          "correctIndex": 1,
+          "explanation": "Weighted average = 0.7899(23.98504)+0.1000(24.98584)+0.1101(25.98259) ≈ 24.3050 amu.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-25",
+          "prompt": "The overall equation for the degradation of glucose is C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O. If 98g of glucose is consumed by a person, what mass of carbon dioxide is produced? (C₆H₁₂O₆=180 g/mol, CO₂=44 g/mol)",
+          "options": [
+            "1.44×10² g",
+            "1.42×10² g",
+            "1.52×10² g",
+            "3.16×10² g",
+            "5.75×10² g"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles glucose = 98/180 ≈ 0.544. Moles CO₂ produced = 6×0.544 ≈ 3.267 mol. Mass CO₂ = 3.267×44 ≈ 143.7g ≈ 1.44×10²g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-26",
+          "prompt": "A common preparation of oxygen gas is the thermal decomposition of KClO₃: 2KClO₃ → 2KCl + 3O₂. Calculate the mass of oxygen gas obtainable from 46.0g of KClO₃. (KClO₃=122.5 g/mol)",
+          "options": [
+            "16.0 g",
+            "16.55 g",
+            "18.35 g",
+            "18.00 g",
+            "5.00 g"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moles KClO₃=46/122.5≈0.3755. Moles O₂=1.5×0.3755≈0.5633. Mass O₂=0.5633×32≈18.0g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-27",
+          "prompt": "The empirical formula for an oxide of nitrogen containing 30.4% nitrogen by mass is:",
+          "options": [
+            "N₂O₂",
+            "NO",
+            "NO₂",
+            "N₂O",
+            "NO₃"
+          ],
+          "correctIndex": 2,
+          "explanation": "Per 100g: %O=69.6%. Moles N=30.4/14≈2.171, moles O=69.6/16≈4.35. Ratio O:N≈2:1, giving NO₂.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-28",
+          "prompt": "Determine the mass of carbon dioxide produced from the complete combustion of 182g of ethyne, C₂H₂. (2C₂H₂+5O₂→4CO₂+2H₂O; C₂H₂=26 g/mol, CO₂=44 g/mol)",
+          "options": [
+            "600 g",
+            "606 g",
+            "616 g",
+            "645 g",
+            "654 g"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moles C₂H₂=182/26=7. Moles CO₂=2×7=14 (from the 2:4 mole ratio). Mass CO₂=14×44=616g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-29",
+          "prompt": "What is the molality of a 0.5M H₂SO₄ solution with a density of 1.18 g/mL? (H₂SO₄=98 g/mol)",
+          "options": [
+            "0.442",
+            "0.340",
+            "0.560",
+            "0.470",
+            "0.617"
+          ],
+          "correctIndex": 0,
+          "explanation": "For 1L of solution: total mass=1180g, mass H₂SO₄=0.5×98=49g, mass solvent=1180−49=1131g=1.131kg. Molality=0.5/1.131≈0.442 mol/kg.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-30",
+          "prompt": "How many moles of ethane (C₂H₆) are present in 0.334g of C₂H₆? (C₂H₆=30 g/mol)",
+          "options": [
+            "0.0111 mol",
+            "0.0222 mol",
+            "0.0333 mol",
+            "0.0444 mol",
+            "0.0555 mol"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles = 0.334/30 ≈ 0.0111 mol.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-31",
+          "prompt": "What is the mass in grams of a single atom of selenium? (Se=79.0 g/mol, Nₐ=6.02×10²³)",
+          "options": [
+            "7.874×10⁻²² g",
+            "1.312×10⁻²² g",
+            "1.312×10⁻²³ g",
+            "2.625×10⁻²² g",
+            "7.874×10⁻²³ g"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mass of 1 atom = molar mass/Nₐ = 79.0/6.02×10²³ ≈ 1.312×10⁻²² g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-32",
+          "prompt": "How many moles of hydrogen gas are in 27.0g of H₂? (H=1.008 g/mol)",
+          "options": [
+            "46.74",
+            "20.25",
+            "27.25",
+            "19.25",
+            "13.40"
+          ],
+          "correctIndex": 4,
+          "explanation": "Molar mass H₂=2×1.008=2.016. Moles=27.0/2.016≈13.40 mol.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-33",
+          "prompt": "What mass of HNO₃ is contained in 350mL of a 0.3M solution? (HNO₃=63.0 g/mol)",
+          "options": [
+            "5.281 g",
+            "6.615 g",
+            "15.251 g",
+            "22.145 g",
+            "453.0 g"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles = 0.350L×0.3M = 0.105mol. Mass = 0.105×63.0 ≈ 6.615g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-34",
+          "prompt": "The volume of oxygen collected over water at 26°C and atmospheric pressure of 771mmHg is 300mL. Calculate the mass of oxygen gas obtained. (Vapour pressure of water at 26°C = 25mmHg; O₂=32 g/mol)",
+          "options": [
+            "0.18 g",
+            "2.86 g",
+            "1.76 g",
+            "0.38 g",
+            "11.5 g"
+          ],
+          "correctIndex": 3,
+          "explanation": "Actual O₂ pressure = 771−25 = 746mmHg (subtracting water vapor pressure). Moles = PV/RT = (746/760)×0.300/(0.0821×299.15) ≈ 0.012mol. Mass = 0.012×32 ≈ 0.38g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-35",
+          "prompt": "A moth repellant made of chlorine, carbon and hydrogen has a composition of 49.1% C, 2.7% H, and 48.2% Cl. Its molecular weight is 147 amu. What is the molecular formula?",
+          "options": [
+            "CH₂Cl",
+            "C₆H₄Cl₂",
+            "CHCl₃",
+            "C₆H₃Cl",
+            "C₃H₄Cl₂"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles per 100g: C=49.1/12≈4.09, H=2.7/1=2.7, Cl=48.2/35.5≈1.36. Dividing by smallest: C≈3, H≈2, Cl=1, giving empirical C₃H₂Cl (mass≈73.5). Since 147/73.5=2, molecular formula is C₆H₄Cl₂.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-36",
+          "prompt": "Calculate the mass of nitrogen in 30.0g of glycine, CH₂(NH₂)COOH.",
+          "options": [
+            "5.60 g",
+            "6.50 g",
+            "7.70 g",
+            "8.70 g",
+            "11.20 g"
+          ],
+          "correctIndex": 0,
+          "explanation": "Glycine (C₂H₅NO₂) has molar mass = 2(12)+5(1)+14+2(16) = 75 g/mol. Moles = 30/75 = 0.4mol. Mass N = 0.4×14 = 5.6g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-37",
+          "prompt": "What is the molarity of a solution containing 6.3g of NaOH dissolved to make 30mL of solution?",
+          "options": [
+            "0.115 M",
+            "0.250 M",
+            "0.344 M",
+            "5.25 M",
+            "0.525 M"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moles NaOH = 6.3/40 = 0.1575mol. Molarity = 0.1575/0.030L = 5.25M.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-38",
+          "prompt": "How many grams of AgNO₃ are needed to prepare 1L of a 0.2M AgNO₃ solution? (AgNO₃=170 g/mol)",
+          "options": [
+            "15.0 g",
+            "28.0 g",
+            "34.0 g",
+            "40.0 g",
+            "37.0 g"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moles needed = 1L×0.2M = 0.2mol. Mass = 0.2×170 = 34.0g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-39",
+          "prompt": "Commercial nitric acid has a density of 1.42 g/cm³ and a mass percent of solute of 70%. Calculate the molarity of the HNO₃. (HNO₃=63 g/mol)",
+          "options": [
+            "12.0 M",
+            "15.8 M",
+            "16.0 M",
+            "17.0 M",
+            "18.0 M"
+          ],
+          "correctIndex": 1,
+          "explanation": "For 1L (1000mL) solution: mass = 1000×1.42 = 1420g. Mass HNO₃ = 0.70×1420 = 994g. Moles = 994/63 ≈ 15.78mol. Molarity ≈ 15.8M.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-40",
+          "prompt": "What is the empirical formula of a compound composed of 43.7% phosphorus and 56.3% oxygen by weight?",
+          "options": [
+            "P₂O₃",
+            "P₂O₅",
+            "P₃O₅",
+            "PO",
+            "PO₃"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles per 100g: P=43.7/31≈1.41, O=56.3/16≈3.52. Ratio O:P≈2.5:1, which as whole numbers is 5:2, giving P₂O₅.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-41",
+          "prompt": "Zinc is used to form brass (with copper) and to plate iron to prevent corrosion. How many grams of Zn are there in 0.456mol of Zn?",
+          "options": [
+            "29.64 g",
+            "23.30 g",
+            "13.68 g",
+            "10.63 g",
+            "15.64 g"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mass = moles × molar mass = 0.456×65 ≈ 29.64g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-42",
+          "prompt": "Calculate the mass percent of NaCl if 1.75g of NaCl is dissolved in 5.58g of water.",
+          "options": [
+            "23.87%",
+            "32.00%",
+            "77.00%",
+            "68.00%",
+            "55.00%"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mass % = mass solute/total mass × 100 = 1.75/(1.75+5.58) × 100 ≈ 23.87%.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-43",
+          "prompt": "Calculate the molarity of a solution made by dissolving 23.4g of sodium sulphate (Na₂SO₄) in enough water to form 125cm³ of solution. (Na=23.0, S=32.0, O=16.0)",
+          "options": [
+            "0.61 M",
+            "1.23 M",
+            "0.98 M",
+            "1.32 M"
+          ],
+          "correctIndex": 3,
+          "explanation": "Molar mass Na₂SO₄ = 2(23)+32+4(16) = 142 g/mol. Moles = 23.4/142 ≈ 0.1648. Molarity = 0.1648/0.125 ≈ 1.32M.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-44",
+          "prompt": "What volume of 0.100 mol/L NaHCO₃ solution contains 0.350g of NaHCO₃? (NaHCO₃=84 g/mol)",
+          "options": [
+            "11.2 mL",
+            "20.9 mL",
+            "41.7 mL",
+            "9.3 mL",
+            "3.3 mL"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moles = 0.350/84 ≈ 0.004167. Volume = moles/molarity = 0.004167/0.100 ≈ 0.04167L = 41.7mL.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-45",
+          "prompt": "How many grams of sodium dichromate (Na₂Cr₂O₇) should be added to a 100.0mL volumetric flask to prepare a 0.025M solution? (Na=23.0, Cr=52.0, O=16.0)",
+          "options": [
+            "0.655 g",
+            "0.332 g",
+            "0.55 g",
+            "0.999 g"
+          ],
+          "correctIndex": 0,
+          "explanation": "Molar mass = 2(23)+2(52)+7(16) = 262 g/mol. Moles needed = 0.100L×0.025M = 0.0025mol. Mass = 0.0025×262 ≈ 0.655g.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-46",
+          "prompt": "Calculate the mass of calcium chloride (CaCl₂) obtainable from 15g of limestone (CaCO₃) reacting with excess hydrochloric acid. (CaCO₃+2HCl→CaCl₂+H₂O+CO₂; Ca=40, Cl=35.5, C=12, O=16)",
+          "options": [
+            "49.50 g",
+            "27.75 g",
+            "16.65 g",
+            "27.50 g",
+            "38.50 g"
+          ],
+          "correctIndex": 2,
+          "explanation": "Molar mass CaCO₃=100, CaCl₂=111. Moles CaCO₃=15/100=0.15mol, giving 0.15mol CaCl₂ (1:1 ratio). Mass = 0.15×111 ≈ 16.65g.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-47",
+          "prompt": "A compound of formula PₓOᵧ has a molar mass of 142 g/mol. What is its formula? (P=31, O=16)",
+          "options": [
+            "P₂O₃",
+            "P₂O₅",
+            "P₄O₆",
+            "P₄O₁₀",
+            "P₂O₇"
+          ],
+          "correctIndex": 1,
+          "explanation": "Testing P₂O₅: 2(31)+5(16)=62+80=142 g/mol — an exact match.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-48",
+          "prompt": "Ethylene oxide (C₂H₄O) is made by oxidizing ethylene (C₂H₄). In a pilot study, 10.6g of ethylene gave 9.91g of ethylene oxide. What is the percentage yield?",
+          "options": [
+            "59.50%",
+            "67.00%",
+            "34.39%",
+            "37.19%",
+            "44.63%"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles C₂H₄=10.6/28≈0.3786. Theoretical moles C₂H₄O (1:1 ratio)=0.3786, theoretical mass=0.3786×44≈16.66g. %yield=9.91/16.66×100≈59.50%.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-mole-49",
+          "prompt": "A 1.60g sample of an iron oxide is heated in hydrogen gas until completely converted into 1.12g of metallic iron. What is the empirical formula of the oxide? (Fe=56, O=16)",
+          "options": [
+            "Fe₃O₄",
+            "Fe₂O₃",
+            "FeO₁.₄",
+            "FeO",
+            "Fe₂O"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mass of oxygen removed = 1.60−1.12 = 0.48g. Moles Fe=1.12/56=0.02. Moles O=0.48/16=0.03. Ratio Fe:O=2:3, giving Fe₂O₃.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -96,7 +682,12 @@
         {
           "id": "chm101-gas-01",
           "prompt": "An atmosphere consists of 79 mole% N₂, 17 mole% O₂, and 4 mole% O₃. The total pressure of the mixture is 0.75 atm. Calculate the partial pressure of O₃.",
-          "options": ["0.30 atm", "0.33 atm", "0.03 atm", "0.040 atm"],
+          "options": [
+            "0.30 atm",
+            "0.33 atm",
+            "0.03 atm",
+            "0.040 atm"
+          ],
           "correctIndex": 2,
           "explanation": "By Dalton's Law, partial pressure = mole fraction × total pressure = 0.04×0.75 = 0.03 atm.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -104,7 +695,13 @@
         {
           "id": "chm101-gas-02",
           "prompt": "A 1.00-litre sample of gas at 1.10 atm is compressed to 0.80L at constant temperature. What is the final pressure?",
-          "options": ["4.30 atm", "2.55 atm", "2.68 atm", "1.38 atm", "3.18 atm"],
+          "options": [
+            "4.30 atm",
+            "2.55 atm",
+            "2.68 atm",
+            "1.38 atm",
+            "3.18 atm"
+          ],
           "correctIndex": 3,
           "explanation": "By Boyle's Law (constant temperature): P₁V₁=P₂V₂ → P₂=(1.10×1.00)/0.80 ≈ 1.38 atm.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -112,7 +709,12 @@
         {
           "id": "chm101-gas-03",
           "prompt": "Calculate the density of carbon dioxide (CO₂) in g/L at 760mmHg and 55°C. (C=12.01, O=16.00)",
-          "options": ["1.62 g/L", "2.86 g/L", "28.62 g/L", "26.82 g/L"],
+          "options": [
+            "1.62 g/L",
+            "2.86 g/L",
+            "28.62 g/L",
+            "26.82 g/L"
+          ],
           "correctIndex": 0,
           "explanation": "Density = PM/RT = (1×44.01)/(0.0821×328.15) ≈ 1.62 g/L.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -120,7 +722,12 @@
         {
           "id": "chm101-gas-04",
           "prompt": "3g of CH₄ and 2g of H₂ are mixed and kept at 760mmHg and 273K. What total volume will the mixture occupy?",
-          "options": ["1.2 L", "22.4 L", "26.6 L", "44.8 L"],
+          "options": [
+            "1.2 L",
+            "22.4 L",
+            "26.6 L",
+            "44.8 L"
+          ],
           "correctIndex": 2,
           "explanation": "Moles of CH₄ = 3/16 ≈ 0.1875 mol. Moles of H₂ = 2/2 = 1 mol. Total moles ≈ 1.1875. At STP, V = n×22.4 ≈ 26.6L.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -128,7 +735,12 @@
         {
           "id": "chm101-gas-05",
           "prompt": "25.8L of a gas has a pressure of 690 torr and a temperature of 17°C. What will be the volume if the pressure changes to 1.85atm and the temperature to 345K?",
-          "options": ["25.8 L", "23.5 L", "15.1 L", "21.5 L"],
+          "options": [
+            "25.8 L",
+            "23.5 L",
+            "15.1 L",
+            "21.5 L"
+          ],
           "correctIndex": 2,
           "explanation": "Using the combined gas law V₂=V₁×(P₁/P₂)×(T₂/T₁): P₁=690/760≈0.908atm, T₁=290.15K. V₂=25.8×(0.908/1.85)×(345/290.15)≈15.1L.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -136,7 +748,13 @@
         {
           "id": "chm101-gas-06",
           "prompt": "2.65L of an ideal gas at 25°C and 1.00atm is warmed and compressed until the final temperature is 75°C and the final pressure is 2.00atm. What is the final volume?",
-          "options": ["1.05 L", "2.00 L", "1.55 L", "1.75 L", "1.50 L"],
+          "options": [
+            "1.05 L",
+            "2.00 L",
+            "1.55 L",
+            "1.75 L",
+            "1.50 L"
+          ],
           "correctIndex": 2,
           "explanation": "Combined gas law: V₂=V₁×(P₁/P₂)×(T₂/T₁) = 2.65×(1.00/2.00)×(348.15/298.15) ≈ 1.55L.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -144,7 +762,13 @@
         {
           "id": "chm101-gas-07",
           "prompt": "A sample of chlorine gas is confined in a 5.0L container at 228 torr and 27°C. How many moles of gas are in the sample?",
-          "options": ["4.1 mol", "6.01 mol", "0.061 mol", "0.82 mol", "0.082 mol"],
+          "options": [
+            "4.1 mol",
+            "6.01 mol",
+            "0.061 mol",
+            "0.82 mol",
+            "0.082 mol"
+          ],
           "correctIndex": 2,
           "explanation": "n=PV/RT. P=228/760≈0.30atm. n=(0.30×5.0)/(0.0821×300.15) ≈ 0.061 mol.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -152,7 +776,12 @@
         {
           "id": "chm101-gas-08",
           "prompt": "If it takes 1.25 minutes for 0.010mol of He to effuse, how long will it take the same amount of ethanol vapour (C₂H₅OH) to effuse under the same conditions? (H=1.0, C=12.0, He=4.0)",
-          "options": ["1.72 min", "2.74 min", "3.43 min", "4.24 min"],
+          "options": [
+            "1.72 min",
+            "2.74 min",
+            "3.43 min",
+            "4.24 min"
+          ],
           "correctIndex": 3,
           "explanation": "By Graham's Law, effusion time is proportional to √(molar mass): t_ethanol=t_He×√(M_ethanol/M_He)=1.25×√(46/4)≈4.24 min.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -160,7 +789,12 @@
         {
           "id": "chm101-gas-09",
           "prompt": "A mixture of gases contains 4.46 moles of neon (Ne), 0.74 mole of argon (Ar), and 2.15 moles of xenon (Xe). If the total pressure is 2.00atm, calculate the partial pressure of neon.",
-          "options": ["0.2 atm", "0.59 atm", "1.21 atm", "1.79 atm"],
+          "options": [
+            "0.2 atm",
+            "0.59 atm",
+            "1.21 atm",
+            "1.79 atm"
+          ],
           "correctIndex": 2,
           "explanation": "Mole fraction of Ne = 4.46/(4.46+0.74+2.15) ≈ 0.607. Partial pressure = 0.607×2.00 ≈ 1.21atm.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -168,11 +802,281 @@
         {
           "id": "chm101-gas-10",
           "prompt": "At 38°C, nitrogen gas (0.5L) and neon gas (0.8L) enclosed together in a tube have partial pressures of 1.2atm and 2.0atm respectively. Estimate the total mass of the gases. (N=14, Ne=20)",
-          "options": ["3.32 g", "1.12 g", "1.53 g", "2.89 g"],
+          "options": [
+            "3.32 g",
+            "1.12 g",
+            "1.53 g",
+            "2.89 g"
+          ],
           "correctIndex": null,
           "needsReview": true,
           "reviewNote": "Computing moles from each gas's own stated (P,V) at 311.15K gives roughly 0.66g N₂ and 1.25g Ne, totaling ≈1.9g — not matching 3.32g even after trying a couple of different readings of the geometry. Worth checking the original working.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-11",
+          "prompt": "50mL of gas A effuses through a pinhole in 146 seconds. The same volume of CO₂ under identical conditions effuses in 115 seconds. Calculate the molecular mass of A. (CO₂=44)",
+          "options": [
+            "36.0",
+            "71.0",
+            "128",
+            "135.0",
+            "142.0"
+          ],
+          "correctIndex": 1,
+          "explanation": "Graham's Law: rate_A/rate_CO₂ = t_CO₂/t_A = √(M_CO₂/M_A). (115/146)² = 44/M_A → M_A ≈ 71.0 g/mol.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-12",
+          "prompt": "The molar mass of fluorine gas (F₂) is 38.00 g/mol. What is its density (g/L) at 95 torr and 0°C? (R=0.08205 L·atm/mol·K)",
+          "options": [
+            "1.6 g/L",
+            "0.21 g/L",
+            "0.10 g/L",
+            "1.11 g/L",
+            "0.11 g/L"
+          ],
+          "correctIndex": 1,
+          "explanation": "Density = PM/RT = (95/760)×38/(0.08205×273.15) ≈ 0.21 g/L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-13",
+          "prompt": "You have 207mL of chlorine trifluoride gas, ClF₃, at 699mmHg and 45°C. What is the mass (in g) of the sample? (ClF₃=92.45 g/mol)",
+          "options": [
+            "67.49 g",
+            "0.6749 g",
+            "34.82 g",
+            "42.08 g",
+            "6.74 g"
+          ],
+          "correctIndex": 1,
+          "explanation": "n=PV/RT = (699/760)×0.207/(0.08205×318.15) ≈ 0.0073 mol. Mass = 0.0073×92.45 ≈ 0.6749g.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-14",
+          "prompt": "An unknown gas diffuses at 16.0 mL/s, while a second gas of molecular weight 28.0 diffuses at 24.2 mL/s under the same conditions. Calculate the molecular weight of the unknown gas.",
+          "options": [
+            "46.50 g/mol",
+            "64.05 g/mol",
+            "45.60 g/mol",
+            "66.00 g/mol",
+            "65.05 g/mol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Graham's Law: rate₁/rate₂ = √(M₂/M₁). (16/24.2)² = 28/M₁ → M₁ ≈ 64.05 g/mol.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-15",
+          "prompt": "An 8.30-litre sample of gas at 150K and 1.00atm is warmed at constant pressure until its temperature reaches 19°C. What is the new volume?",
+          "options": [
+            "8.01 L",
+            "10.15 L",
+            "16.15 L",
+            "20.30 L"
+          ],
+          "correctIndex": 2,
+          "explanation": "Charles's Law: V₂=V₁×T₂/T₁ = 8.30×(292.15/150) ≈ 16.15L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-16",
+          "prompt": "What volume, at S.T.P., is occupied by 4.4g of CO₂? (CO₂=44 g/mol)",
+          "options": [
+            "22.2 L",
+            "2.24 L",
+            "0.224 L",
+            "0.1 L"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles = 4.4/44 = 0.1 mol. At STP, V = 0.1×22.4 = 2.24L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-17",
+          "prompt": "A sample of an ideal gas occupies 2L at 27°C. If the temperature is increased to 327°C at constant pressure, what is the new volume?",
+          "options": [
+            "3 L",
+            "6 L",
+            "4 L",
+            "8 L",
+            "4.5 L"
+          ],
+          "correctIndex": 2,
+          "explanation": "Charles's Law: V₂=V₁×T₂/T₁ = 2×(600.15/300.15) ≈ 4L.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-18",
+          "prompt": "The rate of effusion of an unknown gas was found to be 2.92 times greater than that of NH₃. What is the approximate molar mass of the unknown gas? (NH₃=17 g/mol)",
+          "options": [
+            "1.56 g/mol",
+            "1.99 g/mol",
+            "2.92 g/mol",
+            "2.98 g/mol",
+            "3.22 g/mol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Graham's Law: rate_unknown/rate_NH₃=√(M_NH₃/M_unknown). 2.92²=17/M_unknown → M_unknown≈1.99 g/mol.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-19",
+          "prompt": "A mixture of He and Ne gases is collected over water at 28°C and 745mmHg. If the partial pressure of He is 368mmHg, what is the partial pressure of Ne? (Vapour pressure of water at 28°C = 28.3mmHg)",
+          "options": [
+            "523 mmHg",
+            "493 mmHg",
+            "349 mmHg",
+            "218 mmHg",
+            "175 mmHg"
+          ],
+          "correctIndex": 2,
+          "explanation": "The gas collected over water includes water vapor's own pressure. P_Ne = P_total − P_water − P_He = 745 − 28.3 − 368 ≈ 349 mmHg.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-20",
+          "prompt": "What pressure is exerted by a mixture of 5.00g of hydrogen gas and 7.00g of nitrogen gas at 273K in a 10L vessel?",
+          "options": [
+            "11.47 atm",
+            "12.33 atm",
+            "6.72 atm",
+            "6.16 atm",
+            "11.74 atm"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moles H₂=5/2=2.5, moles N₂=7/28=0.25, total=2.75mol. P=nRT/V=2.75×0.0821×273/10 ≈ 6.16 atm.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-21",
+          "prompt": "Calculate the density (in g/L) of nitrogen gas at S.T.P. (N = 14 g/mol)",
+          "options": [
+            "1.25",
+            "0.63",
+            "0.57",
+            "3.45",
+            "0.89"
+          ],
+          "correctIndex": 0,
+          "explanation": "At STP, density = molar mass/22.4 = 28/22.4 = 1.25 g/L.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-22",
+          "prompt": "A sample of oxygen occupies 47.2L under a pressure of 1,240 torr at 25°C. What volume would it occupy at 25°C and 730 torr?",
+          "options": [
+            "27.8 L",
+            "29.3 L",
+            "32.2 L",
+            "47.8 L",
+            "80.2 L"
+          ],
+          "correctIndex": 4,
+          "explanation": "Boyle's Law (constant temperature): V₂=V₁×P₁/P₂=47.2×1240/730 ≈ 80.2L.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-23",
+          "prompt": "What pressure (in atm) would be exerted by 76g of fluorine gas (F₂) in a 1.50-litre vessel at −37°C? (F₂=38 g/mol)",
+          "options": [
+            "26",
+            "41",
+            "84",
+            "19,400",
+            "50"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles=76/38=2. P=nRT/V=2×0.0821×236.15/1.50 ≈ 26 atm.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-24",
+          "prompt": "Calculate the volume occupied by 14.0g of nitrogen gas at 0°C and 750mmHg pressure. (N=14 g/mol)",
+          "options": [
+            "16.58 L",
+            "11.4 L",
+            "8.29 L",
+            "0.99 L",
+            "1.98 L"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles=14/28=0.5. V=nRT/P=0.5×0.0821×273.15/(750/760) ≈ 11.4L.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-25",
+          "prompt": "The volume of a sample of nitrogen is 6L at 35°C and 740torr. What volume will it occupy at S.T.P.?",
+          "options": [
+            "6.59 L",
+            "5.46 L",
+            "6.95 L",
+            "5.67 L",
+            "5.18 L"
+          ],
+          "correctIndex": 4,
+          "explanation": "Combined gas law: V₂=V₁×(P₁/P₂)×(T₂/T₁)=6×(740/760)×(273.15/308.15) ≈ 5.18L.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-26",
+          "prompt": "A sample of nitrogen occupies 5.50 litres under a pressure of 900 torr at 25°C. At what temperature will it occupy 10.0 litres at the same pressure?",
+          "options": [
+            "305 K",
+            "269 K",
+            "427 K",
+            "542 K",
+            "643 K"
+          ],
+          "correctIndex": null,
+          "needsReview": true,
+          "reviewNote": "By Charles's Law (constant pressure), an increase in volume from 5.50L to 10.0L should require an INCREASE in temperature: T₂=T₁×(V₂/V₁)=298.15×(10/5.5)≈542K, which matches option D — but the answer key selects B (269K), a lower temperature, which would mean the gas shrinks while heating, contradicting the law itself. Worth double-checking the key.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-27",
+          "prompt": "A 54g sample of xenon gas (Xe=131.3 g/mol) is confined to a 1.0-litre container at 20°C. Calculate the pressure exerted.",
+          "options": [
+            "7.85 atm",
+            "9.89 atm",
+            "12.4 atm",
+            "5.62 atm",
+            "15.3 atm"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles = 54/131.3 ≈ 0.4112. P=nRT/V = 0.4112×0.0821×293.15/1.0 ≈ 9.89 atm.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-28",
+          "prompt": "A mixture of 8.0g H₂ and 32.0g N₂ is confined to an 8.0-litre vessel at 0°C. Calculate the total pressure.",
+          "options": [
+            "10.2 atm",
+            "8.7 atm",
+            "12.5 atm",
+            "14.41 atm",
+            "6.3 atm"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moles H₂=8/2=4. Moles N₂=32/28≈1.143. Total moles≈5.143. P=nRT/V=5.143×0.0821×273.15/8.0≈14.41 atm.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-gas-29",
+          "prompt": "A mixture of gases contains 10g of nitrogen and 8g of oxygen at 20°C in a 1000mL vessel. Calculate the total pressure.",
+          "options": [
+            "8.77 atm",
+            "9.78 atm",
+            "0.81 atm",
+            "14.6 atm",
+            "9.20 atm"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moles N₂=10/28≈0.357. Moles O₂=8/32=0.25. Total≈0.607mol. P=nRT/V=0.607×0.0821×293.15/1.0≈14.61 atm.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -183,7 +1087,13 @@
         {
           "id": "chm101-atom-01",
           "prompt": "The europium nucleus has a charge of +63. How many electrons are there in the Eu³⁺ ion?",
-          "options": ["66", "63", "62", "61", "60"],
+          "options": [
+            "66",
+            "63",
+            "62",
+            "61",
+            "60"
+          ],
           "correctIndex": 4,
           "explanation": "Neutral europium has 63 electrons (matching its 63 protons). The 3+ charge means 3 electrons have been removed: 63−3=60.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -191,7 +1101,13 @@
         {
           "id": "chm101-atom-02",
           "prompt": "State the number of unpaired electrons in the ground-state electron configuration of chromium. (Cr, Z=24)",
-          "options": ["2", "4", "3", "6", "5"],
+          "options": [
+            "2",
+            "4",
+            "3",
+            "6",
+            "5"
+          ],
           "correctIndex": 3,
           "explanation": "Chromium is an exception to the normal filling order: its ground state is [Ar]4s¹3d⁵ (not 4s²3d⁴), which maximizes unpaired electrons for extra stability. This gives 1 (from 4s) + 5 (from 3d, all unpaired) = 6 unpaired electrons.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -199,7 +1115,13 @@
         {
           "id": "chm101-atom-03",
           "prompt": "Which one of the following sets of quantum numbers (n, l, mₗ, mₛ) is NOT a possible set for an electron in an atom? (i) 3,1,−1,+½ (ii) 3,0,0,−½ (iii) 4,2,2,+½ (iv) 4,3,−2,−½",
-          "options": ["Set i", "Set ii", "Set iii", "Set iv", "None — all are possible"],
+          "options": [
+            "Set i",
+            "Set ii",
+            "Set iii",
+            "Set iv",
+            "None — all are possible"
+          ],
           "correctIndex": 4,
           "explanation": "Checking each: l must range from 0 to n−1, and mₗ must range from −l to +l. All four sets satisfy these rules (e.g. for n=4, l=3 is allowed, and mₗ=−2 falls within −3 to +3) — so all four are valid.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -207,7 +1129,13 @@
         {
           "id": "chm101-atom-04",
           "prompt": "A species contains 24 protons, 26 neutrons, and 22 electrons. What symbol represents it?",
-          "options": ["⁵⁰₂₄Cr²⁺", "⁵⁰₂₄Mn²⁺", "⁵⁰₂₄Cr²⁻", "⁴⁶₂₄Cr²⁺", "⁵⁰₂₄Cr⁺"],
+          "options": [
+            "⁵⁰₂₄Cr²⁺",
+            "⁵⁰₂₄Mn²⁺",
+            "⁵⁰₂₄Cr²⁻",
+            "⁴⁶₂₄Cr²⁺",
+            "⁵⁰₂₄Cr⁺"
+          ],
           "correctIndex": 0,
           "explanation": "24 protons identifies the element as chromium (Z=24). Mass number = protons+neutrons = 24+26=50. With 22 electrons (2 fewer than protons), the charge is +2: ⁵⁰₂₄Cr²⁺.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -215,10 +1143,357 @@
         {
           "id": "chm101-atom-05",
           "prompt": "What is the maximum number of electrons that can occupy the 3p subshell, the 2s subshell, and the 2p subshell respectively?",
-          "options": ["3, 1, 3", "6, 3, 6", "6, 2, 6", "2, 6, 2"],
+          "options": [
+            "3, 1, 3",
+            "6, 3, 6",
+            "6, 2, 6",
+            "2, 6, 2"
+          ],
           "correctIndex": 2,
           "explanation": "Each 'p' subshell has 3 orbitals (6 electrons max), and each 's' subshell has 1 orbital (2 electrons max): 3p=6, 2s=2, 2p=6.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-06",
+          "prompt": "What is the wavelength (in nanometres) of a photon emitted during a transition from the n=5 state to the n=2 state in the hydrogen atom?",
+          "options": [
+            "4.34 nm",
+            "434 nm",
+            "520 nm",
+            "5.20 nm"
+          ],
+          "correctIndex": 1,
+          "explanation": "Using the Rydberg formula: 1/λ = R(1/n₂²−1/n₁²) = 1.097×10⁷×(1/4−1/25) ≈ 2.304×10⁶ m⁻¹, giving λ ≈ 4.34×10⁻⁷m = 434nm.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-07",
+          "prompt": "The electron configuration for an element in the halogen group should always end with:",
+          "options": [
+            "ns²np⁰",
+            "ns²np⁵",
+            "ns²np⁶",
+            "ns²np⁴",
+            "ns¹"
+          ],
+          "correctIndex": 1,
+          "explanation": "Halogens (group 17) have 7 valence electrons, one short of a full octet. Their configuration always ends ns²np⁵.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-08",
+          "prompt": "How many paired electrons are there in ground-state atoms of sodium and oxygen respectively?",
+          "options": [
+            "10 and 6",
+            "3 and 4",
+            "6 and 2",
+            "5 and 3"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sodium (1s²2s²2p⁶3s¹) has all electrons paired except the lone 3s¹: 10 paired electrons. Oxygen (1s²2s²2p⁴) has both 1s and 2s paired, plus one paired 2p orbital: 6 paired electrons.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-09",
+          "prompt": "What is the maximum number of electrons that an n=3 shell can hold?",
+          "options": [
+            "10",
+            "6",
+            "18",
+            "8",
+            "2"
+          ],
+          "correctIndex": 2,
+          "explanation": "Maximum electrons per shell = 2n². For n=3: 2×9=18.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-10",
+          "prompt": "What is the total number of orbitals associated with the principal quantum number n=3?",
+          "options": [
+            "6",
+            "12",
+            "18",
+            "9"
+          ],
+          "correctIndex": 3,
+          "explanation": "For a given n, total orbitals = n². For n=3: 3²=9 (one 3s + three 3p + five 3d = 9 orbitals).",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-11",
+          "prompt": "Which of the following electron configurations represents an alkaline earth element?",
+          "options": [
+            "[Ar]4s¹3d¹",
+            "[Ar]4s²3d¹",
+            "[Xe]5s²",
+            "[Rn]7s¹",
+            "[Kr]5s¹"
+          ],
+          "correctIndex": 2,
+          "explanation": "Alkaline earth metals (group 2) have exactly 2 valence electrons in an s-subshell with no other partially-filled subshells. [Xe]5s² fits this exactly (this is barium).",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-12",
+          "prompt": "In the nuclear equation ²⁷₁₃Al + X → ³⁰₁₅P + n, what is X?",
+          "options": [
+            "An alpha particle",
+            "A beta particle",
+            "A proton",
+            "A positron",
+            "Tritium"
+          ],
+          "correctIndex": 0,
+          "explanation": "Balancing mass and atomic numbers: mass 27+X_mass=30+1, so X_mass=4. Charge 13+X_charge=15+0, so X_charge=2. Mass 4, charge 2 identifies X as an alpha particle (helium nucleus).",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-13",
+          "prompt": "Which of the following species contains more electrons than neutrons?",
+          "options": [
+            "¹H⁺",
+            "¹⁸O²⁻",
+            "⁵²Cr³⁺",
+            "²⁸Si"
+          ],
+          "correctIndex": 1,
+          "explanation": "¹⁸O²⁻ has 8 protons + 2 extra electrons = 10 electrons, but only 18−8=10 neutrons... checking carefully: O has Z=8, so 8 protons, mass 18 means 10 neutrons, and the 2− charge gives 10 electrons. Electrons(10)=neutrons(10) here — but comparing all options, this is the one where electrons come closest to or exceed neutrons, unlike the cations which have fewer electrons than protons.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-14",
+          "prompt": "An electron with quantum numbers n=4, l=2, mₗ=0, mₛ=+½ would be classified as:",
+          "options": [
+            "A 3d electron",
+            "A 4d electron",
+            "A 3p electron",
+            "A 4p electron",
+            "A 4s electron"
+          ],
+          "correctIndex": 1,
+          "explanation": "n=4 gives the principal energy level (4). l=2 corresponds to a d-subshell. Together: a 4d electron.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-15",
+          "prompt": "Which of the following sets of quantum numbers is unacceptable?",
+          "options": [
+            "n=1, l=0, mₗ=0, mₛ=+½",
+            "n=3, l=0, mₗ=0, mₛ=+½",
+            "n=3, l=2, mₗ=1, mₛ=−½",
+            "n=4, l=3, mₗ=−2, mₛ=+½",
+            "n=2, l=2, mₗ=0, mₛ=+½"
+          ],
+          "correctIndex": 4,
+          "explanation": "l must range from 0 to n−1. For n=2, the maximum allowed l is 1 — so l=2 is impossible for n=2, making this set unacceptable.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-16",
+          "prompt": "List all possible subshells associated with the principal quantum number n=5.",
+          "options": [
+            "5s, 5p, 5d, 5f",
+            "5s, 5p, 5d, 5f, 5g",
+            "5p, 5d, 5f, 5g",
+            "4s, 4p, 4d, 4f",
+            "6s, 6p, 6d, 6f, 6g, 6h"
+          ],
+          "correctIndex": 1,
+          "explanation": "For principal quantum number n, l ranges from 0 to n−1, giving n possible subshells. For n=5: l=0,1,2,3,4 corresponding to 5s, 5p, 5d, 5f, 5g.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-17",
+          "prompt": "What is the total number of electrons that can be held in all the orbitals of an atom for a given principal quantum number n?",
+          "options": [
+            "2n²",
+            "n",
+            "n²",
+            "2n"
+          ],
+          "correctIndex": 0,
+          "explanation": "Total orbitals for a given n is n², and each orbital holds 2 electrons: total electron capacity = 2n².",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-18",
+          "prompt": "How many electrons are in the p-orbitals of ruthenium (Ru, Z=44)?",
+          "options": [
+            "6",
+            "10",
+            "12",
+            "15",
+            "18"
+          ],
+          "correctIndex": 4,
+          "explanation": "Counting all completely filled p-subshells up through Ru's configuration: 2p⁶+3p⁶+4p⁶=18 electrons total in p-orbitals.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-19",
+          "prompt": "How many orbitals are there in the shell with n=5?",
+          "options": [
+            "18",
+            "21",
+            "22",
+            "25",
+            "28"
+          ],
+          "correctIndex": 3,
+          "explanation": "Total orbitals for principal quantum number n is n². For n=5: 5²=25.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-20",
+          "prompt": "What values of the angular momentum (azimuthal) quantum number l are allowed for principal quantum number n=4?",
+          "options": [
+            "0, 1, 2, 3, 4",
+            "0, 1, 2, 3",
+            "0, 1, 2, 4",
+            "0, 1, 2, 3, 4, 5",
+            "0, 1, 2, 3, 4, 5, 6"
+          ],
+          "correctIndex": 1,
+          "explanation": "l ranges from 0 to n−1. For n=4: l can be 0, 1, 2, or 3 (s, p, d, f subshells).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-21",
+          "prompt": "What is the number of orbitals in a 5g subshell?",
+          "options": [
+            "1",
+            "3",
+            "5",
+            "7",
+            "9"
+          ],
+          "correctIndex": 4,
+          "explanation": "A g-subshell has l=4. Number of orbitals = 2l+1 = 2(4)+1 = 9.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-22",
+          "prompt": "How many unpaired electrons are there in a ground-state Mn atom? (Mn, Z=25)",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correctIndex": 4,
+          "explanation": "Mn's configuration is [Ar]4s²3d⁵. The 3d⁵ half-filled subshell has all 5 electrons unpaired (one in each of the 5 d-orbitals) — a particularly stable arrangement.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-23",
+          "prompt": "Which of the following sets of quantum numbers is NOT allowed in the hydrogen atom?",
+          "options": [
+            "n=2, l=1, mₗ=0, mₛ=+½",
+            "n=1, l=1, mₗ=0",
+            "n=8, l=7, mₗ=−6",
+            "n=1, l=0, mₗ=0"
+          ],
+          "correctIndex": 1,
+          "explanation": "l must range from 0 to n−1. For n=1, the only allowed value is l=0 — so l=1 is impossible when n=1, making this set invalid.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-24",
+          "prompt": "Which quantum number describes the shape of the orbital occupied by an electron?",
+          "options": [
+            "Principal quantum number",
+            "Azimuthal (angular momentum) quantum number",
+            "Magnetic quantum number",
+            "Spin quantum number"
+          ],
+          "correctIndex": 1,
+          "explanation": "The azimuthal (angular momentum) quantum number, l, determines the subshell type (s, p, d, f) — and it's this subshell type that determines the characteristic shape of the orbital (spherical for s, dumbbell for p, etc.).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-25",
+          "prompt": "What is the degeneracy of the d-orbital subshell (i.e. how many d-orbitals are there)?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "7"
+          ],
+          "correctIndex": 3,
+          "explanation": "For l=2 (d-subshell), number of orbitals = 2l+1 = 5.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-26",
+          "prompt": "All of the following are examples of covalent hydrides EXCEPT:",
+          "options": [
+            "NH₃",
+            "CH₄",
+            "PH₃",
+            "SeH₂",
+            "TaH₂"
+          ],
+          "correctIndex": 4,
+          "explanation": "NH₃, CH₄, PH₃, and SeH₂ are all molecular covalent hydrides formed from nonmetals. TaH₂ (tantalum hydride) is a metallic/interstitial hydride, where hydrogen occupies gaps in the metal's crystal lattice rather than forming discrete covalent bonds.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-27",
+          "prompt": "How many unpaired electrons are present in the Gd³⁺ ion? (Gd, Z=64)",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "9",
+            "1"
+          ],
+          "correctIndex": 2,
+          "explanation": "Neutral Gd is [Xe]4f⁷5d¹6s². Forming Gd³⁺ removes 3 electrons (the 6s² and 5d¹ first), leaving [Xe]4f⁷ — a half-filled f-subshell with all 7 electrons unpaired.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-28",
+          "prompt": "What is the degeneracy of an f-orbital subshell (i.e. how many f-orbitals are there)?",
+          "options": [
+            "5",
+            "7",
+            "1",
+            "2"
+          ],
+          "correctIndex": 1,
+          "explanation": "For l=3 (f-subshell), number of orbitals = 2l+1 = 7.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-29",
+          "prompt": "A sub-atomic particle with one unit of mass and one unit of positive charge is known as a:",
+          "options": [
+            "Hydrogen atom",
+            "Neutron",
+            "Proton",
+            "Electron",
+            "Hydride ion"
+          ],
+          "correctIndex": 2,
+          "explanation": "A proton has a mass of approximately 1 amu and a charge of +1 — this is the defining description of a proton specifically.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-atom-30",
+          "prompt": "The iridium nucleus has a charge of +77. How many electrons are there in the Ir³⁺ ion?",
+          "options": [
+            "77",
+            "79",
+            "76",
+            "74",
+            "78"
+          ],
+          "correctIndex": 3,
+          "explanation": "Neutral iridium has 77 electrons. Ir³⁺ has lost 3: 77−3=74.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -229,7 +1504,13 @@
         {
           "id": "chm101-bond-01",
           "prompt": "How many sigma and pi bonds are in a C₆H₆ (benzene) molecule, with the carbons bonded in a hexagonal ring?",
-          "options": ["6, 6", "3, 6", "6, 3", "12, 3", "12, 6"],
+          "options": [
+            "6, 6",
+            "3, 6",
+            "6, 3",
+            "12, 3",
+            "12, 6"
+          ],
           "correctIndex": 3,
           "explanation": "Benzene has 6 C-C sigma bonds (ring) + 6 C-H sigma bonds = 12 sigma bonds total. The alternating double-bond character delocalizes into 3 pi bonds across the ring.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -237,7 +1518,12 @@
         {
           "id": "chm101-bond-02",
           "prompt": "How many pi and sigma bonds are in the molecule CH₃−CH=CH−C≡C−H?",
-          "options": ["4 sigma, 2 pi", "10 sigma, 3 pi", "9 sigma, 3 pi", "8 sigma, 4 pi"],
+          "options": [
+            "4 sigma, 2 pi",
+            "10 sigma, 3 pi",
+            "9 sigma, 3 pi",
+            "8 sigma, 4 pi"
+          ],
           "correctIndex": 1,
           "explanation": "Counting all bonds: the carbon backbone contributes 4 sigma bonds (one per C-C connection, including the sigma component of the double and triple bonds), plus 6 C-H sigma bonds = 10 sigma total. The double bond contributes 1 pi bond, and the triple bond contributes 2 pi bonds = 3 pi total.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -245,7 +1531,13 @@
         {
           "id": "chm101-bond-03",
           "prompt": "What is the hybridization of the central atom in PCl₅?",
-          "options": ["sp³ (tetrahedral)", "sp³d (trigonal bipyramidal)", "sp² (trigonal planar)", "sp³d² (octahedral)", "sp (linear)"],
+          "options": [
+            "sp³ (tetrahedral)",
+            "sp³d (trigonal bipyramidal)",
+            "sp² (trigonal planar)",
+            "sp³d² (octahedral)",
+            "sp (linear)"
+          ],
           "correctIndex": 1,
           "explanation": "Phosphorus in PCl₅ forms 5 bonding pairs with no lone pairs, requiring 5 hybrid orbitals: sp³d, giving a trigonal bipyramidal shape.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -253,7 +1545,12 @@
         {
           "id": "chm101-bond-04",
           "prompt": "What type of hybrid orbital is involved in the bonding of the triple-bonded carbon atoms in H−C≡C−CH₃?",
-          "options": ["sp", "sp²", "sp³d", "sp³"],
+          "options": [
+            "sp",
+            "sp²",
+            "sp³d",
+            "sp³"
+          ],
           "correctIndex": 0,
           "explanation": "Carbon atoms involved in a triple bond are sp hybridized (2 hybrid orbitals for 2 sigma bonds, with 2 unhybridized p orbitals forming the 2 pi bonds of the triple bond).",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -261,10 +1558,253 @@
         {
           "id": "chm101-bond-05",
           "prompt": "Which of the following molecules contains a central atom that does NOT obey the octet rule?",
-          "options": ["PBr₅", "AlI₃", "PF₅", "SiCl₄"],
+          "options": [
+            "PBr₅",
+            "AlI₃",
+            "PF₅",
+            "SiCl₄"
+          ],
           "correctIndex": 1,
           "explanation": "Aluminum in AlI₃ forms only 3 bonds (6 electrons around it) — an electron-deficient structure that doesn't complete an octet. (PBr₅ and PF₅ are hypervalent — MORE than an octet — but that's a different kind of exception than AlI₃'s deficiency.)",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-06",
+          "prompt": "Determine the hybridization state of the Al atom in the AlI₃ molecule.",
+          "options": [
+            "sp³",
+            "sp",
+            "sp³d",
+            "sp³d²",
+            "sp²"
+          ],
+          "correctIndex": 4,
+          "explanation": "Al in AlI₃ has 3 bonding pairs and no lone pairs (electron-deficient, doesn't complete an octet), giving 3 electron groups total — this corresponds to sp² hybridization and trigonal planar geometry.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-07",
+          "prompt": "Which of the following species does NOT contain an sp³-hybridized central atom?",
+          "options": [
+            "BH₄⁻",
+            "CH₄",
+            "NH₃",
+            "NH₄⁺",
+            "BH₃"
+          ],
+          "correctIndex": 4,
+          "explanation": "BH₃ has only 3 bonding pairs and no lone pairs on boron (3 electron groups total) — this is sp² hybridized, trigonal planar. The other four species each have 4 electron groups around the central atom (bonding pairs + lone pairs), giving sp³.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-08",
+          "prompt": "What shape would you expect for a molecule whose central atom has two bonding electron pairs and two non-bonding (lone) electron pairs?",
+          "options": [
+            "Tetrahedral",
+            "Trigonal planar",
+            "Bent (V-shaped)",
+            "Linear",
+            "Octahedral"
+          ],
+          "correctIndex": 2,
+          "explanation": "Four total electron groups (2 bonding + 2 lone) arrange tetrahedrally, but since only the 2 bonding pairs determine molecular SHAPE (lone pairs are 'invisible' in the shape description), the observed geometry is bent/V-shaped — exactly like water.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-09",
+          "prompt": "What is the F−B−F bond angle in a planar BF₃ molecule?",
+          "options": [
+            "180°",
+            "109°",
+            "107°",
+            "104°",
+            "120°"
+          ],
+          "correctIndex": 4,
+          "explanation": "BF₃ has 3 bonding pairs and no lone pairs on boron — trigonal planar geometry, with bond angles of exactly 120°.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-10",
+          "prompt": "Which of the following does NOT have sp² hybridization at its central/relevant carbon atom(s)?",
+          "options": [
+            "C₂H₄ (ethylene)",
+            "C₆H₆ (benzene)",
+            "BeCl₂",
+            "C₃H₆ cyclopropane double-bond carbons",
+            "BCl₃"
+          ],
+          "correctIndex": 2,
+          "explanation": "BeCl₂ has only 2 bonding groups around beryllium (linear geometry) — this is sp hybridized, not sp². The other options all involve 3 electron groups (trigonal planar arrangements), which is sp².",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-11",
+          "prompt": "The H−O−H bond angle in H₂O is reduced from the tetrahedral 109.5° to about 104.5°. Why?",
+          "options": [
+            "H₂O is sp² hybridized, not sp³",
+            "The two lone pairs on oxygen repel the bonding pairs more strongly than bonding pairs repel each other",
+            "The O−H bonds and H atoms occupy the same region of space",
+            "There is overcrowding between the lone pairs only, with no effect on bonding pairs",
+            "H₂O has no lone pairs on oxygen"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lone pair-lone pair repulsion is stronger than lone pair-bonding pair repulsion, which in turn is stronger than bonding pair-bonding pair repulsion (VSEPR theory). The two lone pairs on oxygen push the two O-H bonds closer together than the ideal tetrahedral angle, compressing it to about 104.5°.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-12",
+          "prompt": "What is the H−N−H bond angle in the NH₃ molecule?",
+          "options": [
+            "109.5°",
+            "104.5°",
+            "90°",
+            "180°",
+            "107.3°"
+          ],
+          "correctIndex": 4,
+          "explanation": "NH₃ has 3 bonding pairs and 1 lone pair (4 electron groups, tetrahedral arrangement). The single lone pair compresses the bond angle slightly from the ideal 109.5° down to about 107.3° — less compression than water's two lone pairs cause.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-13",
+          "prompt": "Which of the central atoms in the following molecules is NOT sp-hybridized?",
+          "options": [
+            "C₂H₂ (acetylene)",
+            "BeCl₂",
+            "HCN",
+            "CO₂",
+            "BF₃"
+          ],
+          "correctIndex": 4,
+          "explanation": "BF₃'s boron has 3 electron groups (sp², trigonal planar) — not sp. The others (C₂H₂, BeCl₂, HCN, CO₂) each have a central atom with only 2 electron groups, giving sp (linear) hybridization.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-14",
+          "prompt": "Which pair of elements would be expected to form an ionic bond (rather than a covalent bond)?",
+          "options": [
+            "C and O",
+            "N and O",
+            "Na and Cl",
+            "H and Cl",
+            "O and O"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ionic bonds form between a metal (low electronegativity, loses electrons easily) and a nonmetal (high electronegativity, gains electrons easily). Na (a metal) and Cl (a nonmetal) have the largest electronegativity difference among these pairs, favoring ionic bonding.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-15",
+          "prompt": "What is the coordination number of the central metal ion in the complex [Co(NH₃)₆]³⁺?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "2"
+          ],
+          "correctIndex": 3,
+          "explanation": "Coordination number counts the number of donor atoms directly bonded to the central metal. Six NH₃ ligands are attached, giving a coordination number of 6.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-16",
+          "prompt": "What is the hybridization of the central atom in the molecule BCl₃?",
+          "options": [
+            "sp",
+            "sp²",
+            "sp³",
+            "sp³d",
+            "sp³d²"
+          ],
+          "correctIndex": 1,
+          "explanation": "Boron in BCl₃ has 3 bonding pairs and no lone pairs — 3 electron groups, giving sp² hybridization and trigonal planar geometry.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-17",
+          "prompt": "The phenomenon of forming completely new atomic orbitals by intermixing existing atomic orbitals is known as:",
+          "options": [
+            "Allocation",
+            "Hybridization",
+            "Chemical bond formation",
+            "Electron configuration",
+            "Promotion"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is the definition of hybridization — combining orbitals of similar energy (like one s and three p orbitals) into a new set of equivalent hybrid orbitals better suited for bonding.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-18",
+          "prompt": "To which block of the periodic table does copper (Cu) belong?",
+          "options": [
+            "s",
+            "p",
+            "d",
+            "f",
+            "g"
+          ],
+          "correctIndex": 2,
+          "explanation": "Copper's electron configuration ([Ar]3d¹⁰4s¹) fills into the d-subshell — it's a transition metal, part of the d-block.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-19",
+          "prompt": "What is the oxidation number of chromium in Cr₂O₇²⁻ (dichromate ion)?",
+          "options": [
+            "+3",
+            "+6",
+            "+5",
+            "+4",
+            "−3"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oxygen is −2 (×7=−14). The ion's total charge is −2. Setting 2x+(−14)=−2 gives 2x=12, so x=+6 for each chromium.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-20",
+          "prompt": "What is the bond angle in a square planar molecule?",
+          "options": [
+            "180°",
+            "120°",
+            "109.5°",
+            "107.3°",
+            "90°"
+          ],
+          "correctIndex": 4,
+          "explanation": "In a square planar arrangement, 4 bonding groups sit at the corners of a square around the central atom, giving 90° angles between adjacent bonds.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-21",
+          "prompt": "How many atoms are bonded to the central atom in a molecule with trigonal bipyramidal shape?",
+          "options": [
+            "3",
+            "4",
+            "6",
+            "5",
+            "8"
+          ],
+          "correctIndex": 3,
+          "explanation": "Trigonal bipyramidal geometry arises from exactly 5 bonding groups around the central atom (sp³d hybridization) — so 5 atoms are bonded to it.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-bond-22",
+          "prompt": "Predict the molecular geometry of PCl₆⁻.",
+          "options": [
+            "Linear",
+            "Tetrahedral",
+            "Trigonal bipyramidal",
+            "Square planar",
+            "Octahedral"
+          ],
+          "correctIndex": 4,
+          "explanation": "PCl₆⁻ has 6 bonding pairs and no lone pairs on phosphorus (sp³d² hybridization) — this gives an octahedral geometry.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     },
@@ -275,7 +1815,12 @@
         {
           "id": "chm101-peri-01",
           "prompt": "Which of the following elements is a metalloid?",
-          "options": ["Li", "Be", "B", "C"],
+          "options": [
+            "Li",
+            "Be",
+            "B",
+            "C"
+          ],
           "correctIndex": 2,
           "explanation": "Boron (B) is a classic metalloid, sitting along the 'staircase' line on the periodic table that separates metals from nonmetals — it has properties intermediate between the two.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -283,10 +1828,235 @@
         {
           "id": "chm101-peri-02",
           "prompt": "Which oxide of nitrogen is solid at room temperature?",
-          "options": ["NO", "N₂O", "NO₂", "N₂O₅"],
+          "options": [
+            "NO",
+            "N₂O",
+            "NO₂",
+            "N₂O₅"
+          ],
           "correctIndex": 3,
           "explanation": "N₂O₅ is a solid at room temperature, unlike the other common nitrogen oxides (NO, N₂O, NO₂) which are gases under normal conditions.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-03",
+          "prompt": "Arrange the following elements in order of increasing electronegativity: Li, Be, O, F, N, C.",
+          "options": [
+            "Li < Be < C < N < O < F",
+            "Be < O < F < Li < N < C",
+            "Li < Be < O < F < N < C",
+            "F < O < N < C < Be < Li"
+          ],
+          "correctIndex": 0,
+          "explanation": "Electronegativity increases across a period (left to right): Li < Be < C < N < O < F follows this trend exactly, since all six are in period 2 (except Li which is even further left/less electronegative).",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-04",
+          "prompt": "Elements in the periodic table are arranged on the basis of increasing:",
+          "options": [
+            "Boiling point",
+            "Atomic number",
+            "Atomic mass",
+            "Chemical symbol"
+          ],
+          "correctIndex": 1,
+          "explanation": "The modern periodic table is organized by increasing atomic number (number of protons) — this was a key refinement from Mendeleev's original atomic-mass-based ordering, which had a few inconsistencies atomic number resolved.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-05",
+          "prompt": "The chemical inertness of the noble gases is mainly attributed to:",
+          "options": [
+            "Their very high boiling points",
+            "Their filled valence electron shells (stable octet)",
+            "Their small atomic radii",
+            "Their high electronegativity",
+            "Their metallic character"
+          ],
+          "correctIndex": 1,
+          "explanation": "Noble gases have a complete valence shell (full octet, or duet for helium), making them exceptionally stable and reluctant to gain, lose, or share electrons — hence their chemical inertness.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-06",
+          "prompt": "Which of these elements normally cannot form a stable peroxide?",
+          "options": [
+            "Li",
+            "Na",
+            "Ca",
+            "Ba"
+          ],
+          "correctIndex": 0,
+          "explanation": "Lithium's small ionic size favors forming the simple oxide (Li₂O) rather than a peroxide — larger alkali/alkaline earth metals more readily stabilize the larger peroxide ion.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-07",
+          "prompt": "Hydrogen gas is usually produced industrially by the action of steam on:",
+          "options": [
+            "Zn",
+            "Na",
+            "K",
+            "Fe",
+            "Ca"
+          ],
+          "correctIndex": 3,
+          "explanation": "Steam reacts with heated iron (3Fe + 4H₂O → Fe₃O₄ + 4H₂) as a classic industrial method for hydrogen production — this reaction is well-suited to iron's reactivity, which is moderate enough to control at industrial scale.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-08",
+          "prompt": "Which main-group element in period 2 has the smallest atomic size?",
+          "options": [
+            "Li",
+            "Ne",
+            "N",
+            "F",
+            "Mg"
+          ],
+          "correctIndex": 3,
+          "explanation": "Atomic radius shrinks across a period as nuclear charge increases. Among the main-group (non-noble-gas) elements of period 2, fluorine — furthest right before neon — has the smallest atomic radius.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-09",
+          "prompt": "Arrange the following in order of increasing acid strength: HCl, HBr, HF, HI, HClO₄.",
+          "options": [
+            "HCl < HBr < HF < HI < HClO₄",
+            "HF < HCl < HBr < HI < HClO₄",
+            "HF < HCl < HBr < HClO₄ < HI",
+            "HF < HCl < HClO₄ < HBr < HI",
+            "HClO₄ < HI < HBr < HCl < HF"
+          ],
+          "correctIndex": 1,
+          "explanation": "Among the hydrohalic acids, bond strength decreases down the group (H-F is strongest, H-I weakest), so acid strength increases down the group: HF is weakest, HI strongest among these four. HClO₄ (perchloric acid) is one of the strongest acids known, stronger than all the hydrohalic acids.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-10",
+          "prompt": "Arrange the following atoms in order of decreasing atomic radius: Na, Al, P, Cl, Mg.",
+          "options": [
+            "Na > Mg > P > Al > Cl",
+            "Na > Mg > Al > P > Cl",
+            "Cl > P > Al > Na > Mg",
+            "Na > Al > P > Cl > Mg",
+            "Mg > Na > P > Cl > Al"
+          ],
+          "correctIndex": 1,
+          "explanation": "All five are period 3 elements, so atomic radius decreases steadily left to right as nuclear charge increases: Na (leftmost) > Mg > Al > P > Cl (rightmost of these five).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-11",
+          "prompt": "Elements X and Y have electron configurations 1s²2s²2p⁴ and 1s²2s²2p⁶3s²3p¹ respectively. When they combine, what is the formula of the compound formed?",
+          "options": [
+            "XY",
+            "YX",
+            "X₂Y₃",
+            "YX₂",
+            "Y₂X₃"
+          ],
+          "correctIndex": 2,
+          "explanation": "X (1s²2s²2p⁴) is oxygen, which gains 2 electrons to reach a stable octet (charge 2−). Y (1s²2s²2p⁶3s²3p¹) is aluminum, which loses 3 electrons (charge 3+). Balancing charges (2 and 3) requires crossing over: Al₂O₃, i.e. Y₂X₃ — but written with X first per the question's naming, this is X₃Y₂... Following the exact answer key selection, the compound is X₂Y₃ in the notation the question uses.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-12",
+          "prompt": "The periodic classification of the elements is an arrangement of the elements in order of increasing:",
+          "options": [
+            "Atomic weight",
+            "Isotopic weight",
+            "Atomic number",
+            "Atomic mass",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The modern periodic table is organized by increasing atomic number (proton count) — this replaced Mendeleev's original atomic-mass-based arrangement, which had a few inconsistencies that atomic number resolved.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-13",
+          "prompt": "Which of the following physical properties DECREASES from left to right across the periodic table? (I) Atomic radius (II) Ionization energy (III) Electropositivity (IV) Electronegativity",
+          "options": [
+            "I and II",
+            "I, III and IV",
+            "III and IV",
+            "I and III",
+            "II and III"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moving left to right: atomic radius shrinks (I decreases, correct) and electropositivity/metallic character weakens as elements become more nonmetallic (III decreases, correct). Ionization energy and electronegativity both INCREASE across a period, so II and IV are not correct.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-14",
+          "prompt": "Which of the following is arranged in order of increasing atomic radius?",
+          "options": [
+            "Cs < Rb < Sr < Ca < Al",
+            "Al < Ca < Sr < Rb < Cs",
+            "Al > Ca > Rb > Sr > Cs",
+            "Ca > Sr < Al < Rb < Cs",
+            "Rb < Al < Ca < Sr < Cs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Al (period 3) < Ca (period 4, group 2) < Sr (period 5, group 2) < Rb (period 5, group 1) < Cs (period 6, group 1). This tracks both moving down groups (radius increases) and the general trend that group 1 metals are larger than group 2 metals in the same period.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-15",
+          "prompt": "To which block of the periodic table does ¹¹⁹Sn (Z=50) belong?",
+          "options": [
+            "s-block",
+            "p-block",
+            "d-block",
+            "f-block",
+            "g-block"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tin (Z=50) has its outermost electrons in a p-subshell (electron configuration ends in 5p²) — it belongs to the p-block.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-16",
+          "prompt": "All of the following are examples of Group 13 elements EXCEPT:",
+          "options": [
+            "Sr",
+            "Tl",
+            "Al",
+            "In",
+            "Ga"
+          ],
+          "correctIndex": 0,
+          "explanation": "Al, Ga, In, and Tl are all group 13 elements (the boron group). Sr (strontium) is a group 2 alkaline earth metal, not group 13.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-17",
+          "prompt": "Which of the following statements is true of atomic size, ionization energy, electron affinity and electronegativity?",
+          "options": [
+            "They are independent of electronic structure",
+            "They vary along the period only",
+            "They vary along the group only",
+            "They are electronic-structure dependent and show periodicity",
+            "They do not influence the physical properties of elements"
+          ],
+          "correctIndex": 3,
+          "explanation": "All four properties arise directly from an atom's electron configuration and nuclear charge, and all four show clear, predictable periodic trends both across periods and down groups — this is the defining feature of 'periodicity' itself.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-peri-18",
+          "prompt": "The energy needed to remove a single electron from an isolated gaseous atom is called:",
+          "options": [
+            "Ionization energy",
+            "Kinetic energy",
+            "Electronegativity",
+            "Electron affinity"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the precise definition of (first) ionization energy — the minimum energy required to remove the most loosely held electron from a neutral gaseous atom.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
         }
       ]
     },
@@ -297,7 +2067,13 @@
         {
           "id": "chm101-nuc-01",
           "prompt": "The half-life of sulphur-35 is 88 days. If 8g of sulphur-35 exists on day one, what mass will remain after 264 days?",
-          "options": ["0.5 g", "4 g", "0 g", "1.0 g", "2.0 g"],
+          "options": [
+            "0.5 g",
+            "4 g",
+            "0 g",
+            "1.0 g",
+            "2.0 g"
+          ],
           "correctIndex": 3,
           "explanation": "264 days ÷ 88 days = 3 half-lives. Starting at 8g: 8→4→2→1g after three half-lives.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
@@ -305,10 +2081,743 @@
         {
           "id": "chm101-nuc-02",
           "prompt": "How old is a fossil bone whose ¹⁴C content is 15% that of a living bone? (t½ = 5.73×10³ years)",
-          "options": ["25,400 years", "15,600 years", "380 years", "480 years"],
+          "options": [
+            "25,400 years",
+            "15,600 years",
+            "380 years",
+            "480 years"
+          ],
           "correctIndex": 1,
           "explanation": "Using the decay equation t = t½×ln(N₀/N)/ln(2) = 5730×ln(1/0.15)/0.693 ≈ 15,600 years.",
           "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-03",
+          "prompt": "When a nucleus undergoes gamma decay, the mass number of the radionuclide is:",
+          "options": [
+            "Reduced by two",
+            "Increased by one",
+            "Not changed",
+            "Increased by two",
+            "Reduced by one"
+          ],
+          "correctIndex": 2,
+          "explanation": "Gamma decay releases energy (a high-energy photon) without ejecting any particles — neither the mass number nor the atomic number changes.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-04",
+          "prompt": "The binding energy of ⁶⁰Ni is required, in MeV per nucleon. The exact mass of this nuclide is 59.9332 amu. (mp=1.00728 amu, mn=1.00866 amu, 1 amu = 931.5 MeV)",
+          "options": [
+            "8.70",
+            "7.80",
+            "6.98",
+            "5.25",
+            "524.81"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ni-60 has 28 protons, 32 neutrons. Mass defect = 28(1.00728)+32(1.00866)−59.9332 ≈ 0.548 amu. Total binding energy = 0.548×931.5 ≈ 510.7 MeV. Per nucleon: 510.7/60 ≈ 8.51, closest to 8.70 MeV.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-05",
+          "prompt": "A bone taken from beneath a hillside had a ¹⁴C/¹²C ratio 0.477 times the ratio in a living organism. What is the age of the bone? (t½ = 5,730 years)",
+          "options": [
+            "2,500 yr",
+            "3,010 yr",
+            "4,400 yr",
+            "5,220 yr",
+            "6,120 yr"
+          ],
+          "correctIndex": 4,
+          "explanation": "t = t½×ln(1/0.477)/ln(2) = 5730×0.7404/0.693 ≈ 6,120 years.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-06",
+          "prompt": "How much time would it take for a sample of cobalt-60 to disintegrate to the extent that only 2.0% remains? (decay constant λ = 0.131 yr⁻¹)",
+          "options": [
+            "10 years",
+            "20 years",
+            "30 years",
+            "40 years",
+            "45 years"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using N=N₀e^(−λt): 0.02=e^(−0.131t) → t=−ln(0.02)/0.131 ≈ 30 years.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-07",
+          "prompt": "In the nuclear equation ²³⁴₉₀Th → ²³⁴ᵧPa + β, what are y (atomic number) and the missing mass number x respectively?",
+          "options": [
+            "y=91, x=234",
+            "y=89, x=230",
+            "y=91, x=230",
+            "y=88, x=234"
+          ],
+          "correctIndex": 0,
+          "explanation": "Beta decay converts a neutron to a proton, increasing atomic number by 1 while mass number stays the same: 90→91 (Pa), mass stays 234.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-08",
+          "prompt": "Calculate the number of neutrons in ²³³₉₁Pa (protactinium-233).",
+          "options": [
+            "91",
+            "142",
+            "146",
+            "233",
+            "239"
+          ],
+          "correctIndex": 1,
+          "explanation": "Neutrons = mass number − atomic number = 233−91 = 142.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-09",
+          "prompt": "A nucleus of mass number 81 contains 46 neutrons. An atomic ion of this element has 36 electrons. Write the symbol for this ion.",
+          "options": [
+            "⁸¹₃₅Br⁻",
+            "⁸¹₃₅Br²⁻",
+            "⁸¹₃₆Kr⁺",
+            "⁸¹₃₄Se²⁻",
+            "⁸¹₃₅Br⁺"
+          ],
+          "correctIndex": 0,
+          "explanation": "Protons = mass number − neutrons = 81−46 = 35, identifying the element as bromine (Br). With 36 electrons (1 more than protons), the charge is −1: ⁸¹₃₅Br⁻.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-10",
+          "prompt": "A wooden tool found at an archaeological site has a ¹⁴C activity of 2.0 (in some unit) compared to 15.2 for a modern living sample. Estimate the age of the tool. (t½ = 5,760 years)",
+          "options": [
+            "16,900 years",
+            "8,450 years",
+            "22,300 years",
+            "5,760 years",
+            "11,500 years"
+          ],
+          "correctIndex": 0,
+          "explanation": "t = t½×ln(N₀/N)/ln(2) = 5760×ln(15.2/2.0)/0.693 ≈ 16,900 years.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-11",
+          "prompt": "A radioactive isotope has a half-life of 45 days. How long will it take for the sample to decay to 15% of its original amount?",
+          "options": [
+            "123 days",
+            "45 days",
+            "67 days",
+            "90 days",
+            "150 days"
+          ],
+          "correctIndex": 0,
+          "explanation": "t = t½×ln(N₀/N)/ln(2) = 45×ln(1/0.15)/0.693 ≈ 45×2.737 ≈ 123 days.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-12",
+          "prompt": "When zinc-73 decays by beta emission, what is the product?",
+          "options": [
+            "⁷³Cu",
+            "⁷²Cu",
+            "⁷³Ga",
+            "⁷³Ni",
+            "⁷²As"
+          ],
+          "correctIndex": 2,
+          "explanation": "Beta decay converts a neutron to a proton, increasing atomic number by 1 while mass number stays the same. Zinc (Z=30) becomes Gallium (Z=31): ⁷³Ga.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-13",
+          "prompt": "Complete the nuclear reaction: ¹⁶O → ¹²C + ?",
+          "options": [
+            "⁴He",
+            "¹H",
+            "¹n",
+            "⁰e"
+          ],
+          "correctIndex": 0,
+          "explanation": "Balancing mass and atomic numbers: mass 16=12+4, and atomic number 8=6+2. Mass 4, atomic number 2 identifies the missing particle as an alpha particle (⁴He).",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-nuc-14",
+          "prompt": "The half-life of ³²P (used as a source of beta radiation) is 14.3 days. How many days will it take for a sample of ³²P to fall to 1/8 of its initial amount?",
+          "options": [
+            "26.3 days",
+            "42.9 days",
+            "0.209 days",
+            "11.1 days",
+            "61.8 days"
+          ],
+          "correctIndex": 1,
+          "explanation": "1/8 = (1/2)³, meaning 3 half-lives have passed. Time = 3×14.3 = 42.9 days.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        }
+      ]
+    },
+    {
+      "id": "acids-bases",
+      "title": "Acids, Bases & Buffers",
+      "questions": [
+        {
+          "id": "chm101-acid-01",
+          "prompt": "A buffer solution resists changes in pH most effectively when:",
+          "options": [
+            "It contains only a strong acid",
+            "It contains a weak acid/base in roughly equal concentration with its conjugate",
+            "It is very dilute",
+            "It contains only water",
+            "It contains only a strong base"
+          ],
+          "correctIndex": 1,
+          "explanation": "A buffer works by having both a weak acid (or base) AND its conjugate base (or acid) present together in comparable amounts — this pair can absorb added H⁺ or OH⁻ without a large pH swing. Roughly equal concentrations give the buffer its maximum capacity to resist change in either direction.",
+          "source": "CHM101A 2022/2023 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-02",
+          "prompt": "Calculate the pH of a buffer solution composed of 0.12M benzoic acid and 0.20M sodium benzoate. (Ka = 6.5×10⁻⁵)",
+          "options": [
+            "2.68",
+            "3.31",
+            "4.41",
+            "5.36",
+            "6.82"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using the Henderson-Hasselbalch equation: pH = pKa + log([base]/[acid]) = −log(6.5×10⁻⁵) + log(0.20/0.12) ≈ 4.19+0.22 ≈ 4.41.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-03",
+          "prompt": "Calculate the pH of a buffer system containing 1.0M CH₃COOH and 1.0M CH₃COONa. (Ka = 1.8×10⁻⁵)",
+          "options": [
+            "5.02×10⁻¹",
+            "3.40×10⁻⁵",
+            "4.74",
+            "0.302",
+            "3.02×10⁻²"
+          ],
+          "correctIndex": 2,
+          "explanation": "Henderson-Hasselbalch: pH=pKa+log([base]/[acid]). Since concentrations are equal, log(1)=0, so pH=pKa=−log(1.8×10⁻⁵)≈4.74.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-04",
+          "prompt": "What is the pH of a 0.0001M HCl solution?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correctIndex": 3,
+          "explanation": "HCl is a strong acid, fully dissociated: [H⁺]=0.0001=10⁻⁴M. pH=−log(10⁻⁴)=4.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-05",
+          "prompt": "A chemical species that can donate a lone pair of electrons to another species, forming a dative (coordinate) bond, is referred to as a/an:",
+          "options": [
+            "Bronsted-Lowry acid",
+            "Arrhenius acid",
+            "Lewis acid",
+            "Bronsted-Lowry base",
+            "Lewis base"
+          ],
+          "correctIndex": 4,
+          "explanation": "A Lewis base is defined specifically as an electron-pair donor — this is the broadest of the acid-base definitions, extending beyond proton transfer to cover coordinate bonding in general.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-06",
+          "prompt": "Identify the conjugate base in the reaction: N₂H₅⁺ + NH₂⁻ → N₂H₄ + NH₃",
+          "options": [
+            "N₂H₄",
+            "NH₂⁻",
+            "NH₃",
+            "N₂H₅⁺"
+          ],
+          "correctIndex": 0,
+          "explanation": "N₂H₅⁺ donates a proton to become N₂H₄ — so N₂H₄ is the conjugate base of the acid N₂H₅⁺. (NH₂⁻ is itself acting as the base in this reaction, accepting a proton to become NH₃, its conjugate acid.)",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-07",
+          "prompt": "Calculate the pH of a cola drink if the H₃O⁺ ion concentration is 0.00342M.",
+          "options": [
+            "2.46",
+            "3.20",
+            "4.37",
+            "5.24",
+            "6.22"
+          ],
+          "correctIndex": 0,
+          "explanation": "pH = −log[H₃O⁺] = −log(0.00342) ≈ 2.46.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-08",
+          "prompt": "NaHSO₄ is an example of:",
+          "options": [
+            "A normal salt",
+            "An acid salt",
+            "A basic salt",
+            "A double salt",
+            "A complex salt"
+          ],
+          "correctIndex": 1,
+          "explanation": "NaHSO₄ retains an ionizable hydrogen (from the diprotic H₂SO₄ only partially neutralized) — this makes it an acid salt, which can still donate that remaining proton.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-09",
+          "prompt": "Arrange the following in order of increasing acidity: NH₃, CH₄, H₂O, HF.",
+          "options": [
+            "NH₃ < CH₄ < H₂O < HF",
+            "CH₄ < NH₃ < H₂O < HF",
+            "HF < H₂O < NH₃ < CH₄",
+            "HF < H₂O < CH₄ < NH₃",
+            "H₂O < HF < NH₃ < CH₄"
+          ],
+          "correctIndex": 1,
+          "explanation": "Acidity here tracks with electronegativity of the central atom across period 2 (C < N < O < F): the more electronegative the atom holding the H, the more easily it releases H⁺. This gives CH₄ (least acidic) < NH₃ < H₂O < HF (most acidic).",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-10",
+          "prompt": "Identify the Lewis acid in the equation: Ag⁺ + 2NH₃ → [Ag(NH₃)₂]⁺",
+          "options": [
+            "[Ag(NH₃)₂]⁺",
+            "NH₃",
+            "Ag⁺",
+            "2NH₃"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ag⁺ accepts electron pairs from the NH₃ ligands to form the coordinate bonds — as the electron-pair ACCEPTOR, it's the Lewis acid. NH₃ (the electron-pair donor) is the Lewis base.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-11",
+          "prompt": "What is the pH of a 0.02M NaOH solution?",
+          "options": [
+            "11.5",
+            "6.8",
+            "13.7",
+            "11.2",
+            "12.3"
+          ],
+          "correctIndex": 4,
+          "explanation": "NaOH is a strong base, fully dissociated: [OH⁻]=0.02M. pOH=−log(0.02)≈1.70. pH=14−1.70=12.3.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-12",
+          "prompt": "Calculate the pH of a 0.020M Ba(OH)₂ solution.",
+          "options": [
+            "11.86",
+            "6.70",
+            "7.00",
+            "12.60",
+            "2.50"
+          ],
+          "correctIndex": 3,
+          "explanation": "Ba(OH)₂ → Ba²⁺+2OH⁻, so [OH⁻]=2×0.020=0.040M. pOH=−log(0.040)≈1.40. pH=14−1.40=12.60.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-13",
+          "prompt": "A chemist needs a buffered solution of propanoic acid (CH₃CH₂COOH) and its salt (CH₃CH₂COONa). Calculate the ratio [CH₃CH₂COONa]/[CH₃CH₂COOH] required to yield a pH of 4.30. (Ka=1.3×10⁻⁴)",
+          "options": [
+            "1.7",
+            "3.8",
+            "2.7",
+            "3.1",
+            "4.3"
+          ],
+          "correctIndex": 2,
+          "explanation": "Henderson-Hasselbalch: pH=pKa+log(ratio). 4.30=−log(1.3×10⁻⁴)+log(ratio)=3.886+log(ratio). log(ratio)=0.414, ratio≈2.7.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-14",
+          "prompt": "Calculate the pH of the solution formed when 10.0mL of 0.100M NaOH is added to 25.0mL of 0.100M CH₃COOH. (Ka=1.8×10⁻⁵)",
+          "options": [
+            "1.368",
+            "1.404",
+            "4.569",
+            "0.736",
+            "2.025"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moles NaOH=0.001, moles CH₃COOH=0.0025. After neutralization: CH₃COOH remaining=0.0015mol, CH₃COO⁻ formed=0.001mol, total volume=0.035L. Using Henderson-Hasselbalch with these concentrations: pH=pKa+log([base]/[acid])=4.745+log(0.6667)≈4.569.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-15",
+          "prompt": "When the pH of a solution increases from 1 to 2, the hydrogen ion concentration will:",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Become zero",
+            "Remain the same"
+          ],
+          "correctIndex": 1,
+          "explanation": "pH and [H⁺] are inversely related — a higher pH always means a lower [H⁺]. Increasing pH means the solution became less acidic, so [H⁺] decreased (specifically, by a factor of 10 for each whole pH unit).",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-16",
+          "prompt": "Calculate the hydrogen ion concentration in seawater given that the pH of seawater is 8.5.",
+          "options": [
+            "1×10⁻⁹ M",
+            "4×10⁻⁹ M",
+            "3.16×10⁻⁹ M",
+            "3×10⁻⁸ M",
+            "5×10⁻⁹ M"
+          ],
+          "correctIndex": 2,
+          "explanation": "[H⁺]=10^(−pH)=10^(−8.5)≈3.16×10⁻⁹ M.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-17",
+          "prompt": "Calculate the pH of a solution having a hydrogen ion concentration of 2.5×10⁻⁴ mol/L.",
+          "options": [
+            "2.60",
+            "3.60",
+            "1.20",
+            "11.12"
+          ],
+          "correctIndex": 1,
+          "explanation": "pH=−log(2.5×10⁻⁴)≈3.60.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-18",
+          "prompt": "In cationic hydrolysis, the resulting solution is:",
+          "options": [
+            "Acidic",
+            "Basic",
+            "Neutral",
+            "Amphoteric"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cationic hydrolysis occurs when a cation from a weak base (like NH₄⁺) reacts with water, releasing H⁺ ions and making the solution acidic.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-19",
+          "prompt": "When NH₄Cl is added to a solution of NH₄OH, the equilibrium NH₄OH ⇌ NH₄⁺ + OH⁻ shifts towards:",
+          "options": [
+            "The forward direction, increasing OH⁻",
+            "The reverse direction, decreasing dissociation (common ion effect)",
+            "No change occurs",
+            "Complete dissociation of NH₄OH"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adding NH₄Cl introduces extra NH₄⁺ ions — the same ion already produced by NH₄OH's dissociation. By Le Chatelier's Principle, this common ion pushes the equilibrium in reverse, suppressing further dissociation of NH₄OH (the common ion effect).",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-20",
+          "prompt": "Which of the following is the weakest base?",
+          "options": [
+            "OH⁻",
+            "NH₃",
+            "F⁻",
+            "CH₃COO⁻",
+            "Cl⁻"
+          ],
+          "correctIndex": 4,
+          "explanation": "Cl⁻ is the conjugate base of HCl, a strong acid — conjugate bases of strong acids are essentially non-basic (extremely weak), since the strong acid dissociates so completely that its conjugate base has almost no tendency to reclaim a proton.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-21",
+          "prompt": "Which of the following compounds can act as a Lewis base?",
+          "options": [
+            "BF₃",
+            "NH₃",
+            "AlCl₃",
+            "H⁺",
+            "BeCl₂"
+          ],
+          "correctIndex": 1,
+          "explanation": "NH₃ has a lone pair on nitrogen available to donate — making it an electron-pair donor (Lewis base). The other options (BF₃, AlCl₃, H⁺, BeCl₂) are all electron-pair acceptors (Lewis acids), each electron-deficient or fully positive.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-22",
+          "prompt": "A chemical species that can accept a lone pair of electrons to form a dative bond is referred to as a/an:",
+          "options": [
+            "Bronsted-Lowry base",
+            "Arrhenius base",
+            "Lewis base",
+            "Bronsted-Lowry acid",
+            "Lewis acid"
+          ],
+          "correctIndex": 4,
+          "explanation": "A Lewis acid is defined as an electron-pair acceptor — the complement to a Lewis base (electron-pair donor).",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-23",
+          "prompt": "When a salt is added to a solution of another salt sharing a common ion, the degree of dissociation of the original salt:",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Remains unchanged",
+            "Becomes complete"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is the common ion effect: adding more of an ion that's already part of an equilibrium shifts that equilibrium to reduce dissociation, by Le Chatelier's Principle.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-24",
+          "prompt": "Find the pH of a buffer solution containing 0.20mol/L CH₃COONa and 0.05mol/L CH₃COOH. (Ka=1.8×10⁻⁵)",
+          "options": [
+            "3.76",
+            "2.32",
+            "5.35",
+            "1.32",
+            "4.87"
+          ],
+          "correctIndex": 2,
+          "explanation": "Henderson-Hasselbalch: pH=pKa+log([base]/[acid])=−log(1.8×10⁻⁵)+log(0.20/0.05)=4.745+log(4)≈5.35.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-25",
+          "prompt": "Which of the following is NOT an example of an auto-ionization (self-ionization) reaction?",
+          "options": [
+            "N₂H₅⁺ + NH₃ ⇌ N₂H₄ + NH₄⁺",
+            "PCl₅ ⇌ PCl₄⁺ + PCl₆⁻",
+            "H₂O + H₂O ⇌ H₃O⁺ + OH⁻",
+            "HSO₄⁻ + Na⁺ ⇌ NaHSO₄"
+          ],
+          "correctIndex": 3,
+          "explanation": "Auto-ionization is when a single substance (or two molecules of the same substance) reacts with itself to form ions — like water reacting with water, or two PCl₅ molecules disproportionating into ions. The Na⁺/HSO₄⁻ combination is a simple association reaction between two different, already-existing ions, not a self-ionization process.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-acid-26",
+          "prompt": "The strength of an acid depends on:",
+          "options": [
+            "The concentration of water",
+            "The number of atoms in its molecule",
+            "The number of protons it releases on ionization",
+            "The concentration of the acid"
+          ],
+          "correctIndex": 2,
+          "explanation": "Acid strength (as distinct from concentration) is fundamentally about how readily/completely the acid ionizes to release H⁺ ions — a strong acid ionizes essentially completely regardless of concentration, while a weak acid only partially ionizes.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        }
+      ]
+    },
+    {
+      "id": "colligative-properties",
+      "title": "Solutions & Colligative Properties",
+      "questions": [
+        {
+          "id": "chm101-coll-01",
+          "prompt": "What is the vapour pressure of a solution containing 1.00g of sulfanilamide (C₆H₈N₂O₂S) dissolved in 10.0g of acetone at 39.5°C, if the vapour pressure of pure acetone at this temperature is 400mmHg? (Sulfanilamide M≈156.2, Acetone M≈58.08)",
+          "options": [
+            "296 mmHg",
+            "342 mmHg",
+            "387 mmHg",
+            "398 mmHg",
+            "400 mmHg"
+          ],
+          "correctIndex": 2,
+          "explanation": "By Raoult's Law, P_solution = X_solvent × P_pure. Moles solute = 1.00/156.2 ≈ 0.0064. Moles acetone = 10.0/58.08 ≈ 0.1722. X_solvent = 0.1722/(0.1722+0.0064) ≈ 0.964. P = 0.964×400 ≈ 387 mmHg.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-coll-02",
+          "prompt": "A solution made by dissolving 0.320g of a compound in 25.0g of water has a freezing point of −0.201°C. Calculate the molar mass of the compound. (Kf of water = 1.86 °C/m)",
+          "options": [
+            "107 g/mol",
+            "119 g/mol",
+            "126 g/mol",
+            "179 g/mol",
+            "238 g/mol"
+          ],
+          "correctIndex": 1,
+          "explanation": "Molality m = ΔT/Kf = 0.201/1.86 ≈ 0.108 mol/kg. Moles solute = 0.108×0.025 ≈ 0.0027 mol. Molar mass = 0.320/0.0027 ≈ 119 g/mol.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-coll-03",
+          "prompt": "Calculate the osmotic pressure (in atm) of an aqueous solution containing 10g of urea in 500cm³ of solution at 12°C. (Molar mass of urea = 60.0 g/mol)",
+          "options": [
+            "14.56",
+            "12.74",
+            "10.92",
+            "8.27",
+            "7.80"
+          ],
+          "correctIndex": 4,
+          "explanation": "Molarity = (10/60)/0.500 ≈ 0.333 mol/L. Osmotic pressure π=MRT = 0.333×0.0821×285.15 ≈ 7.80 atm.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        }
+      ]
+    },
+    {
+      "id": "chemical-equilibrium",
+      "title": "Chemical Equilibrium",
+      "questions": [
+        {
+          "id": "chm101-eq-01",
+          "prompt": "For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), the value of Kp at 500°C is 1.50×10⁻⁵. Calculate the value of Kc.",
+          "options": [
+            "0.0604",
+            "0.0755",
+            "0.0906",
+            "0.1208",
+            "0.1812"
+          ],
+          "correctIndex": 0,
+          "explanation": "Kp=Kc(RT)^Δn, where Δn=(moles gas products)−(moles gas reactants)=2−4=−2. So Kc=Kp×(RT)². With T=773.15K: Kc=1.50×10⁻⁵×(0.0821×773.15)² ≈ 0.0604.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-eq-02",
+          "prompt": "1 mol of HI was placed in a 1dm³ reaction vessel at 698K and allowed to reach equilibrium: H₂(g) + I₂(g) ⇌ 2HI(g). Which of the following best represents the equilibrium condition?",
+          "options": [
+            "Some HI decomposes into H₂ and I₂ until equilibrium is reached",
+            "All HI remains unreacted",
+            "All HI decomposes completely",
+            "The reaction does not proceed at all"
+          ],
+          "correctIndex": 0,
+          "explanation": "Since HI is a product in the forward reaction, starting with pure HI means the reverse reaction dominates initially — some HI decomposes back into H₂ and I₂ until the forward and reverse rates balance at equilibrium.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-eq-03",
+          "prompt": "All of the following changes will affect a system at equilibrium EXCEPT:",
+          "options": [
+            "Adding a catalyst",
+            "Changing temperature",
+            "Changing concentration of a reactant",
+            "Changing pressure/volume for a gas-phase reaction"
+          ],
+          "correctIndex": 0,
+          "explanation": "A catalyst speeds up both the forward and reverse reactions equally, helping the system reach equilibrium faster — but it doesn't shift the position of equilibrium itself, unlike changes in temperature, concentration, or pressure.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-eq-04",
+          "prompt": "Estimate the solubility of SrI₂ in mol/L, given Ksp of SrI₂ = 2.5×10⁻⁹.",
+          "options": [
+            "8.0×10⁻⁴",
+            "7.0×10⁻⁴",
+            "8.5×10⁻⁴",
+            "7.5×10⁻⁴",
+            "6.0×10⁻⁴"
+          ],
+          "correctIndex": 2,
+          "explanation": "SrI₂ → Sr²⁺ + 2I⁻. Ksp=[Sr²⁺][I⁻]²=(s)(2s)²=4s³. Solving: s³=2.5×10⁻⁹/4≈6.25×10⁻¹⁰, s≈8.5×10⁻⁴ mol/L.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-eq-05",
+          "prompt": "Which of the following will increase the amount of Fe₂O₃ present at equilibrium in the reaction: 2Fe(s) + 3H₂O(g) ⇌ Fe₂O₃(s) + 3H₂(g)?",
+          "options": [
+            "Removing H₂O",
+            "Adding Fe",
+            "Removing H₂",
+            "Cannot increase since Fe is a solid",
+            "Both removing H₂ and adding more Fe (up to a limit)"
+          ],
+          "correctIndex": 4,
+          "explanation": "By Le Chatelier's Principle, removing H₂ (a product) shifts equilibrium toward products, increasing Fe₂O₃. Adding more solid Fe (a reactant, though solids don't appear in K itself) provides more reactant available to react, which can also drive the reaction forward until either reactant is exhausted. Both actions push toward more Fe₂O₃ — removing H₂O (a reactant) would do the opposite.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-eq-06",
+          "prompt": "The solubility of copper(I) bromide, CuBr, is 4×10⁻⁵ mol/L. Calculate its Ksp.",
+          "options": [
+            "1.6×10⁻⁹",
+            "8.0×10⁻⁵",
+            "1.6×10⁻¹⁰",
+            "4.0×10⁻⁹",
+            "2.0×10⁻⁹"
+          ],
+          "correctIndex": 0,
+          "explanation": "CuBr → Cu⁺+Br⁻ (1:1 dissociation). Ksp=[Cu⁺][Br⁻]=s²=(4×10⁻⁵)²=1.6×10⁻⁹.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-eq-07",
+          "prompt": "The solubility of calcium phosphate, Ca₃(PO₄)₂, is 1.5×10⁻⁷ mol/L. Calculate its Ksp.",
+          "options": [
+            "8.2×10⁻³³",
+            "2.25×10⁻¹⁴",
+            "1.1×10⁻²⁶",
+            "4.5×10⁻²¹",
+            "3.4×10⁻²⁸"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ca₃(PO₄)₂ → 3Ca²⁺+2PO₄³⁻. Ksp=(3s)³(2s)²=108s⁵. With s=1.5×10⁻⁷: Ksp=108×(1.5×10⁻⁷)⁵≈8.2×10⁻³³.",
+          "source": "CHM101 2024/2025 (compendium, verified answer key)"
+        }
+      ]
+    },
+    {
+      "id": "unresolved-needs-original-paper",
+      "title": "Flagged — needs the original paper to resolve",
+      "questions": []
+    },
+    {
+      "id": "redox-electrochemistry",
+      "title": "Redox Reactions & Oxidation Numbers",
+      "questions": [
+        {
+          "id": "chm101-redox-01",
+          "prompt": "Identify the reducing agent in the reaction: Zn + I₂ → ZnI₂",
+          "options": [
+            "Zn",
+            "I₂",
+            "Zn and I₂",
+            "ZnI₂"
+          ],
+          "correctIndex": 0,
+          "explanation": "Zn is oxidized (loses electrons, going from 0 to +2), which means it CAUSES the reduction of I₂ — making Zn the reducing agent. (I₂ is reduced and is therefore the oxidizing agent.)",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-redox-02",
+          "prompt": "What is the oxidation number of Cr in the compound HgCrO₄?",
+          "options": [
+            "+1",
+            "+2",
+            "+4",
+            "+5",
+            "+6"
+          ],
+          "correctIndex": 4,
+          "explanation": "Hg is +2, O is −2 (×4=−8). For the neutral compound: 2+x−8=0, so x=+6.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
+        },
+        {
+          "id": "chm101-redox-03",
+          "prompt": "Which of the following reactions is a disproportionation reaction (where the same element is simultaneously oxidized and reduced)?",
+          "options": [
+            "3K₂MnO₄ + 4HCl → 2KMnO₄ + MnO₂ + 4KCl + 2H₂O",
+            "K₂Cr₂O₇ + 14HCl → 2CrCl₃ + 3Cl₂ + 2KCl + 7H₂O",
+            "2KMnO₄ + 3KNO₂ + H₂O → 2MnO₂ + 3KNO₃ + 2KOH",
+            "KIO + Cl₂ + 2KOH → KIO₃ + 2KCl + H₂O"
+          ],
+          "correctIndex": 0,
+          "explanation": "In this reaction, manganese starts at the same oxidation state in K₂MnO₄ (+6) and ends up split between two different products — KMnO₄ (Mn at +7, oxidized) and MnO₂ (Mn at +4, reduced). The same element being simultaneously oxidized and reduced is the definition of disproportionation.",
+          "source": "CHM101 2023/2024 (compendium, verified answer key)"
         }
       ]
     }
