@@ -141,6 +141,24 @@ export default function Results() {
                 </tr>
               ))}
             </tbody>
+            {gpa.skipped.length > 0 && (
+              <tbody>
+                {gpa.skipped.map((code) => {
+                  const r = tested.find((t) => t.courseCode === code)
+                  return (
+                    <tr key={code} className="border-t border-line text-graphite/60">
+                      <td className="px-3 sm:px-8 py-3.5">
+                        <div className="font-mono text-xs text-cobalt-deep">{code}</div>
+                        <div className="font-medium">{r?.title}</div>
+                      </td>
+                      <td className="text-center text-xs" colSpan={2}>units pending</td>
+                      <td className="text-center font-mono">{r?.score}</td>
+                      <td colSpan={2} className="px-3 sm:px-8 text-right text-xs">not in GPA yet</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            )}
             <tfoot>
               <tr className="border-t-2 border-graphite bg-paper-2 font-medium">
                 <td className="px-3 sm:px-8 py-3.5">Total</td>

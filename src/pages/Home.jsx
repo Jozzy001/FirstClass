@@ -8,7 +8,6 @@ import { getCourseScores } from '../lib/store.js'
 // MTH101/ENG102/etc are placeholders showing where future courses will
 // slot in once their content is built.
 const placeholderCourses = [
-  { code: 'MTH101', title: 'Elementary Mathematics I', faculty: 'Sciences', chaptersCompleted: 0, chaptersTotal: 12 },
   { code: 'ENG102', title: 'Engineering Drawing', faculty: 'Engineering', chaptersCompleted: 0, chaptersTotal: 9 },
   { code: 'ECO101', title: 'Principles of Economics I', faculty: 'Social sciences', chaptersCompleted: 0, chaptersTotal: 8 },
   { code: 'GST101', title: 'Use of English', faculty: 'General studies', chaptersCompleted: 0, chaptersTotal: 10 }
@@ -93,7 +92,7 @@ export default function Home() {
                   {scored.length} course{scored.length === 1 ? '' : 's'} tested
                 </span>
               </div>
-              {gpa.gpa === null ? (
+              {scored.length === 0 ? (
                 <>
                   <div className="font-display text-3xl font-bold leading-tight mb-2">
                     Take a test to start your CGPA
@@ -108,7 +107,7 @@ export default function Home() {
               ) : (
                 <>
                   <div className="font-display text-5xl font-bold leading-none mb-1">
-                    {gpa.gpa.toFixed(2)}<span className="text-flame text-2xl"> / 5</span>
+                    {gpa.gpa === null ? '—' : gpa.gpa.toFixed(2)}<span className="text-flame text-2xl"> / 5</span>
                   </div>
                   <div className="text-xs text-white/60 mb-5">{cls?.name}</div>
                   {scored.map((row) => (

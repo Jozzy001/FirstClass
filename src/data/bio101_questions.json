@@ -1,0 +1,1792 @@
+{
+  "courseCode": "BIO101",
+  "topics": [
+    {
+      "id": "cells-and-microscopy",
+      "questions": [
+        {
+          "id": "bio101-cel-04",
+          "prompt": "All of the following are parts of a compound microscope EXCEPT: (i) eyepiece, (ii) objective, (iii) condenser, (iv) fine and coarse adjustment, (v) stage.",
+          "options": [
+            "v only",
+            "iii and iv",
+            "i and ii",
+            "none of them"
+          ],
+          "correctIndex": 3,
+          "explanation": "All five items are parts of a compound microscope, so none of them is the exception.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-12",
+          "prompt": "Which of the following structures is unique to a prokaryotic cell?",
+          "options": [
+            "Nucleoid",
+            "Cytoskeleton",
+            "Golgi apparatus",
+            "Ribosome"
+          ],
+          "correctIndex": 0,
+          "explanation": "The nucleoid is the region where the prokaryotic DNA lies, with no nuclear membrane. Ribosomes occur in all cells, while the cytoskeleton and Golgi apparatus are eukaryotic.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-13",
+          "prompt": "Which organelle breaks down fatty acids and produces hydrogen peroxide?",
+          "options": [
+            "Ribosomes",
+            "Golgi apparatus",
+            "Peroxisomes",
+            "Lysosomes",
+            "Smooth endoplasmic reticulum"
+          ],
+          "correctIndex": 2,
+          "explanation": "Peroxisomes break down fatty acids and make hydrogen peroxide, which the enzyme catalase then breaks down.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-14",
+          "prompt": "Which organelle is the site of aerobic cellular respiration?",
+          "options": [
+            "Mitochondria",
+            "Chloroplast",
+            "Golgi apparatus",
+            "Ribosome"
+          ],
+          "correctIndex": 0,
+          "explanation": "Mitochondria carry out aerobic respiration and make most of the cell's ATP.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Options B–D were cut off in the typed paper and were replaced with standard alternatives."
+        },
+        {
+          "id": "bio101-cel-15",
+          "prompt": "Which of the following is NOT a characteristic feature of a typical plant cell?",
+          "options": [
+            "Cell wall",
+            "Chloroplast",
+            "Vacuole",
+            "Centriole"
+          ],
+          "correctIndex": 3,
+          "explanation": "Higher plant cells have a cell wall, chloroplasts and a large vacuole, but they lack centrioles.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-16",
+          "prompt": "Lipid synthesis and detoxification are carried out by the ________.",
+          "options": [
+            "Golgi bodies",
+            "ribosomes",
+            "lysosomes",
+            "smooth endoplasmic reticulum",
+            "rough endoplasmic reticulum"
+          ],
+          "correctIndex": 3,
+          "explanation": "Smooth ER (no ribosomes) makes lipids and detoxifies drugs and poisons. Rough ER makes proteins.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-17",
+          "prompt": "The gel-like substance inside the cell, excluding the nucleus, where cellular processes occur is the ________.",
+          "options": [
+            "Vacuole",
+            "Cytoplasm",
+            "Protoplasm",
+            "Ribosome",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The cytoplasm is the gel-like contents of the cell outside the nucleus, where most cell processes take place.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-18",
+          "prompt": "Which organelles contain digestive enzymes to break down waste materials and cellular debris?",
+          "options": [
+            "Peroxisomes",
+            "Chloroplasts",
+            "Lysosomes",
+            "Vacuoles",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lysosomes hold hydrolytic (digestive) enzymes that break down worn-out organelles, wastes and engulfed material.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-19",
+          "prompt": "Which of these is common to animals, plants and fungi?",
+          "options": [
+            "Cells have a defined nucleus (eukaryotic).",
+            "Cells lack membrane-bound organelles.",
+            "Cell walls are present.",
+            "Ability to make their own food (autotrophy)."
+          ],
+          "correctIndex": 0,
+          "explanation": "Animals, plants and fungi are all eukaryotes, so their cells have a true nucleus. Animal cells have no cell wall, and only plants (with algae) are autotrophic.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cel-20",
+          "prompt": "Which of these is/are NOT correct about the cell?",
+          "options": [
+            "Cellular processes occur in the cytoplasm.",
+            "PSI and PSII are producers of ATP/NADPH in the cell.",
+            "The nucleus is the control center of the cell.",
+            "Ribosomes are either floating in the cytosol or attached to the ER."
+          ],
+          "correctIndex": null,
+          "explanation": "Option B is probably intended, since photosystems exist only in photosynthetic cells (in the thylakoid membranes of chloroplasts), but the statement is loosely worded.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The intended answer depends on the wording of option B. Please confirm."
+        },
+        {
+          "id": "bio101-cel-21",
+          "prompt": "Which of the following is a common component in all cells?",
+          "options": [
+            "Cell wall",
+            "Plasma membrane",
+            "Ribosome",
+            "Cytoplasm"
+          ],
+          "correctIndex": null,
+          "explanation": "The plasma membrane, ribosomes and cytoplasm are present in all cells. The cell wall is absent in animal cells.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Three options are correct. Please confirm the intended answer."
+        },
+        {
+          "id": "bio101-cel-22",
+          "prompt": "Which of the following is a hydrolytic enzyme?",
+          "options": [
+            "Hydrogen peroxide",
+            "Ribonuclease",
+            "Amylase",
+            "Golgi apparatus"
+          ],
+          "correctIndex": null,
+          "explanation": "Ribonuclease and amylase are both hydrolytic enzymes.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (B and C) are correct. Please confirm."
+        }
+      ]
+    },
+    {
+      "id": "microbes-fungi-and-algae",
+      "questions": [
+        {
+          "id": "bio101-bac-06",
+          "prompt": "The ________ were once thought to be fungi because of their branched mycelium, but are now known to be prokaryotes.",
+          "options": [
+            "Acetabularia",
+            "Chlamydias",
+            "Rickettsias",
+            "Actinomycetes"
+          ],
+          "correctIndex": 3,
+          "explanation": "Actinomycetes are filamentous bacteria that form branching, mycelium-like growth, so they were once classified with fungi.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-bac-10",
+          "prompt": "Which of the following statements are NOT true about viruses? (i) They lack ribosomes. (ii) They contain both DNA and RNA. (iii) Outside the host cell, a non-living particle is called a virion. (iv) The central core is surrounded by a protein coat called a capsid. (v) They contain either DNA or RNA.",
+          "options": [
+            "ii only",
+            "v only",
+            "iii and iv",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A virus contains either DNA or RNA, never both, so statement (ii) is false. The others are true.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-bac-16",
+          "prompt": "Which of the following are completely prokaryotic organisms?",
+          "options": [
+            "Protozoa",
+            "Algae",
+            "Bacteria",
+            "Fungi"
+          ],
+          "correctIndex": 2,
+          "explanation": "Bacteria (with archaea) are prokaryotes. Protozoa, algae and fungi are eukaryotes.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-bac-17",
+          "prompt": "Which of the following has a cell wall containing peptidoglycan?",
+          "options": [
+            "Plant cell",
+            "Animal cell",
+            "Bacterial cell",
+            "Both a and b"
+          ],
+          "correctIndex": 2,
+          "explanation": "Peptidoglycan is found in bacterial cell walls. Plant walls are cellulose and animal cells have no wall.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-bac-18",
+          "prompt": "Choose the domain that contains primitive prokaryotes living in extreme environments.",
+          "options": [
+            "Eukarya",
+            "Protista",
+            "Eubacteria",
+            "Archaea"
+          ],
+          "correctIndex": 3,
+          "explanation": "Archaea include extremophiles such as halophiles, methanogens and heat-loving species. (Protista is a kingdom, not a domain.)",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-fun-11",
+          "prompt": "The club fungi and the sac fungi are also known as ________ and ________, respectively.",
+          "options": [
+            "Ascomycota and Basidiomycota",
+            "Deuteromycota and Zygomycota",
+            "Basidiomycota and Ascomycota",
+            "Zygomycota and Saccharomycota"
+          ],
+          "correctIndex": 2,
+          "explanation": "Club fungi are Basidiomycota and sac fungi are Ascomycota.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-fun-20",
+          "prompt": "Which of these is NOT in the Kingdom Fungi?",
+          "options": [
+            "Rhizopus stolonifer",
+            "Agaricus bisporus",
+            "Plasmodium falciparum",
+            "Aspergillus niger"
+          ],
+          "correctIndex": 2,
+          "explanation": "Plasmodium falciparum is the malaria parasite, a protist. The other three are fungi.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-fun-21",
+          "prompt": "Which organisms are mostly responsible for the decomposition of organic matter?",
+          "options": [
+            "Methanogens",
+            "Nitrifying bacteria",
+            "Denitrifying bacteria",
+            "Trichoderma (saprophytic fungi)"
+          ],
+          "correctIndex": 3,
+          "explanation": "Saprophytic fungi such as Trichoderma are the main decomposers. The other three groups mainly handle methane or nitrogen compounds.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-alg-02",
+          "prompt": "Carrageenan, a mucilaginous polysaccharide from ________, is useful in making agar for culture media.",
+          "options": [
+            "Rhodophyta",
+            "seaweeds",
+            "Phaeophyta",
+            "Chlorophyta",
+            "a and b are correct"
+          ],
+          "correctIndex": 4,
+          "explanation": "Carrageenan comes from red algae (Rhodophyta), which are seaweeds, so both a and b are correct.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-alg-08",
+          "prompt": "The algal divisions are classified based on all of the following criteria EXCEPT:",
+          "options": [
+            "pigmentation",
+            "food storage product",
+            "flagellation",
+            "mode of reproduction"
+          ],
+          "correctIndex": 3,
+          "explanation": "Algae are separated into divisions mainly by pigments, storage products and flagella (and cell wall), not by their mode of reproduction.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-and-symbiosis",
+      "questions": [
+        {
+          "id": "bio101-nut-06",
+          "prompt": "A lion hunting a zebra is an example of ________.",
+          "options": [
+            "mutualism",
+            "predation",
+            "commensalism",
+            "parasitism"
+          ],
+          "correctIndex": 1,
+          "explanation": "A predator kills and eats its prey.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-07",
+          "prompt": "Tapeworms living in a host's intestine are ________.",
+          "options": [
+            "ectoparasites",
+            "endoparasites",
+            "saprophytes",
+            "mutualists"
+          ],
+          "correctIndex": 1,
+          "explanation": "Parasites that live inside the host are endoparasites.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-08",
+          "prompt": "Hermit crabs using empty gastropod shells demonstrate ________.",
+          "options": [
+            "metabiosis",
+            "phoresy",
+            "inquilinism",
+            "mutualism"
+          ],
+          "correctIndex": 0,
+          "explanation": "In metabiosis one organism uses the remains or products of another (here an empty shell) without harming it.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-09",
+          "prompt": "Which of the following is a saprophytic organism?",
+          "options": [
+            "Lion",
+            "Mushroom",
+            "Clownfish",
+            "Tick"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mushrooms feed on dead and decaying matter.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-10",
+          "prompt": "Which of the following is the causative organism of trichomoniasis?",
+          "options": [
+            "Rhizopus stolonifer",
+            "Trichomonas vaginalis",
+            "Aspergillus niger",
+            "Trichophyton"
+          ],
+          "correctIndex": 1,
+          "explanation": "Trichomoniasis is caused by the protozoan Trichomonas vaginalis.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-11",
+          "prompt": "In commensalism, the relationship is best described as:",
+          "options": [
+            "One benefits, the other is harmed",
+            "Both benefit",
+            "One benefits, the other is unaffected",
+            "Both are unaffected"
+          ],
+          "correctIndex": 2,
+          "explanation": "In commensalism one partner benefits and the other is neither helped nor harmed.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-12",
+          "prompt": "What kind of biological interaction exists when an organism hunts, kills and consumes another organism?",
+          "options": [
+            "Predation",
+            "Parasitoidism",
+            "Competition",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "That is predation.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Option A was printed as \"Carnivory\" in the original paper."
+        },
+        {
+          "id": "bio101-nut-13",
+          "prompt": "What kind of interaction exists when Novomessor cockerelli uses small rocks to plug the entrance and hinder red harvester ants' foraging?",
+          "options": [
+            "Exploitative competition",
+            "Contest (interference) competition",
+            "Apparent competition",
+            "Preemptive competition"
+          ],
+          "correctIndex": 1,
+          "explanation": "Directly blocking a competitor from a resource is interference (contest) competition.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-14",
+          "prompt": "To which parasite category does Plasmodium belong?",
+          "options": [
+            "Intracellular",
+            "Intercellular",
+            "Extracellular",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plasmodium lives inside red blood cells and liver cells, so it is an intracellular parasite.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-15",
+          "prompt": "Corals and zooxanthellae exhibit ________.",
+          "options": [
+            "parasitism",
+            "mutualism",
+            "commensalism",
+            "competition"
+          ],
+          "correctIndex": 1,
+          "explanation": "The coral shelters the algae and the algae supply food from photosynthesis: mutualism.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The typed question gave two pairs (corals and zooxanthellae, or sea anemones and hermit crabs); it now uses the first."
+        },
+        {
+          "id": "bio101-nut-16",
+          "prompt": "________ is a parasitic plant.",
+          "options": [
+            "Cuscuta",
+            "Plasmodium",
+            "Trypanosoma",
+            "Entamoeba"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cuscuta (dodder) is a parasitic flowering plant. The other three are protozoan parasites.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-17",
+          "prompt": "In which of the following habitats are parasites found?",
+          "options": [
+            "Tropical rainforest",
+            "Arctic tundra",
+            "Desert",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Parasites occur wherever their hosts live, so in all of these habitats.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-18",
+          "prompt": "Organisms of different species living together in close association in the same habitat exhibit ________.",
+          "options": [
+            "symbiosis",
+            "intraspecific interaction",
+            "interspecific interaction",
+            "commensalism"
+          ],
+          "correctIndex": 0,
+          "explanation": "Symbiosis means living together in close association. (Interspecific interaction is the broader term for any interaction between species.)",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-19",
+          "prompt": "The relationship between the sea anemone and the clownfish can best be described as ________.",
+          "options": [
+            "commensalism",
+            "competition",
+            "mutualism",
+            "carnivory"
+          ],
+          "correctIndex": 2,
+          "explanation": "The clownfish is protected by the anemone and cleans it and drives off predators: mutualism.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Option C was printed as \"parasitoidism\" in the original paper."
+        },
+        {
+          "id": "bio101-nut-20",
+          "prompt": "Which of these best explains a \"phoresy\" relationship?",
+          "options": [
+            "Temporary attachment of one organism to another for transportation",
+            "A relationship that involves direct interaction between individuals via aggression",
+            "Occurs when an organism competes for territory by being the first to occupy it",
+            "Both organisms depend entirely on each other for survival and cannot live independently"
+          ],
+          "correctIndex": 0,
+          "explanation": "In phoresy one organism hitches a ride on another for transport and does no harm.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-21",
+          "prompt": "Which of these causes an immune response in their host?",
+          "options": [
+            "Predators",
+            "Parasites",
+            "Commensals",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Parasites live in or on a host and trigger its immune response.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-22",
+          "prompt": "All of the following are saprotrophs EXCEPT:",
+          "options": [
+            "Molds",
+            "Bacillus",
+            "Fleas",
+            "Pseudomonas"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fleas are blood-feeding parasites. Moulds, Bacillus and Pseudomonas feed on dead matter.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-23",
+          "prompt": "Saprotrophs have found applications in all of the following fields EXCEPT:",
+          "options": [
+            "bioremediation",
+            "agriculture",
+            "medicine",
+            "all of the above",
+            "none of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Saprotrophs are used in all three fields, so none is the exception.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-24",
+          "prompt": "Biotic interactions may be ________ or ________.",
+          "options": [
+            "intraspecific or interspecific",
+            "interspecific or infraspecific",
+            "intraspecific or intergeneric",
+            "infraspecific or intraspecific"
+          ],
+          "correctIndex": 0,
+          "explanation": "Interactions are either within one species (intraspecific) or between species (interspecific).",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Options A and C were identical in the typed paper; option C was changed."
+        },
+        {
+          "id": "bio101-nut-25",
+          "prompt": "Based on the species involved, competition can be ________.",
+          "options": [
+            "intraspecific or interspecific",
+            "infraspecific or intraspecific",
+            "infraspecific or interspecific",
+            "interference or apparent"
+          ],
+          "correctIndex": 0,
+          "explanation": "Competition is intraspecific (same species) or interspecific (different species).",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-26",
+          "prompt": "________ occurs when a resource used by one organism reduces the amount available to another.",
+          "options": [
+            "Intraspecific competition",
+            "Interspecific competition",
+            "Interference competition",
+            "Exploitative competition"
+          ],
+          "correctIndex": 3,
+          "explanation": "Exploitative competition is indirect: organisms compete by using up a shared resource.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-27",
+          "prompt": "Types of mutualism include all of the following EXCEPT:",
+          "options": [
+            "obligatory",
+            "diffuse",
+            "inquilinism",
+            "facultative"
+          ],
+          "correctIndex": 2,
+          "explanation": "Inquilinism (living in the shelter of another species) is a type of commensalism.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-28",
+          "prompt": "________ is a type of commensalism in which one organism indirectly benefits from another species (for example by using its remains).",
+          "options": [
+            "Chemical",
+            "Metabiosis",
+            "Phoresy",
+            "Inquilinism"
+          ],
+          "correctIndex": 1,
+          "explanation": "Metabiosis is the use of another organism's remains or products.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-29",
+          "prompt": "The characteristics of organisms in a symbiotic relationship have developed ________.",
+          "options": [
+            "by chance",
+            "through co-evolution",
+            "by character displacement",
+            "through resource partitioning"
+          ],
+          "correctIndex": 1,
+          "explanation": "Long-term partners adapt to each other: co-evolution.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-nut-30",
+          "prompt": "Parasites are ________.",
+          "options": [
+            "predators",
+            "herbivores",
+            "scavengers",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Parasites are usually kept distinct from predators, but ecologists often call them \"micropredators\".",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The intended answer is arguable. Please confirm."
+        },
+        {
+          "id": "bio101-nut-31",
+          "prompt": "An example of a one-sided metabolically dependent relationship is ________.",
+          "options": [
+            "commensalism",
+            "mutualism",
+            "parasitism",
+            "predation"
+          ],
+          "correctIndex": null,
+          "explanation": "Parasitism fits \"metabolically dependent\" best, but commensalism is also one-sided.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The wording could fit parasitism or commensalism. Please confirm."
+        },
+        {
+          "id": "bio101-nut-32",
+          "prompt": "________ is a form of feeding in which organisms get their nutrients from dead and decaying organic substances.",
+          "options": [
+            "Saprophytism",
+            "Parasitism",
+            "Metabiosis",
+            "Saprophytic nutrition"
+          ],
+          "correctIndex": null,
+          "explanation": "Saprophytism and saprophytic nutrition mean the same thing.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Options A and D are the same. Please confirm."
+        },
+        {
+          "id": "bio101-nut-33",
+          "prompt": "An appropriate term for the human resident flora (microbiota) is ________.",
+          "options": [
+            "commensals",
+            "parasites",
+            "pathogens",
+            "mutualists"
+          ],
+          "correctIndex": null,
+          "explanation": "Many resident microbes are commensals, but gut bacteria that help digestion are mutualists.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and D) can be defended. Please confirm."
+        }
+      ]
+    },
+    {
+      "id": "habitats-and-ecology",
+      "questions": [
+        {
+          "id": "bio101-eco-01",
+          "prompt": "Which habitat is characterized by permafrost?",
+          "options": [
+            "Tropical rainforest",
+            "Arctic tundra",
+            "Desert",
+            "Grassland"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Arctic tundra has permanently frozen soil (permafrost) and low vegetation.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-02",
+          "prompt": "Coral reefs are examples of ________.",
+          "options": [
+            "freshwater habitat",
+            "marine habitat",
+            "terrestrial habitat",
+            "urban habitat"
+          ],
+          "correctIndex": 1,
+          "explanation": "Coral reefs are marine (sea) habitats.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-03",
+          "prompt": "The functional role of an organism in its environment is called its ________.",
+          "options": [
+            "habitat",
+            "niche",
+            "biome",
+            "trophic level"
+          ],
+          "correctIndex": 1,
+          "explanation": "A niche is the role an organism plays, including what it eats, where it lives and how it interacts. A habitat is the place.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-04",
+          "prompt": "What term describes interaction between organisms of the same species?",
+          "options": [
+            "Interspecific",
+            "Intraspecific"
+          ],
+          "correctIndex": 1,
+          "explanation": "Intraspecific means within one species.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-05",
+          "prompt": "Which biome has the highest net primary productivity?",
+          "options": [
+            "Tropical rainforest",
+            "Tundra",
+            "Desert",
+            "Temperate grassland"
+          ],
+          "correctIndex": 0,
+          "explanation": "Among terrestrial biomes the tropical rainforest has the highest net primary productivity (warm, wet and sunny all year).",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Options B–D were cut off in the typed paper and were replaced with other biomes."
+        },
+        {
+          "id": "bio101-eco-06",
+          "prompt": "The assemblage of individuals of the same species in a given area is called a ________.",
+          "options": [
+            "herd",
+            "population",
+            "flock",
+            "speciation"
+          ],
+          "correctIndex": 1,
+          "explanation": "A population is a group of the same species living in one area.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-07",
+          "prompt": "Which terrestrial habitat is the most biologically diverse?",
+          "options": [
+            "Savannah",
+            "Tundra",
+            "Rainforest",
+            "Mountains"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tropical rainforests hold the greatest diversity of species on land.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-08",
+          "prompt": "Which of the following is associated with low temperatures, permafrost and limited vegetation?",
+          "options": [
+            "Montane",
+            "Arctic tundra",
+            "Alpine tundra",
+            "Polar montane"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arctic tundra is the cold biome with permafrost and sparse low plants.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-eco-09",
+          "prompt": "All of the following are characteristics of a boreal forest (taiga) EXCEPT:",
+          "options": [
+            "cold climates",
+            "coniferous trees",
+            "located in northern regions",
+            "tropical climate"
+          ],
+          "correctIndex": 3,
+          "explanation": "The taiga is cold, northern and covered with conifers, with no tropical climate.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        }
+      ]
+    },
+    {
+      "id": "classification-and-naming",
+      "questions": [
+        {
+          "id": "bio101-cls-06",
+          "prompt": "In the natural system of classification, plants are classified based on: (i) their ultimate use, (ii) similarities and differences in morphological and reproductive characters, (iii) evolutionary relationships reflecting genetic relationships, (iv) all characters considered in deciding whether a plant is related to another.",
+          "options": [
+            "only iv is correct",
+            "i and ii are correct",
+            "only iii is correct",
+            "ii and iv are correct",
+            "all of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The natural system groups plants by overall similarity of form and reproductive structures, using all characters. Grouping by evolutionary relationships is the phylogenetic system, and grouping by use is not a natural classification.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-07",
+          "prompt": "In the Five Kingdom system, Actinomycetes and Cyanobacteria are placed in the kingdom ________, while Ulothrix and Acetabularia are placed in the kingdom ________.",
+          "options": [
+            "Monera / Plantae",
+            "Fungi / Protista",
+            "Monera / Protista",
+            "Bacteria / Protista"
+          ],
+          "correctIndex": 2,
+          "explanation": "Actinomycetes and cyanobacteria are prokaryotes (Monera). As taught in this course, the algae Ulothrix and Acetabularia go in Protista.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-09",
+          "prompt": "The lowest major rank in the classification hierarchy is ________.",
+          "options": [
+            "Genus",
+            "Species",
+            "Order"
+          ],
+          "correctIndex": 1,
+          "explanation": "Species is the lowest of the major ranks.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-10",
+          "prompt": "The system of binomial nomenclature is associated with ________.",
+          "options": [
+            "Linnaeus",
+            "Darwin",
+            "Mendel",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Carolus Linnaeus introduced binomial nomenclature (genus and species names).",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-11",
+          "prompt": "Which of the following shows the correct hierarchical classification from highest to lowest?",
+          "options": [
+            "Class, Order, Family, Genus, Species",
+            "Species, Genus, Family, Order, Class",
+            "Family, Genus, Species, Order, Class",
+            "Order, Class, Family, Genus, Species"
+          ],
+          "correctIndex": 0,
+          "explanation": "Going down the hierarchy: Class, Order, Family, Genus, Species.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-12",
+          "prompt": "Which of the following is a valid biological binomial name?",
+          "options": [
+            "Trichoderma viride",
+            "Aureobasidium pullulans",
+            "Aspergillus niger",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Each is a genus name followed by a species epithet, so all three are valid binomial names.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-13",
+          "prompt": "Species are found among ________.",
+          "options": [
+            "plants",
+            "animals",
+            "fungi",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "All living organisms are grouped into species.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-14",
+          "prompt": "Which of the following is NOT a Protist?",
+          "options": [
+            "Plasmodium falciparum",
+            "Saccharomyces cerevisiae",
+            "Amoeba proteus",
+            "Paramecium caudatum",
+            "Euglena gracilis"
+          ],
+          "correctIndex": 1,
+          "explanation": "Saccharomyces cerevisiae is a yeast (a fungus). The others are protists.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-15",
+          "prompt": "Which of the following is the odd one out?",
+          "options": [
+            "Rattus norvegicus",
+            "Mus musculus",
+            "Zea mays",
+            "Panthera leo",
+            "Equus ferus caballus"
+          ],
+          "correctIndex": 2,
+          "explanation": "Zea mays (maize) is a plant. The others are mammals (rat, mouse, lion, horse).",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-16",
+          "prompt": "The highest taxonomic rank is the ________, followed by ________.",
+          "options": [
+            "kingdom / phylum",
+            "kingdom / domain",
+            "domain / kingdom",
+            "domain / phylum",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The order is Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-17",
+          "prompt": "Life is currently divided into three domains, namely ________, ________ and ________.",
+          "options": [
+            "Animalia, Plantae, Fungi",
+            "Archaea, Bacteria, Eukarya",
+            "Protista, Animalia, Plantae",
+            "Archaea, Protista, Fungi",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three domains are Archaea, Bacteria and Eukarya.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-18",
+          "prompt": "The classification of organisms is important for all of the following reasons EXCEPT:",
+          "options": [
+            "it provides an unequivocal, unique name for organisms",
+            "it aids memory",
+            "it improves the ability to explain relationships",
+            "it reveals order and harmony between organisms as originally pre-planned by God"
+          ],
+          "correctIndex": 3,
+          "explanation": "Modern classification is a scientific tool for naming and relating organisms. It does not rest on a claim of pre-planned order.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-19",
+          "prompt": "The ________ system is the system of classification based on similarities and differences in morphological and reproductive characters.",
+          "options": [
+            "artificial",
+            "natural",
+            "phylogenetic",
+            "taxonomic"
+          ],
+          "correctIndex": 1,
+          "explanation": "That describes the natural system.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-20",
+          "prompt": "Which of the following does NOT describe the growth habit of a plant?",
+          "options": [
+            "Herb",
+            "Tree",
+            "Tuber",
+            "Shrub"
+          ],
+          "correctIndex": 2,
+          "explanation": "Herb, shrub and tree are growth habits. A tuber is a storage organ.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-21",
+          "prompt": "Modern classification of organisms incorporates all of the following EXCEPT:",
+          "options": [
+            "morphological analysis",
+            "doctrine of signatures",
+            "phylogenetics",
+            "genetic analysis"
+          ],
+          "correctIndex": 1,
+          "explanation": "The doctrine of signatures was an old belief that a plant's shape shows its use. It is not part of modern classification.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-cls-22",
+          "prompt": "Which of these is the correct scientific name of bread wheat?",
+          "options": [
+            "Oryza sativa",
+            "Triticum aestivum",
+            "Triticum vulgare",
+            "Zea mays"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bread wheat is Triticum aestivum. Oryza sativa is rice and Zea mays is maize.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Triticum vulgare is an old synonym of Triticum aestivum."
+        },
+        {
+          "id": "bio101-cls-26",
+          "prompt": "Modern taxonomy incorporates various techniques to classify organisms EXCEPT:",
+          "options": [
+            "genotypic analysis",
+            "phenotypic analysis",
+            "biological analysis",
+            "morphological analysis"
+          ],
+          "correctIndex": null,
+          "explanation": "\"Biological analysis\" is not a specific technique, but phenotypic and morphological analysis overlap, so the intended answer is unclear.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The intended answer is unclear. Please confirm."
+        },
+        {
+          "id": "bio101-cls-27",
+          "prompt": "Which of the following are members of the plant kingdom EXCEPT:",
+          "options": [
+            "Mosses",
+            "Ferns",
+            "Fungi",
+            "Algae"
+          ],
+          "correctIndex": null,
+          "explanation": "Fungi are not plants. Algae also lie outside the plant kingdom in the five-kingdom system taught in this course.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Options C and D were partly cut off in the typed paper and both may be correct. Needs the original paper."
+        },
+        {
+          "id": "bio101-cls-28",
+          "prompt": "Which of the following is NOT a member of Kingdom Plantae? (options partly cut off)",
+          "options": [
+            "Amoeba proteus",
+            "(option B cut off)",
+            "(option C cut off)",
+            "(option D cut off)"
+          ],
+          "correctIndex": null,
+          "explanation": "Amoeba proteus is a protozoan, so it is not a plant. The other options were cut off.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Options B–D are missing. Needs the original paper."
+        }
+      ]
+    },
+    {
+      "id": "life-processes-and-reproduction",
+      "questions": [
+        {
+          "id": "bio101-rep-01",
+          "prompt": "The total of all chemical reactions within an organism is called ________.",
+          "options": [
+            "catabolism",
+            "anabolism",
+            "metabolism",
+            "homeostasis"
+          ],
+          "correctIndex": 2,
+          "explanation": "Metabolism is all chemical reactions in an organism, building up (anabolism) and breaking down (catabolism).",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-02",
+          "prompt": "________ reproduction results in genetic variation and diversity among organisms.",
+          "options": [
+            "Asexual",
+            "Vegetative",
+            "Sexual",
+            "Sporulation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sexual reproduction mixes genes from two parents, so offspring vary.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-03",
+          "prompt": "Which one of these does NOT distinguish a living organism from a non-living entity?",
+          "options": [
+            "Energy utilization",
+            "Cellular organization",
+            "Insensitivity",
+            "Homeostasis"
+          ],
+          "correctIndex": 2,
+          "explanation": "Living things respond to stimuli (they are sensitive). Insensitivity does not distinguish living things.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-04",
+          "prompt": "Which of the following is a reproductive strategy?",
+          "options": [
+            "Parental care",
+            "Semelparity",
+            "Iteroparity",
+            "Seasonal reproduction",
+            "All of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Parental care, semelparity (breeding once), iteroparity (breeding repeatedly) and seasonal breeding are all reproductive strategies.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-05",
+          "prompt": "Which of the following is NOT an asexual means of reproduction?",
+          "options": [
+            "Spore formation",
+            "Binary fission",
+            "Fragmentation",
+            "Budding",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "All four are asexual means of reproduction.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-06",
+          "prompt": "Maintenance of a stable internal environment despite external changes is called ________.",
+          "options": [
+            "mutation",
+            "homeostasis",
+            "adaptation",
+            "response to stimuli",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "That is homeostasis.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-07",
+          "prompt": "Cell division that halves the chromosome number, giving four daughter cells, is ________.",
+          "options": [
+            "mitosis",
+            "binary fission",
+            "binary fusion",
+            "meiosis",
+            "none of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Meiosis gives four cells, each with half the chromosome number of the parent cell.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-08",
+          "prompt": "Which of the following is NOT a characteristic of non-living things?",
+          "options": [
+            "Excretion",
+            "Reproduction",
+            "Respiration",
+            "Feeding",
+            "All of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Excretion, reproduction, respiration and feeding are all characteristics of living things, so none of them is a characteristic of non-living things.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-09",
+          "prompt": "All of the following are advantages of sexual reproduction EXCEPT:",
+          "options": [
+            "genetic diversity",
+            "genetic variation",
+            "only one type of sex cell is involved",
+            "elimination of harmful mutations",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sexual reproduction needs two types of gamete (male and female). Having only one type of sex cell is not an advantage of it.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-10",
+          "prompt": "The metabolic processes that build up complex materials from simpler ones are called ________.",
+          "options": [
+            "catabolism",
+            "regulation",
+            "anabolism",
+            "development"
+          ],
+          "correctIndex": 2,
+          "explanation": "Anabolism builds complex molecules from simple ones. Catabolism breaks them down.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-rep-11",
+          "prompt": "Sexual reproduction involves all of the following EXCEPT:",
+          "options": [
+            "fertilization",
+            "development",
+            "gamete formation",
+            "mitosis",
+            "meiosis"
+          ],
+          "correctIndex": null,
+          "explanation": "Fertilization, gamete formation and meiosis are steps of sexual reproduction. Mitosis is part of development after fertilization and is also the basis of asexual reproduction.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The intended answer (mitosis) is arguable, because mitosis is involved in development. Please confirm."
+        },
+        {
+          "id": "bio101-rep-12",
+          "prompt": "Understanding ________, from cellular processes to complex behaviors, gives insight into the diversity of life and the perpetuation of genetic information across generations.",
+          "options": [
+            "cellular organization",
+            "metabolism",
+            "evolution",
+            "reproduction"
+          ],
+          "correctIndex": null,
+          "explanation": "The wording could point to reproduction or to evolution.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The intended answer is unclear. Please confirm."
+        }
+      ]
+    },
+    {
+      "id": "genetics-and-heredity",
+      "questions": [
+        {
+          "id": "bio101-gen-01",
+          "prompt": "________ is a double-helix molecule that encodes genetic instructions.",
+          "options": [
+            "Gene",
+            "Chromosome",
+            "Ribosome",
+            "DNA"
+          ],
+          "correctIndex": 3,
+          "explanation": "DNA is the double-helix molecule that carries the genetic code.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-02",
+          "prompt": "Different forms of a gene found at the same locus on homologous chromosomes are called ________.",
+          "options": [
+            "DNA",
+            "alleles",
+            "genes",
+            "RNA",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Alleles are alternative forms of a gene at the same locus.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-03",
+          "prompt": "Which of the following was NOT a key trait in Mendel's studies on pea genetics?",
+          "options": [
+            "Flower color",
+            "Seed color",
+            "Stem color",
+            "Pod color"
+          ],
+          "correctIndex": 2,
+          "explanation": "Mendel studied seed shape and colour, pod shape and colour, flower colour and position, and stem height, but not stem colour.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-04",
+          "prompt": "All of the following are reasons why Pisum sativum was ideal for Mendel's experiments EXCEPT:",
+          "options": [
+            "ease of mass cultivation",
+            "controllable reproduction",
+            "having both male and female reproductive organs",
+            "fixing nitrogen independently"
+          ],
+          "correctIndex": 3,
+          "explanation": "Nitrogen fixation was not a reason. Peas are easy to grow, can be self- or cross-pollinated and have bisexual flowers.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-05",
+          "prompt": "For a test cross to be effective, one of the parents must be a known ________.",
+          "options": [
+            "homozygous recessive",
+            "homozygous dominant",
+            "heterozygous dominant",
+            "a and b"
+          ],
+          "correctIndex": 0,
+          "explanation": "A test cross uses a homozygous recessive parent, so the offspring show the genotype of the other parent.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-06",
+          "prompt": "Which of the following statements is UNTRUE?",
+          "options": [
+            "The Y chromosome is relatively gene-poor.",
+            "Males are only able to inherit their father's sex-linked traits.",
+            "Male grasshoppers have an X chromosome but no Y chromosome.",
+            "Male birds have a ZZ chromosome pair."
+          ],
+          "correctIndex": 1,
+          "explanation": "A male inherits his X chromosome (and so X-linked traits) from his mother. Only Y-linked traits come from the father. The other statements are true.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Option D was printed as \"XX\" in the original; male birds are ZZ."
+        },
+        {
+          "id": "bio101-gen-07",
+          "prompt": "________ are long, thread-like structures composed of DNA and proteins.",
+          "options": [
+            "Chromosomes",
+            "Genes",
+            "Ribosomes",
+            "RNA"
+          ],
+          "correctIndex": 0,
+          "explanation": "Chromosomes are thread-like structures of DNA wrapped around proteins.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-08",
+          "prompt": "When were the key hereditary experiments of Correns, Tschermak and Hugo de Vries conducted?",
+          "options": [
+            "During Mendel's lifetime",
+            "Before Mendel's birth",
+            "After Mendel's death",
+            "During Darwin's lifetime"
+          ],
+          "correctIndex": 2,
+          "explanation": "The three men rediscovered Mendel's work in 1900, years after Mendel died (1884).",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-09",
+          "prompt": "Which of the following is the correct pairing of nucleotide bases in DNA?",
+          "options": [
+            "Cytosine–Adenine",
+            "Adenine–Guanine",
+            "Adenine–Thymine",
+            "Cytosine–Thymine"
+          ],
+          "correctIndex": 2,
+          "explanation": "In DNA, adenine pairs with thymine and cytosine pairs with guanine.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The original had a fifth option that repeated option C; it was removed."
+        },
+        {
+          "id": "bio101-gen-10",
+          "prompt": "The haploid number of chromosomes in Loxodonta africana (African bush elephant, 2n = 56) is ________.",
+          "options": [
+            "28",
+            "3",
+            "56",
+            "12",
+            "42"
+          ],
+          "correctIndex": 0,
+          "explanation": "The haploid number is half the diploid number: 56 ÷ 2 = 28.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-11",
+          "prompt": "The diploid number of chromosomes in Homo sapiens is ________.",
+          "options": [
+            "23",
+            "46",
+            "56",
+            "12",
+            "24"
+          ],
+          "correctIndex": 1,
+          "explanation": "Humans have 46 chromosomes (23 pairs).",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-12",
+          "prompt": "The chromosomal abnormality with an XXY constitution is ________.",
+          "options": [
+            "Klinefelter's syndrome",
+            "Trisomy 21",
+            "Turner's syndrome",
+            "Down's syndrome",
+            "Huntington's disease"
+          ],
+          "correctIndex": 0,
+          "explanation": "XXY is Klinefelter syndrome. Turner is XO and Down is trisomy 21.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-13",
+          "prompt": "Which of the following is NOT one of the nucleotide bases in DNA?",
+          "options": [
+            "Guanine",
+            "Thiamine",
+            "Cytosine",
+            "Thymine",
+            "Adenine"
+          ],
+          "correctIndex": 1,
+          "explanation": "The DNA bases are adenine, thymine, guanine and cytosine. Thiamine is vitamin B₁.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-14",
+          "prompt": "Chromosomes house ________, which are sequences of ________ that code for proteins and other essential molecules.",
+          "options": [
+            "DNA / genes",
+            "genes / DNA",
+            "DNA / information",
+            "genes / information",
+            "all of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chromosomes carry genes, and genes are sequences of DNA.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-15",
+          "prompt": "The haploid number of chromosomes in the domestic pig (Sus scrofa domesticus, 2n = 38) is ________.",
+          "options": [
+            "40",
+            "23",
+            "38",
+            "19",
+            "21"
+          ],
+          "correctIndex": 3,
+          "explanation": "Haploid = 38 ÷ 2 = 19.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-16",
+          "prompt": "All of the following are sex-linked (or sex-influenced) traits EXCEPT:",
+          "options": [
+            "red-white eye color in Drosophila",
+            "premature balding",
+            "hemophilia",
+            "height"
+          ],
+          "correctIndex": 3,
+          "explanation": "Eye colour in Drosophila and hemophilia are sex-linked, and premature balding is sex-influenced. Height is controlled by many genes on autosomes.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-17",
+          "prompt": "Where is genetic information encoded?",
+          "options": [
+            "DNA",
+            "RNA",
+            "ATP",
+            "ADP"
+          ],
+          "correctIndex": 0,
+          "explanation": "Genetic information is encoded in the base sequence of DNA.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-18",
+          "prompt": "Common variations in DNA sequence that occur in a population without necessarily affecting health or development are known as ________.",
+          "options": [
+            "polymorphisms",
+            "sickle cell anemia",
+            "mutations",
+            "cystic fibrosis",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Common harmless variants in a population are polymorphisms.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-19",
+          "prompt": "How many pairs of chromosomes are present in humans?",
+          "options": [
+            "23",
+            "24",
+            "25",
+            "26"
+          ],
+          "correctIndex": 0,
+          "explanation": "Humans have 23 pairs (46 chromosomes).",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-20",
+          "prompt": "A ________ is a segment of DNA that contains instructions for building a specific protein or set of proteins.",
+          "options": [
+            "genome",
+            "gene",
+            "allele",
+            "genotype"
+          ],
+          "correctIndex": 1,
+          "explanation": "A gene is a DNA segment that codes for a protein.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-21",
+          "prompt": "________ refers to the tendency of genes located close together on the same chromosome to be inherited together.",
+          "options": [
+            "Genetic linkage",
+            "Gene expression",
+            "Gene mutation",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Genes that lie close together on a chromosome tend to be inherited together: genetic linkage.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-22",
+          "prompt": "________ refers to changes in the DNA sequence that introduce new genetic variations.",
+          "options": [
+            "Hybridization",
+            "Genetic variation",
+            "Mutation",
+            "DNA recombination"
+          ],
+          "correctIndex": 2,
+          "explanation": "A mutation is a change in the DNA sequence.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-23",
+          "prompt": "________ is considered the father of genetics (heredity).",
+          "options": [
+            "Jean-Baptiste Lamarck",
+            "Robert Hooke",
+            "Charles Darwin",
+            "Johann Gregor Mendel"
+          ],
+          "correctIndex": 3,
+          "explanation": "Gregor Mendel founded genetics through his pea experiments.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-24",
+          "prompt": "Which of Mendel's laws states that an individual has two alleles for a trait and only one is passed on to each gamete?",
+          "options": [
+            "Law of Independent Assortment",
+            "Law of Segregation",
+            "Law of Dominance and Uniformity",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Law of Segregation says the two alleles separate when gametes form.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-gen-25",
+          "prompt": "Which of the following is NOT an autosomal recessive genetic disorder?",
+          "options": [
+            "Fragile X syndrome",
+            "Hemophilia",
+            "Sickle cell anemia",
+            "Cystic fibrosis"
+          ],
+          "correctIndex": null,
+          "explanation": "Fragile X is X-linked and hemophilia is X-linked recessive, so neither is an autosomal recessive disorder.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and B) are both correct. Please confirm which one is intended."
+        },
+        {
+          "id": "bio101-gen-26",
+          "prompt": "Which of the following processes is NOT a part of gene expression?",
+          "options": [
+            "Karyotyping",
+            "Translation",
+            "Transcription",
+            "Replication"
+          ],
+          "correctIndex": null,
+          "explanation": "Gene expression is transcription followed by translation. Karyotyping and DNA replication are not part of it.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and D) are both correct. Please confirm which one is intended."
+        },
+        {
+          "id": "bio101-gen-27",
+          "prompt": "Genetic diversity is essential for all of the following reasons EXCEPT:",
+          "options": [
+            "adaptation",
+            "heredity",
+            "evolution",
+            "variation"
+          ],
+          "correctIndex": null,
+          "explanation": "Genetic diversity matters for adaptation and evolution. \"Variation\" is the same thing as diversity, and heredity is not a reason for it.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Either B or D could be intended. Please confirm."
+        },
+        {
+          "id": "bio101-gen-28",
+          "prompt": "Which of these carry hereditary material?",
+          "options": [
+            "Nucleus",
+            "Chromosomes",
+            "Cytoplasm",
+            "Proteins"
+          ],
+          "correctIndex": null,
+          "explanation": "Chromosomes carry the DNA. The nucleus also contains it.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and B) can be defended. Please confirm."
+        },
+        {
+          "id": "bio101-gen-29",
+          "prompt": "What do independent assortment of chromosomes and crossing over cause?",
+          "options": [
+            "Genetic code",
+            "Genetic similarity",
+            "Genetic variation",
+            "Genetic recombination"
+          ],
+          "correctIndex": null,
+          "explanation": "Both genetic variation and genetic recombination are results.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (C and D) are correct. Please confirm."
+        }
+      ]
+    },
+    {
+      "id": "evolution",
+      "questions": [
+        {
+          "id": "bio101-evo-01",
+          "prompt": "Which theory of the origin of life proposes that living organisms can arise from non-living matter without a pre-existing life form?",
+          "options": [
+            "Eternity of life",
+            "Cosmozoan theory",
+            "Biochemical theory",
+            "Spontaneous generation theory"
+          ],
+          "correctIndex": 3,
+          "explanation": "Spontaneous generation says life arises from non-living matter.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-02",
+          "prompt": "Which scientist wrote the publication Philosophie Zoologique?",
+          "options": [
+            "Hugo de Vries",
+            "Jean-Baptiste Lamarck",
+            "Charles Robert Darwin",
+            "Carl Erich Correns"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lamarck published Philosophie Zoologique in 1809.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-03",
+          "prompt": "All of the following are causes of extinction EXCEPT:",
+          "options": [
+            "exotic (invasive) species",
+            "disease-causing organisms",
+            "significant environmental changes",
+            "exceptionally powerful predators",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Invasive species, disease, environmental change and over-powerful predators can all cause extinction, so none is the exception.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-04",
+          "prompt": "All of the following are components of evolutionary adaptation EXCEPT:",
+          "options": [
+            "behavioral adaptation",
+            "metamorphic adaptation",
+            "structural adaptation",
+            "physiological adaptation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adaptations are structural, physiological or behavioural. \"Metamorphic adaptation\" is not a category.",
+          "source": "BIO 101, June 2025 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-05",
+          "prompt": "The gradual change in a population over time due to natural selection is called ________.",
+          "options": [
+            "genetic crossing",
+            "revolution",
+            "mutation",
+            "evolution",
+            "none of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "That is evolution.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-06",
+          "prompt": "Another term for Lamarckism is the ________.",
+          "options": [
+            "theory of possession",
+            "theory of inheritance of acquired characteristics",
+            "theory of dominance",
+            "theory of evolution"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lamarckism is the inheritance of acquired characteristics.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-07",
+          "prompt": "The process through which individuals with advantageous features have a higher chance of surviving and reproducing is ________.",
+          "options": [
+            "speciation",
+            "natural selection",
+            "genetic drift",
+            "gene flow"
+          ],
+          "correctIndex": 1,
+          "explanation": "That is natural selection.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-08",
+          "prompt": "\"Use and disuse\" are terms associated with ________.",
+          "options": [
+            "Lamarckism",
+            "Darwinism",
+            "Mendelism",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Lamarck proposed that organs strengthen with use and weaken with disuse.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-09",
+          "prompt": "The process by which a new species evolves from an ancestral species while both remain in the same geographic area is ________.",
+          "options": [
+            "sympatric speciation",
+            "parapatric speciation",
+            "peripatric speciation",
+            "allopatric speciation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Speciation in the same area (without geographic separation) is sympatric.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bio101-evo-10",
+          "prompt": "What will happen to a species when there is severe interspecific competition for bird habitats?",
+          "options": [
+            "Distribution becomes multidirectional.",
+            "Competition eliminates one of the species (competitive exclusion).",
+            "The species spreads to new habitats.",
+            "Animals restrict themselves to a narrow habitat range (niche partitioning)."
+          ],
+          "correctIndex": null,
+          "explanation": "Both competitive exclusion (B) and niche partitioning (D) are standard outcomes of severe competition.",
+          "source": "BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (B and D) are correct. Please confirm."
+        }
+      ]
+    }
+  ]
+}

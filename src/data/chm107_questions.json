@@ -1,0 +1,599 @@
+{
+  "courseCode": "CHM107",
+  "topics": [
+    {
+      "id": "molarity-solution-preparation",
+      "questions": [
+        {
+          "id": "chm107-mol-01",
+          "prompt": "Calculate the molarity of concentrated hydrochloric acid if the solution is 37.7% HCl by mass and its density is 1.195 g/mL. [H = 1.0, Cl = 35.5]",
+          "options": [
+            "11.8 M",
+            "12.3 M",
+            "13.3 M",
+            "15.2 M",
+            "16.2 M"
+          ],
+          "correctIndex": 1,
+          "explanation": "In 1 L (1000 mL) the mass is 1.195 × 1000 = 1195 g. HCl mass = 0.377 × 1195 = 450.5 g. Moles = 450.5/36.5 = 12.3 mol, so the molarity is 12.3 M.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-02",
+          "prompt": "How many grams of KCl would be required to prepare 1.0 L of a 0.02 M solution of the salt? [K = 39, Cl = 35.5]",
+          "options": [
+            "1.49 g",
+            "2.98 g",
+            "1.59 g",
+            "1.69 g",
+            "0.35 g"
+          ],
+          "correctIndex": 0,
+          "explanation": "Moles = 0.02 × 1.0 = 0.02 mol. M(KCl) = 74.5 g/mol. Mass = 0.02 × 74.5 = 1.49 g.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-03",
+          "prompt": "How many grams of sodium dichromate (Na₂Cr₂O₇) should be added to a 100.00 mL volumetric flask to prepare a 0.025 M solution when the flask is filled to the mark with water?",
+          "options": [
+            "0.33 g",
+            "0.55 g",
+            "0.66 g",
+            "0.88 g",
+            "0.99 g"
+          ],
+          "correctIndex": 2,
+          "explanation": "M(Na₂Cr₂O₇) = 2(23) + 2(52) + 7(16) = 262 g/mol. Moles = 0.025 × 0.100 = 0.0025 mol. Mass = 0.0025 × 262 ≈ 0.66 g.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-04",
+          "prompt": "How many mL of a 15.8 M stock solution of nitric acid do you require to make 1.00 L of 0.12 M HNO₃?",
+          "options": [
+            "0.76 mL",
+            "7.60 mL",
+            "25.20 mL",
+            "76.00 mL",
+            "152.00 mL"
+          ],
+          "correctIndex": 1,
+          "explanation": "Dilution: C₁V₁ = C₂V₂, so V₁ = (0.12 × 1000 mL)/15.8 = 7.6 mL.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "sourceNote": "The printed options did not include the correct value (7.6 mL); option B was corrected."
+        },
+        {
+          "id": "chm107-mol-05",
+          "prompt": "All of the following are suitable primary standards EXCEPT:",
+          "options": [
+            "NaOH",
+            "Na₂CO₃",
+            "K₂Cr₂O₇",
+            "NaCl",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A primary standard must be pure, stable and not absorb water. NaOH is hygroscopic and absorbs CO₂ from the air, so it cannot be weighed accurately.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-06",
+          "prompt": "What is the concentration in mol/dm³ of a solution of sodium hydroxide that contains 16 g of NaOH in 200 cm³ of distilled water? [Na = 23, H = 1, O = 16]",
+          "options": [
+            "2.5",
+            "2.0",
+            "0.2",
+            "1.0",
+            "0.25"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles = 16/40 = 0.40 mol. Volume = 200 cm³ = 0.200 dm³. Concentration = 0.40/0.200 = 2.0 mol/dm³.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-07",
+          "prompt": "What is the concentration of a standard solution in mol/L prepared by dissolving 0.4 g of NaOH in 250 mL of water? [Na = 23, H = 1, O = 16]",
+          "options": [
+            "0.4",
+            "0.04",
+            "0.02",
+            "0.004",
+            "0.002"
+          ],
+          "correctIndex": 1,
+          "explanation": "Moles = 0.4/40 = 0.010 mol. Volume = 0.250 L. Concentration = 0.010/0.250 = 0.04 mol/L.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-08",
+          "prompt": "What is the molar concentration in mol/L of a standard solution prepared by dissolving 10.6 g of Na₂CO₃ in 1 litre of water? [Na = 23, C = 12, O = 16]",
+          "options": [
+            "0.01 mol/L",
+            "0.001 mol/L",
+            "0.1 mol/L",
+            "0.0001 mol/L",
+            "0.2 mol/L"
+          ],
+          "correctIndex": 2,
+          "explanation": "M(Na₂CO₃) = 106 g/mol. Moles = 10.6/106 = 0.10 mol in 1 L, so the concentration is 0.1 mol/L.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-09",
+          "prompt": "What mass of anhydrous sodium trioxocarbonate(IV) (Na₂CO₃) is required to prepare 250 mL of a 0.05 M solution in a volumetric flask?",
+          "options": [
+            "0.6625 g",
+            "2.65 g",
+            "13.35 g",
+            "1.325 g",
+            "0.1325 g"
+          ],
+          "correctIndex": 3,
+          "explanation": "Moles = 0.05 × 0.250 = 0.0125 mol. Mass = 0.0125 × 106 = 1.325 g.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-10",
+          "prompt": "A solution is prepared by mixing 1.00 g of ethanol (C₂H₅OH) with 100.0 g of water. Calculate the mass percent of ethanol in this solution.",
+          "options": [
+            "1.01%",
+            "0.99%",
+            "0.97%",
+            "1.00%",
+            "1.15%"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mass percent = 1.00/(1.00 + 100.0) × 100 = 0.99%.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-11",
+          "prompt": "A standard sodium hydroxide solution cannot be made by accurately weighing a given mass of the solid and making it up to the required volume because solid NaOH is ________.",
+          "options": [
+            "effervescent",
+            "hygroscopic",
+            "efflorescent",
+            "a desiccant",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Solid NaOH absorbs water (and CO₂) from the air, so its true mass cannot be weighed accurately. That property is hygroscopic.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "sourceNote": "The original listed both \"hygroscopic\" and \"deliquescent\", which are both true of NaOH. \"Deliquescent\" was replaced with a wrong option so the answer is unambiguous."
+        },
+        {
+          "id": "chm107-mol-12",
+          "prompt": "A standard solution is ________.",
+          "options": [
+            "a solution that is standardized in the laboratory",
+            "a solution that is titrated using an acid and a base",
+            "a solution made by dissolving a solute in a solvent",
+            "a solution whose concentration is accurately known",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "A standard solution is one whose concentration is accurately known, either from weighing a primary standard or by standardising against one.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-13",
+          "prompt": "A stock solution of potassium dichromate (K₂Cr₂O₇) was made by dissolving 89.3 g of the compound in 1.10 L of solution. How many mL of this stock solution are required to prepare 1.00 L of 0.100 M K₂Cr₂O₇?",
+          "options": [
+            "110 mL",
+            "165 mL",
+            "274 mL",
+            "494 mL",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "M(K₂Cr₂O₇) = 294.2 g/mol. Stock concentration = (89.3/294.2)/1.10 = 0.276 M. V₁ = (0.100 × 1000)/0.276 ≈ 362 mL. That is not among options A–D, so the answer is \"none of the above\".",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-mol-14",
+          "prompt": "All of the following properties are required of a primary standard EXCEPT being:",
+          "options": [
+            "highly pure",
+            "of definite composition",
+            "stable at room temperature",
+            "hygroscopic",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "A primary standard must not absorb water, because that would change its mass. Being hygroscopic is the opposite of what is required.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "titration-stoichiometry",
+      "questions": [
+        {
+          "id": "chm107-titr-01",
+          "prompt": "Calcium carbonate undergoes thermal decomposition to form calcium oxide and carbon dioxide: CaCO₃(s) → CaO(s) + CO₂(g). What mass of calcium oxide (M = 56 g/mol) is formed when 60 g of calcium carbonate (M = 100 g/mol) is completely decomposed?",
+          "options": [
+            "28 g",
+            "18.5 g",
+            "60 g",
+            "33.6 g",
+            "30 g"
+          ],
+          "correctIndex": 3,
+          "explanation": "The reaction is 1:1. Moles of CaCO₃ = 60/100 = 0.60 mol, so moles of CaO = 0.60 mol. Mass = 0.60 × 56 = 33.6 g.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-titr-02",
+          "prompt": "How many mL of 0.150 M H₂SO₄ are required to react completely with 8.20 g of NaHCO₃ according to: H₂SO₄(aq) + 2NaHCO₃(aq) → Na₂SO₄(aq) + 2CO₂(g) + 2H₂O(l)? [Na = 23.0, C = 12.0, H = 1.0, O = 16.0]",
+          "options": [
+            "162.5 mL",
+            "325 mL",
+            "650 mL",
+            "812.50 mL",
+            "16.25 mL"
+          ],
+          "correctIndex": 1,
+          "explanation": "M(NaHCO₃) = 84 g/mol, so moles = 8.20/84 = 0.0976 mol. The ratio is 1 H₂SO₄ : 2 NaHCO₃, so moles H₂SO₄ = 0.0488 mol. Volume = 0.0488/0.150 = 0.325 L = 325 mL.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-titr-03",
+          "prompt": "In which of the following titrations is phenolphthalein suitable but methyl orange is not?",
+          "options": [
+            "HCl and NaOH",
+            "CH₃COOH and NaOH",
+            "CH₃COOH and NH₃",
+            "H₂SO₄ and KOH",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Phenolphthalein changes colour at about pH 8.3–10, which suits a titration with a basic end-point: weak acid + strong base (CH₃COOH + NaOH). Methyl orange (pH 3.1–4.4) changes too early for that. Strong acid + strong base titrations work with both indicators, and weak acid + weak base has no sharp end-point.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "sourceNote": "Original asked only which reaction phenolphthalein suits, but strong acid/strong base titrations suit it too. The prompt was tightened so there is exactly one answer."
+        },
+        {
+          "id": "chm107-titr-04",
+          "prompt": "What volume of 0.250 M HNO₃ reacts with 44.8 mL of 0.150 M Na₂CO₃ in the reaction 2HNO₃ + Na₂CO₃ → 2NaNO₃ + CO₂ + H₂O?",
+          "options": [
+            "13.45 mL",
+            "26.90 mL",
+            "53.80 mL",
+            "80.70 mL",
+            "30.35 mL"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moles Na₂CO₃ = 0.0448 × 0.150 = 0.00672 mol. HNO₃ needed = 2 × 0.00672 = 0.01344 mol. Volume = 0.01344/0.250 = 0.0538 L = 53.8 mL.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-titr-05",
+          "prompt": "A student was given a sample of hydrochloric acid and asked to find its concentration in mol/dm³. She titrated 25 cm³ of the acid against a 0.1 mol/dm³ standard solution of sodium hydroxide, and the average titre of sodium hydroxide was 30 cm³. What is the concentration of the acid?",
+          "options": [
+            "0.5 mol/dm³",
+            "0.12 mol/dm³",
+            "1.25 mol/dm³",
+            "1.0 mol/dm³",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "HCl + NaOH → NaCl + H₂O (1:1). Moles NaOH = 0.1 × 0.030 = 0.0030 mol = moles HCl. Concentration = 0.0030/0.025 = 0.12 mol/dm³.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "acids-bases-ph",
+      "questions": [
+        {
+          "id": "chm107-acid-01",
+          "prompt": "In the Niger Delta environment, where gases are emitted through the combustion of natural gas, what would the likely pH of the rainwater be?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "7.5",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Unpolluted rain is already slightly acidic (about pH 5.6 from dissolved CO₂). Gas combustion and flaring add acidic gases such as NOₓ and SO₂, pushing it lower.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "needsReview": true,
+          "reviewNote": "No answer key supplied and the question is open to interpretation (5 is the best fit but 3 is also arguable). Confirm the intended answer from the original paper."
+        },
+        {
+          "id": "chm107-acid-02",
+          "prompt": "What is the hydrogen ion concentration (in mol/L) of a solution whose pH is 5.3?",
+          "options": [
+            "5.0 × 10⁻⁵",
+            "5.0 × 10⁻⁶",
+            "5.0 × 10⁻⁷",
+            "5.0 × 10⁻⁸",
+            "6.0 × 10⁻⁷"
+          ],
+          "correctIndex": 1,
+          "explanation": "[H⁺] = 10⁻ᵖᴴ = 10⁻⁵·³ = 5.0 × 10⁻⁶ mol/L.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-03",
+          "prompt": "What is the likely pH of a solution that contains equivalent amounts of hydrochloric acid and ammonia?",
+          "options": [
+            "5",
+            "7",
+            "8",
+            "9",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Equal amounts of HCl and NH₃ react completely to form NH₄Cl. The NH₄⁺ ion is a weak acid, so the solution is slightly acidic (about pH 5).",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "sourceNote": "The printed options (6, 7, 8, 9) did not include a suitable value for a slightly acidic salt solution; option A was changed to 5."
+        },
+        {
+          "id": "chm107-acid-04",
+          "prompt": "Which indicator is most appropriate for determining the molarity of H₂SO₄ using standard NaOH?",
+          "options": [
+            "Phenolphthalein",
+            "Bromophenol blue",
+            "Methyl orange",
+            "Starch",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Phenolphthalein is the usual indicator when a strong base is run from the burette into an acid. Starch is only used for iodine titrations.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "needsReview": true,
+          "reviewNote": "No answer key supplied. For a strong acid/strong base titration phenolphthalein, methyl orange and bromophenol blue can all work, so the question needs the examiner's intended answer."
+        },
+        {
+          "id": "chm107-acid-05",
+          "prompt": "Which of the following is the strongest acid among the oxyacid series formed by chlorine?",
+          "options": [
+            "HClO₄",
+            "HClO₂",
+            "HClO₃",
+            "HClO",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Across the chlorine oxyacids, acid strength rises with the number of oxygen atoms (the oxidation state of Cl), which stabilises the anion. HClO₄ is the strongest.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-06",
+          "prompt": "Which of the following can act as a Lewis acid?",
+          "options": [
+            "CH₄",
+            "BF₃",
+            "CH₃⁻",
+            "Cl₂",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "A Lewis acid accepts an electron pair. BF₃ has an empty p-orbital on boron, so it is a strong electron-pair acceptor.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-07",
+          "prompt": "Which of the following species is the most acidic?",
+          "options": [
+            "0.10 M H₃PO₄: pH = 1.4",
+            "0.10 M H₂PO₄⁻: pH = 4.4",
+            "0.10 M HPO₄²⁻: pH = 9.3",
+            "0.10 M PO₄³⁻: pH = 12.0",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "At equal concentration, the lowest pH is the most acidic. That is H₃PO₄ at pH 1.4.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-08",
+          "prompt": "Which of the following is an acidic oxide?",
+          "options": [
+            "CaO",
+            "RbO₂",
+            "SeO₃",
+            "Na₂O₂",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Non-metal oxides are acidic. SeO₃ (selenium is a non-metal) forms selenic acid with water. CaO, RbO₂ and Na₂O₂ are metal oxides and basic.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-09",
+          "prompt": "Which of the following is the strongest Brønsted-Lowry acid?",
+          "options": [
+            "H₃O⁺",
+            "HF",
+            "NH₃",
+            "NaHSO₄",
+            "NaOH"
+          ],
+          "correctIndex": 0,
+          "explanation": "H₃O⁺ is the strongest acid that can exist in water, so it is stronger than HF (weak) and HSO₄⁻ (pKa about 2). NH₃ and NaOH are bases.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-10",
+          "prompt": "Which of the following is the strongest Brønsted-Lowry base?",
+          "options": [
+            "H₂O",
+            "SH⁻",
+            "OH⁻",
+            "S²⁻",
+            "O²⁻"
+          ],
+          "correctIndex": 4,
+          "explanation": "O²⁻ is the conjugate base of OH⁻, an extremely weak acid, so it is the strongest base and reacts completely with water to give OH⁻.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-11",
+          "prompt": "Which of the following is the weakest Brønsted-Lowry acid?",
+          "options": [
+            "HClO₄",
+            "H₃PO₄",
+            "H₂CO₃",
+            "H₂SO₄",
+            "Al(OH)₃"
+          ],
+          "correctIndex": 4,
+          "explanation": "HClO₄ and H₂SO₄ are strong, H₃PO₄ and H₂CO₃ are weak, and Al(OH)₃ is a very weak acid (it is mainly a base that is only weakly amphoteric).",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-acid-12",
+          "prompt": "All of the following compounds are strong acids EXCEPT:",
+          "options": [
+            "H₂SO₄",
+            "HCl",
+            "HNO₃",
+            "H₂CO₃",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "H₂SO₄, HCl and HNO₃ ionise completely in water. H₂CO₃ is a weak acid.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "redox-reactions",
+      "questions": [
+        {
+          "id": "chm107-redox-01",
+          "prompt": "Which of the following is NOT a redox reaction?",
+          "options": [
+            "2CrO₄²⁻ + 2H⁺ → Cr₂O₇²⁻ + H₂O",
+            "Cr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O",
+            "2IO₃⁻ + 12H⁺ + 10I⁻ → 6I₂ + 6H₂O",
+            "2MnO₄⁻ + 5NO₂⁻ + 6H⁺ → 2Mn²⁺ + 5NO₃⁻ + 3H₂O",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "In option A, chromium is +6 in both CrO₄²⁻ and Cr₂O₇²⁻, so no oxidation numbers change: it is an acid-base (condensation) reaction. In B, C and D oxidation numbers change (Cr, I, Mn and N).",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-redox-02",
+          "prompt": "Which of the following solutions is the strongest oxidizing agent?",
+          "options": [
+            "MnO₄⁻ in acid",
+            "MnO₄⁻ in base",
+            "MnO₂ in base",
+            "Cr₂O₇²⁻ in acid",
+            "Cr₂O₇²⁻ in base"
+          ],
+          "correctIndex": 0,
+          "explanation": "Permanganate in acid is reduced to Mn²⁺ with E° = +1.51 V, higher than dichromate in acid (+1.33 V). Oxidants are always stronger in acidic solution.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-redox-03",
+          "prompt": "Balance the following reaction in a basic medium: MnO₄⁻ + I⁻ → MnO₂ + I₂",
+          "options": [
+            "2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8OH⁻",
+            "MnO₄⁻ + 2I⁻ + 4H₂O → MnO₂ + I₂ + 8OH⁻",
+            "2MnO₄⁻ + 6I⁻ + 8H⁺ → 2MnO₂ + 3I₂ + 4H₂O",
+            "2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8H⁺",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Half-reactions: MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻ (×2) and 2I⁻ → I₂ + 2e⁻ (×3). Adding gives 2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8OH⁻. Check: charge is −8 on both sides, and O, H, Mn, I all balance.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)",
+          "sourceNote": "The printed options were garbled (one contained sulfur); they were rebuilt around the correct equation given in the source."
+        },
+        {
+          "id": "chm107-redox-04",
+          "prompt": "The reaction 3ClO⁻ → ClO₃⁻ + 2Cl⁻ is an example of a:",
+          "options": [
+            "Reduction reaction",
+            "Oxidation reaction",
+            "Disproportionation reaction",
+            "Decomposition reaction",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Chlorine goes from +1 in ClO⁻ to +5 in ClO₃⁻ (oxidised) and to −1 in Cl⁻ (reduced). One species is both oxidised and reduced: disproportionation.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-redox-05",
+          "prompt": "Balance the following reaction in an acidic medium: Cr₂O₇²⁻ + H₂S → Cr³⁺ + S",
+          "options": [
+            "3H₂S + 8H⁺ + Cr₂O₇²⁻ → 2Cr³⁺ + 3S + 7H₂O",
+            "Cr₂O₇²⁻ + H₂S → 2Cr³⁺ + 2H⁺ + S",
+            "Cr₂O₇²⁻ + 14H⁺ + H₂S → 2Cr³⁺ + 2H⁺ + S + 7H₂O",
+            "Cr₂O₇²⁻ + H₂S + 5e⁻ → Cr³⁺ + S",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O and H₂S → S + 2H⁺ + 2e⁻ (×3). Adding: Cr₂O₇²⁻ + 3H₂S + 8H⁺ → 2Cr³⁺ + 3S + 7H₂O. Charge is +6 on both sides.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "lab-practice-safety",
+      "questions": [
+        {
+          "id": "chm107-lab-01",
+          "prompt": "Which of the following is the confirmatory test for oxygen gas?",
+          "options": [
+            "Damp blue litmus paper turns red and then bleaches white",
+            "It rekindles a glowing splint",
+            "It extinguishes a lighted splint with a \"pop\" sound",
+            "None of the above",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oxygen supports combustion, so it relights a glowing splint. Option A is chlorine and option C (the \"pop\") is hydrogen.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-lab-02",
+          "prompt": "Which of the following is NOT a way to make a solid solute dissolve more quickly in a liquid solvent?",
+          "options": [
+            "Stirring vigorously",
+            "Heating and shaking",
+            "Grinding to a powder",
+            "Pulverizing",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Stirring, heating, shaking and grinding all speed up dissolving (more mixing, more energy, more surface area). So every listed option is a valid way, and the answer is \"none of the above\".",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-lab-03",
+          "prompt": "Which of the following is/are correct laboratory practice(s)?",
+          "options": [
+            "Avoiding the use of naked flames when handling flammable liquids",
+            "Avoiding holding the necks of bottles containing hazardous materials",
+            "Avoiding throwing solid waste in the sink",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "All three are standard safety practice: flammable liquids must be kept away from flames, bottles should be held by the body, and solids can block drains or react.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        },
+        {
+          "id": "chm107-lab-04",
+          "prompt": "All of the following are necessary precautions to be observed in the laboratory EXCEPT:",
+          "options": [
+            "avoiding skin contact with chemicals",
+            "keeping the workspace clean",
+            "wearing a laboratory coat",
+            "eating in the laboratory",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Eating in a laboratory risks swallowing chemicals and is never allowed.",
+          "source": "CHM107 2023/2024 (typed by Jozzy; no answer key supplied, answers derived by calculation)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2530 @@
+{
+  "courseCode": "BOT101",
+  "topics": [
+    {
+      "id": "cells-and-microscopy",
+      "questions": [
+        {
+          "id": "bot101-cel-01",
+          "prompt": "All of the following are parts of a light microscope EXCEPT:",
+          "options": [
+            "condenser",
+            "eyepiece",
+            "stage clip",
+            "electron gun"
+          ],
+          "correctIndex": 3,
+          "explanation": "An electron gun produces the electron beam of an electron microscope. A light microscope has a condenser, eyepiece, objective lenses, stage, stage clips and focusing knobs.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-02",
+          "prompt": "A student measured a cell under the microscope as 0.5 mm. Convert this to micrometres (µm).",
+          "options": [
+            "0.005 µm",
+            "500 µm",
+            "0.05 µm",
+            "50 µm"
+          ],
+          "correctIndex": 1,
+          "explanation": "1 mm = 1,000 µm, so 0.5 mm = 0.5 × 1,000 = 500 µm.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-03",
+          "prompt": "In a compound microscope, the specimen to be examined is closest to the ________ lens, which has a ________ focal length.",
+          "options": [
+            "ocular / longer",
+            "eyepiece / shorter",
+            "objective / longer",
+            "ocular / larger",
+            "objective / shorter"
+          ],
+          "correctIndex": 4,
+          "explanation": "The objective lens sits just above the specimen. High-power objectives have very short focal lengths. The eyepiece (ocular) is the lens nearest your eye.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-04",
+          "prompt": "All of the following are parts of a compound microscope EXCEPT: (i) eyepiece, (ii) objective, (iii) condenser, (iv) fine and coarse adjustment, (v) stage.",
+          "options": [
+            "v only",
+            "iii and iv",
+            "i and ii",
+            "none of them"
+          ],
+          "correctIndex": 3,
+          "explanation": "All five items are parts of a compound microscope, so none of them is the exception.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-05",
+          "prompt": "Which type of microscopy relies on a treated specimen that glows and emits light of a longer wavelength?",
+          "options": [
+            "Compound",
+            "Electron",
+            "Fluorescence",
+            "Polarization"
+          ],
+          "correctIndex": 2,
+          "explanation": "In fluorescence microscopy the specimen is stained with a fluorescent dye. The dye absorbs light and re-emits it at a longer wavelength, so the specimen appears to glow.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-06",
+          "prompt": "Which of the following structures is found in plant cells but not in animal cells?",
+          "options": [
+            "Cell wall",
+            "Cytoplasm",
+            "Vacuoles",
+            "Mitochondria"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plant cells have a rigid cellulose cell wall outside the membrane, which animal cells lack. Cytoplasm and mitochondria occur in both, and animal cells have only small vacuoles.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The typed question said \"unique to plant cells (among eukaryotes)\". Fungi also have cell walls, so the stem now compares plant cells with animal cells."
+        },
+        {
+          "id": "bot101-cel-07",
+          "prompt": "Which of the following statements is true about the plant cell wall?",
+          "options": [
+            "The cell wall is mainly composed of lipid.",
+            "The cell wall is mainly composed of starch.",
+            "The cell wall is mainly composed of protein.",
+            "The cell wall is mainly composed of cellulose."
+          ],
+          "correctIndex": 3,
+          "explanation": "The plant cell wall is made mainly of cellulose fibres, which give strength and shape. (Fungal walls are mainly chitin.)",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-08",
+          "prompt": "Which cell structure regulates the entry and exit of molecules into and out of the cell?",
+          "options": [
+            "Lysosomes",
+            "Golgi bodies",
+            "Cell membrane",
+            "Mitochondria"
+          ],
+          "correctIndex": 2,
+          "explanation": "The cell (plasma) membrane is selectively permeable and controls what moves in and out.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-09",
+          "prompt": "Which cell organelle stores water, food and other nutrients the cell needs to survive?",
+          "options": [
+            "Vacuoles",
+            "Lysosome",
+            "Mitochondria",
+            "Cell membrane"
+          ],
+          "correctIndex": 0,
+          "explanation": "Vacuoles store water, nutrients and wastes. In mature plant cells a large central vacuole also helps keep the cell firm.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-10",
+          "prompt": "Which of the following organelles is present in plant cells and absent in animal cells?",
+          "options": [
+            "Nucleus",
+            "Vacuole",
+            "Chloroplast",
+            "Cytoplasm"
+          ],
+          "correctIndex": 2,
+          "explanation": "Chloroplasts carry out photosynthesis and occur in plant cells and algae, not in animal cells. Nucleus and cytoplasm are in both, and animal cells have small vacuoles.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-11",
+          "prompt": "Which of the following statements is true about the nucleus?",
+          "options": [
+            "It is absent in prokaryotes.",
+            "It is called the control center (\"brain\") of the cell.",
+            "It contains DNA and other genetic materials.",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "All three statements are true: prokaryotes have no nucleus, the nucleus controls cell activity, and it holds the DNA.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-23",
+          "prompt": "The two knobs used for focusing an image are the fine adjustment knob and the ________.",
+          "options": [
+            "coarse adjustment knob",
+            "diaphragm",
+            "stage",
+            "objective lens"
+          ],
+          "correctIndex": 0,
+          "explanation": "The microscope is focused with the coarse and fine adjustment knobs.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-24",
+          "prompt": "When the power of the ocular lens is ×10 and the objective lens is ×20, the total magnification is ________.",
+          "options": [
+            "×2",
+            "×30",
+            "×200",
+            "×10"
+          ],
+          "correctIndex": 2,
+          "explanation": "Total magnification = ocular × objective = 10 × 20 = ×200.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-25",
+          "prompt": "All of the following are microscopic techniques EXCEPT:",
+          "options": [
+            "embedding",
+            "staining",
+            "digestion",
+            "sectioning"
+          ],
+          "correctIndex": 2,
+          "explanation": "Preparing specimens involves embedding, sectioning and staining. Digestion is not a slide-preparation technique.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cel-26",
+          "prompt": "(Microscope diagram, question 41) The part labeled a is ________.",
+          "options": [
+            "(see diagram)",
+            "(see diagram 2)",
+            "(see diagram 3)",
+            "(see diagram 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on a microscope diagram, which was not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The diagram is missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cel-27",
+          "prompt": "(Microscope diagram, question 42) The part labeled b is ________.",
+          "options": [
+            "(see diagram)",
+            "(see diagram 2)",
+            "(see diagram 3)",
+            "(see diagram 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on a microscope diagram, which was not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The diagram is missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cel-28",
+          "prompt": "(Microscope diagram, question 43) The part labeled c is ________.",
+          "options": [
+            "(see diagram)",
+            "(see diagram 2)",
+            "(see diagram 3)",
+            "(see diagram 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on a microscope diagram, which was not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The diagram is missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cel-29",
+          "prompt": "(Microscope diagram, question 44) The part labeled d is ________.",
+          "options": [
+            "(see diagram)",
+            "(see diagram 2)",
+            "(see diagram 3)",
+            "(see diagram 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on a microscope diagram, which was not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The diagram is missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cel-30",
+          "prompt": "(Microscope diagram, question 45) The part labeled e is ________.",
+          "options": [
+            "(see diagram)",
+            "(see diagram 2)",
+            "(see diagram 3)",
+            "(see diagram 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on a microscope diagram, which was not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The diagram is missing. Needs the original paper."
+        }
+      ]
+    },
+    {
+      "id": "bacteria-and-viruses",
+      "questions": [
+        {
+          "id": "bot101-bac-01",
+          "prompt": "Bacteria have additional circular DNA fragments called ________.",
+          "options": [
+            "capsules",
+            "plastids",
+            "plasmids",
+            "akinetes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Plasmids are small circular DNA molecules separate from the main chromosome, often carrying genes such as antibiotic resistance.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-02",
+          "prompt": "The difference between Gram-positive and Gram-negative bacteria is due to the composition of their ________.",
+          "options": [
+            "ribosome",
+            "cell membrane",
+            "cytoplasm",
+            "cell wall"
+          ],
+          "correctIndex": 3,
+          "explanation": "Gram-positive bacteria have a thick peptidoglycan wall that holds the crystal violet stain. Gram-negative bacteria have a thin one with an outer membrane.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-03",
+          "prompt": "Bacteria were first observed by ________.",
+          "options": [
+            "Carolus Linnaeus",
+            "Alexander Fleming",
+            "Antonie van Leeuwenhoek",
+            "Robert Brown"
+          ],
+          "correctIndex": 2,
+          "explanation": "Antonie van Leeuwenhoek first saw bacteria (his \"animalcules\") with his simple microscopes in the 1670s.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-04",
+          "prompt": "Bacteria that retain a purple colour after Gram staining are ________.",
+          "options": [
+            "Gram-positive",
+            "Gram-negative",
+            "Trichous",
+            "Spirillum"
+          ],
+          "correctIndex": 0,
+          "explanation": "Gram-positive cells keep the purple crystal violet dye. Gram-negative cells lose it and take up the pink counterstain.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-05",
+          "prompt": "Which of the following cyanobacteria exists as a single-celled (or colonial) organism?",
+          "options": [
+            "Anabaena azollae",
+            "Gloeocapsa quaternata",
+            "Nostoc species",
+            "Oscillatoria princeps"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gloeocapsa is unicellular or colonial. Anabaena, Nostoc and Oscillatoria are filamentous.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-06",
+          "prompt": "The ________ were once thought to be fungi because of their branched mycelium, but are now known to be prokaryotes.",
+          "options": [
+            "Acetabularia",
+            "Chlamydias",
+            "Rickettsias",
+            "Actinomycetes"
+          ],
+          "correctIndex": 3,
+          "explanation": "Actinomycetes are filamentous bacteria that form branching, mycelium-like growth, so they were once classified with fungi.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-07",
+          "prompt": "The Archaebacteria include all of the following EXCEPT:",
+          "options": [
+            "halobacteria",
+            "cyanobacteria",
+            "methanogens",
+            "Sulfolobus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cyanobacteria are true bacteria (eubacteria). Archaebacteria include halophiles, methanogens and thermoacidophiles such as Sulfolobus.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-08",
+          "prompt": "The majority of bacteria have a unique macromolecule in their cell walls known as ________.",
+          "options": [
+            "glycan",
+            "glycogen",
+            "peptidoglycan",
+            "murein",
+            "c and d are correct"
+          ],
+          "correctIndex": 4,
+          "explanation": "Peptidoglycan and murein are two names for the same molecule, so both c and d are correct.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-09",
+          "prompt": "Thick-walled, enlarged vegetative cells in cyanobacteria that accumulate food and survive harsh conditions are called ________.",
+          "options": [
+            "cytokinesis",
+            "akinetes",
+            "endokinetes",
+            "exokinetes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Akinetes are resting cells that store food and resist harsh conditions. (Heterocysts, by contrast, fix nitrogen.)",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-10",
+          "prompt": "Which of the following statements are NOT true about viruses? (i) They lack ribosomes. (ii) They contain both DNA and RNA. (iii) Outside the host cell, a non-living particle is called a virion. (iv) The central core is surrounded by a protein coat called a capsid. (v) They contain either DNA or RNA.",
+          "options": [
+            "ii only",
+            "v only",
+            "iii and iv",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A virus contains either DNA or RNA, never both, so statement (ii) is false. The others are true.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-11",
+          "prompt": "A structural component found in all viruses is ________.",
+          "options": [
+            "the envelope",
+            "DNA",
+            "the capsid",
+            "tail fibers",
+            "spikes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Every virus has a protein coat (capsid) around its nucleic acid. Envelopes, tail fibres and spikes occur only in some.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-12",
+          "prompt": "Viruses require ________ to replicate.",
+          "options": [
+            "bacteria",
+            "plants",
+            "animals",
+            "living cells",
+            "dead cells"
+          ],
+          "correctIndex": 3,
+          "explanation": "Viruses are obligate parasites and can replicate only inside living host cells, which may be bacterial, plant or animal.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-13",
+          "prompt": "Reverse transcriptase is a useful enzyme when ________.",
+          "options": [
+            "an RNA virus converts RNA to DNA",
+            "there are no host cells present",
+            "nutrients are scarce",
+            "spikes are forming in the new virus",
+            "none"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reverse transcriptase makes DNA from an RNA template, which is how retroviruses copy their genome into the host DNA.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-14",
+          "prompt": "A chemical component found in all viruses is ________.",
+          "options": [
+            "protein",
+            "lipid",
+            "DNA",
+            "RNA",
+            "glycoproteins"
+          ],
+          "correctIndex": 0,
+          "explanation": "All viruses have a protein capsid. Nucleic acid is either DNA or RNA (so neither is in all viruses), and lipid and glycoproteins occur only in enveloped viruses.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-15",
+          "prompt": "Rickettsias and chlamydias belong to the kingdom ________.",
+          "options": [
+            "Fungi",
+            "Animalia",
+            "Plantae",
+            "Protoctista",
+            "Monera"
+          ],
+          "correctIndex": 4,
+          "explanation": "Rickettsias and chlamydias are tiny prokaryotic bacteria, so they belong to Kingdom Monera.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-19",
+          "prompt": "All of the following are correct EXCEPT:",
+          "options": [
+            "Rickettsias contain both DNA and RNA.",
+            "Heterocysts in Nostoc contain nitrogenase.",
+            "Gymnosperms are softwoods.",
+            "Brown algae produce calcium carbonate.",
+            "Psilotophyta are whisk ferns."
+          ],
+          "correctIndex": 3,
+          "explanation": "Brown algae do not typically lay down calcium carbonate (red algae such as Corallina and green algae such as Halimeda do). The other four statements are correct.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-20",
+          "prompt": "The virion is surrounded by a protein coat called a ________.",
+          "options": [
+            "capsule",
+            "pigment",
+            "turnip",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The protein coat of a virus is the capsid, which is not listed, so the answer is \"none of the above\". A capsule is a slimy layer around some bacteria.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-21",
+          "prompt": "Penicillin kills bacteria by making holes in their cell wall (inhibiting cell wall synthesis).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Penicillin blocks the building of peptidoglycan, so growing bacteria burst. The statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-22",
+          "prompt": "Actinomycetes are fungi.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Actinomycetes are filamentous bacteria that only look like fungi, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-23",
+          "prompt": "Cyanobacteria were the first organisms on Earth to perform oxygenic (modern) photosynthesis.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cyanobacteria were the first to release oxygen in photosynthesis, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-24",
+          "prompt": "Eubacteriobionta (true bacteria) have cell walls made up of ________.",
+          "options": [
+            "peptidoglycan",
+            "starch",
+            "cellulose",
+            "floridean starch"
+          ],
+          "correctIndex": 0,
+          "explanation": "True bacteria have peptidoglycan (murein) walls.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-25",
+          "prompt": "Bacteria undergo haplontic alternation of generations.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bacteria divide by binary fission and have no alternation of generations, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-26",
+          "prompt": "Viruses reproduce by binary fission.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Viruses cannot divide. They are copied inside a host cell, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-27",
+          "prompt": "Chloroxybacteria are archaebacteria.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Chloroxybacteria (prochlorophytes) are eubacteria, not archaebacteria, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        }
+      ]
+    },
+    {
+      "id": "fungi-and-lichens",
+      "questions": [
+        {
+          "id": "bot101-fun-01",
+          "prompt": "Which fungi occur on burnt grasses and burnt ground?",
+          "options": [
+            "Pyrophyta fungi",
+            "Lignolytic fungi",
+            "Pyrophilous fungi",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pyrophilous means \"fire-loving\": these fungi fruit on burnt ground.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-02",
+          "prompt": "Which fungal division is also called the club fungi?",
+          "options": [
+            "Zygomycota",
+            "Deuteromycota",
+            "Basidiomycota",
+            "Ascomycota"
+          ],
+          "correctIndex": 2,
+          "explanation": "Basidiomycota (mushrooms, puffballs, bracket fungi) are the club fungi, named after the club-shaped basidium.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-03",
+          "prompt": "What are the specialised hyphal tips through which parasitic fungi absorb nutrients from a living host called?",
+          "options": [
+            "Haustoria",
+            "Mildew",
+            "Constricting ring",
+            "All of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Haustoria are hyphal branches that penetrate host cells to absorb nutrients.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-04",
+          "prompt": "Hyphae without cross-walls (septa) are said to be ________.",
+          "options": [
+            "septate",
+            "mycelium",
+            "rhizoid",
+            "coenocytic"
+          ],
+          "correctIndex": 3,
+          "explanation": "Aseptate hyphae are coenocytic: many nuclei share one continuous cytoplasm.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-05",
+          "prompt": "All fungi are ________.",
+          "options": [
+            "saprophytes",
+            "parasites",
+            "heterotrophs",
+            "autotrophs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fungi cannot make their own food, so all are heterotrophs. Some are saprophytes and some are parasites, but not all.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-06",
+          "prompt": "The tubular, thread-like or whitish filaments of a fungus are called ________.",
+          "options": [
+            "hyphae",
+            "spores",
+            "rhizoids",
+            "conidia"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hyphae are the filaments that make up the fungal body (mycelium).",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-07",
+          "prompt": "Which of these is a Zygomycete?",
+          "options": [
+            "Mucor",
+            "Black bread mold",
+            "Rhizopus",
+            "b and c",
+            "a, b and c"
+          ],
+          "correctIndex": 4,
+          "explanation": "Mucor and Rhizopus (the black bread mould, Rhizopus stolonifer) are all Zygomycetes.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-08",
+          "prompt": "Saccharomyces cerevisiae is a fungus belonging to the division ________.",
+          "options": [
+            "Ascomycota",
+            "Basidiomycota",
+            "Deuteromycota",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Baker's yeast is an ascomycete (sac fungus).",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-09",
+          "prompt": "The symbiotic association between a fungus and a green alga (or cyanobacterium) is called a ________.",
+          "options": [
+            "mycorrhizal association",
+            "Nostoc association",
+            "lichen association",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A lichen is a partnership between a fungus and an alga or cyanobacterium. A mycorrhiza is a fungus with plant roots.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-10",
+          "prompt": "________ are essential to most terrestrial ecosystems because they break down organic material and recycle vital nutrients.",
+          "options": [
+            "Fungi",
+            "Cyanobacteria",
+            "Bryophytes",
+            "Algae",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fungi are major decomposers: their enzymes break down dead matter and return nutrients to the soil.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-11",
+          "prompt": "The club fungi and the sac fungi are also known as ________ and ________, respectively.",
+          "options": [
+            "Ascomycota and Basidiomycota",
+            "Deuteromycota and Zygomycota",
+            "Basidiomycota and Ascomycota",
+            "Zygomycota and Saccharomycota"
+          ],
+          "correctIndex": 2,
+          "explanation": "Club fungi are Basidiomycota and sac fungi are Ascomycota.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-12",
+          "prompt": "The cell wall of fungi is made of ________, and they store food as ________.",
+          "options": [
+            "cellulose / glycogen",
+            "chitin / glycogen",
+            "chitin / starch",
+            "cellulose / melanin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fungal walls are made of chitin and the food reserve is glycogen (as in animals).",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-13",
+          "prompt": "Lichens indicate SO₂ pollution because they ________.",
+          "options": [
+            "show an association between algae and fungi",
+            "grow faster than others",
+            "are sensitive to SO₂",
+            "flourish in an SO₂-rich environment"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lichens absorb water and gases directly through their surface and are very sensitive to sulfur dioxide, so they disappear from polluted air.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-14",
+          "prompt": "Absorptive heterotrophic nutrition is exhibited by ________.",
+          "options": [
+            "Algae",
+            "Fungi",
+            "Bryophytes",
+            "Pteridophytes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fungi secrete enzymes onto their food and absorb the digested products, which is absorptive heterotrophy.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-15",
+          "prompt": "Which organisms are indicators of SO₂ air pollution?",
+          "options": [
+            "mosses",
+            "lichens",
+            "mushrooms",
+            "puffballs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lichens are the classic bioindicators of SO₂ pollution.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-16",
+          "prompt": "Mycorrhiza is correctly described as a ________.",
+          "options": [
+            "parasitic association between roots and some fungi",
+            "symbiotic relationship between fungi and the roots of some higher plants",
+            "symbiosis of algae and fungi",
+            "relation of ants with the stems of some trees"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a mycorrhiza the fungus helps the root absorb water and minerals, and the plant supplies sugars.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-17",
+          "prompt": "In the life cycle of fungi, karyogamy results in the formation of a ________.",
+          "options": [
+            "haploid cell",
+            "diploid cell",
+            "dikaryotic phase",
+            "haploid spore"
+          ],
+          "correctIndex": 1,
+          "explanation": "Karyogamy is the fusion of two nuclei, so it gives a diploid zygote nucleus.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-18",
+          "prompt": "The body of yeast is ________.",
+          "options": [
+            "mycelial",
+            "colonial",
+            "unicellular",
+            "filamentous",
+            "septate"
+          ],
+          "correctIndex": 2,
+          "explanation": "Yeasts are unicellular fungi.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-19",
+          "prompt": "The correct sequence of events in the sexual life cycle of fungi is: (i) karyogamy, (ii) meiosis, (iii) plasmogamy, (iv) haploid spore, (v) heterokaryotic phase, (vi) diploid zygote.",
+          "options": [
+            "iii, v, i, iv, ii, vi",
+            "iii, v, i, vi, ii, iv",
+            "iii, i, iii, v, vi, iv",
+            "iv, iii, v, i, ii, vi"
+          ],
+          "correctIndex": 1,
+          "explanation": "Plasmogamy (cytoplasm fuses), then the heterokaryotic phase, then karyogamy (nuclei fuse), giving the diploid zygote. Meiosis then gives haploid spores: iii, v, i, vi, ii, iv.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-22",
+          "prompt": "Fungi are: (i) heterotrophic organisms, (ii) organisms that possess chlorophyll pigments, (iii) organisms that have roots, stems and leaves. Which statement is correct?",
+          "options": [
+            "i and ii",
+            "i and iii",
+            "ii and iii",
+            "i only"
+          ],
+          "correctIndex": 3,
+          "explanation": "Fungi are heterotrophs. They have no chlorophyll and no true roots, stems or leaves.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-23",
+          "prompt": "Fungi have cell walls made of chitin.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fungal walls are made of chitin, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-24",
+          "prompt": "Division Deuteromycota is also called \"imperfect fungi\" because of the ________.",
+          "options": [
+            "fungi being unhealthy",
+            "fact that they reproduce asexually",
+            "absence of a known sexual mode of reproduction",
+            "fungi being poisonous"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Imperfect\" means no sexual (perfect) stage has been found. Many do reproduce asexually, but the name comes from the missing sexual stage.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-25",
+          "prompt": "Mycorrhiza is a symbiotic relationship between the roots of Pinus (or other higher plants) and a ________.",
+          "options": [
+            "bat",
+            "fungus",
+            "alga",
+            "bacterium"
+          ],
+          "correctIndex": 1,
+          "explanation": "A mycorrhiza is a root-fungus partnership.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-26",
+          "prompt": "Sexual reproduction in fungi involves the following stages in order: ________.",
+          "options": [
+            "meiosis, karyogamy and plasmogamy",
+            "plasmogamy, meiosis and karyogamy",
+            "plasmogamy, karyogamy and meiosis",
+            "karyogamy, plasmogamy and meiosis",
+            "syngamy, karyogamy and mitosis"
+          ],
+          "correctIndex": 2,
+          "explanation": "Cytoplasm fuses first (plasmogamy), then the nuclei fuse (karyogamy), and meiosis follows.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-fun-27",
+          "prompt": "Which type of ascocarp is cup-shaped, with the asci exposed on an open surface?",
+          "options": [
+            "Ascocarp",
+            "Perithecium",
+            "Apothecium",
+            "Cleistothecium",
+            "Ascomycota"
+          ],
+          "correctIndex": 2,
+          "explanation": "An apothecium is an open, cup- or saucer-shaped ascocarp.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The original showed a figure. The question now uses the description of the figure."
+        },
+        {
+          "id": "bot101-fun-28",
+          "prompt": "Which type of ascocarp is flask-shaped with a small opening (ostiole) at the top?",
+          "options": [
+            "Ascocarp",
+            "Perithecium",
+            "Apothecium",
+            "Cleistothecium",
+            "Ascomycota"
+          ],
+          "correctIndex": 1,
+          "explanation": "A perithecium is a flask-shaped ascocarp that opens through an ostiole.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The original showed a figure. The question now uses the description of the figure."
+        },
+        {
+          "id": "bot101-fun-29",
+          "prompt": "Which type of ascocarp is completely closed and spherical?",
+          "options": [
+            "Ascocarp",
+            "Perithecium",
+            "Apothecium",
+            "Cleistothecium",
+            "Ascomycota"
+          ],
+          "correctIndex": 3,
+          "explanation": "A cleistothecium is a closed, spherical ascocarp with no opening.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The original showed a figure. The question now uses the description of the figure."
+        },
+        {
+          "id": "bot101-fun-30",
+          "prompt": "What is the collective name for the cup-shaped, flask-shaped and closed spherical fruiting bodies of the Ascomycota?",
+          "options": [
+            "Ascocarp",
+            "Perithecium",
+            "Apothecium",
+            "Cleistothecium",
+            "Ascomycota"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ascocarp is the general name for the fruiting body of an ascomycete.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The original showed a figure. The question now uses the description of the figure."
+        },
+        {
+          "id": "bot101-fun-31",
+          "prompt": "Ascocarps (apothecia, perithecia and cleistothecia) are found in the division ________.",
+          "options": [
+            "Ascocarp",
+            "Perithecium",
+            "Apothecium",
+            "Cleistothecium",
+            "Ascomycota"
+          ],
+          "correctIndex": 4,
+          "explanation": "Ascocarps are the fruiting bodies of the sac fungi, the Ascomycota.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "The original showed a figure. The question now uses the description of the figure."
+        }
+      ]
+    },
+    {
+      "id": "algae",
+      "questions": [
+        {
+          "id": "bot101-alg-01",
+          "prompt": "________ is the form in which food is stored in the algal division Rhodophyta.",
+          "options": [
+            "Laminarin",
+            "Floridean starch",
+            "Paramylon",
+            "Starch",
+            "Pyrenoid"
+          ],
+          "correctIndex": 1,
+          "explanation": "Red algae store food as floridean starch. Laminarin is for brown algae and paramylon for Euglena.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-02",
+          "prompt": "Carrageenan, a mucilaginous polysaccharide from ________, is useful in making agar for culture media.",
+          "options": [
+            "Rhodophyta",
+            "seaweeds",
+            "Phaeophyta",
+            "Chlorophyta",
+            "a and b are correct"
+          ],
+          "correctIndex": 4,
+          "explanation": "Carrageenan comes from red algae (Rhodophyta), which are seaweeds, so both a and b are correct.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-03",
+          "prompt": "The number of pyrenoids and chloroplasts in Oedogonium is ________.",
+          "options": [
+            "one chloroplast and several pyrenoids",
+            "three chloroplasts and few pyrenoids",
+            "no chloroplast and two pyrenoids",
+            "two chloroplasts and no pyrenoids",
+            "several chloroplasts and few pyrenoids"
+          ],
+          "correctIndex": 0,
+          "explanation": "Each Oedogonium cell has a single net-like (reticulate) chloroplast containing several pyrenoids.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-04",
+          "prompt": "Which algal division has chlorophylls a and b, paramylon as the energy store, and a pellicle instead of a cell wall?",
+          "options": [
+            "Chlorophyta",
+            "Euglenophyta",
+            "Pyrrophyta",
+            "Chrysophyta",
+            "Phaeophyta"
+          ],
+          "correctIndex": 1,
+          "explanation": "Euglenophyta (Euglena) have chlorophylls a and b, store paramylon and have a flexible pellicle.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-05",
+          "prompt": "Laminarin is an energy storage material characteristic of ________.",
+          "options": [
+            "Chlorophyta",
+            "Euglenophyta",
+            "Pyrrophyta",
+            "Chrysophyta",
+            "Phaeophyta"
+          ],
+          "correctIndex": 4,
+          "explanation": "Laminarin is the storage carbohydrate of brown algae (Phaeophyta).",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-06",
+          "prompt": "Characteristics used to place algae into divisions include all of the following EXCEPT:",
+          "options": [
+            "form of storage material",
+            "flagella number and location",
+            "accessory pigments used in photosynthesis",
+            "all of the above",
+            "none of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Storage material, flagella and pigments are all used, so none of them is the exception.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-07",
+          "prompt": "Chlamydomonas and Volvox are similar because ________.",
+          "options": [
+            "they are both motile",
+            "they are members of the Chlorophyta",
+            "both a and b",
+            "none of these",
+            "all of those"
+          ],
+          "correctIndex": 2,
+          "explanation": "Both are motile (flagellated) green algae in the Chlorophyta, so a and b are both correct.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-09",
+          "prompt": "All of the following are cyanobacteria EXCEPT:",
+          "options": [
+            "Gloeocapsa quaternata",
+            "Anabaena azollae",
+            "Oscillatoria princeps",
+            "Rhizobium japonicum",
+            "Fucus species"
+          ],
+          "correctIndex": null,
+          "explanation": "Rhizobium is a bacterium (a proteobacterium) and Fucus is a brown alga. Neither is a cyanobacterium.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (D and E) are both correct. Please confirm which one is intended."
+        },
+        {
+          "id": "bot101-alg-10",
+          "prompt": "\"Unicellular, slightly oval, with a large cup-shaped chloroplast almost surrounding a centrally located nucleus.\" This description best fits ________.",
+          "options": [
+            "Chlorella",
+            "Ulva",
+            "Eudorina",
+            "Chlamydomonas",
+            "Ulothrix"
+          ],
+          "correctIndex": null,
+          "explanation": "The description fits Chlamydomonas (option D), but Chlorella also has a single cup-shaped chloroplast.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The description does not mention flagella, so Chlorella and Chlamydomonas are both possible. Please confirm."
+        },
+        {
+          "id": "bot101-alg-11",
+          "prompt": "In which of the following green algae are zoospores absent?",
+          "options": [
+            "Ulva",
+            "Ulothrix",
+            "Spirogyra",
+            "Oedogonium",
+            "Acetabularia"
+          ],
+          "correctIndex": null,
+          "explanation": "Spirogyra reproduces by conjugation and has no zoospores. Acetabularia also forms only gametes, not zoospores.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Spirogyra and Acetabularia both fit. Please confirm which one the lecturer intended."
+        },
+        {
+          "id": "bot101-alg-12",
+          "prompt": "Alginates are colloidal products or salts found in the cell wall of ________.",
+          "options": [
+            "Dinophyta",
+            "Phaeophyta",
+            "Chlorophyta",
+            "Chrysophyta"
+          ],
+          "correctIndex": 1,
+          "explanation": "Alginates come from the cell walls of brown algae (Phaeophyta).",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-13",
+          "prompt": "Algae are classified on the basis of colour/pigmentation only.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pigments are only one criterion. Storage product, flagella and cell wall are also used, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-14",
+          "prompt": "Both green algae and land plants have chlorophyll a and b as well as carotenoids, and store food as starch.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the main evidence that land plants evolved from green algae, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-15",
+          "prompt": "Green algae have cells coated in carrageenan, which is used in cosmetics, gelatin capsules and some cheeses.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Carrageenan comes from red algae (Rhodophyta), not green algae, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        }
+      ]
+    },
+    {
+      "id": "bryophytes-and-pteridophytes",
+      "questions": [
+        {
+          "id": "bot101-bry-01",
+          "prompt": "In which group would you place a plant that produces spores, lacks seeds and has vascular tissue?",
+          "options": [
+            "Bryophyta",
+            "Algae",
+            "Pteridophyta",
+            "Gymnospermae"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pteridophytes (ferns and allies) have xylem and phloem, reproduce by spores and make no seeds.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-02",
+          "prompt": "In pteridophytes, the dominant generation is ________.",
+          "options": [
+            "gametophytic",
+            "haploid",
+            "diploid",
+            "triploid"
+          ],
+          "correctIndex": 2,
+          "explanation": "The conspicuous fern plant is the diploid sporophyte. The gametophyte (prothallus) is small.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-03",
+          "prompt": "Pteridophytes and bryophytes differ in having a ________.",
+          "options": [
+            "spermatozoids",
+            "archegonia",
+            "separate gametophytes",
+            "conducting (vascular) system"
+          ],
+          "correctIndex": 3,
+          "explanation": "Pteridophytes have vascular tissue (xylem and phloem). Bryophytes do not. Both have swimming sperm and archegonia.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-04",
+          "prompt": "The sporophytic and gametophytic phases are independent in ________.",
+          "options": [
+            "bryophytes",
+            "pteridophytes",
+            "phaeophytes",
+            "gymnosperms"
+          ],
+          "correctIndex": 1,
+          "explanation": "In pteridophytes both the sporophyte and the prothallus are free-living. In bryophytes the sporophyte depends on the gametophyte, and in gymnosperms the gametophyte depends on the sporophyte.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-05",
+          "prompt": "\"Club moss\" belongs to ________.",
+          "options": [
+            "Fungi",
+            "Algae",
+            "Bryophyta",
+            "Pteridophyta"
+          ],
+          "correctIndex": 3,
+          "explanation": "Club mosses (Lycopodium) are pteridophytes, not true mosses.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-06",
+          "prompt": "Phloem in pteridophytes is without ________.",
+          "options": [
+            "bast fibers",
+            "companion cells",
+            "phloem parenchyma",
+            "sieve cells"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pteridophyte phloem has sieve cells but no companion cells. Companion cells belong to angiosperm phloem.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-07",
+          "prompt": "Which statements are true about bryophytes? (i) They are simple terrestrial organisms. (ii) They possess vascular tissues. (iii) They need external water (dew or rain) for sperm to swim during reproduction.",
+          "options": [
+            "i, ii and iii",
+            "i and iii",
+            "ii and iii",
+            "i only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bryophytes are simple land plants without vascular tissue, and their sperm swim in a film of water.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-08",
+          "prompt": "Which of the following are NOT characteristics of pteridophytes? (i) The cell wall is principally cellulose. (ii) Stomata are present and function efficiently to prevent water loss. (iii) The sporophyte is non-photosynthetic. (iv) The secondary cell walls do not have lignin.",
+          "options": [
+            "i and iii",
+            "ii and iii",
+            "i, ii and iii",
+            "iii and iv"
+          ],
+          "correctIndex": 3,
+          "explanation": "The fern sporophyte is photosynthetic and its secondary walls are lignified, so (iii) and (iv) are not characteristics.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-09",
+          "prompt": "Equisetum plants are also called ________.",
+          "options": [
+            "Lycopodium",
+            "exosporic",
+            "megaspore",
+            "scouring rushes"
+          ],
+          "correctIndex": 3,
+          "explanation": "Equisetum is called a horsetail or scouring rush, because silica in its stems made it useful for scouring pots.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-10",
+          "prompt": "Which of the following is NOT a division among the pteridophyte plants?",
+          "options": [
+            "Lycopodiophyta",
+            "Coniferophyta",
+            "Filicophyta",
+            "Psilotophyta"
+          ],
+          "correctIndex": 1,
+          "explanation": "Coniferophyta are gymnosperms (conifers). The pteridophyte divisions include Psilotophyta, Lycopodiophyta, Equisetophyta and Filicophyta.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-11",
+          "prompt": "The vascular system (stele) that is most primitive is the ________.",
+          "options": [
+            "siphonostele",
+            "protostele",
+            "dictyostele",
+            "pericycle",
+            "procambium"
+          ],
+          "correctIndex": 1,
+          "explanation": "The protostele, a solid core of xylem surrounded by phloem, is the simplest and most primitive stele.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-12",
+          "prompt": "In mosses, the sporophyte is nutritionally dependent on the gametophyte.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The moss sporophyte stays attached to the gametophyte and depends on it for water and nutrients, so the statement is true.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-13",
+          "prompt": "A monoecious moss can produce antheridia and archegonia on the same individual.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Monoecious (monoicous) mosses bear both sex organs on one plant, so the statement is true.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-14",
+          "prompt": "Although similar in many ways, bryophytes and green algae differ sharply in their types of photosynthetic pigments.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Both groups have chlorophylls a and b and carotenoids, so the statement is false.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-15",
+          "prompt": "Some extinct ferns are known to have been seed plants.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Seed ferns\" (pteridosperms) had fern-like leaves but produced seeds, so the statement is true.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-16",
+          "prompt": "All are tracheophytes EXCEPT ________.",
+          "options": [
+            "Bryophytes",
+            "Pteridophytes",
+            "Gymnosperms",
+            "Angiosperms"
+          ],
+          "correctIndex": 0,
+          "explanation": "Tracheophytes are vascular plants. Bryophytes lack vascular tissue.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-17",
+          "prompt": "All of the following possess a stele EXCEPT ________.",
+          "options": [
+            "Bryophytes",
+            "Pteridophytes",
+            "Gymnosperms",
+            "Angiosperms"
+          ],
+          "correctIndex": 0,
+          "explanation": "A stele is the central vascular cylinder of vascular plants. Bryophytes have none.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-18",
+          "prompt": "A columella is found in ________.",
+          "options": [
+            "Bryophytes",
+            "Pteridophytes",
+            "Gymnosperms",
+            "Angiosperms"
+          ],
+          "correctIndex": 0,
+          "explanation": "The moss capsule has a central sterile column of tissue called the columella.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-19",
+          "prompt": "In Marchantia polymorpha, the gemmae cups arise from the ________.",
+          "options": [
+            "rhizoids",
+            "lamina (thallus)",
+            "midrib",
+            "gametophores",
+            "archegonia"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gemmae cups form on the upper surface of the flat thallus and contain gemmae for vegetative reproduction.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-20",
+          "prompt": "A protonema is found in the life cycle of ________.",
+          "options": [
+            "Spirogyra",
+            "Psilotum",
+            "Funaria (a moss)",
+            "Cycas"
+          ],
+          "correctIndex": 2,
+          "explanation": "Moss spores germinate into a thread-like protonema, which then forms the leafy moss plant.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-21",
+          "prompt": "The rhizome of a fern is a ________.",
+          "options": [
+            "root",
+            "leaf",
+            "stem",
+            "rhizoid",
+            "rhizophore"
+          ],
+          "correctIndex": 2,
+          "explanation": "A fern rhizome is an underground (or creeping) stem. Fern leaves are fronds and the roots grow from it.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-22",
+          "prompt": "Heterospory is the production of ________.",
+          "options": [
+            "sexual and asexual spores",
+            "haploid and diploid spores",
+            "large (megaspores) and small (microspores) spores",
+            "diploid and tetraploid spores",
+            "few and several spores"
+          ],
+          "correctIndex": 2,
+          "explanation": "Heterosporous plants make two sizes of spore: large megaspores and small microspores.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-23",
+          "prompt": "Bryophytes are ________ plants.",
+          "options": [
+            "aquatic",
+            "amphibious",
+            "terrestrial",
+            "aerial"
+          ],
+          "correctIndex": null,
+          "explanation": "Bryophytes are often called \"amphibians of the plant kingdom\" because they need water to reproduce, which makes option B the usual key. But they live on land, and another question in the same course calls them \"simple terrestrial organisms\", so option C is also defensible.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (amphibious and terrestrial) can be defended. Please confirm which one your lecturer teaches."
+        },
+        {
+          "id": "bot101-bry-24",
+          "prompt": "All bryophytes possess leptoids and hydroids.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leptoids and hydroids are simple conducting cells found only in some mosses, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-25",
+          "prompt": "Leaves bearing sporangia are called ________.",
+          "options": [
+            "sporophylls",
+            "pteridophylls",
+            "spores",
+            "sporophytes"
+          ],
+          "correctIndex": 0,
+          "explanation": "A sporophyll is a leaf that bears sporangia.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-26",
+          "prompt": "The Hepaticae (liverworts) possess a siphonostele.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bryophytes, including liverworts, have no stele, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bry-27",
+          "prompt": "In pteridophytes, the dominant generation is the ________.",
+          "options": [
+            "gametophyte",
+            "haploid",
+            "diploid",
+            "sporophyte"
+          ],
+          "correctIndex": null,
+          "explanation": "The dominant generation is the sporophyte, which is diploid. Options C and D are both correct.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (diploid and sporophyte) are correct. Please confirm which one is intended."
+        }
+      ]
+    },
+    {
+      "id": "seed-plants",
+      "questions": [
+        {
+          "id": "bot101-sed-01",
+          "prompt": "________ is the largest group of gymnosperms, including economically important plants such as pines and junipers.",
+          "options": [
+            "Pterophyta",
+            "Gnetophyta",
+            "Coniferophyta",
+            "Welwitschia",
+            "Ginkgophyta"
+          ],
+          "correctIndex": 2,
+          "explanation": "Coniferophyta (conifers) are the largest and most economically important gymnosperm group.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-02",
+          "prompt": "In which plant do the leaves originate from the embryo and last for the entire life of the plant?",
+          "options": [
+            "Conifers",
+            "Gnetum",
+            "Maidenhair",
+            "Welwitschia",
+            "Ephedra"
+          ],
+          "correctIndex": 3,
+          "explanation": "Welwitschia keeps its two original strap-shaped leaves, which grow from the base for the whole life of the plant.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-03",
+          "prompt": "Seeds of Zea mays germinated in the dark will grow, become yellowish and soon die because ________.",
+          "options": [
+            "they lack proper aeration",
+            "they cannot photosynthesize as a result of excess water",
+            "there is no sunlight to manufacture food",
+            "there is excess water in the soil"
+          ],
+          "correctIndex": 2,
+          "explanation": "Without light the seedling cannot make chlorophyll or carry out photosynthesis (it becomes yellow, or etiolated). When the food reserve in the seed runs out, it dies.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-04",
+          "prompt": "The division Gnetophyta is a unique gymnosperm group made up of three genera called ________.",
+          "options": [
+            "Gnetum, Ephedra and Welwitschia",
+            "Gnetum, Ephedra and Ginkgo",
+            "Sinica, Gnetum and Ephedra",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Gnetophyta contain Gnetum, Ephedra and Welwitschia.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Options A and B were identical in the typed paper; option B was changed."
+        },
+        {
+          "id": "bot101-sed-05",
+          "prompt": "In the life cycle of conifers, the megastrobilus consists of a central cone axis and many ovule-bearing compartments called ________.",
+          "options": [
+            "ovuliferous scales",
+            "endodermis",
+            "microsporangium",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Each scale of the female cone that bears ovules is an ovuliferous scale.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-06",
+          "prompt": "Which gymnosperm division undergoes double fertilization like angiosperms?",
+          "options": [
+            "Ginkgophyta",
+            "Gnetophyta",
+            "Cycadophyta",
+            "Psilotophyta",
+            "Pterophyta"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gnetophyta (Ephedra and Gnetum) show double fertilization and also have vessel elements, so they are thought closest to the angiosperms.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-07",
+          "prompt": "Which of these plants can be propagated using its leaves?",
+          "options": [
+            "Zea mays",
+            "Talinum triangulare",
+            "Bryophyllum pinnatum",
+            "Terminalia catappa"
+          ],
+          "correctIndex": 2,
+          "explanation": "Bryophyllum forms plantlets on the notches of its leaves, which can be used for propagation.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-08",
+          "prompt": "In the angiosperm flower, the diploid microsporophylls and megasporophylls are otherwise known as ________ and ________, respectively.",
+          "options": [
+            "stamens and carpels",
+            "carpels and stamens",
+            "pollen grains and ovules",
+            "carpels and pistils"
+          ],
+          "correctIndex": 0,
+          "explanation": "Stamens are microsporophylls and carpels are megasporophylls.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-09",
+          "prompt": "The ovules that give rise to seeds in angiosperms are borne within the ________.",
+          "options": [
+            "microsporophylls",
+            "megasporangia",
+            "megasporophylls",
+            "microsporangia"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ovules develop inside the carpel (megasporophyll), in the ovary.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-10",
+          "prompt": "The woody portion in the stems of trees is xylem.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "Wood is secondary xylem, so the statement is true.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-11",
+          "prompt": "The greatest number of conifers is found in tropical regions of the earth.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Conifers are found mostly in temperate and cold (boreal) regions, so the statement is false.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-12",
+          "prompt": "________ produce hardwood.",
+          "options": [
+            "Bryophytes",
+            "Pteridophytes",
+            "Gymnosperms",
+            "Angiosperms"
+          ],
+          "correctIndex": 3,
+          "explanation": "Hardwood comes from angiosperm trees. Gymnosperm wood is softwood.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-13",
+          "prompt": "________ are characterized by double fertilization.",
+          "options": [
+            "Bryophytes",
+            "Pteridophytes",
+            "Gymnosperms",
+            "Angiosperms"
+          ],
+          "correctIndex": 3,
+          "explanation": "Double fertilization (one sperm with the egg, one with the polar nuclei) is the hallmark of angiosperms.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-14",
+          "prompt": "________ are composed of woody plants only.",
+          "options": [
+            "Bryophytes",
+            "Pteridophytes",
+            "Gymnosperms",
+            "Angiosperms"
+          ],
+          "correctIndex": 2,
+          "explanation": "All gymnosperms are woody trees or shrubs. Angiosperms include many herbs.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-15",
+          "prompt": "The gymnosperm division believed to be closest to the angiosperms has the following unique features EXCEPT:",
+          "options": [
+            "xylem with vessel elements",
+            "ovule with two integuments",
+            "double fertilization",
+            "three dissimilar genera",
+            "graceful palm-like leaves"
+          ],
+          "correctIndex": 4,
+          "explanation": "Gnetophyta have vessels, two integuments, double fertilization and three very different genera. Palm-like leaves belong to the cycads.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-16",
+          "prompt": "Cambium is typically absent in ________.",
+          "options": [
+            "gymnosperms",
+            "dicots",
+            "monocots",
+            "None"
+          ],
+          "correctIndex": 2,
+          "explanation": "Monocot stems have scattered vascular bundles with no cambium, so they have no secondary growth.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        }
+      ]
+    },
+    {
+      "id": "plant-life-cycles",
+      "questions": [
+        {
+          "id": "bot101-lif-01",
+          "prompt": "Which life cycle is the most primitive?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The haplontic cycle (haploid body, zygote is the only diploid stage) is considered the most primitive.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-02",
+          "prompt": "Zygotic meiosis is synonymous with which life cycle?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "In zygotic meiosis the zygote divides by meiosis straight away, so the organism is haploid: a haplontic cycle.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-03",
+          "prompt": "Gametic meiosis is synonymous with which life cycle?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "In gametic meiosis the body is diploid and meiosis makes the gametes: a diplontic cycle.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-04",
+          "prompt": "Which life cycle is found in many algae such as Volvox, Spirogyra, Ulothrix and Chlamydomonas?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "These green algae are haploid and only the zygote is diploid, so they are haplontic.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-05",
+          "prompt": "Which life cycle is shown by some green algae, brown algae and all seed-bearing plants?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "In seed plants the diploid sporophyte dominates and the gametophyte is tiny, so they are treated as diplontic. Some green and brown algae (for example Fucus) are also diplontic.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "sourceNote": "Seed plants do have a very reduced gametophyte. The course treats them as diplontic, and this is the answer key used here."
+        },
+        {
+          "id": "bot101-lif-06",
+          "prompt": "Sporic meiosis is synonymous with ________.",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Sporic meiosis is the haplodiplontic life cycle, which is also called alternation of generations. Options A and D mean the same thing.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and D) are equivalent. Please confirm which one the lecturer wants."
+        },
+        {
+          "id": "bot101-lif-07",
+          "prompt": "Which life cycle best describes the diagrams shown?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The question depends on diagrams that were not supplied.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The diagrams are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-lif-08",
+          "prompt": "Which life cycle is shown by some green algae, brown algae, bryophytes and pteridophytes?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "This is the haplodiplontic cycle, also called alternation of generations. Options A and D mean the same thing.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and D) are equivalent. Please confirm which one the lecturer wants."
+        },
+        {
+          "id": "bot101-lif-09",
+          "prompt": "Which life cycle involves the alternation of two vegetative individuals, the haploid gametophyte and the diploid sporophyte?",
+          "options": [
+            "Haplodiplontic life cycle",
+            "Haplontic life cycle",
+            "Diplontic life cycle",
+            "Alternation of generations",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "This describes alternation of generations, which is the haplodiplontic cycle. Options A and D mean the same thing.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (A and D) are equivalent. Please confirm which one the lecturer wants."
+        },
+        {
+          "id": "bot101-lif-10",
+          "prompt": "Both generations are conspicuous in a haplontic life cycle.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "In a haplontic cycle only the haploid body is conspicuous. The diploid stage is just the zygote, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-11",
+          "prompt": "A diplontic life cycle is characterized by gametic meiosis.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "In a diplontic cycle meiosis produces the gametes, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-12",
+          "prompt": "A diplontic life cycle is exhibited by some green algae, brown algae and all seed-bearing plants.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "As taught in this course, seed plants are diplontic (the gametophyte is tiny), and so are some green and brown algae, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-13",
+          "prompt": "The sporophyte produces spores.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The sporophyte makes spores by meiosis, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-14",
+          "prompt": "The gametophyte produces eggs and sperm.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The gametophyte makes gametes by mitosis, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-15",
+          "prompt": "Egg and sperm cells are diploid.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Gametes are haploid, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-16",
+          "prompt": "Having the normal number of chromosomes for a somatic cell of a species is called haploid.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "The normal somatic number is diploid (2n), so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-17",
+          "prompt": "After the egg cell is fertilized by a sperm cell, the resulting zygote grows into the sporophyte.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 0,
+          "explanation": "The zygote is diploid and develops into the sporophyte, so the statement is true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-18",
+          "prompt": "Egg cells and sperm cells are called ________.",
+          "options": [
+            "spores",
+            "gametes",
+            "algae",
+            "diploid"
+          ],
+          "correctIndex": 1,
+          "explanation": "Eggs and sperm are gametes.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-lif-19",
+          "prompt": "Algae, some simple animals and all plants reproduce using ________.",
+          "options": [
+            "alternation of generations",
+            "only asexual reproduction",
+            "only sexual reproduction",
+            "diploid gametes"
+          ],
+          "correctIndex": null,
+          "explanation": "Alternation of generations fits plants and some algae, but not all algae and most animals.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The statement is loosely worded. Please confirm the intended answer."
+        }
+      ]
+    },
+    {
+      "id": "nutrition-and-symbiosis",
+      "questions": [
+        {
+          "id": "bot101-nut-01",
+          "prompt": "Organisms that use the energy of the sun to fix inorganic compounds into carbohydrates are called ________.",
+          "options": [
+            "chemoautotrophs",
+            "photoautotrophs",
+            "photoheterotrophs",
+            "chemoheterotrophs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Photoautotrophs use light energy and inorganic carbon (CO₂) to make carbohydrates.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-02",
+          "prompt": "All of the following are types of heterotrophic nutrition EXCEPT:",
+          "options": [
+            "holozoic",
+            "parasitic",
+            "mutualistic",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Heterotrophic nutrition can be holozoic, saprophytic or parasitic. Mutualism is a relationship between organisms, not a mode of nutrition.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-03",
+          "prompt": "Extracellular digestion occurs in ________.",
+          "options": [
+            "green plants",
+            "algae",
+            "saprophytes",
+            "viruses"
+          ],
+          "correctIndex": 2,
+          "explanation": "Saprophytes secrete enzymes onto dead matter and absorb the digested food.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-04",
+          "prompt": "An association in which one organism benefits while the other neither benefits nor is harmed is ________.",
+          "options": [
+            "mutualism",
+            "commensalism",
+            "parasitism",
+            "holozoic"
+          ],
+          "correctIndex": 1,
+          "explanation": "That is commensalism (+/0).",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-05",
+          "prompt": "Bacteria that obtain their food from dead organic matter are said to be ________.",
+          "options": [
+            "heterotrophs",
+            "autotrophs",
+            "saprophytic",
+            "symbiotic",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Feeding on dead organic matter is saprophytic nutrition. (Heterotroph is the broader term.)",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-34",
+          "prompt": "Organisms can acquire energy in two forms, namely ________.",
+          "options": [
+            "light and biological energy",
+            "light and chemical energy",
+            "light and physical energy",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Autotrophs get energy from light (photoautotrophs) or from chemical reactions (chemoautotrophs).",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-35",
+          "prompt": "Which one is NOT a type of heterotrophic nutrition?",
+          "options": [
+            "Mutualistic nutrition",
+            "Parasitic nutrition",
+            "Holozoic nutrition",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Heterotrophic nutrition is holozoic, saprophytic or parasitic. Mutualism is a relationship, not a type of nutrition.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-nut-36",
+          "prompt": "The type of heterotrophic nutrition that occurs in animals is called ________.",
+          "options": [
+            "mutualistic",
+            "holozoic",
+            "symbiotic",
+            "commensalism"
+          ],
+          "correctIndex": 1,
+          "explanation": "Animals feed holozoically: they ingest food and digest it inside the body.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        }
+      ]
+    },
+    {
+      "id": "classification-and-naming",
+      "questions": [
+        {
+          "id": "bot101-cls-01",
+          "prompt": "A ________ is a woody plant with many branches of about the same size close to the ground.",
+          "options": [
+            "tree",
+            "shrub",
+            "herb",
+            "grass"
+          ],
+          "correctIndex": 1,
+          "explanation": "A shrub is a woody plant with several stems branching near the ground.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-02",
+          "prompt": "Ipomoea batatas (sweet potato) belongs to which family?",
+          "options": [
+            "Poaceae",
+            "Solanaceae",
+            "Convolvulaceae",
+            "Musaceae"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sweet potato is in the morning-glory family, Convolvulaceae.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-03",
+          "prompt": "Musa paradisiaca (plantain) belongs to which family?",
+          "options": [
+            "Poaceae",
+            "Solanaceae",
+            "Convolvulaceae",
+            "Musaceae"
+          ],
+          "correctIndex": 3,
+          "explanation": "Plantain and banana belong to Musaceae.",
+          "source": "BOT 101, December 2021 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-04",
+          "prompt": "All of the following are shrubs EXCEPT:",
+          "options": [
+            "Hibiscus rosa-sinensis",
+            "Vernonia amygdalina",
+            "Tecoma stans",
+            "Aframomum melegueta"
+          ],
+          "correctIndex": 3,
+          "explanation": "Hibiscus, bitter leaf (Vernonia) and Tecoma are shrubs. Aframomum melegueta (alligator pepper) is a herb.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-05",
+          "prompt": "All of the following are climbers EXCEPT:",
+          "options": [
+            "Aristolochia gigas",
+            "Ipomoea involucrata",
+            "Brassica oleracea",
+            "Passiflora edulis"
+          ],
+          "correctIndex": 2,
+          "explanation": "Brassica oleracea (cabbage) is an erect herb, not a climber.",
+          "source": "BOT 101 practice set (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-06",
+          "prompt": "In the natural system of classification, plants are classified based on: (i) their ultimate use, (ii) similarities and differences in morphological and reproductive characters, (iii) evolutionary relationships reflecting genetic relationships, (iv) all characters considered in deciding whether a plant is related to another.",
+          "options": [
+            "only iv is correct",
+            "i and ii are correct",
+            "only iii is correct",
+            "ii and iv are correct",
+            "all of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The natural system groups plants by overall similarity of form and reproductive structures, using all characters. Grouping by evolutionary relationships is the phylogenetic system, and grouping by use is not a natural classification.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-07",
+          "prompt": "In the Five Kingdom system, Actinomycetes and Cyanobacteria are placed in the kingdom ________, while Ulothrix and Acetabularia are placed in the kingdom ________.",
+          "options": [
+            "Monera / Plantae",
+            "Fungi / Protista",
+            "Monera / Protista",
+            "Bacteria / Protista"
+          ],
+          "correctIndex": 2,
+          "explanation": "Actinomycetes and cyanobacteria are prokaryotes (Monera). As taught in this course, the algae Ulothrix and Acetabularia go in Protista.",
+          "source": "BOT 101, April 2019 and BIO 101, September 2024 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-08",
+          "prompt": "Which of the following pairs is a mismatch?",
+          "options": [
+            "Cryptogams: flowering plants",
+            "Carolus Linnaeus: artificial system",
+            "Phanerogams: seed-bearing plants",
+            "Plant family suffix: -aceae",
+            "Natural system of classification: based on similarities of vegetative and floral characters"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cryptogams are non-flowering plants (algae, bryophytes, pteridophytes). Flowering plants are phanerogams.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-23",
+          "prompt": "Based on the divisions taught in this course, pick out the mismatch:",
+          "options": [
+            "Gymnosperms: 4 divisions",
+            "Pteridophytes: 4 divisions",
+            "Kingdom Protista: 10 divisions",
+            "Kingdom Fungi: 5 divisions",
+            "Bryophytes: 3 divisions"
+          ],
+          "correctIndex": null,
+          "explanation": "The key depends on the number of divisions your lecturer teaches. Option C (Protista: 10) looks most likely to be the mismatch, but this cannot be checked from the paper.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Course-specific counts. Please confirm which one is the mismatch in your lecture notes."
+        },
+        {
+          "id": "bot101-cls-24",
+          "prompt": "Which of the following statements is correct?",
+          "options": [
+            "Dinoflagellates: non-photosynthetic",
+            "Pyrrophyta: produce a high amount of oxygen",
+            "Venation in Ginkgo biloba: dichotomously branched",
+            "Plasmogamy: fusion of nuclei",
+            "Anthoceros punctatus: contains nitrogen-fixing bacteria"
+          ],
+          "correctIndex": null,
+          "explanation": "Ginkgo has dichotomous venation (C), and Anthoceros hosts nitrogen-fixing Nostoc (E). Both statements are true.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "Two options (C and E) are correct. Please confirm which one is intended."
+        },
+        {
+          "id": "bot101-cls-25",
+          "prompt": "The five taxonomic kingdoms of the living world are based on the following criteria EXCEPT:",
+          "options": [
+            "cell structure",
+            "complexity of organism body",
+            "mode of nutrition",
+            "phylogenetic relationship",
+            "natural character"
+          ],
+          "correctIndex": null,
+          "explanation": "Whittaker's criteria include cell structure, body organization, mode of nutrition and phylogenetic relationships. \"Natural character\" is not one of the named criteria, but the question is unclear.",
+          "source": "BOT 101, April 2019 (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The intended answer is unclear. Please confirm."
+        },
+        {
+          "id": "bot101-cls-29",
+          "prompt": "Classification is very important in science because ________.",
+          "options": [
+            "it greatly improves our perceptive powers",
+            "it aids memory",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Classification improves our understanding of living things, aids memory and shows relationships, so both statements are true.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-30",
+          "prompt": "________ was credited with being the first to establish an acceptable system of plant classification.",
+          "options": [
+            "Robert Koch",
+            "Antonie van Leeuwenhoek",
+            "Gregor Mendel",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Carolus Linnaeus is credited with the first widely accepted system. Koch (microbiology), Leeuwenhoek (microscopy) and Mendel (genetics) were not plant classifiers, so none of the listed names is correct.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-31",
+          "prompt": "Which taxonomic kingdom consists of single-celled and colonial eukaryotic organisms?",
+          "options": [
+            "Kingdom Monera",
+            "Kingdom Fungi",
+            "Kingdom Protista",
+            "Kingdom Animalia"
+          ],
+          "correctIndex": 2,
+          "explanation": "Protista holds the single-celled and colonial eukaryotes (including the algae in this course). Monera are prokaryotes.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-32",
+          "prompt": "Who laid the foundation for the consistent and extensive use of the binomial system of nomenclature?",
+          "options": [
+            "De Candolle",
+            "Adolf Engler",
+            "Karl Prantl",
+            "Carolus Linnaeus"
+          ],
+          "correctIndex": 3,
+          "explanation": "Linnaeus used the genus-and-species name system consistently in Species Plantarum (1753).",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-33",
+          "prompt": "Weak-stemmed small plants that complete their life cycle in two growing seasons are called ________.",
+          "options": [
+            "climbers",
+            "shrubs",
+            "herbaceous biennials",
+            "herbs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Herbaceous biennials are soft-stemmed plants that grow in the first season and flower and die in the second.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-34",
+          "prompt": "All protists are algae.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Protists also include protozoa such as Amoeba and Plasmodium, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-35",
+          "prompt": "All members of the Kingdom Protista are related phylogenetically (monophyletic).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Protista is a mixed group (polyphyletic), not a single related line, so the statement is false.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-cls-36",
+          "prompt": "(Figures I–VI, question 59) Nitrogen fixation occurs in ________.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-37",
+          "prompt": "(Figures I–VI, question 60) There exists a mutualistic relationship in ________.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-38",
+          "prompt": "(Figures I–VI, question 61) Figure II relates to the Kingdom ________.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-39",
+          "prompt": "(Figures I–VI, question 62) Figure III is an ________ of the division ________ of the kingdom ________.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-40",
+          "prompt": "(Figures I–VI, question 63) The image in Figure V is a/an ________.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-41",
+          "prompt": "(Figures I–VI, question 64) ________ is acellular.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-42",
+          "prompt": "(Figures I–VI, question 65) ________ is a sub-microscopic entity of a single nucleic acid in a protein coat, replicating only inside living cells.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-43",
+          "prompt": "(Figures I–VI, question 66) ________ is a bryophyte.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-44",
+          "prompt": "(Figures I–VI, question 67) ________ is a primitive plant.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-45",
+          "prompt": "(Figures I–VI, question 68) ________ best describes Figure VI.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-46",
+          "prompt": "(Figures I–VI, question 69) Figure VI represents ________.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        },
+        {
+          "id": "bot101-cls-47",
+          "prompt": "(Figures I–VI, question 70) ________ is a non-living entity that acts like a living organism.",
+          "options": [
+            "(see figures)",
+            "(see figures 2)",
+            "(see figures 3)",
+            "(see figures 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "This question depends on figures I–VI, which were not supplied.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)",
+          "needsReview": true,
+          "reviewNote": "The figures are missing. Needs the original paper."
+        }
+      ]
+    }
+  ]
+}

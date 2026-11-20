@@ -1,0 +1,35 @@
+{
+  "courseCode": "CHM107",
+  "topics": [
+    {
+      "id": "molarity-solution-preparation",
+      "title": "Molarity, Dilution & Preparing Solutions",
+      "notes": "Molarity (M) is moles of solute per litre of solution: M = n/V. Almost every question in this topic is a chain of two conversions: grams to moles using molar mass (n = mass/M), then moles to concentration by dividing by the volume in litres. The commonest slip is the volume unit: 250 mL is 0.250 L, and 200 cm³ is 0.200 dm³. 1 dm³ is the same as 1 L.\n\nTo prepare a solution of a given molarity, work backwards: moles needed = M × V, then mass = moles × molar mass. The solid is dissolved and made up to the mark of a volumetric flask, so the volume is that of the final solution, not of the water you added.\n\nConcentrated acids are sold by mass percent and density. Take 1 L, find its mass (density × 1000), multiply by the percentage to get the mass of solute, then divide by molar mass. For HCl at 37.7% and 1.195 g/mL this gives about 12.3 M.\n\nDilution does not change the number of moles, so C₁V₁ = C₂V₂. Always check the answer is sensible: diluting a 15.8 M stock to 0.12 M needs only a few mL of stock per litre, not tens. Mass percent is simply mass of solute ÷ total mass of solution × 100, where the total includes the solute.\n\nKEY FORMULA: n = M × V (V in litres), and C₁V₁ = C₂V₂ for dilution.",
+      "keyFormula": "n = M × V"
+    },
+    {
+      "id": "titration-stoichiometry",
+      "title": "Titration & Reaction Stoichiometry",
+      "notes": "Stoichiometry questions follow one method: write the balanced equation, convert what you are given into moles, use the mole ratio from the equation, then convert back to the unit asked for (grams or volume). The mole ratio is the step most often missed. In H₂SO₄ + 2NaHCO₃, two moles of base react with each mole of acid; in 2HNO₃ + Na₂CO₃, two moles of acid are needed for each mole of carbonate.\n\nA titration is the same idea done with volumes. Run a solution of known concentration (the standard) from a burette into a measured volume of the unknown until the indicator changes. The average titre is the mean of your consistent readings. For a 1:1 reaction such as HCl + NaOH, the unknown concentration follows from M₁V₁ = M₂V₂. For other ratios, use the general form (M_a V_a)/(M_b V_b) = n_a/n_b, where n_a and n_b are the coefficients in the equation.\n\nChecking your work is easy: the number of moles of the standard used should fit the equation. For 30 cm³ of 0.1 M NaOH that is 0.0030 mol, which must equal the moles of HCl in 25 cm³ of the acid, so the acid is 0.12 M.\n\nKEY FORMULA: (M_a V_a)/(M_b V_b) = n_a/n_b, which becomes M₁V₁ = M₂V₂ when the ratio is 1:1.",
+      "keyFormula": "(MₐVₐ)/(M_bV_b) = nₐ/n_b"
+    },
+    {
+      "id": "acids-bases-ph",
+      "title": "Acids, Bases, pH & Indicators",
+      "notes": "pH = −log[H⁺], so [H⁺] = 10⁻ᵖᴴ. A solution of pH 5.3 has [H⁺] = 5.0 × 10⁻⁶ M. Each pH unit is a ten-fold change, and a lower pH means a more acidic solution of the same concentration.\n\nStrong acids (HCl, HNO₃, H₂SO₄, HClO₄) ionise completely; weak acids (H₂CO₃, CH₃COOH, H₃PO₄) ionise only partly. Among the oxyacids of one element, strength rises with the number of oxygen atoms: HClO₄ > HClO₃ > HClO₂ > HClO. A Brønsted-Lowry acid donates a proton and a base accepts one. The stronger the acid, the weaker its conjugate base, so O²⁻ (conjugate base of the extremely weak acid OH⁻) is a very strong base. A Lewis acid accepts an electron pair, which is why electron-deficient BF₃ qualifies.\n\nOxides help you predict acidity: metal oxides are basic, non-metal oxides (such as SeO₃, SO₃, CO₂) are acidic. Salts of a strong acid with a weak base, like NH₄Cl, give acidic solutions; salts of a strong base with a weak acid give basic ones.\n\nFor titrations, choose the indicator whose colour change falls on the steep part of the curve. Phenolphthalein (about pH 8.3–10) suits weak acid + strong base, methyl orange (about 3.1–4.4) suits strong acid + weak base, and strong + strong works with either.\n\nKEY FORMULA: pH = −log[H⁺], so [H⁺] = 10⁻ᵖᴴ.",
+      "keyFormula": "pH = −log[H⁺]"
+    },
+    {
+      "id": "redox-reactions",
+      "title": "Redox Reactions & Balancing",
+      "notes": "Oxidation is loss of electrons (oxidation number rises); reduction is gain of electrons (oxidation number falls). A reaction is redox only if some oxidation numbers change. When Cr stays +6 in both CrO₄²⁻ and Cr₂O₇²⁻, as in the acid conversion between them, nothing is oxidised or reduced. Disproportionation is when one species is both oxidised and reduced, for example ClO⁻ becoming ClO₃⁻ and Cl⁻.\n\nA strong oxidising agent is one that is easily reduced. Oxidants are stronger in acid solution, so MnO₄⁻ in acid (E° = +1.51 V, giving Mn²⁺) beats Cr₂O₇²⁻ in acid (+1.33 V).\n\nBalance in the half-reaction method. Split the equation into oxidation and reduction half-reactions. Balance atoms other than O and H, then add H₂O for oxygen, then H⁺ for hydrogen. In basic solution, add the same number of OH⁻ to both sides to turn every H⁺ into water. Next balance charge with electrons, multiply so the electrons cancel, and add the halves. Finally check atoms and charge on both sides. Example: Cr₂O₇²⁻ + 3H₂S + 8H⁺ → 2Cr³⁺ + 3S + 7H₂O.\n\nKEY FORMULA: Electrons lost in oxidation = electrons gained in reduction; check that atoms and total charge balance.",
+      "keyFormula": "e⁻ lost = e⁻ gained"
+    },
+    {
+      "id": "lab-practice-safety",
+      "title": "Laboratory Practice, Safety & Standard Solutions",
+      "notes": "Good laboratory practice protects you and keeps results reliable. Wear a laboratory coat and eye protection, avoid skin contact with chemicals, keep the bench clean, never eat or drink in the laboratory, keep naked flames away from flammable liquids, hold reagent bottles by the body rather than the neck, and never put solid waste in the sink.\n\nSolids dissolve faster with more surface area (grinding, pulverizing), more energy (heating) and more contact with fresh solvent (stirring, shaking). A question asking which of these does not help may have 'none of the above' as the answer.\n\nSome gas tests are asked repeatedly: oxygen relights a glowing splint, hydrogen burns with a 'pop' on a lighted splint, and chlorine bleaches damp blue litmus after turning it red.\n\nA standard solution is one whose concentration is accurately known. It is made by weighing a primary standard, which is very pure, of definite composition, stable and not hygroscopic. Na₂CO₃, K₂Cr₂O₇ and NaCl qualify. NaOH does not, because it absorbs water and CO₂ from the air. A NaOH solution is therefore standardised against a primary standard, not made by weighing alone.\n\nKEY FORMULA: A primary standard must be pure, stable and non-hygroscopic, so that mass ÷ molar mass gives exact moles.",
+      "keyFormula": "moles = mass ÷ molar mass"
+    }
+  ]
+}

@@ -1,0 +1,1351 @@
+{
+  "courseCode": "MTH101",
+  "topics": [
+    {
+      "id": "complex-numbers",
+      "questions": [
+        {
+          "id": "mth101-cx-01",
+          "prompt": "Find Z₁Z₂ if Z₁ = 2 + 5i and Z₂ = 8 − 2i.",
+          "options": [
+            "16 + 44i",
+            "16 − 44i",
+            "26 − 36i",
+            "26 + 36i",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "(2 + 5i)(8 − 2i) = 16 − 4i + 40i − 10i². Since i² = −1, this is 16 + 36i + 10 = 26 + 36i.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-cx-02",
+          "prompt": "Express the following in the form a + ib: (4 − i)(2 + 5i) − (6 + 3i)(2 − 2i).",
+          "options": [
+            "−5 + 24i",
+            "−5 − 24i",
+            "5 + 24i",
+            "5 − 24i",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "(4 − i)(2 + 5i) = 8 + 20i − 2i − 5i² = 13 + 18i. (6 + 3i)(2 − 2i) = 12 − 12i + 6i − 6i² = 18 − 6i. Difference: (13 − 18) + (18 + 6)i = −5 + 24i.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-cx-03",
+          "prompt": "If Z = −4 + 5i, find (Z − Z̄)/4.",
+          "options": [
+            "(−9 + 9i)/2",
+            "(−9 − 9i)/2",
+            "−5i/2",
+            "5i/2",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Z̄ = −4 − 5i, so Z − Z̄ = 10i. Dividing by 4 gives 10i/4 = 5i/2.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-cx-04",
+          "prompt": "Express Z = 1 − i√3 in polar form.",
+          "options": [
+            "2(cos 5π/3 + i sin 5π/3)",
+            "2(cos 3π/5 + i sin 3π/5)",
+            "cos 5π/3 + i sin 5π/3",
+            "cos 3π/5 + i sin 3π/5",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Modulus r = √(1 + 3) = 2. Z is in the fourth quadrant with tan θ = −√3, so θ = −π/3, which is the same angle as 5π/3.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-cx-05",
+          "prompt": "Determine the general value of log(1 + i).",
+          "options": [
+            "ln√2 + i(π/4 + 2πn)",
+            "ln√2 + i(π/4 + 2πi)",
+            "ln√2",
+            "ln√2 − i(π/4 + 2πi)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "1 + i has modulus √2 and argument π/4. log z = ln|z| + i(arg z + 2πn), so log(1 + i) = ln√2 + i(π/4 + 2πn) for any integer n.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "In the original, two options used 2πi where 2πn is meant; the correct option is unchanged."
+        },
+        {
+          "id": "mth101-cx-06",
+          "prompt": "Given that x + iy = (5 − 7i)(1 + i), find the values of x and y.",
+          "options": [
+            "x = −12, y = 2",
+            "x = −2, y = 12",
+            "x = 12, y = −2",
+            "x = −12, y = −2",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "(5 − 7i)(1 + i) = 5 + 5i − 7i − 7i² = 5 − 2i + 7 = 12 − 2i. So x = 12 and y = −2.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-cx-07",
+          "prompt": "Express z = 1 − √3 i in polar form.",
+          "options": [
+            "2(cos 300° − i sin 300°)",
+            "2(cos 120° − i sin 120°)",
+            "2(cos 300° + i sin 300°)",
+            "2(cos 60° + i sin 60°)",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "r = 2 and the argument is 300° (fourth quadrant, reference angle 60°). So z = 2(cos 300° + i sin 300°). Check: cos 300° = 1/2 and sin 300° = −√3/2.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Original option B (2(cos 60° − i sin 60°)) is also equal to 1 − √3 i, so two options were correct. It was replaced with a wrong option."
+        },
+        {
+          "id": "mth101-cx-08",
+          "prompt": "Given that z₁ = 3 − 4i and z₂ = 2 − 7i, find z₁/z₂.",
+          "options": [
+            "−22/53 + 13i/53",
+            "−22/53 − 13i/53",
+            "34/53 + 13i/53",
+            "−34/53 + 13i/53",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Multiply top and bottom by the conjugate 2 + 7i: (3 − 4i)(2 + 7i) = 6 + 21i − 8i − 28i² = 34 + 13i. The denominator is 2² + 7² = 53. So z₁/z₂ = 34/53 + 13i/53.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-cx-09",
+          "prompt": "Solve x² − 2x + 2 = 0, where x is a real number.",
+          "options": [
+            "1 ± i",
+            "± i",
+            "1, 2",
+            "No real solution",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The discriminant is b² − 4ac = 4 − 8 = −4 < 0, so there are no real roots. (The roots are 1 ± i, which are complex.)",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "sequences-series-induction",
+      "questions": [
+        {
+          "id": "mth101-seq-01",
+          "prompt": "Find the expression for the nth term, Uₙ, of the sequence 3, 5, 7, 9, …",
+          "options": [
+            "(n + 1)²",
+            "2n + 1",
+            "(2n)²",
+            "2(n + 1)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is an arithmetic sequence with first term 3 and common difference 2: Uₙ = 3 + (n − 1)2 = 2n + 1.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-02",
+          "prompt": "Evaluate Σ 2ʳ for r = 3 to 7.",
+          "options": [
+            "252",
+            "248",
+            "254",
+            "244",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "2³ + 2⁴ + 2⁵ + 2⁶ + 2⁷ = 8 + 16 + 32 + 64 + 128 = 248.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Two papers printed slightly different distractors (244 and 241); the correct option is unchanged."
+        },
+        {
+          "id": "mth101-seq-03",
+          "prompt": "Find the nth term of an arithmetic progression (AP) whose sum of n terms is n(n + 2) for all n.",
+          "options": [
+            "2n + 1",
+            "2n + 2",
+            "2n + 3",
+            "2(n + 2)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Uₙ = Sₙ − Sₙ₋₁ = n(n + 2) − (n − 1)(n + 1) = n² + 2n − n² + 1 = 2n + 1. Check: U₁ = S₁ = 3.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-04",
+          "prompt": "Mr. Daniel got an employment offer with a starting salary of ₦500,000 per annum with a yearly increase of ₦20,000. Calculate his salary in the 10th year.",
+          "options": [
+            "₦600,000",
+            "₦645,000",
+            "₦680,000",
+            "₦720,000",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Arithmetic progression: a = 500,000 and d = 20,000. The 10th term is a + 9d = 500,000 + 180,000 = ₦680,000.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-05",
+          "prompt": "A geometric progression (GP) is given by 8, 2, 1/2, … Find, in terms of n, the nth term.",
+          "options": [
+            "2ⁿ⁺¹",
+            "2⁵⁻²ⁿ",
+            "2⁻²ⁿ",
+            "32(2)⁻²ⁿ",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first term is 8 = 2³ and the common ratio is 1/4 = 2⁻². Uₙ = 2³ · (2⁻²)ⁿ⁻¹ = 2³ · 2⁻²ⁿ⁺² = 2⁵⁻²ⁿ. Check n = 1: 2³ = 8; n = 2: 2¹ = 2.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Option B was printed as 2⁵⁺²ⁿ in the original; corrected to 2⁵⁻²ⁿ."
+        },
+        {
+          "id": "mth101-seq-06",
+          "prompt": "The p-series Σ 1/nᵖ (n = 1 to ∞) is convergent if:",
+          "options": [
+            "p < 1",
+            "p > 1",
+            "p = 1",
+            "p ≤ 1",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "By the p-series test, Σ 1/nᵖ converges when p > 1 and diverges when p ≤ 1 (p = 1 is the harmonic series).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-07",
+          "prompt": "A freely falling body, starting from rest, falls 16 ft during the first second, 48 ft during the second, 80 ft during the third second, and so on. Calculate the distance it falls during the 15th second.",
+          "options": [
+            "448",
+            "432",
+            "464",
+            "496",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The distances 16, 48, 80, … form an AP with a = 16 and d = 32. The 15th term is 16 + 14 × 32 = 464 ft.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "The original asked for \"the distance in the 15th second (or total distance in 15 seconds)\". Reworded to the 15th second only (the total would be 3,600 ft)."
+        },
+        {
+          "id": "mth101-seq-08",
+          "prompt": "Which of the following statements is/are correct? (I) All integers are rational numbers. (II) The set of positive integers is equal to the set of natural numbers. (III) All real numbers are complex numbers. (IV) The set of non-negative integers is equal to the set of natural numbers.",
+          "options": [
+            "I, II, IV",
+            "I, II, III, IV",
+            "II, III, IV",
+            "I, II, III",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Every integer n is the rational n/1 (I). With ℕ = {1, 2, 3, …}, ℕ equals the positive integers (II), but not the non-negative integers because 0 is excluded (IV is false). Every real a equals a + 0i, so all reals are complex (III).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-09",
+          "prompt": "Which of the following is NOT a valid step in the principle of mathematical induction for establishing the veracity of a formula for the sum of a series?",
+          "options": [
+            "Assume the mathematical expression is true for n = k, if it is true for n = 1.",
+            "Show that the mathematical expression is true for n = 1.",
+            "Assume that the mathematical expression is true for n = k + 1.",
+            "If the mathematical expression is true for n = k, then show that it is true for n = k + 1.",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Induction proves the base case (n = 1), assumes the result for n = k, then proves it for n = k + 1. You cannot assume the result for n = k + 1, because that is what you are trying to prove.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-10",
+          "prompt": "The Maclaurin series expansion of eˢⁱⁿˣ is:",
+          "options": [
+            "1 + x + x²/2 − x⁴/8 + …",
+            "x + x²/2 + x⁴/8 + …",
+            "1 + x + x²/2 − x³/3 + …",
+            "x + x²/2 − x³/3 + …",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Substitute sin x = x − x³/6 + … into eᵘ = 1 + u + u²/2 + u³/6 + u⁴/24 + …. The x³ terms cancel (−1/6 + 1/6), and the x⁴ coefficient is −1/6 + 1/24 = −1/8. So eˢⁱⁿˣ = 1 + x + x²/2 − x⁴/8 + ….",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-11",
+          "prompt": "If Σ 1/(r(r + 1)) for r = 1 to n equals n/(n + 1) is proven by induction, then the inductive step at n = k + 1 is done by simplifying:",
+          "options": [
+            "1/(k(k + 1)) + k/(k + 1)",
+            "k/(k + 1) + 1/((k + 1)(k + 2))",
+            "(k + 1)/(k + 2)",
+            "(k + 1)/(k + 2) + k/(k + 1)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Assuming the sum to k equals k/(k + 1), the sum to k + 1 adds the next term: k/(k + 1) + 1/((k + 1)(k + 2)). This simplifies to (k + 1)/(k + 2), which is the formula with n = k + 1.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-12",
+          "prompt": "Which of the following is equal to Σ r² for r = 1 to n?",
+          "options": [
+            "(n + 1)(2n + 1)/6",
+            "n(n + 1)(2n + 1)/6",
+            "n(n + 1)(3n + 2)/6",
+            "2n(n + 2)(3n + 4)/6",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The standard result is Σ r² = n(n + 1)(2n + 1)/6. Check n = 2: 1 + 4 = 5 = 2 × 3 × 5/6.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-seq-13",
+          "prompt": "Which of the following is equal to 6 Σ r² for r = 1 to n?",
+          "options": [
+            "(n + 1)(2n + 1)/6",
+            "n(n + 1)(2n + 1)/6",
+            "(n + 1)(2n + 1)",
+            "n(n + 2)(2n + 1)",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "6 Σ r² = n(n + 1)(2n + 1). None of options A–D has this form (option C is missing the factor n), so the answer is \"none of the above\".",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "quadratics-inequalities",
+      "questions": [
+        {
+          "id": "mth101-quad-01",
+          "prompt": "Solve the inequality log₃(x² + 13x + 67) < 3.",
+          "options": [
+            "x < −5 or x < −8",
+            "−5 < x < 5",
+            "−5 < x < 8",
+            "−8 < x < −5",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "log₃(…) < 3 means 0 < x² + 13x + 67 < 27. The left side is always true (the discriminant of x² + 13x + 67 is negative). The right side gives x² + 13x + 40 < 0, i.e. (x + 8)(x + 5) < 0, so −8 < x < −5.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Original option D was printed as \"−5 < x < −5\", an impossible interval. It was corrected to −8 < x < −5."
+        },
+        {
+          "id": "mth101-quad-02",
+          "prompt": "Find x if |3x − 4| < 9.",
+          "options": [
+            "5/3 < x < 13/3",
+            "−5/3 < x < 13/3",
+            "5/3 < x < −13/3",
+            "−5/3 < x < −13/3",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "|3x − 4| < 9 means −9 < 3x − 4 < 9. Add 4: −5 < 3x < 13. Divide by 3: −5/3 < x < 13/3.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-03",
+          "prompt": "If α and β are the roots of the equation 2x² + 6x − 5 = 0, find the equation whose roots are α/β and β/α.",
+          "options": [
+            "5x² + 28x + 5 = 0",
+            "10x² + 18x − 9 = 0",
+            "x² + x − 5 = 0",
+            "2x² + 15x + 5 = 0",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "α + β = −3 and αβ = −5/2. The new sum is (α² + β²)/(αβ) = (9 + 5)/(−5/2) = −28/5 and the product is 1. The equation x² + (28/5)x + 1 = 0 becomes 5x² + 28x + 5 = 0.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-04",
+          "prompt": "If α and β are the roots of the equation 2x² + 6x − 5 = 0, find the equation whose roots are α + 1/β and β + 1/α.",
+          "options": [
+            "5x² + 28x + 5 = 0",
+            "6x² + 5x − 1 = 0",
+            "10x² + 18x − 9 = 0",
+            "−2x² − 2x + 14 = 0",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "α + β = −3 and αβ = −5/2. Sum of new roots = (α + β) + (α + β)/(αβ) = −3 + 6/5 = −9/5. Product = αβ + 2 + 1/(αβ) = −5/2 + 2 − 2/5 = −9/10. The equation x² + (9/5)x − 9/10 = 0 becomes 10x² + 18x − 9 = 0.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-05",
+          "prompt": "Given y = 14 − 3x − 2x², state the coordinates of the turning point and determine its nature.",
+          "options": [
+            "Minimum point, (1/4, −81/8)",
+            "Maximum point, (1/4, −81/8)",
+            "Maximum point, (−3/4, 121/8)",
+            "Minimum point, (−1/4, 3/8)",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "dy/dx = −3 − 4x = 0 gives x = −3/4. Then y = 14 + 9/4 − 9/8 = 121/8. The coefficient of x² is negative, so it is a maximum: (−3/4, 121/8).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Original option C printed the y-coordinate as 21/8; corrected to 121/8."
+        },
+        {
+          "id": "mth101-quad-06",
+          "prompt": "If α and β are the roots of the equation 2x² + 6x − 5 = 0, form the equation whose roots are α² and β².",
+          "options": [
+            "x² + 2x + 5 = 0",
+            "x² + x + 1 = 0",
+            "10x² + 18x − 9 = 0",
+            "x² − 2x − 5/4 = 0",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "α² + β² = (α + β)² − 2αβ = 9 + 5 = 14 and α²β² = (αβ)² = 25/4. The equation is x² − 14x + 25/4 = 0, i.e. 4x² − 56x + 25 = 0, which is not among options A–D.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-07",
+          "prompt": "If α and β are the roots of the quadratic equation px² − qx + r = 0, find the value of α² + β² in terms of p, q and r.",
+          "options": [
+            "q²/p² − 2r/q",
+            "p²/q² − 2r/p",
+            "q²/p² − 2r/p",
+            "p²/q² − 2r/q",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "α + β = q/p and αβ = r/p. Then α² + β² = (α + β)² − 2αβ = q²/p² − 2r/p.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-08",
+          "prompt": "Given the quadratic equation wx² + yx + z = 0, the sum of the roots is given by:",
+          "options": [
+            "z/w",
+            "−y/w",
+            "y/w",
+            "w/z",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "For ax² + bx + c = 0 the sum of the roots is −b/a. Here that is −y/w.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-09",
+          "prompt": "If m and n are the roots of the equation x² + kx + 20 = 0 and m² + n² = 24, find the possible values of k.",
+          "options": [
+            "k = −8 or k = 8",
+            "k = 0 or k = 8",
+            "k = −8 or k = −8",
+            "k = −20 or k = 1",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "m + n = −k and mn = 20. So m² + n² = k² − 2(20) = k² − 40 = 24, giving k² = 64 and k = ±8.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-quad-10",
+          "prompt": "Solve x² + 3x > 28.",
+          "options": [
+            "x < 7 or x < 4",
+            "x > 7 or x > 4",
+            "x > −7 or x < 4",
+            "x < −7 or x > 4",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "x² + 3x − 28 > 0 factorises as (x + 7)(x − 4) > 0. The parabola opens upward, so the product is positive outside the roots: x < −7 or x > 4.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "partial-fractions",
+      "questions": [
+        {
+          "id": "mth101-pf-01",
+          "prompt": "Express (x + 7)/(x² − 16) in partial fractions.",
+          "options": [
+            "(x + 7)/((x − 4)(x + 4))",
+            "11/(8(x − 4)) − 3/(8(x + 4))",
+            "11/(8(x − 4)) + 3/(8(x + 4))",
+            "1/(x − 4) − 1/(x + 4)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Write (x + 7)/((x − 4)(x + 4)) = A/(x − 4) + B/(x + 4). At x = 4: A = 11/8. At x = −4: B = 3/(−8) = −3/8. So the result is 11/(8(x − 4)) − 3/(8(x + 4)).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-pf-02",
+          "prompt": "Express (8x − 17)/((x + 1)(x − 4)) in partial fractions.",
+          "options": [
+            "8/(x + 4) + 17/(x + 4)",
+            "5/(x − 4) + 3/(x + 4)",
+            "5/(x + 1) + 3/(x − 4)",
+            "1/(x − 1) + 1/(x + 4)",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Write it as A/(x + 1) + B/(x − 4). At x = −1: A = (−25)/(−5) = 5. At x = 4: B = 15/5 = 3. So 5/(x + 1) + 3/(x − 4).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-pf-03",
+          "prompt": "Resolve (x³ + 3)/(x² + 2)² into partial fractions.",
+          "options": [
+            "1/(x + 2) + (2x − 3)/(x + 2)²",
+            "x/(x² + 2) − 2x/(x² + 2)² + 3/(x² + 2)²",
+            "x/(x² + 2) − 2x/(x² + 2) − 3/(x² + 2)²",
+            "x/(x² + 2) + 2x/(x² + 2)² − 3/(x² + 2)²",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Write x³ + 3 = x(x² + 2) − 2x + 3. Dividing by (x² + 2)² gives x/(x² + 2) + (−2x + 3)/(x² + 2)².",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-pf-04",
+          "prompt": "Express (25 − 11x)/((x + 1)(x − 2)(x − 3)) in partial fractions.",
+          "options": [
+            "3/(x + 1) − 1/(x − 2) − 2/(x − 3)",
+            "3/(x + 1) + 1/(x − 2) − 2/(x − 3)",
+            "3/(x + 1) + 1/(x − 2) + 2/(x − 3)",
+            "3/(x + 1) − 1/(x − 2) + 2/(x − 3)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "At x = −1: A = 36/((−3)(−4)) = 3. At x = 2: B = 3/((3)(−1)) = −1. At x = 3: C = (−8)/((4)(1)) = −2. So 3/(x + 1) − 1/(x − 2) − 2/(x − 3).",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-pf-05",
+          "prompt": "Express (28x − 17)/((x + 1)(x − 4)) in partial fractions.",
+          "options": [
+            "5/(x + 1) − 3/(x − 4)",
+            "5/(x − 4) + 3/(x + 1)",
+            "5/(x + 1) + 3/(x − 4)",
+            "4/(x + 1) + 3/(x − 4)",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "At x = −1: A = (−45)/(−5) = 9. At x = 4: B = 95/5 = 19. So the result is 9/(x + 1) + 19/(x − 4), which is not among options A–D. (With numerator 8x − 17 the answer would be option C.)",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-pf-06",
+          "prompt": "Supposing A, B, C, D, E are constants, a possible form for resolving (x⁴ + x)/(x(x² + 1)²) into partial fractions is:",
+          "options": [
+            "A/x + Bx/(x² + 1) + (x + 1)/(x² + 1)²",
+            "1 + A/x + (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)²",
+            "A/x + (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)²",
+            "1 + A/x + (Bx + C)²/(x² + 1)",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The numerator has degree 4 and the denominator has degree 5, so the fraction is proper and no constant \"1\" is needed. The factors are x and a repeated irreducible quadratic (x² + 1)², giving A/x + (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)². (Here A actually works out to 0 because x cancels.)",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-pf-07",
+          "prompt": "Resolve (x + 1)/((x − 2)(x − 1)²) into partial fractions.",
+          "options": [
+            "3/(x − 1) + 3/(x − 1) − 2/(x − 2)²",
+            "2/(x − 2) − 3/(x − 1) − 2/(x − 2)²",
+            "1/(x − 2) + 3/(x − 1) − 2/(x − 2)²",
+            "3/(x − 2) − 3/(x − 1) − 2/(x − 1)²",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Write it as A/(x − 2) + B/(x − 1) + C/(x − 1)². At x = 2: A = 3. At x = 1: C = 2/(−1) = −2. Comparing x² coefficients: A + B = 0, so B = −3. Result: 3/(x − 2) − 3/(x − 1) − 2/(x − 1)².",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry",
+      "questions": [
+        {
+          "id": "mth101-trig-01",
+          "prompt": "Express tan 4θ in terms of tan θ.",
+          "options": [
+            "4tanθ(1 − tan²θ) / (1 + 6tan²θ − tan⁴θ)",
+            "4tanθ(1 − tan²θ) / (1 − 6tan²θ + tan⁴θ)",
+            "tanθ(1 − tan²θ) / (1 + 6tan²θ − tan⁴θ)",
+            "tanθ(1 − tan²θ) / (1 − 6tan²θ + tan⁴θ)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Apply tan 2A = 2t/(1 − t²) twice. tan 2θ = 2t/(1 − t²), so tan 4θ = [4t/(1 − t²)] / [1 − 4t²/(1 − t²)²] = 4t(1 − t²)/[(1 − t²)² − 4t²] = 4t(1 − t²)/(1 − 6t² + t⁴).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-02",
+          "prompt": "Express sin 4θ + sin 6θ as a product of sine and cosine.",
+          "options": [
+            "−2 sin 5θ cos θ",
+            "cot 3θ",
+            "2 sin 5θ cos θ",
+            "2 sin θ cos 5θ",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sum-to-product: sin A + sin B = 2 sin((A + B)/2) cos((A − B)/2). With A = 6θ and B = 4θ this gives 2 sin 5θ cos θ.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-03",
+          "prompt": "Simplify tan(2θ + π/2).",
+          "options": [
+            "−cot 2θ",
+            "cot 3θ",
+            "−csc 2θ",
+            "csc 2θ",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "tan(x + π/2) = −cot x, so tan(2θ + π/2) = −cot 2θ.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-04",
+          "prompt": "Find the value of cot x + 2 csc x + csc x sec x, if sin x = 3/5 and 0° < x < 90°.",
+          "options": [
+            "3/17",
+            "17/3",
+            "13/3",
+            "3/13",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "sin x = 3/5 gives cos x = 4/5, so cot x = 4/3, csc x = 5/3 and sec x = 5/4. Then 4/3 + 10/3 + (5/3)(5/4) = 16/12 + 40/12 + 25/12 = 81/12 = 27/4, which is not among options A–D.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "The source note quoted 29/4, which is wrong; the correct value is 27/4. None of the printed options matches."
+        },
+        {
+          "id": "mth101-trig-05",
+          "prompt": "Given that tan x = 3/5 and 0° ≤ x < 90°, evaluate (sin x + 2 cos x + 3)/(4 sec x).",
+          "options": [
+            "(13 + 3√34)/34",
+            "(13 − 3√34)/34",
+            "(65 + 15√34)/136",
+            "(65 − 15√34)/136",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "tan x = 3/5 gives hypotenuse √34, so sin x = 3/√34, cos x = 5/√34 and sec x = √34/5. The numerator is 13/√34 + 3 and the denominator is 4√34/5. So the value is 5(13 + 3√34)/(4 × 34) = (65 + 15√34)/136.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-06",
+          "prompt": "Simplify (1 − cos²x) csc²x.",
+          "options": [
+            "1",
+            "−1",
+            "2",
+            "−2",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "1 − cos²x = sin²x, and csc²x = 1/sin²x. Their product is 1.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-07",
+          "prompt": "If sin A = 4/5 and cos B = 3/5 (for acute angles A and B), find cos(A + B).",
+          "options": [
+            "25/7",
+            "−25/7",
+            "7/25",
+            "−7/25",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "cos A = 3/5 and sin B = 4/5. cos(A + B) = cos A cos B − sin A sin B = 9/25 − 16/25 = −7/25.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-08",
+          "prompt": "Simplify sin²2θ / cos²θ.",
+          "options": [
+            "4 − 4cos²θ",
+            "4 + 4cos²θ",
+            "2sin²θ",
+            "4cosθ",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "sin 2θ = 2 sin θ cos θ, so sin²2θ/cos²θ = 4 sin²θ cos²θ/cos²θ = 4 sin²θ = 4 − 4 cos²θ.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)",
+          "sourceNote": "One paper printed the numerator as sin²θ; the intended sin²2θ (which matches the options) is used."
+        },
+        {
+          "id": "mth101-trig-09",
+          "prompt": "Find the value of cot x + 2 csc x, if sin x = 3/5 and 0° < x < 90°.",
+          "options": [
+            "3/17",
+            "17/3",
+            "13/5",
+            "5/13",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "cos x = 4/5, so cot x = 4/3 and csc x = 5/3. The value is 4/3 + 10/3 = 14/3, which is not among options A–D.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-10",
+          "prompt": "Express sin 4θ − sin 6θ as a product of sine and cosine.",
+          "options": [
+            "2cos 2θ sin 4θ",
+            "−2 sin θ cos 5θ",
+            "sin 5θ cos θ",
+            "2 sin 5θ cos θ",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "sin A − sin B = 2 cos((A + B)/2) sin((A − B)/2). With A = 4θ and B = 6θ: 2 cos 5θ sin(−θ) = −2 sin θ cos 5θ.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Original option B printed 2 sin θ cos 5θ without the minus sign, which is the wrong sign; corrected to −2 sin θ cos 5θ."
+        },
+        {
+          "id": "mth101-trig-11",
+          "prompt": "Given that sin A = 12/13 and sin B = 4/5, find cos(A + B) when A and B are both obtuse.",
+          "options": [
+            "63/65",
+            "15/65",
+            "−13/65",
+            "48/65",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Both angles are obtuse, so cos A = −5/13 and cos B = −3/5. cos(A + B) = cos A cos B − sin A sin B = 15/65 − 48/65 = −33/65, which is not among options A–D.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-trig-12",
+          "prompt": "Express cos³x in terms of multiple angles.",
+          "options": [
+            "(1/4)(cos 3x + 3cos x)",
+            "4cos³x − 3cos x",
+            "3cos x − 4cos³x",
+            "(1/4)(cos 3x − 3cos x)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "cos 3x = 4cos³x − 3cos x, so cos³x = (cos 3x + 3 cos x)/4.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "sets-venn-diagrams",
+      "questions": [
+        {
+          "id": "mth101-set-01",
+          "prompt": "There are 40 pupils in a class: 30 study Biology, 22 study Physics and 21 study Chemistry. 15 study Physics and Biology, 10 study Physics and Chemistry, and 13 study Biology and Chemistry. Each student studies at least one of the three subjects. How many pupils offer all three subjects?",
+          "options": [
+            "10",
+            "9",
+            "5",
+            "55",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Inclusion–exclusion: 40 = 30 + 22 + 21 − 15 − 10 − 13 + x = 35 + x. So x = 5.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-02",
+          "prompt": "Using the same class (40 pupils; 30 Biology, 22 Physics, 21 Chemistry; 15 Physics and Biology, 10 Physics and Chemistry, 13 Biology and Chemistry; everyone studies at least one), if a pupil is selected at random, what is the probability that the pupil studies either Physics or Chemistry?",
+          "options": [
+            "33/40",
+            "33",
+            "13",
+            "1",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "|Physics ∪ Chemistry| = 22 + 21 − 10 = 33 pupils. The probability is 33/40.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-03",
+          "prompt": "Let S = {1, 2, 3, 4, 5, 6}, T = {2, 4, 5, 7} and R = {1, 4, 5}. Find (S ∩ T) ∪ R.",
+          "options": [
+            "{4, 5}",
+            "{2, 4, 7}",
+            "{1, 2, 3, 4, 5}",
+            "{1, 2, 4, 5}",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "S ∩ T = {2, 4, 5}. Taking the union with R = {1, 4, 5} gives {1, 2, 4, 5}.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-04",
+          "prompt": "If P = {2, 1, 3, 9, 1/2}, Q = {1, 2, 1/2, 3, 7} and R = {4, 2, 1/2}, find P ∩ R.",
+          "options": [
+            "{2, 1/2}",
+            "{2, 3, 9, 1/2}",
+            "{4, 2, 1/2}",
+            "{ }",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The elements in both P and R are 2 and 1/2. So P ∩ R = {2, 1/2}.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-05",
+          "prompt": "Let U = {1, 2, 3, 4}, P = {2, 3} and Q = {2, 4}. Determine (P ∪ Q)′.",
+          "options": [
+            "{2}",
+            "{4}",
+            "{3}",
+            "{1, 2}",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "P ∪ Q = {2, 3, 4}, so its complement in U is {1}. That is not among options A–D.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "The original paper printed \"P ∪ Q ∪ R\" in the prompt, which refers to a set not defined here. It was corrected to P ∪ Q."
+        },
+        {
+          "id": "mth101-set-06",
+          "prompt": "There are 50 people in a sports camp, and each plays at least one of volleyball, football and handball. 31 play volleyball, 36 play football and 42 play handball. If 8 play volleyball and football, 11 play volleyball and handball, and 13 play football and handball, how many play all three games?",
+          "options": [
+            "18",
+            "11",
+            "9",
+            "14",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "The numbers are inconsistent: 31 + 36 + 42 − 8 − 11 − 13 + x = 50 would need x = −27.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The given figures are impossible (they force a negative number of people). Needs the correct numbers from the original paper."
+        },
+        {
+          "id": "mth101-set-07",
+          "prompt": "The shaded region in the Venn diagram below represents:",
+          "options": [
+            "X ∩ Y",
+            "Z ∩ Y",
+            "X ∩ Z",
+            "X ∪ Z",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "The diagram was not included in the typed paper.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The question depends on a Venn diagram that was not supplied. Needs the diagram from the original paper."
+        },
+        {
+          "id": "mth101-set-08",
+          "prompt": "If X = {n² + 1 : n = 0, 2, 3} and Y = {n + 1 : n = 2, 3, 5}, find X ∩ Y.",
+          "options": [
+            "{ }",
+            "{4}",
+            "{2, 3}",
+            "{5}",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "X = {1, 5, 10} and Y = {3, 4, 6}. They share no elements, so X ∩ Y is the empty set.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-09",
+          "prompt": "In a certain gathering of 60 students, 36 like Economics while 28 like History. If 8 students do not like either subject, how many students like both?",
+          "options": [
+            "12",
+            "6",
+            "4",
+            "16",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "52 students like at least one subject (60 − 8). Both = 36 + 28 − 52 = 12.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-10",
+          "prompt": "Find the cardinality (number of elements) of the power set of A = {a, b, c, d, e}.",
+          "options": [
+            "16",
+            "8",
+            "32",
+            "64",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A set with n elements has 2ⁿ subsets. Here n = 5, so the power set has 2⁵ = 32 elements.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-11",
+          "prompt": "Find the cardinality (number of elements) of the power set of A = {a, b, c, d, e, f}.",
+          "options": [
+            "16",
+            "8",
+            "32",
+            "64",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "n = 6, so the power set has 2⁶ = 64 elements.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-12",
+          "prompt": "If A = {a, c, k, s, u} and B = {y, t, p, l, m, a}, find the smallest possible universal set for sets A and B.",
+          "options": [
+            "{a, c, k, l, m, p, s, t, u, y}",
+            "{a}",
+            "{a, c, k, s, u}",
+            "{y, t, p, l, m, a}",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The smallest universal set containing both is their union A ∪ B = {a, c, k, l, m, p, s, t, u, y}.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-13",
+          "prompt": "If Q = {1, 2, 3, 5, 8, 9} and P = {4, 5, 7, 10, 11, 12}, find the smallest possible universal set for Q and P.",
+          "options": [
+            "{1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12}",
+            "{5}",
+            "{1, 2, 3, 5, 8, 9}",
+            "{4, 5, 7, 10, 11, 12}",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The smallest universal set is the union Q ∪ P = {1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12}.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-14",
+          "prompt": "Let U = {a, b, c, d, e, f, g, h} be the universal set and Q = {c, f, g}. Find Q′.",
+          "options": [
+            "{a, b, d, e, h}",
+            "{c, f, h}",
+            "{a, b, c}",
+            "{a, b, e, g, h}",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Q′ is every element of U not in Q: {a, b, d, e, h}.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-set-15",
+          "prompt": "In a certain gathering of 400 students, 60% like MTH112 while 77% like MTH110. Assuming every student likes at least one course, how many students like both MTH112 and MTH110?",
+          "options": [
+            "74",
+            "148",
+            "222",
+            "296",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "60% of 400 = 240 and 77% of 400 = 308. Both = 240 + 308 − 400 = 148.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "binary-operations-number-systems",
+      "questions": [
+        {
+          "id": "mth101-op-01",
+          "prompt": "The binary operation * is defined on ℝ by x * y = √(x + y) − √(x − y). What is the value of 9 * 2?",
+          "options": [
+            "√6",
+            "9",
+            "√3",
+            "√9",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "9 * 2 = √(9 + 2) − √(9 − 2) = √11 − √7, which is not among options A–D.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-02",
+          "prompt": "A binary operation * is defined on the set of real numbers by a * b = (b² − a²)/(2ab). Find 3 * 2.",
+          "options": [
+            "−5/12",
+            "5/12",
+            "25/14",
+            "12/5",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "3 * 2 = (2² − 3²)/(2 × 3 × 2) = (4 − 9)/12 = −5/12.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-03",
+          "prompt": "The binary operation ∘ is defined on ℝ by a ∘ b = a + b + (1/2)ab. Find (2 ∘ 3) ∘ 4.",
+          "options": [
+            "28",
+            "54",
+            "10",
+            "12",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "2 ∘ 3 = 2 + 3 + 3 = 8. Then 8 ∘ 4 = 8 + 4 + 16 = 28.",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-04",
+          "prompt": "Which of the following sets of numbers is closed with respect to addition, subtraction, multiplication, and division (excluding zero)?",
+          "options": [
+            "Natural numbers",
+            "Integers",
+            "Rational numbers",
+            "Non-negative integers",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Rational numbers are closed under all four operations (dividing by a non-zero rational gives a rational). Integers fail division (1 ÷ 2), and natural numbers also fail subtraction (2 − 3).",
+          "source": "MTH101 September 2024 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-05",
+          "prompt": "The operation ∇ is defined by a ∇ b = max(a, b − 1) on the set of real numbers where a ≠ b. Evaluate 3 ∇ 5.",
+          "options": [
+            "2",
+            "4",
+            "3",
+            "1",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "3 ∇ 5 = max(3, 5 − 1) = max(3, 4) = 4.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Options B to D were printed as sets ({4}, {3}, {1, 2}), which is not a number; they were rewritten as plain numbers."
+        },
+        {
+          "id": "mth101-op-06",
+          "prompt": "The operation ∘ is defined over ℝ by a ∘ b = a + b + (1/2)ab. Find 8 ∘ (4 ∘ 7).",
+          "options": [
+            "8",
+            "42",
+            "28",
+            "78",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "4 ∘ 7 = 4 + 7 + 14 = 25. Then 8 ∘ 25 = 8 + 25 + 100 = 133, which is not among options A–D.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-07",
+          "prompt": "A binary operation * is defined on ℝ by a * b = a + b − 2ab. Calculate (5 − 3√2) * (6 − 5√2) and express it in the form M + N√2.",
+          "options": [
+            "−109 + 78√2",
+            "4 + 7√2",
+            "√2",
+            "m + n√2",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "a + b = 11 − 8√2. ab = (5 − 3√2)(6 − 5√2) = 30 − 25√2 − 18√2 + 30 = 60 − 43√2, so 2ab = 120 − 86√2. Then a * b = (11 − 8√2) − (120 − 86√2) = −109 + 78√2.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "Option A was printed as −49 + 78√2, which does not match the calculation; corrected to −109 + 78√2."
+        },
+        {
+          "id": "mth101-op-08",
+          "prompt": "A binary operation * is defined on ℝ by x * y = √(x + y) − √(x − y). The value of 6 * 2 is:",
+          "options": [
+            "√2",
+            "−6",
+            "√6 − √6",
+            "√6/2",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "6 * 2 = √8 − √4 = 2√2 − 2, which is not among options A–D.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-09",
+          "prompt": "A binary operation * is defined on ℝ by x * y = √(xy). If x * (2 * 8) = 6, find x.",
+          "options": [
+            "√3",
+            "9",
+            "√4",
+            "16",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "2 * 8 = √16 = 4. Then x * 4 = √(4x) = 6, so 4x = 36 and x = 9.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-10",
+          "prompt": "A binary operation * is defined on ℝ \\ {0} by a * b = a/b + b/a. Solve (x + 1) * 2 = 3.",
+          "options": [
+            "2",
+            "(4 ± √20)/2",
+            "√20",
+            "4",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Let u = x + 1. Then u/2 + 2/u = 3, so u² − 6u + 4 = 0 and u = 3 ± √5. So x = u − 1 = 2 ± √5, which equals (4 ± √20)/2.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-11",
+          "prompt": "A binary operation * is defined by x * y = x² − y² − y for all real x, y. Find the possible values of M for which 3 * M = 7.",
+          "options": [
+            "1 and −2",
+            "3 and 4",
+            "−1/3 or 1/4",
+            "9",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "3 * M = 9 − M² − M = 7, so M² + M − 2 = 0, i.e. (M + 2)(M − 1) = 0. So M = 1 or M = −2.",
+          "source": "MTH101 November 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-12",
+          "prompt": "All of the following properties/laws apply to binary operations EXCEPT:",
+          "options": [
+            "De Morgan's Law",
+            "Commutative Law",
+            "Distributive Law",
+            "Associative Law",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Commutativity, associativity and distributivity are properties of binary operations. De Morgan's laws belong to set theory and logic.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-13",
+          "prompt": "The operation * is defined by p * q = (p − q)²/(p + q) and the operation Δ is defined by p Δ q = (p − q)/(pq). Which of these two operations is commutative for all p, q (where defined)?",
+          "options": [
+            "Operation *",
+            "Operation Δ",
+            "Both",
+            "Neither",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Swapping p and q: (q − p)²/(q + p) = (p − q)²/(p + q), so * is commutative. But (q − p)/(qp) = −(p − q)/(pq), so Δ is not.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-op-14",
+          "prompt": "The operation * on the set ℤ of integers is defined by x * y = 3x + 2y − 1. Find the value of x such that x * 2 = 5.",
+          "options": [
+            "2/3",
+            "0",
+            "2.5",
+            "8/3",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "3x + 4 − 1 = 5 gives x = 2/3. But x must be an integer, so no integer satisfies the equation, and the answer is \"none of the above\".",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    },
+    {
+      "id": "permutations-combinations",
+      "questions": [
+        {
+          "id": "mth101-comb-01",
+          "prompt": "A selection in which the order of choice is important is known as a:",
+          "options": [
+            "Arrangement",
+            "Ordering",
+            "Permutation",
+            "Combination",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "When order matters the selection is a permutation. When order does not matter it is a combination.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-02",
+          "prompt": "Evaluate ⁿPₙ.",
+          "options": [
+            "0!",
+            "n!",
+            "n",
+            "(n − 1)!",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "ⁿPₙ = n!/(n − n)! = n!/0! = n!.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-03",
+          "prompt": "Evaluate ¹⁰P₄.",
+          "options": [
+            "5040",
+            "30240",
+            "151200",
+            "604800",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "¹⁰P₄ = 10 × 9 × 8 × 7 = 5040.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-04",
+          "prompt": "Evaluate ¹²P₇.",
+          "options": [
+            "84",
+            "95040",
+            "665280",
+            "3991680",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "¹²P₇ = 12 × 11 × 10 × 9 × 8 × 7 × 6 = 3,991,680.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-05",
+          "prompt": "Find (n, r) if ⁿPᵣ is equal to 13 × 12 × 11 × 10 × 9.",
+          "options": [
+            "13, 5",
+            "13, 9",
+            "13, 7",
+            "5, 13",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The product starts at 13 and has 5 factors, so n = 13 and r = 5.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-06",
+          "prompt": "Find (n, r) if ⁿPᵣ is equal to 20!/(20 − 14)!.",
+          "options": [
+            "20, 6",
+            "20, 7",
+            "20, 12",
+            "20, 14",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "ⁿPᵣ = n!/(n − r)!. Matching with 20!/(20 − 14)! gives n = 20 and r = 14.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-07",
+          "prompt": "In how many ways can the letters of the word CALCULUS be rearranged?",
+          "options": [
+            "8!/(3!2!2!)",
+            "8!/(2!2!2!)",
+            "8!/(3!2!)",
+            "8!/(2!2!)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "CALCULUS has 8 letters, with C, L and U each appearing twice (A and S once). The number of arrangements is 8!/(2! 2! 2!) = 5040.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-08",
+          "prompt": "In how many ways can the letters of the word PENCIL be rearranged?",
+          "options": [
+            "2!",
+            "4!",
+            "6!",
+            "7!",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "PENCIL has 6 different letters, so there are 6! = 720 arrangements.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-09",
+          "prompt": "Which of the following is true?",
+          "options": [
+            "ⁿPᵣ₋₁ = n!/(n − r)!",
+            "ⁿ⁻¹Pᵣ₋₁ = (n − 1)!/(n − r − 1)!",
+            "ⁿCᵣ = n!/((n − r)! r!)",
+            "ⁿCᵣ = n!/((n − r)! n!)",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The standard formula is ⁿCᵣ = n!/((n − r)! r!). Option A has the wrong subscript (it describes ⁿPᵣ), option D has n! in the denominator instead of r!, and option B should have (n − r)! in the denominator, not (n − r − 1)!.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)",
+          "sourceNote": "In the original, option B was also a true statement, so two options were correct. Option B was changed to a false statement so that only C is correct."
+        },
+        {
+          "id": "mth101-comb-10",
+          "prompt": "A committee of 3 boys and 4 girls is to be formed from 5 boys and 6 girls. How many committees are possible?",
+          "options": [
+            "15",
+            "150",
+            "300",
+            "350",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Choose the boys in ⁵C₃ = 10 ways and the girls in ⁶C₄ = 15 ways. Total = 10 × 15 = 150.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-11",
+          "prompt": "Find the coefficient of x³ in the expansion of (1 + x)⁵.",
+          "options": [
+            "1",
+            "−1",
+            "5",
+            "10",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The coefficient of x³ is ⁵C₃ = 10.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth101-comb-12",
+          "prompt": "Find the term in x⁹ in the expansion of (2x² − 1/x)¹².",
+          "options": [
+            "−101376x⁹",
+            "101376x⁹",
+            "111376x⁹",
+            "−111376x⁹",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The general term is ¹²Cₖ (2x²)¹²⁻ᵏ (−1/x)ᵏ, whose power of x is 24 − 3k. For x⁹, k = 5. The coefficient is ¹²C₅ × 2⁷ × (−1)⁵ = 792 × 128 × (−1) = −101,376.",
+          "source": "MTH101 March 2021 (typed; answers derived and verified symbolically)"
+        }
+      ]
+    }
+  ]
+}

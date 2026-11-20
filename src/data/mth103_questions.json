@@ -1,0 +1,1072 @@
+{
+  "courseCode": "MTH103",
+  "topics": [
+    {
+      "id": "vector-algebra",
+      "questions": [
+        {
+          "id": "mth103-va-01",
+          "prompt": "Which of the following is NOT a vector quantity?",
+          "options": [
+            "Velocity",
+            "Force",
+            "Momentum",
+            "Acceleration",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Velocity, force, momentum and acceleration all have both magnitude and direction, so all four are vectors. A scalar would be something like speed, mass, time or energy. So the answer is \"none of the above\".",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-02",
+          "prompt": "If the length of the vector a = xi + 2j − k is 3, find the positive value of x.",
+          "options": [
+            "2",
+            "4",
+            "5",
+            "1",
+            "7"
+          ],
+          "correctIndex": 0,
+          "explanation": "Length² = x² + 2² + (−1)² = x² + 5 = 9, so x² = 4 and x = ±2. The positive value is 2.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-03",
+          "prompt": "Find the values of x that satisfy |a|² = (2x + 1)², where a = xi + (3 + x)j + 2k.",
+          "options": [
+            "3, −2",
+            "5, 6",
+            "7, 4",
+            "−2, 6",
+            "0, 5"
+          ],
+          "correctIndex": 0,
+          "explanation": "|a|² = x² + (3 + x)² + 4 = 2x² + 6x + 13. Setting this equal to (2x + 1)² = 4x² + 4x + 1 gives 2x² − 2x − 12 = 0, i.e. x² − x − 6 = 0, so (x − 3)(x + 2) = 0 and x = 3 or x = −2.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "sourceNote": "The original asked for the values of x \"if the magnitude of a is 2x + 1\". A magnitude cannot be negative, so x = −2 (which makes 2x + 1 = −3) would not fit that wording. The stem now asks for the solutions of the squared equation, which is what the key (3, −2) solves."
+        },
+        {
+          "id": "mth103-va-04",
+          "prompt": "Find the sum of the vectors AB + BC − DC − AD.",
+          "options": [
+            "1",
+            "AB",
+            "BA",
+            "0 (the zero vector)",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "AB + BC = AC, and DC + AD = AD + DC = AC. So AB + BC − DC − AD = AC − AC = 0, the zero vector (not the number 1).",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-05",
+          "prompt": "If A = 3i + 6j + 12k and C = 3i − 7j + 8k, evaluate |2A − C|.",
+          "options": [
+            "625",
+            "25.02",
+            "52.02",
+            "55",
+            "48"
+          ],
+          "correctIndex": 1,
+          "explanation": "2A − C = (6 − 3)i + (12 + 7)j + (24 − 8)k = 3i + 19j + 16k. Its length is √(9 + 361 + 256) = √626 ≈ 25.02.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-06",
+          "prompt": "If r₁ = 4i − 3j + 2k and r₂ = 3i + 5j + 4k, evaluate 2r₁ + 4r₂.",
+          "options": [
+            "30i + 41j − 20k",
+            "i + 4j − 16k",
+            "20i + 14j + 20k",
+            "18i + 20j − 24k",
+            "20i − 14j − 20k"
+          ],
+          "correctIndex": 2,
+          "explanation": "2r₁ = 8i − 6j + 4k and 4r₂ = 12i + 20j + 16k. Adding component by component gives 20i + 14j + 20k.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-07",
+          "prompt": "If a = 2i + 3k, b = 4i − 6k and c = 20i − 6k, find the scalars γ and β (in that order) if c is the resultant of γa and βb.",
+          "options": [
+            "3, 4",
+            "6, 8",
+            "4, 3",
+            "4, 8",
+            "3, 2"
+          ],
+          "correctIndex": 2,
+          "explanation": "Write c = γa + βb: 20i − 6k = γ(2i + 3k) + β(4i − 6k). The i-parts give 2γ + 4β = 20. The k-parts give 3γ − 6β = −6, i.e. γ = 2β − 2. Substituting: 4β − 4 + 4β = 20, so β = 3 and γ = 4.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-08",
+          "prompt": "Find the values of γ if the modulus of P is 7, where P is the resultant of A = γi + 4j − k and B = i + 2j − k.",
+          "options": [
+            "6, 5",
+            "8, 4",
+            "2, −4",
+            "0, 9",
+            "3, 2"
+          ],
+          "correctIndex": 2,
+          "explanation": "P = A + B = (γ + 1)i + 6j − 2k. |P|² = (γ + 1)² + 36 + 4 = 49, so (γ + 1)² = 9 and γ + 1 = ±3. Hence γ = 2 or γ = −4.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "sourceNote": "The original printed the scalar as \"i\" in the first vector; read as γ, which is the only reading that gives an option."
+        },
+        {
+          "id": "mth103-va-09",
+          "prompt": "Find the value of γ if the magnitude of v = γi + 6j − 2k is the same as the magnitude of w = 2i − 3j + (3 + γ)k.",
+          "options": [
+            "6",
+            "7",
+            "4",
+            "9",
+            "3"
+          ],
+          "correctIndex": 4,
+          "explanation": "|v|² = γ² + 36 + 4 = γ² + 40 and |w|² = 4 + 9 + (3 + γ)² = γ² + 6γ + 22. Setting them equal: 40 = 6γ + 22, so γ = 3.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-10",
+          "prompt": "Find the unit vector e in the direction of a = 2i + 5j − k.",
+          "options": [
+            "(1/√30)(2i + 5j − k)",
+            "(1/√30)(2i + 5j + k)",
+            "(1/√30)(2i − 5j + k)",
+            "(1/√30)(2i − 5j)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "|a| = √(4 + 25 + 1) = √30. The unit vector is a divided by its length: (1/√30)(2i + 5j − k).",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "sourceNote": "Options A and B were identical in the original print; option B was changed to make the choices distinct."
+        },
+        {
+          "id": "mth103-va-11",
+          "prompt": "Find the direction cosines (l, m, n) of r = 3i − 2j + 6k.",
+          "options": [
+            "(3/7, 2/7, 6/7)",
+            "(3/7, −2/7, 6/7)",
+            "(−3/7, −2/7, −6/7)",
+            "(−3/7, 2/7, −6/7)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "|r| = √(9 + 4 + 36) = 7. The direction cosines are the components divided by the length: (3/7, −2/7, 6/7). Check: l² + m² + n² = (9 + 4 + 36)/49 = 1.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-12",
+          "prompt": "Find the magnitude of the vector v = 3i + 4j − 12k.",
+          "options": [
+            "13",
+            "14",
+            "15",
+            "16",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "|v| = √(9 + 16 + 144) = √169 = 13.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-va-13",
+          "prompt": "Evaluate 2x² + x + 1 if the magnitude of a = 3i + xj + 2k is equal to the magnitude of b = 6i + (x − 4)j + 3k.",
+          "options": [
+            "432",
+            "439",
+            "216",
+            "532",
+            "539"
+          ],
+          "correctIndex": null,
+          "explanation": "|a|² = 9 + x² + 4 = x² + 13 and |b|² = 36 + (x − 4)² + 9 = x² − 8x + 61. Equal magnitudes give 13 = −8x + 61, so x = 6 and 2x² + x + 1 = 72 + 6 + 1 = 79. That value is not among the options.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The answer is 79, which is not among the options (432, 439, 216, 532, 539), and there is no \"none of the above\" option. A number in the original is probably misprinted. Needs the original paper."
+        },
+        {
+          "id": "mth103-va-14",
+          "prompt": "If the unit vector of the resultant of A = i + j and B = j − xk is c = (1/3)i + (2/3)j − (2/3)k, find the value of x.",
+          "options": [
+            "6, −5",
+            "2, −2",
+            "8, −4",
+            "5, −5",
+            "3, −3"
+          ],
+          "correctIndex": null,
+          "explanation": "A + B = i + 2j − xk, with length √(5 + x²). A unit vector with 3 in the denominator means the length is 3, so x² = 4. But the printed unit vector has k-component −2/3 = −x/3, which gives x = 2 only; x = −2 would give +2/3.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "Option B (2, −2) includes −2, which contradicts the printed unit vector. Either the question asked for the magnitude of the resultant or the unit vector was printed differently. Needs the original wording."
+        }
+      ]
+    },
+    {
+      "id": "dot-cross-products",
+      "questions": [
+        {
+          "id": "mth103-dc-01",
+          "prompt": "Given that a = 2i + 3k, b = 5i − j + k and c = i + 2j, evaluate 2a·(b + 3c).",
+          "options": [
+            "32",
+            "36",
+            "38",
+            "44",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "b + 3c = (5i − j + k) + (3i + 6j) = 8i + 5j + k. Also 2a = 4i + 6k. The dot product is 4·8 + 0·5 + 6·1 = 38.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-dc-02",
+          "prompt": "Find the vector product p × q, where p = 3i − 4j + 2k and q = 2i + 5j − k.",
+          "options": [
+            "−6i + 7j + 23k",
+            "6i − 7j − 23k",
+            "−6i − 7j − 23k",
+            "6i + 7j + 23k",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "p × q = ((−4)(−1) − 2·5) i + (2·2 − 3·(−1)) j + (3·5 − (−4)·2) k = (4 − 10)i + (4 + 3)j + (15 + 8)k = −6i + 7j + 23k.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-dc-03",
+          "prompt": "Given that a = 2i + 3k, b = 5i − j + k and c = i + 2j, evaluate (a·c)b.",
+          "options": [
+            "10i − 2j − 2k",
+            "−10i − 2j + 2k",
+            "10i − 2j + 2k",
+            "10i + 2j + 2k",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "a·c = 2·1 + 0·2 + 3·0 = 2, which is a scalar. Then (a·c)b = 2b = 10i − 2j + 2k.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-dc-04",
+          "prompt": "Given the vectors a = i − j + 2k, b = 2i + j + k and c = −i + 2j − k, find (a × b) × c.",
+          "options": [
+            "−9i − 9k",
+            "−9i + 9k",
+            "9i − 9k",
+            "9i + 9k",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "a × b = (−1·1 − 2·1)i + (2·2 − 1·1)j + (1·1 − (−1)·2)k = −3i + 3j + 3k. Then (a × b) × c = (3·(−1) − 3·2)i + (3·(−1) − (−3)(−1))j + ((−3)·2 − 3·(−1))k = −9i − 6j − 3k. This is not among the options.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The typed paper printed only \"a × b\" and the typist worked backwards to −9i − 9k, but the full calculation gives −9i − 6j − 3k. The original question is needed."
+        },
+        {
+          "id": "mth103-dc-05",
+          "prompt": "Given that a = 2i + 3k, b = 5i − j + k and c = i + 2j, evaluate (a − c)·(b − c).",
+          "options": [
+            "i − j + 2k",
+            "i − j + 3k",
+            "i − j − 2k",
+            "i + j − 2k",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "a − c = i − 2j + 3k and b − c = 4i − 3j + k. The dot product is 4 + 6 + 3 = 13 (a scalar), and the cross product is 7i + 11j + 5k. Neither is among the options.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The typed paper was unsure whether this is a dot or a cross product, options A and D were identical in the original (D changed here), and neither answer (13, or 7i + 11j + 5k) appears. The original question is needed."
+        }
+      ]
+    },
+    {
+      "id": "points-distance-lines",
+      "questions": [
+        {
+          "id": "mth103-ln-01",
+          "prompt": "Find the midpoint of the line segment joining A(5, 1) and B(3, −1).",
+          "options": [
+            "(6, 9)",
+            "(0, 8)",
+            "(5, 4)",
+            "(8, 4)",
+            "(4, 0)"
+          ],
+          "correctIndex": 4,
+          "explanation": "Midpoint = ((5 + 3)/2, (1 + (−1))/2) = (4, 0).",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-02",
+          "prompt": "Let m₁ and m₂ be the gradients of two lines. If the two lines are perpendicular, then:",
+          "options": [
+            "m₁m₂ = −1",
+            "m₁m₂ = 1",
+            "m₁m₂ = 2",
+            "m₁m₂ = −2",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Perpendicular lines have gradients whose product is −1 (for example 2 and −1/2).",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-03",
+          "prompt": "Let m₁ and m₂ be the gradients of two lines. If the two lines are parallel, then:",
+          "options": [
+            "m₁ = m₂",
+            "m₁ = −m₂",
+            "m₁ ≠ m₂",
+            "m₁m₂ = 2",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Parallel lines have the same gradient: m₁ = m₂.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-04",
+          "prompt": "Find the distance between the points (1/2, 1/2) and (−1/2, −1/2).",
+          "options": [
+            "2√2",
+            "0",
+            "√2",
+            "√2/2",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "d = √((1/2 + 1/2)² + (1/2 + 1/2)²) = √(1 + 1) = √2.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-05",
+          "prompt": "Find the value of α² + β² if α + β = 2 and the distance between the points (1, α) and (β, 1) is 3 units.",
+          "options": [
+            "7",
+            "9",
+            "13",
+            "11",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Distance² = (1 − β)² + (α − 1)² = 9. Expanding: α² + β² − 2(α + β) + 2 = 9. With α + β = 2 this gives α² + β² = 9 − 2 + 4 = 11.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-06",
+          "prompt": "If the midpoint of the line segment MN is (2, 3) and M is (−2, 1), find the coordinates of N.",
+          "options": [
+            "(5, 5)",
+            "(5, 6)",
+            "(6, 6)",
+            "(6, 5)",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The midpoint is the average of M and N, so N = 2 × (2, 3) − M = (4 + 2, 6 − 1) = (6, 5).",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-07",
+          "prompt": "Calculate the gradient of the straight line joining X(5, −7) and Z(−2, −3).",
+          "options": [
+            "−4/7",
+            "4/7",
+            "−10/7",
+            "−7/4",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "m = (y₂ − y₁)/(x₂ − x₁) = (−3 − (−7))/(−2 − 5) = 4/(−7) = −4/7.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-08",
+          "prompt": "Find the equation of the line joining the point (1, 2) to the intersection of the lines 3x + y = 7 and 4x + 2y = 10.",
+          "options": [
+            "y − x = 3",
+            "y + 3x = 6",
+            "y + 7x = 5",
+            "y + x = 3",
+            "y − 2x = 9"
+          ],
+          "correctIndex": 3,
+          "explanation": "Solve 3x + y = 7 and 4x + 2y = 10: y = 7 − 3x, so 4x + 14 − 6x = 10, giving x = 2 and y = 1. The line through (1, 2) and (2, 1) has gradient (1 − 2)/(2 − 1) = −1, so y − 2 = −(x − 1), i.e. x + y = 3.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-09",
+          "prompt": "Find the values of x if the distance between A(x, 1) and B(2, −3) is √41.",
+          "options": [
+            "3, −3",
+            "8, 4",
+            "7, −7",
+            "−3, 7",
+            "0, 8"
+          ],
+          "correctIndex": 3,
+          "explanation": "(x − 2)² + (1 + 3)² = 41, so (x − 2)² = 25 and x − 2 = ±5. Hence x = 7 or x = −3.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-ln-10",
+          "prompt": "Find the equation of the straight line passing through the point (2, 3) and parallel to 3x − 4y + 7 = 0.",
+          "options": [
+            "4y + 3x + 18 = 0",
+            "y − 6x + 5 = 0",
+            "4y − 3x − 18 = 0",
+            "7y − x + 21 = 0",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "A line parallel to 3x − 4y + 7 = 0 has the form 3x − 4y + c = 0. Through (2, 3): 6 − 12 + c = 0, so c = 6, giving 4y − 3x − 6 = 0. None of options A–D matches.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "As printed, no listed option is correct. Option C, 4y − 3x − 18 = 0, passes through (2, 6), so the point in the original paper may have been (2, 6). Please confirm."
+        }
+      ]
+    },
+    {
+      "id": "circles-conics",
+      "questions": [
+        {
+          "id": "mth103-cn-01",
+          "prompt": "State the standard equation of a hyperbola centred at the origin with a horizontal transverse axis.",
+          "options": [
+            "x²/a² − y²/b² = 1",
+            "x²/a² − y²/b² = −1",
+            "x/a² − y/b² = 1",
+            "x²/a² − y²/b² = 0",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A hyperbola whose transverse axis lies along the x-axis is x²/a² − y²/b² = 1. With −1 on the right the transverse axis would be vertical.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-cn-02",
+          "prompt": "State the standard equation of an ellipse centred at the origin.",
+          "options": [
+            "x²/a² + y²/b² = 1",
+            "x/a² + y/b² = 1",
+            "a²/x² + b²/y² = 1",
+            "a²/x² + b²/y² = 0",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The standard ellipse is x²/a² + y²/b² = 1, where a and b are the semi-axes. The terms must be squared and in the numerator.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-cn-03",
+          "prompt": "State the standard equation of a parabola opening to the right with vertex at the origin.",
+          "options": [
+            "y² = −4ax",
+            "y² = 4ax",
+            "y³ = 4ax",
+            "y − 4ax = 0",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "A parabola with vertex at the origin opening to the right (a > 0) is y² = 4ax. With −4ax it would open to the left.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-cn-04",
+          "prompt": "Find the equation of a circle with centre (2, 3) and radius 1.",
+          "options": [
+            "x² + y² − 4x − 6y + 12 = 0",
+            "4x² + 4y² − 16x + 7y − 4 = 0",
+            "8x² + 8y² − x + y + 9 = 0",
+            "x² + y² − x + y = 0",
+            "2x² + 2y² − 6x + 8y + 9 = 0"
+          ],
+          "correctIndex": 0,
+          "explanation": "(x − 2)² + (y − 3)² = 1 expands to x² − 4x + 4 + y² − 6y + 9 = 1, i.e. x² + y² − 4x − 6y + 12 = 0.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "sourceNote": "In the original, option A printed x instead of x², and option B was garbled; both were tidied. The correct option is unchanged."
+        },
+        {
+          "id": "mth103-cn-05",
+          "prompt": "Find the radius and centre of the circle x² + y² + 4x − 6y + 12 = 0.",
+          "options": [
+            "9 and (−2, 3)",
+            "3 and (8, 5)",
+            "1 and (−2, 3)",
+            "5 and (4, 3)",
+            "2 and (6, 3)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Complete the squares: (x + 2)² + (y − 3)² = 4 + 9 − 12 = 1. So the centre is (−2, 3) and the radius is 1.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-cn-06",
+          "prompt": "Find the length of the tangent from the point (7, 5) to the circle x² + y² − 4x − 6y + 9 = 0.",
+          "options": [
+            "7",
+            "8",
+            "12",
+            "4",
+            "5"
+          ],
+          "correctIndex": 4,
+          "explanation": "The tangent length from (x₁, y₁) is √(x₁² + y₁² − 4x₁ − 6y₁ + 9) = √(49 + 25 − 28 − 30 + 9) = √25 = 5.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-cn-07",
+          "prompt": "Find the equation of a hyperbola with foci (±9, 0) and directrices x = ±4.",
+          "options": [
+            "x²/36 − y²/45 = 1",
+            "x²/49 − y²/54 = 1",
+            "x²/12 − y²/24 = 1",
+            "x²/8 − y²/16 = 1",
+            "x²/14 − y²/19 = 1"
+          ],
+          "correctIndex": 0,
+          "explanation": "For x²/a² − y²/b² = 1 the foci are (±ae, 0) and the directrices x = ±a/e. So ae = 9 and a/e = 4; multiplying gives a² = 36. Then e = 9/6 = 3/2 and b² = a²(e² − 1) = 36(9/4 − 1) = 45. The equation is x²/36 − y²/45 = 1.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-cn-08",
+          "prompt": "Find the equation of the tangent to the parabola 4y² = 64x at the point (3, 5).",
+          "options": [
+            "5y = 8x + 24",
+            "7y = 9x + 3",
+            "8y = 3x − 9",
+            "5y = −8x + 24",
+            "y = x + 24"
+          ],
+          "correctIndex": null,
+          "explanation": "4y² = 64x is y² = 16x. The point (3, 5) is not on it, since 5² = 25 but 16 × 3 = 48, so there is no tangent \"at\" that point. Using the tangent formula yy₁ = 8(x + x₁) anyway gives 5y = 8x + 24 (option A), which is the polar line of the point, not a tangent.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The point is not on the curve, so the question cannot be answered as printed. Needs the correct point from the original paper."
+        }
+      ]
+    },
+    {
+      "id": "kinematics",
+      "questions": [
+        {
+          "id": "mth103-kin-01",
+          "prompt": "A particle moves in a straight line such that for a short time its velocity is v = (3t² + 4t) m/s, where t is in seconds. Determine the distance s covered by the particle when t = 5 s, given s = 0 at t = 0.",
+          "options": [
+            "175 m",
+            "200 m",
+            "400 m",
+            "800 m",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "s = ∫(3t² + 4t) dt = t³ + 2t² (the constant is 0 because s = 0 at t = 0). At t = 5: 125 + 50 = 175 m.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-02",
+          "prompt": "A particle moves in a straight line with position s = 5t³ + 3t² metres at time t. Determine the acceleration of the particle at t = 3 s.",
+          "options": [
+            "14 m/s²",
+            "96 m/s²",
+            "100 m/s²",
+            "90 m/s²",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "v = ds/dt = 15t² + 6t and a = dv/dt = 30t + 6. At t = 3: a = 90 + 6 = 96 m/s².",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-03",
+          "prompt": "A particle moves in 3-dimensional space with x = 3t², y = 8t and z = 2t³ (metres), where t is in seconds. Determine the magnitude of the acceleration at t = 2 s.",
+          "options": [
+            "612 m/s²",
+            "√874 m/s²",
+            "√612 m/s²",
+            "√784 m/s²",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "a = (6, 0, 12t). At t = 2, a = (6, 0, 24), so |a| = √(36 + 0 + 576) = √612 m/s². (612 is the square of the magnitude, not the magnitude.)",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-04",
+          "prompt": "A particle of mass 30 kg is pulled horizontally along a path given by x(t) = 3t² and y(t) = 2t³ + 5t² (metres). Find the position vector at t = 2 s.",
+          "options": [
+            "(12, 44)ᵀ m",
+            "(12, 36)ᵀ m",
+            "(180, 1020)ᵀ m",
+            "(6, 24)ᵀ m",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "x(2) = 3·4 = 12 and y(2) = 2·8 + 5·4 = 36, so the position vector is (12, 36)ᵀ m.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-05",
+          "prompt": "A particle of mass 4 kg moves along x(t) = 3t⁴ − 2t³ and y(t) = 4t³ + 5t (metres). Find its velocity at t = 4 s.",
+          "options": [
+            "(528, 96)ᵀ m/s",
+            "(672, 197)ᵀ m/s",
+            "(768, 192)ᵀ m/s",
+            "(212, 384)ᵀ m/s",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "v = (dx/dt, dy/dt) = (12t³ − 6t², 12t² + 5). At t = 4: (768 − 96, 192 + 5) = (672, 197) m/s.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)",
+          "sourceNote": "The original print left out the coordinates and asked for \"velocity (or acceleration)\". The coordinates come from the identical question in the second paper, and the stem now asks for velocity only."
+        },
+        {
+          "id": "mth103-kin-06",
+          "prompt": "Calculate the acceleration of a particle of mass 4 kg moving along x(t) = 3t⁴ − 2t³ and y(t) = 4t³ + 5t (metres) at t = 4 s.",
+          "options": [
+            "(528, 96)ᵀ m/s²",
+            "(672, 197)ᵀ m/s²",
+            "(768, 192)ᵀ m/s²",
+            "(212, 384)ᵀ m/s²",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "a = (d²x/dt², d²y/dt²) = (36t² − 12t, 24t). At t = 4: (576 − 48, 96) = (528, 96) m/s².",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-07",
+          "prompt": "A particle of mass 20 kg moves along a curve with x(t) = 3t², y(t) = 8t and z(t) = 3t³ (metres). Find its velocity at t = 2 s.",
+          "options": [
+            "(36, 12, 8)ᵀ m/s",
+            "(12, 8, 36)ᵀ m/s",
+            "(12, 16, 24)ᵀ m/s",
+            "(3, 12, 8)ᵀ m/s",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "v = dr/dt = (6t, 8, 9t²). At t = 2: (12, 8, 36) m/s.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)",
+          "sourceNote": "In the original, options A and C were identical; option C was replaced."
+        },
+        {
+          "id": "mth103-kin-08",
+          "prompt": "A particle of mass 20 kg moves along a curve with x(t) = 3t², y(t) = 8t and z(t) = 3t³ (metres), where t is in seconds. Find the acceleration at t = 2 s.",
+          "options": [
+            "(6, 0, 36)ᵀ m/s²",
+            "(12, 8, 36)ᵀ m/s²",
+            "(12, 16, 24)ᵀ m/s²",
+            "(120, 0, 720)ᵀ m/s²",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "a = d²r/dt² = (6, 0, 18t). At t = 2: (6, 0, 36) m/s². The mass is not needed for acceleration.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-09",
+          "prompt": "A particle of mass 20 kg moves along a curve with x(t) = 3t², y(t) = 8t and z(t) = 3t³ (metres), where t is in seconds. Find the position vector at t = 2 s.",
+          "options": [
+            "(6, 0, 36)ᵀ m",
+            "(12, 8, 36)ᵀ m",
+            "(12, 16, 24)ᵀ m",
+            "(120, 0, 720)ᵀ m",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Substitute t = 2: x = 3·4 = 12, y = 8·2 = 16, z = 3·8 = 24. So r = (12, 16, 24) m.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-10",
+          "prompt": "A particle of mass 10 kg moves along a curve with x(t) = e⁻ᵗ, y(t) = 2cos 5t and z(t) = 2sin 5t (metres), where t is in seconds. Find the position vector at t = 0.",
+          "options": [
+            "(1, −50, 0)ᵀ m",
+            "(10, 500, 0)ᵀ m",
+            "(−1, 0, 10)ᵀ m",
+            "(1, 2, 0)ᵀ m",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "At t = 0: x = e⁰ = 1, y = 2cos 0 = 2 and z = 2sin 0 = 0. So r = (1, 2, 0) m.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-11",
+          "prompt": "A particle of mass 10 kg moves along a curve with x(t) = e⁻ᵗ, y(t) = 2cos 5t and z(t) = 2sin 5t (metres), where t is in seconds. Find the velocity at t = 0.",
+          "options": [
+            "(1, −50, 0)ᵀ m/s",
+            "(10, −500, 0)ᵀ m/s",
+            "(−1, 0, 10)ᵀ m/s",
+            "(1, 2, 0)ᵀ m/s",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "v = (−e⁻ᵗ, −10 sin 5t, 10 cos 5t). At t = 0: (−1, 0, 10) m/s.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-12",
+          "prompt": "A particle of mass 10 kg moves along a curve with x(t) = e⁻ᵗ, y(t) = 2cos 5t and z(t) = 2sin 5t (metres), where t is in seconds. Find the acceleration at t = 0.",
+          "options": [
+            "(1, −50, 0)ᵀ m/s²",
+            "(10, −500, 0)ᵀ m/s²",
+            "(−1, 0, 10)ᵀ m/s²",
+            "(1, 2, 0)ᵀ m/s²",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "a = (e⁻ᵗ, −50 cos 5t, −50 sin 5t). At t = 0: (1, −50, 0) m/s².",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-13",
+          "prompt": "A particle of mass 30 kg is pulled horizontally along a path given by x(t) = 3t² and y(t) = 2t³ + 5t² (metres). Find the velocity at t = 2 s.",
+          "options": [
+            "(12, 44)ᵀ m/s",
+            "(12, 36)ᵀ m/s",
+            "(180, 1020)ᵀ m/s",
+            "(6, 24)ᵀ m/s",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "v = (6t, 6t² + 10t). At t = 2: (12, 24 + 20) = (12, 44) m/s.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-14",
+          "prompt": "A particle of mass 30 kg is pulled horizontally along a path given by x(t) = 3t² and y(t) = 2t³ + 5t² (metres). Find the acceleration at t = 2 s.",
+          "options": [
+            "(12, 44)ᵀ m/s²",
+            "(12, 36)ᵀ m/s²",
+            "(180, 1020)ᵀ m/s²",
+            "(6, 24)ᵀ m/s²",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "a = (6, 12t + 10). At t = 2: (6, 34) m/s². This is not among options A–D. (The vector (180, 1020) is the force, 30 × (6, 34), not the acceleration.)",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-kin-15",
+          "prompt": "A car moves in three dimensions so that, for a short time, its velocity is v = (3t² + 5t, 2t + 3t³, t + 5t²) m/s, where t is in seconds. If it starts at the origin, find its position vector after 2 seconds.",
+          "options": [
+            "(18, 16, 46/3)ᵀ m",
+            "(5, 0, 5)ᵀ m",
+            "(3, 1, 4)ᵀ m",
+            "(18, 16, 46/2)ᵀ m",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Integrate each component from t = 0: x = t³ + 5t²/2 = 8 + 10 = 18; y = t² + 3t⁴/4 = 4 + 12 = 16; z = t²/2 + 5t³/3 = 2 + 40/3 = 46/3.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)",
+          "sourceNote": "The original (printed three times) gave the velocity as (3t + 5t, …) and the time as \"25 seconds\". Only with 3t² + 5t and t = 2 does option A, (18, 16, 46/3), come out, so the question was read that way. The starting point (the origin) is assumed."
+        }
+      ]
+    },
+    {
+      "id": "force-equations-of-motion",
+      "questions": [
+        {
+          "id": "mth103-new-01",
+          "prompt": "Which of the following is the equation of motion for a body of mass M kg shot upward against gravity with velocity v in a medium whose air resistance is Mkv, where k is a constant and v′ = dv/dt?",
+          "options": [
+            "v′ = g − kv",
+            "v′ = −g − kv",
+            "v′ = g + kv",
+            "v′ = Mg − kv"
+          ],
+          "correctIndex": 1,
+          "explanation": "Take upward as positive. Gravity acts downward (−Mg) and the air resistance opposes the upward motion (−Mkv). Newton's law Mv′ = −Mg − Mkv gives v′ = −g − kv.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-02",
+          "prompt": "Which of the following is the equation of motion for a body of mass M kg falling under gravity with velocity v in a medium whose air resistance is Mkv, where k is a constant and v′ = dv/dt?",
+          "options": [
+            "v′ = g − kv",
+            "v′ = −g − kv",
+            "v′ = g + kv",
+            "v′ = Mg − kv"
+          ],
+          "correctIndex": 0,
+          "explanation": "Take downward as positive. Gravity helps the motion (+Mg) and the resistance opposes it (−Mkv): Mv′ = Mg − Mkv, so v′ = g − kv.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-03",
+          "prompt": "Which of the following is the equation of motion for a body of mass M kg shot upward against gravity with velocity v where the air resistance is Mkv², and k is a constant (v′ = dv/dt)?",
+          "options": [
+            "v′ = g − kv²",
+            "v′ = −g − kv²",
+            "v′ = g + kv²",
+            "v′ = Mg − kv²"
+          ],
+          "correctIndex": 1,
+          "explanation": "Take upward as positive. Both gravity and the drag oppose the upward motion, so Mv′ = −Mg − Mkv², i.e. v′ = −g − kv².",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-04",
+          "prompt": "A particle of mass 5 kg, initially at rest, is acted on by a force (7t + t²) N at time t seconds. Find the velocity of the particle at time t.",
+          "options": [
+            "(7t²/2 + t³/3) m/s",
+            "(7t²/10 + t³/3) m/s",
+            "(7t²/5 + t³/5) m/s",
+            "(7/5 + t/5) m/s",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "From F = ma, a = (7t + t²)/5. Integrating with v = 0 at t = 0 gives v = 7t²/10 + t³/15. None of options A–D has this form (their t³ terms are t³/3 or t³/5), so the answer is \"none of the above\".",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-05",
+          "prompt": "A particle of mass 5 kg, initially at rest, is acted on by a force (7t + t²) N at time t seconds. Find the distance covered by the particle at time t.",
+          "options": [
+            "(7t³/30 + t⁴/60) m",
+            "(7t²/2 + t³/3) m",
+            "(14t/5 + t²/5) m",
+            "(7t³/10 + t⁴/15) m",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "From v = 7t²/10 + t³/15, integrate again with s = 0 at t = 0: s = 7t³/30 + t⁴/60.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-06",
+          "prompt": "A particle of mass 5 kg, initially at rest, is acted on by a force (7t + t²) N at time t seconds. Find the distance covered by the particle after 3 seconds.",
+          "options": [
+            "7.65 m",
+            "40.5 m",
+            "10.2 m",
+            "13.5 m",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "s(3) = 7(27)/30 + 81/60 = 6.3 + 1.35 = 7.65 m.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-07",
+          "prompt": "A particle of mass 5 kg, initially at rest, is acted on by a force (7t + t²) N at time t seconds. Find the velocity of the particle after 3 seconds.",
+          "options": [
+            "40.5 m/s",
+            "2.6 m/s",
+            "18 m/s",
+            "8.1 m/s",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "v(3) = 7(9)/10 + 27/15 = 6.3 + 1.8 = 8.1 m/s.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-08",
+          "prompt": "A particle of mass 20 kg moves along a curve with x(t) = 3t², y(t) = 8t and z(t) = 3t³ (metres). Find the force exerted on the particle at t = 2 s.",
+          "options": [
+            "(6, 0, 36)ᵀ N",
+            "(12, 8, 36)ᵀ N",
+            "(12, 16, 24)ᵀ N",
+            "(120, 0, 720)ᵀ N",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The acceleration at t = 2 is (6, 0, 36) m/s², so F = ma = 20 × (6, 0, 36) = (120, 0, 720) N.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-09",
+          "prompt": "A particle of mass 10 kg moves along a curve with x(t) = e⁻ᵗ, y(t) = 2cos 5t and z(t) = 2sin 5t (metres), where t is in seconds. Find the force on the particle at t = 0.",
+          "options": [
+            "(1, −50, 0)ᵀ N",
+            "(10, −500, 0)ᵀ N",
+            "(−1, 0, 10)ᵀ N",
+            "(1, 2, 0)ᵀ N",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The acceleration at t = 0 is (1, −50, 0) m/s², so F = ma = 10 × (1, −50, 0) = (10, −500, 0) N.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-10",
+          "prompt": "Calculate the force acting on a particle of mass 4 kg moving along x(t) = 3t⁴ − 2t³ and y(t) = 4t³ + 5t (metres) at t = 4 s.",
+          "options": [
+            "(528, 96)ᵀ N",
+            "(672, 197)ᵀ N",
+            "(768, 192)ᵀ N",
+            "(212, 384)ᵀ N",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "The acceleration at t = 4 is (528, 96) m/s², so F = 4 × (528, 96) = (2112, 384) N, which is not in the list. (528, 96) is the acceleration, not the force.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-11",
+          "prompt": "Which of the following statements about force F (in newtons) are TRUE? (I) Force is the rate of change of momentum. (II) Force is the same as impulse. (III) Force is the product of mass and acceleration. (IV) Force is work done divided by displacement.",
+          "options": [
+            "(I), (II), (III) and (IV)",
+            "(I), (II) and (III)",
+            "(I), (III) and (IV)",
+            "(I), (II) and (IV)",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "(I) is true: F = d(mv)/dt. (II) is false: impulse is force × time (the change in momentum), not force. (III) is true: F = ma. (IV) is true: W = Fd, so F = W/d for a constant force along the displacement. So (I), (III) and (IV).",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-new-12",
+          "prompt": "Find the value of Z if the force (Z, 17) N is required to produce the motion of a particle of mass 10 kg with position coordinates x(t) = 5t and y(t) = 3t in 2 seconds.",
+          "options": [
+            "45 N",
+            "170 N",
+            "125 N",
+            "6.8 N",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "x = 5t and y = 3t give a constant velocity (5, 3), so the acceleration is zero and the force needed is (0, 0). The y-component cannot be 17.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "Printed twice. For these coordinates the force is zero, so the question cannot be right as typed; the options (45, 170, 125, 6.8) match the kinetic-energy question instead. Needs the original wording."
+        }
+      ]
+    },
+    {
+      "id": "work-energy-power",
+      "questions": [
+        {
+          "id": "mth103-wep-01",
+          "prompt": "Work done by a particle, in joules, is obtained by the ________.",
+          "options": [
+            "product of the force and the distance covered by the particle",
+            "rate of change of momentum",
+            "impulse",
+            "product of mass and acceleration",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Work is force multiplied by the distance moved in the direction of the force: W = Fd. The rate of change of momentum is force, impulse is force × time, and mass × acceleration is also force.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-wep-02",
+          "prompt": "Calculate the power developed by a particle of mass 4 kg moving along x(t) = 3t⁴ − 2t³ and y(t) = 4t³ + 5t (metres) at t = 4 s.",
+          "options": [
+            "1.49 × 10⁶ W",
+            "7.56 × 10⁴ W",
+            "1.42 × 10⁶ W",
+            "2.12 × 10⁴ W",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Power = F·v. F = ma = 4 × (528, 96) = (2112, 384) N and v = (672, 197) m/s. So P = 2112 × 672 + 384 × 197 = 1,419,264 + 75,648 = 1,494,912 W ≈ 1.49 × 10⁶ W.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-wep-03",
+          "prompt": "Find the work done by a particle of mass 25 kg that ran up a staircase to a vertical height given by the coordinates (x, y) = (2, 3) m in 3 seconds. (Take g = 9.8 m/s².)",
+          "options": [
+            "245 J",
+            "403.33 J",
+            "1,225 J",
+            "735 J",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Only the vertical rise (y = 3 m) counts against gravity: W = mgh = 25 × 9.8 × 3 = 735 J. The 2 m horizontal movement does no work against gravity.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-wep-04",
+          "prompt": "Find the power developed by a particle of mass 25 kg that ran up a staircase to a vertical height given by the coordinates (x, y) = (2, 3) m in 3 seconds. (Take g = 9.8 m/s².)",
+          "options": [
+            "245 W",
+            "403.33 W",
+            "1,225 W",
+            "735 W",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Work done = mgh = 25 × 9.8 × 3 = 735 J. Power = work ÷ time = 735 ÷ 3 = 245 W.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-wep-05",
+          "prompt": "Calculate the kinetic energy of a particle of mass 10 kg whose position coordinates are x(t) = 5t and y(t) = 3t (metres) at t = 2 s.",
+          "options": [
+            "45 J",
+            "170 J",
+            "125 J",
+            "6.8 J",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "v = (5, 3) m/s, so v² = 25 + 9 = 34. KE = ½mv² = ½ × 10 × 34 = 170 J.",
+          "source": "MTH103 2023/2024 examination paper (typed; answers derived and verified symbolically)"
+        },
+        {
+          "id": "mth103-wep-06",
+          "prompt": "A particle of mass 30 kg is pulled horizontally along a path given by x(t) = 3t² and y(t) = 2t³ + 5t² (metres). Find the work done at t = 2 s if the force is in the direction of motion.",
+          "options": [
+            "2,160 J",
+            "36,720 J",
+            "38,880 J",
+            "19,440 J",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The force at t = 2 is F = ma = 30 × (6, 34) = (180, 1020) N and the position is (12, 36) m. The options match F·r = 180·12 + 1020·36 = 2,160 + 36,720 = 38,880 J. But the force changes with time, so F·r is not the real work. The work from t = 0 to t = 2 equals the gain in kinetic energy, ½ × 30 × (12² + 44²) = 31,200 J.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The paper's options appear to use W = F·r (option C, 38,880 J), which treats a changing force as constant. The real work done is 31,200 J, which is not an option. Please confirm which method your lecturer wants."
+        },
+        {
+          "id": "mth103-wep-07",
+          "prompt": "A particle of mass 30 kg is pulled horizontally along a path given by x(t) = 3t² and y(t) = 2t³ + 5t² (metres). Find the work done at t = 2 s if the force is inclined at 60° to the horizontal line.",
+          "options": [
+            "2,160 J",
+            "36,720 J",
+            "38,880 J",
+            "19,440 J",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The options appear to take F·r = 38,880 J and multiply by cos 60° = ½, giving 19,440 J (option D). That treats the force as constant, which it is not (F = (180, 1020) N only at t = 2).",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "Same issue as the previous question: the paper's answer treats a changing force as constant, and the angle's meaning is not clear. Please confirm the lecturer's method."
+        },
+        {
+          "id": "mth103-wep-08",
+          "prompt": "Calculate the work done when a horizontal force pulls a load of 80 kg along a path given by x(t) = t² and y(t) = 2t² (metres) on a rough horizontal floor with coefficient of friction 0.4, at t = 3 s. (Take g = 9.8 m/s².)",
+          "options": [
+            "2,822.4 J",
+            "5,644.8 J",
+            "8,467.2 J",
+            "313.6 J",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The friction force is μmg = 0.4 × 80 × 9.8 = 313.6 N. The path is a straight line at constant acceleration (2, 4) m/s², so the distance moved in 3 s is √405 ≈ 20.1 m. The work done against friction is about 6,310 J and the work done by the pulling force (friction plus 80 × |a|) is about 13,500 J. None of the options matches either.",
+          "source": "MTH103 Dynamics, last four years of exams (typed; answers derived and verified symbolically)",
+          "needsReview": true,
+          "reviewNote": "The paper's options are 313.6 × 9, × 18 and × 27 (27 = x + y at t = 3), which treats friction as acting along x and y separately. That does not match the real work. Needs the lecturer's method."
+        }
+      ]
+    }
+  ]
+}

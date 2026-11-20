@@ -8,7 +8,10 @@ import { useAuth } from '../context/AuthContext.jsx'
 // by the student's faculty (with an option to add courses outside it,
 // since some students take cross-faculty electives).
 const COURSE_CATALOG = [
-  { code: 'MTH101', title: 'Elementary Mathematics I', faculty: 'Sciences' },
+  { code: 'MTH101', title: 'Algebra and Trigonometry', faculty: 'Sciences' },
+  { code: 'MTH103', title: 'Vectors, Geometry and Dynamics', faculty: 'Sciences' },
+  { code: 'BOT101', title: 'Introduction to Plant Biology I', faculty: 'Sciences' },
+  { code: 'BIO101', title: 'Introductory Biology', faculty: 'Sciences' },
   { code: 'PHY101', title: 'General Physics I', faculty: 'Sciences' },
   { code: 'CHM101', title: 'General Chemistry I', faculty: 'Sciences' },
   { code: 'ENG102', title: 'Engineering Drawing', faculty: 'Engineering' },
