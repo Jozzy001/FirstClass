@@ -1,0 +1,47 @@
+{
+  "courseCode": "CSC101",
+  "topics": [
+    {
+      "id": "history-and-generations",
+      "title": "History and generations of computers",
+      "notes": "Early aids to calculation: the abacus (a skilled operator can match a person with a hand calculator), Napier's bones and logarithms (John Napier), the slide rule, Pascal's Pascaline (1642, the first mechanical calculator) and Leibniz's Stepped Reckoner (a four-function calculator). Charles Babbage designed the steam-driven Difference Engine and the Analytical Engine. ENIAC (Electronic Numerical Integrator and Computer, 1946) is the forefather of all-electronic digital computers and was built long after the 19th century. EDVAC was an early stored-program computer, not a microcomputer. UNIVAC was the first commercial computer. Grace Hopper led the creation of FLOW-MATIC.\n\nFirst generation: vacuum tubes. Second generation: transistors, with input on punched cards. Third generation: integrated circuits. Fourth generation: microprocessors, personal computers and GUIs. Fifth generation: artificial intelligence and natural-language input. Supercomputer speed is measured in FLOPS (floating point operations per second). Notebooks, laptops and desktops are microcomputers.\n\nKEY FORMULA: Generations: tubes → transistors → ICs → microprocessors → AI",
+      "keyFormula": "Generations: tubes → transistors → ICs → microprocessors → AI"
+    },
+    {
+      "id": "data-representation",
+      "title": "Data representation and number systems",
+      "notes": "A bit is a single binary digit. A nibble is 4 bits and represents one hexadecimal or BCD digit. A byte is 8 bits and is the smallest addressable unit of memory. A 32-bit word holds 4 bytes. With n bits you can represent 2ⁿ different values, so 16 bits give 65,536. Standard ASCII uses 7 bits (128 characters) and extended ASCII uses 8 bits (256). BCD encodes each decimal digit in 4 bits. 1 GB is about one billion bytes.\n\nConverting between bases: binary to decimal by adding powers of 2 (1100111₂ = 64+32+4+2+1 = 103). Binary to octal by grouping bits in threes from the radix point (11100101₂ = 345₈). Binary to hexadecimal by grouping in fours. Hexadecimal to octal by going through binary (A45₁₆ = 101 001 000 101₂ = 5105₈). Decimal fractions to another base by repeated multiplication of the fraction (0.527 × 8 gives 0.415645₈). Decimal integers to another base by repeated division and reading the remainders upward (4188₁₀ = 105C₁₆).\n\nKEY FORMULA: Group bits in 3s for octal, 4s for hex;  n bits → 2ⁿ values",
+      "keyFormula": "Group bits in 3s for octal, 4s for hex;  n bits → 2ⁿ values"
+    },
+    {
+      "id": "hardware-and-memory",
+      "title": "Hardware and memory",
+      "notes": "Hardware is the system unit plus its peripherals. The CPU has a control unit, which fetches and decodes instructions in order, and an ALU, which does arithmetic and logic. The machine cycle is fetch, decode, execute and store. RAM gives access to any location in the same short time. ROM-type memories include PROM (written once), EPROM (erasable) and EEPROM (electrically erasable). DRAM needs refreshing thousands of times per second. BIOS lives in ROM. Storage capacity is the amount of data a disk can hold, and a hardcopy is a printout.\n\nA stylus uses pressure on a surface to write and draw. A repeater and a bridge are network devices, while heat sinks, cables and daughterboards are auxiliary hardware. Bandwidth is the data transfer capacity of a connection.\n\nKEY FORMULA: CPU = control unit + ALU;  machine cycle: fetch → decode → execute → store",
+      "keyFormula": "CPU = control unit + ALU;  machine cycle: fetch → decode → execute → store"
+    },
+    {
+      "id": "software-and-systems",
+      "title": "Software, operating systems and languages",
+      "notes": "A program is a set of instructions that directs the computer. System software lets the computer perform its essential tasks. The operating system allocates resources, manages disks and files and monitors performance and security. Its resident part is the kernel, and its master part is the control program. A cold boot starts the computer from fully off, and a warm boot restarts it. POST checks memory, keyboard, buses and expansion slots. A virtual-machine OS can run more than one operating system for a single user.\n\nA linker combines object modules and OS routines into one executable program, and a loader copies the program into memory to run it. Utility programs handle disk management, backup and virus protection. High-level languages are machine independent, machine language is 0s and 1s, and fourth-generation languages are non-procedural and problem-oriented. Linux, iOS, Android and Windows are operating systems, but HP is a hardware maker. Outlook handles email in the Microsoft Office suite.\n\nKEY FORMULA: Linker → executable;  cold boot = from off;  warm boot = restart",
+      "keyFormula": "Linker → executable;  cold boot = from off;  warm boot = restart"
+    },
+    {
+      "id": "internet-and-networking",
+      "title": "The Internet and networking",
+      "notes": "ARPANET was the first network that led to the Internet. TCP/IP is the foundational protocol suite. HTTP transfers web pages, SMTP sends email, FTP transfers files, Telnet connects one computer to another remotely and WAP served early mobile phones. A browser displays web pages, a server is also called a host, and a modem connects a home to the Internet. Caching keeps frequently used data in memory. The first page of a website is its home page.\n\nEvery public IP address is unique and each domain name maps to a numeric IP address. A URL is hierarchical and can contain symbols as well as letters and numbers. Benefits of the Internet include easy access to information and e-commerce. Word processing is not an Internet service. Email is fast and cheap but can spread viruses. Distance learning separates tutor and learner by location.\n\nKEY FORMULA: HTTP = web;  SMTP = email;  FTP = files;  TCP/IP = the Internet's core",
+      "keyFormula": "HTTP = web;  SMTP = email;  FTP = files;  TCP/IP = the Internet's core"
+    },
+    {
+      "id": "applications-and-ethics",
+      "title": "Applications, ethics and intellectual property",
+      "notes": "Computers are used in healthcare (diagnosis, records, tele-surgery, tele-diagnosis), education (online learning, edutainment), law (research, case files), transportation (GPS), manufacturing (CAM robots), design (CAD), training (simulation, such as flight simulators) and architecture (virtual reality walk-throughs). Command and control systems must be fault-tolerant. Social effects can be double-edged: social networks connect people but may isolate them, and misinformation is a problem of information veracity and control.\n\nEthics are the moral standards for computer use, and the Computer Ethics Institute wrote the Ten Commandments of Computer Ethics. Plagiarism is copying and publishing someone else's work without citation. Intellectual property rights protect creations of the mind through patents, trademarks, copyrights and trade secrets. Open source software has few or no copyright restrictions. A barcode is a set of vertical lines and spaces that identifies a product.\n\nKEY FORMULA: IP protection: patents, trademarks, copyrights, trade secrets",
+      "keyFormula": "IP protection: patents, trademarks, copyrights, trade secrets"
+    },
+    {
+      "id": "program-development-and-errors",
+      "title": "Program development, flowcharts and errors",
+      "notes": "The program development cycle has analysis, design, coding and execution. In the problem definition phase, a poor understanding leads to a program that solves the wrong problem. To build an algorithm you understand the problem, devise a plan, identify patterns and carry out the plan; coding comes afterwards. Pseudocode has a header, declarations, a body and a termination. Good programs are maintainable.\n\nFlowcharts give a visual picture of logic using standard symbols and directed lines. They must not be ambiguous, each processing symbol has one entry and one exit, and large flowcharts become hard to follow. Program, system and run flowcharts show different levels of detail. The control structures are sequence, selection (IF-THEN-ELSE, CASE) and repetition (WHILE and other loops).\n\nA syntax error breaks the language rules (misspelled keywords, missing brackets or semicolons, keywords as variable names) and the compiler finds it. A runtime error happens while the program runs (division by zero, square root of a negative number). A logical error runs normally but gives wrong results (a wrong salary scale) and is the hardest to detect.\n\nKEY FORMULA: Syntax = compile time;  runtime = while running;  logical = wrong answer, hardest to find",
+      "keyFormula": "Syntax = compile time;  runtime = while running;  logical = wrong answer, hardest to find"
+    }
+  ]
+}

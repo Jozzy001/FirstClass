@@ -1,0 +1,35 @@
+{
+  "courseCode": "STA112",
+  "topics": [
+    {
+      "id": "counting-and-factorials",
+      "title": "Counting and factorials",
+      "notes": "n! = n × (n − 1) × … × 1. Factorials simplify by cancelling: n!/(n − 2)! = n(n − 1) and (k + 2)!/(k − 1)! = (k + 2)(k + 1)k. A permutation counts ordered selections: ⁿPᵣ = n!/(n − r)!, so 13 × 12 × 11 × 10 = ¹³P₄. A combination counts unordered selections: ⁿCᵣ = n!/(r!(n − r)!). A committee of 6 from 24 people can be formed in ²⁴C₆ = 134,596 ways. If one person is never included, choose from the remaining n − 1.\n\nArranging letters with repeats: divide by the factorial of each repeated count. MONOPOLY has 8 letters with O three times, so 8!/3! = 6720. The multiplication rule: a die (6) followed by two coin flips (2 × 2) gives 24 outcomes.\n\nKEY FORMULA: ⁿPᵣ = n!/(n−r)!;  ⁿCᵣ = n!/(r!(n−r)!);  repeats: n!/(a!b!…)",
+      "keyFormula": "ⁿPᵣ = n!/(n−r)!;  ⁿCᵣ = n!/(r!(n−r)!);  repeats: n!/(a!b!…)"
+    },
+    {
+      "id": "probability-basics",
+      "title": "Probability basics",
+      "notes": "The sample space Ω is the set of all possible outcomes and each outcome is a sample point. An event is a subset of Ω. A trial is a single performance of the task that gives an outcome. Axioms: 0 ≤ P(A) ≤ 1, P(Ω) = 1, P(∅) = 0 and P(Aᶜ) = 1 − P(A). For equally likely outcomes, P(A) = (number of favourable outcomes)/(total outcomes). Addition rule: P(A or B) = P(A) + P(B) − P(A ∩ B).\n\nMutually exclusive events cannot happen together (they share no sample point), so P(A ∩ B) = 0 and P(A or B) = P(A) + P(B). Independent events satisfy P(A ∩ B) = P(A) × P(B). Conditional probability is P(A | B) = P(A ∩ B)/P(B). Reading a two-way table: divide the cell count by the grand total for a joint probability, or by the column total for a conditional one.\n\nWorked examples: at least one head in three tosses = 1 − (1/2)³ = 7/8; both balls green without replacement from 5 red and 4 green = (4/9)(3/8) = 1/6; 4-digit numbers with distinct digits = 9 × 9 × 8 × 7 = 4536 out of 9000 = 0.504.\n\nKEY FORMULA: P(A∪B) = P(A) + P(B) − P(A∩B);  independent: P(A∩B) = P(A)P(B)",
+      "keyFormula": "P(A∪B) = P(A) + P(B) − P(A∩B);  independent: P(A∩B) = P(A)P(B)"
+    },
+    {
+      "id": "random-variables",
+      "title": "Random variables",
+      "notes": "A random variable assigns a number to each outcome. A discrete random variable takes countable values (number of students, number of errors) and its distribution is a probability mass function (PMF), which lists each value with its probability. A continuous random variable takes any value in an interval (temperature) and is described by a probability density function (PDF). The probabilities of a PMF must add to 1, so a missing probability t = 1 − (sum of the others). The sample space for the number of eggs laid per day is {0, 1, 2, …}.\n\nKEY FORMULA: PMF: ΣP(x) = 1;  continuous → PDF;  discrete → PMF",
+      "keyFormula": "PMF: ΣP(x) = 1;  continuous → PDF;  discrete → PMF"
+    },
+    {
+      "id": "discrete-distributions",
+      "title": "Binomial, Poisson and geometric distributions",
+      "notes": "Bernoulli: a single trial with success probability p. Binomial(n, p): the number of successes in n independent trials, with mean np and variance npq (q = 1 − p). Binomial(10, 0.75) has mean 7.5 and variance 1.875. P(at least one success) = 1 − qⁿ. For a large n and small p, the binomial tends toward a Poisson distribution.\n\nPoisson(λ): counts of events in a fixed interval of time or space, with P(X = x) = λˣe^(−λ)/x!. The mean and the variance both equal λ. P(no events) = e^(−λ), so with λ = 2.5 this is 0.0821. Whether a drug works is a Bernoulli trial, not a Poisson count.\n\nGeometric(p): the number of independent trials until the first success, with P(X = x) = q^(x−1)p, mean 1/p and variance q/p². With p = 0.6, the first success on the third trial has probability 0.4² × 0.6 = 0.096 and the mean number of trials is 1/0.6 ≈ 1.67.\n\nKEY FORMULA: Binomial: mean np, var npq;  Poisson: mean = var = λ;  Geometric: mean 1/p",
+      "keyFormula": "Binomial: mean np, var npq;  Poisson: mean = var = λ;  Geometric: mean 1/p"
+    },
+    {
+      "id": "normal-distribution",
+      "title": "Normal distribution",
+      "notes": "The normal distribution is symmetric and bell-shaped, with mean = median = mode. X ~ N(μ, σ²) has density (1/(σ√(2π))) e^(−½((x−μ)/σ)²), and the first parameter is the mean and the second is the variance. Standardize with z = (x − μ)/σ and read the probability from the standard normal table.\n\nExamples: X ~ N(10, 36) has σ = 6, so P(X > 15) = P(Z > 0.833) = 0.2023. Car speeds N(25, 16) have σ = 4, so P(X > 20) = P(Z > −1.25) = 0.8944 and P(X ≤ 20) = 0.1056.\n\nKEY FORMULA: z = (x − μ)/σ;  variance = σ² (take the square root for σ)",
+      "keyFormula": "z = (x − μ)/σ;  variance = σ² (take the square root for σ)"
+    }
+  ]
+}

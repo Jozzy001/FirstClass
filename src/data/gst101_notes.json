@@ -1,0 +1,23 @@
+{
+  "courseCode": "GST101",
+  "topics": [
+    {
+      "id": "vocabulary",
+      "title": "Vocabulary",
+      "notes": "Words that came up: bespoke = custom-made; deluge = flood, or to overwhelm; render = deliver; cache = a hidden store or stockpile; mar = spoil; deference = respectful submission; hypocritical = pretending to feelings you do not have; to gag the press = to silence it; \"touched down\" is how an aircraft lands; \"blown up\" means destroyed by an explosion; \"make up for\" lost time means to compensate. An audience watches a show, an assembly or congregation is a gathering for a meeting or worship, and a convention is a formal conference.\n\nMore vocabulary from the continuation paper: use the sentence context to choose between near-synonyms, and learn the words in pairs (word and opposite). Check each sentence for the word that completes its logic (\"too ... to\", \"although ... yet\").\n\nOpposites: diabolical (devilish) is the opposite of saintly or angelic; flourishing (thriving) is the opposite of withering or dying; impudent (rude) is the opposite of respectful.\n\nKEY FORMULA: Match meaning from the context of the sentence",
+      "keyFormula": "Match meaning from the context of the sentence"
+    },
+    {
+      "id": "grammar-and-usage",
+      "title": "Grammar and usage",
+      "notes": "Past perfect (had + past participle) shows the earlier of two past events: \"We got to the hall after the play had started\", \"By the time the rainy season ended, the trees had doubled in size\". Third conditional: if + had + participle, would have + participle (\"If he had left earlier, he would not have been late\"; \"Had he known, he would have prepared\"). \"Had I not broken ...\" uses the participle broken.\n\nMore grammar: match subject and verb (a singular subject takes a singular verb, whatever sits between them), keep tenses consistent within a sentence, and use the right preposition after verbs and adjectives. Questions on articles test whether a noun needs a, an, the or no article.\n\nOther rules: \"just ... when\" (\"He had just entered when the telephone rang\"). \"I'd rather you\" takes the past simple (\"I'd rather you visited him\"). \"Sympathetic to\" takes the preposition to. \"A lot of argument\" is uncountable and \"recently\" needs the present perfect, so \"There has been\". Uncountable nouns such as milk take \"some\". In an indirect question, use normal word order (\"where you were going\").\n\nKEY FORMULA: Past perfect = earlier past;  3rd conditional: had + pp → would have + pp",
+      "keyFormula": "Past perfect = earlier past;  3rd conditional: had + pp → would have + pp"
+    },
+    {
+      "id": "library-skills",
+      "title": "Library skills",
+      "notes": "Library user education is the orientation given to patrons so they can find reading materials independently. Open access means users may browse the shelves and borrow books, subject to the library rules. The Special Collection section holds rare books, theses and dissertations, and government and international organization publications, whereas encyclopedias, yearbooks and almanacs belong to the reference section. An OPAC (Online Public Access Catalog) lets many users search at the same time from different terminals, which a card catalog cannot do.\n\nKEY FORMULA: OPAC: many users, many terminals;  encyclopedias = reference section",
+      "keyFormula": "OPAC: many users, many terminals;  encyclopedias = reference section"
+    }
+  ]
+}

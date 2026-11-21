@@ -1,0 +1,2703 @@
+{
+  "courseCode": "ZOO101",
+  "topics": [
+    {
+      "id": "cell-and-organelles",
+      "questions": [
+        {
+          "id": "zoo101-cel-01",
+          "prompt": "Where are food materials stored in the cell?",
+          "options": [
+            "Cytoplasm",
+            "Cell membrane",
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome"
+          ],
+          "correctIndex": 0,
+          "explanation": "Food reserves are stored in the cytoplasm. Mitochondria release energy and the nucleus holds the DNA.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-02",
+          "prompt": "Which of these is known as the \"protein workbench\" of the cell?",
+          "options": [
+            "Golgi body",
+            "Microtubules",
+            "Ribosomes",
+            "Mitochondria",
+            "Nucleus"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ribosomes are where amino acids are joined into proteins.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-03",
+          "prompt": "Which of these organelles sometimes acts as a \"suicide bag\"?",
+          "options": [
+            "Nucleus",
+            "Ribosome",
+            "Lysosome",
+            "Centriole",
+            "Microtubule"
+          ],
+          "correctIndex": 2,
+          "explanation": "Lysosomes hold digestive enzymes. If they burst they digest the cell, so they are called suicide bags.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-04",
+          "prompt": "The largest and most easily seen organelle within a eukaryotic cell is the ________.",
+          "options": [
+            "nucleus",
+            "ribosomes",
+            "microtubules",
+            "centrioles"
+          ],
+          "correctIndex": 0,
+          "explanation": "The nucleus is the largest and most easily seen organelle.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-05",
+          "prompt": "Another functional name for the nucleus is the ________.",
+          "options": [
+            "organizing center",
+            "digestion center",
+            "export center",
+            "information center"
+          ],
+          "correctIndex": 3,
+          "explanation": "The nucleus holds the DNA, the cell's genetic information, so it is the information center.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-06",
+          "prompt": "Another descriptive nickname for the nucleus is the ________.",
+          "options": [
+            "organization center",
+            "digestion center",
+            "export center",
+            "sorting center",
+            "information center"
+          ],
+          "correctIndex": 4,
+          "explanation": "The nucleus holds the DNA, so it is called the information center of the cell.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-07",
+          "prompt": "The nucleus is also known as the ________.",
+          "options": [
+            "information center",
+            "energy house",
+            "export center",
+            "All of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The energy house is the mitochondrion and the export center is the Golgi body. The nucleus is the information center.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-08",
+          "prompt": "What is the function of the smooth endoplasmic reticulum?",
+          "options": [
+            "Intracellular communication",
+            "Synthesis and transport of proteins",
+            "Generating energy for the cell",
+            "Synthesizing and transporting carbohydrates",
+            "Synthesizing and transporting lipids and steroid hormones"
+          ],
+          "correctIndex": 4,
+          "explanation": "Smooth ER has no ribosomes. It makes lipids and steroid hormones, while rough ER makes proteins.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-09",
+          "prompt": "Polysomes (polyribosomes) are groups of ________ lying freely or attached to membranes.",
+          "options": [
+            "endoplasmic reticulum",
+            "cells",
+            "microtubules",
+            "ribosomes"
+          ],
+          "correctIndex": 3,
+          "explanation": "A polysome is a string of ribosomes reading one mRNA at the same time.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-10",
+          "prompt": "The outer membrane of the nuclear envelope is continuous with which interior membrane system of the cytoplasm?",
+          "options": [
+            "nucleolus",
+            "cytoplasm",
+            "centrioles",
+            "nucleus",
+            "None of the above (it is the endoplasmic reticulum)"
+          ],
+          "correctIndex": 4,
+          "explanation": "The outer nuclear membrane is continuous with the endoplasmic reticulum, which is not listed.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-11",
+          "prompt": "Animal cells possess all of the following structures EXCEPT:",
+          "options": [
+            "centrioles",
+            "pinocytotic vesicles",
+            "microvilli",
+            "plastids",
+            "lysosomes"
+          ],
+          "correctIndex": 3,
+          "explanation": "Plastids such as chloroplasts belong to plant cells and some protists.",
+          "source": "ZOO 101 practice set and ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-12",
+          "prompt": "________ are barrel-shaped organelles found in cells of animals and most protists.",
+          "options": [
+            "Nucleolus",
+            "Cytoplasm",
+            "Centrioles",
+            "Nucleus",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Centrioles are small barrel-shaped organelles built from microtubules.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-13",
+          "prompt": "Which of these carries hereditary material?",
+          "options": [
+            "Cytoplasm",
+            "Golgi body",
+            "Chromosome",
+            "Lysosome"
+          ],
+          "correctIndex": 2,
+          "explanation": "Genes lie on chromosomes, which are made of DNA and protein.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-14",
+          "prompt": "Which statement is FALSE about eukaryotic cells?",
+          "options": [
+            "They have membrane-bound nuclei.",
+            "Their DNA is not associated with histones.",
+            "They contain more DNA than prokaryotes.",
+            "They usually divide by mitosis.",
+            "They have RNA."
+          ],
+          "correctIndex": 1,
+          "explanation": "Eukaryotic DNA is wrapped around histone proteins. The other statements are true.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-15",
+          "prompt": "The chromosome (nucleoid) of a prokaryote is found in the ________.",
+          "options": [
+            "nucleoid region",
+            "cytoplasm",
+            "nucleus",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A prokaryote has no nucleus. Its DNA lies in a region called the nucleoid.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-16",
+          "prompt": "The correspondence between the sequence of bases in DNA/RNA and the sequence of amino acids in a protein is known as the ________.",
+          "options": [
+            "genetic programming",
+            "genetic information",
+            "genetic code",
+            "genetic drift",
+            "genetic transfer"
+          ],
+          "correctIndex": 2,
+          "explanation": "The genetic code links base triplets (codons) to amino acids.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-17",
+          "prompt": "Mature mammalian erythrocytes (red blood cells) have how many nuclei?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "None (0)"
+          ],
+          "correctIndex": 4,
+          "explanation": "Mammalian red blood cells lose their nuclei as they mature.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-18",
+          "prompt": "Mammalian erythrocytes ________ their nuclei at maturity.",
+          "options": [
+            "divide",
+            "lose",
+            "decrease",
+            "increase",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mammalian red cells lose the nucleus as they mature, leaving more room for haemoglobin.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-19",
+          "prompt": "Antonie van Leeuwenhoek lived as a scientist between ________.",
+          "options": [
+            "1730–1790",
+            "1632–1723",
+            "1630–1690",
+            "1520–1505",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leeuwenhoek lived from 1632 to 1723 and was the first to see bacteria and protozoa.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-20",
+          "prompt": "Which of these is NOT a general feature of living systems?",
+          "options": [
+            "Metabolism",
+            "Development",
+            "Breathing",
+            "Environmental interaction",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "General features of life include chemical composition, metabolism, development and response to the environment. Breathing is specific to some animals.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-21",
+          "prompt": "Which feature of living systems aids nutrition?",
+          "options": [
+            "Metabolism",
+            "Reproduction",
+            "Development",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Metabolism covers the chemical reactions that handle food: digestion, absorption and use.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-22",
+          "prompt": "Which of the following is NOT a biological macromolecule?",
+          "options": [
+            "Carbohydrate",
+            "Lipid",
+            "Glucose",
+            "Nucleic acid",
+            "Protein"
+          ],
+          "correctIndex": 2,
+          "explanation": "Glucose is a monosaccharide, the small unit that builds carbohydrate polymers.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-23",
+          "prompt": "Macromolecules in living systems include ________.",
+          "options": [
+            "proteins",
+            "carbohydrates",
+            "lipids",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Proteins, carbohydrates, lipids and nucleic acids are the major biological macromolecules.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-24",
+          "prompt": "________ are the monomeric subunits of protein macromolecules.",
+          "options": [
+            "Amino acids",
+            "Simple sugars",
+            "Glycerol",
+            "Nucleotides",
+            "Fatty acids"
+          ],
+          "correctIndex": 0,
+          "explanation": "Proteins are chains of amino acids.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-25",
+          "prompt": "Histology is the microscopic study of the ________ of cells and tissues.",
+          "options": [
+            "functions",
+            "history",
+            "detailed structure",
+            "interactions",
+            "reactions"
+          ],
+          "correctIndex": 2,
+          "explanation": "Histology is the study of the microscopic structure of cells and tissues.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-26",
+          "prompt": "A common histological stain that stains the cytoplasm of a cell pink is ________.",
+          "options": [
+            "hematoxylin",
+            "eosin",
+            "periodic acid–Schiff (PAS)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Eosin stains cytoplasm pink. Hematoxylin stains nuclei blue-purple.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-27",
+          "prompt": "All of the following EXCEPT one are basic categories of animal tissues:",
+          "options": [
+            "connective tissue",
+            "nervous tissue",
+            "muscular tissue",
+            "serous tissue",
+            "none of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The four basic animal tissues are epithelial, connective, muscle and nervous. Serous describes a type of secretion.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-cel-28",
+          "prompt": "Which of these statements is FALSE about cells?",
+          "options": [
+            "They are the functional unit of life.",
+            "They are the fabric of life.",
+            "They are the smallest independent unit of life.",
+            "They are the basic organizational unit of life.",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "All four statements are accepted descriptions of the cell, so the answer is probably E (none of the above), but it is not a standard textbook item.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "All four statements look true. Please confirm whether the key is E or whether one option was altered."
+        },
+        {
+          "id": "zoo101-cel-29",
+          "prompt": "All of the following EXCEPT one are general features of living systems:",
+          "options": [
+            "chemical composition",
+            "metabolism",
+            "development",
+            "environmental relationship"
+          ],
+          "correctIndex": null,
+          "explanation": "All four are general features of living systems.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "All four options are general features, so no option is the exception. The paper may have a missing option. Needs the original."
+        },
+        {
+          "id": "zoo101-cel-30",
+          "prompt": "Which of these carries hereditary material?",
+          "options": [
+            "Nucleus",
+            "Chromosomes",
+            "Cytoplasm",
+            "Protein",
+            "Nucleoprotein"
+          ],
+          "correctIndex": null,
+          "explanation": "Chromosomes carry the genes. Nucleoprotein (DNA + protein) is also defensible.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Chromosomes and nucleoprotein are both defensible. Needs the key."
+        },
+        {
+          "id": "zoo101-cel-31",
+          "prompt": "Freshwater zooplankton known as filter feeders are usually abundant in which months of the year?",
+          "options": [
+            "November / December",
+            "September / October",
+            "July / August",
+            "January / February",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "This depends on a local seasonal pattern that is not taught in a standard text.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Needs the key from the lecturer or course notes."
+        },
+        {
+          "id": "zoo101-cel-32",
+          "prompt": "Which of these statements is FALSE?",
+          "options": [
+            "A cell is mainly composed of a nucleus and cytoplasm.",
+            "Mammalian red blood cells have no nucleus.",
+            "Liver cells (hepatocytes) occasionally have two nuclei.",
+            "Osteoclasts have seven or more nuclei.",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "All four statements are accepted, so the key is probably E.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "All four look true. Please confirm the key."
+        }
+      ]
+    },
+    {
+      "id": "membrane-and-transport",
+      "questions": [
+        {
+          "id": "zoo101-mem-01",
+          "prompt": "Carrier-mediated transport of molecules through the cell membrane using transport proteins embedded in the membrane is called ________.",
+          "options": [
+            "active transport",
+            "osmosis",
+            "filtration",
+            "facilitated diffusion",
+            "pinocytosis"
+          ],
+          "correctIndex": 3,
+          "explanation": "Facilitated diffusion uses carrier or channel proteins and moves molecules down their gradient.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set and ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-02",
+          "prompt": "Carrier-assisted transport of large molecules aided by transport proteins is referred to as ________.",
+          "options": [
+            "pinocytosis",
+            "phagocytosis",
+            "facilitated diffusion",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Transport proteins in the membrane carry molecules by facilitated diffusion.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-03",
+          "prompt": "Which of these requires cellular energy (ATP)?",
+          "options": [
+            "Facilitated diffusion",
+            "Active transport",
+            "Simple diffusion",
+            "Osmosis",
+            "Filtration"
+          ],
+          "correctIndex": 1,
+          "explanation": "Active transport moves molecules against the gradient and uses ATP.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-04",
+          "prompt": "________ is a type of transport that does not require chemical energy.",
+          "options": [
+            "Passive transport",
+            "Active transport",
+            "Distillation",
+            "Flushing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Passive transport follows the concentration gradient and needs no ATP.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-05",
+          "prompt": "The basic structure of the plasma membrane is a ________.",
+          "options": [
+            "granule",
+            "centriole",
+            "phospholipid bilayer",
+            "genetic material"
+          ],
+          "correctIndex": 2,
+          "explanation": "The membrane is made of a phospholipid bilayer with proteins embedded in it.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-06",
+          "prompt": "Which of the following is a passive transport process?",
+          "options": [
+            "Facilitated diffusion",
+            "Endocytosis",
+            "Exocytosis",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Endocytosis and exocytosis need ATP. Facilitated diffusion does not.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-07",
+          "prompt": "Which type of transport across the cell membrane does NOT rely solely on passive permeability along a concentration gradient?",
+          "options": [
+            "Endocytosis",
+            "Simple diffusion",
+            "Osmosis",
+            "Filtration",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Endocytosis is a bulk transport that needs energy. The others are passive.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-08",
+          "prompt": "Bulk transport of material out of a cell is known as ________.",
+          "options": [
+            "cell maintenance",
+            "exocytosis",
+            "diffusion",
+            "osmosis"
+          ],
+          "correctIndex": 1,
+          "explanation": "Exocytosis moves material out in vesicles. Endocytosis brings it in.",
+          "source": "ZOO 101 practice set and ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-09",
+          "prompt": "The ________ acts as a gatekeeper regulating the entry and exit of substances involved in cell metabolism.",
+          "options": [
+            "centriole",
+            "plasma membrane",
+            "lysosome",
+            "Golgi body"
+          ],
+          "correctIndex": 1,
+          "explanation": "The plasma membrane is selectively permeable and controls what enters and leaves.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-10",
+          "prompt": "All biological membranes primarily contain ________.",
+          "options": [
+            "proteins and carbohydrates",
+            "carbohydrates and lipids",
+            "proteins and mineral salts",
+            "proteins and lipids"
+          ],
+          "correctIndex": 3,
+          "explanation": "Biological membranes are mostly lipids and proteins.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-11",
+          "prompt": "________ contains roughly 18% protein and 76% lipid.",
+          "options": [
+            "Plasma membrane",
+            "Mitochondria",
+            "Myelin",
+            "Phospholipid bilayer",
+            "RNA"
+          ],
+          "correctIndex": 2,
+          "explanation": "Myelin is about 80% lipid, which is why it insulates nerve fibres.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-12",
+          "prompt": "Depolymerization is inhibited in microtubules through the binding of ________ to each end.",
+          "options": [
+            "deoxyribose phosphate",
+            "guanosine triphosphate (GTP)",
+            "centrioles",
+            "DNA"
+          ],
+          "correctIndex": 1,
+          "explanation": "A GTP cap at the end of a microtubule stops it from depolymerizing.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mem-13",
+          "prompt": "________ proteins move cellular organelles toward the center (minus end) of the cell.",
+          "options": [
+            "Amino acid",
+            "Kinesin",
+            "Dyneins",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Dyneins walk toward the minus end of microtubules, near the centre. Kinesins walk toward the plus end.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        }
+      ]
+    },
+    {
+      "id": "cell-division",
+      "questions": [
+        {
+          "id": "zoo101-div-01",
+          "prompt": "Which phase of cell division has the chromosomes lining up at the equator of the spindle?",
+          "options": [
+            "telophase",
+            "anaphase",
+            "metaphase",
+            "prophase"
+          ],
+          "correctIndex": 2,
+          "explanation": "In metaphase the chromosomes align on the metaphase plate at the cell equator.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-02",
+          "prompt": "A pair of centrioles is referred to as a ________.",
+          "options": [
+            "centromere",
+            "centrosome",
+            "chromatids",
+            "chromatins",
+            "chromosomes"
+          ],
+          "correctIndex": 1,
+          "explanation": "A centrosome is a pair of centrioles with surrounding material that organises the spindle.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-03",
+          "prompt": "________ is typically the longest phase in mitosis.",
+          "options": [
+            "Prophase",
+            "Metaphase",
+            "Telophase",
+            "Anaphase"
+          ],
+          "correctIndex": 0,
+          "explanation": "Prophase is usually the longest stage of mitosis.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-04",
+          "prompt": "Synapsis allows for ________.",
+          "options": [
+            "growth and development",
+            "exchange of genetic material",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Synapsis pairs homologous chromosomes so that crossing over can exchange genetic material.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-05",
+          "prompt": "Chromosomes are replicated during the ________ phase of interphase.",
+          "options": [
+            "Synthesis (S)",
+            "Growth (G1 / G2)",
+            "Reproductive"
+          ],
+          "correctIndex": 0,
+          "explanation": "DNA is copied in the S (synthesis) phase.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-06",
+          "prompt": "In a diploid human somatic cell after S phase, how many chromatids are present?",
+          "options": [
+            "46 chromatids",
+            "92 chromatids",
+            "92 centromeres",
+            "92 chromosomes",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "There are still 46 chromosomes but each has two sister chromatids, so 92 chromatids.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-07",
+          "prompt": "Before cell division, each chromosome replicates to produce two identical ________.",
+          "options": [
+            "sister chromatins",
+            "sister centromeres",
+            "sister chromosomes",
+            "sister centrosomes",
+            "sister chromatids"
+          ],
+          "correctIndex": 4,
+          "explanation": "Replication gives two identical sister chromatids joined at the centromere.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-08",
+          "prompt": "A large proteinaceous structure that forms between aligned homologous chromosomes during meiotic prophase is the ________.",
+          "options": [
+            "synaptonemal complex",
+            "microtubule-organizing center",
+            "phospholipid structure",
+            "protease",
+            "zygotene structure"
+          ],
+          "correctIndex": 0,
+          "explanation": "The synaptonemal complex holds homologues together during synapsis.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-09",
+          "prompt": "A point of contact where crossing over occurs between non-sister chromatids is called a ________.",
+          "options": [
+            "diakinesis",
+            "diplotene",
+            "synapsis",
+            "tetrad",
+            "chiasma"
+          ],
+          "correctIndex": 4,
+          "explanation": "A chiasma is the X-shaped point where non-sister chromatids have crossed over.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-10",
+          "prompt": "Crossing over takes place at which stage of meiosis?",
+          "options": [
+            "Metaphase",
+            "Prophase I",
+            "Telophase",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Crossing over takes place in prophase I (pachytene).",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-11",
+          "prompt": "Which of these is NOT part of mitosis?",
+          "options": [
+            "Interphase",
+            "Telophase",
+            "Prophase",
+            "Metaphase",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Interphase is the stage before mitosis. Mitosis is prophase, metaphase, anaphase and telophase.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-12",
+          "prompt": "Which of these is NOT a biological significance of mitosis?",
+          "options": [
+            "Genetic stability",
+            "Cell replacement",
+            "Regeneration",
+            "Genetic variation",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Genetic variation comes from meiosis. Mitosis gives genetically identical cells.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-13",
+          "prompt": "Which division produces a large ootid (ovum) and a very small second polar body?",
+          "options": [
+            "Egg formation",
+            "First meiotic division",
+            "Second meiotic division",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The second meiotic division splits the secondary oocyte into a large ootid and a small second polar body.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-div-14",
+          "prompt": "The following processes occur in telophase EXCEPT:",
+          "options": [
+            "chromatids reach the polar ends of the spindle fibers",
+            "chromatids become densely packed together",
+            "centrioles replicate",
+            "the nuclear membrane is re-formed",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Centrioles replicate in interphase (S phase), not telophase. Chromatids also become densely packed in prophase, not telophase.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Both options B and C can be argued as not happening in telophase. Needs the key."
+        },
+        {
+          "id": "zoo101-div-15",
+          "prompt": "Independent assortment of chromosomes and crossing over cause ________.",
+          "options": [
+            "genetic similarities",
+            "genetic variations",
+            "genetic recombination",
+            "genetic force",
+            "genetic delay"
+          ],
+          "correctIndex": null,
+          "explanation": "Both genetic variation and genetic recombination are accepted.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options B and C are both defensible. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "dna-and-inheritance",
+      "questions": [
+        {
+          "id": "zoo101-gen-01",
+          "prompt": "The transmission of traits from parents to their offspring is referred to as ________.",
+          "options": [
+            "generation",
+            "heredity",
+            "transmission",
+            "phylogeny"
+          ],
+          "correctIndex": 1,
+          "explanation": "Heredity is the passing of traits from parents to offspring.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-02",
+          "prompt": "DNA contains ________.",
+          "options": [
+            "glucose sulfate",
+            "sugar phosphate",
+            "deoxyribose lactate",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The DNA backbone is made of deoxyribose sugar joined by phosphate groups.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-03",
+          "prompt": "DNA is made up of linear chains of subunits known as ________.",
+          "options": [
+            "nucleic acids",
+            "nucleotides",
+            "nucleoproteins",
+            "nucleosides",
+            "all of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The subunits of DNA are nucleotides, each with a sugar, a phosphate and a base.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-04",
+          "prompt": "________ is a very long, linear chain of nucleotides, each containing a sugar-phosphate backbone and a nitrogenous base.",
+          "options": [
+            "Adenine",
+            "Cytosine",
+            "Guanine",
+            "DNA",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The long chain of nucleotides is DNA. Adenine, cytosine and guanine are only bases.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-05",
+          "prompt": "Genes carried on the sex chromosomes are said to be ________.",
+          "options": [
+            "sister chromatids",
+            "sex-linked",
+            "resistant",
+            "dominant"
+          ],
+          "correctIndex": 1,
+          "explanation": "Genes on the sex chromosomes are sex-linked.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-06",
+          "prompt": "Traits that appear in the F1 generation when parents with different traits are crossed are said to be ________.",
+          "options": [
+            "resistant",
+            "dominant",
+            "significant",
+            "recessive"
+          ],
+          "correctIndex": 1,
+          "explanation": "The trait that appears in F1 is dominant. The hidden one is recessive.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "sourceNote": "Original wording: \"Traits transmitted unchanged from parents to the F1 generation\"."
+        },
+        {
+          "id": "zoo101-gen-07",
+          "prompt": "All of the following are sex-linked or sex-influenced EXCEPT:",
+          "options": [
+            "red-white eye color in Drosophila",
+            "premature balding",
+            "hemophilia",
+            "red-green color blindness in humans",
+            "height"
+          ],
+          "correctIndex": 4,
+          "explanation": "Height is controlled by many genes on autosomes and is not sex-linked.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-08",
+          "prompt": "How many pairs of chromosomes are present in human somatic cells?",
+          "options": [
+            "21 pairs",
+            "22 pairs",
+            "23 pairs",
+            "46 pairs",
+            "44 pairs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Human somatic cells have 46 chromosomes, which is 23 pairs.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-09",
+          "prompt": "The axial and appendicular skeletons in humans consist of ________ and ________ bones respectively.",
+          "options": [
+            "206 and 80",
+            "126 and 80",
+            "80 and 126",
+            "80 and 206",
+            "206 and 126"
+          ],
+          "correctIndex": 2,
+          "explanation": "The axial skeleton has 80 bones and the appendicular skeleton has 126, making 206 in total.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-gen-10",
+          "prompt": "Sex-linked traits/genes include all of the following EXCEPT:",
+          "options": [
+            "short-sightedness (myopia)",
+            "red-green color blindness",
+            "hemophilia",
+            "premature baldness"
+          ],
+          "correctIndex": null,
+          "explanation": "Colour blindness and hemophilia are X-linked. Premature baldness is sex-influenced and myopia is not sex-linked.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Myopia and premature baldness are both arguably not sex-linked. Needs the key."
+        },
+        {
+          "id": "zoo101-gen-11",
+          "prompt": "Traits carried by genes on the sex chromosomes include all of the following EXCEPT:",
+          "options": [
+            "red-white eye color in Drosophila",
+            "red-green color blindness in humans",
+            "hemophilia (bleeder's disease)",
+            "premature baldness",
+            "albinism"
+          ],
+          "correctIndex": null,
+          "explanation": "Albinism is autosomal. Premature baldness is sex-influenced, not strictly sex-linked.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options D and E are both arguably not sex-linked. Needs the key."
+        },
+        {
+          "id": "zoo101-gen-12",
+          "prompt": "Which of these hormones is a steroid hormone?",
+          "options": [
+            "Follicle-stimulating hormone",
+            "Inhibin",
+            "Testosterone",
+            "Luteinizing hormone",
+            "Estrogen"
+          ],
+          "correctIndex": null,
+          "explanation": "Testosterone and estrogen are both steroid hormones.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options C and E are both correct. Needs the original single answer."
+        }
+      ]
+    },
+    {
+      "id": "gametes-and-embryology",
+      "questions": [
+        {
+          "id": "zoo101-emb-01",
+          "prompt": "How many functional daughter cells (ova) are produced at the end of oogenesis from a primary oocyte?",
+          "options": [
+            "4",
+            "2",
+            "1",
+            "3"
+          ],
+          "correctIndex": 2,
+          "explanation": "One primary oocyte gives one functional ovum and polar bodies.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-02",
+          "prompt": "The ________ and ________ control spermatogenesis.",
+          "options": [
+            "thyroid and hypothalamus",
+            "hypothalamus and anterior pituitary gland",
+            "medulla and anterior pituitary gland"
+          ],
+          "correctIndex": 1,
+          "explanation": "The hypothalamus releases GnRH and the anterior pituitary releases FSH and LH.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "sourceNote": "Options (a) and (d) were identical in the typed paper; one copy removed."
+        },
+        {
+          "id": "zoo101-emb-03",
+          "prompt": "How many daughter cells are produced at the end of spermatogenesis from a primary spermatocyte?",
+          "options": [
+            "4",
+            "6",
+            "2",
+            "1",
+            "3"
+          ],
+          "correctIndex": 0,
+          "explanation": "One primary spermatocyte gives four spermatids and so four sperm.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-04",
+          "prompt": "In humans, sperm can only fertilize the secondary oocyte after spending how long in the female reproductive tract (capacitation)?",
+          "options": [
+            "a few seconds",
+            "a few minutes",
+            "a few hours",
+            "several days",
+            "several weeks"
+          ],
+          "correctIndex": 2,
+          "explanation": "Capacitation takes a few hours.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-05",
+          "prompt": "Sperm usually spend ________ hours in the female genital tract before fertilizing the oocyte.",
+          "options": [
+            "about 6 hours",
+            "about 9 hours",
+            "about 7 hours",
+            "about 8 hours",
+            "about 10 hours"
+          ],
+          "correctIndex": 2,
+          "explanation": "Human sperm need about 7 hours of capacitation in the female tract.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-06",
+          "prompt": "The activating process of sperm inside the female genital tract before fertilization is known as ________.",
+          "options": [
+            "capacitation",
+            "acrosome reaction",
+            "cortical reaction",
+            "gastrulation",
+            "development"
+          ],
+          "correctIndex": 0,
+          "explanation": "Capacitation makes sperm able to fertilize an egg.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-07",
+          "prompt": "The human sperm production rate is approximately ________.",
+          "options": [
+            "20 million per second",
+            "120 million per hour",
+            "120 million per day",
+            "120 million per week",
+            "120 million per year"
+          ],
+          "correctIndex": 2,
+          "explanation": "A man makes roughly 120 million sperm per day.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-08",
+          "prompt": "________ is responsible for inhibiting and regulating spermatogenesis.",
+          "options": [
+            "Glycoprotein",
+            "Inhibin",
+            "Dyneins",
+            "Kinesin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Inhibin from the Sertoli cells slows FSH release and so regulates spermatogenesis.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-09",
+          "prompt": "Cleavage results in the formation of a mass of cells called a ________.",
+          "options": [
+            "blastula",
+            "mesenchyme",
+            "gastrula",
+            "ectoderm"
+          ],
+          "correctIndex": 0,
+          "explanation": "Cleavage divides the zygote into a ball of cells, the blastula.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-10",
+          "prompt": "The visible sign of the cortical reaction is ________.",
+          "options": [
+            "lysosome multiplication",
+            "thickening/elevation of the vitelline membrane (fertilization membrane)",
+            "cell breakdown",
+            "chromosome duplication"
+          ],
+          "correctIndex": 1,
+          "explanation": "After a sperm enters, the vitelline membrane lifts and hardens into the fertilization membrane.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-11",
+          "prompt": "All of the following are types of cleavage pattern based on yolk content EXCEPT:",
+          "options": [
+            "Isolecithal",
+            "Telolecithal",
+            "Discoidal",
+            "Radial"
+          ],
+          "correctIndex": 3,
+          "explanation": "Radial cleavage describes the plane of division, not the yolk content.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-12",
+          "prompt": "What type of cleavage results when an egg has little or no yolk?",
+          "options": [
+            "Unequal cleavage",
+            "Equal and holoblastic cleavage",
+            "No cleavage",
+            "Minute cleavage",
+            "Meroblastic cleavage"
+          ],
+          "correctIndex": 1,
+          "explanation": "A yolk-poor egg divides completely and equally (holoblastic).",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-13",
+          "prompt": "Cleavage in an egg with little or no yolk is known as ________ cleavage.",
+          "options": [
+            "holoblastic",
+            "meroblastic",
+            "triploblastic",
+            "bilateral"
+          ],
+          "correctIndex": 0,
+          "explanation": "Little yolk allows the whole egg to divide, which is holoblastic cleavage.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-14",
+          "prompt": "Morphogenetic movement transforms the hollow spherical blastula into a ________.",
+          "options": [
+            "embryo",
+            "egg cell",
+            "gastrula",
+            "blastocoel"
+          ],
+          "correctIndex": 2,
+          "explanation": "Gastrulation reshapes the blastula into the gastrula.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-15",
+          "prompt": "Mollusks, annelids, nemerteans and some flatworms undergo which type of cleavage?",
+          "options": [
+            "Spiral cleavage",
+            "Bilateral cleavage",
+            "Radial cleavage",
+            "Biradial cleavage",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "These spiralian animals show spiral cleavage.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-16",
+          "prompt": "Primary germ layers of triploblastic animals include all of the following EXCEPT:",
+          "options": [
+            "ectoderm",
+            "endoderm",
+            "mesoderm",
+            "none of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "All three layers (ectoderm, mesoderm and endoderm) are present, so none is the exception.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-17",
+          "prompt": "The epidermis is derived from which embryological germ layer?",
+          "options": [
+            "Endoderm",
+            "Mesoderm",
+            "Ectoderm",
+            "Protoplasm"
+          ],
+          "correctIndex": 2,
+          "explanation": "The epidermis comes from ectoderm.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-18",
+          "prompt": "Which of these tissues are derived from the mesoderm?",
+          "options": [
+            "Connective and muscular tissue",
+            "Connective and nervous tissue",
+            "Epithelial and muscular tissue",
+            "Epithelial and nervous tissue"
+          ],
+          "correctIndex": 0,
+          "explanation": "Connective and muscle tissue come from mesoderm. Nervous tissue comes from ectoderm.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-19",
+          "prompt": "Epithelial tissues can be derived from which embryological germ layer(s)?",
+          "options": [
+            "Endoderm",
+            "Mesoderm",
+            "Ectoderm",
+            "All three germ layers"
+          ],
+          "correctIndex": 3,
+          "explanation": "Epithelia arise from ectoderm, mesoderm and endoderm.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-20",
+          "prompt": "The circulatory system is formed from the ________.",
+          "options": [
+            "epidermis",
+            "dermis",
+            "mesoderm",
+            "epimere",
+            "hypomere"
+          ],
+          "correctIndex": 2,
+          "explanation": "The heart, blood and blood vessels develop from mesoderm.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-21",
+          "prompt": "Which of these is formed from the mesoderm?",
+          "options": [
+            "Excretory system",
+            "Liver",
+            "Middle ear",
+            "Receptors",
+            "Nose"
+          ],
+          "correctIndex": 0,
+          "explanation": "The excretory system develops from mesoderm. The liver is endodermal and receptors and nose are ectodermal.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-22",
+          "prompt": "The ________ is a transitory endocrine gland formed from the ruptured follicle that secretes progesterone and estrogen.",
+          "options": [
+            "progesterone",
+            "corpus luteum",
+            "estrogen",
+            "ovarian follicle",
+            "gonadotropin"
+          ],
+          "correctIndex": 1,
+          "explanation": "After ovulation the ruptured follicle becomes the corpus luteum.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-23",
+          "prompt": "When does the production of oogonia occur in human females?",
+          "options": [
+            "During puberty",
+            "During fetal development",
+            "During fertilization",
+            "During childbirth",
+            "During adulthood"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oogonia form and divide during fetal development.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-24",
+          "prompt": "Which is NOT a gonadotropin?",
+          "options": [
+            "FSH",
+            "LH",
+            "Testosterone",
+            "Inhibin",
+            "C and D"
+          ],
+          "correctIndex": 4,
+          "explanation": "FSH and LH are gonadotropins. Testosterone and inhibin are not.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-emb-25",
+          "prompt": "In a typical 28-day cycle, how many days does it take for the corpus luteum to start degenerating if fertilization fails to occur?",
+          "options": [
+            "About 10 days",
+            "About 14–15 days",
+            "About 18 days",
+            "About 25 days",
+            "About 28 days"
+          ],
+          "correctIndex": null,
+          "explanation": "The corpus luteum lasts about 10–14 days after ovulation. Books differ.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Textbooks give 10 days, 12 days and 14 days. Needs the lecturer's figure."
+        },
+        {
+          "id": "zoo101-emb-26",
+          "prompt": "At birth, approximately how many follicles are present in a human ovary?",
+          "options": [
+            "4 million",
+            "2 million",
+            "3 million",
+            "1 million",
+            "200–400 thousand"
+          ],
+          "correctIndex": null,
+          "explanation": "Textbooks give 1–2 million follicles at birth.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Both 1 million and 2 million are cited. Needs the key."
+        },
+        {
+          "id": "zoo101-emb-27",
+          "prompt": "Which statement is NOT true?",
+          "options": [
+            "Spermatogenesis begins from primordial germ cells.",
+            "Oogenesis begins from germinal epithelial cells.",
+            "Spermatogenesis is controlled by the hypothalamus and anterior pituitary gland working together.",
+            "All of the above.",
+            "None of the above."
+          ],
+          "correctIndex": null,
+          "explanation": "A and C are standard statements. B is a debated way of describing oogenesis.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Unclear which statement the key marks as false. Needs the original key."
+        },
+        {
+          "id": "zoo101-emb-28",
+          "prompt": "Which are core unifying theories that guide the study of zoology?",
+          "options": [
+            "Evolution",
+            "Inheritance",
+            "Chromosomal theory of inheritance",
+            "A and B",
+            "A and C"
+          ],
+          "correctIndex": null,
+          "explanation": "Evolution, inheritance and the chromosomal theory are all given as unifying theories in different texts.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "More than one combination can be argued. Needs the key."
+        },
+        {
+          "id": "zoo101-emb-29",
+          "prompt": "The ________ is a derivative of the mesoderm.",
+          "options": [
+            "neural tube",
+            "spinal cord",
+            "skull",
+            "notochord",
+            "neural crest"
+          ],
+          "correctIndex": null,
+          "explanation": "The notochord and much of the skull are mesodermal.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Notochord and skull are both defensible. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "epithelium-and-glands",
+      "questions": [
+        {
+          "id": "zoo101-epi-01",
+          "prompt": "Stratified squamous epithelium ________.",
+          "options": [
+            "is located in the male urethra",
+            "lines the esophagus, mouth and vagina",
+            "lines the bladder",
+            "lines the air sacs of the lungs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stratified squamous epithelium resists wear and lines the mouth, oesophagus and vagina.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-02",
+          "prompt": "A type of exocrine gland in which secretory products are released without damaging the cell is a ________.",
+          "options": [
+            "merocrine gland",
+            "apocrine gland",
+            "holocrine gland",
+            "endocrine gland"
+          ],
+          "correctIndex": 0,
+          "explanation": "Merocrine glands release secretions by exocytosis and the cell stays intact.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-03",
+          "prompt": "An example of a holocrine gland is the ________.",
+          "options": [
+            "sebaceous gland of the skin",
+            "salivary gland",
+            "mammary gland",
+            "pituitary gland"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sebaceous gland cells break down completely to form sebum.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-04",
+          "prompt": "Which of these types of epithelium has flattened cells?",
+          "options": [
+            "Cuboidal epithelium",
+            "Columnar epithelium",
+            "Transitional epithelium",
+            "Squamous epithelium"
+          ],
+          "correctIndex": 3,
+          "explanation": "Squamous cells are flat.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-05",
+          "prompt": "Which of the following is a function of epithelial tissue?",
+          "options": [
+            "Protection of underlying tissues",
+            "Secretion of enzymes",
+            "Reduction of friction",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Epithelia protect, secrete and reduce friction.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-06",
+          "prompt": "Which cells are unicellular glands found among the columnar cells of the intestine and secrete mucus?",
+          "options": [
+            "Goblet cells",
+            "Acinar cells",
+            "Mucus cells",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Goblet cells are single mucus-secreting cells between intestinal columnar cells.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-07",
+          "prompt": "What are the shape and position of the nucleus in simple cuboidal epithelial cells?",
+          "options": [
+            "Elongated and in the center",
+            "Elongated and located near the base",
+            "Spherical and in the center",
+            "Spherical and located near the base"
+          ],
+          "correctIndex": 2,
+          "explanation": "Cuboidal cells have a round nucleus in the centre. Columnar cells have an oval nucleus near the base.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-08",
+          "prompt": "Which type of simple epithelium has a spherical nucleus positioned at the center of each cell?",
+          "options": [
+            "Squamous",
+            "Cuboidal",
+            "Columnar",
+            "Transitional",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cuboidal cells have a central spherical nucleus.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-09",
+          "prompt": "Sublingual glands are predominantly ________ in nature.",
+          "options": [
+            "serous",
+            "mucous",
+            "granular",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sublingual glands are mainly mucous.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-10",
+          "prompt": "Which of these glands predominantly contains mucous acini?",
+          "options": [
+            "Parotid glands",
+            "Submandibular glands",
+            "Sublingual glands",
+            "Pancreas"
+          ],
+          "correctIndex": 2,
+          "explanation": "The sublingual glands are mainly mucous. The parotid and pancreas are serous.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-11",
+          "prompt": "One or more layers of cells covering the outer surface or lining the hollow spaces of the body are referred to as ________.",
+          "options": [
+            "epithelial tissue",
+            "glandular cells",
+            "interstitial cells",
+            "connective tissues"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is the definition of epithelial tissue.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-12",
+          "prompt": "Which of the following glands secretes via exocytosis?",
+          "options": [
+            "Mammary glands",
+            "Sebaceous glands",
+            "Salivary glands",
+            "Meibomian glands"
+          ],
+          "correctIndex": 2,
+          "explanation": "Salivary glands are merocrine and release their products by exocytosis. Sebaceous and Meibomian glands are holocrine.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-13",
+          "prompt": "Which of the following is NOT a characteristic feature of epithelial tissue?",
+          "options": [
+            "Cellularity",
+            "Cell polarity",
+            "Vascularity",
+            "Cells may display surface modifications"
+          ],
+          "correctIndex": 2,
+          "explanation": "Epithelia have no blood vessels (avascular) and are fed by diffusion from the tissue below.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-14",
+          "prompt": "Which cell surface modification increases the surface area of a cell without increasing its size?",
+          "options": [
+            "microvilli",
+            "basement membrane",
+            "epidermal tissue",
+            "nervous tissue"
+          ],
+          "correctIndex": 0,
+          "explanation": "Microvilli are tiny finger-like folds that increase the absorptive surface.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-15",
+          "prompt": "In glands, epithelial tissue is specialized to secrete specific chemical substances such as ________.",
+          "options": [
+            "enzymes",
+            "hormones",
+            "lubricating fluid",
+            "none of the above",
+            "all of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Gland epithelium secretes enzymes, hormones and lubricating fluids such as mucus.",
+          "source": "ZOO 101 practice set and ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-16",
+          "prompt": "The sweat glands located in the armpit (axilla) and genital area are called ________.",
+          "options": [
+            "apocrine sweat glands",
+            "eccrine sweat glands",
+            "sebaceous glands",
+            "merocrine glands"
+          ],
+          "correctIndex": 0,
+          "explanation": "Apocrine sweat glands are in the armpit and genital areas.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-17",
+          "prompt": "Which epithelial type best identifies the kind that lines the stomach and intestine?",
+          "options": [
+            "Squamous epithelial cells",
+            "Simple cuboidal epithelial cells",
+            "Simple columnar epithelial cells",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Simple columnar epithelium lines the stomach and intestine for secretion and absorption.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-18",
+          "prompt": "Which secretion mechanism discharges the whole cell into the lumen as the cell degenerates?",
+          "options": [
+            "Merocrine",
+            "Apocrine",
+            "Holocrine",
+            "Pancreatic"
+          ],
+          "correctIndex": 2,
+          "explanation": "In holocrine secretion the entire cell breaks up and becomes the secretion.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-19",
+          "prompt": "What type of gland releases its secretion into the surrounding tissue and bloodstream rather than through a duct?",
+          "options": [
+            "Exocrine gland",
+            "Endocrine gland",
+            "Pancreatic gland",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Endocrine glands are ductless and release hormones into the tissue fluid and blood.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-20",
+          "prompt": "The intense basophilia in the basal region of serous cells results from a large accumulation of ________ and ________.",
+          "options": [
+            "rough endoplasmic reticulum and free ribosomes",
+            "rough endoplasmic reticulum and free lysosomes",
+            "Golgi body and plastids",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Serous cells make a lot of protein, so they are packed with rough ER and ribosomes, which stain with basic dyes.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-21",
+          "prompt": "The nuclei of serous cells are ________ located, while those of mucous cells are ________ located.",
+          "options": [
+            "centrally / basally",
+            "basally / centrally",
+            "laterally / apically",
+            "apically / laterally"
+          ],
+          "correctIndex": 0,
+          "explanation": "Serous cells have round, central nuclei. Mucous cells have flattened nuclei pushed to the base.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-22",
+          "prompt": "The nuclei of mucous cells are ________ located.",
+          "options": [
+            "centrally",
+            "basally",
+            "laterally",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Mucous cells have a flattened nucleus pushed to the base by mucus droplets.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-23",
+          "prompt": "The nuclei of serous cells are ________ located.",
+          "options": [
+            "centrally",
+            "basally",
+            "laterally",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Serous cells have a round nucleus in the central region.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-24",
+          "prompt": "The tarsal (Meibomian) glands of the eyelid use what type of secretion mechanism?",
+          "options": [
+            "Merocrine",
+            "Apocrine",
+            "Holocrine",
+            "Eccrine",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Meibomian glands are modified sebaceous glands and are holocrine.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-25",
+          "prompt": "All epithelial tissues are supported by a ________ of variable thickness.",
+          "options": [
+            "bone",
+            "basement membrane / basal lamina",
+            "cartilage",
+            "matrix",
+            "fiber"
+          ],
+          "correctIndex": 1,
+          "explanation": "Epithelia rest on a basement membrane.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-26",
+          "prompt": "Which of the following sweat gland secretions is associated with pheromonal or sexual attraction?",
+          "options": [
+            "Eccrine gland",
+            "Apocrine gland",
+            "Sebaceous gland",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Apocrine gland secretions carry body odour and pheromones.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-27",
+          "prompt": "The crypts of Lieberkühn are a type of ________.",
+          "options": [
+            "simple branched tubular glands",
+            "simple coiled tubular glands",
+            "simple straight tubular glands",
+            "simple branched saccular glands",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The intestinal crypts are simple straight tubular glands.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-28",
+          "prompt": "All of the following EXCEPT one are examples of exocrine glands according to the nature of their secretions:",
+          "options": [
+            "seminal vesicles",
+            "ceruminous glands",
+            "acinar",
+            "sebaceous glands"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Acinar\" describes the shape of a gland, not what it secretes.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-29",
+          "prompt": "Apocrine secretion is associated with ________.",
+          "options": [
+            "eccrine sweat glands",
+            "thyroid gland",
+            "mammary glands",
+            "stomach wall"
+          ],
+          "correctIndex": 2,
+          "explanation": "In apocrine secretion the tip of the cell is pinched off with the secretion, as in the mammary gland.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-30",
+          "prompt": "Glands in which part of the cell cytoplasm is pinched off with the secretion are called ________ glands.",
+          "options": [
+            "merocrine",
+            "holocrine",
+            "apocrine",
+            "exocrine"
+          ],
+          "correctIndex": 2,
+          "explanation": "Apocrine glands lose a piece of the apical cytoplasm with the secretion.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-31",
+          "prompt": "Ceruminous glands are located in the ________.",
+          "options": [
+            "eyes",
+            "ear",
+            "nose",
+            "throat"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ceruminous glands in the ear canal make earwax.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-epi-32",
+          "prompt": "Which type of epithelium is found lining the uterus?",
+          "options": [
+            "Simple columnar epithelium",
+            "Ciliated columnar epithelium",
+            "Simple cuboidal epithelium",
+            "Squamous epithelium"
+          ],
+          "correctIndex": null,
+          "explanation": "The endometrium has simple columnar epithelium with some ciliated cells.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options A and B are both defensible. Needs the key."
+        },
+        {
+          "id": "zoo101-epi-33",
+          "prompt": "In which of these glands do secretions reach target cells through the extracellular space/tissue fluid?",
+          "options": [
+            "Exocrine glands",
+            "Paracrine glands",
+            "Endocrine glands",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Endocrine glands release into the tissue fluid and then the blood. Paracrine signals act through the tissue fluid.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Endocrine and paracrine are both defensible. Needs the key."
+        },
+        {
+          "id": "zoo101-epi-34",
+          "prompt": "Exocytosis occurs in ________.",
+          "options": [
+            "endocrine secretion",
+            "holocrine secretion",
+            "apocrine secretion",
+            "exocrine secretion",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Exocytosis occurs in endocrine and merocrine (exocrine) secretion.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "More than one option is defensible. Needs the key."
+        },
+        {
+          "id": "zoo101-epi-35",
+          "prompt": "Lining epithelia are classified based on all of the following EXCEPT:",
+          "options": [
+            "number of cell layers",
+            "shape of surface cells",
+            "special surface specializations",
+            "all of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Layers, cell shape and surface specializations are all used.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "All three listed bases are used, so the intended exception is unclear. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "connective-tissue",
+      "questions": [
+        {
+          "id": "zoo101-con-01",
+          "prompt": "The main structural component of the dermis is a protein called ________.",
+          "options": [
+            "elastin",
+            "collagen",
+            "fiber",
+            "keratin"
+          ],
+          "correctIndex": 1,
+          "explanation": "Collagen forms most of the dermis.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-02",
+          "prompt": "The ligamentum flavum is an example of ________ connective tissue.",
+          "options": [
+            "loose fibrous",
+            "dense fibrous",
+            "loose elastic",
+            "dense elastic"
+          ],
+          "correctIndex": 3,
+          "explanation": "The ligamentum flavum is rich in elastic fibres and is dense elastic connective tissue.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-03",
+          "prompt": "The matrix of connective tissues is made up of ________.",
+          "options": [
+            "ground substance and fibers",
+            "cells and fibers",
+            "cells and ground substance",
+            "sheath and fibers"
+          ],
+          "correctIndex": 0,
+          "explanation": "The matrix is ground substance plus fibres.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-04",
+          "prompt": "The most common resident cell type in connective tissues is the ________.",
+          "options": [
+            "fibroblast",
+            "adipocyte",
+            "histiocyte",
+            "mast cell"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fibroblasts are the most common resident cell and make the fibres and ground substance.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-05",
+          "prompt": "Macrophages arise from precursor cells called ________.",
+          "options": [
+            "monocytes",
+            "macrocytes",
+            "lymphocytes"
+          ],
+          "correctIndex": 0,
+          "explanation": "Monocytes leave the blood and become macrophages.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-06",
+          "prompt": "Monocytes are precursor cells of which of the following connective tissue cells?",
+          "options": [
+            "Macrophage",
+            "Reticular cell",
+            "Mast cell",
+            "Plasma cell"
+          ],
+          "correctIndex": 0,
+          "explanation": "Monocytes mature into macrophages in the tissues.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-07",
+          "prompt": "Which type of collagen is an important structural component of the basal lamina?",
+          "options": [
+            "Type I",
+            "Type II",
+            "Type III",
+            "Type IV"
+          ],
+          "correctIndex": 3,
+          "explanation": "Type IV collagen forms the network of the basal lamina.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-08",
+          "prompt": "Coarse collagen fibers in connective tissues are formed mainly from which collagen type?",
+          "options": [
+            "Type I",
+            "Type II",
+            "Type III",
+            "Type IV"
+          ],
+          "correctIndex": 0,
+          "explanation": "Type I collagen forms thick fibres in dermis, tendon and bone.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-09",
+          "prompt": "The primary function of collagen fibers is to add ________ to connective tissues.",
+          "options": [
+            "elasticity",
+            "tensile strength",
+            "ductility",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Collagen resists pulling and gives tensile strength.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-10",
+          "prompt": "Adipocytes are grouped into which category of connective tissue cells?",
+          "options": [
+            "Wandering",
+            "Meandering",
+            "Slimy",
+            "Fixed (resident)"
+          ],
+          "correctIndex": 3,
+          "explanation": "Adipocytes stay in place and are fixed cells.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-11",
+          "prompt": "Bone is an example of ________.",
+          "options": [
+            "epithelial tissue",
+            "connective tissue",
+            "nervous tissue",
+            "muscle tissue"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bone is a specialised connective tissue.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-12",
+          "prompt": "Cartilage is a form of ________ connective tissue with collagenous fibers embedded in a ________ matrix.",
+          "options": [
+            "fibrous / gelatin",
+            "fibrous / chondrin",
+            "mineralized / calcium phosphate"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cartilage has a firm gel-like chondrin matrix.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-13",
+          "prompt": "While carrying out its endocrine function, adipose tissue secretes ________, which regulates appetite by giving feedback about the body's fat reserves.",
+          "options": [
+            "ghrelin",
+            "leptin",
+            "leucine"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leptin from adipocytes signals fat stores and reduces appetite.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "sourceNote": "Original had \"ghrelin\" typed twice; one removed."
+        },
+        {
+          "id": "zoo101-con-14",
+          "prompt": "Partly movable (cartilaginous) joints are found in the ________.",
+          "options": [
+            "skull",
+            "vertebral column",
+            "elbow",
+            "femur",
+            "knee"
+          ],
+          "correctIndex": 1,
+          "explanation": "The joints between vertebrae are cartilaginous and slightly movable.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-con-15",
+          "prompt": "The highly viscous character of the ground substance of connective tissues is ensured by ________.",
+          "options": [
+            "proteoglycans",
+            "glycosaminoglycans",
+            "glycoproteins",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The viscosity is due to glycosaminoglycans, which are bound to proteins as proteoglycans.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options A and B are both defensible. Needs the key."
+        },
+        {
+          "id": "zoo101-con-16",
+          "prompt": "Loose fibroelastic areolar connective tissue is found in which part of the skin?",
+          "options": [
+            "Dermis",
+            "Subcutaneous layer / hypodermis",
+            "Fat lobules",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The papillary dermis and the hypodermis both contain loose connective tissue.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Dermis and hypodermis can both be argued. Needs the key."
+        },
+        {
+          "id": "zoo101-con-17",
+          "prompt": "Dense fibroelastic irregular connective tissue is found in which part of the skin?",
+          "options": [
+            "Dermis (reticular layer)",
+            "Subcutaneous layer",
+            "Fat lobules",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The reticular layer of the dermis is dense irregular connective tissue.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        }
+      ]
+    },
+    {
+      "id": "muscle-nerve-and-skeleton",
+      "questions": [
+        {
+          "id": "zoo101-mus-01",
+          "prompt": "The arrangement of actin and myosin filaments in a skeletal muscle fiber is organized into a ________.",
+          "options": [
+            "sarcoplasm",
+            "sarcolemma",
+            "sarcomere",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A sarcomere is the repeating unit of actin and myosin filaments.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-02",
+          "prompt": "A sea anemone has one set of ________ muscles in the inner layer of the body and a layer of ________ muscles in the outer layer.",
+          "options": [
+            "longitudinal / circular",
+            "circular / longitudinal",
+            "longitudinal / lateral",
+            "circular / lateral"
+          ],
+          "correctIndex": 1,
+          "explanation": "The sea anemone has circular muscles in the gastrodermis and longitudinal muscles in the epidermis.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-03",
+          "prompt": "A common feature of cardiac muscle and smooth muscle is that both ________.",
+          "options": [
+            "are involuntary in function",
+            "are voluntary in function",
+            "have cross-striations",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Both are involuntary. Smooth muscle has no striations.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-04",
+          "prompt": "The type of neuron that conducts impulses from the central nervous system to effector organs is a ________.",
+          "options": [
+            "sensory neuron",
+            "afferent neuron",
+            "interneuron",
+            "motor neuron"
+          ],
+          "correctIndex": 3,
+          "explanation": "Motor (efferent) neurons carry commands from the CNS to muscles and glands.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-05",
+          "prompt": "Motor neurons of the spinal reflex arc are an example of ________ neurons.",
+          "options": [
+            "tripolar",
+            "unipolar",
+            "multipolar",
+            "bipolar",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Motor neurons have many dendrites and one axon, so they are multipolar.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) and ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-06",
+          "prompt": "The epineurium is a sheath of dense connective tissue that surrounds a ________.",
+          "options": [
+            "nerve fiber",
+            "peripheral nerve",
+            "skeleton",
+            "all of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The epineurium wraps the whole peripheral nerve.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-07",
+          "prompt": "The junctions where nerve cells functionally connect to one another are called ________.",
+          "options": [
+            "connector endings",
+            "dendrites",
+            "synapses",
+            "polar regions"
+          ],
+          "correctIndex": 2,
+          "explanation": "Neurons communicate across synapses.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-08",
+          "prompt": "Purkinje fibers are found in the ________.",
+          "options": [
+            "skull",
+            "elbow",
+            "heart",
+            "vertebral column",
+            "skin"
+          ],
+          "correctIndex": 2,
+          "explanation": "Purkinje fibres conduct impulses in the heart wall.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-09",
+          "prompt": "Merkel cells in the skin function as ________.",
+          "options": [
+            "heat receptors",
+            "touch (mechanoreceptor) receptors",
+            "cold receptors",
+            "gold receptors",
+            "taste receptors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Merkel cells in the epidermis detect light touch.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-10",
+          "prompt": "Which of the following tissues are referred to as excitable tissues?",
+          "options": [
+            "epithelial tissues",
+            "nervous tissues",
+            "connective tissues",
+            "muscular tissues",
+            "options B and D"
+          ],
+          "correctIndex": 4,
+          "explanation": "Nervous and muscular tissues are excitable.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) and ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "sourceNote": "Paper B listed the same question without a combined option."
+        },
+        {
+          "id": "zoo101-mus-11",
+          "prompt": "What type of muscular tissue is found in the wall of the stomach and intestine?",
+          "options": [
+            "Cardiac",
+            "Skeletal",
+            "Smooth",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Gut walls contain smooth muscle.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-12",
+          "prompt": "The observation of a shortened H zone and closer Z-lines in a striped muscle fiber indicates a ________.",
+          "options": [
+            "resting myofibril",
+            "contracted myofibril",
+            "scarred myofibril",
+            "none of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "When a muscle contracts, the filaments slide and the H zone and sarcomere shorten.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-13",
+          "prompt": "Which organism combines an exoskeleton for protection and hydrostatic pressure for movement?",
+          "options": [
+            "Earthworm",
+            "Sea anemone",
+            "Spider",
+            "Collembola",
+            "Mite"
+          ],
+          "correctIndex": 2,
+          "explanation": "Spiders have an exoskeleton and extend their legs with hydraulic (blood) pressure.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-14",
+          "prompt": "What kind of skeletal system is found in sea anemones and worms?",
+          "options": [
+            "Chitinous exoskeleton",
+            "Mineralized endoskeleton",
+            "Cartilaginous endoskeleton",
+            "Hydrostatic skeleton"
+          ],
+          "correctIndex": 3,
+          "explanation": "Soft-bodied animals use fluid pressure in the body cavity as a hydrostatic skeleton.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-15",
+          "prompt": "Lumbricus terrestris (earthworm) has a ________ skeleton.",
+          "options": [
+            "hydrostatic",
+            "endoskeleton",
+            "exoskeleton",
+            "cartilaginous",
+            "bony"
+          ],
+          "correctIndex": 0,
+          "explanation": "Earthworms use their fluid-filled coelom as a hydrostatic skeleton.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-mus-16",
+          "prompt": "The basic contractile unit of striated muscle is the ________ (or myofibril as a thread-like structure).",
+          "options": [
+            "smooth muscle",
+            "myofibril",
+            "myosin",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The true contractile unit is the sarcomere, which is not listed.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "The sarcomere is not among the options and the wording is mixed. Needs the original."
+        },
+        {
+          "id": "zoo101-mus-17",
+          "prompt": "A hydrostatic skeleton is found in ________.",
+          "options": [
+            "annelids (ring worms)",
+            "edible worms",
+            "earthworms",
+            "hookworms"
+          ],
+          "correctIndex": null,
+          "explanation": "Annelids and earthworms (which are annelids) both have hydrostatic skeletons.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options A and C are both correct. Needs the key."
+        },
+        {
+          "id": "zoo101-mus-18",
+          "prompt": "A hydrostatic skeleton is found in ________.",
+          "options": [
+            "fishes",
+            "millipedes",
+            "roundworms",
+            "earthworms"
+          ],
+          "correctIndex": null,
+          "explanation": "Roundworms and earthworms both have hydrostatic skeletons.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options C and D are both correct. Needs the key."
+        },
+        {
+          "id": "zoo101-mus-19",
+          "prompt": "Examples of places where smooth muscle is found include all of the following EXCEPT:",
+          "options": [
+            "wall of the esophagus",
+            "walls of the intestines",
+            "walls of the urinary bladder",
+            "walls of blood vessels",
+            "all of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The upper oesophagus has skeletal muscle, but all four options contain smooth muscle in part.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "No clear exception among the options. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "skin",
+      "questions": [
+        {
+          "id": "zoo101-skn-01",
+          "prompt": "The semicircular area at the base of the nail body is referred to as the ________.",
+          "options": [
+            "lanula",
+            "lunula",
+            "janular",
+            "lanular"
+          ],
+          "correctIndex": 1,
+          "explanation": "The pale half-moon at the nail base is the lunula.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-skn-02",
+          "prompt": "Most of the cells in the epidermis are ________.",
+          "options": [
+            "melanocytes",
+            "basement membrane cells",
+            "keratinocytes",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Keratinocytes make up most of the epidermis.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-skn-03",
+          "prompt": "Hooves and hairs are produced from the cells of the ________.",
+          "options": [
+            "subcutaneous layer",
+            "dermis",
+            "epidermis",
+            "sebaceous gland",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hair, hooves, nails and horns are keratinised derivatives of the epidermis.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-skn-04",
+          "prompt": "The epidermal and dermal layers of the skin are anchored to each other by a complex layer called the ________.",
+          "options": [
+            "basement membrane",
+            "basal lamina",
+            "basement tissue",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The basement membrane joins epidermis and dermis.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        }
+      ]
+    },
+    {
+      "id": "digestion-and-nutrition",
+      "questions": [
+        {
+          "id": "zoo101-dig-01",
+          "prompt": "Which of the following is NOT a major class of digestive enzyme?",
+          "options": [
+            "Nucleosidases",
+            "Proteases",
+            "Carbohydrases",
+            "Lipases"
+          ],
+          "correctIndex": 0,
+          "explanation": "The main classes are proteases, carbohydrases and lipases (plus nucleases). Nucleosidases are not a major class.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-02",
+          "prompt": "Which hormone is produced by the stomach and upper intestine in the absence of food to stimulate appetite?",
+          "options": [
+            "Ghrelin",
+            "CCK",
+            "Gastrin",
+            "Peptide YY"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ghrelin is the \"hunger hormone\".",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-03",
+          "prompt": "Riboflavin is a water-soluble B-complex vitamin, also known as ________.",
+          "options": [
+            "vitamin B2",
+            "vitamin B1",
+            "vitamin B3",
+            "vitamin B6"
+          ],
+          "correctIndex": 0,
+          "explanation": "Riboflavin is vitamin B2.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-04",
+          "prompt": "Ascorbic acid is a ________ vitamin.",
+          "options": [
+            "fat-soluble",
+            "water-soluble",
+            "oil-soluble",
+            "all of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Vitamin C (ascorbic acid) dissolves in water.",
+          "source": "ZOO 101, December 2022 (2020/2021 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-05",
+          "prompt": "Digestion of protein starts in the ________.",
+          "options": [
+            "mouth",
+            "small intestine",
+            "stomach",
+            "large intestine",
+            "colon"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pepsin in the stomach begins protein digestion.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-06",
+          "prompt": "HCl secreted into the stomach contributes to protein digestion by ________.",
+          "options": [
+            "activating pepsinogen and giving the right acidity for the enzyme",
+            "terminal cleavage of peptide bonds",
+            "all of the above",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "HCl converts pepsinogen into pepsin and gives the acid pH pepsin needs.",
+          "source": "ZOO 101 practice set (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-07",
+          "prompt": "Enzymes that break down starch and other carbohydrates are called ________.",
+          "options": [
+            "proteases",
+            "amylases",
+            "lipases",
+            "triglycerides"
+          ],
+          "correctIndex": 1,
+          "explanation": "Amylases digest starch.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-08",
+          "prompt": "Deficiency of vitamin D in adults leads to ________.",
+          "options": [
+            "scurvy",
+            "rickets",
+            "hypocalcemia",
+            "osteomalacia",
+            "none of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Rickets occurs in children. Adults get osteomalacia.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-09",
+          "prompt": "Deficiency of vitamin B6 in humans can lead to ________.",
+          "options": [
+            "tooth decay",
+            "headache",
+            "beriberi",
+            "soreness of the tongue (glossitis)",
+            "fever"
+          ],
+          "correctIndex": 3,
+          "explanation": "Vitamin B6 deficiency causes glossitis, cheilosis and dermatitis. Beriberi is B1 deficiency.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-10",
+          "prompt": "All of the following are trace elements EXCEPT:",
+          "options": [
+            "zinc",
+            "magnesium",
+            "iron",
+            "iodine",
+            "copper"
+          ],
+          "correctIndex": 1,
+          "explanation": "Magnesium is a macromineral needed in larger amounts.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-11",
+          "prompt": "Which of these animals is a microphagous feeder?",
+          "options": [
+            "Tapeworm",
+            "Acorn worm",
+            "Roundworm",
+            "Hookworm",
+            "Liver fluke"
+          ],
+          "correctIndex": 1,
+          "explanation": "The acorn worm feeds on small particles.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-12",
+          "prompt": "When food is regurgitated and swallowed a second time by ruminants, it passes through a groove to the ________, bypassing the ________.",
+          "options": [
+            "omasum / reticulum",
+            "omasum / abomasum",
+            "reticulum / omasum",
+            "abomasum / omasum"
+          ],
+          "correctIndex": 0,
+          "explanation": "The reticular groove sends the chewed cud on to the omasum and bypasses the reticulum.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-13",
+          "prompt": "Which of these cells is the smallest in size?",
+          "options": [
+            "Erythrocytes",
+            "Platelets",
+            "Monocytes",
+            "Lymphocytes",
+            "Eosinophils"
+          ],
+          "correctIndex": 1,
+          "explanation": "Platelets are small cell fragments and are the smallest of these.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)"
+        },
+        {
+          "id": "zoo101-dig-14",
+          "prompt": "Extracellular digestion occurs in ________.",
+          "options": [
+            "Amoeba",
+            "Paramecium",
+            "snakes",
+            "Ascaris"
+          ],
+          "correctIndex": null,
+          "explanation": "Snakes digest in a gut cavity (extracellular). Ascaris also has a gut, so it digests extracellularly as well.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options C and D can both be argued. Needs the key."
+        },
+        {
+          "id": "zoo101-dig-15",
+          "prompt": "Peptidases convert ________ into amino acids.",
+          "options": [
+            "polysaccharides",
+            "polypeptides",
+            "proteins",
+            "dipeptides / tripeptides",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Peptidases split short peptides (di- and tripeptides) into amino acids, while proteases split proteins.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options B and D can both be argued. Needs the key."
+        },
+        {
+          "id": "zoo101-dig-16",
+          "prompt": "Examples of macroconsumers / macro-feeders include ________.",
+          "options": [
+            "hookworms",
+            "roundworms",
+            "acorn worms",
+            "tapeworms"
+          ],
+          "correctIndex": null,
+          "explanation": "None of these is clearly a macrophagous feeder; they are parasites or small-particle feeders.",
+          "source": "ZOO 101, 2017/2018 session (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Question and options do not match standard terminology. Needs the original."
+        },
+        {
+          "id": "zoo101-dig-17",
+          "prompt": "The hormone that inhibits appetite in response to a meal is known as ________.",
+          "options": [
+            "secretin",
+            "cholecystokinin",
+            "peptide YY",
+            "ghrelin",
+            "amylase"
+          ],
+          "correctIndex": null,
+          "explanation": "Both cholecystokinin (CCK) and peptide YY inhibit appetite after a meal.",
+          "source": "ZOO 101, June 2020 (2018/2019 session) (typed; no answer key supplied, so answers are set from standard zoology and histology textbooks)",
+          "needsReview": true,
+          "reviewNote": "Options B and C are both correct. Needs the key."
+        }
+      ]
+    }
+  ]
+}

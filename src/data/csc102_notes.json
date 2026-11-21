@@ -1,0 +1,35 @@
+{
+  "courseCode": "CSC102",
+  "topics": [
+    {
+      "id": "python-fundamentals",
+      "title": "Python fundamentals",
+      "notes": "Python files end in .py. The def keyword defines a function, and a function is called by writing its name with parentheses. import brings in a module, and statistics, io and math are all built in. Python marks blocks of code with indentation, not braces. A variable stores a value. Variable names cannot start with a digit or contain symbols such as $ or -, but underscores are fine (name_3).\n\nThe standard Python interpreter is written in C. The if statement runs a block when its condition is true, and a for loop repeats a block over a sequence. input() always returns a str. type(\"25\") gives <class 'str'> because the value is in quotes. // is floor division (9 // 2 = 4). Comparison and logic operators give True or False, and an \"or\" is True if either side is True. A tuple holds an immutable record. elif checks further conditions in order, and continue skips the rest of the current loop iteration. In C, int x;, float x; and char x; are all valid declarations.\n\nKEY FORMULA: 9 // 2 = 4;  input() → str;  elif;  continue skips an iteration",
+      "keyFormula": "9 // 2 = 4;  input() → str;  elif;  continue skips an iteration"
+    },
+    {
+      "id": "algorithms-and-problem-solving",
+      "title": "Algorithms and problem solving",
+      "notes": "An algorithm is finite, general and exact. Problem-solving strategies include algorithmic, heuristic and intuitive. Feedback evaluates how effective a solution is. A flowchart is graphical and pseudocode is textual. Pseudocode cannot be run directly, but compiled or interpreted source code can.\n\nThe Tower of Hanoi needs a minimum of 2ⁿ − 1 moves for n disks. The auxiliary peg temporarily holds disks so that others can move. With 3 disks the first move is disk 1 from A to C. Recursion calls the function on a smaller problem and ends when a base condition is reached. Identifying the problem is the first step in solving it. Divide and conquer splits a problem into smaller sub-problems, and abstraction hides implementation details. Java is known for \"write once, run anywhere\".\n\nKEY FORMULA: Tower of Hanoi: 2ⁿ − 1 moves",
+      "keyFormula": "Tower of Hanoi: 2ⁿ − 1 moves"
+    },
+    {
+      "id": "reading-python-code",
+      "title": "Reading Python code",
+      "notes": "A comment starts with # and is ignored when the program runs. A tuple such as x = (\"a\", \"b\") prints in parentheses, and print() displays output. In a function definition, the def line gives the name and parameter, and the function only runs when it is called, such as greet(\"John\"). Strings are joined with +, so \"Hello, \" + name + \"!\" prints Hello, John!\n\nIn a while loop the condition is checked before every pass. With count = 0 and while count <= 3, the loop runs for 0, 1, 2 and 3, which is 4 times. Trace the variable value on each pass to avoid off-by-one mistakes.\n\nKEY FORMULA: while count <= 3 starting at 0 runs 4 times",
+      "keyFormula": "while count <= 3 starting at 0 runs 4 times"
+    },
+    {
+      "id": "reading-c-code",
+      "title": "Reading C code",
+      "notes": "A C program begins with #include <stdio.h>, which brings in the standard input/output library (printf and scanf). Execution starts in main(). Every variable must be declared with a type before use (int, float, char), so removing int from int sum = x + y; gives a compilation error. printf(\"%d\", sum) prints an integer, and return 0; tells the operating system the program ended normally.\n\nTo change a program that adds two numbers into one that multiplies them, you must change both the calculation (x * y) and the printf text. With x = 5 and y = 10 the sum is 15 and the product is 50.\n\nKEY FORMULA: C: declare types; printf prints; return 0 = normal end",
+      "keyFormula": "C: declare types; printf prints; return 0 = normal end"
+    },
+    {
+      "id": "qbasic-programming",
+      "title": "QBasic and program structure",
+      "notes": "QBasic is run by an interpreter. CLS (clear screen) is an executable statement and REM is a non-executable remark. END marks the logical end of a program. Variable type suffixes are $ (string), % (integer), ! (single), & (long) and # (double). A reserved word such as ELSE cannot be a variable name. A variable is an abstraction of a memory location, has a type and an address, and its content can change. Expressions are written with ^ for powers, so B² − 4AC is B^2 - 4*A*C or B*B - 4*A*C.\n\nControl structures are sequence, selection (IF, nested IF) and iteration (FOR, WHILE). A block IF ends with END IF, but a single-line IF does not. A pre-test loop (WHILE) may not run at all. Nested loops must close in the right order: NEXT J before NEXT I. A FOR loop with 4 outer and 3 inner passes runs the inner statement 4 × 3 = 12 times. An array is a contiguous collection of elements of the same type, and DIM A(6,5) holds 7 × 6 = 42 elements with a lower bound of 0.\n\nA good program is reliable, efficient, robust and maintainable. Program design tools include algorithms, flowcharts, pseudocode and decision tables. Debugging is finding and removing errors. A function can have parameters, a name and a return value. A flowchart is a pictorial representation of the steps of a solution.\n\nKEY FORMULA: FOR/NEXT nested: inner runs outer × inner times;  DIM A(6,5) = 7 × 6 = 42",
+      "keyFormula": "FOR/NEXT nested: inner runs outer × inner times;  DIM A(6,5) = 7 × 6 = 42"
+    }
+  ]
+}

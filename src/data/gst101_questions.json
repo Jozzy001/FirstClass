@@ -1,0 +1,1414 @@
+{
+  "courseCode": "GST101",
+  "topics": [
+    {
+      "id": "vocabulary",
+      "questions": [
+        {
+          "id": "gst101-voc-01",
+          "prompt": "Choose the word nearest in meaning to the word: Bespoke.",
+          "options": [
+            "repeated",
+            "pale-faced",
+            "custom-made",
+            "eloquent"
+          ],
+          "correctIndex": 2,
+          "explanation": "Bespoke means made to a customer's own order, so custom-made.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-02",
+          "prompt": "Choose the word nearest in meaning to the word: Deluge.",
+          "options": [
+            "bother",
+            "feed",
+            "overwhelm",
+            "muddle"
+          ],
+          "correctIndex": 2,
+          "explanation": "A deluge is a flood, and to deluge is to overwhelm.",
+          "source": "GST 101 and GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-03",
+          "prompt": "Choose the word nearest in meaning to the word: Render.",
+          "options": [
+            "deliver",
+            "illustrate",
+            "list",
+            "label"
+          ],
+          "correctIndex": 0,
+          "explanation": "To render a service or an account is to deliver it.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-04",
+          "prompt": "Choose the word nearest in meaning to the word: Cache.",
+          "options": [
+            "anger",
+            "horseplay",
+            "wealth",
+            "stockpile"
+          ],
+          "correctIndex": 3,
+          "explanation": "A cache is a hidden store or stockpile.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-05",
+          "prompt": "Choose the word nearest in meaning to the word: Mar.",
+          "options": [
+            "steal",
+            "consume",
+            "clean",
+            "spoil"
+          ],
+          "correctIndex": 3,
+          "explanation": "To mar is to spoil or damage.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-06",
+          "prompt": "It is traditional for a younger person to show ________ to elders.",
+          "options": [
+            "satisfaction",
+            "understanding",
+            "indifference",
+            "deference"
+          ],
+          "correctIndex": 3,
+          "explanation": "Deference means respectful submission to another's wishes.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-07",
+          "prompt": "After our series of quarrels, it would be ________ to pretend that I have any more regard for him.",
+          "options": [
+            "hypothetical",
+            "essential",
+            "hypocritical",
+            "necessary"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pretending to have regard when you do not is hypocritical.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-08",
+          "prompt": "Last week's ________ at the theater was the largest I had ever seen.",
+          "options": [
+            "assembly",
+            "audience",
+            "congregation",
+            "convention"
+          ],
+          "correctIndex": 1,
+          "explanation": "People watching a show are an audience.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-09",
+          "prompt": "As luck would have it, the weather brightened almost immediately, and after a six-hour flight we ________ at Heathrow.",
+          "options": [
+            "touched down",
+            "dropped",
+            "came down",
+            "flew down"
+          ],
+          "correctIndex": 0,
+          "explanation": "Aircraft \"touch down\" when they land.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-10",
+          "prompt": "The way to stop some frivolous publications is to ________ the press.",
+          "options": [
+            "gag",
+            "shackle",
+            "fetter",
+            "handcuff"
+          ],
+          "correctIndex": 0,
+          "explanation": "To gag the press is to stop it from publishing.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-11",
+          "prompt": "The bridge connecting the two cities was ________ by the enemy.",
+          "options": [
+            "blown over",
+            "blown up",
+            "blown down",
+            "blown off"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Blown up\" means destroyed by an explosion.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-12",
+          "prompt": "You have been absent from classes for four months. How can you ________ for lost time?",
+          "options": [
+            "make in",
+            "make up",
+            "make off",
+            "make out"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Make up for\" lost time means to compensate for it.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-13",
+          "prompt": "Choose the word opposite in meaning to \"diabolical\" in: \"The groups were accused of using diabolical means to influence the outcome of the panel.\"",
+          "options": [
+            "saintly",
+            "magician",
+            "angelic",
+            "pastor"
+          ],
+          "correctIndex": null,
+          "explanation": "Diabolical means devilish. Saintly and angelic are both opposites.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and C are both defensible. Needs the key."
+        },
+        {
+          "id": "gst101-voc-14",
+          "prompt": "Choose the word opposite in meaning to the underlined word: \"The investments seem to be flourishing.\"",
+          "options": [
+            "dying",
+            "withering",
+            "sowing",
+            "sluggish"
+          ],
+          "correctIndex": null,
+          "explanation": "Flourishing means thriving. Dying and withering are both opposites.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and B are both defensible. Needs the key."
+        },
+        {
+          "id": "gst101-voc-15",
+          "prompt": "Choose the word opposite in meaning to \"impudent\" in: \"The students believed their teacher was impudent.\"",
+          "options": [
+            "harsh",
+            "modest",
+            "quiet",
+            "gentle"
+          ],
+          "correctIndex": null,
+          "explanation": "Impudent means rude. The opposite is respectful or polite, which is not directly listed.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option is a clear opposite. Needs the key."
+        },
+        {
+          "id": "gst101-voc-16",
+          "prompt": "Choose the word opposite in meaning to the underlined word: \"A good research work has to be novel.\"",
+          "options": [
+            "Old-fashioned",
+            "Old",
+            "Second-hand",
+            "Hackneyed"
+          ],
+          "correctIndex": 3,
+          "explanation": "Novel means new and original. Hackneyed (overused) is its opposite in meaning.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-17",
+          "prompt": "Choose the word opposite in meaning to the underlined word: \"He looks languid.\"",
+          "options": [
+            "noisy",
+            "weak",
+            "healthy",
+            "lively"
+          ],
+          "correctIndex": 3,
+          "explanation": "Languid means lacking energy. The opposite is lively.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-18",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Concur.",
+          "options": [
+            "agree",
+            "participate",
+            "recognize",
+            "consult"
+          ],
+          "correctIndex": 0,
+          "explanation": "To concur is to agree.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-19",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Feat.",
+          "options": [
+            "talent",
+            "accomplishment",
+            "celebration",
+            "thrill"
+          ],
+          "correctIndex": 1,
+          "explanation": "A feat is an achievement.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-20",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Formidable.",
+          "options": [
+            "impressive",
+            "rebellious",
+            "endless",
+            "shallow"
+          ],
+          "correctIndex": 0,
+          "explanation": "Formidable means inspiring respect through size or power, so impressive is the nearest here.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-21",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Scrupulous.",
+          "options": [
+            "smart",
+            "careless",
+            "careful",
+            "late"
+          ],
+          "correctIndex": 2,
+          "explanation": "Scrupulous means careful and thorough.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-22",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Respite.",
+          "options": [
+            "comfort",
+            "interval of rest",
+            "solitude",
+            "care"
+          ],
+          "correctIndex": 1,
+          "explanation": "A respite is a short break or rest.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-23",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Erudite.",
+          "options": [
+            "wrong",
+            "grand",
+            "scholarly",
+            "somber"
+          ],
+          "correctIndex": 2,
+          "explanation": "Erudite means learned or scholarly.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-24",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Scintillating.",
+          "options": [
+            "distressing",
+            "refined",
+            "fascinating",
+            "discouraging"
+          ],
+          "correctIndex": 2,
+          "explanation": "Scintillating means sparkling and brilliant, so fascinating is nearest here.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-25",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Apprise.",
+          "options": [
+            "defy",
+            "commit",
+            "inform",
+            "greet"
+          ],
+          "correctIndex": 2,
+          "explanation": "To apprise is to inform.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-26",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Exquisite.",
+          "options": [
+            "mild",
+            "durable",
+            "long",
+            "superb"
+          ],
+          "correctIndex": 3,
+          "explanation": "Exquisite means extremely beautiful or fine.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-27",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Adversary.",
+          "options": [
+            "helper",
+            "leader",
+            "enemy",
+            "civilian"
+          ],
+          "correctIndex": 2,
+          "explanation": "An adversary is an opponent or enemy.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-28",
+          "prompt": "Choose the word nearest in meaning to the italicized word: Diction.",
+          "options": [
+            "system",
+            "choice of words",
+            "memory",
+            "suggestion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Diction is the choice and use of words in speech or writing.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-29",
+          "prompt": "The politician has a variety of peculiarities. The most conspicuous is the way he gesticulates when making a serious point. What does \"gesticulates\" mean here?",
+          "options": [
+            "Shows anxiety when making a serious point",
+            "Uses his hands and arms as a sign",
+            "Breaks down when talking seriously",
+            "Bows his head in humility to the crowd"
+          ],
+          "correctIndex": 1,
+          "explanation": "To gesticulate is to make gestures with the hands and arms.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-30",
+          "prompt": "The Bible's prodigal son became quite wealthy eventually. What does \"prodigal\" mean?",
+          "options": [
+            "Prestigious",
+            "Affluent",
+            "Poverty-stricken",
+            "Extravagant"
+          ],
+          "correctIndex": 3,
+          "explanation": "Prodigal means wastefully extravagant.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "The paper's wording says the son became wealthy; the usual meaning of \"prodigal\" is wasteful."
+        },
+        {
+          "id": "gst101-voc-31",
+          "prompt": "Don't eat just any innocuous-looking mushroom you see around. What does \"innocuous\" mean?",
+          "options": [
+            "Harmful",
+            "Harmless",
+            "Innocent",
+            "Immunized"
+          ],
+          "correctIndex": 1,
+          "explanation": "Innocuous means harmless.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-32",
+          "prompt": "The solution to the problem has so far ________ the scientists.",
+          "options": [
+            "eluded",
+            "defied",
+            "allured",
+            "denied"
+          ],
+          "correctIndex": 0,
+          "explanation": "A solution that has so far eluded someone has escaped them.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-33",
+          "prompt": "The frightening explosion in the factory ________ a whole wing.",
+          "options": [
+            "washed out",
+            "wiped out",
+            "rooted out",
+            "flushed out"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Wiped out\" means destroyed completely.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-34",
+          "prompt": "Each producer is able to place a price on their product by considering its ________.",
+          "options": [
+            "assessment",
+            "choice",
+            "worth",
+            "judgment"
+          ],
+          "correctIndex": 2,
+          "explanation": "A price reflects the worth of a product.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-35",
+          "prompt": "God's prophets were given the great ________ to preach salvation to people.",
+          "options": [
+            "commission",
+            "commotion"
+          ],
+          "correctIndex": 0,
+          "explanation": "A commission is an authoritative charge or task.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "Three of the four options were printed as \"commission\" in the typed paper; they are merged into one."
+        },
+        {
+          "id": "gst101-voc-36",
+          "prompt": "The writer analyzes the evils of the society ________.",
+          "options": [
+            "so masterly",
+            "in such a mastery way",
+            "very masterly",
+            "in a masterly way"
+          ],
+          "correctIndex": 3,
+          "explanation": "\"In a masterly way\" is the correct adverbial phrase.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-voc-37",
+          "prompt": "His summary of the meeting was brief and to the point. Which word best matches \"brief and to the point\"?",
+          "options": [
+            "careful",
+            "accurate",
+            "exact",
+            "precise"
+          ],
+          "correctIndex": null,
+          "explanation": "The usual word is \"concise\", which is not listed.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The sentence is cut off. Needs the original."
+        },
+        {
+          "id": "gst101-voc-38",
+          "prompt": "All of the following EXCEPT one are markers of transition:",
+          "options": [
+            "consequently",
+            "nevertheless",
+            "for this reason",
+            "secondly"
+          ],
+          "correctIndex": null,
+          "explanation": "All four are transition words.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No clear exception. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "grammar-and-usage",
+      "questions": [
+        {
+          "id": "gst101-gra-01",
+          "prompt": "Before the operation, the dentist found that his patient's teeth ________.",
+          "options": [
+            "had long decayed",
+            "have long decayed",
+            "have long been decayed",
+            "have long being decayed"
+          ],
+          "correctIndex": 0,
+          "explanation": "Both events are in the past, and the decay came first, so the past perfect \"had long decayed\" fits.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-02",
+          "prompt": "He had just entered the office ________ the telephone rang.",
+          "options": [
+            "as",
+            "before",
+            "since",
+            "when"
+          ],
+          "correctIndex": 3,
+          "explanation": "\"Had just ... when\" is the standard pattern.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-03",
+          "prompt": "I would not have condescended to appease the traffic policemen had I not ________ several traffic regulations.",
+          "options": [
+            "been breaking",
+            "broken",
+            "broken in",
+            "been broken"
+          ],
+          "correctIndex": 1,
+          "explanation": "The third conditional \"had I not broken\" needs the past participle.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-04",
+          "prompt": "________ marked an important step in the history of the Industrial Revolution.",
+          "options": [
+            "The invention of the locomotive engine",
+            "The discovery of locomotion",
+            "The discovery of the engine",
+            "Inquiry into locomotion"
+          ],
+          "correctIndex": 0,
+          "explanation": "The invention of the locomotive engine is a historical step in the Industrial Revolution.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-05",
+          "prompt": "If this had happened to you, what ________?",
+          "options": [
+            "would you do",
+            "have you done",
+            "would you have done",
+            "will you do"
+          ],
+          "correctIndex": 2,
+          "explanation": "Third conditional: \"If ... had happened, what would you have done?\"",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-06",
+          "prompt": "By the time the rainy season ended, all the young cocoa trees ________ in size.",
+          "options": [
+            "had doubled",
+            "were doubling",
+            "doubled"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"By the time\" with a past event needs the past perfect: had doubled.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "Option (c) repeated \"had doubled\" in the typed paper; one copy removed."
+        },
+        {
+          "id": "gst101-gra-07",
+          "prompt": "We got to the hall after the play ________.",
+          "options": [
+            "had started",
+            "has started",
+            "was starting",
+            "had start"
+          ],
+          "correctIndex": 0,
+          "explanation": "The play started before we arrived, so the past perfect is used.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-08",
+          "prompt": "If he had left home earlier, he ________ late.",
+          "options": [
+            "would not be",
+            "would have not been",
+            "would not have been",
+            "would not been"
+          ],
+          "correctIndex": 2,
+          "explanation": "Third conditional: would not have been.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-09",
+          "prompt": "I saw you walking in that direction, but I did not know exactly ________.",
+          "options": [
+            "where you were going",
+            "where are you going",
+            "where were you going to",
+            "to where are you going"
+          ],
+          "correctIndex": 0,
+          "explanation": "In reported questions the word order is normal: where you were going.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-10",
+          "prompt": "The chairman of the company was very sympathetic ________ his staff.",
+          "options": [
+            "at",
+            "for",
+            "from",
+            "to"
+          ],
+          "correctIndex": 3,
+          "explanation": "The phrase is \"sympathetic to\".",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-11",
+          "prompt": "Could I ring him up? I'd rather you ________.",
+          "options": [
+            "visit him",
+            "visited him",
+            "would visit him",
+            "visiting him"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"I'd rather you\" is followed by the past simple.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-12",
+          "prompt": "There ________ a lot of argument for and against car loans in the press recently.",
+          "options": [
+            "has been",
+            "have been",
+            "are",
+            "were"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"A lot of argument\" is uncountable and \"recently\" needs the present perfect: has been.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-13",
+          "prompt": "You surely want ________ in your tea, don't you?",
+          "options": [
+            "all milk",
+            "a milk",
+            "some milk",
+            "every milk"
+          ],
+          "correctIndex": 2,
+          "explanation": "Milk is uncountable, so use \"some milk\".",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-14",
+          "prompt": "Had he known in advance, he ________ for the interview.",
+          "options": [
+            "should prepare",
+            "was going to prepare",
+            "would have prepared",
+            "will have been preparing"
+          ],
+          "correctIndex": 2,
+          "explanation": "Third conditional with inversion: would have prepared.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-15",
+          "prompt": "Must you always ________?",
+          "options": [
+            "speak",
+            "tell",
+            "say",
+            "talk"
+          ],
+          "correctIndex": null,
+          "explanation": "Every option can complete the sentence in some way.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The sentence is incomplete. Needs the original wording."
+        },
+        {
+          "id": "gst101-gra-16",
+          "prompt": "The government should prevent smugglers ________ their contraband.",
+          "options": [
+            "to see",
+            "to selling",
+            "from selling",
+            "having sold"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Prevent ... from\" is followed by an -ing form.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-17",
+          "prompt": "The house will look all the better ________ this new coat of paint.",
+          "options": [
+            "for",
+            "under",
+            "against",
+            "upon"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"All the better for\" is the fixed phrase.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-18",
+          "prompt": "There was ________ much noise at night that we couldn't sleep.",
+          "options": [
+            "such a",
+            "such",
+            "that",
+            "so"
+          ],
+          "correctIndex": 3,
+          "explanation": "\"So much ... that\" is the correct pattern.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-19",
+          "prompt": "A policeman stopped me and I ________ to the police station.",
+          "options": [
+            "was taken",
+            "took",
+            "am taken",
+            "will be taken"
+          ],
+          "correctIndex": 0,
+          "explanation": "The past passive \"was taken\" fits the story.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-20",
+          "prompt": "Although the problem was simple, ________ students were able to solve it.",
+          "options": [
+            "little",
+            "small",
+            "few",
+            "a lot of"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Few\" is used with plural countable nouns and carries a negative sense, which fits \"although\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-21",
+          "prompt": "Keep this matter strictly ________.",
+          "options": [
+            "between you and me",
+            "between you and I",
+            "among you and I",
+            "among you and me"
+          ],
+          "correctIndex": 0,
+          "explanation": "After a preposition use the object form \"me\", and \"between\" is used for two people.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-22",
+          "prompt": "His suggestion is completely ________ the point and cannot be accepted.",
+          "options": [
+            "beside",
+            "to",
+            "about",
+            "on"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Beside the point\" means irrelevant.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-23",
+          "prompt": "Although he is in all respects a poor student, he has managed to buy a tape recorder to improve his ________ of French.",
+          "options": [
+            "mastering",
+            "mastery",
+            "speaking",
+            "ideas"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Mastery of\" a language is the correct noun phrase.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-24",
+          "prompt": "The governor commended the society's ________ services to the nation.",
+          "options": [
+            "humanitarian",
+            "humanist",
+            "humanity",
+            "humanistic"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Humanitarian services\" means services that help people in need.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-25",
+          "prompt": "By the end of this year, I ________ in this town for eleven years.",
+          "options": [
+            "am living",
+            "shall/will have lived",
+            "would be living",
+            "shall/will live"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"By the end of this year\" calls for the future perfect.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-26",
+          "prompt": "It was a long poem, but he learned it ________.",
+          "options": [
+            "off head",
+            "in memory",
+            "by heart",
+            "heart"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"By heart\" means from memory.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-27",
+          "prompt": "After completing half of the journey, all the travelers could do was ________ along.",
+          "options": [
+            "run briskly",
+            "walk lazily",
+            "walk and stop intermittently",
+            "walk wearily"
+          ],
+          "correctIndex": 3,
+          "explanation": "Tired travelers can only trudge, or walk wearily.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-28",
+          "prompt": "Do you know if the new teacher ________ yet?",
+          "options": [
+            "is arrived",
+            "will be arriving",
+            "has arrived",
+            "had arrived"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"Yet\" with a present result needs the present perfect: has arrived.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-29",
+          "prompt": "The boycott of classes late last year by undergraduates resulted ________ the temporary closure of Nigerian universities.",
+          "options": [
+            "in",
+            "to",
+            "from",
+            "at"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Resulted in\" introduces the effect.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-30",
+          "prompt": "The neighbor's children always make ________ when she is not at home.",
+          "options": [
+            "a lot of noise",
+            "noises",
+            "plenty of noises",
+            "plenty noise"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"Noise\" is uncountable, so use \"a lot of noise\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-31",
+          "prompt": "The land decree does not concern itself with achieving ________ in landed property ownership, since those who already own large estates can keep them for good.",
+          "options": [
+            "balance",
+            "fifty-fifty",
+            "sanity",
+            "equality"
+          ],
+          "correctIndex": 3,
+          "explanation": "The decree is not aiming at equality of ownership.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-32",
+          "prompt": "The students ________ so much noise while the lecture was going on that the lecturer had to walk out of the class.",
+          "options": [
+            "made",
+            "had been making",
+            "were making",
+            "had made"
+          ],
+          "correctIndex": 2,
+          "explanation": "The past continuous \"were making\" matches the ongoing lecture.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-33",
+          "prompt": "You should show some consideration ________ the feelings of others.",
+          "options": [
+            "with",
+            "for",
+            "about",
+            "by"
+          ],
+          "correctIndex": 1,
+          "explanation": "The phrase is \"consideration for\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-34",
+          "prompt": "\"He isn't coming home, is he?\" \"________, he isn't.\"",
+          "options": [
+            "Yes",
+            "Why",
+            "No",
+            "Now"
+          ],
+          "correctIndex": 2,
+          "explanation": "The answer agrees with the negative statement: \"No, he isn't.\"",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-35",
+          "prompt": "Agbo says he is not afraid of ________.",
+          "options": [
+            "nothing",
+            "no one",
+            "nobody",
+            "anybody"
+          ],
+          "correctIndex": 3,
+          "explanation": "With \"not\", use \"anybody\". \"Nothing\" and \"nobody\" would give a double negative.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-36",
+          "prompt": "Actually, he forgot the one to ________ the job was given.",
+          "options": [
+            "whoever",
+            "who",
+            "whomever",
+            "whom"
+          ],
+          "correctIndex": 3,
+          "explanation": "After the preposition \"to\", the object form \"whom\" is used.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-37",
+          "prompt": "The police claim that a number of stolen cars ________ recovered.",
+          "options": [
+            "is being",
+            "has being",
+            "have been",
+            "has been"
+          ],
+          "correctIndex": 2,
+          "explanation": "\"A number of\" takes a plural verb, and the passive is \"have been recovered\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-38",
+          "prompt": "You who ________ convicted should appeal.",
+          "options": [
+            "is",
+            "are",
+            "has been",
+            "were"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"You who\" takes the plural verb form \"are\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-39",
+          "prompt": "The Secretary-General was shocked at the number of ________.",
+          "options": [
+            "children soldiers",
+            "child soldiers",
+            "child's soldiers",
+            "childish soldiers"
+          ],
+          "correctIndex": 1,
+          "explanation": "\"Child soldiers\" is the correct compound.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-40",
+          "prompt": "The Vice-Chancellor, as well as his management team, ________ arrived.",
+          "options": [
+            "have",
+            "has",
+            "was",
+            "is"
+          ],
+          "correctIndex": 1,
+          "explanation": "The subject is the singular \"Vice-Chancellor\"; \"as well as his team\" does not change that, and \"arrived\" needs \"has\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-41",
+          "prompt": "I have ________ a flair ________ chemistry.",
+          "options": [
+            "a / to",
+            "a / for",
+            "- / at",
+            "a / in"
+          ],
+          "correctIndex": 1,
+          "explanation": "The phrase is \"a flair for\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-42",
+          "prompt": "Reported speech: \"I said, 'I live here.'\" becomes \"I said that ________.\"",
+          "options": [
+            "I lived there",
+            "I live here",
+            "I leaved there",
+            "I leaved here"
+          ],
+          "correctIndex": 0,
+          "explanation": "In reported speech the present becomes the past and \"here\" becomes \"there\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-43",
+          "prompt": "Reported speech: \"She said, 'I am now in bed.'\" becomes \"She said that she ________.\"",
+          "options": [
+            "was now in bed",
+            "was then in bed",
+            "is then in bed",
+            "is now in bed"
+          ],
+          "correctIndex": 1,
+          "explanation": "In reported speech \"am\" becomes \"was\" and \"now\" becomes \"then\".",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-gra-44",
+          "prompt": "The principal will be going away on leave; in his absence, the vice principal will ________ the school.",
+          "options": [
+            "take over",
+            "carry on",
+            "look after",
+            "care for"
+          ],
+          "correctIndex": null,
+          "explanation": "\"Take over\" and \"look after\" can both fit.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "More than one option fits. Needs the key."
+        },
+        {
+          "id": "gst101-gra-45",
+          "prompt": "I have no respect for individuals who are too ________.",
+          "options": [
+            "complaisant",
+            "compliance",
+            "compliant",
+            "compliable"
+          ],
+          "correctIndex": null,
+          "explanation": "\"Complaisant\" and \"compliant\" both fit.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The printed option (a) was garbled and options A and C both fit. Needs the key."
+        },
+        {
+          "id": "gst101-gra-46",
+          "prompt": "The bank manager assured us that there was nothing to worry about ________ the loan.",
+          "options": [
+            "with regard to",
+            "as regard to",
+            "with regards to",
+            "in regard to"
+          ],
+          "correctIndex": null,
+          "explanation": "\"With regard to\" and \"in regard to\" are both correct.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and D are both correct. Needs the key."
+        },
+        {
+          "id": "gst101-gra-47",
+          "prompt": "\"Oh, what a match!\" expresses ________.",
+          "options": [
+            "satisfaction",
+            "surprise",
+            "disgust",
+            "purpose"
+          ],
+          "correctIndex": null,
+          "explanation": "The line can show satisfaction or surprise.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and B are both defensible. Needs the key."
+        },
+        {
+          "id": "gst101-gra-48",
+          "prompt": "\"The student aims to become chairman.\" In this sentence, there is:",
+          "options": [
+            "zero article",
+            "a definite article",
+            "no article",
+            "an indefinite article"
+          ],
+          "correctIndex": null,
+          "explanation": "Zero article and no article mean the same thing.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and C mean the same thing. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "library-skills",
+      "questions": [
+        {
+          "id": "gst101-lib-01",
+          "prompt": "The Special Collection Section of the library houses all of the following EXCEPT:",
+          "options": [
+            "A collection of rare books, theses and dissertations",
+            "Government documents and publications of international organizations",
+            "Encyclopedias, yearbooks and almanacs",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Encyclopedias, yearbooks and almanacs belong to the reference section.",
+          "source": "GST 101 and GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-02",
+          "prompt": "What is Library User Education?",
+          "options": [
+            "Orientation given to library patrons to enable them to find reading materials independently",
+            "The series of lectures and seminars given to JAMBITEs on arrival at the university",
+            "Education given to fresh students of any university to equip them for the task ahead",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Library user education teaches patrons how to find and use library materials on their own.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-03",
+          "prompt": "When books are said to be on open access, it means ________.",
+          "options": [
+            "the books are spread open on the shelf",
+            "the books cannot be borrowed for home use",
+            "users have freedom to browse and borrow such books",
+            "all of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Open access means users can browse the shelves and borrow books, subject to library rules.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-04",
+          "prompt": "What is the major advantage of OPAC (Online Public Access Catalog) over a card catalog for a library user?",
+          "options": [
+            "It uses a computer",
+            "It is more visible and appealing to users",
+            "It allows multiple users to search simultaneously from different terminals",
+            "It gives more details than the card catalog"
+          ],
+          "correctIndex": 2,
+          "explanation": "Many users can search an OPAC at the same time from different terminals.",
+          "source": "GST 101 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-05",
+          "prompt": "The ________ section of the library is responsible for registering users.",
+          "options": [
+            "Circulation",
+            "Serials",
+            "Reference",
+            "Cataloging"
+          ],
+          "correctIndex": 0,
+          "explanation": "The circulation section registers users and handles borrowing and returns.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-06",
+          "prompt": "The John Harris Library at the University of Benin falls under which type of library?",
+          "options": [
+            "National library",
+            "Academic library",
+            "Special library",
+            "Public library"
+          ],
+          "correctIndex": 1,
+          "explanation": "A university library is an academic library.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-07",
+          "prompt": "All of these are reference materials EXCEPT:",
+          "options": [
+            "Dictionaries",
+            "Textbooks",
+            "Encyclopedias",
+            "Atlases"
+          ],
+          "correctIndex": 1,
+          "explanation": "Textbooks are for study and are usually lent out. Dictionaries, encyclopedias and atlases are reference materials.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-08",
+          "prompt": "A library that is not restricted to certain age brackets or social standing is called a ________.",
+          "options": [
+            "private library",
+            "public library",
+            "academic library",
+            "college library"
+          ],
+          "correctIndex": 1,
+          "explanation": "A public library serves everyone in the community.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-09",
+          "prompt": "Registered students are allowed to access the library collections with a ________.",
+          "options": [
+            "current school identity card",
+            "national identity card",
+            "departmental identity card",
+            "current library identity card"
+          ],
+          "correctIndex": 3,
+          "explanation": "Registered users enter with a current library identity card.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-10",
+          "prompt": "A bibliographic description of a book involves ________.",
+          "options": [
+            "author, location mark, year of publication",
+            "author, volume, call number, publisher",
+            "author, title, publisher, place of publication and date of publication",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A bibliographic description gives the author, title, publisher, place and date of publication.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-11",
+          "prompt": "A national library, like the Central Bank of Nigeria for finance, can be described in all of the following ways EXCEPT:",
+          "options": [
+            "apex library of the country",
+            "repository and preservation of national literature",
+            "in charge of financial matters of all libraries",
+            "a rallying point for other libraries within the country"
+          ],
+          "correctIndex": 2,
+          "explanation": "A national library is not in charge of libraries' finances.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-12",
+          "prompt": "What is \"Use of Library\"?",
+          "options": [
+            "The ability of a library patron to navigate and use the library collection independently.",
+            "Simply a user's ability to go into the library and remove books.",
+            "The ability for the librarian to remove books.",
+            "All of the above."
+          ],
+          "correctIndex": 0,
+          "explanation": "Use of Library is the skill of finding and using library resources independently.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-13",
+          "prompt": "What type of information resource is generally NOT allowed to be borrowed out of the library?",
+          "options": [
+            "Textbooks",
+            "Novels",
+            "Encyclopedias",
+            "Electronic databases"
+          ],
+          "correctIndex": 2,
+          "explanation": "Reference works such as encyclopedias stay in the library.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-14",
+          "prompt": "All of the following are functions of an academic library EXCEPT:",
+          "options": [
+            "to co-operate with and support academic programs of the parent institution",
+            "to provide information materials required for the academic programs of the parent institution",
+            "to co-operate with other libraries at appropriate levels for improved information services",
+            "to serve as a permanent legal depository for all documents issued in the country"
+          ],
+          "correctIndex": 3,
+          "explanation": "Serving as the legal depository for all documents is the job of the national library.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-15",
+          "prompt": "The acronym ISBN stands for ________.",
+          "options": [
+            "International Serial Book Number",
+            "International Standard Book Number",
+            "International Student Book Number",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "ISBN is the International Standard Book Number.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-16",
+          "prompt": "Which of these sets appears only at the end of a book or document?",
+          "options": [
+            "Contents page, Appendix, Frontispiece",
+            "Appendix, References and Questionnaire",
+            "Questionnaire only",
+            "Title page, Reference and Appendix"
+          ],
+          "correctIndex": 1,
+          "explanation": "The appendix, references and questionnaire come at the end. The contents page, frontispiece and title page come at the front.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst101-lib-17",
+          "prompt": "Which classification scheme is used in the John Harris Library?",
+          "options": [
+            "Dewey Decimal Classification Scheme",
+            "UNIBEN Manual Classification Scheme",
+            "Library of Congress Classification Scheme",
+            "National Congress Classification Scheme",
+            "Universal Decimal Classification Scheme"
+          ],
+          "correctIndex": null,
+          "explanation": "Many Nigerian university libraries use the Library of Congress scheme and some use Dewey.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "I cannot confirm which scheme this library uses. Needs the key."
+        },
+        {
+          "id": "gst101-lib-18",
+          "prompt": "The catalog card is all of these EXCEPT:",
+          "options": [
+            "an access point to the shelf",
+            "a finding tool",
+            "a carrier of classification marks",
+            "all of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "A catalog card is a finding tool and carries the classification mark.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The correct exception is unclear. Needs the key."
+        },
+        {
+          "id": "gst101-lib-19",
+          "prompt": "The catalog card is all of these EXCEPT:",
+          "options": [
+            "a finding tool",
+            "a carrier of classification marks",
+            "an access point to the shelf",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "This is the same question as another, with different options.",
+          "source": "GST 101 (continuation paper) (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The correct exception is unclear. Needs the key."
+        }
+      ]
+    }
+  ]
+}

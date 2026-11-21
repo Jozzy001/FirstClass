@@ -1,0 +1,1338 @@
+{
+  "courseCode": "GST102",
+  "topics": [
+    {
+      "id": "pre-colonial-peoples-and-kingdoms",
+      "questions": [
+        {
+          "id": "gst102-pre-01",
+          "prompt": "Which of the following is NOT a pre-colonial landmark or civilization?",
+          "options": [
+            "Nok",
+            "Napata",
+            "Nubia",
+            "Amalgamation"
+          ],
+          "correctIndex": 3,
+          "explanation": "Amalgamation (1914) was a colonial event. Nok, Napata and Nubia are ancient civilizations.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-02",
+          "prompt": "________ culture is located in the northeastern corner of Nigeria.",
+          "options": [
+            "Iwo Eleru",
+            "Yehva",
+            "Daima",
+            "Katsina"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Daima culture is in Borno State, in the northeast.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-03",
+          "prompt": "The commander-in-chief of the army in the old Oyo Empire was known as the ________, while the head of the empire was the Alaafin.",
+          "options": [
+            "Bashorun",
+            "Alaafin",
+            "Oyomesi",
+            "Are-Ona-Kakanfo"
+          ],
+          "correctIndex": 3,
+          "explanation": "The Are-Ona-Kakanfo led the Oyo army.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-04",
+          "prompt": "In the Yoruba kingdom, the ________ were members of the town council who checked the powers of the king.",
+          "options": [
+            "Ogboni",
+            "Oyomesi",
+            "Baale",
+            "Ijoye"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Oyomesi were the council of seven that checked the Alaafin.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-05",
+          "prompt": "The political function of the Bashorun in the history of the Yorubas can be compared to a ________.",
+          "options": [
+            "prime minister",
+            "ceremonial president",
+            "executive president",
+            "speaker"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Bashorun was the head of the Oyomesi and acted like a prime minister.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-06",
+          "prompt": "The Ogboni cult is associated with the political history of the ________ people.",
+          "options": [
+            "Yoruba",
+            "Igbo",
+            "Hausa",
+            "Benin"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Ogboni society is Yoruba.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-07",
+          "prompt": "In the history of Nigeria, an \"acephalous state\" (one without a single centralized ruler) is often used to describe the traditional political system of the ________.",
+          "options": [
+            "Benin",
+            "Hausa",
+            "Igbo",
+            "Yoruba"
+          ],
+          "correctIndex": 2,
+          "explanation": "Traditional Igbo society was acephalous.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-08",
+          "prompt": "The title system associated with the ________ people includes Ozo.",
+          "options": [
+            "Hausa",
+            "Yoruba",
+            "Benin",
+            "Igbo"
+          ],
+          "correctIndex": 3,
+          "explanation": "The Ozo title is Igbo.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-09",
+          "prompt": "________ symbolizes justice and authority in Igbo political organization.",
+          "options": [
+            "Okwa",
+            "Ofo",
+            "Ozo",
+            "Eze"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Ofo is the staff of authority and justice.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-10",
+          "prompt": "Who is the custodian of the Ofo in an Igbo family or lineage group?",
+          "options": [
+            "The Ohaneze",
+            "The Umunna",
+            "The Okpara",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Okpara, the eldest male, keeps the Ofo.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-11",
+          "prompt": "The title of the political head of a Hausa town or city-state is ________.",
+          "options": [
+            "Shehu",
+            "Sarki",
+            "Sarduna",
+            "Emir"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sarki is the Hausa title for a king or chief.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-12",
+          "prompt": "All of these EXCEPT one are among the original Hausa Bakwai (the seven Hausa states):",
+          "options": [
+            "Kano",
+            "Rano",
+            "Daura",
+            "Kaduna"
+          ],
+          "correctIndex": 3,
+          "explanation": "The Hausa Bakwai are Daura, Kano, Zaria, Gobir, Katsina, Rano and Biram.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-13",
+          "prompt": "The two broad categories of the Fulani group are ________.",
+          "options": [
+            "the settled (Town) Fulani and the pastoral (nomadic) Fulani",
+            "the migrant and the pastoral Fulani",
+            "the pastoral and the migrant Fulani",
+            "all of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Fulani are divided into the settled Town Fulani and the nomadic cattle Fulani.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-14",
+          "prompt": "What serves as a traditional lingua franca across the Sudan savanna belt?",
+          "options": [
+            "Yoruba",
+            "Isoko and Igbira",
+            "Hausa",
+            "Isoko and Urhobo"
+          ],
+          "correctIndex": 2,
+          "explanation": "Hausa is the lingua franca of the savanna belt.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-15",
+          "prompt": "The Islamic jihad spearheaded by Shehu Usman dan Fodio in Hausaland commenced in ________.",
+          "options": [
+            "1915",
+            "1804",
+            "1900",
+            "1898"
+          ],
+          "correctIndex": 1,
+          "explanation": "The jihad began in 1804.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-16",
+          "prompt": "The first Nigerian kingdom or coastal area to be visited by Europeans was ________.",
+          "options": [
+            "Sokoto",
+            "Kano",
+            "Benin",
+            "Oyo"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Portuguese reached Benin in the 1470s and 1480s.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-17",
+          "prompt": "The first Europeans to visit the coast of Nigeria were the ________.",
+          "options": [
+            "Italians",
+            "British",
+            "French",
+            "Portuguese"
+          ],
+          "correctIndex": 3,
+          "explanation": "The Portuguese were first.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-18",
+          "prompt": "The first major foreign religion to impact the people of Nigeria was ________.",
+          "options": [
+            "Islam",
+            "Judaism",
+            "Christianity",
+            "Buddhism"
+          ],
+          "correctIndex": 0,
+          "explanation": "Islam reached northern Nigeria before Christianity.",
+          "source": "GST 102, paper 1 and GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-19",
+          "prompt": "The earliest foreign visitors and traders to have contact with the people of Nigeria before the fifteenth century were the ________.",
+          "options": [
+            "Americans",
+            "Indians",
+            "Arabs",
+            "Europeans"
+          ],
+          "correctIndex": 2,
+          "explanation": "Arab traders crossed the Sahara long before the Europeans came.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-20",
+          "prompt": "Benin Kingdom was conquered by British forces in ________.",
+          "options": [
+            "1861",
+            "1897",
+            "1900",
+            "1800"
+          ],
+          "correctIndex": 1,
+          "explanation": "The British expedition took Benin in 1897.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-21",
+          "prompt": "Who was the first Oba of the second Benin dynasty?",
+          "options": [
+            "Ovonramwen",
+            "Ewuare the Great",
+            "Oronsen",
+            "Eweka I"
+          ],
+          "correctIndex": 3,
+          "explanation": "Eweka I, the son of Oranmiyan, began the Oba dynasty.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-22",
+          "prompt": "Which of the following is evidence of economic interaction among peoples of present-day Nigeria in the pre-colonial period?",
+          "options": [
+            "Hausa kola trade",
+            "Ironwork",
+            "Moroccan leather",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Kola trade, ironwork and trans-Saharan goods all show pre-colonial trade links.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-23",
+          "prompt": "The time lag between the introduction of a cultural trait and its full acceptance by society is known as ________.",
+          "options": [
+            "culture contact",
+            "cultural lag",
+            "culture change"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is cultural lag.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-24",
+          "prompt": "Who is the author of the book History of the Yoruba?",
+          "options": [
+            "Samuel Johnson",
+            "Wole Soyinka",
+            "Samuel Ajayi Crowther",
+            "J. F. Ade Ajayi"
+          ],
+          "correctIndex": 0,
+          "explanation": "Samuel Johnson wrote The History of the Yorubas.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-25",
+          "prompt": "Who is the author of the book How Europe Underdeveloped Africa?",
+          "options": [
+            "Chinua Achebe",
+            "Walter Rodney",
+            "Wole Soyinka",
+            "A. F. C. Ryder"
+          ],
+          "correctIndex": 1,
+          "explanation": "Walter Rodney wrote it.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-pre-26",
+          "prompt": "Which of the following is one of the main cultural centers of Southern Nigeria?",
+          "options": [
+            "Ijebu-Ode",
+            "Akure",
+            "Ile-Ife",
+            "(option d cut off)"
+          ],
+          "correctIndex": null,
+          "explanation": "Ile-Ife is the best-known cultural center.",
+          "source": "GST 102, paper 1 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Option d is cut off in the typed paper. Needs the original."
+        },
+        {
+          "id": "gst102-pre-27",
+          "prompt": "Radiocarbon dates from Igbo-Ukwu show that the culture flourished between ________.",
+          "options": [
+            "1000 AD – 1900 AD",
+            "1100 BC – 850 BC",
+            "900 BC – 100 AD",
+            "1000 BC – 100 BC"
+          ],
+          "correctIndex": null,
+          "explanation": "Radiocarbon dates place Igbo-Ukwu in about the 9th century AD, which none of the options give.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option matches the accepted date. Needs the key."
+        },
+        {
+          "id": "gst102-pre-28",
+          "prompt": "Which early writer's work helps trace the history of an ethnic group in Nigeria?",
+          "options": [
+            "Cyprian Ekwensi",
+            "Wole Soyinka",
+            "Ewuare the Great",
+            "Olaudah Equiano"
+          ],
+          "correctIndex": null,
+          "explanation": "Equiano described Igbo society, but the question is unclear.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The intended answer is unclear. Needs the key."
+        },
+        {
+          "id": "gst102-pre-29",
+          "prompt": "Which of the following is one of the early writers who wrote about the peoples of the region?",
+          "options": [
+            "Al-Bakri",
+            "Ibn Khaldun",
+            "Leo Africanus",
+            "Ahmad Ibn Fartuwa"
+          ],
+          "correctIndex": null,
+          "explanation": "All four wrote about West Africa.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "All options fit. Needs the key."
+        },
+        {
+          "id": "gst102-pre-30",
+          "prompt": "Which of the following is a non-written source from which Nigerian history can be reconstructed?",
+          "options": [
+            "Archery",
+            "Architecture",
+            "Archaeology",
+            "(faint)"
+          ],
+          "correctIndex": null,
+          "explanation": "Architecture and archaeology are both non-written sources.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and C both fit and option D is illegible. Needs the key."
+        },
+        {
+          "id": "gst102-pre-31",
+          "prompt": "One of the most valuable means of filling gaps in our knowledge of Africa's past is ________.",
+          "options": [
+            "physical anthropology",
+            "archaeology",
+            "oral tradition",
+            "historical linguistics"
+          ],
+          "correctIndex": null,
+          "explanation": "Archaeology and oral tradition are both valuable.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and C are both defensible. Needs the key."
+        },
+        {
+          "id": "gst102-pre-32",
+          "prompt": "The Portuguese explorer Afonso de Aveiro is recorded as visiting Benin around ________.",
+          "options": [
+            "1897",
+            "1484",
+            "1472",
+            "1879"
+          ],
+          "correctIndex": null,
+          "explanation": "Portuguese contact with Benin is dated 1472 (Sequeira) to the mid-1480s (Aveiro).",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The year depends on the source. Needs the key."
+        },
+        {
+          "id": "gst102-pre-33",
+          "prompt": "The Ogiso dynasty of Benin ended with the banishment or departure of ________.",
+          "options": [
+            "Eweka",
+            "Ekaladerhan",
+            "Oranmiyan",
+            "Owodo"
+          ],
+          "correctIndex": null,
+          "explanation": "Ekaladerhan was banished by Ogiso Owodo, who was the last Ogiso.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and D can both be argued. Needs the key."
+        },
+        {
+          "id": "gst102-pre-34",
+          "prompt": "Traditional administration of the Hausa state was organized across how many main tiers?",
+          "options": [
+            "Five",
+            "Three",
+            "Two",
+            "Seven"
+          ],
+          "correctIndex": null,
+          "explanation": "Sources give different numbers of tiers.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The number of tiers depends on the text. Needs the key."
+        },
+        {
+          "id": "gst102-pre-35",
+          "prompt": "Which of these is NOT a member of the Uzama Nihiron in the Benin Kingdom?",
+          "options": [
+            "Oliha",
+            "Izomo",
+            "Ero",
+            "Oshodin"
+          ],
+          "correctIndex": null,
+          "explanation": "The Uzama include the Oliha, Ezomo, Ero, Edohen, Eholo-n-Ire, Oloton and Oso.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The spelling of the options is unclear. Needs the key."
+        },
+        {
+          "id": "gst102-pre-36",
+          "prompt": "All of these are components of the traditional Hausa economy EXCEPT:",
+          "options": [
+            "farming",
+            "industry",
+            "commerce",
+            "bronze and iron smelting"
+          ],
+          "correctIndex": null,
+          "explanation": "The Hausa economy included crafts, trade and smelting.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The intended exception is unclear. Needs the key."
+        },
+        {
+          "id": "gst102-pre-37",
+          "prompt": "The guild system in the Benin Kingdom is traditionally associated with ________.",
+          "options": [
+            "Ogiso Owodo",
+            "Ogiso Ere",
+            "Ogiso Ubodo",
+            "Osanobua"
+          ],
+          "correctIndex": null,
+          "explanation": "The guild system is linked to Ogiso Ere in some texts.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "gst102-pre-38",
+          "prompt": "Which of these kingdoms is located in the Niger Delta culture area?",
+          "options": [
+            "Benin Kingdom",
+            "Yoruba Kingdom",
+            "Itsekiri Kingdom",
+            "Benin and Itsekiri kingdoms"
+          ],
+          "correctIndex": null,
+          "explanation": "Itsekiri is in the Niger Delta. Benin is sometimes included.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options C and D are both defensible. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "colonial-rule-and-nationalism",
+      "questions": [
+        {
+          "id": "gst102-col-01",
+          "prompt": "The Northern and Southern protectorates of Nigeria were amalgamated by Lord Lugard in the year ________.",
+          "options": [
+            "1961",
+            "1912",
+            "1914",
+            "1915"
+          ],
+          "correctIndex": 2,
+          "explanation": "The amalgamation was in 1914.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-02",
+          "prompt": "The British colonial authorities adopted ________ as their primary administrative system in much of Nigeria.",
+          "options": [
+            "assimilation",
+            "indirect rule",
+            "paternalism",
+            "cabinet rule"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lugard's indirect rule governed through local rulers.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-03",
+          "prompt": "Lagos was annexed as a British colony in ________.",
+          "options": [
+            "1915",
+            "1861",
+            "1960",
+            "1900"
+          ],
+          "correctIndex": 1,
+          "explanation": "Lagos was annexed in 1861.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-04",
+          "prompt": "The Berlin West Africa Conference was held in ________.",
+          "options": [
+            "1880/85",
+            "1884/85",
+            "1886/87",
+            "1885/86"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Berlin Conference ran from 1884 to 1885.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-05",
+          "prompt": "The Macpherson Constitution was introduced in Nigeria in ________.",
+          "options": [
+            "1948",
+            "1951",
+            "1946",
+            "1956"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Macpherson Constitution came in 1951.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-06",
+          "prompt": "Who is widely regarded as the father of Nigerian nationalism?",
+          "options": [
+            "Obafemi Awolowo",
+            "Nnamdi Azikiwe",
+            "Herbert Macaulay",
+            "Ahmadu Bello"
+          ],
+          "correctIndex": 2,
+          "explanation": "Herbert Macaulay is called the father of Nigerian nationalism.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-07",
+          "prompt": "The Nigerian National Democratic Party (NNDP) was founded in ________.",
+          "options": [
+            "1960",
+            "1944",
+            "1936",
+            "1922/1923"
+          ],
+          "correctIndex": 3,
+          "explanation": "Herbert Macaulay founded the NNDP in 1923.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-08",
+          "prompt": "The Nigerian Youth Movement (NYM) was founded in ________.",
+          "options": [
+            "1926",
+            "1915",
+            "1936",
+            "1957"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Nigerian Youth Movement was founded in 1936.",
+          "source": "GST 102, paper 2 and GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-09",
+          "prompt": "Jam'iyyar Mutanen Arewa was founded by ________.",
+          "options": [
+            "Ahmadu Bello",
+            "R. A. B. Dikko",
+            "Tafawa Balewa",
+            "Aminu Kano"
+          ],
+          "correctIndex": 1,
+          "explanation": "Dr R. A. B. Dikko founded Jam'iyyar Mutanen Arewa in the late 1940s.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-10",
+          "prompt": "The Action Group was founded by ________.",
+          "options": [
+            "Obafemi Awolowo",
+            "Herbert Macaulay",
+            "Ahmadu Bello",
+            "Nnamdi Azikiwe"
+          ],
+          "correctIndex": 0,
+          "explanation": "Obafemi Awolowo founded the Action Group in 1951.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-11",
+          "prompt": "The motion for the independence of Nigeria was moved in the legislative council by ________.",
+          "options": [
+            "Obafemi Awolowo",
+            "Herbert Macaulay",
+            "Anthony Enahoro",
+            "Michael Imoudu"
+          ],
+          "correctIndex": 2,
+          "explanation": "Anthony Enahoro moved the motion for self-government in 1953.",
+          "source": "GST 102, paper 1 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-col-12",
+          "prompt": "In the colonial era in Nigeria, education was tailored primarily to suit ________.",
+          "options": [
+            "the natives",
+            "the nationals",
+            "the colonialists",
+            "all of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Colonial education mainly trained clerks and helpers for the colonial administration.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "government-and-politics",
+      "questions": [
+        {
+          "id": "gst102-gov-01",
+          "prompt": "Which of these dates is the Nigerian Civil War?",
+          "options": [
+            "1967 – 1970",
+            "1968 – 1971",
+            "1967 – 1971",
+            "1960 – 1963"
+          ],
+          "correctIndex": 0,
+          "explanation": "The civil war ran from 1967 to 1970.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-02",
+          "prompt": "Nigeria attained republican status in ________.",
+          "options": [
+            "1963",
+            "1960",
+            "1967",
+            "1970"
+          ],
+          "correctIndex": 0,
+          "explanation": "Nigeria became a republic in 1963.",
+          "source": "GST 102, paper 2 and GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-03",
+          "prompt": "What is the full meaning of FEDECO?",
+          "options": [
+            "Federal Economic Commission",
+            "Federal Executive Council",
+            "Federal Education Council",
+            "Federal Electoral Commission"
+          ],
+          "correctIndex": 3,
+          "explanation": "FEDECO was the Federal Electoral Commission.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-04",
+          "prompt": "The first military coup in Nigeria occurred in January ________.",
+          "options": [
+            "1970",
+            "1964",
+            "1966",
+            "1967"
+          ],
+          "correctIndex": 2,
+          "explanation": "The first coup was in January 1966.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-05",
+          "prompt": "Nigeria's first military head of state was ________.",
+          "options": [
+            "Yakubu Gowon",
+            "Murtala Muhammed",
+            "Aguiyi-Ironsi"
+          ],
+          "correctIndex": 2,
+          "explanation": "General Aguiyi-Ironsi took power after the January 1966 coup.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-06",
+          "prompt": "In Nigeria's First Republic, what system of government operated at the federal level?",
+          "options": [
+            "Republican",
+            "Presidential",
+            "Parliamentary",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The First Republic used a parliamentary system.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-07",
+          "prompt": "In what year was the Mid-West Region carved out of the Western Region?",
+          "options": [
+            "1963",
+            "1960",
+            "1962",
+            "1968"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Mid-West Region was created in 1963.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-08",
+          "prompt": "How many senatorial zones are there in Nigeria?",
+          "options": [
+            "109",
+            "360",
+            "107",
+            "110"
+          ],
+          "correctIndex": 0,
+          "explanation": "Nigeria has 109 senatorial districts: 3 for each of the 36 states plus 1 for the FCT.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-09",
+          "prompt": "In the Benin Kingdom, succession to the throne of the Oba is based on ________.",
+          "options": [
+            "election",
+            "appointment by the Uzama",
+            "primogeniture",
+            "appointment by the Iyasere"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Oba is succeeded by his eldest son (primogeniture).",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-10",
+          "prompt": "The University of Benin is located in which local government area?",
+          "options": [
+            "Ondo",
+            "Egor",
+            "Ovia North-East",
+            "Ovia South-West"
+          ],
+          "correctIndex": 1,
+          "explanation": "The University of Benin, Ugbowo, is in Egor Local Government Area.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-gov-11",
+          "prompt": "Which of the following was the first executive president of Nigeria?",
+          "options": [
+            "Olusegun Obasanjo",
+            "Herbert Macaulay",
+            "Nnamdi Azikiwe",
+            "Ibrahim Babangida"
+          ],
+          "correctIndex": null,
+          "explanation": "Shehu Shagari was the first executive president (1979), and he is not listed.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The correct answer is not listed. Needs the key."
+        },
+        {
+          "id": "gst102-gov-12",
+          "prompt": "The following is widely regarded as a prominent labor leader in Nigeria:",
+          "options": [
+            "Adams Oshiomhole",
+            "Michael Imoudu",
+            "Pascal Bafyau",
+            "Hassan Sunmonu"
+          ],
+          "correctIndex": null,
+          "explanation": "All four were labor leaders. Imoudu is the best known.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "More than one option fits. Needs the key."
+        },
+        {
+          "id": "gst102-gov-13",
+          "prompt": "The first military governor of the Mid-West Region was ________.",
+          "options": [
+            "Col. John Inienger",
+            "Col. Samuel Ogbemudia",
+            "Col. Alabi Isama",
+            "Mr. Apkabi Asika"
+          ],
+          "correctIndex": null,
+          "explanation": "The first military governor of the Mid-West was Lt-Col. David Ejoor, who is not listed.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The correct answer is not listed. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "culture-and-society",
+      "questions": [
+        {
+          "id": "gst102-cul-01",
+          "prompt": "What is Onwuejeogwu known for in teaching culture?",
+          "options": [
+            "Culture area concept",
+            "Anthropological concept",
+            "Cultural definition",
+            "Physical environment"
+          ],
+          "correctIndex": 0,
+          "explanation": "Onwuejeogwu is known for the culture area concept of Nigeria.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cul-02",
+          "prompt": "The \"universality of culture\" means ________.",
+          "options": [
+            "culture can be learned and shared",
+            "culture is present across all human societies",
+            "culture is relative",
+            "culture is not static"
+          ],
+          "correctIndex": 1,
+          "explanation": "Universality means every human society has culture.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cul-03",
+          "prompt": "Values are broad ideals regarding what is acceptable, good and right in a given society.",
+          "options": [
+            "False",
+            "True",
+            "No idea"
+          ],
+          "correctIndex": 1,
+          "explanation": "This is the definition of values.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cul-04",
+          "prompt": "The relationship between the state and the individual is termed a ________.",
+          "options": [
+            "economic contract",
+            "legal contract",
+            "social contract",
+            "all of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The relationship is described as a social contract.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cul-05",
+          "prompt": "Aristotle and Plato conceived of citizenship as ________.",
+          "options": [
+            "those born into the ruling class",
+            "those who have philosophical background",
+            "those ordained by the gods of Athens",
+            "all of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The options do not match a standard textbook definition.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "gst102-cul-06",
+          "prompt": "Which culture area in Nigeria contains the greatest linguistic and ethnic diversity?",
+          "options": [
+            "The rain forest region",
+            "The Guinea savanna region",
+            "The Niger Delta region",
+            "The Sudan savanna region"
+          ],
+          "correctIndex": null,
+          "explanation": "The Middle Belt is often cited, which is not listed.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "citizenship-and-social-justice",
+      "questions": [
+        {
+          "id": "gst102-cit-01",
+          "prompt": "Another term for citizenship by blood or parentage is ________.",
+          "options": [
+            "Jus sanguinis",
+            "Jus soli",
+            "Sanguinis soli",
+            "Jus escusat"
+          ],
+          "correctIndex": 0,
+          "explanation": "Jus sanguinis means \"right of blood\".",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cit-02",
+          "prompt": "A child born aboard a registered ship ________.",
+          "options": [
+            "automatically becomes a universal citizen",
+            "is not a citizen of any state",
+            "takes the nationality or status tied to the country of registration",
+            "becomes a citizen of the country where the ship was built"
+          ],
+          "correctIndex": 2,
+          "explanation": "A child born aboard a registered ship is generally tied to the ship's country of registration.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cit-03",
+          "prompt": "Civil rights are protected by ________.",
+          "options": [
+            "social norms and traditional values",
+            "customs and traditions",
+            "basic laws enshrined in the constitution",
+            "folkways and folklore"
+          ],
+          "correctIndex": 2,
+          "explanation": "Civil rights are protected by the constitution.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-cit-04",
+          "prompt": "In citizenship acquisition, which of these is NOT a standard mode of naturalization?",
+          "options": [
+            "Direct naturalization",
+            "Indirect naturalization",
+            "Derivative naturalization",
+            "Collective naturalization"
+          ],
+          "correctIndex": null,
+          "explanation": "Collective naturalization is also a recognised mode.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "gst102-cit-05",
+          "prompt": "Which of these statements is true when social justice is used as an index of development?",
+          "options": [
+            "Nigeria is developed.",
+            "Nigeria is grossly underdeveloped.",
+            "Nigeria is a developing state.",
+            "All the statements are true."
+          ],
+          "correctIndex": null,
+          "explanation": "This is an opinion question.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "gst102-cit-06",
+          "prompt": "Taking an oath of allegiance is a condition for acquiring citizenship by naturalization under Section 25(2)(b) of the 1979 Constitution.",
+          "options": [
+            "A citizen must take an oath of allegiance to the state.",
+            "A citizen must take an oath of allegiance to the local government.",
+            "A citizen must take an oath of allegiance to both the state and the local government.",
+            "All of the above."
+          ],
+          "correctIndex": null,
+          "explanation": "The oath is to the Federal Republic.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The options do not match the constitution. Needs the key."
+        },
+        {
+          "id": "gst102-cit-07",
+          "prompt": "Since the amalgamation of Nigeria in 1914, the country's experience with social justice has generally been ________.",
+          "options": [
+            "pleasant",
+            "unpleasant",
+            "fluctuating",
+            "constant"
+          ],
+          "correctIndex": null,
+          "explanation": "This is an opinion question.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "education-and-religion",
+      "questions": [
+        {
+          "id": "gst102-edu-01",
+          "prompt": "The first independent national education conference on curriculum development was held in ________.",
+          "options": [
+            "1962",
+            "1963",
+            "1967",
+            "1969"
+          ],
+          "correctIndex": 3,
+          "explanation": "The National Curriculum Conference was held in 1969.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-02",
+          "prompt": "The main purpose of education is to produce a person who is useful to society.",
+          "options": [
+            "True",
+            "False",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Education aims to produce useful members of society.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-03",
+          "prompt": "Which of these is a formal method of transmitting education?",
+          "options": [
+            "Family",
+            "Formal instruction",
+            "School",
+            "Peer group"
+          ],
+          "correctIndex": 2,
+          "explanation": "School is the formal institution for education.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-04",
+          "prompt": "In Nigeria, the 6-3-3-4 system of education was introduced in ________.",
+          "options": [
+            "1979 (Yakubu Gowon)",
+            "1981 (Alhaji Shehu Shagari)",
+            "1985 (Ibrahim B. Babangida)",
+            "1990 (Olusegun Obasanjo)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 6-3-3-4 system started in the early 1980s under President Shagari.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-05",
+          "prompt": "The findings of the first post-independence National Curriculum Conference led to the formulation of a National Policy on Education in ________.",
+          "options": [
+            "1977",
+            "1978",
+            "1972",
+            "1990"
+          ],
+          "correctIndex": 0,
+          "explanation": "The National Policy on Education was first published in 1977.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-06",
+          "prompt": "The federal government launched the War Against Indiscipline (WAI) in ________.",
+          "options": [
+            "1986",
+            "1984",
+            "1977",
+            "1990"
+          ],
+          "correctIndex": 1,
+          "explanation": "WAI was launched in 1984.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-07",
+          "prompt": "Which of these is NOT a religious belief commonly held across traditional Nigerian cultures?",
+          "options": [
+            "Belief in a Supreme Being",
+            "Belief in lesser gods and deities",
+            "Belief in reincarnation and life after death",
+            "Atheism"
+          ],
+          "correctIndex": 3,
+          "explanation": "Traditional Nigerian religions believe in a Supreme Being and lesser deities.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-08",
+          "prompt": "Among the Yoruba people, the Supreme Being is referred to as ________.",
+          "options": [
+            "Sango",
+            "Ifa",
+            "Orunmila",
+            "Olodumare"
+          ],
+          "correctIndex": 3,
+          "explanation": "Olodumare (Olorun) is the Supreme Being.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-09",
+          "prompt": "The definition of religion is sometimes confused with ________.",
+          "options": [
+            "sects",
+            "cults",
+            "denominations",
+            "all of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Religion is often confused with sects, cults and denominations.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-10",
+          "prompt": "The \"Igbe\" religious movement is commonly associated with ________.",
+          "options": [
+            "the Tiv and Jukun",
+            "the Ibibio and Igbira",
+            "the Isoko and Urhobo",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Igbe movement started among the Urhobo and Isoko.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-11",
+          "prompt": "Early advocates for higher education in British West Africa included ________.",
+          "options": [
+            "Lord Lugard",
+            "the British government",
+            "Dr James Africanus Horton and Edward Blyden",
+            "all of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Horton and Blyden pushed for higher education in West Africa.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-12",
+          "prompt": "The transatlantic slave trade that lasted for more than three hundred years in Africa is known as the ________.",
+          "options": [
+            "transatlantic slave trade",
+            "trans-Saharan trade",
+            "trade by barter",
+            "all of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The question names the transatlantic slave trade.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-13",
+          "prompt": "The acronym GSM stands for ________.",
+          "options": [
+            "Global System for Mobile Communications",
+            "Global System Master",
+            "Global Street Movement",
+            "Global Supply for Mobile"
+          ],
+          "correctIndex": 0,
+          "explanation": "GSM means Global System for Mobile Communications.",
+          "source": "GST 102, paper 2 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "gst102-edu-14",
+          "prompt": "One of the tenets of WAI (War Against Indiscipline) is ________.",
+          "options": [
+            "self-control",
+            "self-reliance",
+            "self-discipline",
+            "self-management"
+          ],
+          "correctIndex": null,
+          "explanation": "Discipline and self-reliance were both stressed.",
+          "source": "GST 102, paper 1 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "More than one option is defensible. Needs the key."
+        },
+        {
+          "id": "gst102-edu-15",
+          "prompt": "________ were used to evangelize West Africa.",
+          "options": [
+            "Portuguese",
+            "British",
+            "Black missionaries and teachers",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Black missionaries and teachers did much of the work, but not alone.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The intended key is unclear. Needs the key."
+        },
+        {
+          "id": "gst102-edu-16",
+          "prompt": "Religion emphasizes ________.",
+          "options": [
+            "common rituals and beliefs",
+            "a way of life",
+            "all of the above",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Religion involves shared beliefs, rituals and a way of life.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and C are both defensible. Needs the key."
+        },
+        {
+          "id": "gst102-edu-17",
+          "prompt": "To expand tertiary education, the federal government increased the number of federal universities from ________ to ________.",
+          "options": [
+            "14 to 25",
+            "11 to 18",
+            "12 to 22",
+            "13 to 21"
+          ],
+          "correctIndex": null,
+          "explanation": "The figures depend on the period meant.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key and the period."
+        },
+        {
+          "id": "gst102-edu-18",
+          "prompt": "According to Onwuejeogwu, the Nigerian education system is ________.",
+          "options": [
+            "failing",
+            "evolving",
+            "promising",
+            "at infancy"
+          ],
+          "correctIndex": null,
+          "explanation": "This depends on the lecturer's notes.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "gst102-edu-19",
+          "prompt": "The early spread of mission schools in Nigeria is closely associated with ________.",
+          "options": [
+            "Rev. Samuel Ajayi Crowther",
+            "the Roman Catholic Mission",
+            "the Methodist Missionary Society",
+            "the United Presbyterian Church of Scotland"
+          ],
+          "correctIndex": null,
+          "explanation": "Several missions pioneered schools.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "gst102-edu-20",
+          "prompt": "How many University of Benin professors have served as Vice-Chancellor of the institution?",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "3"
+          ],
+          "correctIndex": null,
+          "explanation": "This is a local fact that changes over time.",
+          "source": "GST 102, paper 3 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        }
+      ]
+    }
+  ]
+}

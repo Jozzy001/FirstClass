@@ -281,7 +281,7 @@ export default function Test() {
               {result.wrong.map(({ question, chosen }) => (
                 <div key={question.id} className="bg-white border border-line rounded-lg p-5">
                   <div className="font-mono text-[11px] text-cobalt-deep mb-2">{question.topicTitle}</div>
-                  <div className="text-[15px] font-medium mb-3">{question.prompt}</div>
+                  <div className="text-[15px] font-medium mb-3 whitespace-pre-wrap">{question.prompt}</div>
                   <div className="text-sm space-y-1.5">
                     <div className="rounded px-3 py-2 bg-mint-pale">
                       <span className="font-mono text-xs mr-2">{String.fromCharCode(65 + question.correctIndex)}</span>
@@ -336,7 +336,7 @@ export default function Test() {
 
       <div className="bg-white border border-line rounded-2xl p-5 sm:p-8">
         <div className="flex justify-between items-start gap-3 mb-5">
-          <div className="font-display text-base sm:text-lg font-semibold leading-relaxed">{q.prompt}</div>
+          <div className="font-display text-base sm:text-lg font-semibold leading-relaxed whitespace-pre-wrap">{q.prompt}</div>
           <button
             onClick={toggleFlag}
             aria-pressed={flags[current]}

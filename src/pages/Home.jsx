@@ -9,8 +9,7 @@ import { getCourseScores } from '../lib/store.js'
 // slot in once their content is built.
 const placeholderCourses = [
   { code: 'ENG102', title: 'Engineering Drawing', faculty: 'Engineering', chaptersCompleted: 0, chaptersTotal: 9 },
-  { code: 'ECO101', title: 'Principles of Economics I', faculty: 'Social sciences', chaptersCompleted: 0, chaptersTotal: 8 },
-  { code: 'GST101', title: 'Use of English', faculty: 'General studies', chaptersCompleted: 0, chaptersTotal: 10 }
+  { code: 'ECO101', title: 'Principles of Economics I', faculty: 'Social sciences', chaptersCompleted: 0, chaptersTotal: 8 }
 ]
 
 // Free-for-commercial-use photo (Unsplash license — no attribution required).

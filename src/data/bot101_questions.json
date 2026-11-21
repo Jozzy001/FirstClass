@@ -574,6 +574,19 @@
           "correctIndex": 1,
           "explanation": "Chloroxybacteria (prochlorophytes) are eubacteria, not archaebacteria, so the statement is false.",
           "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-bac-28",
+          "prompt": "Eubacteria have cell walls made of ________.",
+          "options": [
+            "peptidoglycan",
+            "starch",
+            "cellulose",
+            "floridean starch"
+          ],
+          "correctIndex": 0,
+          "explanation": "Eubacterial cell walls contain peptidoglycan.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
         }
       ]
     },
@@ -1165,6 +1178,17 @@
           "correctIndex": 1,
           "explanation": "Carrageenan comes from red algae (Rhodophyta), not green algae, so the statement is false.",
           "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-alg-16",
+          "prompt": "Algae are classified strictly on the basis of color/pigmentation alone.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correctIndex": 1,
+          "explanation": "Algae are classified on several features (pigments, storage products, cell wall, flagella and life cycle), not on pigmentation alone.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
         }
       ]
     },
@@ -1730,6 +1754,19 @@
           ],
           "correctIndex": 2,
           "explanation": "Monocot stems have scattered vascular bundles with no cambium, so they have no secondary growth.",
+          "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
+        },
+        {
+          "id": "bot101-sed-17",
+          "prompt": "Weak-stemmed small plants that complete their life cycle in two growing seasons are called ________.",
+          "options": [
+            "climbers",
+            "shrubs",
+            "herbaceous biennials",
+            "herbs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Biennials complete their life cycle in two growing seasons.",
           "source": "BOT 101, July 2019 and continuation sheets (typed; no answer key supplied, so answers are set from standard textbook knowledge)"
         }
       ]

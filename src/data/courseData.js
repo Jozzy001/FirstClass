@@ -14,8 +14,20 @@ import mth103Notes from './mth103_notes.json'
 import mth103Questions from './mth103_questions.json'
 import bot101Notes from './bot101_notes.json'
 import bot101Questions from './bot101_questions.json'
+import gst102Notes from './gst102_notes.json'
+import gst102Questions from './gst102_questions.json'
 import bio101Notes from './bio101_notes.json'
 import bio101Questions from './bio101_questions.json'
+import zoo101Notes from './zoo101_notes.json'
+import zoo101Questions from './zoo101_questions.json'
+import csc101Notes from './csc101_notes.json'
+import csc101Questions from './csc101_questions.json'
+import csc102Notes from './csc102_notes.json'
+import csc102Questions from './csc102_questions.json'
+import sta112Notes from './sta112_notes.json'
+import sta112Questions from './sta112_questions.json'
+import gst101Notes from './gst101_notes.json'
+import gst101Questions from './gst101_questions.json'
 
 // Content is bundled directly in the app — no database read needed to
 // browse notes or take quizzes. User accounts, scores, streaks, and CGPA
@@ -107,6 +119,48 @@ const courses = {
     faculty: 'Sciences',
     // title is a placeholder; creditUnits intentionally not set yet
     topics: buildCourseTopics(bio101Notes, bio101Questions)
+  },
+  ZOO101: {
+    code: 'ZOO101',
+    title: 'Functional Zoology',
+    faculty: 'Sciences',
+    // title is from the exam paper heading; creditUnits intentionally not set yet
+    topics: buildCourseTopics(zoo101Notes, zoo101Questions)
+  },
+  CSC101: {
+    code: 'CSC101',
+    title: 'Introduction to Computing',
+    faculty: 'Sciences',
+    // title is from the exam paper heading; creditUnits intentionally not set yet
+    topics: buildCourseTopics(csc101Notes, csc101Questions)
+  },
+  CSC102: {
+    code: 'CSC102',
+    title: 'Programming Essentials',
+    faculty: 'Sciences',
+    // title is a placeholder; creditUnits intentionally not set yet
+    topics: buildCourseTopics(csc102Notes, csc102Questions)
+  },
+  STA112: {
+    code: 'STA112',
+    title: 'Probability I',
+    faculty: 'Sciences',
+    // title is from the exam paper heading; creditUnits intentionally not set yet
+    topics: buildCourseTopics(sta112Notes, sta112Questions)
+  },
+  GST101: {
+    code: 'GST101',
+    title: 'Use of English and Library',
+    faculty: 'General Studies',
+    // title is from the exam paper heading; creditUnits intentionally not set yet
+    topics: buildCourseTopics(gst101Notes, gst101Questions)
+  },
+  GST102: {
+    code: 'GST102',
+    title: 'Nigerian Peoples and Culture',
+    faculty: 'General Studies',
+    // title is from the exam paper heading; creditUnits intentionally not set yet
+    topics: buildCourseTopics(gst102Notes, gst102Questions)
   }
 }
 

@@ -1,0 +1,1554 @@
+{
+  "courseCode": "CSC102",
+  "topics": [
+    {
+      "id": "python-fundamentals",
+      "questions": [
+        {
+          "id": "csc102-pyf-01",
+          "prompt": "What is the purpose of the def keyword in Python?",
+          "options": [
+            "To define a variable",
+            "To define a class",
+            "To define a function",
+            "To define a module"
+          ],
+          "correctIndex": 2,
+          "explanation": "def introduces a function definition.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-02",
+          "prompt": "Which of the following is a valid Python function call?",
+          "options": [
+            "function[]",
+            "function()",
+            "function{}",
+            "function<>"
+          ],
+          "correctIndex": 1,
+          "explanation": "A function is called with parentheses.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-03",
+          "prompt": "What is the purpose of the import statement in Python?",
+          "options": [
+            "To import a module",
+            "To export a module",
+            "To create a module",
+            "To delete a module"
+          ],
+          "correctIndex": 0,
+          "explanation": "import brings a module into the program.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-04",
+          "prompt": "Which of the following is a built-in Python module?",
+          "options": [
+            "statistics",
+            "io",
+            "math",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "statistics, io and math are all part of the standard library.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-05",
+          "prompt": "Which of the following is a valid C variable declaration?",
+          "options": [
+            "int x;",
+            "float x;",
+            "char x;",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "All three are valid declarations in C.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-06",
+          "prompt": "What is the purpose of a variable in programming?",
+          "options": [
+            "To perform a calculation",
+            "To display output",
+            "To control program flow",
+            "To store a value"
+          ],
+          "correctIndex": 3,
+          "explanation": "A variable stores a value that the program can use and change.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-07",
+          "prompt": "Which of the following is the correct file extension for a Python file?",
+          "options": [
+            ".py",
+            ".python",
+            ".pp",
+            ".pyt"
+          ],
+          "correctIndex": 0,
+          "explanation": "Python files end in .py.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-08",
+          "prompt": "Which of these is a valid variable name in Python?",
+          "options": [
+            "3name",
+            "name_3",
+            "$name",
+            "name-3"
+          ],
+          "correctIndex": 1,
+          "explanation": "Names cannot start with a digit or contain $ or -. name_3 is valid.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-09",
+          "prompt": "What does Python use to indicate blocks of code?",
+          "options": [
+            "Braces {}",
+            "Parentheses ()",
+            "Semicolons ;",
+            "Indentation"
+          ],
+          "correctIndex": 3,
+          "explanation": "Python uses indentation for blocks.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-10",
+          "prompt": "What is the result of this code in Python: print(type(\"25\"))?",
+          "options": [
+            "<class 'str'>",
+            "<class 'char'>",
+            "<class 'bool'>",
+            "<class 'int'>"
+          ],
+          "correctIndex": 0,
+          "explanation": "\"25\" is in quotes, so it is a string.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-11",
+          "prompt": "What data type is returned by the input() function in Python 3?",
+          "options": [
+            "int",
+            "str",
+            "bool",
+            "float"
+          ],
+          "correctIndex": 1,
+          "explanation": "input() always returns a string.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-12",
+          "prompt": "What will be the result of 9 // 2 in Python?",
+          "options": [
+            "4",
+            "1",
+            "5",
+            "4.5"
+          ],
+          "correctIndex": 0,
+          "explanation": "// is floor division, so 9 // 2 = 4.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-13",
+          "prompt": "Which of these expressions returns True?",
+          "options": [
+            "print(5 == \"5\")",
+            "print(5 <= 2 and 4 > 3)",
+            "print(not(4 < 5))",
+            "print(3 < 4 or 4 < 3)"
+          ],
+          "correctIndex": 3,
+          "explanation": "3 < 4 is True, so the \"or\" expression is True. The others are False.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-14",
+          "prompt": "Which Python data structure is best suited for storing an immutable record of a student's name, age and grade together?",
+          "options": [
+            "List",
+            "Tuple",
+            "String",
+            "Dictionary"
+          ],
+          "correctIndex": 1,
+          "explanation": "A tuple holds several values and cannot be changed.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-15",
+          "prompt": "Which of the following keywords is used to check multiple conditions in a sequence in Python?",
+          "options": [
+            "elseif",
+            "else if",
+            "elif",
+            "ifelse"
+          ],
+          "correctIndex": 2,
+          "explanation": "Python uses elif.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-16",
+          "prompt": "Which Python keyword is used to skip the current iteration of a loop?",
+          "options": [
+            "stop",
+            "continue",
+            "skip",
+            "break"
+          ],
+          "correctIndex": 1,
+          "explanation": "continue jumps to the next iteration.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-17",
+          "prompt": "In which language is Python implemented (written)?",
+          "options": [
+            "English",
+            "PHP",
+            "C",
+            "Java"
+          ],
+          "correctIndex": 2,
+          "explanation": "The standard Python interpreter (CPython) is written in C.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-18",
+          "prompt": "How do you comment out a single line of code in Python?",
+          "options": [
+            "Using //",
+            "Using #",
+            "Using /* */",
+            "Using \"\""
+          ],
+          "correctIndex": 1,
+          "explanation": "A single-line comment starts with #.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-19",
+          "prompt": "What is the purpose of the if statement in Python?",
+          "options": [
+            "To execute a block of code if a condition is false",
+            "To skip a block of code",
+            "To execute a block of code if a condition is true",
+            "To exit a program"
+          ],
+          "correctIndex": 2,
+          "explanation": "if runs its block only when the condition is true.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-20",
+          "prompt": "What is the purpose of the for loop in Python?",
+          "options": [
+            "To execute a block of code repeatedly over a sequence",
+            "To execute a block of code once",
+            "To skip a block of code",
+            "To exit a program"
+          ],
+          "correctIndex": 0,
+          "explanation": "A for loop repeats its block for each item in a sequence.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-21",
+          "prompt": "Which of the following is a Python data type?",
+          "options": [
+            "Integer (int)",
+            "Float (float)",
+            "String (str)",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "int, float and str are all built-in data types.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-22",
+          "prompt": "Which of the following is a valid Python variable name?",
+          "options": [
+            "123AB",
+            "JOE 1",
+            "COMPUTER_1",
+            "COE-1"
+          ],
+          "correctIndex": 2,
+          "explanation": "Names cannot start with a digit or contain spaces or hyphens. COMPUTER_1 is valid.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-23",
+          "prompt": "The print() function is used to ________.",
+          "options": [
+            "specify values",
+            "get user input",
+            "perform calculations",
+            "display output"
+          ],
+          "correctIndex": 3,
+          "explanation": "print() shows output on the screen.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-pyf-24",
+          "prompt": "The print function in the code below will output ________.\n\nx = (\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\")\nprint(x)",
+          "options": [
+            "Mr Joseph, Mr. Idehen, Mr. Obaseki",
+            "(\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\")",
+            "[\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\"]",
+            "{\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\"}"
+          ],
+          "correctIndex": 1,
+          "explanation": "Printing a tuple shows its values in parentheses. Python actually prints them with single quotes, but option B is the only tuple format.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "algorithms-and-problem-solving",
+      "questions": [
+        {
+          "id": "csc102-alg-01",
+          "prompt": "How many minimum moves are required to solve the Tower of Hanoi puzzle for n disks?",
+          "options": [
+            "n²",
+            "n² − 2",
+            "n + 2",
+            "2ⁿ − 1"
+          ],
+          "correctIndex": 3,
+          "explanation": "The minimum number of moves is 2ⁿ − 1.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-02",
+          "prompt": "Which of the following statements is TRUE about recursion in code?",
+          "options": [
+            "The function calls itself only once.",
+            "Recursion ends when a base condition (e.g., n = 1) is reached.",
+            "There are always two recursive calls in each function invocation.",
+            "Recursion is not used at all."
+          ],
+          "correctIndex": 1,
+          "explanation": "Recursion stops at the base case.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-03",
+          "prompt": "What would be the first printed move when solving Tower of Hanoi with 3 disks, moving from peg A to peg C using peg B?",
+          "options": [
+            "Move disk 1 from A to B",
+            "Move disk 3 from A to C",
+            "Move disk 1 from A to C",
+            "Move disk 2 from A to B"
+          ],
+          "correctIndex": 2,
+          "explanation": "With an odd number of disks, the smallest disk first moves to the target peg: disk 1 from A to C.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-04",
+          "prompt": "What is the role of the auxiliary peg in the Tower of Hanoi algorithm?",
+          "options": [
+            "It holds the largest disk permanently.",
+            "It is not used at all.",
+            "It temporarily holds disks to facilitate moving others.",
+            "It is where all disks must end up."
+          ],
+          "correctIndex": 2,
+          "explanation": "The spare peg temporarily holds disks.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-05",
+          "prompt": "Which of the following is a characteristic of an algorithm?",
+          "options": [
+            "Finiteness",
+            "Generality",
+            "Exactness",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "An algorithm is finite, general and exact.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-06",
+          "prompt": "Which of the following is a type of problem-solving strategy?",
+          "options": [
+            "Algorithmic",
+            "Heuristic",
+            "Intuitive",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Algorithmic, heuristic and intuitive are all problem-solving strategies.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-07",
+          "prompt": "What is the role of feedback in problem-solving?",
+          "options": [
+            "To provide new information",
+            "To evaluate the effectiveness of a solution",
+            "To generate more solutions",
+            "To eliminate all solutions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Feedback shows how well a solution works.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-08",
+          "prompt": "What is the difference between a flowchart and pseudocode?",
+          "options": [
+            "A flowchart is textual, while pseudocode is graphical.",
+            "A flowchart is graphical, while pseudocode is textual.",
+            "A flowchart is used for algorithms, while pseudocode is used for data structures.",
+            "A flowchart is used for data structures, while pseudocode is used for algorithms."
+          ],
+          "correctIndex": 1,
+          "explanation": "A flowchart is a diagram and pseudocode is written text.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-09",
+          "prompt": "What is the difference between pseudocode and source code?",
+          "options": [
+            "Pseudocode is textual, while code is graphical.",
+            "Pseudocode is graphical, while code is textual.",
+            "Pseudocode is not directly executable, while compiled or interpreted code is executable.",
+            "Pseudocode is executable, while code is not executable."
+          ],
+          "correctIndex": 2,
+          "explanation": "Pseudocode cannot be run by a computer. Source code can.",
+          "source": "CSC 102, June 2025 and CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-10",
+          "prompt": "What is the first step in solving a problem?",
+          "options": [
+            "Brainstorming session",
+            "Identifying the problem",
+            "Problem evaluation",
+            "Implementation"
+          ],
+          "correctIndex": 1,
+          "explanation": "You must identify the problem before you can solve it.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-11",
+          "prompt": "Which problem-solving strategy involves breaking down complex problems into smaller ones?",
+          "options": [
+            "Divide and Conquer",
+            "Trial and Error",
+            "Working Backwards",
+            "Lateral Thinking"
+          ],
+          "correctIndex": 0,
+          "explanation": "Divide and conquer splits a big problem into smaller sub-problems.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-12",
+          "prompt": "What is the primary goal of problem-solving?",
+          "options": [
+            "To find a temporary solution",
+            "To identify the root cause of the problem",
+            "To implement a solution quickly",
+            "To eliminate all possible solutions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Good problem-solving looks for the root cause so the problem is solved properly.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-13",
+          "prompt": "Which of the following is a barrier to effective problem-solving?",
+          "options": [
+            "Limited information",
+            "Insufficient resources",
+            "Biased thinking",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "All three get in the way of solving a problem well.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-14",
+          "prompt": "In what form is an algorithm typically written?",
+          "options": [
+            "A programming language",
+            "An English-like structure",
+            "A set of rules to solve a problem",
+            "A software tool"
+          ],
+          "correctIndex": 1,
+          "explanation": "Algorithms are usually written in plain English-like steps (or pseudocode) before any programming language is used.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-15",
+          "prompt": "Which programming technique involves breaking down a problem into smaller sub-problems?",
+          "options": [
+            "Dynamic programming",
+            "Divide and Conquer",
+            "Greedy algorithm",
+            "Backtracking"
+          ],
+          "correctIndex": 1,
+          "explanation": "Divide and Conquer breaks a problem into smaller sub-problems.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-16",
+          "prompt": "Which programming concept is used to hide implementation details and show only necessary information?",
+          "options": [
+            "Encapsulation",
+            "Abstraction",
+            "Inheritance",
+            "Polymorphism"
+          ],
+          "correctIndex": 1,
+          "explanation": "Abstraction shows what an object does and hides how it does it.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-alg-17",
+          "prompt": "Which programming language is best known for its \"write once, run anywhere\" platform independence?",
+          "options": [
+            "Java",
+            "Python",
+            "C++",
+            "JavaScript"
+          ],
+          "correctIndex": 0,
+          "explanation": "Java code compiles to bytecode that runs on any Java Virtual Machine.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "reading-python-code",
+      "questions": [
+        {
+          "id": "csc102-rdc-01",
+          "prompt": "Which keyword defines the function in the code below?\n\ndef greet(name):          # Line 1\n    print(\"Hello, \" + name + \"!\")  # Line 2\ngreet(\"John\")             # Line 3",
+          "options": [
+            "def",
+            "print",
+            "greet",
+            "name"
+          ],
+          "correctIndex": 0,
+          "explanation": "def starts a function definition.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-02",
+          "prompt": "Which line in the code below actually calls the function?\n\ndef greet(name):          # Line 1\n    print(\"Hello, \" + name + \"!\")  # Line 2\ngreet(\"John\")             # Line 3",
+          "options": [
+            "Line 1",
+            "Line 2",
+            "Line 3",
+            "No line in the code"
+          ],
+          "correctIndex": 2,
+          "explanation": "Line 3, greet(\"John\"), calls the function.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-03",
+          "prompt": "What will be the output of the code below?\n\ndef greet(name):          # Line 1\n    print(\"Hello, \" + name + \"!\")  # Line 2\ngreet(\"John\")             # Line 3",
+          "options": [
+            "Hello,John!",
+            "Hello+John+!",
+            "Hello John!",
+            "Hello, John!"
+          ],
+          "correctIndex": 3,
+          "explanation": "\"Hello, \" + \"John\" + \"!\" prints Hello, John!",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-04",
+          "prompt": "Which part of the code below is a non-executable statement (a comment)?\n\n# This code determines the status of the user by age\nage = 17\nif age >= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")",
+          "options": [
+            "age = 17",
+            "if age >= 18:",
+            "# This code determines the status of the user by age",
+            "else:"
+          ],
+          "correctIndex": 2,
+          "explanation": "A line starting with # is a comment and Python ignores it.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-05",
+          "prompt": "How many times will \"Hi\" be printed by the code below?\n\ncount = 0\nwhile count <= 3:\n    print(\"Hi\")\n    count += 1",
+          "options": [
+            "0",
+            "3",
+            "4",
+            "Infinite"
+          ],
+          "correctIndex": 2,
+          "explanation": "count takes 0, 1, 2 and 3, so the loop runs 4 times.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-06",
+          "prompt": "What is the output of the code below?\n\nage = 17\nif age >= 17:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")",
+          "options": [
+            "Adult",
+            "Minor",
+            "17",
+            "Error"
+          ],
+          "correctIndex": null,
+          "explanation": "As typed this prints Adult, but the previous question shows \"age >= 18\", which would print Minor.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The comparison in the typed paper is inconsistent (>= 17 and >= 18). Needs the original."
+        },
+        {
+          "id": "csc102-rdc-07",
+          "prompt": "What will be the output of the code below?\n\nfor i in range(2, 5):\n    print(i, end=\" \")",
+          "options": [
+            "(options on the next page)",
+            "(options on the next page 2)",
+            "(options on the next page 3)",
+            "(options on the next page 4)"
+          ],
+          "correctIndex": null,
+          "explanation": "The code prints 2 3 4 on one line, because range(2, 5) gives 2, 3 and 4 and end=\" \" stops a new line after each print.",
+          "source": "CSC 102, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The options are still missing. Send the next page and I will make this live."
+        },
+        {
+          "id": "csc102-rdc-08",
+          "prompt": "What is the purpose of the def keyword in the code below?\n\ndef greet(name):\n    print(\"Hello, \" + name + \"!\")\ngreet(\"John\")",
+          "options": [
+            "To print a message to the screen",
+            "To define a function",
+            "To assign a value to a variable",
+            "To identify the name \"John\""
+          ],
+          "correctIndex": 1,
+          "explanation": "def defines the function greet.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-09",
+          "prompt": "What will be the output of the code below?\n\ndef greet(name):\n    print(\"Hello, \" + name + \"!\")\ngreet(\"John\")",
+          "options": [
+            "Error: not enough arguments",
+            "Error: name is not defined",
+            "Hello, John!",
+            "Hello, World!"
+          ],
+          "correctIndex": 2,
+          "explanation": "greet(\"John\") prints Hello, John!",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-10",
+          "prompt": "What would happen if the line greet(\"John\") were removed from the code below?\n\ndef greet(name):\n    print(\"Hello, \" + name + \"!\")\ngreet(\"John\")",
+          "options": [
+            "The function greet would not be defined",
+            "The function greet would not be called",
+            "The program would crash",
+            "The function greet would be deleted"
+          ],
+          "correctIndex": 1,
+          "explanation": "The function would still be defined but nothing would call it, so nothing prints.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-11",
+          "prompt": "How would you modify the code below to print \"Goodbye, John!\" instead of \"Hello, John!\"?\n\ndef greet(name):\n    print(\"Hello, \" + name + \"!\")\ngreet(\"John\")",
+          "options": [
+            "Change print(\"Hello, \" + name + \"!\") to print(\"Goodbye, \" + name + \"!\")",
+            "Change greet(\"John\") to goodbye(\"John\")",
+            "Add a new function goodbye and call it instead of greet",
+            "Remove the new function goodbye and call it instead of greet"
+          ],
+          "correctIndex": 0,
+          "explanation": "Changing the string in print is the direct fix. Calling goodbye without defining it would give an error.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-12",
+          "prompt": "What is the purpose of the if statement in the code below?\n\ndef find_max(a, b, c):\n    if a > b and a > c:\n        return a\n    elif b > a and b > c:\n        return b\n    else:\n        return c\n\nprint(find_max(10, 20, 30))",
+          "options": [
+            "To check if a is equal to b and c",
+            "To check if a is greater than both b and c",
+            "To check if a is less than b and c",
+            "To check if a is less than c and b"
+          ],
+          "correctIndex": 1,
+          "explanation": "a > b and a > c checks whether a is the largest.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-13",
+          "prompt": "What will be the output of the code below if the input values are 5, 10 and 15?\n\ndef find_max(a, b, c):\n    if a > b and a > c:\n        return a\n    elif b > a and b > c:\n        return b\n    else:\n        return c\n\nprint(find_max(5, 10, 15))",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "16"
+          ],
+          "correctIndex": 2,
+          "explanation": "15 is the largest, so the else branch returns c = 15.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-14",
+          "prompt": "How would you modify the code below to find the minimum of three numbers instead of the maximum?\n\ndef find_max(a, b, c):\n    if a > b and a > c:\n        return a\n    elif b > a and b > c:\n        return b\n    else:\n        return c\n\nprint(find_max(10, 20, 30))",
+          "options": [
+            "Change the > operators to < operators",
+            "Change the return statements to return the smallest value",
+            "Add a new function to find the minimum",
+            "Delete a new function to find the minimum"
+          ],
+          "correctIndex": 0,
+          "explanation": "Reversing the comparisons makes the code pick the smallest value.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-15",
+          "prompt": "What would happen if the input values are 10, 20, 20 in the code below?\n\ndef find_max(a, b, c):\n    if a > b and a > c:\n        return a\n    elif b > a and b > c:\n        return b\n    else:\n        return c\n\nprint(find_max(10, 20, 20))",
+          "options": [
+            "The function would return an error.",
+            "The function would return 20",
+            "The function would return 10",
+            "The function would return 10 and 20"
+          ],
+          "correctIndex": 1,
+          "explanation": "Neither if nor elif is true (20 > 20 is false), so the else branch returns c = 20.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-16",
+          "prompt": "Use the flowchart to answer: how many process (rectangle) symbols are in it? (Start, First = 0 and Second = 1, COS102 = First + Second, First = Second and Second = COS102, decision COS102 <= 100, Print First and Second, Stop)",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The answer depends on how the assignments are boxed in the figure.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Figure 1 was not supplied. The count of rectangles is unclear from the typed description."
+        },
+        {
+          "id": "csc102-rdc-17",
+          "prompt": "A flowchart starts with First = 0 and Second = 1. Each pass computes COS102 = First + Second, then sets First = Second and Second = COS102. What is the value of COS102 at the 7th iteration?",
+          "options": [
+            "21",
+            "15",
+            "8",
+            "13",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "COS102 takes the values 1, 2, 3, 5, 8, 13 and 21 on passes 1 to 7 (the Fibonacci sequence).",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-18",
+          "prompt": "How many times will the loop in the flowchart (First = 0, Second = 1, loop on COS102 <= 100) be iterated?",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "COS102 goes 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, which is 10 passes if the loop ends once it exceeds 100, but the exits are unclear.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The Yes/No exits are unclear in the typed description. Needs the figure."
+        },
+        {
+          "id": "csc102-rdc-19",
+          "prompt": "What is the role of COS102 in the flowchart where COS102 = First + Second?",
+          "options": [
+            "Counter",
+            "Loop",
+            "Assignment/calculation variable",
+            "Input statement"
+          ],
+          "correctIndex": 2,
+          "explanation": "COS102 holds the calculated sum of the two previous terms.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc-20",
+          "prompt": "How would you modify the find_max code (three numbers a, b, c) to find the maximum of four numbers instead of three?",
+          "options": [
+            "Add a new function to find the maximum of four numbers",
+            "Use a loop to iterate through the numbers",
+            "Add a new elif statement to check the fourth number",
+            "Remove a new elif statement to check the fourth number"
+          ],
+          "correctIndex": null,
+          "explanation": "A loop (or max()) is the clean way, but adding an elif is what many texts expect.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and C are both defensible. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "reading-c-code",
+      "questions": [
+        {
+          "id": "csc102-rdc2-01",
+          "prompt": "What is the purpose of the #include <stdio.h> line in the code below?\n\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 10;\n    int sum = x + y;\n    printf(\"The sum is: %d\\n\", sum);\n    return 0;\n}",
+          "options": [
+            "To define a new function",
+            "To include the standard input/output library",
+            "To declare a variable"
+          ],
+          "correctIndex": 1,
+          "explanation": "stdio.h gives access to functions such as printf.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc2-02",
+          "prompt": "What will be the output of the code below?\n\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 10;\n    int sum = x + y;\n    printf(\"The sum is: %d\\n\", sum);\n    return 0;\n}",
+          "options": [
+            "The sum is: 12",
+            "The sum is: sum",
+            "The sum is: 15",
+            "The sum is: 20"
+          ],
+          "correctIndex": 2,
+          "explanation": "5 + 10 = 15.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc2-03",
+          "prompt": "What is the purpose of the return 0; statement in the main function of the code below?\n\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 10;\n    int sum = x + y;\n    printf(\"The sum is: %d\\n\", sum);\n    return 0;\n}",
+          "options": [
+            "To return the sum of x and y",
+            "To indicate normal termination of the program",
+            "To return an error code",
+            "To display an error code"
+          ],
+          "correctIndex": 1,
+          "explanation": "Returning 0 tells the operating system the program ended normally.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc2-04",
+          "prompt": "What would happen if the int keyword were removed from the sum declaration (sum = x + y;) in the code below?\n\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 10;\n    int sum = x + y;\n    printf(\"The sum is: %d\\n\", sum);\n    return 0;\n}",
+          "options": [
+            "The program would crash",
+            "The variable sum would be declared as a float",
+            "The variable sum would be declared as a char",
+            "It would cause a compilation error because sum is undeclared in C"
+          ],
+          "correctIndex": 3,
+          "explanation": "C needs every variable declared with a type, so the compiler reports an error.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-rdc2-05",
+          "prompt": "How would you modify the code below to print \"The product is: 50\" instead of \"The sum is: 15\"?\n\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 10;\n    int sum = x + y;\n    printf(\"The sum is: %d\\n\", sum);\n    return 0;\n}",
+          "options": [
+            "Change printf(\"The sum is: %d\\n\", sum); to printf(\"The product is: %d\\n\", sum);",
+            "Add a new variable product and assign it the value of x * y",
+            "Change int sum = x + y; to int product = x * y; and update the printf statement",
+            "Delete a new variable product and assign it the value of x * y"
+          ],
+          "correctIndex": 2,
+          "explanation": "You need to multiply (5 × 10 = 50) and print the product, so the variable and the printf must both change.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "qbasic-programming",
+      "questions": [
+        {
+          "id": "csc102-qb-01",
+          "prompt": "Which of the following is true about the program below?\n\nCLS\nDIM A, B, C, D, DS AS DOUBLE\nINPUT \"A=\", A\nINPUT \"B=\", B\nINPUT \"C=\", C\nD = B * B - 4 * A * C\nIF D > 0 THEN\n    DS = SQR(D)\n    PRINT \"REAL ROOTS: \", (-B - DS) / (2 * A), (-B + DS) / (2 * A)\nELSE\n    IF D = 0 THEN\n        PRINT \"EQUAL ROOTS: \", -B / (2 * A)\n    ELSE\n        PRINT \"COMPLEX ROOTS\"\n    END IF\nEND IF",
+          "options": [
+            "It computes only complex roots",
+            "It computes only real roots",
+            "It computes the roots of a quadratic equation",
+            "It computes a, b and c of the equation"
+          ],
+          "correctIndex": 2,
+          "explanation": "The program reads a, b and c, finds the discriminant D = b² − 4ac and prints the roots in all three cases.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "The complex-roots PRINT line is shortened for display. The logic is the same."
+        },
+        {
+          "id": "csc102-qb-02",
+          "prompt": "How many quadratic root solutions will the program above typically produce for a quadratic equation?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctIndex": 1,
+          "explanation": "A quadratic equation has two roots (which may be equal or complex).",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-03",
+          "prompt": "What does DIM A, B, C, D, DS AS DOUBLE mean in the program?",
+          "options": [
+            "It is for variable declaration",
+            "It determines variable data type",
+            "It declares variables to hold double-precision numbers",
+            "It stores numeric values that have a decimal place"
+          ],
+          "correctIndex": 2,
+          "explanation": "It declares the variables as DOUBLE, which holds double-precision numbers. The other options describe only part of the meaning.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-04",
+          "prompt": "Which of the following is true about CLS?",
+          "options": [
+            "It is an instruction to the interpreter.",
+            "It is an executable statement.",
+            "It is a command/acronym to clear the screen.",
+            "Options (a) and (c)"
+          ],
+          "correctIndex": null,
+          "explanation": "CLS is an executable statement that clears the screen.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B, C and D can all be argued. Needs the key."
+        },
+        {
+          "id": "csc102-qb-05",
+          "prompt": "For a large sample size, i.e. as n → ∞, a binomial distribution ________.",
+          "options": [
+            "loses its discreteness",
+            "becomes a Poisson distribution"
+          ],
+          "correctIndex": null,
+          "explanation": "This question is cut off in the typed paper.",
+          "source": "CSC 102, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The statement is truncated and the options are incomplete. Needs the original."
+        },
+        {
+          "id": "csc102-qb-06",
+          "prompt": "Which of the following is NOT a quality of a good program?",
+          "options": [
+            "Reliability",
+            "Efficiency",
+            "Robustness",
+            "Maintainability",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Reliability, efficiency, robustness and maintainability are all qualities of a good program.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-07",
+          "prompt": "A ________ is a pictorial representation of the steps to the solution of a specific problem.",
+          "options": [
+            "Algorithm",
+            "Decision tree",
+            "Flowchart",
+            "HIPO chart",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A flowchart shows the steps of a solution as a diagram.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-08",
+          "prompt": "Which of the following is NOT a tool for program design?",
+          "options": [
+            "Algorithm",
+            "Decision table",
+            "Pseudocode",
+            "None of the above",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Algorithms, decision tables and pseudocode are all design tools, so none of them is the exception.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-09",
+          "prompt": "A ________ is a set of instructions given to a computer to execute/obey.",
+          "options": [
+            "statement",
+            "expression",
+            "program",
+            "subprogram",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A program is a set of instructions.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-10",
+          "prompt": "Which of the following is NOT a type of error in BASIC?",
+          "options": [
+            "Logical error",
+            "Syntax error",
+            "Execution error",
+            "None of the above",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Logical, syntax and execution errors are all types of error, so none is the exception.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-11",
+          "prompt": "Which of the following is true about CLS?",
+          "options": [
+            "It is an acronym for clear screen",
+            "It is a non-executable statement",
+            "It is an executable statement",
+            "Options (a) and (c)",
+            "Options (a) and (b)"
+          ],
+          "correctIndex": 3,
+          "explanation": "CLS stands for clear screen and is an executable statement.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-12",
+          "prompt": "Given the statement Y = B - D, which of the following is true?",
+          "options": [
+            "- is a binary operator",
+            "- plays a dyadic role",
+            "The statement is read as \"B minus D is assigned to Y\"",
+            "The statement is an arithmetic statement",
+            "All of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "All four statements are true.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-13",
+          "prompt": "Which of the following is NOT true about the statement: IF ((A > B) AND (C > D)) THEN A = C + B?",
+          "options": [
+            "A = C + B will be executed if either A is greater than B or C is greater than D",
+            "A = C + B will be executed if both conditions evaluate to true",
+            "A = C + B will be executed if A > B evaluates to true (and C > D is true)",
+            "None of the above",
+            "All of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "AND needs both conditions to be true. \"Either\" describes OR.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-14",
+          "prompt": "An ________ is a contiguous collection of elements of the same data type.",
+          "options": [
+            "set",
+            "record",
+            "array",
+            "literal",
+            "none of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "An array holds elements of the same type in a contiguous block.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-15",
+          "prompt": "Which of the following is NOT a valid variable name in QBasic?",
+          "options": [
+            "Offiong",
+            "OffiongMe",
+            "Offiong!",
+            "Else",
+            "none of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Else is a reserved keyword and cannot be a variable name.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-16",
+          "prompt": "Which of the following is NOT a variable type/suffix in QBasic?",
+          "options": [
+            "String ($)",
+            "Integer (%)",
+            "Single precision (!)",
+            "Long (&)",
+            "none of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "All four are valid QBasic type suffixes.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-17",
+          "prompt": "Which of the following symbols is odd?",
+          "options": [
+            "!",
+            "&",
+            "$",
+            "#",
+            "%"
+          ],
+          "correctIndex": 2,
+          "explanation": "$ marks a string. The others mark numeric types.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-18",
+          "prompt": "Which of the following is NOT correct?",
+          "options": [
+            "An IF statement in QBasic must always have a corresponding END IF statement",
+            "An IF statement inside another IF statement is termed a nested IF statement",
+            "An IF statement is used to achieve selection",
+            "Options (a) and (c)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A single-line IF...THEN...ELSE needs no END IF. Only a block IF does.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-19",
+          "prompt": "Which of the following is NOT true about a variable?",
+          "options": [
+            "It is an abstraction of a memory location",
+            "It must have an address",
+            "Its content cannot be changed",
+            "It must have a type",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "A variable's content can change, which is why it is called a variable.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-20",
+          "prompt": "Which of the following is NOT a control structure?",
+          "options": [
+            "Invocation",
+            "Selection",
+            "Iteration",
+            "Options (b) and (c)",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The basic control structures are sequence, selection and iteration.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-21",
+          "prompt": "Which of the following is NOT true about the REM statement?",
+          "options": [
+            "It is an acronym for remark",
+            "It is an executable statement",
+            "It is a non-executable statement",
+            "It is used for making comments in QBasic",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "REM is a non-executable comment.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-22",
+          "prompt": "The interface which allows a programmer to type in source code is known as an ________.",
+          "options": [
+            "interpreter",
+            "compiler",
+            "translator",
+            "editor",
+            "object code"
+          ],
+          "correctIndex": 3,
+          "explanation": "The editor is where source code is typed.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-23",
+          "prompt": "Which of the following is true about an array in QBasic?",
+          "options": [
+            "It can be single-dimensional or multi-dimensional",
+            "An array subscript can be an expression",
+            "The subscript must evaluate to an integer",
+            "An array variable can be referred to as a subscripted variable",
+            "All of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "All four statements are true.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-24",
+          "prompt": "The statement Z = X * Y will evaluate to ________ if X = 11 and Y = 3.",
+          "options": [
+            "3.67",
+            "3",
+            "2",
+            "1",
+            "none of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "11 × 3 = 33, which is not listed.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-25",
+          "prompt": "Which of the following statements marks the logical end of a QBasic program?",
+          "options": [
+            "END",
+            "CLS",
+            "WHILE",
+            "STOP",
+            "END IF"
+          ],
+          "correctIndex": 0,
+          "explanation": "END marks the logical end of the program.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-26",
+          "prompt": "How many times will the PRINT statement run in the code below (if nested properly)?\n\n5 FOR I = 1 TO 4\n10     FOR J = 1 TO 3\n15         PRINT \"NaMeKnow\"\n20     NEXT J\n25 NEXT I",
+          "options": [
+            "12",
+            "6",
+            "25",
+            "4, 3",
+            "16",
+            "none of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The inner loop runs 3 times for each of the 4 outer passes, so 4 × 3 = 12.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "The paper printed NEXT I before NEXT J, which is not properly nested. The question text says \"if nested properly\"."
+        },
+        {
+          "id": "csc102-qb-27",
+          "prompt": "Which of the following is true about the code below?\n\n5 FOR I = 1 TO 4\n10     FOR J = 1 TO 3\n15         PRINT \"NaMeKnow\"\n20     NEXT I\n25 NEXT J",
+          "options": [
+            "The FOR loop is nested",
+            "The loop is NOT properly nested",
+            "The loop is incomplete because the STEP increment is missing",
+            "Options (a) and (c)",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "NEXT I appears before NEXT J, so the loops cross each other.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-28",
+          "prompt": "How many elements can array A hold if it is declared DIM A (6, 5) (with default lower bound 0)?",
+          "options": [
+            "11",
+            "1",
+            "30",
+            "42",
+            "41"
+          ],
+          "correctIndex": 3,
+          "explanation": "The subscripts run 0 to 6 and 0 to 5, so 7 × 6 = 42 elements.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "The paper printed 36 as an option; the correct value is 42."
+        },
+        {
+          "id": "csc102-qb-29",
+          "prompt": "Which of the following is the correct form of writing the expression B² − 4AC in BASIC?",
+          "options": [
+            "B^2 - 4 * A * C",
+            "B * B - 4 * A * C",
+            "B ** 2 - 4 * A * C",
+            "Options (a) and (b)",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "BASIC uses ^ for powers, so both B^2 and B * B work. ** is not used.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-30",
+          "prompt": "If A = 4, B = 5 and C = -2, what is D if D = B^2 - 4 * A * C?",
+          "options": [
+            "7",
+            "168",
+            "-32",
+            "25",
+            "none of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "D = 25 − 4 × 4 × (−2) = 25 + 32 = 57, which is not listed.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-31",
+          "prompt": "________ is the act of locating and removing errors from a program.",
+          "options": [
+            "Compiling",
+            "Running",
+            "Execution",
+            "Debugging",
+            "Editing",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Debugging is finding and fixing errors.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-32",
+          "prompt": "Which of the following translators is used by QBasic?",
+          "options": [
+            "Assembler",
+            "Compiler",
+            "Interpreter",
+            "Hybrid",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "QBasic runs programs with an interpreter.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-33",
+          "prompt": "Which of the following is true about a function?",
+          "options": [
+            "It can be defined with or without parameter(s)",
+            "A parameter defined in the function header is referred to as a formal/dummy parameter",
+            "It must have a name",
+            "It returns a value to the calling program",
+            "All of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "All four statements are true.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-34",
+          "prompt": "Which of the following is true about an algorithm?",
+          "options": [
+            "It must be unambiguous",
+            "It must have a finite number of steps",
+            "It does not necessarily have to take an input",
+            "Options (a), (b) and (c)",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "An algorithm is unambiguous and finite, and it may take no input.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc102-qb-35",
+          "prompt": "A ________ is a program routine that is self-contained but depends on another program for its full execution.",
+          "options": [
+            "program",
+            "subprogram",
+            "subroutine",
+            "procedure",
+            "all of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "A subprogram is the usual answer, but subroutine and procedure are close.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and C are both defensible. Needs the key."
+        },
+        {
+          "id": "csc102-qb-36",
+          "prompt": "Which of the following symbols is used to depict a decision in a flowchart?",
+          "options": [
+            "Parallelogram",
+            "Rhombus",
+            "Rectangle",
+            "Diamond",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "A rhombus and a diamond are the same shape.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and D are the same shape. Needs the key."
+        },
+        {
+          "id": "csc102-qb-37",
+          "prompt": "A program that acts as an intermediary between source code and object/machine code is called a ________.",
+          "options": [
+            "Compiler",
+            "Assembler",
+            "Interpreter",
+            "Translator",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Compilers, assemblers and interpreters are all translators.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options D and E are both defensible. Needs the key."
+        },
+        {
+          "id": "csc102-qb-38",
+          "prompt": "Which of the following is NOT true about the loop FOR I = 1 TO N STEP 2: PRINT \"Offionkponkpon\": NEXT I?",
+          "options": [
+            "The loop will iterate based on N and step 2",
+            "I must be an integer",
+            "The PRINT statement will be executed N + 1/2 times",
+            "Options (b) and (c)",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "The PRINT runs about (N + 1) / 2 times, and I does not have to be an integer.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The typed wording of option C is unclear. Needs the key."
+        },
+        {
+          "id": "csc102-qb-39",
+          "prompt": "Which of the following is odd (different in category)?",
+          "options": [
+            "Arithmetic statement",
+            "Relational statement",
+            "Logical statement",
+            "Options (b) and (c)",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Relational and logical statements both give true/false results, so arithmetic is the odd one.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The intended key is unclear. Needs the key."
+        },
+        {
+          "id": "csc102-qb-40",
+          "prompt": "Which of the following is odd?",
+          "options": [
+            "<=",
+            ">=",
+            "<>",
+            "=",
+            "none of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "All four are relational operators.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option is clearly odd. Needs the key."
+        },
+        {
+          "id": "csc102-qb-41",
+          "prompt": "Which of the following is true about the code below?\n\n5 WHILE I\n10     PRINT \"Here I Come!\"\n15     I = I + 1\n20 WEND",
+          "options": [
+            "WHILE is a QBasic keyword",
+            "The PRINT statement will be executed at least once",
+            "WEND is optional",
+            "Options (a) and (b)",
+            "WEND is a keyword in QBasic"
+          ],
+          "correctIndex": null,
+          "explanation": "Options A and E are both true.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and E are both true. Needs the key."
+        },
+        {
+          "id": "csc102-qb-42",
+          "prompt": "Which of the following is NOT true about the code below?\n\n5 WHILE I\n10     PRINT \"Here I Come!\"\n15     I = I + 1\n20 WEND",
+          "options": [
+            "The statement on line 15 is optional",
+            "The statement on line 10 may not be executed",
+            "The statement on line 15 is only executed if I < N evaluates to true",
+            "Options (a) and (b)",
+            "Options (b) and (c)"
+          ],
+          "correctIndex": null,
+          "explanation": "Only the third statement is false, but option E also includes it.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options C and E both contain the false statement. Needs the key."
+        },
+        {
+          "id": "csc102-qb-43",
+          "prompt": "Which of the following is true in QBasic?",
+          "options": [
+            "An array can be multi-dimensional",
+            "The elements of a particular array could be of different data types",
+            "An array may not be declared before use",
+            "Options (a) and (c)",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "QBasic allows small arrays without a DIM, so both (a) and (c) can be argued.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and D are both defensible. Needs the key."
+        },
+        {
+          "id": "csc102-qb-44",
+          "prompt": "Which of the following is true about the statement DIM A (6, 5)?",
+          "options": [
+            "A is a two-dimensional array",
+            "A is a subscripted variable",
+            "Using default lower bound 0, a dimension has 7 and 6 elements",
+            "6 and 5 are the subscripts of array A",
+            "Options (a), (b) and (d)"
+          ],
+          "correctIndex": null,
+          "explanation": "Options A, B and C are true, and D is not (6 and 5 are upper bounds).",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "More than one option is true. Needs the key."
+        },
+        {
+          "id": "csc102-qb-45",
+          "prompt": "Which of the following statements is true in QBasic?",
+          "options": [
+            "A WHILE loop can be pre-test or post-test",
+            "A pre-test loop ensures that condition-dependent statements are executed if the condition evaluates to true",
+            "For a pre-test loop, the condition-dependent statements may not be executed at all",
+            "Options (a) and (b)",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Options B and C are both true.",
+          "source": "CSC 102, July 2019 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and C are both true. Needs the key."
+        }
+      ]
+    }
+  ]
+}

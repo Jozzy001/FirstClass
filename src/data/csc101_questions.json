@@ -1,0 +1,2119 @@
+{
+  "courseCode": "CSC101",
+  "topics": [
+    {
+      "id": "history-and-generations",
+      "questions": [
+        {
+          "id": "csc101-his-01",
+          "prompt": "Which of the following computing devices did NOT exist before the 19th century?",
+          "options": [
+            "Napier's bones",
+            "Abacus",
+            "ENIAC",
+            "Slide rule",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "ENIAC was built in the 1940s. Napier's bones, the abacus and the slide rule are much older.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-02",
+          "prompt": "The computing devices invented by Charles Babbage were the ________.",
+          "options": [
+            "Difference Engine and Abacus",
+            "Analytical Engine and Slide rule",
+            "Abacus and Slide rule",
+            "Analytical Engine and Difference Engine",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Babbage designed the Difference Engine and then the Analytical Engine.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-03",
+          "prompt": "The first mechanical calculator (Pascaline) was built by ________.",
+          "options": [
+            "Marie Jacquard",
+            "Blaise Pascal",
+            "Charles Babbage",
+            "John Napier",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Blaise Pascal built the Pascaline in 1642.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-04",
+          "prompt": "The title of \"forefather of today's all-electronic digital computers\" is usually awarded to ________.",
+          "options": [
+            "ENIAC",
+            "Mark I",
+            "Difference Engine",
+            "Analytical Engine",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "ENIAC (1946) was the first large general-purpose electronic digital computer.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-05",
+          "prompt": "Grace Hopper invented the first compiler-based language precursor known as ________.",
+          "options": [
+            "COBOL",
+            "FLOW-MATIC",
+            "Symbolic",
+            "BASIC",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Grace Hopper led the development of FLOW-MATIC, an early English-like business language.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-06",
+          "prompt": "The development of the integrated circuit was the hallmark of the ________ generation of computers.",
+          "options": [
+            "1st",
+            "2nd",
+            "3rd",
+            "4th",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Integrated circuits marked the third generation.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-07",
+          "prompt": "The second generation of computers relied on ________ for inputs.",
+          "options": [
+            "punch cards",
+            "integrated circuits",
+            "magnetic drums",
+            "cryptic binary machine",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Second-generation machines took input on punched cards (they used transistors and magnetic core memory).",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-08",
+          "prompt": "Graphical User Interfaces (GUIs) were popularized in the ________ generation of computers.",
+          "options": [
+            "2nd",
+            "3rd",
+            "4th",
+            "5th",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "GUIs spread with microprocessor-based fourth-generation personal computers.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-09",
+          "prompt": "One of the goals of 5th-generation computing is to develop devices that respond to ________ language inputs.",
+          "options": [
+            "supercomputing programming",
+            "cryptic binary",
+            "natural",
+            "graphical user",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fifth-generation computing aims at artificial intelligence and natural language input.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-10",
+          "prompt": "Gottfried Wilhelm Leibniz built a four-function calculator called the ________.",
+          "options": [
+            "Abacus",
+            "Stepped Reckoner",
+            "UNIVAC machine",
+            "EDVAC machine",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Leibniz built the Stepped Reckoner.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-11",
+          "prompt": "Which of the following is NOT a microcomputer?",
+          "options": [
+            "Notebook",
+            "Laptop",
+            "EDVAC",
+            "Desktop",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "EDVAC was an early mainframe-era computer. Notebooks, laptops and desktops are microcomputers.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-12",
+          "prompt": "________ is an acronym for Electronic Numerical Integrator and Computer.",
+          "options": [
+            "EDVAC",
+            "MARC",
+            "NEUMANN",
+            "ENIAC",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "ENIAC stands for Electronic Numerical Integrator and Computer.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-13",
+          "prompt": "Second-generation computers replaced vacuum tubes with ________.",
+          "options": [
+            "integrated circuits",
+            "transistors",
+            "COBOL",
+            "chips",
+            "microprocessors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Transistors replaced vacuum tubes in the second generation.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-14",
+          "prompt": "A skilled abacus operator can work on addition and subtraction problems at the speed of a ________ equipped with a hand calculator.",
+          "options": [
+            "computer",
+            "human",
+            "technology",
+            "programmer",
+            "developer"
+          ],
+          "correctIndex": 1,
+          "explanation": "A skilled abacus user can match a person using a hand calculator.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-15",
+          "prompt": "________ invented logarithms.",
+          "options": [
+            "Leonardo",
+            "Babylonians",
+            "John Napier",
+            "Leibniz",
+            "Pascal"
+          ],
+          "correctIndex": 2,
+          "explanation": "John Napier invented logarithms in the early 1600s.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-16",
+          "prompt": "The main electronic component used in third-generation computers was ________.",
+          "options": [
+            "integrated circuits",
+            "vacuum tubes",
+            "transistors",
+            "microprocessors",
+            "artificial intelligence"
+          ],
+          "correctIndex": 0,
+          "explanation": "Third-generation computers used integrated circuits.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-17",
+          "prompt": "The fifth generation of computers is based on ________.",
+          "options": [
+            "Artificial intelligence",
+            "Multimedia",
+            "Virtual reality",
+            "Microprocessor",
+            "Nanotechnology"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fifth-generation computing is built around artificial intelligence.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-18",
+          "prompt": "Which computer's speed is measured in Floating Point Operations Per Second (FLOPS)?",
+          "options": [
+            "Minicomputer",
+            "Supercomputer",
+            "Mainframe computer",
+            "Microcomputer",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Supercomputers are rated in FLOPS.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-his-19",
+          "prompt": "Charles Babbage proposed a steam-driven calculating machine called the ________.",
+          "options": [
+            "Analytic Engine",
+            "CPU",
+            "Census Tabulator",
+            "Diligence",
+            "Difference Engine"
+          ],
+          "correctIndex": null,
+          "explanation": "Babbage first proposed the Difference Engine, but the Analytical Engine was also steam-driven.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and E are both defensible. Needs the key."
+        },
+        {
+          "id": "csc101-his-20",
+          "prompt": "Which generation of computers eventually led to the development of the Internet?",
+          "options": [
+            "Fifth",
+            "Third",
+            "Fourth",
+            "First",
+            "Second"
+          ],
+          "correctIndex": null,
+          "explanation": "ARPANET began in the third generation, but the Internet grew with the fourth.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The key could be Third or Fourth. Needs the key."
+        },
+        {
+          "id": "csc101-his-21",
+          "prompt": "________ is one of the ways of interacting with mainframe computers.",
+          "options": [
+            "Programming",
+            "Automation",
+            "Keypunch",
+            "Time-sharing",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Time-sharing and punched-card (keypunch) input were both used with mainframes.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options C and D are both defensible. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "data-representation",
+      "questions": [
+        {
+          "id": "csc101-dat-01",
+          "prompt": "A ________ is used to represent hexadecimal and Binary Coded Decimal (BCD) digits.",
+          "options": [
+            "nibble",
+            "byte",
+            "bit",
+            "word",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A nibble is 4 bits, enough for one hex or BCD digit.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-02",
+          "prompt": "The smallest addressable memory unit for data items on a computer is a ________.",
+          "options": [
+            "bit",
+            "byte",
+            "string",
+            "word",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "A byte (8 bits) is the smallest unit with its own address.",
+          "source": "CSC 101, June 2025 and CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-03",
+          "prompt": "5 gigabytes is equivalent to approximately ________ bytes.",
+          "options": [
+            "five billion",
+            "five million",
+            "five trillion",
+            "fifty million",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "1 GB is about one billion bytes, so 5 GB is about five billion.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-04",
+          "prompt": "Convert the binary number 1100111₂ to decimal.",
+          "options": [
+            "103",
+            "201",
+            "187",
+            "131",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "64 + 32 + 4 + 2 + 1 = 103.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-05",
+          "prompt": "Convert the binary number 11100101₂ to octal.",
+          "options": [
+            "534",
+            "351",
+            "135",
+            "345",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "Group in threes: 011 100 101 = 3 4 5, so 345₈.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-06",
+          "prompt": "Convert A45₁₆ to octal.",
+          "options": [
+            "5739",
+            "5379",
+            "3957",
+            "7359",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "A45₁₆ = 1010 0100 0101₂ = 101 001 000 101₂ = 5105₈, which is not listed.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-07",
+          "prompt": "A word (32-bit) contains ________.",
+          "options": [
+            "four nibbles",
+            "four bytes",
+            "eight bytes",
+            "two nibbles",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "32 bits = 4 bytes.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-08",
+          "prompt": "A string of 8 bits is called a ________.",
+          "options": [
+            "binary string",
+            "byte",
+            "character",
+            "digit",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Eight bits make one byte.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-09",
+          "prompt": "With 16 bits, ________ different values can be represented.",
+          "options": [
+            "56,356",
+            "36,656",
+            "65,536",
+            "53,356",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "2¹⁶ = 65,536.",
+          "source": "CSC 101, June 2025 and CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-10",
+          "prompt": "In the BCD system, each decimal digit is encoded using a ________ bit binary system.",
+          "options": [
+            "2",
+            "4",
+            "8",
+            "16",
+            "32"
+          ],
+          "correctIndex": 1,
+          "explanation": "BCD uses 4 bits per decimal digit.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-11",
+          "prompt": "What is the octal equivalent of the hexadecimal number AFC54₁₆?",
+          "options": [
+            "2576124",
+            "5721624",
+            "2567142",
+            "2756142",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "AFC54₁₆ = 1010 1111 1100 0101 0100₂ → 2 576 124 in octal = 2576124.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-12",
+          "prompt": "What is the octal equivalent of the decimal fraction 0.527₁₀ (to 6 octal places)?",
+          "options": [
+            "0.41221",
+            "0.214172",
+            "0.12142",
+            "0.412172",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "Repeated multiplication by 8 gives 0.415645₈, which is not listed.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-13",
+          "prompt": "Convert 1001001100₂ to a decimal number.",
+          "options": [
+            "256",
+            "2048",
+            "1024",
+            "588",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "512 + 64 + 8 + 4 = 588.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-14",
+          "prompt": "Convert 12₁₆ to binary.",
+          "options": [
+            "10001",
+            "10010",
+            "10100",
+            "11000",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "1 = 0001 and 2 = 0010, so 10010₂.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-15",
+          "prompt": "Conversion of 1056₁₆ to an octal number yields ________.",
+          "options": [
+            "101265",
+            "102465",
+            "20488",
+            "5125",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "1056₁₆ = 1 0000 0101 0110₂ = 10126₈, which is not listed.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-16",
+          "prompt": "What is the total number of possible characters for standard ASCII and Extended ASCII, respectively?",
+          "options": [
+            "64 & 128",
+            "128 & 256",
+            "256 & 512",
+            "256 & 1024",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Standard ASCII has 7 bits (128 characters) and extended ASCII has 8 bits (256).",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-17",
+          "prompt": "Converting the decimal value 15.15₁₀ to binary gives ________.",
+          "options": [
+            "1111.11",
+            "1111.01",
+            "1111.01001100…",
+            "1111.1100",
+            "None of the above"
+          ],
+          "correctIndex": 4,
+          "explanation": "15 = 1111 and 0.15 = 0.0010011001…₂, so 1111.0010011001…, which is not listed.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-18",
+          "prompt": "Convert 11011.101₂ to decimal.",
+          "options": [
+            "27.625",
+            "34.90",
+            "44.56",
+            "24.55",
+            "78.90"
+          ],
+          "correctIndex": 0,
+          "explanation": "16 + 8 + 2 + 1 = 27 and 0.101₂ = 0.5 + 0.125 = 0.625, so 27.625.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-19",
+          "prompt": "Convert 110000111.011100₂ to octal.",
+          "options": [
+            "22.34₈",
+            "66.343₈",
+            "56.77₈",
+            "607.34₈",
+            "23.45₈"
+          ],
+          "correctIndex": 3,
+          "explanation": "Group in threes: 110 000 111 . 011 100 = 607.34₈.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-20",
+          "prompt": "The octal equivalent of 1100101.001010₂ is ________.",
+          "options": [
+            "624.2",
+            "154.12",
+            "145.12",
+            "624.12",
+            "145.2"
+          ],
+          "correctIndex": 2,
+          "explanation": "Group in threes: 001 100 101 . 001 010 = 145.12₈.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-21",
+          "prompt": "Converting 4188.625₁₀ to base 16 gives ________.",
+          "options": [
+            "FFFA.D₁₆",
+            "102.D₁₆",
+            "105C.A₁₆",
+            "4AF.C₁₆",
+            "4AFC.D₁₆"
+          ],
+          "correctIndex": 2,
+          "explanation": "4188 = 0x105C and 0.625 = 0.A₁₆, so 105C.A₁₆.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-dat-22",
+          "prompt": "In the organization of data, a word is made up of a group of ________.",
+          "options": [
+            "48-bits",
+            "24-bits",
+            "16-bits",
+            "36-bits",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Word size depends on the machine (16, 32 or 64 bits are common). Q10 treats a word as 32 bits.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The key is unclear and conflicts with the 32-bit word in another question. Needs the key."
+        },
+        {
+          "id": "csc101-dat-23",
+          "prompt": "Converting 512₁₀ to binary gives ________.",
+          "options": [
+            "1001010010₂",
+            "100010100₂",
+            "101001000₂",
+            "1000101₂",
+            "10100101000₂"
+          ],
+          "correctIndex": null,
+          "explanation": "512 = 1000000000₂, which is not listed.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option is correct. Needs the original options."
+        },
+        {
+          "id": "csc101-dat-24",
+          "prompt": "Converting 2048₁₆ to octal gives ________.",
+          "options": [
+            "20030₈",
+            "54200₈",
+            "300420₈",
+            "4246321₈",
+            "18240₈"
+          ],
+          "correctIndex": null,
+          "explanation": "2048₁₆ = 20110₈, which is not listed.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option is correct. Needs the original options."
+        }
+      ]
+    },
+    {
+      "id": "hardware-and-memory",
+      "questions": [
+        {
+          "id": "csc101-hrd-01",
+          "prompt": "The property of a disk that determines the amount of data it may contain is its ________.",
+          "options": [
+            "Size",
+            "Volume",
+            "Storage Capacity",
+            "Storage Power",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The amount of data a disk can hold is its storage capacity.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-02",
+          "prompt": "Which of the following items best describes the term hardcopy?",
+          "options": [
+            "Printout",
+            "Written on a hardboard",
+            "Information stored on a hard disk",
+            "Amount of data",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A hardcopy is a printed copy of output.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-03",
+          "prompt": "Computer hardware can be classified into ________.",
+          "options": [
+            "ALU and control unit",
+            "System unit and peripherals",
+            "Central processing unit and control unit",
+            "Input and output units",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hardware is the system unit plus the peripherals attached to it.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-04",
+          "prompt": "Which of the following is a network hardware device?",
+          "options": [
+            "Scanner",
+            "Webcam",
+            "Projector",
+            "Repeater",
+            "Mouse"
+          ],
+          "correctIndex": 3,
+          "explanation": "A repeater regenerates signals in a network.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-05",
+          "prompt": "All of the following are examples of auxiliary hardware devices EXCEPT:",
+          "options": [
+            "Heat sink",
+            "Data cable",
+            "Daughterboard",
+            "Power cable",
+            "Bridge"
+          ],
+          "correctIndex": 4,
+          "explanation": "A bridge is a network device. The others support the machine internally.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-06",
+          "prompt": "Which of the following looks like a ballpoint pen but uses pressure instead of ink to write text and draw lines?",
+          "options": [
+            "Stylus",
+            "Graphic tablet",
+            "Light pen",
+            "Trackball",
+            "Joystick"
+          ],
+          "correctIndex": 0,
+          "explanation": "A stylus presses on a touch surface to write and draw.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-07",
+          "prompt": "Which of these handles sequential program line interpretation and execution?",
+          "options": [
+            "System unit",
+            "Memory",
+            "Registers",
+            "Control unit",
+            "Central processing unit"
+          ],
+          "correctIndex": 3,
+          "explanation": "The control unit fetches and decodes instructions in order and directs their execution.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-08",
+          "prompt": "Memories in which any location can be reached in a fixed, short time after specifying its address are called ________.",
+          "options": [
+            "None of the options listed",
+            "Secondary memory",
+            "Random access memory (RAM)",
+            "Sequential access memory",
+            "Mass storage"
+          ],
+          "correctIndex": 2,
+          "explanation": "RAM gives direct access to any address in the same time.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-09",
+          "prompt": "With respect to the functions of the CPU, all but one are part of the machine cycle:",
+          "options": [
+            "Fetching",
+            "Coding",
+            "Decoding",
+            "Storing",
+            "Executing"
+          ],
+          "correctIndex": 1,
+          "explanation": "The machine cycle is fetch, decode, execute and store. Coding is done by the programmer.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-10",
+          "prompt": "Which of these units will resolve the expression x − y = x + 1?",
+          "options": [
+            "System unit",
+            "Memory",
+            "Registers",
+            "Control unit",
+            "Central processing unit (ALU)"
+          ],
+          "correctIndex": 4,
+          "explanation": "Arithmetic and comparison are done by the ALU in the CPU.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-11",
+          "prompt": "The data transfer capacity of an Internet connection is referred to as ________.",
+          "options": [
+            "Bandwidth",
+            "Kilobyte",
+            "Megabyte",
+            "Gigabyte",
+            "Byte"
+          ],
+          "correctIndex": 0,
+          "explanation": "Bandwidth is the data transfer capacity of a connection.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-hrd-12",
+          "prompt": "Which of these statements is FALSE?",
+          "options": [
+            "EEPROM means Electrically Erasable Programmable Read-Only Memory.",
+            "DRAM needs to be refreshed thousands of times per second.",
+            "EPROM means Erasable Programmable Read-Only Memory.",
+            "The development of integrated circuits was the hallmark of third-generation computers.",
+            "The UNIVAC was the first commercial computer."
+          ],
+          "correctIndex": null,
+          "explanation": "All five statements are true.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option is false. The paper may have an altered option. Needs the original."
+        },
+        {
+          "id": "csc101-hrd-13",
+          "prompt": "What is the difference between a standard camera and a webcam?",
+          "options": [
+            "All of the options listed",
+            "Cameras are always wireless components while webcams are not",
+            "Webcams are peripheral devices while cameras are not",
+            "Cameras are input devices while webcams are not",
+            "Webcams are web-browser/real-time streaming input components while standalone cameras are not"
+          ],
+          "correctIndex": null,
+          "explanation": "Option E is closest, but the wording is unclear.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Wording is unclear. Needs the key."
+        },
+        {
+          "id": "csc101-hrd-14",
+          "prompt": "The similarity between data and information is that both ________.",
+          "options": [
+            "can be displayed on the monitor",
+            "are computer input",
+            "are processed facts",
+            "are computer results",
+            "None of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "Data is raw facts and information is processed data, so only A comes close.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The key is unclear. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "software-and-systems",
+      "questions": [
+        {
+          "id": "csc101-sft-01",
+          "prompt": "Which of the following is NOT an example of an operating system?",
+          "options": [
+            "Linux",
+            "iOS",
+            "HP",
+            "Android",
+            "Windows"
+          ],
+          "correctIndex": 2,
+          "explanation": "HP is a hardware company. The others are operating systems.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-02",
+          "prompt": "In a computer, the set of instructions that directs it in performing a particular task is called a ________.",
+          "options": [
+            "Information",
+            "Program",
+            "Data",
+            "File",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "A program is a set of instructions.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-03",
+          "prompt": "Which of these brings together object modules, operating system routines and other utility software to produce a complete, executable program?",
+          "options": [
+            "Linker",
+            "Compiler",
+            "Interpreter",
+            "Loader",
+            "Assembler"
+          ],
+          "correctIndex": 0,
+          "explanation": "A linker combines object modules into an executable.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-04",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "A warm boot is the process of turning on a computer after it has been completely switched off.",
+            "The resident portion of an operating system is called the kernel.",
+            "POST checks the memory, keyboard, buses and expansion slots.",
+            "BIOS is stored in a ROM chip.",
+            "A loader copies an object program held in memory into the memory area designated by the operating system for execution."
+          ],
+          "correctIndex": 0,
+          "explanation": "Turning on a computer from fully off is a cold boot. A warm boot is a restart.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-05",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "Virtual machine operating systems do not allow a single user to run two or more different operating systems.",
+            "The operating system also monitors system activities such as performance and security.",
+            "The primary function of operating systems is to allocate resources.",
+            "The operating system contains programs that perform functions related to disk/file management."
+          ],
+          "correctIndex": 0,
+          "explanation": "A virtual machine OS does let a user run two or more operating systems.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-06",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "4GLs are not problem-oriented.",
+            "Fourth-generation languages are non-procedural.",
+            "Natural languages have a profound effect on artificial intelligence and expert systems.",
+            "Machine language instructions are written in 0s and 1s.",
+            "Natural languages are designed to make connections that humans have with computers more human-like."
+          ],
+          "correctIndex": 0,
+          "explanation": "Fourth-generation languages are problem-oriented and non-procedural.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-07",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "Gopher is a protocol that governs the transfer of hypertext between computers.",
+            "Telnet is a protocol that enables one computer to connect to another computer.",
+            "High-level languages are machine-independent.",
+            "System software enables computers to perform essential operating tasks.",
+            "TCP/IP is a collection of protocols that governs the way data travels across networks."
+          ],
+          "correctIndex": 0,
+          "explanation": "HTTP transfers hypertext. Gopher was a menu-driven document retrieval protocol.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-08",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "ENIAC means Electronic Numerical Integrator and Calculator.",
+            "PROM is a memory chip manufactured blank on which data can be written only once.",
+            "An analog computer represents data as physical quantities and operates on them by manipulating the quantities.",
+            "Transistors replaced vacuum tubes."
+          ],
+          "correctIndex": 0,
+          "explanation": "ENIAC stands for Electronic Numerical Integrator and Computer, not Calculator.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "sourceNote": "The paper printed \"Calculator\" in option (a), which is the false statement."
+        },
+        {
+          "id": "csc101-sft-09",
+          "prompt": "Which of the following tasks is NOT performed by utility programs?",
+          "options": [
+            "None of the options listed",
+            "Disk management",
+            "Linking and loading",
+            "Backup and restore",
+            "Virus protection"
+          ],
+          "correctIndex": 2,
+          "explanation": "Utility programs handle disk management, backup and virus protection. Linking and loading belong to language-translation software.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-10",
+          "prompt": "What part of the operating system is also called the master program?",
+          "options": [
+            "Control program",
+            "Main program",
+            "Chief program",
+            "Special program",
+            "Key program"
+          ],
+          "correctIndex": 0,
+          "explanation": "The control (supervisor) program is the master program of the operating system.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-11",
+          "prompt": "An executable program produced through module-object interaction occurs through ________.",
+          "options": [
+            "Compilers",
+            "Linkers",
+            "Antivirus",
+            "Utility programs",
+            "Interpreters"
+          ],
+          "correctIndex": 1,
+          "explanation": "Linkers combine object modules into one executable.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-12",
+          "prompt": "Which of these software applications under the Microsoft Office suite supports communication/email sharing?",
+          "options": [
+            "Graphic design",
+            "Communication software (Outlook)",
+            "Spreadsheet",
+            "Word processor",
+            "Internet browser"
+          ],
+          "correctIndex": 1,
+          "explanation": "Outlook handles email and communication in the Office suite.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-sft-13",
+          "prompt": "Which of these is an advantage of using an office suite?",
+          "options": [
+            "All the options listed",
+            "The package is cost-effective/bundled",
+            "The package is easy to obtain",
+            "The possibility of file sharing/integration",
+            "They are universal across all platforms"
+          ],
+          "correctIndex": null,
+          "explanation": "Options B, C and D are advantages, but E is not.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Whether the key is \"All the options\" is unclear. Needs the key."
+        },
+        {
+          "id": "csc101-sft-14",
+          "prompt": "Which of the following is executed by the BIOS?",
+          "options": [
+            "All the options listed",
+            "Load operating system",
+            "Load application software",
+            "Memory test (POST)",
+            "None of the options listed"
+          ],
+          "correctIndex": null,
+          "explanation": "BIOS runs the power-on self-test and starts the bootstrap that loads the OS.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and D are both defensible. Needs the key."
+        },
+        {
+          "id": "csc101-sft-15",
+          "prompt": "Which of these is NOT a file management task?",
+          "options": [
+            "Virus protection",
+            "Copying",
+            "Editing",
+            "Listing",
+            "Deleting"
+          ],
+          "correctIndex": null,
+          "explanation": "File management covers copying, listing, deleting and renaming. Virus protection and editing are both outside it.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and C are both defensible. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "internet-and-networking",
+      "questions": [
+        {
+          "id": "csc101-net-01",
+          "prompt": "Which of the following protocols is used to send emails?",
+          "options": [
+            "FTP",
+            "HTTP",
+            "SMTP",
+            "SNMP",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "SMTP (Simple Mail Transfer Protocol) sends email.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-02",
+          "prompt": "What does ISP stand for?",
+          "options": [
+            "Internet Server Provider",
+            "Internet Service Protocol",
+            "Internet Service Provider",
+            "Internal Server Protocol",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "ISP means Internet Service Provider.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-03",
+          "prompt": "Which of the following is a primary benefit of the Internet?",
+          "options": [
+            "Increases paper usage",
+            "Limits global communication",
+            "Facilitates easy access to information",
+            "Reduces digital literacy",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Internet gives easy access to information.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-04",
+          "prompt": "Which of the following is a business-related benefit of the Internet?",
+          "options": [
+            "Decreased market reach",
+            "Slow communication with customers",
+            "Online marketing and e-commerce opportunities",
+            "Increased costs of advertising",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "The Internet opens up online marketing and e-commerce.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-05",
+          "prompt": "The application software which allows information on the World Wide Web to be accessed is called a ________.",
+          "options": [
+            "Browser",
+            "World Wide Web",
+            "Spreadsheet",
+            "Internet Protocol",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A browser retrieves and displays web pages.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-06",
+          "prompt": "Which of the following is NOT a service provided by the Internet?",
+          "options": [
+            "Email",
+            "File Transfer",
+            "Word Processing",
+            "Web Browsing",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Word processing is a local application, not an Internet service.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-07",
+          "prompt": "Which protocol is used to transfer web pages?",
+          "options": [
+            "FTP",
+            "SMTP",
+            "HTTP",
+            "TCP",
+            "TCP/IP"
+          ],
+          "correctIndex": 2,
+          "explanation": "HTTP transfers web pages.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-08",
+          "prompt": "The first network that planted the seed of the Internet was ________.",
+          "options": [
+            "ARPANET",
+            "NSFNET",
+            "Vnet",
+            "Both A and B",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "ARPANET (1969) was the first network that led to the Internet.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-09",
+          "prompt": "Which of the following protocols is used for the World Wide Web (WWW)?",
+          "options": [
+            "FTP",
+            "HTTP",
+            "W3",
+            "HPTT",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Web uses HTTP.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-10",
+          "prompt": "The first page you normally view at a website is its ________.",
+          "options": [
+            "Home page",
+            "Master page",
+            "First page",
+            "Original page",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "The first page of a site is its home page.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-11",
+          "prompt": "Which of the following statements about email is NOT true?",
+          "options": [
+            "It is faster than traditional post.",
+            "It is cheaper than traditional post, especially if large documents are involved.",
+            "Viruses cannot be spread via email.",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Email attachments can carry viruses.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-12",
+          "prompt": "What is the term for a worldwide network of computers?",
+          "options": [
+            "CPU",
+            "Internet",
+            "RAM",
+            "Network",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Internet is the worldwide network of networks.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-13",
+          "prompt": "The equipment needed to allow a home to connect to the Internet is called a ________.",
+          "options": [
+            "Modem",
+            "Gateway",
+            "Monitor",
+            "Peripheral",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A modem connects a home to the Internet.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-14",
+          "prompt": "The process of keeping frequently accessed addresses or data in memory for future use is called ________.",
+          "options": [
+            "Routing",
+            "Resolving",
+            "Caching",
+            "All of the above",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Caching stores frequently used data for quick reuse.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-15",
+          "prompt": "A server on the Internet is also known as a ________.",
+          "options": [
+            "Hub",
+            "Host",
+            "Gateway",
+            "Repeater",
+            "Radio"
+          ],
+          "correctIndex": 1,
+          "explanation": "Servers are also called hosts.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-16",
+          "prompt": "A user can get files from the Internet by using ________.",
+          "options": [
+            "HTTP",
+            "TELNET",
+            "UTP",
+            "FTP",
+            "PTF"
+          ],
+          "correctIndex": 3,
+          "explanation": "FTP (File Transfer Protocol) transfers files.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-17",
+          "prompt": "The foundational communication protocol suite used by the Internet is ________.",
+          "options": [
+            "HTTP",
+            "WWW",
+            "TCP/IP",
+            "FTP",
+            "TCC/IP"
+          ],
+          "correctIndex": 2,
+          "explanation": "TCP/IP is the core suite of the Internet.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-18",
+          "prompt": "Which of these allows files to be transferred between computers?",
+          "options": [
+            "FTP",
+            "Telnet",
+            "HTTP",
+            "TCP/IP",
+            "Gopher"
+          ],
+          "correctIndex": 0,
+          "explanation": "FTP is made for file transfer.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-19",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "IP addresses are not unique.",
+            "IP addresses are global and standardized.",
+            "Each domain name corresponds to a numeric IP address.",
+            "No two organizations can have the exact same domain name.",
+            "The Internet uses numeric IP addresses to send data."
+          ],
+          "correctIndex": 0,
+          "explanation": "Public IP addresses must be unique.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-20",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "A URL consists of letters and numbers only.",
+            "Every resource available via the Web has a unique URL.",
+            "A URL is a standardized addressing scheme for Internet resources.",
+            "A URL identifies a particular Internet resource.",
+            "The basic structure of a URL is hierarchical and moves from left to right."
+          ],
+          "correctIndex": 0,
+          "explanation": "URLs also contain symbols such as : / . - ? and =.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-21",
+          "prompt": "Education delivered with the tutor and learner geographically dispersed is ________.",
+          "options": [
+            "M-learning",
+            "Distance learning",
+            "E-learning",
+            "Correspondence learning",
+            "Sandwich studies"
+          ],
+          "correctIndex": 1,
+          "explanation": "Distance learning separates tutor and learner by location.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-net-22",
+          "prompt": "To get Internet access on early mobile phones, the protocol used was ________.",
+          "options": [
+            "TCP/IP",
+            "WAP",
+            "FTP",
+            "SLIP",
+            "PPP"
+          ],
+          "correctIndex": 1,
+          "explanation": "WAP (Wireless Application Protocol) served early mobile phones.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        }
+      ]
+    },
+    {
+      "id": "applications-and-ethics",
+      "questions": [
+        {
+          "id": "csc101-app-01",
+          "prompt": "In which of the following fields are computers used for diagnosing diseases and maintaining patient records?",
+          "options": [
+            "Education",
+            "Agriculture",
+            "Healthcare",
+            "Entertainment",
+            "None of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Healthcare uses computers for diagnosis and patient records.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-02",
+          "prompt": "What is one major use of computers in the field of education?",
+          "options": [
+            "Growing crops",
+            "Operating medical machinery",
+            "Online learning and virtual classrooms",
+            "Designing clothes",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Computers support online learning and virtual classrooms.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-03",
+          "prompt": "Which of these vocations benefits from computers for legal research and managing case files?",
+          "options": [
+            "Law",
+            "Music",
+            "Farming",
+            "Retail",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "Law uses computers for research and case files.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-04",
+          "prompt": "What is plagiarism?",
+          "options": [
+            "Copying and publishing someone else's work without proper citation",
+            "Creating original work",
+            "Quoting someone's work with permission",
+            "Paraphrasing someone's work",
+            "Citing someone's work properly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Plagiarism is presenting someone else's work as your own without credit.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-05",
+          "prompt": "When evaluating the social effects of computers, the spread of misinformation through digital networks is best classified as a challenge related to:",
+          "options": [
+            "Automation of labor",
+            "Digital inclusion",
+            "Information veracity and control",
+            "Remote collaboration efficiency",
+            "Data storage capacity"
+          ],
+          "correctIndex": 2,
+          "explanation": "Misinformation is a problem of information veracity and control.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-06",
+          "prompt": "Which of the following best exemplifies a social effect of computers that is a double-edged sword?",
+          "options": [
+            "The ability to automate repetitive tasks, leading to increased productivity",
+            "The global accessibility of online educational resources",
+            "Online social networks that connect people but can also foster isolation",
+            "The enhanced speed of financial transactions",
+            "The use of advanced software for scientific research"
+          ],
+          "correctIndex": 2,
+          "explanation": "Social networks bring connection and can also cause isolation.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-07",
+          "prompt": "GPS is a computer application in which of the following areas?",
+          "options": [
+            "Medicine",
+            "Education",
+            "Transportation",
+            "Computer",
+            "Teaching"
+          ],
+          "correctIndex": 2,
+          "explanation": "GPS is used mainly in transportation and navigation.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-08",
+          "prompt": "The set of principles and moral standards relating to the use of computers is known as ________.",
+          "options": [
+            "Policies",
+            "Guidelines",
+            "Ethics",
+            "None of the above",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "These principles are computer ethics.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-09",
+          "prompt": "________ are entitlements of persons for the creativity of their minds.",
+          "options": [
+            "Honorarium",
+            "Royalties",
+            "Intellectual property rights",
+            "Endowments",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Intellectual property rights protect creations of the mind.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-10",
+          "prompt": "The act of copying and publishing another person's work without appropriate citation is known as ________.",
+          "options": [
+            "Plagiarism",
+            "Copyright",
+            "Intrusion",
+            "None of the above",
+            "Snooping"
+          ],
+          "correctIndex": 0,
+          "explanation": "This is plagiarism.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-11",
+          "prompt": "________ refers to the principles that promote trust, good behavior, fairness and govern the conduct of a person.",
+          "options": [
+            "Societal Policies",
+            "Usage Guidelines",
+            "Ethical standards",
+            "Ethical concerns",
+            "All of the above"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ethical standards guide conduct.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-12",
+          "prompt": "The Ten Commandments of Computer Ethics were created by the ________.",
+          "options": [
+            "Computer Ethics Institute",
+            "Internet Advisory Board",
+            "Ethics Committee of Computer Use",
+            "None of the above",
+            "Copyright Group"
+          ],
+          "correctIndex": 0,
+          "explanation": "The Computer Ethics Institute wrote the Ten Commandments of Computer Ethics.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-13",
+          "prompt": "Owning the ________ to a technology implies that permission must be sought from and granted by the owner before the technology can be copied.",
+          "options": [
+            "Origination",
+            "Patent",
+            "Creation",
+            "Invention",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "A patent gives the owner exclusive rights over an invention.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-14",
+          "prompt": "Legal protections of a person's invention can be in the following forms EXCEPT:",
+          "options": [
+            "Trade Secrets",
+            "Trademarks",
+            "Copyrights",
+            "Trade Rights",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The forms of protection are patents, trade secrets, trademarks and copyrights. \"Trade rights\" is not one.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-15",
+          "prompt": "Open Source Software has few or no ________.",
+          "options": [
+            "Trade rights",
+            "Trade Guidelines",
+            "Copyright restrictions",
+            "Ethical standards",
+            "Ethical Secrets"
+          ],
+          "correctIndex": 2,
+          "explanation": "Open source software has few or no copyright restrictions on use.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-16",
+          "prompt": "The use of robots in the manufacturing of cars is an example of ________.",
+          "options": [
+            "Computer-Aided Learning (CAL)",
+            "Computer-Aided Design (CAD)",
+            "Electronic Funds Transfer (EFT)",
+            "Computer-Aided Manufacturing (CAM)",
+            "Computer-Aided Architectural Design (CAAD)"
+          ],
+          "correctIndex": 3,
+          "explanation": "Robots on a production line are Computer-Aided Manufacturing.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-17",
+          "prompt": "Which of the following is an example of a simulated computer application?",
+          "options": [
+            "The use of computer software and hardware to create an artificial environment within which to train new pilots",
+            "Using computer software and hardware for weather forecasting",
+            "Online flight booking reservation",
+            "The use of software for airline reservations",
+            "None of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A flight simulator creates an artificial training environment.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-18",
+          "prompt": "Choose the statement which best describes ICT in education:",
+          "options": [
+            "ICT is a cost-effective technology.",
+            "ICT makes teaching and learning more effective.",
+            "ICT makes young learners lethargic.",
+            "ICT acts as a liability for creating diversity in the classroom atmosphere.",
+            "None of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "ICT makes teaching and learning more effective.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-19",
+          "prompt": "Which of these do architects use to show clients a 3D preview of a building and landscapes?",
+          "options": [
+            "Telecommuting",
+            "Computer modeling",
+            "Command and control",
+            "Computer-Aided Design (CAD)",
+            "Virtual reality"
+          ],
+          "correctIndex": 4,
+          "explanation": "Virtual reality gives a walk-through preview of a building.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-20",
+          "prompt": "Which of these systems must be designed as a fault-tolerant system?",
+          "options": [
+            "Computer-aided design",
+            "Computer modeling",
+            "Command and control",
+            "Telecommuting",
+            "Virtual reality"
+          ],
+          "correctIndex": 2,
+          "explanation": "Command and control systems must keep working, so they are fault-tolerant.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-21",
+          "prompt": "Simplification of learning through songs and animations is known as ________.",
+          "options": [
+            "Child learning",
+            "Close learning",
+            "Distance learning",
+            "Open learning",
+            "Edutainment"
+          ],
+          "correctIndex": 4,
+          "explanation": "Edutainment combines education with entertainment.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-22",
+          "prompt": "Which of these is a product identification code that contains a set of vertical lines and spaces?",
+          "options": [
+            "Optical mark code",
+            "QR code",
+            "Barcode",
+            "None of the options listed",
+            "Magnetic ink code"
+          ],
+          "correctIndex": 2,
+          "explanation": "A barcode is a set of vertical lines and spaces.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-app-23",
+          "prompt": "Which of these is NOT an application of computers in medicine?",
+          "options": [
+            "Tele-surgery",
+            "Tele-prognosis",
+            "Tele-diagnosis",
+            "None of the options listed",
+            "Tele-pathology"
+          ],
+          "correctIndex": null,
+          "explanation": "Tele-surgery, tele-diagnosis and tele-pathology are real. \"Tele-prognosis\" is not a standard term.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "The key is unclear. Needs the key."
+        }
+      ]
+    },
+    {
+      "id": "program-development-and-errors",
+      "questions": [
+        {
+          "id": "csc101-prg-01",
+          "prompt": "Which of the following is a primary advantage of using flowcharts in program development?",
+          "options": [
+            "They directly generate executable code.",
+            "They eliminate the need for detailed documentation.",
+            "They provide a visual representation of the logic, aiding understanding and communication.",
+            "They are universally understood across all programming paradigms without training.",
+            "They inherently prevent all types of logical errors."
+          ],
+          "correctIndex": 2,
+          "explanation": "Flowcharts show the logic visually.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-02",
+          "prompt": "A significant limitation of using flowcharts, especially for complex systems, is:",
+          "options": [
+            "Their inability to represent sequential operations.",
+            "Their limited visual appeal compared to textual descriptions.",
+            "The potential for them to become cumbersome and difficult to follow as complexity increases.",
+            "The requirement for specialized hardware to draw them.",
+            "Their restriction to only procedural programming."
+          ],
+          "correctIndex": 2,
+          "explanation": "Large flowcharts become hard to follow.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-03",
+          "prompt": "Which type of programming error typically shows up when the program runs but produces an incorrect result, despite following syntactical rules?",
+          "options": [
+            "Syntax error",
+            "Runtime error",
+            "Logical error",
+            "Compiler error",
+            "Linker error"
+          ],
+          "correctIndex": 2,
+          "explanation": "A logical error gives wrong results even though the program runs.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-04",
+          "prompt": "A guideline for drawing a flowchart states that all processing symbols should have:",
+          "options": [
+            "Only one entry point but multiple exit points",
+            "Exactly two entry points and one exit point",
+            "Only one entry point and exactly one exit point",
+            "Multiple entry points and multiple exit points",
+            "No entry or exit points"
+          ],
+          "correctIndex": 2,
+          "explanation": "Each processing symbol has one entry and one exit.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-05",
+          "prompt": "The quality of a good program that makes it easy for other programmers to understand and modify is best described as:",
+          "options": [
+            "Efficiency",
+            "Robustness",
+            "Portability",
+            "Maintainability",
+            "Scalability"
+          ],
+          "correctIndex": 3,
+          "explanation": "This is maintainability.",
+          "source": "CSC 101, June 2025 and CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-06",
+          "prompt": "The \"problem definition and analysis\" phase is critical because an incomplete understanding at this stage will most likely lead to:",
+          "options": [
+            "A faster algorithm formulation",
+            "A program that correctly solves the wrong problem",
+            "Reduced need for flowcharting",
+            "Fewer programming errors during coding",
+            "Easier debugging processes"
+          ],
+          "correctIndex": 1,
+          "explanation": "A poorly understood problem leads to a program that solves the wrong problem.",
+          "source": "CSC 101, June 2025 and CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-07",
+          "prompt": "In the context of control structures, a switch-case statement is fundamentally a specialized form of:",
+          "options": [
+            "Iteration",
+            "Sequence",
+            "Selection",
+            "Recursion",
+            "Parallel processing"
+          ],
+          "correctIndex": 2,
+          "explanation": "Switch-case chooses among branches, so it is selection.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-08",
+          "prompt": "What is the most common reason for a runtime error to occur during program execution?",
+          "options": [
+            "Misspelled keywords in the source code",
+            "Incorrect placement of semicolons",
+            "Attempting an operation that is syntactically valid but impossible to perform at execution (e.g., division by zero)",
+            "Failure to declare a variable before its use",
+            "Forgetting to include necessary library files during compilation"
+          ],
+          "correctIndex": 2,
+          "explanation": "Runtime errors come from operations that cannot be done while running, such as dividing by zero.",
+          "source": "CSC 101, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-09",
+          "prompt": "Which of the following is NOT true of a flowchart?",
+          "options": [
+            "It allows a form of ambiguity.",
+            "It uses predefined symbols.",
+            "It uses directed lines.",
+            "Only one line should come out from a process symbol.",
+            "All of the above"
+          ],
+          "correctIndex": 0,
+          "explanation": "A flowchart must be unambiguous.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-10",
+          "prompt": "IF-THEN-ELSE is a form of ________ control structure.",
+          "options": [
+            "Repetition",
+            "Loop",
+            "Condition",
+            "Selection",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "IF-THEN-ELSE is selection.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-11",
+          "prompt": "WHILE LOOP is a form of ________ control structure.",
+          "options": [
+            "Infinite",
+            "Indefinite",
+            "Unspecified",
+            "Repetition",
+            "None of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "A WHILE loop is repetition (iteration).",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-12",
+          "prompt": "Which of the following errors is detected during program compilation?",
+          "options": [
+            "Semantic",
+            "Syntax",
+            "Logical",
+            "Complex",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "The compiler finds syntax errors.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-13",
+          "prompt": "Use of keywords or reserved words as variable names is an example of a ________ error.",
+          "options": [
+            "Semantic",
+            "Syntax",
+            "Logical",
+            "Sequence",
+            "All of the above"
+          ],
+          "correctIndex": 1,
+          "explanation": "Misusing keywords breaks the language rules, so it is a syntax error.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-14",
+          "prompt": "Entering a wrong salary scale when computing the payroll of workers is an example of a ________.",
+          "options": [
+            "Logical error",
+            "Execution error",
+            "Compilation error",
+            "Syntax error",
+            "Runtime error"
+          ],
+          "correctIndex": 0,
+          "explanation": "The program runs but gives wrong results, which is a logical error.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-15",
+          "prompt": "Finding the square root of a negative number (in real-number arithmetic) is an example of a ________.",
+          "options": [
+            "Runtime error",
+            "Syntax error",
+            "Compilation error",
+            "Logical error",
+            "Logical and compilation error"
+          ],
+          "correctIndex": 0,
+          "explanation": "The program fails while running, so it is a runtime error.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-16",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "The CASE statement is great for a test that has only one acceptable answer.",
+            "A combined IF statement is one that contains multiple conditions in the decision symbol.",
+            "The null ELSE structure is a variation of the simple IF structure with the false side being empty.",
+            "In the simple IF statement, selection occurs when a choice is made between two alternative paths.",
+            "The sequence control structure is the straightforward execution of one processing step after another."
+          ],
+          "correctIndex": 0,
+          "explanation": "CASE handles several choices, not a single acceptable answer.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-17",
+          "prompt": "Which of these is NOT an example of a syntax error?",
+          "options": [
+            "Data mismatch",
+            "Missing apostrophe",
+            "Use of reserved words as variables",
+            "Use of keywords as variables",
+            "Unbalanced parentheses"
+          ],
+          "correctIndex": 0,
+          "explanation": "Data mismatch is not a grammar mistake. The others break the language rules.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-18",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "Missing curly brackets and semicolons are runtime errors.",
+            "Entering a wrong salary scale when computing the payroll of workers is a logical error.",
+            "Syntax errors are also known as compilation errors.",
+            "Syntax errors usually result from misordering symbols within expressions and statements.",
+            "Dividing a number by zero is an execution (runtime) error."
+          ],
+          "correctIndex": 0,
+          "explanation": "Missing brackets and semicolons are syntax errors.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-19",
+          "prompt": "Which of these errors is the most difficult to detect?",
+          "options": [
+            "Compilation",
+            "Runtime",
+            "Execution",
+            "Logical",
+            "Syntax"
+          ],
+          "correctIndex": 3,
+          "explanation": "A logical error gives no error message and the program still runs.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-20",
+          "prompt": "In developing an algorithm, which of these is NOT one of the steps you follow?",
+          "options": [
+            "Identify patterns, repetitions and familiar tasks",
+            "Understand the problem",
+            "Carry out the plan",
+            "Code the plan",
+            "Devise a plan"
+          ],
+          "correctIndex": 3,
+          "explanation": "Coding comes after the algorithm is developed.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-21",
+          "prompt": "Analysis, design, coding and execution are all stages of the ________.",
+          "options": [
+            "Program development cycle",
+            "Building an algorithm",
+            "Constructing a program flowchart",
+            "None of the options listed",
+            "Documentation and maintenance"
+          ],
+          "correctIndex": 0,
+          "explanation": "These are stages of the program development cycle.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-22",
+          "prompt": "Which order of sections in pseudocode is correct?",
+          "options": [
+            "Body, header, declaration, termination",
+            "Declaration, body, termination, header",
+            "Body, declaration, header, termination",
+            "Header, declaration, body, termination",
+            "Header, body, declaration, termination"
+          ],
+          "correctIndex": 3,
+          "explanation": "Pseudocode runs header, declaration, body, termination.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
+        },
+        {
+          "id": "csc101-prg-23",
+          "prompt": "Which of these is NOT true?",
+          "options": [
+            "Debugging is the process of finding and fixing errors in a program.",
+            "Instructions in an algorithm are described starting from the top and going to the bottom.",
+            "A sequence of precise steps that solves a problem is called an algorithm.",
+            "Coding is the technical word for writing a program.",
+            "An error in a program is called a bug."
+          ],
+          "correctIndex": null,
+          "explanation": "All five statements are true.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "No option is false. The paper may have an altered option. Needs the original."
+        },
+        {
+          "id": "csc101-prg-24",
+          "prompt": "Which of these represents, in detail, the various steps to be performed within the system for transforming input into output?",
+          "options": [
+            "Program flowchart",
+            "Run flowchart",
+            "System flowchart",
+            "Pseudocode",
+            "Computer program"
+          ],
+          "correctIndex": null,
+          "explanation": "System flowchart and program flowchart are both defensible.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Needs the key."
+        },
+        {
+          "id": "csc101-prg-25",
+          "prompt": "Which of these is used to represent the logical relationship of computer routines along with inputs, master files, transaction files and outputs?",
+          "options": [
+            "Program flowchart",
+            "System flowchart",
+            "Run flowchart",
+            "None of the options listed",
+            "Programming flowchart"
+          ],
+          "correctIndex": null,
+          "explanation": "This describes a run flowchart in some texts and a system flowchart in others.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "System and run flowchart are both defensible. Needs the key."
+        },
+        {
+          "id": "csc101-prg-26",
+          "prompt": "Which of these is an error in logic or arithmetic that must be detected at runtime?",
+          "options": [
+            "Logical error",
+            "Syntax error",
+            "Compilation error",
+            "Semantic error",
+            "Syntax and logical error"
+          ],
+          "correctIndex": null,
+          "explanation": "Logical and semantic errors are both used for this idea.",
+          "source": "CSC 101, 2018/2019 session (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options A and D are both defensible. Needs the key."
+        },
+        {
+          "id": "csc101-prg-27",
+          "prompt": "Which of the following is NOT a defining characteristic of an algorithm?",
+          "options": [
+            "A finite number of steps",
+            "A single output",
+            "Specified processes",
+            "A formula for analysis",
+            "All of the above"
+          ],
+          "correctIndex": null,
+          "explanation": "An algorithm produces at least one output. \"A formula for analysis\" is also not a defining property.",
+          "source": "CSC 101, September 2024 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
+          "needsReview": true,
+          "reviewNote": "Options B and D are both defensible. Needs the key."
+        }
+      ]
+    }
+  ]
+}

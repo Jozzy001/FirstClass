@@ -92,7 +92,7 @@ export default function Practice() {
       </div>
 
       <div className="bg-white border border-line rounded-2xl p-8">
-        <div className="font-display text-lg font-semibold mb-6 leading-relaxed">
+        <div className="font-display text-lg font-semibold mb-6 leading-relaxed whitespace-pre-wrap">
           {question.prompt}
         </div>
 
