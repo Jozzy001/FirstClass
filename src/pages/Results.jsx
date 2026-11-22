@@ -68,7 +68,7 @@ export default function Results() {
   }
 
   return (
-    <div className="max-w-[900px] mx-auto px-5 sm:px-7 py-10 sm:py-14">
+    <div className="max-w-[900px] mx-auto px-3 min-[400px]:px-5 sm:px-7 py-10 sm:py-14">
       {/* CGPA headline */}
       <section className="bg-graphite text-white rounded-2xl p-6 sm:p-9 mb-8 grid sm:grid-cols-[auto_1fr] gap-6 sm:gap-10 items-center no-print">
         <div>
@@ -117,12 +117,12 @@ export default function Results() {
         <div className="overflow-x-auto">
           <table className="w-full text-[13px] sm:text-sm">
             <thead>
-              <tr className="text-left text-[11px] uppercase tracking-wide text-graphite/50 bg-paper-2">
+              <tr className="text-left text-[11px] uppercase tracking-normal sm:tracking-wide text-graphite/50 bg-paper-2">
                 <th className="px-3 sm:px-8 py-3 font-medium">Course</th>
-                <th className="py-3 font-medium text-center">Units</th>
-                <th className="py-3 font-medium text-center">Score</th>
-                <th className="py-3 font-medium text-center">Grade</th>
-                <th className="py-3 font-medium text-center">GP</th>
+                <th className="py-3 px-1.5 sm:px-3 font-medium text-center">Units</th>
+                <th className="py-3 px-1.5 sm:px-3 font-medium text-center">Score</th>
+                <th className="py-3 px-1.5 sm:px-3 font-medium text-center">Grade</th>
+                <th className="py-3 px-1.5 sm:px-3 font-medium text-center">GP</th>
                 <th className="px-3 sm:px-8 py-3 font-medium text-right">QP</th>
               </tr>
             </thead>
@@ -133,10 +133,10 @@ export default function Results() {
                     <div className="font-mono text-xs text-cobalt-deep">{r.courseCode}</div>
                     <div className="font-medium">{r.title}</div>
                   </td>
-                  <td className="text-center font-mono">{r.creditUnits}</td>
-                  <td className="text-center font-mono">{r.score}</td>
-                  <td className={`text-center font-display font-semibold ${gradeColor(r.point)}`}>{r.letter}</td>
-                  <td className="text-center font-mono">{r.point}</td>
+                  <td className="px-1.5 sm:px-3 text-center font-mono">{r.creditUnits}</td>
+                  <td className="px-1.5 sm:px-3 text-center font-mono">{r.score}</td>
+                  <td className={`px-1.5 sm:px-3 text-center font-display font-semibold ${gradeColor(r.point)}`}>{r.letter}</td>
+                  <td className="px-1.5 sm:px-3 text-center font-mono">{r.point}</td>
                   <td className="px-3 sm:px-8 text-right font-mono">{r.qualityPoints}</td>
                 </tr>
               ))}
@@ -151,9 +151,9 @@ export default function Results() {
                         <div className="font-mono text-xs text-cobalt-deep">{code}</div>
                         <div className="font-medium">{r?.title}</div>
                       </td>
-                      <td className="text-center text-xs" colSpan={2}>units pending</td>
-                      <td className="text-center font-mono">{r?.score}</td>
-                      <td colSpan={2} className="px-3 sm:px-8 text-right text-xs">not in GPA yet</td>
+                      <td className="px-1.5 text-center text-xs" colSpan={2}>pending</td>
+                      <td className="px-1.5 sm:px-3 text-center font-mono">{r?.score}</td>
+                      <td colSpan={2} className="px-3 sm:px-8 text-right text-xs">not counted</td>
                     </tr>
                   )
                 })}
@@ -161,13 +161,17 @@ export default function Results() {
             )}
             <tfoot>
               <tr className="border-t-2 border-graphite bg-paper-2 font-medium">
-                <td className="px-3 sm:px-8 py-3.5">Total</td>
-                <td className="text-center font-mono">{totalUnits}</td>
+                <td className="px-3 sm:px-8 py-3">Total</td>
+                <td className="px-1.5 sm:px-3 text-center font-mono">{totalUnits}</td>
                 <td />
                 <td />
-                <td className="text-center text-xs text-graphite/50">GPA</td>
-                <td className="px-3 sm:px-8 text-right font-mono whitespace-nowrap">
-                  {totalQP} → {gpa.gpa === null ? '—' : gpa.gpa.toFixed(2)}
+                <td />
+                <td className="px-3 sm:px-8 text-right font-mono">{totalQP}</td>
+              </tr>
+              <tr className="bg-paper-2 font-semibold">
+                <td colSpan={5} className="px-3 sm:px-8 pb-3.5 text-sm">GPA (total QP ÷ total units)</td>
+                <td className="px-3 sm:px-8 pb-3.5 text-right font-display text-base">
+                  {gpa.gpa === null ? '—' : gpa.gpa.toFixed(2)}
                 </td>
               </tr>
             </tfoot>
@@ -203,7 +207,7 @@ export default function Results() {
                     {r.attempts === 1 ? '' : 's'}
                   </div>
                 </div>
-                <Link to={`/course/${r.courseCode}/test`} className="text-cobalt text-sm font-medium flex-shrink-0">
+                <Link to={`/course/${r.courseCode}/test`} className="text-cobalt text-sm font-medium flex-shrink-0 py-2.5 pl-2">
                   Retake →
                 </Link>
               </div>
@@ -215,7 +219,7 @@ export default function Results() {
                 <div className="font-mono text-xs text-cobalt-deep">{c.code}</div>
                 <div className="text-sm text-graphite/60">Not tested yet, so not in your CGPA</div>
               </div>
-              <Link to={`/course/${c.code}/test`} className="text-cobalt text-sm font-medium flex-shrink-0">
+              <Link to={`/course/${c.code}/test`} className="text-cobalt text-sm font-medium flex-shrink-0 py-2.5 pl-2">
                 Take test →
               </Link>
             </div>

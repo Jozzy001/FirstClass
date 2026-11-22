@@ -14,7 +14,7 @@ export default function CourseCard({ course }) {
     >
       <div className="flex justify-between items-start mb-3.5">
         <span className="font-mono text-xs text-cobalt-deep font-medium">{code}</span>
-        <span className="text-[10.5px] font-medium px-2 py-0.5 rounded bg-cobalt-pale text-cobalt-deep uppercase tracking-wide">
+        <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-cobalt-pale text-cobalt-deep uppercase tracking-wide">
           {faculty}
         </span>
       </div>

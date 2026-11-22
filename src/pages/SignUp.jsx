@@ -29,7 +29,7 @@ export default function SignUp() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-paper px-6 py-16">
+    <div className="min-h-[100dvh] flex items-center justify-center bg-paper px-6 py-16">
       <div className="w-full max-w-[420px] bg-white border border-line rounded-lg p-8">
         <div className="font-mono text-xs tracking-wider text-flame uppercase mb-3 font-medium">
           Create account
@@ -66,14 +66,14 @@ export default function SignUp() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-cobalt text-white py-3 rounded font-medium text-sm disabled:opacity-60"
+            className="press w-full bg-cobalt text-white py-3.5 rounded font-medium text-sm disabled:opacity-60"
           >
             {loading ? 'Creating account…' : 'Create account'}
           </button>
         </form>
         <p className="text-sm text-graphite/60 mt-6 text-center">
           Already have an account?{' '}
-          <Link to="/login" className="text-cobalt font-medium">Log in</Link>
+          <Link to="/login" className="text-cobalt font-medium inline-block py-2 px-1">Log in</Link>
         </p>
       </div>
     </div>

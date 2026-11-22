@@ -2,8 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-lift: 0 14px 30px -14px rgba(20, 23, 28, 0.28);
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+::selection { background: #2451E0; color: #fff; }
+
+/* Visible keyboard focus everywhere, without drawing a ring on mouse clicks. */
+:focus-visible { outline: 2px solid #2451E0; outline-offset: 2px; border-radius: 4px; }
+
+h1, h2, h3 { text-wrap: balance; }
+.num { font-variant-numeric: tabular-nums; }
+a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+/* Press feedback on anything tappable, and a lift on cards that are links. */
+.press { transition: transform 0.15s var(--ease-out), background-color 0.2s, border-color 0.2s, opacity 0.2s; }
+.press:active:not(:disabled) { transform: scale(0.97); }
+.lift { transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.2s; }
+.lift:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes page-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .page-in { animation: page-in 0.3s var(--ease-out) both; }
+
+  /* Progress bars fill from the left; --i staggers a row of them. */
+  @keyframes bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .bar-grow { transform-origin: left center; animation: bar-grow 0.9s var(--ease-out) both; animation-delay: calc(var(--i, 0) * 80ms + 300ms); }
+
+  @keyframes pop { 0% { transform: scale(0.3); opacity: 0; } 60% { transform: scale(1.18); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+  .pop { animation: pop 0.42s var(--ease-out) both; animation-delay: calc(var(--i, 0) * 90ms + 450ms); }
+  .pop-now { animation: pop 0.38s var(--ease-out) both; }
+
+  @keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(2px); } }
+  .shake { animation: shake 0.4s ease-in-out; }
+
+  @keyframes feedback-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .feedback-in { animation: feedback-in 0.28s var(--ease-out) both; }
+
+  @keyframes slide-next { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: none; } }
+  @keyframes slide-prev { from { opacity: 0; transform: translateX(-28px); } to { opacity: 1; transform: none; } }
+  .slide-next { animation: slide-next 0.32s var(--ease-out) both; }
+  .slide-prev { animation: slide-prev 0.32s var(--ease-out) both; }
+
+  @keyframes logo-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .logo-pulse { animation: logo-pulse 1.2s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
 
 /* The app's signature progress device — segmented blocks instead of a

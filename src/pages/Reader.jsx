@@ -37,7 +37,7 @@ export default function Reader() {
   return (
     <div className="max-w-[820px] mx-auto px-7 py-10">
       <div className="flex justify-between items-center text-xs text-graphite/50 mb-6">
-        <Link to={`/course/${course.code}`} className="font-mono text-cobalt-deep">
+        <Link to={`/course/${course.code}`} className="font-mono text-cobalt-deep inline-block py-2.5 pr-3">
           ← {course.code}
         </Link>
         <span>Topic {topicIndex + 1} of {course.topics.length}</span>
@@ -71,21 +71,21 @@ export default function Reader() {
             {prevTopic ? (
               <Link
                 to={`/course/${course.code}/read/${prevTopic.id}`}
-                className="text-sm text-cobalt-deep font-medium"
+                className="press text-sm text-cobalt-deep font-medium py-2.5"
               >
                 ← {prevTopic.title}
               </Link>
             ) : <span />}
             <Link
               to={`/course/${course.code}/practice/${topic.id}`}
-              className="bg-cobalt text-white px-5 py-2.5 rounded font-medium text-sm"
+              className="press bg-cobalt text-white px-5 py-3 rounded font-medium text-sm"
             >
               Practice this topic
             </Link>
             {nextTopic ? (
               <Link
                 to={`/course/${course.code}/read/${nextTopic.id}`}
-                className="text-sm text-cobalt-deep font-medium"
+                className="press text-sm text-cobalt-deep font-medium py-2.5"
               >
                 {nextTopic.title} →
               </Link>

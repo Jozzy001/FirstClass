@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
 import { buildTest, scoreTest, TEST_MINUTES, TEST_SIZE } from '../lib/testEngine.js'
 import { scoreToGrade } from '../lib/grading.js'
+import { useCountUp } from '../lib/useMotion.js'
 import { recordTest, saveDraft, loadDraft, clearDraft } from '../lib/store.js'
 
 const LIMIT_MS = TEST_MINUTES * 60 * 1000
@@ -35,6 +36,7 @@ export default function Test() {
   const [confirming, setConfirming] = useState(false)
   const [result, setResult] = useState(null)
   const [resumable, setResumable] = useState(null)
+  const scoreShown = useCountUp(phase === 'done' && result ? result.score : 0, { duration: 1200 })
   const submittedRef = useRef(false)
 
   // offer to resume an unfinished test (refresh, locked phone, closed tab)
@@ -194,10 +196,10 @@ export default function Test() {
           </div>
         )}
 
-        <button onClick={start} className="w-full bg-cobalt text-white py-3.5 rounded font-medium">
+        <button onClick={start} className="press w-full bg-cobalt text-white py-3.5 rounded font-medium">
           Start test
         </button>
-        <Link to={`/course/${course.code}`} className="block text-center text-sm text-graphite/50 mt-4">
+        <Link to={`/course/${course.code}`} className="block text-center text-sm text-graphite/50 mt-2 py-3">
           ← Back to {course.code}
         </Link>
       </div>
@@ -214,8 +216,8 @@ export default function Test() {
           <div className="font-mono text-xs tracking-wider text-flame uppercase mb-4">
             {course.code} · Test complete
           </div>
-          <div className="font-display text-7xl font-bold leading-none">
-            {result.score}
+          <div className="font-display text-7xl font-bold leading-none num">
+            {scoreShown}
             <span className="text-2xl text-graphite/40">/100</span>
           </div>
           <div className={`font-display text-xl font-semibold mt-3 ${gradeColor}`}>

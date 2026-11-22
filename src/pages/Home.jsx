@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { getAllCourses } from '../data/courseData.js'
+import { useCountUp } from '../lib/useMotion.js'
 
 // Public landing page: it explains the app and sends visitors to sign up or log in.
 // Courses, tests and results are only opened once a student is signed in.
@@ -57,10 +58,10 @@ export default function Home() {
               and built to work on your phone.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link to="/signup" className="bg-cobalt text-white px-6 py-3 rounded font-medium text-sm">
+              <Link to="/signup" className="press bg-cobalt text-white px-6 py-3.5 rounded font-medium text-sm">
                 Start free
               </Link>
-              <Link to="/login" className="border border-line bg-white px-6 py-3 rounded font-medium text-sm">
+              <Link to="/login" className="press border border-line bg-white px-6 py-3.5 rounded font-medium text-sm">
                 I already have an account
               </Link>
             </div>
@@ -156,8 +157,8 @@ export default function Home() {
           Create your free account, pick your courses, and your dashboard will be ready in a minute.
         </p>
         <div className="flex gap-3 justify-center flex-wrap">
-          <Link to="/signup" className="bg-flame text-white px-6 py-3 rounded font-medium text-sm">Create your account</Link>
-          <Link to="/login" className="border border-white/25 px-6 py-3 rounded font-medium text-sm">Log in</Link>
+          <Link to="/signup" className="press bg-flame text-white px-6 py-3.5 rounded font-medium text-sm">Create your account</Link>
+          <Link to="/login" className="press border border-white/25 px-6 py-3.5 rounded font-medium text-sm">Log in</Link>
         </div>
       </section>
 
@@ -188,36 +189,38 @@ function Stat({ value, label }) {
 
 // A static illustration of the student dashboard. The numbers are an example, not real data.
 function DashboardPreview() {
+  const cgpa = useCountUp(4.52, { decimals: 2, duration: 1400, delay: 500 })
+  const streak = useCountUp(6, { duration: 900, delay: 700 })
   return (
     <div className="relative" aria-hidden="true">
       <div className="bg-white border border-line rounded-2xl p-4 sm:p-5 shadow-[0_20px_50px_-20px_rgba(20,23,28,0.25)]">
         <div className="flex items-center justify-between mb-4">
           <div className="font-display text-sm font-semibold">Good morning, Ada</div>
-          <div className="font-mono text-[10px] text-graphite/40 uppercase">Example</div>
+          <div className="font-mono text-[11px] text-graphite/40 uppercase">Example</div>
         </div>
         <div className="grid grid-cols-[1.2fr_1fr] gap-3 mb-3">
           <div className="bg-graphite text-white rounded-xl p-4">
-            <div className="font-mono text-[10px] text-white/60 uppercase mb-1">Your CGPA</div>
-            <div className="font-display text-3xl font-bold leading-none">4.52<span className="text-xs text-white/40"> / 5</span></div>
+            <div className="font-mono text-[11px] text-white/60 uppercase mb-1">Your CGPA</div>
+            <div className="font-display text-3xl font-bold leading-none">{cgpa}<span className="text-xs text-white/40"> / 5</span></div>
             <div className="text-[11px] text-white/60 mt-2">First Class</div>
           </div>
           <div className="bg-paper-2 rounded-xl p-4">
-            <div className="font-mono text-[10px] text-graphite/50 uppercase mb-1">Streak</div>
-            <div className="font-display text-3xl font-bold leading-none">6<span className="text-xs text-graphite/40"> days</span></div>
+            <div className="font-mono text-[11px] text-graphite/50 uppercase mb-1">Streak</div>
+            <div className="font-display text-3xl font-bold leading-none">{streak}<span className="text-xs text-graphite/40"> days</span></div>
             <div className="flex gap-1 mt-2.5">
               {[1, 1, 1, 1, 1, 1, 0].map((on, i) => (
-                <i key={i} className={`flex-1 h-2 rounded-sm ${on ? 'bg-mint' : 'bg-white'}`} />
+                <i key={i} style={{ '--i': i }} className={`flex-1 h-2 rounded-sm ${on ? 'bg-mint pop' : 'bg-white'}`} />
               ))}
             </div>
           </div>
         </div>
-        {[['BIO101', 70, '68/100 · B'], ['CHM101', 40, '74/100 · A'], ['MTH101', 15, 'Not tested']].map(([code, pct, tag]) => (
+        {[['BIO101', 70, '68/100 · B'], ['CHM101', 40, '74/100 · A'], ['MTH101', 15, 'Not tested']].map(([code, pct, tag], bi) => (
           <div key={code} className="border border-line rounded-lg px-3 py-2.5 mb-2 last:mb-0">
             <div className="flex justify-between text-[11px] mb-1.5">
               <span className="font-mono text-cobalt-deep font-medium">{code}</span>
               <span className="text-graphite/50">{tag}</span>
             </div>
-            <div className="h-1.5 bg-paper-2 rounded-sm"><div className="h-full bg-cobalt rounded-sm" style={{ width: `${pct}%` }} /></div>
+            <div className="h-1.5 bg-paper-2 rounded-sm"><div className="h-full bg-cobalt rounded-sm bar-grow" style={{ width: `${pct}%`, '--i': bi + 2 }} /></div>
           </div>
         ))}
       </div>

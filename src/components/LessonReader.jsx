@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getLessonAnswers, markStudied, recordExercise } from '../lib/store.js'
+import Confetti from './Confetti.jsx'
 
 // **bold** inside lesson text
 function Rich({ text }) {
@@ -22,6 +23,11 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   const [idx, setIdx] = useState(firstOpen)
+  const [dir, setDir] = useState('next')
+  const [fresh, setFresh] = useState(null) // the exercise just answered, so only it animates
+  const [burst, setBurst] = useState(false)
+  const wasComplete = useMemo(() => sections.every((s) => isDone(s)), []) // eslint-disable-line react-hooks/exhaustive-deps
+  const goTo = (n) => { setDir(n > idx ? 'next' : 'prev'); setIdx(n) }
   const [hints, setHints] = useState({})
   const section = sections[idx]
   const done = isDone(section)
@@ -41,13 +47,16 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
     if (rec[exIndex]) return
     const ok = choice === section.exercises[exIndex].correctIndex
     recordExercise(course.code, topic.id, section.id, exIndex, choice, ok)
-    setAnswers(getLessonAnswers())
+    const next = getLessonAnswers()
+    setAnswers(next)
+    setFresh(`${section.id}-${exIndex}`)
+    if (!wasComplete && sections.every((s) => s.exercises.every((_, i) => (next[key(s)] || {})[i]))) setBurst(true)
   }
 
   return (
     <div className="max-w-[780px] mx-auto px-4 sm:px-7 py-8">
       <div className="flex justify-between items-center text-xs text-graphite/50 mb-4">
-        <Link to={`/course/${course.code}`} className="font-mono text-cobalt-deep">← {course.code}</Link>
+        <Link to={`/course/${course.code}`} className="font-mono text-cobalt-deep py-2.5 pr-3">← {course.code}</Link>
         <span>{topic.title}</span>
       </div>
 
@@ -59,9 +68,9 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
             <button
               key={s.id}
               disabled={!reachable}
-              onClick={() => setIdx(i)}
+              onClick={() => goTo(i)}
               aria-label={`Part ${i + 1}: ${s.title}`}
-              className={`h-2 flex-1 rounded-sm ${isDone(s) ? 'bg-mint' : i === idx ? 'bg-cobalt' : 'bg-paper-2'} ${reachable ? '' : 'opacity-60'}`}
+              className={`h-2 flex-1 rounded-sm transition-colors duration-500 ${isDone(s) ? 'bg-mint' : i === idx ? 'bg-cobalt' : 'bg-paper-2'} ${reachable ? '' : 'opacity-60'}`}
             />
           )
         })}
@@ -73,7 +82,7 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
           <span className="text-white/60">{done ? 'Completed' : `${answeredCount}/${section.exercises.length} exercises`}</span>
         </div>
 
-        <div className="px-5 sm:px-10 py-8 sm:py-10">
+        <div key={idx} className={`px-5 sm:px-10 py-8 sm:py-10 ${dir === 'next' ? 'slide-next' : 'slide-prev'}`}>
           {idx === 0 && lesson.intro && (
             <p className="text-[14.5px] text-graphite/60 italic mb-6 leading-relaxed"><Rich text={lesson.intro} /></p>
           )}
@@ -133,10 +142,12 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
                           key={oi}
                           disabled={!!r}
                           onClick={() => choose(ei, oi)}
-                          className={`w-full text-left border rounded-lg px-4 py-3 text-[14.5px] flex gap-3 transition-colors ${cls}`}
+                          className={`press w-full text-left border rounded-lg px-4 py-3.5 text-[14.5px] flex gap-3 transition-colors ${cls} ${fresh === `${section.id}-${ei}` && r && oi === r.c && !r.ok ? 'shake' : ''}`}
                         >
                           <span className="font-mono text-xs text-graphite/50 mt-0.5">{LETTERS[oi]}</span>
-                          <span>{o}</span>
+                          <span className="flex-1">{o}</span>
+                          {r && oi === ex.correctIndex && <span className={`text-mint font-bold ${fresh === `${section.id}-${ei}` ? 'pop-now' : ''}`} aria-hidden="true">✓</span>}
+                          {r && oi === r.c && !r.ok && <span className="text-rose font-bold" aria-hidden="true">✗</span>}
                         </button>
                       )
                     })}
@@ -146,12 +157,12 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
                       {hints[`${section.id}-${ei}`] ? (
                         <p className="text-[13px] text-graphite/65 bg-flame-pale rounded px-3 py-2">Hint: <Rich text={ex.hint} /></p>
                       ) : (
-                        <button onClick={() => setHints((h) => ({ ...h, [`${section.id}-${ei}`]: true }))} className="text-xs text-cobalt font-medium">Show a hint</button>
+                        <button onClick={() => setHints((h) => ({ ...h, [`${section.id}-${ei}`]: true }))} className="text-xs text-cobalt font-medium py-2.5">Show a hint</button>
                       )}
                     </div>
                   )}
                   {r && (
-                    <div className={`mt-3 rounded-lg px-4 py-3 text-[14px] leading-relaxed ${r.ok ? 'bg-mint-pale' : 'bg-rose-pale'}`}>
+                    <div className={`feedback-in mt-3 rounded-lg px-4 py-3 text-[14px] leading-relaxed ${r.ok ? 'bg-mint-pale' : 'bg-rose-pale'}`}>
                       <div className={`font-semibold mb-1 ${r.ok ? 'text-mint' : 'text-rose'}`}>{r.ok ? 'Correct' : `Not quite. The answer is ${LETTERS[ex.correctIndex]}.`}</div>
                       <Rich text={ex.explanation} />
                     </div>
@@ -164,18 +175,18 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
           {/* navigation */}
           <div className="flex items-center justify-between gap-3 mt-10 pt-6 border-t border-line">
             <button
-              onClick={() => setIdx((i) => Math.max(0, i - 1))}
+              onClick={() => goTo(Math.max(0, idx - 1))}
               disabled={idx === 0}
-              className="text-sm font-medium text-cobalt-deep disabled:opacity-30"
+              className="press text-sm font-medium text-cobalt-deep disabled:opacity-30 py-2.5 pr-3"
             >
               ← Previous
             </button>
             {idx < sections.length - 1 ? (
               <button
-                onClick={() => setIdx((i) => i + 1)}
+                onClick={() => goTo(idx + 1)}
                 disabled={!done}
                 data-testid="next-part"
-                className="bg-cobalt text-white px-5 py-2.5 rounded font-medium text-sm disabled:opacity-40"
+                className="press bg-cobalt text-white px-5 py-3 rounded font-medium text-sm disabled:opacity-40"
               >
                 {done ? 'Next part →' : `Answer all ${section.exercises.length} to continue`}
               </button>
@@ -186,8 +197,9 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
         </div>
       </div>
 
+      {burst && <Confetti onDone={() => setBurst(false)} />}
       {allDone && (
-        <div className="bg-graphite text-white rounded-2xl p-6 sm:p-8 mt-6" data-testid="topic-complete">
+        <div className="feedback-in bg-graphite text-white rounded-2xl p-6 sm:p-8 mt-6" data-testid="topic-complete">
           <div className="font-mono text-[11px] text-flame uppercase tracking-wide mb-2">Topic complete</div>
           <div className="font-display text-xl font-semibold mb-3">You finished {topic.title}</div>
           {topic.keyFormula && (
@@ -198,9 +210,9 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
           )}
           <p className="text-sm text-white/70 mb-5">Now try real past questions on this topic to lock it in.</p>
           <div className="flex gap-3 flex-wrap">
-            <Link to={`/course/${course.code}/practice/${topic.id}`} className="bg-flame text-white px-5 py-2.5 rounded font-medium text-sm">Practise past questions</Link>
+            <Link to={`/course/${course.code}/practice/${topic.id}`} className="press bg-flame text-white px-5 py-3 rounded font-medium text-sm">Practise past questions</Link>
             {nextTopic && (
-              <Link to={`/course/${course.code}/read/${nextTopic.id}`} className="border border-white/25 px-5 py-2.5 rounded font-medium text-sm">Next: {nextTopic.title} →</Link>
+              <Link to={`/course/${course.code}/read/${nextTopic.id}`} className="press border border-white/25 px-5 py-3 rounded font-medium text-sm">Next: {nextTopic.title} →</Link>
             )}
           </div>
         </div>

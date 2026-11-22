@@ -59,13 +59,13 @@ export default function Login() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-cobalt text-white py-3 rounded font-medium text-sm disabled:opacity-60"
+            className="press w-full bg-cobalt text-white py-3.5 rounded font-medium text-sm disabled:opacity-60"
           >
             {loading ? 'Logging in…' : 'Log in'}
           </button>
         </form>
         <p className="text-sm text-graphite/60 mt-6 text-center">
-          New here? <Link to="/signup" className="text-cobalt font-medium">Create an account</Link>
+          New here? <Link to="/signup" className="text-cobalt font-medium inline-block py-2 px-1">Create an account</Link>
         </p>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext.jsx'
 import { getCourse } from '../data/courseData.js'
 import { getCourseProgress } from '../lib/progress.js'
 import { getLesson } from '../lib/lessons.js'
+import { reducedMotion, useCountUp } from '../lib/useMotion.js'
 import { calculateGPA, classify, findWeakTopics, overallAccuracy, scoreToGrade } from '../lib/grading.js'
 import {
   computeStreak,
@@ -110,6 +111,9 @@ export default function Dashboard() {
 
   const { courses, tested, gpa, cls, weak, answeredToday, week, streak, resume, draftCourse } = data
   const name = profile?.username || 'Student'
+  const gpaShown = useCountUp(gpa.gpa, { decimals: 2, duration: 1100, delay: 150 })
+  const answeredShown = useCountUp(answeredToday, { delay: 250 })
+  const streakShown = useCountUp(streak, { delay: 350, duration: 700 })
   const tip = TIPS[Math.floor(Date.now() / 86400000) % TIPS.length]
   const goalPct = Math.min(100, Math.round((answeredToday / DAILY_GOAL) * 100))
   const dateLabel = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })
@@ -154,7 +158,7 @@ export default function Dashboard() {
         <div className="bg-graphite text-white rounded-2xl p-6 sm:p-7" data-testid="cgpa-card">
           <div className="font-mono text-[11px] text-white/60 uppercase tracking-wide mb-2">Your CGPA</div>
           <div className="font-display text-5xl sm:text-6xl font-bold leading-none">
-            {gpa.gpa === null ? '—' : gpa.gpa.toFixed(2)}
+            {gpa.gpa === null ? '—' : gpaShown}
             <span className="text-lg text-white/40"> / 5.00</span>
           </div>
           <div className="text-sm text-white/70 mt-3">
@@ -172,7 +176,7 @@ export default function Dashboard() {
               Not counted yet (units pending): {gpa.skipped.join(', ')}
             </div>
           )}
-          <Link to="/results" className="inline-block text-sm text-white/80 underline underline-offset-4 mt-4">
+          <Link to="/results" className="inline-block text-sm text-white/80 underline underline-offset-4 mt-2 py-2">
             Full result slip
           </Link>
         </div>
@@ -183,7 +187,7 @@ export default function Dashboard() {
             <Ring pct={goalPct} />
             <div>
               <div className="font-display text-2xl font-bold leading-none">
-                {answeredToday}<span className="text-graphite/40 text-base"> / {DAILY_GOAL}</span>
+                {answeredShown}<span className="text-graphite/40 text-base"> / {DAILY_GOAL}</span>
               </div>
               <div className="text-xs text-graphite/60 mt-1.5">
                 {answeredToday >= DAILY_GOAL ? 'Goal reached. Well done!' : 'questions answered'}
@@ -195,19 +199,20 @@ export default function Dashboard() {
         <div className="bg-white border border-line rounded-2xl p-6" data-testid="streak-card">
           <div className="font-mono text-[11px] text-graphite/50 uppercase tracking-wide mb-3">Study streak</div>
           <div className="font-display text-4xl font-bold leading-none">
-            {streak}<span className="text-graphite/40 text-base"> day{streak === 1 ? '' : 's'}</span>
+            {streakShown}<span className="text-graphite/40 text-base"> day{streak === 1 ? '' : 's'}</span>
           </div>
           <div className="flex gap-1.5 mt-4">
-            {week.map((d) => (
+            {week.map((d, di) => (
               <div key={d.key} className="flex flex-col items-center gap-1">
                 <div
+                  style={{ '--i': di }}
                   className={`w-7 h-7 rounded-md text-[11px] flex items-center justify-center ${
-                    d.active ? 'bg-mint text-white' : 'bg-paper-2 text-transparent'
+                    d.active ? 'bg-mint text-white pop' : 'bg-paper-2 text-transparent'
                   } ${d.isToday ? 'ring-2 ring-cobalt/40' : ''}`}
                 >
                   ✓
                 </div>
-                <span className="text-[10px] text-graphite/50">{d.label}</span>
+                <span className="text-[11px] text-graphite/50">{d.label}</span>
               </div>
             ))}
           </div>
@@ -222,7 +227,7 @@ export default function Dashboard() {
             <div className="font-display text-lg font-semibold">{focus.title}</div>
             {focus.sub && <div className="text-xs text-graphite/60 mt-0.5 font-mono">{focus.sub}</div>}
           </div>
-          <Link to={focus.to} className="bg-flame text-white px-5 py-2.5 rounded font-medium text-sm">
+          <Link to={focus.to} className="press bg-flame text-white px-5 py-3 rounded font-medium text-sm">
             {focus.cta}
           </Link>
         </section>
@@ -232,16 +237,16 @@ export default function Dashboard() {
       <section className="mb-10" data-testid="courses-section">
         <div className="flex items-end justify-between mb-4">
           <h2 className="font-display text-xl font-semibold -tracking-wide">My courses</h2>
-          <Link to="/add-courses" className="text-sm text-cobalt font-medium">+ Add or remove courses</Link>
+          <Link to="/add-courses" className="text-sm text-cobalt font-medium py-2">+ Add or remove courses</Link>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {courses.map((c) => (
-            <CourseProgressCard key={c.code} c={c} />
+          {courses.map((c, ci) => (
+            <CourseProgressCard key={c.code} c={c} index={ci} />
           ))}
         </div>
       </section>
 
-      <div className="grid lg:grid-cols-[1.4fr_1fr] gap-4 mb-10 items-start">
+      <div className="grid lg:grid-cols-[1.4fr_1fr] gap-4 mb-10 items-start [&>*]:min-w-0">
         {/* Weak topics */}
         <section className="bg-white border border-line rounded-2xl p-6" data-testid="weak-card">
           <h2 className="font-display text-lg font-semibold mb-1">Needs your attention</h2>
@@ -262,7 +267,7 @@ export default function Dashboard() {
                   </div>
                   <Link
                     to={`/course/${w.courseCode}/practice/${w.topicId}`}
-                    className="shrink-0 text-xs font-medium text-white bg-cobalt px-3 py-1.5 rounded"
+                    className="press shrink-0 text-[13px] font-medium text-white bg-cobalt px-4 py-2.5 rounded"
                   >
                     Practise
                   </Link>
@@ -288,19 +293,25 @@ export default function Dashboard() {
 function Ring({ pct }) {
   const r = 26
   const c = 2 * Math.PI * r
+  const [shown, setShown] = useState(reducedMotion() ? pct : 0)
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setShown(pct))
+    return () => cancelAnimationFrame(id)
+  }, [pct])
   return (
     <svg width="64" height="64" viewBox="0 0 64 64" className="shrink-0" role="img" aria-label={`${pct}% of daily goal`}>
       <circle cx="32" cy="32" r={r} fill="none" stroke="#F1F0EA" strokeWidth="7" />
       <circle
         cx="32" cy="32" r={r} fill="none" stroke="#2451E0" strokeWidth="7" strokeLinecap="round"
-        strokeDasharray={c} strokeDashoffset={c - (c * pct) / 100} transform="rotate(-90 32 32)"
+        strokeDasharray={c} strokeDashoffset={c - (c * shown) / 100} transform="rotate(-90 32 32)"
+        style={{ transition: 'stroke-dashoffset 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s' }}
       />
       <text x="32" y="36" textAnchor="middle" fontSize="13" fontWeight="700" fill="#14171C">{pct}%</text>
     </svg>
   )
 }
 
-function CourseProgressCard({ c }) {
+function CourseProgressCard({ c, index = 0 }) {
   if (!c.ready) {
     return (
       <div className="bg-white border border-line rounded-xl p-5 opacity-70">
@@ -312,12 +323,12 @@ function CourseProgressCard({ c }) {
   const pct = c.pct
   const grade = c.last ? scoreToGrade(c.last.score) : null
   return (
-    <div className="bg-white border border-line rounded-xl p-5 flex flex-col" data-testid={`course-${c.code}`}>
+    <div className="bg-white border border-line rounded-xl p-5 flex flex-col lift" data-testid={`course-${c.code}`}>
       <Link to={`/course/${c.code}`} className="block mb-4">
-        <div className="flex justify-between items-start mb-2">
+        <div className="flex justify-between items-start mb-2 min-h-[26px]">
           <span className="font-mono text-xs text-cobalt-deep font-medium">{c.code}</span>
           {grade && (
-            <span className="text-[10.5px] font-medium px-2 py-0.5 rounded bg-cobalt-pale text-cobalt-deep">
+            <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-cobalt-pale text-cobalt-deep">
               {c.last.score}/100 · {grade.letter}
             </span>
           )}
@@ -326,7 +337,7 @@ function CourseProgressCard({ c }) {
       </Link>
 
       <div className="h-2 bg-paper-2 rounded-full overflow-hidden" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
-        <div className="h-full bg-cobalt rounded-full" style={{ width: `${pct}%` }} />
+        <div className="h-full bg-cobalt rounded-full bar-grow" style={{ width: `${pct}%`, '--i': index }} />
       </div>
       <div className="text-[11.5px] text-graphite/60 mt-1.5 mb-4">
         {c.covered === 0 ? 'Not started' : `${c.covered} of ${c.total} ${c.unit} · ${pct}%`}
@@ -336,11 +347,11 @@ function CourseProgressCard({ c }) {
       <div className="mt-auto flex gap-2">
         <Link
           to={c.next ? `/course/${c.code}/read/${c.next.id}` : `/course/${c.code}`}
-          className="flex-1 text-center text-xs font-medium bg-cobalt text-white py-2 rounded"
+          className="press flex-1 text-center text-[13px] font-medium bg-cobalt text-white py-2.5 rounded"
         >
           {c.covered === 0 ? 'Start' : c.next ? 'Continue' : 'Revise'}
         </Link>
-        <Link to={`/course/${c.code}/test`} className="flex-1 text-center text-xs font-medium border border-line py-2 rounded hover:border-cobalt">
+        <Link to={`/course/${c.code}/test`} className="press flex-1 text-center text-[13px] font-medium border border-line py-2.5 rounded hover:border-cobalt">
           {c.draft ? 'Resume test' : c.last ? 'Retake test' : 'Take test'}
         </Link>
       </div>
@@ -397,7 +408,7 @@ function FocusTimer() {
             <button
               key={k}
               onClick={() => switchMode(k)}
-              className={`text-[11px] px-2 py-1 rounded font-medium ${mode === k ? 'bg-graphite text-white' : 'text-graphite/60'}`}
+              className={`press text-xs px-3 py-2 rounded font-medium ${mode === k ? 'bg-graphite text-white' : 'text-graphite/60'}`}
             >
               {m.label}
             </button>
@@ -409,10 +420,10 @@ function FocusTimer() {
         {done ? (mode === 'focus' ? 'Session done. Take a 5-minute break.' : 'Break over. Back to it!') : 'One session, one topic. No phone.'}
       </div>
       <div className="flex gap-2">
-        <button onClick={toggle} className="flex-1 bg-cobalt text-white text-xs font-medium py-2 rounded">
+        <button onClick={toggle} className="press flex-1 bg-cobalt text-white text-[13px] font-medium py-2.5 rounded">
           {endAt ? 'Pause' : left === MODES[mode].mins * 60 ? 'Start' : 'Resume'}
         </button>
-        <button onClick={() => switchMode(mode)} className="px-4 border border-line text-xs font-medium py-2 rounded">
+        <button onClick={() => switchMode(mode)} className="press px-4 border border-line text-[13px] font-medium py-2.5 rounded">
           Reset
         </button>
       </div>

@@ -58,7 +58,7 @@ export default function AddCourses() {
   }
 
   return (
-    <div className="min-h-screen bg-paper px-6 py-16">
+    <div className="min-h-[100dvh] bg-paper px-6 py-16">
       <div className="max-w-[640px] mx-auto">
         <div className="font-mono text-xs tracking-wider text-flame uppercase mb-3 font-medium">
           Step 2 of 2

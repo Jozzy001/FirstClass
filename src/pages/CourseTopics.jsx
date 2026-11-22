@@ -34,7 +34,7 @@ export default function CourseTopics() {
           <div className="font-display text-lg font-bold">{progress.pct}%</div>
         </div>
         <div className="h-2.5 bg-paper-2 rounded-full overflow-hidden">
-          <div className="h-full bg-cobalt rounded-full transition-all" style={{ width: `${progress.pct}%` }} />
+          <div className="h-full bg-cobalt rounded-full bar-grow" style={{ width: `${progress.pct}%` }} />
         </div>
         <div className="text-xs text-graphite/55 mt-2">
           {progress.done} of {progress.total} topics completed
@@ -48,7 +48,7 @@ export default function CourseTopics() {
             {last ? `Latest: ${last.score}/100 · Grade ${scoreToGrade(last.score).letter}` : 'Scored out of 100 · counts toward your CGPA'}
           </div>
         </div>
-        <Link to={`/course/${course.code}/test`} className="bg-flame text-white px-5 py-2.5 rounded font-medium text-sm">
+        <Link to={`/course/${course.code}/test`} className="press bg-flame text-white px-5 py-3 rounded font-medium text-sm">
           {last ? 'Retake test' : 'Take the test'}
         </Link>
       </div>
@@ -57,13 +57,13 @@ export default function CourseTopics() {
         {course.topics.map((topic, i) => (
           <div
             key={topic.id}
-            className="bg-white border border-line rounded-lg p-5 flex items-center justify-between gap-4"
+            className="bg-white border border-line rounded-lg p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 lift"
           >
             <div>
               <div className="font-mono text-xs text-cobalt-deep mb-1 flex items-center gap-2">
                 Topic {i + 1}
                 {!topic.isFree && (
-                  <span className="bg-flame-pale text-flame px-1.5 py-0.5 rounded text-[10px] uppercase">
+                  <span className="bg-flame-pale text-flame px-1.5 py-0.5 rounded text-[11px] uppercase">
                     Premium
                   </span>
                 )}
@@ -82,16 +82,16 @@ export default function CourseTopics() {
                 })()}
               </div>
             </div>
-            <div className="flex gap-2 flex-shrink-0">
+            <div className="flex gap-2 sm:flex-shrink-0 [&>a]:flex-1 sm:[&>a]:flex-none [&>a]:text-center">
               <Link
                 to={`/course/${course.code}/read/${topic.id}`}
-                className="border border-line px-4 py-2 rounded text-sm font-medium hover:border-cobalt"
+                className="press border border-line px-4 py-2.5 rounded text-sm font-medium hover:border-cobalt"
               >
                 {progress.topics[topic.id].lesson ? (progress.topics[topic.id].state === 'new' ? 'Learn' : 'Lesson') : 'Read'}
               </Link>
               <Link
                 to={`/course/${course.code}/practice/${topic.id}`}
-                className="bg-cobalt text-white px-4 py-2 rounded text-sm font-medium"
+                className="press bg-cobalt text-white px-4 py-2.5 rounded text-sm font-medium"
               >
                 Practice
               </Link>

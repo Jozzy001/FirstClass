@@ -40,7 +40,7 @@ export default function PickFaculty() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-paper px-6 py-16">
+    <div className="min-h-[100dvh] flex items-center justify-center bg-paper px-6 py-16">
       <div className="w-full max-w-[480px]">
         <div className="font-mono text-xs tracking-wider text-flame uppercase mb-3 font-medium">
           Step 1 of 2

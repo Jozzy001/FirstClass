@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
 import { recordTopicPractice } from '../lib/store.js'
+import { useCountUp } from '../lib/useMotion.js'
 
 export default function Practice() {
   const { code, topicId } = useParams()
@@ -12,6 +13,7 @@ export default function Practice() {
   const [selected, setSelected] = useState(null)
   const [correctCount, setCorrectCount] = useState(0)
   const [finished, setFinished] = useState(false)
+  const percentShown = useCountUp(finished && topic?.questions.length ? Math.round((correctCount / topic.questions.length) * 100) : 0, { duration: 1000 })
 
   if (!course || !topic) {
     return (
@@ -62,7 +64,7 @@ export default function Practice() {
         <div className="font-mono text-xs tracking-wider text-flame uppercase mb-4">
           {topic.title} · Complete
         </div>
-        <div className="font-display text-6xl font-bold mb-2">{percent}%</div>
+        <div className="font-display text-6xl font-bold mb-2 num">{percentShown}%</div>
         <p className="text-graphite/60 mb-8">
           {correctCount} of {topic.questions.length} correct
         </p>
@@ -108,19 +110,21 @@ export default function Practice() {
               <button
                 key={i}
                 onClick={() => handleSelect(i)}
-                className={`w-full flex items-center gap-3.5 border rounded-lg px-4 py-3 text-left text-sm transition-colors ${cls}`}
+                className={`press w-full flex items-center gap-3.5 border rounded-lg px-4 py-3.5 text-left text-sm transition-colors ${cls} ${selected !== null && isSelected && !isCorrect ? 'shake' : ''}`}
               >
                 <span className="w-6 h-6 rounded flex items-center justify-center font-mono text-xs border border-line flex-shrink-0">
                   {String.fromCharCode(65 + i)}
                 </span>
-                <span>{opt}</span>
+                <span className="flex-1">{opt}</span>
+                {selected !== null && isCorrect && <span className="text-mint font-bold pop-now" aria-hidden="true">✓</span>}
+                {selected !== null && isSelected && !isCorrect && <span className="text-rose font-bold" aria-hidden="true">✗</span>}
               </button>
             )
           })}
         </div>
 
         {selected !== null && (
-          <div className="mt-5 bg-paper-2 rounded-lg px-5 py-4 text-[13.5px] text-graphite/70">
+          <div className="feedback-in mt-5 bg-paper-2 rounded-lg px-5 py-4 text-[13.5px] text-graphite/70">
             <strong className="text-graphite">
               {selected === question.correctIndex ? 'Correct. ' : 'Not quite. '}
             </strong>
@@ -131,7 +135,7 @@ export default function Practice() {
         {selected !== null && (
           <button
             onClick={handleNext}
-            className="mt-5 w-full bg-cobalt text-white py-3 rounded font-medium text-sm"
+            className="press mt-5 w-full bg-cobalt text-white py-3.5 rounded font-medium text-sm"
           >
             {qIndex + 1 < topic.questions.length ? 'Next question' : 'See results'}
           </button>

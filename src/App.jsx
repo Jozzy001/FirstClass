@@ -33,10 +33,11 @@ function Root() {
 
 export default function App() {
   const { loading } = useAuth()
+  const location = useLocation()
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-paper">
-        <div className="font-display text-xl font-semibold">
+      <div className="min-h-[100dvh] flex items-center justify-center bg-paper">
+        <div className="font-display text-xl font-semibold logo-pulse">
           First<span className="text-flame">Class</span>
         </div>
       </div>
@@ -45,7 +46,8 @@ export default function App() {
   return (
     <>
     <AppHeader />
-    <Routes>
+    <div key={location.pathname} className="page-in">
+    <Routes location={location}>
       <Route path="/" element={<Root />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
@@ -57,6 +59,7 @@ export default function App() {
       <Route path="/course/:code/test" element={<RequireAuth><Test /></RequireAuth>} />
       <Route path="/results" element={<RequireAuth><Results /></RequireAuth>} />
     </Routes>
+    </div>
     </>
   )
 }
