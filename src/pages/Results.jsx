@@ -1,3 +1,4 @@
+import { useCountUp } from '../lib/useMotion.js'
 import React, { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllCourses } from '../data/courseData.js'
@@ -37,6 +38,7 @@ export default function Results() {
 
   const { tested, untested, gpa, weak, titleByCode } = data
   const cls = classify(gpa.gpa)
+  const gpaShown = useCountUp(gpa.gpa, { decimals: 2, duration: 1200, delay: 200 })
   const totalUnits = gpa.breakdown.reduce((s, r) => s + r.creditUnits, 0)
   const totalQP = gpa.breakdown.reduce((s, r) => s + r.qualityPoints, 0)
   const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
@@ -70,18 +72,18 @@ export default function Results() {
   return (
     <div className="max-w-[900px] mx-auto px-3 min-[400px]:px-5 sm:px-7 py-10 sm:py-14">
       {/* CGPA headline */}
-      <section className="bg-graphite text-white rounded-2xl p-6 sm:p-9 mb-8 grid sm:grid-cols-[auto_1fr] gap-6 sm:gap-10 items-center no-print">
+      <section className="bg-graphite text-white rounded-2xl p-6 sm:p-9 mb-8 sheen grid sm:grid-cols-[auto_1fr] gap-6 sm:gap-10 items-center no-print">
         <div>
           <div className="font-mono text-[11px] text-white/60 uppercase tracking-wide mb-2">Your CGPA</div>
-          <div className="font-display text-6xl sm:text-7xl font-bold leading-none">
-            {gpa.gpa === null ? '—' : gpa.gpa.toFixed(2)}
+          <div className="font-display text-6xl sm:text-7xl font-bold leading-none num">
+            {gpa.gpa === null ? '—' : gpaShown}
             <span className="text-xl text-white/40"> / 5.00</span>
           </div>
         </div>
         <div>
           {cls && (
             <>
-              <div className="inline-block bg-flame text-white font-display text-sm font-semibold px-3 py-1.5 rounded mb-3">
+              <div className="stamp bg-flame text-white font-display text-sm font-semibold px-3 py-1.5 rounded mb-3" style={{ '--d': '1.3s' }}>
                 {cls.name}
               </div>
               <p className="text-sm text-white/70">

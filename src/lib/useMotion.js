@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react'
 
 export function reducedMotion() {
+  if (typeof document === 'undefined') return false
+  const mode = document.documentElement.dataset.motion
+  if (mode) return mode === 'reduced'
   try {
-    return typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    return !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   } catch {
     return false
   }

@@ -82,7 +82,7 @@ export default function AddCourses() {
               <button
                 key={course.code}
                 onClick={() => toggle(course.code)}
-                className={`w-full flex items-center justify-between border rounded-lg px-4 py-3.5 text-left transition-colors ${
+                className={`press w-full flex items-center justify-between border rounded-lg px-4 py-3.5 text-left transition-colors ${
                   isSelected ? 'border-cobalt bg-cobalt-pale' : 'border-line bg-white hover:border-cobalt/50'
                 }`}
               >
@@ -95,7 +95,7 @@ export default function AddCourses() {
                 </div>
                 <div
                   className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs ${
-                    isSelected ? 'bg-cobalt border-cobalt text-white' : 'border-line text-transparent'
+                    isSelected ? 'bg-cobalt border-cobalt text-white pop-now' : 'border-line text-transparent'
                   }`}
                 >
                   ✓

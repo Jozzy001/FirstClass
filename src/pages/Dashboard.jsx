@@ -5,6 +5,7 @@ import { getCourse } from '../data/courseData.js'
 import { getCourseProgress } from '../lib/progress.js'
 import { getLesson } from '../lib/lessons.js'
 import { reducedMotion, useCountUp } from '../lib/useMotion.js'
+import { getMotionChoice, setMotionChoice, systemPrefersReduced } from '../lib/motionPref.js'
 import { calculateGPA, classify, findWeakTopics, overallAccuracy, scoreToGrade } from '../lib/grading.js'
 import {
   computeStreak,
@@ -145,7 +146,7 @@ export default function Dashboard() {
   return (
     <div className="max-w-[1120px] mx-auto px-4 sm:px-7 py-8 sm:py-12">
       {/* Greeting */}
-      <div className="mb-7">
+      <div className="mb-7 rise" style={{ '--i': 0 }}>
         <div className="font-mono text-xs tracking-wider text-flame uppercase mb-2 font-medium">{dateLabel}</div>
         <h1 className="font-display text-2xl sm:text-3xl font-semibold -tracking-wide">
           {greeting()}, {name}
@@ -153,9 +154,11 @@ export default function Dashboard() {
         {profile?.faculty && <p className="text-graphite/60 text-sm mt-1.5">Faculty of {profile.faculty}</p>}
       </div>
 
+      <MotionNotice />
+
       {/* Headline stats */}
       <section className="grid gap-4 md:grid-cols-[1.3fr_1fr_1fr] mb-4">
-        <div className="bg-graphite text-white rounded-2xl p-6 sm:p-7" data-testid="cgpa-card">
+        <div className="bg-graphite text-white rounded-2xl p-6 sm:p-7 rise sheen" style={{ '--i': 1 }} data-testid="cgpa-card">
           <div className="font-mono text-[11px] text-white/60 uppercase tracking-wide mb-2">Your CGPA</div>
           <div className="font-display text-5xl sm:text-6xl font-bold leading-none">
             {gpa.gpa === null ? '—' : gpaShown}
@@ -181,10 +184,10 @@ export default function Dashboard() {
           </Link>
         </div>
 
-        <div className="bg-white border border-line rounded-2xl p-6" data-testid="goal-card">
+        <div className="bg-white border border-line rounded-2xl p-6 rise" style={{ '--i': 2 }} data-testid="goal-card">
           <div className="font-mono text-[11px] text-graphite/50 uppercase tracking-wide mb-3">Today's goal</div>
           <div className="flex items-center gap-4">
-            <Ring pct={goalPct} />
+            <Ring pct={goalPct} hit={answeredToday >= DAILY_GOAL} />
             <div>
               <div className="font-display text-2xl font-bold leading-none">
                 {answeredShown}<span className="text-graphite/40 text-base"> / {DAILY_GOAL}</span>
@@ -196,10 +199,10 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg-white border border-line rounded-2xl p-6" data-testid="streak-card">
+        <div className="bg-white border border-line rounded-2xl p-6 rise" style={{ '--i': 3 }} data-testid="streak-card">
           <div className="font-mono text-[11px] text-graphite/50 uppercase tracking-wide mb-3">Study streak</div>
           <div className="font-display text-4xl font-bold leading-none">
-            {streakShown}<span className="text-graphite/40 text-base"> day{streak === 1 ? '' : 's'}</span>
+            {streak > 0 && <span className="flicker mr-1.5 text-3xl" aria-hidden="true">🔥</span>}{streakShown}<span className="text-graphite/40 text-base"> day{streak === 1 ? '' : 's'}</span>
           </div>
           <div className="flex gap-1.5 mt-4">
             {week.map((d, di) => (
@@ -221,7 +224,7 @@ export default function Dashboard() {
 
       {/* Next best action */}
       {focus && (
-        <section className="bg-flame-pale border border-flame/20 rounded-2xl p-5 sm:p-6 mb-8 flex flex-wrap items-center justify-between gap-4" data-testid="focus-card">
+        <section className="bg-flame-pale border border-flame/20 rounded-2xl p-5 sm:p-6 mb-8 flex flex-wrap items-center justify-between gap-4 rise" style={{ '--i': 4 }} data-testid="focus-card">
           <div>
             <div className="font-mono text-[11px] text-flame uppercase tracking-wide mb-1.5">{focus.label}</div>
             <div className="font-display text-lg font-semibold">{focus.title}</div>
@@ -235,7 +238,7 @@ export default function Dashboard() {
 
       {/* Courses */}
       <section className="mb-10" data-testid="courses-section">
-        <div className="flex items-end justify-between mb-4">
+        <div className="flex items-end justify-between mb-4 rise" style={{ '--i': 5 }}>
           <h2 className="font-display text-xl font-semibold -tracking-wide">My courses</h2>
           <Link to="/add-courses" className="text-sm text-cobalt font-medium py-2">+ Add or remove courses</Link>
         </div>
@@ -248,7 +251,7 @@ export default function Dashboard() {
 
       <div className="grid lg:grid-cols-[1.4fr_1fr] gap-4 mb-10 items-start [&>*]:min-w-0">
         {/* Weak topics */}
-        <section className="bg-white border border-line rounded-2xl p-6" data-testid="weak-card">
+        <section className="bg-white border border-line rounded-2xl p-6 rise" style={{ '--i': 7 }} data-testid="weak-card">
           <h2 className="font-display text-lg font-semibold mb-1">Needs your attention</h2>
           <p className="text-xs text-graphite/60 mb-4">Topics where you scored under 60% recently.</p>
           {weak.length === 0 ? (
@@ -279,7 +282,7 @@ export default function Dashboard() {
 
         <div className="space-y-4">
           <FocusTimer />
-          <section className="bg-mint-pale border border-mint/20 rounded-2xl p-6" data-testid="tip-card">
+          <section className="bg-mint-pale border border-mint/20 rounded-2xl p-6 rise" style={{ '--i': 9 }} data-testid="tip-card">
             <div className="font-mono text-[11px] text-mint uppercase tracking-wide mb-2">Study tip</div>
             <div className="font-display text-[15px] font-semibold mb-1.5">{tip.title}</div>
             <p className="text-sm text-graphite/70 leading-relaxed">{tip.body}</p>
@@ -290,7 +293,7 @@ export default function Dashboard() {
   )
 }
 
-function Ring({ pct }) {
+function Ring({ pct, hit }) {
   const r = 26
   const c = 2 * Math.PI * r
   const [shown, setShown] = useState(reducedMotion() ? pct : 0)
@@ -299,10 +302,10 @@ function Ring({ pct }) {
     return () => cancelAnimationFrame(id)
   }, [pct])
   return (
-    <svg width="64" height="64" viewBox="0 0 64 64" className="shrink-0" role="img" aria-label={`${pct}% of daily goal`}>
+    <svg width="64" height="64" viewBox="0 0 64 64" className={`shrink-0 ${hit ? 'glow-ring' : ''}`} role="img" aria-label={`${pct}% of daily goal`}>
       <circle cx="32" cy="32" r={r} fill="none" stroke="#F1F0EA" strokeWidth="7" />
       <circle
-        cx="32" cy="32" r={r} fill="none" stroke="#2451E0" strokeWidth="7" strokeLinecap="round"
+        cx="32" cy="32" r={r} fill="none" stroke={hit ? '#0F9E72' : '#2451E0'} strokeWidth="7" strokeLinecap="round"
         strokeDasharray={c} strokeDashoffset={c - (c * shown) / 100} transform="rotate(-90 32 32)"
         style={{ transition: 'stroke-dashoffset 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s' }}
       />
@@ -323,7 +326,7 @@ function CourseProgressCard({ c, index = 0 }) {
   const pct = c.pct
   const grade = c.last ? scoreToGrade(c.last.score) : null
   return (
-    <div className="bg-white border border-line rounded-xl p-5 flex flex-col lift" data-testid={`course-${c.code}`}>
+    <div className="bg-white border border-line rounded-xl p-5 flex flex-col lift rise" style={{ '--i': index + 6 }} data-testid={`course-${c.code}`}>
       <Link to={`/course/${c.code}`} className="block mb-4">
         <div className="flex justify-between items-start mb-2 min-h-[26px]">
           <span className="font-mono text-xs text-cobalt-deep font-medium">{c.code}</span>
@@ -428,5 +431,27 @@ function FocusTimer() {
         </button>
       </div>
     </section>
+  )
+}
+
+// Shown only when the phone has animations switched off. Lets the student turn them on for this app.
+function MotionNotice() {
+  if (!systemPrefersReduced()) return null
+  const forced = getMotionChoice() === 'full'
+  function change() {
+    setMotionChoice(forced ? 'system' : 'full')
+    window.location.reload()
+  }
+  return (
+    <div className="bg-flame-pale border border-flame/20 rounded-xl px-4 py-3 mb-5 flex flex-wrap items-center justify-between gap-2 text-[13.5px]" data-testid="motion-notice">
+      <span className="text-graphite/75">
+        {forced
+          ? 'Animations are on, even though your phone has them switched off.'
+          : 'Your phone has animations switched off, so FirstClass is showing the still version.'}
+      </span>
+      <button onClick={change} className="press font-medium text-flame py-2">
+        {forced ? 'Follow my phone setting' : 'Turn animations on'}
+      </button>
+    </div>
   )
 }

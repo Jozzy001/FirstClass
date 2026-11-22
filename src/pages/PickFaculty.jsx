@@ -55,13 +55,14 @@ export default function PickFaculty() {
             <button
               key={faculty}
               onClick={() => setSelected(faculty)}
-              className={`text-left border rounded-lg px-4 py-3.5 text-sm font-medium transition-colors ${
+              className={`press flex items-center justify-between gap-2 text-left border rounded-lg px-4 py-3.5 text-sm font-medium transition-colors ${
                 selected === faculty
                   ? 'border-cobalt bg-cobalt-pale text-cobalt-deep'
                   : 'border-line bg-white hover:border-cobalt/50'
               }`}
             >
-              {faculty}
+              <span>{faculty}</span>
+              {selected === faculty && <span className="pop-now text-cobalt" aria-hidden="true">✓</span>}
             </button>
           ))}
         </div>
@@ -69,7 +70,7 @@ export default function PickFaculty() {
         <button
           onClick={handleContinue}
           disabled={!selected || saving}
-          className="w-full bg-cobalt text-white py-3 rounded font-medium text-sm disabled:opacity-40"
+          className="press w-full bg-cobalt text-white py-3.5 rounded font-medium text-sm disabled:opacity-40"
         >
           {saving ? 'Saving…' : 'Continue'}
         </button>

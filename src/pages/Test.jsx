@@ -221,7 +221,7 @@ export default function Test() {
             <span className="text-2xl text-graphite/40">/100</span>
           </div>
           <div className={`font-display text-xl font-semibold mt-3 ${gradeColor}`}>
-            Grade {grade.letter} · {grade.point}.0 points
+            Grade <span className="stamp font-semibold" style={{ '--d': '1.4s' }}>{grade.letter}</span> · {grade.point}.0 points
           </div>
           <p className="text-graphite/60 mt-2 text-sm">
             {result.correct} of {result.total} correct
@@ -331,7 +331,7 @@ export default function Test() {
         <div className="font-mono text-xs text-graphite/60">
           {course.code} · {current + 1}/{questions.length} · {answeredCount} answered
         </div>
-        <div className={`font-mono text-sm font-medium px-3 py-1 rounded ${low ? 'bg-rose-pale text-rose' : 'bg-paper-2 text-graphite'}`}>
+        <div className={`font-mono text-sm font-medium px-3 py-1 rounded ${low ? 'bg-rose-pale text-rose urgent' : 'bg-paper-2 text-graphite'}`}>
           {formatClock(remaining)}
         </div>
       </div>

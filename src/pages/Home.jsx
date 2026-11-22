@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllCourses } from '../data/courseData.js'
-import { useCountUp } from '../lib/useMotion.js'
+import { reducedMotion, useCountUp } from '../lib/useMotion.js'
 
 // Public landing page: it explains the app and sends visitors to sign up or log in.
 // Courses, tests and results are only opened once a student is signed in.
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="max-w-[1120px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <Stat value={courses.length} label="courses ready" />
           <Stat value={topicCount} label="topics with notes" />
-          <Stat value={questionCount.toLocaleString('en-US')} label="practice questions" />
+          <Stat value={questionCount} label="practice questions" format />
           <Stat value="45 min" label="timed course tests" />
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
           ))}
         </div>
         <p className="text-sm text-graphite/60">
-          More courses are added regularly. <Link to="/signup" className="text-cobalt font-medium">Create a free account</Link> to open them.
+          More courses are added regularly. <Link to="/signup" className="text-cobalt font-medium inline-block py-2">Create a free account</Link> to open them.
         </p>
         </div>
       </section>
@@ -178,10 +178,30 @@ function SectionHead({ kicker, title }) {
   )
 }
 
-function Stat({ value, label }) {
+// Counts up the first time it scrolls into view.
+function Stat({ value, label, format }) {
+  const ref = useRef(null)
+  const [seen, setSeen] = useState(typeof value !== 'number')
+  useEffect(() => {
+    if (seen) return undefined
+    if (reducedMotion() || typeof IntersectionObserver === 'undefined') {
+      setSeen(true)
+      return undefined
+    }
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) {
+        setSeen(true)
+        io.disconnect()
+      }
+    }, { threshold: 0.4 })
+    io.observe(ref.current)
+    return () => io.disconnect()
+  }, [seen])
+  const n = useCountUp(typeof value === 'number' && seen ? value : 0, { duration: 1400 })
+  const shown = typeof value !== 'number' ? value : format ? Number(n).toLocaleString('en-US') : n
   return (
-    <div>
-      <div className="font-display text-3xl font-bold">{value}</div>
+    <div ref={ref}>
+      <div className="font-display text-3xl font-bold num">{shown}</div>
       <div className="text-xs text-white/60 mt-1">{label}</div>
     </div>
   )
@@ -191,9 +211,28 @@ function Stat({ value, label }) {
 function DashboardPreview() {
   const cgpa = useCountUp(4.52, { decimals: 2, duration: 1400, delay: 500 })
   const streak = useCountUp(6, { duration: 900, delay: 700 })
+  const tiltRef = useRef(null)
+  // On a mouse, the preview card tilts gently toward the pointer.
+  const canTilt = () => !reducedMotion() && window.matchMedia?.('(pointer: fine)').matches
+  function onMove(e) {
+    if (!canTilt()) return
+    const r = tiltRef.current.getBoundingClientRect()
+    const x = (e.clientX - r.left) / r.width - 0.5
+    const y = (e.clientY - r.top) / r.height - 0.5
+    tiltRef.current.style.transform = `perspective(900px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg)`
+  }
+  function onLeave() {
+    if (tiltRef.current) tiltRef.current.style.transform = ''
+  }
   return (
     <div className="relative" aria-hidden="true">
-      <div className="bg-white border border-line rounded-2xl p-4 sm:p-5 shadow-[0_20px_50px_-20px_rgba(20,23,28,0.25)]">
+      <div
+        ref={tiltRef}
+        onMouseMove={onMove}
+        onMouseLeave={onLeave}
+        style={{ transition: 'transform 0.2s ease-out' }}
+        className="bg-white border border-line rounded-2xl p-4 sm:p-5 shadow-[0_20px_50px_-20px_rgba(20,23,28,0.25)]"
+      >
         <div className="flex items-center justify-between mb-4">
           <div className="font-display text-sm font-semibold">Good morning, Ada</div>
           <div className="font-mono text-[11px] text-graphite/40 uppercase">Example</div>
@@ -223,6 +262,15 @@ function DashboardPreview() {
             <div className="h-1.5 bg-paper-2 rounded-sm"><div className="h-full bg-cobalt rounded-sm bar-grow" style={{ width: `${pct}%`, '--i': bi + 2 }} /></div>
           </div>
         ))}
+      </div>
+      <div className="float absolute -top-4 right-3 bg-white border border-line rounded-full px-3.5 py-2 text-xs font-medium shadow-[0_10px_24px_-10px_rgba(20,23,28,0.3)]" style={{ '--d': '0s' }}>
+        <span className="mr-1">🔥</span>6-day streak
+      </div>
+      <div className="float absolute -bottom-4 left-3 bg-mint text-white rounded-full px-3.5 py-2 text-xs font-medium shadow-[0_10px_24px_-10px_rgba(15,158,114,0.6)]" style={{ '--d': '1.1s' }}>
+        A in CHM101
+      </div>
+      <div className="float hidden md:block absolute -bottom-5 right-8 bg-cobalt text-white rounded-full px-3.5 py-2 text-xs font-medium shadow-[0_10px_24px_-10px_rgba(36,81,224,0.6)]" style={{ '--d': '2s' }}>
+        Goal reached ✓
       </div>
     </div>
   )

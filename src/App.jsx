@@ -22,10 +22,30 @@ function RequireAuth({ children }) {
   return children
 }
 
+function Splash() {
+  return (
+    <div className="min-h-[100dvh] flex items-center justify-center bg-paper">
+      <div className="font-display text-xl font-semibold logo-pulse">
+        First<span className="text-flame">Class</span>
+      </div>
+    </div>
+  )
+}
+
 // "/" is the public landing page for visitors and the personal dashboard for students.
 function Root() {
-  const { user, profile } = useAuth()
+  const { user, profile, profileError, refreshProfile } = useAuth()
   if (!user) return <Home />
+  if (profileError) {
+    return (
+      <div className="max-w-[420px] mx-auto px-6 py-24 text-center">
+        <h1 className="font-display text-xl font-semibold mb-3">We could not load your account</h1>
+        <p className="text-sm text-graphite/65 mb-6">Check your internet connection and try again. Your courses and progress are safe.</p>
+        <button onClick={refreshProfile} className="press bg-cobalt text-white px-6 py-3 rounded font-medium text-sm">Try again</button>
+      </div>
+    )
+  }
+  if (profile === undefined) return <Splash />
   if (!profile?.faculty) return <Navigate to="/pick-faculty" replace />
   if (!profile.courses?.length) return <Navigate to="/add-courses" replace />
   return <Dashboard />
@@ -34,15 +54,7 @@ function Root() {
 export default function App() {
   const { loading } = useAuth()
   const location = useLocation()
-  if (loading) {
-    return (
-      <div className="min-h-[100dvh] flex items-center justify-center bg-paper">
-        <div className="font-display text-xl font-semibold logo-pulse">
-          First<span className="text-flame">Class</span>
-        </div>
-      </div>
-    )
-  }
+  if (loading) return <Splash />
   return (
     <>
     <AppHeader />
