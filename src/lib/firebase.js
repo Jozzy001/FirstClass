@@ -2,15 +2,16 @@ import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 
-// Replace these with the values from your Firebase project settings
-// (Project settings > General > Your apps > SDK setup and configuration).
+// Firebase web config for the FirstClass project. These values are public by design;
+// access is protected by Firebase Authentication and Firestore security rules.
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID'
+  apiKey: 'AIzaSyDnxK0Hr12TFniZBhR8nHpZeRijfT9hRy4',
+  authDomain: 'firstclass-887f7.firebaseapp.com',
+  projectId: 'firstclass-887f7',
+  storageBucket: 'firstclass-887f7.firebasestorage.app',
+  messagingSenderId: '486608460345',
+  appId: '1:486608460345:web:178905d5451e57c4d68be8',
+  measurementId: 'G-1SSSF01XCE'
 }
 
 const app = initializeApp(firebaseConfig)
