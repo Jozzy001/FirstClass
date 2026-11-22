@@ -21,7 +21,7 @@ export default function CourseTopics() {
   return (
     <div className="max-w-[860px] mx-auto px-7 py-14">
       <div className="font-mono text-xs tracking-wider text-flame uppercase mb-3 font-medium">
-        {course.faculty} · {course.creditUnits} units
+        {course.faculty}{typeof course.creditUnits === 'number' ? ` · ${course.creditUnits} units` : ''}
       </div>
       <h1 className="font-display text-3xl font-semibold mb-2">{course.code}</h1>
       <p className="text-graphite/60 mb-10">{course.title}</p>

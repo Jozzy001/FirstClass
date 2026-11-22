@@ -7,6 +7,7 @@ import {
 } from 'firebase/auth'
 import { doc, setDoc, getDoc } from 'firebase/firestore'
 import { auth, db } from '../lib/firebase.js'
+import { setStoreUser } from '../lib/store.js'
 
 const AuthContext = createContext(null)
 
@@ -26,11 +27,24 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    // Test-only seam: only exists in builds made with VITE_E2E=1, never in production.
+    if (import.meta.env.VITE_E2E && window.__FC_TEST__) {
+      setStoreUser(window.__FC_TEST__.uid)
+      setUser({ uid: window.__FC_TEST__.uid })
+      setProfile(window.__FC_TEST__.profile)
+      setLoading(false)
+      return undefined
+    }
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      setStoreUser(firebaseUser ? firebaseUser.uid : null)
       setUser(firebaseUser)
       if (firebaseUser) {
-        const snap = await getDoc(doc(db, 'users', firebaseUser.uid))
-        setProfile(snap.exists() ? snap.data() : null)
+        try {
+          const snap = await getDoc(doc(db, 'users', firebaseUser.uid))
+          setProfile(snap.exists() ? snap.data() : null)
+        } catch {
+          setProfile(null) // offline or rules problem: never leave the app stuck on the loading screen
+        }
       } else {
         setProfile(null)
       }

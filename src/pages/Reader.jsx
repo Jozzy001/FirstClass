@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
+import { markStudied } from '../lib/store.js'
 
 export default function Reader() {
   const { code, topicId } = useParams()
   const course = getCourse(code)
   const topicIndex = course?.topics.findIndex((t) => t.id === topicId) ?? -1
   const topic = topicIndex >= 0 ? course.topics[topicIndex] : null
+
+  useEffect(() => {
+    if (course && topic) markStudied(course.code, topic.id)
+  }, [course?.code, topic?.id])
 
   if (!course || !topic) {
     return (

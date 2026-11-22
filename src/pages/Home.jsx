@@ -1,46 +1,42 @@
 import React from 'react'
-import CourseCard from '../components/CourseCard.jsx'
 import { Link } from 'react-router-dom'
 import { getAllCourses } from '../data/courseData.js'
-import { calculateGPA, classify } from '../lib/grading.js'
-import { getCourseScores } from '../lib/store.js'
 
-// MTH101/ENG102/etc are placeholders showing where future courses will
-// slot in once their content is built.
-const placeholderCourses = [
-  { code: 'ENG102', title: 'Engineering Drawing', faculty: 'Engineering', chaptersCompleted: 0, chaptersTotal: 9 },
-  { code: 'ECO101', title: 'Principles of Economics I', faculty: 'Social sciences', chaptersCompleted: 0, chaptersTotal: 8 }
+// Public landing page: it explains the app and sends visitors to sign up or log in.
+// Courses, tests and results are only opened once a student is signed in.
+
+const STEPS = [
+  { n: '01', title: 'Create your account', body: 'Sign up with your phone number, pick your faculty and add the courses you are offering this session.' },
+  { n: '02', title: 'Read, then practise', body: 'Short topic notes end with the key formula or fact. Then answer past-question style practice, with the reason behind every answer.' },
+  { n: '03', title: 'Test yourself, see your CGPA', body: 'Take a timed test for each course. Get a score out of 100, a grade, and a result slip with your CGPA on the 5.0 scale.' }
 ]
 
-// Free-for-commercial-use photo (Unsplash license — no attribution required).
-// Swap this for your own campus photography once you have some; a real
-// photo of your actual users will always outperform stock long-term.
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1620829813573-7c9e1877706f?auto=format&fit=crop&w=1200&q=80'
+const FEATURES = [
+  { icon: '📖', title: 'Notes that get to the point', body: 'Every course is broken into short topics you can finish in one sitting, each ending with a key formula or key fact.' },
+  { icon: '🎯', title: 'Practice by topic', body: 'Answer questions one topic at a time and see the explanation straight away, so you learn from every mistake.' },
+  { icon: '⏱️', title: 'Timed course tests', body: '30 questions in 45 minutes, scored out of 100. If your phone locks or the page reloads, you pick up where you stopped.' },
+  { icon: '🎓', title: 'Result slip and CGPA', body: 'Letter grade, grade points and a credit-unit weighted CGPA on the 5.0 scale, just like your school result.' },
+  { icon: '🔍', title: 'Weak topics found for you', body: 'The topics you keep getting wrong are surfaced on your dashboard, so you spend time where it counts.' },
+  { icon: '🔥', title: 'Habits that stick', body: 'A daily question goal, a study streak and a focus timer help you build a steady revision routine.' }
+]
+
+const FAQ = [
+  { q: 'Is it free?', a: 'You can start free. The first topic of every course is open to you as soon as you sign in.' },
+  { q: 'Do I need an email address?', a: 'No. You sign up and log in with your phone number and a password. Email is optional.' },
+  { q: 'Will it work on my phone?', a: 'Yes. FirstClass is built for phones first and works on laptops too. You can add it to your home screen like an app.' },
+  { q: 'Where do the questions come from?', a: 'They are built from past exam questions. Where a question was unclear or incomplete, we hold it back rather than guess.' }
+]
 
 export default function Home() {
-  const realCourses = getAllCourses().map((c) => ({
-    code: c.code,
-    title: c.title,
-    faculty: c.faculty,
-    chaptersCompleted: 0,
-    chaptersTotal: c.topics.length
-  }))
-
-  const sampleCourses = [...realCourses, ...placeholderCourses]
-
-  // real scoreboard: the student's own latest test scores
-  const scores = getCourseScores()
-  const scored = getAllCourses()
-    .filter((c) => scores[c.code])
-    .map((c) => ({ courseCode: c.code, creditUnits: c.creditUnits, score: scores[c.code].latest.score }))
-  const gpa = calculateGPA(scored)
-  const cls = classify(gpa.gpa)
+  const courses = getAllCourses()
+  const topicCount = courses.reduce((s, c) => s + c.topics.length, 0)
+  const questionCount = courses.reduce((s, c) => s + c.topics.reduce((a, t) => a + t.questions.length, 0), 0)
 
   return (
     <div>
+      {/* Hero */}
       <section
-        className="py-16 px-7"
+        className="px-5 sm:px-7 pt-14 pb-16 sm:pt-20 sm:pb-24"
         style={{
           backgroundImage:
             'linear-gradient(#E6E3D9 1px, transparent 1px), linear-gradient(90deg, #E6E3D9 1px, transparent 1px)',
@@ -48,119 +44,183 @@ export default function Home() {
           borderBottom: '1px solid #E6E3D9'
         }}
       >
-        <div className="max-w-[1120px] mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
+        <div className="max-w-[1120px] mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-14 items-center">
           <div>
             <div className="font-mono text-xs tracking-wider text-cobalt uppercase mb-4 font-medium">
-              Every faculty · every course
+              The study app for university students
             </div>
-            <h1 className="font-display text-3xl md:text-[40px] font-semibold leading-tight mb-5 -tracking-wide">
-              Train for your <span className="text-flame">first class</span>, course by course.
+            <h1 className="font-display text-[32px] md:text-[44px] font-semibold leading-[1.12] mb-5 -tracking-wide">
+              Study smarter. Score higher. Aim for your <span className="text-flame">first class</span>.
             </h1>
-            <p className="text-[16.5px] text-graphite/60 max-w-[440px] mb-8">
-              Track mastery topic by topic, drill past questions, and watch your score climb —
-              for every course across every faculty.
+            <p className="text-[16.5px] text-graphite/65 max-w-[480px] mb-8 leading-relaxed">
+              Short notes, past-question practice, timed tests and a CGPA tracker, all in one place
+              and built to work on your phone.
             </p>
-            <div className="flex gap-3.5 flex-wrap">
-              <a href="/signup" className="bg-cobalt text-white px-6 py-3 rounded font-medium text-sm">
+            <div className="flex gap-3 flex-wrap">
+              <Link to="/signup" className="bg-cobalt text-white px-6 py-3 rounded font-medium text-sm">
                 Start free
-              </a>
-              <a href="#courses" className="border border-line bg-white px-6 py-3 rounded font-medium text-sm">
-                Browse courses
-              </a>
+              </Link>
+              <Link to="/login" className="border border-line bg-white px-6 py-3 rounded font-medium text-sm">
+                I already have an account
+              </Link>
             </div>
+            <div className="text-[12.5px] text-graphite/50 mt-4">No card needed · Sign up with your phone number</div>
           </div>
 
-          <div className="relative overflow-hidden rounded-2xl bg-graphite text-white p-7">
-            <div className="absolute inset-0 z-0">
-              <img
-                src={HERO_IMAGE}
-                alt="Student studying on a laptop"
-                className="w-full h-full object-cover"
-                style={{ filter: 'grayscale(1) contrast(1.1)', opacity: 0.35 }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{ background: 'linear-gradient(180deg, rgba(20,23,28,0.55) 0%, #14171C 78%)' }}
-              />
-            </div>
+          <DashboardPreview />
+        </div>
+      </section>
 
-            <div className="relative z-10">
-              <div className="flex justify-between items-center mb-5">
-                <span className="font-mono text-[11px] text-white/60 uppercase tracking-wide">Your scoreboard</span>
-                <span className="font-mono text-[11px] text-white/60">
-                  {scored.length} course{scored.length === 1 ? '' : 's'} tested
-                </span>
+      {/* Real numbers */}
+      <section className="bg-graphite text-white px-5 sm:px-7 py-8" data-testid="stats-strip">
+        <div className="max-w-[1120px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <Stat value={courses.length} label="courses ready" />
+          <Stat value={topicCount} label="topics with notes" />
+          <Stat value={questionCount.toLocaleString('en-US')} label="practice questions" />
+          <Stat value="45 min" label="timed course tests" />
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="px-5 sm:px-7 py-16 sm:py-20">
+        <div className="max-w-[1120px] mx-auto">
+          <SectionHead kicker="How it works" title="From sign-up to your CGPA in three steps" />
+          <div className="grid md:grid-cols-3 gap-4">
+            {STEPS.map((s) => (
+              <div key={s.n} className="bg-white border border-line rounded-xl p-6">
+                <div className="font-mono text-xs text-flame font-medium mb-3">{s.n}</div>
+                <div className="font-display text-[17px] font-semibold mb-2 leading-snug">{s.title}</div>
+                <p className="text-sm text-graphite/65 leading-relaxed">{s.body}</p>
               </div>
-              {scored.length === 0 ? (
-                <>
-                  <div className="font-display text-3xl font-bold leading-tight mb-2">
-                    Take a test to start your CGPA
-                  </div>
-                  <div className="text-xs text-white/60 mb-5">
-                    Each course test is out of 100. Your grade and class appear here.
-                  </div>
-                  <Link to="/course/PHY101/test" className="inline-block bg-flame text-white px-4 py-2 rounded text-sm font-medium">
-                    Try a test
-                  </Link>
-                </>
-              ) : (
-                <>
-                  <div className="font-display text-5xl font-bold leading-none mb-1">
-                    {gpa.gpa === null ? '—' : gpa.gpa.toFixed(2)}<span className="text-flame text-2xl"> / 5</span>
-                  </div>
-                  <div className="text-xs text-white/60 mb-5">{cls?.name}</div>
-                  {scored.map((row) => (
-                    <div key={row.courseCode} className="flex justify-between items-center py-2 border-t border-white/10 text-[13px]">
-                      <span className="font-mono text-[11.5px] text-white/60 w-16">{row.courseCode}</span>
-                      <span className="font-mono">{row.score}/100</span>
-                    </div>
-                  ))}
-                  <Link to="/results" className="inline-block text-sm text-white/80 underline underline-offset-4 mt-4">
-                    Full result slip
-                  </Link>
-                </>
-              )}
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section id="courses" className="py-16 px-7 max-w-[1120px] mx-auto">
-        <div className="max-w-[600px] mb-10">
-          <div className="font-mono text-xs tracking-wider text-flame uppercase mb-3 font-medium">
-            Course library
+      {/* Features */}
+      <section className="bg-paper-2 px-5 sm:px-7 py-16 sm:py-20 border-y border-line">
+        <div className="max-w-[1120px] mx-auto">
+          <SectionHead kicker="What you get" title="Everything you need to revise properly" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {FEATURES.map((f) => (
+              <div key={f.title} className="bg-white border border-line rounded-xl p-6">
+                <div className="text-2xl mb-3" aria-hidden="true">{f.icon}</div>
+                <div className="font-display text-[15.5px] font-semibold mb-1.5">{f.title}</div>
+                <p className="text-sm text-graphite/65 leading-relaxed">{f.body}</p>
+              </div>
+            ))}
           </div>
-          <h2 className="font-display text-2xl font-semibold mb-2.5 -tracking-wide">
-            Every faculty, one library
-          </h2>
-          <p className="text-graphite/60 text-[15.5px]">
-            Pick your course. Each one breaks down into chapters, and each chapter into short,
-            readable topics.
-          </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {sampleCourses.map((course) => (
-            <CourseCard key={course.code} course={course} />
+      </section>
+
+      {/* Courses available */}
+      <section className="px-5 sm:px-7 py-16 sm:py-20" data-testid="course-showcase">
+        <div className="max-w-[1120px] mx-auto">
+        <SectionHead kicker="Course library" title="Courses you can study today" />
+        <div className="flex flex-wrap gap-2.5 mb-6">
+          {courses.map((c) => (
+            <div key={c.code} className="bg-white border border-line rounded-lg px-4 py-2.5">
+              <span className="font-mono text-xs text-cobalt-deep font-medium mr-2">{c.code}</span>
+              <span className="text-sm">{c.title}</span>
+            </div>
           ))}
         </div>
+        <p className="text-sm text-graphite/60">
+          More courses are added regularly. <Link to="/signup" className="text-cobalt font-medium">Create a free account</Link> to open them.
+        </p>
+        </div>
       </section>
 
-      <section className="bg-graphite text-white text-center py-20 px-7">
-        <h2 className="font-display text-3xl font-semibold mb-3.5">
-          Start with the free chapters
-        </h2>
-        <p className="text-white/60 text-[15.5px] mb-7">
-          Every course opens its first chapter for free. Unlock the rest as you go.
+      {/* FAQ */}
+      <section className="bg-paper-2 px-5 sm:px-7 py-16 sm:py-20 border-y border-line">
+        <div className="max-w-[760px] mx-auto">
+          <SectionHead kicker="Questions" title="Quick answers" />
+          <div className="space-y-3">
+            {FAQ.map((f) => (
+              <details key={f.q} className="bg-white border border-line rounded-lg px-5 py-4 group">
+                <summary className="font-medium text-[15px] cursor-pointer list-none flex justify-between items-center gap-4">
+                  {f.q}
+                  <span className="text-graphite/40 group-open:rotate-45 transition-transform text-lg leading-none">+</span>
+                </summary>
+                <p className="text-sm text-graphite/65 mt-3 leading-relaxed">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final call to action */}
+      <section className="bg-graphite text-white text-center py-16 sm:py-20 px-5 sm:px-7">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-3.5">Ready to start your first topic?</h2>
+        <p className="text-white/60 text-[15.5px] mb-7 max-w-[480px] mx-auto">
+          Create your free account, pick your courses, and your dashboard will be ready in a minute.
         </p>
-        <a href="/signup" className="bg-cobalt text-white px-6 py-3 rounded font-medium text-sm inline-block">
-          Create your account
-        </a>
-        <div className="text-[12.5px] text-white/50 mt-4">No card required to start</div>
+        <div className="flex gap-3 justify-center flex-wrap">
+          <Link to="/signup" className="bg-flame text-white px-6 py-3 rounded font-medium text-sm">Create your account</Link>
+          <Link to="/login" className="border border-white/25 px-6 py-3 rounded font-medium text-sm">Log in</Link>
+        </div>
       </section>
 
       <footer className="bg-graphite border-t border-white/10 py-6 text-center text-xs text-white/50">
-        © FirstClass · Built for students across every faculty
+        © FirstClass · Built for university students
       </footer>
+    </div>
+  )
+}
+
+function SectionHead({ kicker, title }) {
+  return (
+    <div className="max-w-[600px] mb-9">
+      <div className="font-mono text-xs tracking-wider text-flame uppercase mb-3 font-medium">{kicker}</div>
+      <h2 className="font-display text-2xl sm:text-[28px] font-semibold -tracking-wide leading-tight">{title}</h2>
+    </div>
+  )
+}
+
+function Stat({ value, label }) {
+  return (
+    <div>
+      <div className="font-display text-3xl font-bold">{value}</div>
+      <div className="text-xs text-white/60 mt-1">{label}</div>
+    </div>
+  )
+}
+
+// A static illustration of the student dashboard. The numbers are an example, not real data.
+function DashboardPreview() {
+  return (
+    <div className="relative" aria-hidden="true">
+      <div className="bg-white border border-line rounded-2xl p-4 sm:p-5 shadow-[0_20px_50px_-20px_rgba(20,23,28,0.25)]">
+        <div className="flex items-center justify-between mb-4">
+          <div className="font-display text-sm font-semibold">Good morning, Ada</div>
+          <div className="font-mono text-[10px] text-graphite/40 uppercase">Example</div>
+        </div>
+        <div className="grid grid-cols-[1.2fr_1fr] gap-3 mb-3">
+          <div className="bg-graphite text-white rounded-xl p-4">
+            <div className="font-mono text-[10px] text-white/60 uppercase mb-1">Your CGPA</div>
+            <div className="font-display text-3xl font-bold leading-none">4.52<span className="text-xs text-white/40"> / 5</span></div>
+            <div className="text-[11px] text-white/60 mt-2">First Class</div>
+          </div>
+          <div className="bg-paper-2 rounded-xl p-4">
+            <div className="font-mono text-[10px] text-graphite/50 uppercase mb-1">Streak</div>
+            <div className="font-display text-3xl font-bold leading-none">6<span className="text-xs text-graphite/40"> days</span></div>
+            <div className="flex gap-1 mt-2.5">
+              {[1, 1, 1, 1, 1, 1, 0].map((on, i) => (
+                <i key={i} className={`flex-1 h-2 rounded-sm ${on ? 'bg-mint' : 'bg-white'}`} />
+              ))}
+            </div>
+          </div>
+        </div>
+        {[['BIO101', 70, '68/100 · B'], ['CHM101', 40, '74/100 · A'], ['MTH101', 15, 'Not tested']].map(([code, pct, tag]) => (
+          <div key={code} className="border border-line rounded-lg px-3 py-2.5 mb-2 last:mb-0">
+            <div className="flex justify-between text-[11px] mb-1.5">
+              <span className="font-mono text-cobalt-deep font-medium">{code}</span>
+              <span className="text-graphite/50">{tag}</span>
+            </div>
+            <div className="h-1.5 bg-paper-2 rounded-sm"><div className="h-full bg-cobalt rounded-sm" style={{ width: `${pct}%` }} /></div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

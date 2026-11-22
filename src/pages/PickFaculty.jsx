@@ -1,18 +1,28 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { doc, updateDoc } from 'firebase/firestore'
+import { doc, setDoc } from 'firebase/firestore'
 import { db } from '../lib/firebase.js'
 import { useAuth } from '../context/AuthContext.jsx'
 
-// Placeholder list — swap for a Firestore `faculties` collection query
-// once real faculty/course data is loaded in.
+// University of Benin faculties and schools (source: waeup.uniben.edu/faculties).
 const FACULTIES = [
-  'Sciences',
-  'Engineering',
-  'Social Sciences',
-  'Management Sciences',
+  'Agriculture',
   'Arts',
-  'General Studies'
+  'Basic Clinical Sciences',
+  'Basic Medical Sciences',
+  'Dentistry',
+  'Education',
+  'Engineering',
+  'Environmental Sciences',
+  'Law',
+  'Life Sciences',
+  'Management Sciences',
+  'Medicine',
+  'Pharmacy',
+  'Physical Sciences',
+  'Social Sciences',
+  'Veterinary Medicine',
+  'Vocational and Technical Education'
 ]
 
 export default function PickFaculty() {
@@ -24,7 +34,7 @@ export default function PickFaculty() {
   async function handleContinue() {
     if (!selected || !user) return
     setSaving(true)
-    await updateDoc(doc(db, 'users', user.uid), { faculty: selected })
+    await setDoc(doc(db, 'users', user.uid), { faculty: selected }, { merge: true })
     await refreshProfile()
     navigate('/add-courses')
   }
@@ -40,7 +50,7 @@ export default function PickFaculty() {
           This helps us show you the right courses. You can change this later.
         </p>
 
-        <div className="grid grid-cols-2 gap-3 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
           {FACULTIES.map((faculty) => (
             <button
               key={faculty}

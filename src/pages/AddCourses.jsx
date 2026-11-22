@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { doc, updateDoc } from 'firebase/firestore'
+import { doc, setDoc } from 'firebase/firestore'
 import { db } from '../lib/firebase.js'
 import { useAuth } from '../context/AuthContext.jsx'
+import { getCourse } from '../data/courseData.js'
 
 // Placeholder catalog — swap for a Firestore `courses` query, filtered
 // by the student's faculty (with an option to add courses outside it,
@@ -22,8 +23,7 @@ const COURSE_CATALOG = [
   { code: 'CHM101', title: 'General Chemistry I', faculty: 'Sciences' },
   { code: 'ENG102', title: 'Engineering Drawing', faculty: 'Engineering' },
   { code: 'ECO101', title: 'Principles of Economics I', faculty: 'Social Sciences' },
-  { code: 'ACC101', title: 'Introduction to Financial Accounting', faculty: 'Management Sciences' },
-  { code: 'GST101', title: 'Use of English', faculty: 'General Studies' }
+  { code: 'ACC101', title: 'Introduction to Financial Accounting', faculty: 'Management Sciences' }
 ]
 
 export default function AddCourses() {
@@ -52,7 +52,7 @@ export default function AddCourses() {
   async function handleFinish() {
     if (!user) return
     setSaving(true)
-    await updateDoc(doc(db, 'users', user.uid), { courses: Array.from(selected) })
+    await setDoc(doc(db, 'users', user.uid), { courses: Array.from(selected) }, { merge: true })
     await refreshProfile()
     navigate('/')
   }
@@ -89,6 +89,9 @@ export default function AddCourses() {
                 <div>
                   <div className="font-mono text-xs text-cobalt-deep font-medium mb-0.5">{course.code}</div>
                   <div className="text-sm font-medium">{course.title}</div>
+                  {!getCourse(course.code) && (
+                    <div className="text-[11px] text-graphite/50 mt-0.5">Content coming soon</div>
+                  )}
                 </div>
                 <div
                   className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs ${

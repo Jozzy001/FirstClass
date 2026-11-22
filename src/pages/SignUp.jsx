@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { friendlyAuthError } from '../lib/authErrors.js'
 import { useAuth } from '../context/AuthContext.jsx'
 
 export default function SignUp() {
@@ -21,7 +22,7 @@ export default function SignUp() {
       await signUp(form)
       navigate('/pick-faculty')
     } catch (err) {
-      setError(err.message.replace('Firebase: ', ''))
+      setError(friendlyAuthError(err))
     } finally {
       setLoading(false)
     }
@@ -70,6 +71,10 @@ export default function SignUp() {
             {loading ? 'Creating account…' : 'Create account'}
           </button>
         </form>
+        <p className="text-sm text-graphite/60 mt-6 text-center">
+          Already have an account?{' '}
+          <Link to="/login" className="text-cobalt font-medium">Log in</Link>
+        </p>
       </div>
     </div>
   )

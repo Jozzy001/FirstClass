@@ -10,11 +10,23 @@
 // a full disk must never crash the app. If storage is unavailable we fall
 // back to memory for the current session.
 
-const KEY = 'fc_attempts_v1'
-const DRAFT_PREFIX = 'fc_test_draft_v1_'
+const BASE_KEY = 'fc_attempts_v1'
+const STUDIED_KEY = 'fc_studied_v1'
+const BASE_DRAFT_PREFIX = 'fc_test_draft_v1_'
 const RECENT_PER_TOPIC = 5 // weak-topic accuracy looks at the latest N runs per topic
 
 let memory = null // used only when localStorage is unavailable
+let scope = 'guest' // results belong to the signed-in account, so two students on one phone never mix
+
+/** Called by the auth layer whenever the signed-in student changes. */
+export function setStoreUser(uid) {
+  scope = uid || 'guest'
+  memory = null
+}
+
+const suffix = () => (scope === 'guest' ? '' : `_${scope}`)
+const KEY_NOW = () => BASE_KEY + suffix()
+const DRAFT_NOW = () => BASE_DRAFT_PREFIX + (scope === 'guest' ? '' : `${scope}_`)
 
 function emptyStore() {
   return { tests: [], topics: [] }
@@ -22,7 +34,7 @@ function emptyStore() {
 
 function read() {
   try {
-    const raw = window.localStorage.getItem(KEY)
+    const raw = window.localStorage.getItem(KEY_NOW())
     if (!raw) return memory || emptyStore()
     const data = JSON.parse(raw)
     if (data && Array.isArray(data.tests) && Array.isArray(data.topics)) return data
@@ -35,7 +47,7 @@ function read() {
 function write(data) {
   memory = data
   try {
-    window.localStorage.setItem(KEY, JSON.stringify(data))
+    window.localStorage.setItem(KEY_NOW(), JSON.stringify(data))
     return true
   } catch {
     return false
@@ -126,7 +138,7 @@ export function getTopicStats() {
 
 export function saveDraft(courseCode, draft) {
   try {
-    window.localStorage.setItem(DRAFT_PREFIX + courseCode, JSON.stringify(draft))
+    window.localStorage.setItem(DRAFT_NOW() + courseCode, JSON.stringify(draft))
   } catch {
     /* non-fatal: the test still works, it just can't be resumed after a reload */
   }
@@ -134,7 +146,7 @@ export function saveDraft(courseCode, draft) {
 
 export function loadDraft(courseCode) {
   try {
-    const raw = window.localStorage.getItem(DRAFT_PREFIX + courseCode)
+    const raw = window.localStorage.getItem(DRAFT_NOW() + courseCode)
     return raw ? JSON.parse(raw) : null
   } catch {
     return null
@@ -143,8 +155,86 @@ export function loadDraft(courseCode) {
 
 export function clearDraft(courseCode) {
   try {
-    window.localStorage.removeItem(DRAFT_PREFIX + courseCode)
+    window.localStorage.removeItem(DRAFT_NOW() + courseCode)
   } catch {
     /* ignore */
   }
+}
+
+// ----- reading progress and daily activity (for the dashboard) -----
+
+function readStudied() {
+  try {
+    const raw = window.localStorage.getItem(STUDIED_KEY + suffix())
+    const data = raw ? JSON.parse(raw) : {}
+    return data && typeof data === 'object' ? data : {}
+  } catch {
+    return {}
+  }
+}
+
+/** Record that the student opened a topic's notes. */
+export function markStudied(courseCode, topicId) {
+  const data = readStudied()
+  data[`${courseCode}::${topicId}`] = new Date().toISOString()
+  try {
+    window.localStorage.setItem(STUDIED_KEY + suffix(), JSON.stringify(data))
+  } catch {
+    /* non-fatal */
+  }
+}
+
+/** Map of "COURSE::topicId" -> ISO time the notes were last opened. */
+export function getStudied() {
+  return readStudied()
+}
+
+/** Local calendar day as YYYY-MM-DD. */
+export function dayKey(date) {
+  const d = date instanceof Date ? date : new Date(date)
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${day}`
+}
+
+/**
+ * Everything the dashboard needs about what the student did and when.
+ * - days: Set of days with any activity (reading, practice or a test)
+ * - answeredByDay: questions answered per day
+ * - last: the most recent topic touched { courseCode, topicId, kind, at }
+ */
+export function getActivity() {
+  const data = read()
+  const days = new Set()
+  const answeredByDay = {}
+  let last = null
+  const touch = (courseCode, topicId, kind, at) => {
+    if (!last || at > last.at) last = { courseCode, topicId, kind, at }
+  }
+  for (const r of data.topics) {
+    const k = dayKey(r.takenAt)
+    days.add(k)
+    answeredByDay[k] = (answeredByDay[k] || 0) + (r.total || 0)
+    touch(r.courseCode, r.topicId, 'practice', r.takenAt)
+  }
+  for (const [key, at] of Object.entries(readStudied())) {
+    days.add(dayKey(at))
+    const [courseCode, topicId] = key.split('::')
+    touch(courseCode, topicId, 'read', at)
+  }
+  for (const t of data.tests) days.add(dayKey(t.takenAt))
+  return { days, answeredByDay, last }
+}
+
+/** Consecutive active days ending today (or yesterday, so the streak survives until tonight). */
+export function computeStreak(days) {
+  const cursor = new Date()
+  if (!days.has(dayKey(cursor))) cursor.setDate(cursor.getDate() - 1)
+  let streak = 0
+  while (days.has(dayKey(cursor))) {
+    streak += 1
+    cursor.setDate(cursor.getDate() - 1)
+  }
+  return streak
 }
