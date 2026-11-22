@@ -12,6 +12,7 @@
 
 const BASE_KEY = 'fc_attempts_v1'
 const STUDIED_KEY = 'fc_studied_v1'
+const LESSON_KEY = 'fc_lessons_v1'
 const BASE_DRAFT_PREFIX = 'fc_test_draft_v1_'
 const RECENT_PER_TOPIC = 5 // weak-topic accuracy looks at the latest N runs per topic
 
@@ -223,6 +224,12 @@ export function getActivity() {
     const [courseCode, topicId] = key.split('::')
     touch(courseCode, topicId, 'read', at)
   }
+  for (const [key, rec] of Object.entries(readLessons())) {
+    if (!rec.at) continue
+    days.add(dayKey(rec.at))
+    const [courseCode, topicId] = key.split('::')
+    touch(courseCode, topicId, 'read', rec.at)
+  }
   for (const t of data.tests) days.add(dayKey(t.takenAt))
   return { days, answeredByDay, last }
 }
@@ -237,4 +244,36 @@ export function computeStreak(days) {
     cursor.setDate(cursor.getDate() - 1)
   }
   return streak
+}
+
+// ----- lesson exercises -----
+// Stored as { "COURSE::topic::section": { "0": { c: chosenIndex, ok: true }, "1": {...}, at } }
+
+function readLessons() {
+  try {
+    const raw = window.localStorage.getItem(LESSON_KEY + suffix())
+    const data = raw ? JSON.parse(raw) : {}
+    return data && typeof data === 'object' ? data : {}
+  } catch {
+    return {}
+  }
+}
+
+export function getLessonAnswers() {
+  return readLessons()
+}
+
+/** Save the first answer given to a lesson exercise (later taps never change it). */
+export function recordExercise(courseCode, topicId, sectionId, index, choice, ok) {
+  const data = readLessons()
+  const key = `${courseCode}::${topicId}::${sectionId}`
+  const rec = (data[key] ||= {})
+  if (rec[index]) return
+  rec[index] = { c: choice, ok }
+  rec.at = new Date().toISOString()
+  try {
+    window.localStorage.setItem(LESSON_KEY + suffix(), JSON.stringify(data))
+  } catch {
+    /* non-fatal */
+  }
 }

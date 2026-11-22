@@ -1,0 +1,251 @@
+{
+ "courseCode": "BOT101",
+ "topics": [
+  {
+   "id": "cells-and-microscopy",
+   "intro": "This lesson starts with what a cell is and ends with how plant, animal and bacterial cells differ. No background needed.",
+   "sections": [
+    {
+     "id": "cell-basics",
+     "title": "What is a cell, and how small is small?",
+     "body": [
+      "A **cell** is the smallest unit of life that can carry out all the activities of a living thing. Your body, a mango tree and a bacterium are all made of cells. Some living things, such as bacteria, are a single cell. Others, like humans, are made of trillions.",
+      "The **cell theory** has three simple ideas: (1) all living things are made of one or more cells, (2) the cell is the basic unit of structure and function, and (3) all cells come from cells that already existed.",
+      "Cells are too small to see with the naked eye, so biologists use tiny units. Remember this ladder: **1 mm = 1,000 µm** (micrometres) and **1 µm = 1,000 nm** (nanometres). To go from a bigger unit to a smaller one, multiply. To go the other way, divide."
+     ],
+     "keyPoints": [
+      "Cell theory: living things are made of cells; the cell is the basic unit; cells come from cells.",
+      "1 mm = 1,000 µm; 1 µm = 1,000 nm."
+     ],
+     "example": {
+      "problem": "Convert 0.5 mm into micrometres (µm).",
+      "steps": [
+       "We are going from a bigger unit (mm) to a smaller one (µm), so we multiply.",
+       "1 mm = 1,000 µm, so 0.5 mm = 0.5 × 1,000 µm.",
+       "0.5 × 1,000 = 500."
+      ],
+      "answer": "500 µm"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these is NOT part of the cell theory?",
+       "options": [
+        "All living things are made of cells",
+        "The cell is the basic unit of life",
+        "All cells come from pre-existing cells",
+        "All cells have a cell wall"
+       ],
+       "correctIndex": 3,
+       "explanation": "Cell walls are found in plants, fungi and bacteria, but animal cells have none. It is not part of the cell theory."
+      },
+      {
+       "prompt": "Convert 2.5 mm into µm.",
+       "options": [
+        "25 µm",
+        "250 µm",
+        "2,500 µm",
+        "25,000 µm"
+       ],
+       "correctIndex": 2,
+       "explanation": "Going from mm to µm we multiply by 1,000: 2.5 × 1,000 = 2,500 µm.",
+       "hint": "1 mm is 1,000 µm."
+      }
+     ]
+    },
+    {
+     "id": "light-microscope",
+     "title": "The light microscope and magnification",
+     "body": [
+      "A **compound light microscope** uses glass lenses and light to make small things look bigger. Learn its main parts and what each one does:",
+      "**Eyepiece (ocular lens):** the lens you look through. **Objective lenses:** the lenses closest to the specimen, usually low, medium and high power. **Stage:** the flat platform that holds the slide, with clips to keep it still. **Condenser:** focuses light on the specimen. **Light source:** the lamp or mirror at the bottom. **Coarse and fine adjustment knobs:** the two focusing knobs. Use coarse first to bring the image into view, then fine to make it sharp.",
+      "**Total magnification = eyepiece power × objective power.** If the eyepiece is ×10 and the objective is ×40, the specimen looks 10 × 40 = 400 times larger.",
+      "An **electron microscope** is different. It uses a beam of electrons from an electron gun instead of light, and it can show much finer detail. A light microscope has no electron gun. In **fluorescence microscopy** the specimen is stained with a dye that absorbs light and then gives it off again at a longer wavelength."
+     ],
+     "keyPoints": [
+      "Total magnification = eyepiece power × objective power.",
+      "Coarse knob first, fine knob to sharpen.",
+      "Electron gun = electron microscope, not a light microscope."
+     ],
+     "example": {
+      "problem": "A student uses a ×10 eyepiece and a ×20 objective lens. What is the total magnification?",
+      "steps": [
+       "Write the rule: total magnification = eyepiece × objective.",
+       "Put in the numbers: 10 × 20.",
+       "Multiply: 200."
+      ],
+      "answer": "×200"
+     },
+     "exercises": [
+      {
+       "prompt": "A microscope has a ×10 eyepiece and a ×40 objective. What is the total magnification?",
+       "options": [
+        "×4",
+        "×50",
+        "×400",
+        "×4,000"
+       ],
+       "correctIndex": 2,
+       "explanation": "Total magnification = 10 × 40 = 400."
+      },
+      {
+       "prompt": "Which part of a light microscope focuses light on the specimen?",
+       "options": [
+        "Condenser",
+        "Eyepiece",
+        "Stage",
+        "Fine adjustment knob"
+       ],
+       "correctIndex": 0,
+       "explanation": "The condenser gathers and focuses light on the specimen. The eyepiece magnifies, the stage holds the slide and the knobs focus the image."
+      },
+      {
+       "prompt": "Which of these belongs to an electron microscope and NOT to a light microscope?",
+       "options": [
+        "Condenser",
+        "Objective lens",
+        "Electron gun",
+        "Stage"
+       ],
+       "correctIndex": 2,
+       "explanation": "An electron microscope makes its image with a beam of electrons from an electron gun. A light microscope uses light."
+      }
+     ]
+    },
+    {
+     "id": "organelles",
+     "title": "Organelles: the cell's tiny organs",
+     "body": [
+      "Inside a cell are small structures called **organelles**. Each has its own job, just like the organs in your body. Learn each organelle together with its job:",
+      "**Cell membrane:** a thin skin that controls what enters and leaves the cell. **Nucleus:** holds the DNA and controls the cell. **Mitochondria:** carry out aerobic respiration, which releases energy. **Ribosomes:** build proteins.",
+      "**Rough ER:** a network of membranes covered in ribosomes. **Smooth ER:** has no ribosomes. It makes lipids and helps to detoxify harmful substances. **Golgi body:** packages and sends out materials. **Lysosomes:** bags of digestive enzymes that break down waste. **Peroxisomes:** break down fatty acids and make hydrogen peroxide. **Vacuoles:** store water, food and wastes."
+     ],
+     "keyPoints": [
+      "Mitochondria → aerobic respiration (energy).",
+      "Ribosomes → make proteins. Golgi → package. Lysosomes → digest.",
+      "Rough ER has ribosomes; smooth ER makes lipids and detoxifies."
+     ],
+     "exercises": [
+      {
+       "prompt": "Which organelle carries out aerobic respiration?",
+       "options": [
+        "Ribosome",
+        "Mitochondrion",
+        "Golgi body",
+        "Lysosome"
+       ],
+       "correctIndex": 1,
+       "explanation": "Mitochondria release energy from food using oxygen (aerobic respiration)."
+      },
+      {
+       "prompt": "What do ribosomes do?",
+       "options": [
+        "Make proteins",
+        "Store water",
+        "Hold the DNA",
+        "Package materials"
+       ],
+       "correctIndex": 0,
+       "explanation": "Ribosomes are the protein factories of the cell."
+      },
+      {
+       "prompt": "Which organelle contains digestive enzymes?",
+       "options": [
+        "Nucleus",
+        "Smooth ER",
+        "Lysosome",
+        "Vacuole"
+       ],
+       "correctIndex": 2,
+       "explanation": "Lysosomes hold enzymes that digest waste and worn-out parts."
+      }
+     ]
+    },
+    {
+     "id": "plant-animal",
+     "title": "Plant cells and animal cells compared",
+     "body": [
+      "Plant and animal cells share most organelles (nucleus, mitochondria, ribosomes, membrane and so on), but a plant cell has **three extra features** an animal cell lacks:",
+      "**1. A cell wall made of cellulose** outside the membrane, which gives the cell a firm shape. **2. Chloroplasts**, where photosynthesis takes place. **3. A large central vacuole** that stores water and keeps the cell firm.",
+      "Higher plants also lack **centrioles**, which animal cells use when they divide. Other living groups have their own wall materials: **fungi** have walls of **chitin**, and **bacteria** have walls of **peptidoglycan**."
+     ],
+     "keyPoints": [
+      "Plant cell extras: cellulose cell wall, chloroplasts, large central vacuole.",
+      "Fungi: chitin walls. Bacteria: peptidoglycan walls.",
+      "Higher plants have no centrioles."
+     ],
+     "exercises": [
+      {
+       "prompt": "Which structure is found in plant cells but NOT in animal cells?",
+       "options": [
+        "Mitochondrion",
+        "Nucleus",
+        "Chloroplast",
+        "Ribosome"
+       ],
+       "correctIndex": 2,
+       "explanation": "Chloroplasts carry out photosynthesis and are found in plant cells only."
+      },
+      {
+       "prompt": "The cell walls of fungi are made of:",
+       "options": [
+        "Cellulose",
+        "Chitin",
+        "Peptidoglycan",
+        "Starch"
+       ],
+       "correctIndex": 1,
+       "explanation": "Fungal walls are chitin. Plant walls are cellulose and bacterial walls are peptidoglycan."
+      },
+      {
+       "prompt": "Which of these is lacking in higher plant cells?",
+       "options": [
+        "Centrioles",
+        "Cell wall",
+        "Vacuole",
+        "Chloroplasts"
+       ],
+       "correctIndex": 0,
+       "explanation": "Higher plants do not have centrioles."
+      }
+     ]
+    },
+    {
+     "id": "prokaryote-eukaryote",
+     "title": "Prokaryotes and eukaryotes",
+     "body": [
+      "Cells fall into two big groups. **Prokaryotes** (bacteria and archaea) have **no nucleus**. Their DNA lies loose in a region called the **nucleoid**, and they have no membrane-bound organelles. **Eukaryotes** (animals, plants, fungi and protists) have a true nucleus and membrane-bound organelles.",
+      "Some things are shared by every cell, prokaryote or eukaryote: a **plasma (cell) membrane**, **cytoplasm** and **ribosomes**. Because animals, plants and fungi are all eukaryotes, they all have a defined nucleus."
+     ],
+     "keyPoints": [
+      "Prokaryote: no nucleus, DNA in the nucleoid, no membrane-bound organelles.",
+      "Every cell has a plasma membrane, cytoplasm and ribosomes."
+     ],
+     "exercises": [
+      {
+       "prompt": "Where is the DNA found in a bacterial cell?",
+       "options": [
+        "In the nucleus",
+        "In the nucleoid",
+        "In the mitochondrion",
+        "In the Golgi body"
+       ],
+       "correctIndex": 1,
+       "explanation": "Bacteria have no nucleus. Their DNA sits in the nucleoid region."
+      },
+      {
+       "prompt": "Which structure is found in EVERY type of cell?",
+       "options": [
+        "Nucleus",
+        "Mitochondrion",
+        "Cell wall",
+        "Ribosome"
+       ],
+       "correctIndex": 3,
+       "explanation": "All cells have a plasma membrane, cytoplasm and ribosomes. Not all have a nucleus, mitochondria or a cell wall."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

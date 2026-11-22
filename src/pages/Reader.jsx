@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
 import { markStudied } from '../lib/store.js'
+import { getLesson } from '../lib/lessons.js'
+import LessonReader from '../components/LessonReader.jsx'
 
 export default function Reader() {
   const { code, topicId } = useParams()
@@ -24,6 +26,11 @@ export default function Reader() {
 
   const prevTopic = topicIndex > 0 ? course.topics[topicIndex - 1] : null
   const nextTopic = topicIndex < course.topics.length - 1 ? course.topics[topicIndex + 1] : null
+
+  const lesson = getLesson(course.code, topic.id)
+  if (lesson) {
+    return <LessonReader key={topic.id} course={course} topic={topic} lesson={lesson} prevTopic={prevTopic} nextTopic={nextTopic} />
+  }
 
   const paragraphs = topic.notes.split('\n\n').filter((p) => !p.startsWith('KEY FORMULA'))
 

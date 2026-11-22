@@ -1,0 +1,363 @@
+{
+ "courseCode": "CHM101",
+ "topics": [
+  {
+   "id": "mole-stoichiometry",
+   "intro": "By the end of this lesson you will be able to count particles by weighing, find formulas from percentages and use equations to predict how much product you get.",
+   "sections": [
+    {
+     "id": "why-mole",
+     "title": "Why chemists count in moles",
+     "body": [
+      "Atoms and molecules are far too small to count one by one. A single drop of water holds more molecules than there are stars you could ever see. So chemists do what a shopkeeper does with eggs: they count in a bigger unit. Eggs come in a dozen (12). Chemists count in a **mole**.",
+      "One **mole** is **6.022 × 10²³** particles. That huge number is called **Avogadro's number** (written N_A). The particles can be atoms, molecules or ions. One mole of carbon atoms, one mole of water molecules and one mole of sodium ions each contain 6.022 × 10²³ particles.",
+      "Why that exact number? It was chosen so that the mass of one mole of a substance, in grams, equals its atomic or molecular mass. This is what lets us count particles just by weighing a sample on a scale. You will see how in the next parts."
+     ],
+     "keyPoints": [
+      "1 mole = 6.022 × 10²³ particles (Avogadro's number).",
+      "Number of particles = moles × 6.022 × 10²³."
+     ],
+     "example": {
+      "problem": "How many molecules are in 0.25 mole of water?",
+      "steps": [
+       "Write the rule: number of particles = moles × 6.022 × 10²³.",
+       "Put in the numbers: 0.25 × 6.022 × 10²³.",
+       "Multiply: 0.25 × 6.022 = 1.5055, so the answer is 1.5055 × 10²³."
+      ],
+      "answer": "1.51 × 10²³ molecules"
+     },
+     "exercises": [
+      {
+       "prompt": "How many atoms are in 0.20 mole of iron?",
+       "options": [
+        "1.2 × 10²³",
+        "6.0 × 10²³",
+        "3.0 × 10²⁴",
+        "1.2 × 10²⁴"
+       ],
+       "correctIndex": 0,
+       "explanation": "Number of atoms = 0.20 × 6.022 × 10²³ = 1.2 × 10²³.",
+       "hint": "Multiply the moles by Avogadro's number."
+      },
+      {
+       "prompt": "What does one mole of any substance contain?",
+       "options": [
+        "6.022 × 10²³ particles",
+        "6.022 × 10²² particles",
+        "1 gram of particles",
+        "1000 particles"
+       ],
+       "correctIndex": 0,
+       "explanation": "By definition, one mole holds 6.022 × 10²³ particles (Avogadro's number)."
+      }
+     ]
+    },
+    {
+     "id": "molar-mass",
+     "title": "Molar mass: the mass of one mole",
+     "body": [
+      "**Molar mass** is the mass in grams of one mole of a substance. Its unit is g/mol. You do not need to measure it. You just add up the atomic masses from the periodic table.",
+      "Take water, H₂O. It has 2 hydrogen atoms and 1 oxygen atom. With H = 1 and O = 16: molar mass = (2 × 1) + 16 = **18 g/mol**. So 18 g of water is exactly one mole of water.",
+      "Always count every atom in the formula. A small number after an element tells you how many atoms there are. When there are brackets, the number outside multiplies everything inside. In this course use these atomic masses unless a question gives others: H = 1, C = 12, N = 14, O = 16, Na = 23, Mg = 24, Al = 27, S = 32, Cl = 35.5, Ca = 40, Fe = 55.85."
+     ],
+     "keyPoints": [
+      "Molar mass = sum of the atomic masses of all atoms in the formula.",
+      "Unit: grams per mole (g/mol)."
+     ],
+     "example": {
+      "problem": "Find the molar mass of sulphuric acid, H₂SO₄.",
+      "steps": [
+       "Count the atoms: 2 H, 1 S and 4 O.",
+       "Multiply each by its atomic mass: 2 × 1 = 2, 1 × 32 = 32, 4 × 16 = 64.",
+       "Add them: 2 + 32 + 64 = 98."
+      ],
+      "answer": "98 g/mol"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the molar mass of calcium carbonate, CaCO₃?",
+       "options": [
+        "68 g/mol",
+        "84 g/mol",
+        "100 g/mol",
+        "116 g/mol"
+       ],
+       "correctIndex": 2,
+       "explanation": "Ca = 40, C = 12 and O₃ = 3 × 16 = 48. Total: 40 + 12 + 48 = 100 g/mol."
+      },
+      {
+       "prompt": "What is the molar mass of sodium sulphate, Na₂SO₄?",
+       "options": [
+        "110 g/mol",
+        "126 g/mol",
+        "142 g/mol",
+        "158 g/mol"
+       ],
+       "correctIndex": 2,
+       "explanation": "Na₂ = 2 × 23 = 46, S = 32 and O₄ = 4 × 16 = 64. Total: 46 + 32 + 64 = 142 g/mol.",
+       "hint": "Count the atoms of each element first."
+      }
+     ]
+    },
+    {
+     "id": "mass-moles",
+     "title": "Converting between mass and moles",
+     "body": [
+      "Now we link what you can weigh (grams) to what chemists count (moles). The link is molar mass.",
+      "**moles = mass ÷ molar mass**, or n = m ÷ M. Rearranged: mass = moles × molar mass. A good way to remember it is to see how the units cancel: grams ÷ (grams per mole) = moles.",
+      "Once you know the moles, you can find the number of particles by multiplying by 6.022 × 10²³. So the path is always: **mass → moles → particles**, and you can go backwards the same way."
+     ],
+     "keyPoints": [
+      "n = m ÷ M",
+      "m = n × M",
+      "particles = n × 6.022 × 10²³"
+     ],
+     "example": {
+      "problem": "How many moles are in 36 g of water? (H₂O = 18 g/mol)",
+      "steps": [
+       "Write the rule: n = m ÷ M.",
+       "Put in the numbers: n = 36 ÷ 18.",
+       "Divide: n = 2."
+      ],
+      "answer": "2 moles"
+     },
+     "exercises": [
+      {
+       "prompt": "How many moles are in 44 g of carbon dioxide, CO₂?",
+       "options": [
+        "0.5 mol",
+        "1 mol",
+        "2 mol",
+        "4 mol"
+       ],
+       "correctIndex": 1,
+       "explanation": "M(CO₂) = 12 + 2(16) = 44 g/mol. n = 44 ÷ 44 = 1 mol."
+      },
+      {
+       "prompt": "What is the mass of 0.5 mole of sodium hydroxide, NaOH?",
+       "options": [
+        "10 g",
+        "20 g",
+        "40 g",
+        "80 g"
+       ],
+       "correctIndex": 1,
+       "explanation": "M(NaOH) = 23 + 16 + 1 = 40 g/mol. Mass = n × M = 0.5 × 40 = 20 g.",
+       "hint": "First find the molar mass, then multiply."
+      },
+      {
+       "prompt": "How many moles are in 5.85 g of sodium chloride, NaCl? (Na = 23, Cl = 35.5)",
+       "options": [
+        "0.01 mol",
+        "0.1 mol",
+        "1 mol",
+        "10 mol"
+       ],
+       "correctIndex": 1,
+       "explanation": "M(NaCl) = 23 + 35.5 = 58.5 g/mol. n = 5.85 ÷ 58.5 = 0.1 mol."
+      }
+     ]
+    },
+    {
+     "id": "empirical-formula",
+     "title": "Empirical formula from percentage composition",
+     "body": [
+      "The **empirical formula** is the simplest whole-number ratio of atoms in a compound. For example, hydrogen peroxide is H₂O₂, but its simplest ratio is 1 : 1, so its empirical formula is HO.",
+      "Questions give you the percentage of each element. Pretend you have **100 g** of the compound, so each percentage becomes a mass in grams. Then follow these steps every time:",
+      "**Step 1:** change each mass to moles (mass ÷ atomic mass). **Step 2:** divide every answer by the smallest one. **Step 3:** if you still have decimals like .5 or .33, multiply all the numbers by 2 or 3 until they are whole numbers. Those whole numbers are the subscripts in the formula."
+     ],
+     "keyPoints": [
+      "Percent → grams (assume 100 g) → moles → divide by the smallest → whole numbers.",
+      "A ratio ending in .5 means multiply everything by 2. A ratio ending in .33 or .67 means multiply by 3."
+     ],
+     "example": {
+      "problem": "A compound is 69.94% iron and 30.06% oxygen by mass. Find its empirical formula. (Fe = 55.85, O = 16)",
+      "steps": [
+       "Treat it as 100 g: 69.94 g of Fe and 30.06 g of O.",
+       "Moles of Fe = 69.94 ÷ 55.85 = 1.252. Moles of O = 30.06 ÷ 16 = 1.879.",
+       "Divide by the smaller number (1.252): Fe = 1.00 and O = 1.879 ÷ 1.252 = 1.50.",
+       "The ratio is 1 : 1.5. Multiply by 2 to clear the .5: Fe = 2 and O = 3."
+      ],
+      "answer": "Fe₂O₃"
+     },
+     "exercises": [
+      {
+       "prompt": "A compound is 40% carbon, 6.7% hydrogen and 53.3% oxygen. What is its empirical formula?",
+       "options": [
+        "CHO",
+        "CH₂O",
+        "C₂H₄O",
+        "CH₄O"
+       ],
+       "correctIndex": 1,
+       "explanation": "In 100 g: C = 40 ÷ 12 = 3.33, H = 6.7 ÷ 1 = 6.7, O = 53.3 ÷ 16 = 3.33. Divide by 3.33: C = 1, H = 2, O = 1. So CH₂O.",
+       "hint": "Divide each percentage by its atomic mass, then divide by the smallest."
+      },
+      {
+       "prompt": "A hydrocarbon is 75% carbon and 25% hydrogen. What is its empirical formula?",
+       "options": [
+        "CH",
+        "CH₂",
+        "CH₃",
+        "CH₄"
+       ],
+       "correctIndex": 3,
+       "explanation": "In 100 g: C = 75 ÷ 12 = 6.25 and H = 25 ÷ 1 = 25. Divide by 6.25: C = 1 and H = 4. So CH₄."
+      },
+      {
+       "prompt": "A ratio of Na : C : O comes out as 2 : 1 : 3 after dividing by the smallest. What is the empirical formula?",
+       "options": [
+        "NaCO₃",
+        "Na₂CO₃",
+        "Na₂C₂O₃",
+        "Na₃CO₂"
+       ],
+       "correctIndex": 1,
+       "explanation": "The whole numbers become the subscripts: Na₂, C (1 is not written) and O₃. So Na₂CO₃."
+      }
+     ]
+    },
+    {
+     "id": "molecular-formula",
+     "title": "From empirical formula to molecular formula",
+     "body": [
+      "The empirical formula only gives the ratio. The **molecular formula** shows the real number of atoms in one molecule. It is always the empirical formula multiplied by a whole number.",
+      "To find that number, work out the mass of the empirical formula (the empirical mass). Then divide the molar mass you were given by the empirical mass. The answer is a whole number, n. Multiply every subscript in the empirical formula by n."
+     ],
+     "keyPoints": [
+      "n = molar mass ÷ empirical formula mass",
+      "Molecular formula = (empirical formula) × n"
+     ],
+     "example": {
+      "problem": "The empirical formula of glucose is CH₂O and its molar mass is 180 g/mol. Find the molecular formula.",
+      "steps": [
+       "Empirical mass of CH₂O = 12 + 2(1) + 16 = 30.",
+       "n = 180 ÷ 30 = 6.",
+       "Multiply each subscript by 6: C₆H₁₂O₆."
+      ],
+      "answer": "C₆H₁₂O₆"
+     },
+     "exercises": [
+      {
+       "prompt": "A compound has empirical formula CH and a molar mass of 78 g/mol. What is its molecular formula?",
+       "options": [
+        "C₂H₂",
+        "C₃H₃",
+        "C₆H₆",
+        "C₁₂H₁₂"
+       ],
+       "correctIndex": 2,
+       "explanation": "Empirical mass of CH = 12 + 1 = 13. n = 78 ÷ 13 = 6. So the formula is C₆H₆."
+      },
+      {
+       "prompt": "What do you divide by the empirical formula mass to get the multiplier n?",
+       "options": [
+        "The molar mass of the compound",
+        "The number of atoms",
+        "Avogadro's number",
+        "The percentage composition"
+       ],
+       "correctIndex": 0,
+       "explanation": "n = molar mass ÷ empirical formula mass."
+      }
+     ]
+    },
+    {
+     "id": "gas-molar-mass",
+     "title": "Molar mass of a gas from its density",
+     "body": [
+      "You can find a gas's molar mass without weighing a solid sample. The ideal gas law says PV = nRT. Since n = mass ÷ M, and density ρ = mass ÷ volume, a little rearranging gives a very useful formula:",
+      "**M = ρRT ÷ P**, where ρ is the density in g/L, R = 0.0821 L·atm/(mol·K), T is the temperature in **kelvin** and P is the pressure in atmospheres.",
+      "Two common traps: first, change °C to K by adding 273 (so 0 °C is 273 K). Second, use the pressure in atm. At STP (0 °C and 1 atm), RT = 0.0821 × 273 = 22.4, so M is simply the density × 22.4."
+     ],
+     "keyPoints": [
+      "M = ρRT ÷ P",
+      "T must be in kelvin: K = °C + 273.",
+      "At STP, M = density × 22.4."
+     ],
+     "example": {
+      "problem": "A gas has a density of 1.25 g/L at 0 °C and 1 atm. Find its molar mass.",
+      "steps": [
+       "Change the temperature: T = 0 + 273 = 273 K.",
+       "Write the formula: M = ρRT ÷ P.",
+       "Substitute: M = (1.25 × 0.0821 × 273) ÷ 1 = 28.0."
+      ],
+      "answer": "28 g/mol (this is nitrogen, N₂)"
+     },
+     "exercises": [
+      {
+       "prompt": "A gas has a density of 1.43 g/L at STP. What is its molar mass?",
+       "options": [
+        "16 g/mol",
+        "28 g/mol",
+        "32 g/mol",
+        "44 g/mol"
+       ],
+       "correctIndex": 2,
+       "explanation": "At STP, M = 1.43 × 22.4 ≈ 32 g/mol. This is oxygen, O₂.",
+       "hint": "At STP you can use RT = 22.4."
+      },
+      {
+       "prompt": "A gas has a density of 2.00 g/L at 27 °C and 1.00 atm. What is its molar mass? (R = 0.0821)",
+       "options": [
+        "24.6 g/mol",
+        "49.3 g/mol",
+        "73.9 g/mol",
+        "98.5 g/mol"
+       ],
+       "correctIndex": 1,
+       "explanation": "T = 27 + 273 = 300 K. M = (2.00 × 0.0821 × 300) ÷ 1.00 = 49.3 g/mol.",
+       "hint": "Do not forget to change °C to kelvin."
+      }
+     ]
+    },
+    {
+     "id": "equations",
+     "title": "Using balanced equations (stoichiometry)",
+     "body": [
+      "A balanced chemical equation is a recipe. The numbers in front of each substance (the coefficients) tell you the **mole ratio** in which they react. In 2H₂ + O₂ → 2H₂O, 2 moles of hydrogen react with 1 mole of oxygen to make 2 moles of water.",
+      "To answer a question, follow the same path each time: **grams of A → moles of A → moles of B (using the coefficients) → grams of B.** The coefficients are the only bridge between two different substances, so make sure the equation is balanced first."
+     ],
+     "keyPoints": [
+      "Always balance the equation first.",
+      "Mass → moles → (mole ratio) → moles → mass."
+     ],
+     "example": {
+      "problem": "2H₂ + O₂ → 2H₂O. What mass of water forms from 4 g of hydrogen? (H₂ = 2, H₂O = 18)",
+      "steps": [
+       "Moles of H₂ = 4 ÷ 2 = 2 mol.",
+       "The coefficients are 2 : 2, so 2 mol of H₂ makes 2 mol of H₂O.",
+       "Mass of water = 2 × 18 = 36 g."
+      ],
+      "answer": "36 g of water"
+     },
+     "exercises": [
+      {
+       "prompt": "N₂ + 3H₂ → 2NH₃. How many moles of ammonia form from 6 moles of hydrogen?",
+       "options": [
+        "2 mol",
+        "3 mol",
+        "4 mol",
+        "9 mol"
+       ],
+       "correctIndex": 2,
+       "explanation": "The ratio H₂ : NH₃ is 3 : 2. So 6 mol × (2 ÷ 3) = 4 mol of NH₃.",
+       "hint": "Use the coefficients 3 and 2 as a ratio."
+      },
+      {
+       "prompt": "CaCO₃ → CaO + CO₂. What mass of CO₂ forms when 50 g of CaCO₃ decomposes? (CaCO₃ = 100, CO₂ = 44)",
+       "options": [
+        "11 g",
+        "22 g",
+        "44 g",
+        "50 g"
+       ],
+       "correctIndex": 1,
+       "explanation": "Moles of CaCO₃ = 50 ÷ 100 = 0.5 mol. The ratio is 1 : 1, so 0.5 mol of CO₂ forms. Mass = 0.5 × 44 = 22 g."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

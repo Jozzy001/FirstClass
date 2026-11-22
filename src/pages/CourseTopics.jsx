@@ -3,11 +3,13 @@ import { useParams, Link } from 'react-router-dom'
 import { getCourse } from '../data/courseData.js'
 import { getCourseScores } from '../lib/store.js'
 import { scoreToGrade } from '../lib/grading.js'
+import { getCourseProgress } from '../lib/progress.js'
 
 export default function CourseTopics() {
   const { code } = useParams()
   const course = getCourse(code)
   const last = getCourseScores()[code]?.latest
+  const progress = course ? getCourseProgress(course) : null
 
   if (!course) {
     return (
@@ -25,6 +27,19 @@ export default function CourseTopics() {
       </div>
       <h1 className="font-display text-3xl font-semibold mb-2">{course.code}</h1>
       <p className="text-graphite/60 mb-10">{course.title}</p>
+
+      <div className="bg-white border border-line rounded-2xl p-5 sm:p-6 mb-4" data-testid="course-progress">
+        <div className="flex justify-between items-baseline mb-2.5">
+          <div className="font-mono text-[11px] text-graphite/50 uppercase tracking-wide">Your progress</div>
+          <div className="font-display text-lg font-bold">{progress.pct}%</div>
+        </div>
+        <div className="h-2.5 bg-paper-2 rounded-full overflow-hidden">
+          <div className="h-full bg-cobalt rounded-full transition-all" style={{ width: `${progress.pct}%` }} />
+        </div>
+        <div className="text-xs text-graphite/55 mt-2">
+          {progress.done} of {progress.total} topics completed
+        </div>
+      </div>
 
       <div className="bg-graphite text-white rounded-2xl p-5 sm:p-6 mb-8 flex flex-wrap items-center justify-between gap-4">
         <div>
@@ -55,7 +70,16 @@ export default function CourseTopics() {
               </div>
               <div className="font-display text-[17px] font-semibold">{topic.title}</div>
               <div className="text-[12.5px] text-graphite/50 mt-1">
-                {topic.questions.length} practice question{topic.questions.length === 1 ? '' : 's'}
+                {(() => {
+                  const st = progress.topics[topic.id]
+                  const status = !st.lesson ? null : st.state === 'done' ? 'Lesson complete' : st.state === 'partial' ? `Lesson ${st.done}/${st.total} parts` : 'Lesson not started'
+                  return (
+                    <>
+                      {status && <span className={st.state === 'done' ? 'text-mint font-medium' : ''}>{status} · </span>}
+                      {topic.questions.length} practice question{topic.questions.length === 1 ? '' : 's'}
+                    </>
+                  )
+                })()}
               </div>
             </div>
             <div className="flex gap-2 flex-shrink-0">
@@ -63,7 +87,7 @@ export default function CourseTopics() {
                 to={`/course/${course.code}/read/${topic.id}`}
                 className="border border-line px-4 py-2 rounded text-sm font-medium hover:border-cobalt"
               >
-                Read
+                {progress.topics[topic.id].lesson ? (progress.topics[topic.id].state === 'new' ? 'Learn' : 'Lesson') : 'Read'}
               </Link>
               <Link
                 to={`/course/${course.code}/practice/${topic.id}`}

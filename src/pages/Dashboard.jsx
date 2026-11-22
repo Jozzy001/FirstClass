@@ -2,13 +2,14 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import { getCourse } from '../data/courseData.js'
+import { getCourseProgress } from '../lib/progress.js'
+import { getLesson } from '../lib/lessons.js'
 import { calculateGPA, classify, findWeakTopics, overallAccuracy, scoreToGrade } from '../lib/grading.js'
 import {
   computeStreak,
   dayKey,
   getActivity,
   getCourseScores,
-  getStudied,
   getTopicStats,
   loadDraft
 } from '../lib/store.js'
@@ -36,7 +37,6 @@ export default function Dashboard() {
 
   const data = useMemo(() => {
     const scores = getCourseScores()
-    const studied = getStudied()
     const topicStats = getTopicStats()
     const activity = getActivity()
 
@@ -48,16 +48,18 @@ export default function Dashboard() {
       const course = getCourse(code)
       if (!course) return { code, ready: false }
       const topics = course.topics
-      const covered = topics.filter((t) => studied[`${code}::${t.id}`] || statByTopic[`${code}::${t.id}`])
-      const next = topics.find((t) => !(studied[`${code}::${t.id}`] || statByTopic[`${code}::${t.id}`]))
+      const progress = getCourseProgress(course)
+      const next = progress.nextTopic
       const stats = topicStats.filter((t) => t.courseCode === code)
       return {
         code,
         ready: true,
         title: course.title,
         creditUnits: course.creditUnits,
-        total: topics.length,
-        covered: covered.length,
+        total: progress.total,
+        covered: progress.done,
+        pct: progress.pct,
+        unit: 'topics',
         next,
         accuracy: overallAccuracy(stats),
         last: scores[code]?.latest || null,
@@ -88,7 +90,7 @@ export default function Dashboard() {
     if (activity.last && mine.has(activity.last.courseCode)) {
       const c = getCourse(activity.last.courseCode)
       const t = c?.topics.find((x) => x.id === activity.last.topicId)
-      if (c && t) resume = { courseCode: c.code, topicId: t.id, topicTitle: t.title, kind: activity.last.kind }
+      if (c && t) resume = { courseCode: c.code, topicId: t.id, topicTitle: t.title, kind: activity.last.kind, hasLesson: !!getLesson(c.code, t.id) }
     }
 
     return {
@@ -122,8 +124,8 @@ export default function Dashboard() {
       label: 'Pick up where you left off',
       title: resume.topicTitle,
       sub: resume.courseCode,
-      to: `/course/${resume.courseCode}/${resume.kind === 'read' ? 'practice' : 'read'}/${resume.topicId}`,
-      cta: resume.kind === 'read' ? 'Practise it' : 'Read the notes'
+      to: `/course/${resume.courseCode}/${resume.kind === 'read' && !resume.hasLesson ? 'practice' : 'read'}/${resume.topicId}`,
+      cta: resume.hasLesson ? 'Continue lesson' : resume.kind === 'read' ? 'Practise it' : 'Read the notes'
     }
   } else if (readyCourses[0]) {
     const c = readyCourses[0]
@@ -307,7 +309,7 @@ function CourseProgressCard({ c }) {
       </div>
     )
   }
-  const pct = c.total ? Math.round((c.covered / c.total) * 100) : 0
+  const pct = c.pct
   const grade = c.last ? scoreToGrade(c.last.score) : null
   return (
     <div className="bg-white border border-line rounded-xl p-5 flex flex-col" data-testid={`course-${c.code}`}>
@@ -323,13 +325,11 @@ function CourseProgressCard({ c }) {
         <div className="font-display text-[15px] font-semibold leading-snug">{c.title}</div>
       </Link>
 
-      <div className="flex">
-        {Array.from({ length: c.total }, (_, i) => (
-          <i key={i} className={`flex-1 h-1.5 rounded-sm mr-[3px] last:mr-0 ${i < c.covered ? 'bg-cobalt' : 'bg-paper-2'}`} />
-        ))}
+      <div className="h-2 bg-paper-2 rounded-full overflow-hidden" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
+        <div className="h-full bg-cobalt rounded-full" style={{ width: `${pct}%` }} />
       </div>
       <div className="text-[11.5px] text-graphite/60 mt-1.5 mb-4">
-        {c.covered === 0 ? 'Not started' : `${c.covered} of ${c.total} topics · ${pct}%`}
+        {c.covered === 0 ? 'Not started' : `${c.covered} of ${c.total} ${c.unit} · ${pct}%`}
         {c.accuracy !== null && ` · ${c.accuracy}% accuracy`}
       </div>
 
