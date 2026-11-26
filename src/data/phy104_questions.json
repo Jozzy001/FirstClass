@@ -17,7 +17,7 @@
             "1.47s"
           ],
           "correctIndex": 2,
-          "explanation": "v = ω√(A²−x²) → ω = v/√(A²−x²) = 0.95/√(0.35²−0.25²) ≈ 1.586 rad/s. T = 2π/ω ≈ 1.62s.",
+          "explanation": "v = ω√(A² − x²), so ω = 0.95/√(0.35² − 0.25²) = 0.95/0.245 = 3.88 rad/s. T = 2π/ω = 1.62 s.",
           "source": "PHY104 Sept 2024, Q2"
         },
         {
@@ -450,7 +450,9 @@
           ],
           "correctIndex": 1,
           "explanation": "A standing wave forms from two waves of equal amplitude and frequency travelling in OPPOSITE directions. Y₁ travels in −x direction (from the +kx term), Y₃ travels in +x direction (from the −kx term) — opposite directions, so these two interfere to form a standing wave.",
-          "source": "PHY104 2022/2023 (compendium, verified answer key)"
+          "source": "PHY104 2022/2023 (compendium, verified answer key)",
+          "needsReview": true,
+          "reviewNote": "Two options are valid: Y₁ and Y₃ travel in opposite directions, and so do Y₂ and Y₄ (−A sin(ωt + kx) and −A sin(ωt − kx)). Both pairs make a standing wave, so the key is not unique. Held back until the original wording is checked."
         },
         {
           "id": "phy104-wav-20",
@@ -622,8 +624,8 @@
             "3.0 cm/s, −x direction",
             "3.0 cm/s, +x direction"
           ],
-          "correctIndex": 0,
-          "explanation": "For y=Asin(kx−ωt), the wave travels in the +x direction... but here the signs are (kx−ωt) form which normally means +x — however matching the answer key's −x direction, likely the intended reading is y=Asin(kx+ωt) form. Speed = ω/k = 3π/2π = 1.5 cm/s.",
+          "correctIndex": 1,
+          "explanation": "For y = A sin(kx − ωt) the wave travels in the +x direction. Here k = 2π and ω = 3π, so the speed is ω/k = 3π/2π = 1.5 cm/s, in the +x direction.",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
         },
         {
@@ -761,12 +763,12 @@
           "prompt": "Two trains approach each other with speeds of 16.6 m/s and 12.5 m/s respectively. A whistle of frequency 600Hz is sounded on one train. Find the frequency heard by an observer on the other train. (v_sound = 340 m/s)",
           "options": [
             "620 Hz",
-            "558 Hz",
+            "654 Hz",
             "585 Hz",
             "555 Hz"
           ],
           "correctIndex": 1,
-          "explanation": "Both source and observer approach each other: f'=f×(v+v_o)/(v−v_s)=600×(340+12.5)/(340−16.6)≈558 Hz.",
+          "explanation": "Both source and observer approach each other: f' = f(v + v_o)/(v − v_s) = 600 × (340 + 12.5)/(340 − 16.6) = 654 Hz.",
           "source": "PHY104 2024/2025 (compendium, verified answer key)"
         },
         {
@@ -945,8 +947,8 @@
             "10.7cm",
             "12.8cm"
           ],
-          "correctIndex": 0,
-          "explanation": "For an erect (virtual) image with magnification m=4: using v=−4u (erect, so negative v in real-positive convention) and separation |u−v|=32: |u−(−4u)|=5u=32, u=6.4cm. Then f is found from the mirror equation.",
+          "correctIndex": 1,
+          "explanation": "An erect image from a concave mirror is virtual and behind the mirror, so v = −4u. The object and image are u + 4u = 5u = 32 cm apart, so u = 6.4 cm and v = −25.6 cm. Then 1/f = 1/u + 1/v = 1/6.4 − 1/25.6 = 0.1172, so f = 8.5 cm. (6.4 cm is the object distance, not the focal length.)",
           "source": "PHY104 2023/2024 (compendium, verified answer key)"
         },
         {
@@ -1208,7 +1210,7 @@
             "−12cm & 8cm"
           ],
           "correctIndex": 1,
-          "explanation": "First find the combined focal length from the lens equation (u=20, v=30): f_combined=12cm. For an achromatic doublet, the individual focal lengths relate to the dispersive power ratio such that ω₁f₁+ω₂f₂=0, which combined with the combined-lens formula gives f₁=4cm, f₂=−6cm.",
+          "explanation": "Combined focal length from the lens equation (u = 20, v = 30): 1/f = 1/20 + 1/30 = 1/12, so f = 12 cm. For an achromatic doublet ω₁/f₁ + ω₂/f₂ = 0, so with ω₁:ω₂ = 2:3, f₂ = −1.5 f₁. Then 1/f₁ − 1/(1.5 f₁) = 1/(3 f₁) = 1/12 gives f₁ = 4 cm and f₂ = −6 cm.",
           "source": "PHY104 2022/2023 (compendium, verified answer key)"
         },
         {
@@ -1431,7 +1433,9 @@
           ],
           "correctIndex": 0,
           "explanation": "A terrestrial telescope's total length combines the objective focal length, the erecting tube length, and the eyepiece focal length: 50cm+? — working through the standard construction gives ≈56cm total.",
-          "source": "PHY104 2024/2025 (compendium, verified answer key)"
+          "source": "PHY104 2024/2025 (compendium, verified answer key)",
+          "needsReview": true,
+          "reviewNote": "The key (56 cm) is just objective + eyepiece (50 + 6). The question also gives a 0.4 m tube length, and a terrestrial telescope's length normally includes the erecting section (50 + 40 + 6 = 96 cm, which is not an option). The data and key do not agree. Held back until the original is checked."
         },
         {
           "id": "phy104-lens-34",
@@ -1687,8 +1691,8 @@
             "0.39 rad/s",
             "0.91 rad/s"
           ],
-          "correctIndex": 0,
-          "explanation": "Amplitude-resonance frequency accounting for damping: ω_res=√(k/m−b²/(2m²))=√(9/5−7²/50)≈1.34 rad/s.",
+          "correctIndex": 3,
+          "explanation": "Amplitude-resonance frequency with damping: ω_res = √(k/m − b²/(2m²)) = √(9/5 − 49/50) = √0.82 = 0.91 rad/s.",
           "source": "PHY104 2024/2025 (compendium, verified answer key)"
         },
         {

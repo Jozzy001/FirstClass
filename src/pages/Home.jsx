@@ -1,3 +1,4 @@
+import { SUPPORT_EMAIL, SUPPORT_PHONE_DISPLAY, emailLink, whatsappLink } from '../lib/support.js'
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllCourses } from '../data/courseData.js'
@@ -13,18 +14,19 @@ const STEPS = [
 ]
 
 const FEATURES = [
-  { icon: '📖', title: 'Notes that get to the point', body: 'Every course is broken into short topics you can finish in one sitting, each ending with a key formula or key fact.' },
+  { icon: '📖', title: 'Lessons that start from scratch', body: 'Every course is broken into short topics. Lessons explain each idea in plain language, show worked examples, and give you exercises before you move on.' },
   { icon: '🎯', title: 'Practice by topic', body: 'Answer questions one topic at a time and see the explanation straight away, so you learn from every mistake.' },
-  { icon: '⏱️', title: 'Timed course tests', body: '30 questions in 45 minutes, scored out of 100. If your phone locks or the page reloads, you pick up where you stopped.' },
+  { icon: '⏱️', title: 'Timed course tests', body: '30 questions in 45 minutes, scored out of 100. If your device locks or the page reloads, you pick up where you stopped.' },
   { icon: '🎓', title: 'Result slip and CGPA', body: 'Letter grade, grade points and a credit-unit weighted CGPA on the 5.0 scale, just like your school result.' },
   { icon: '🔍', title: 'Weak topics found for you', body: 'The topics you keep getting wrong are surfaced on your dashboard, so you spend time where it counts.' },
   { icon: '🔥', title: 'Habits that stick', body: 'A daily question goal, a study streak and a focus timer help you build a steady revision routine.' }
 ]
 
 const FAQ = [
-  { q: 'Is it free?', a: 'You can start free. The first topic of every course is open to you as soon as you sign in.' },
+  { q: 'Is it free?', a: 'Yes. Everything is free while FirstClass is new. If we add paid features later, you will be told clearly before anything changes.' },
   { q: 'Do I need an email address?', a: 'No. You sign up and log in with your phone number and a password. Email is optional.' },
-  { q: 'Will it work on my phone?', a: 'Yes. FirstClass is built for phones first and works on laptops too. You can add it to your home screen like an app.' },
+  { q: 'Which devices does it work on?', a: 'Phones, tablets and computers. Open FirstClass in your browser, or add it to your home screen or desktop to use it like an app.' },
+  { q: 'I forgot my password. What do I do?', a: `Message us on WhatsApp (${SUPPORT_PHONE_DISPLAY}) or email ${SUPPORT_EMAIL} with the phone number you signed up with, and we will help you get back in.` },
   { q: 'Where do the questions come from?', a: 'They are built from past exam questions. Where a question was unclear or incomplete, we hold it back rather than guess.' }
 ]
 
@@ -54,8 +56,8 @@ export default function Home() {
               Study smarter. Score higher. Aim for your <span className="text-flame">first class</span>.
             </h1>
             <p className="text-[16.5px] text-graphite/65 max-w-[480px] mb-8 leading-relaxed">
-              Short notes, past-question practice, timed tests and a CGPA tracker, all in one place
-              and built to work on your phone.
+              Step-by-step lessons, past-question practice, timed tests and a CGPA tracker, all in one place
+              and ready to use on any device.
             </p>
             <div className="flex gap-3 flex-wrap">
               <Link to="/signup" className="press bg-cobalt text-white px-6 py-3.5 rounded font-medium text-sm">
@@ -163,7 +165,17 @@ export default function Home() {
       </section>
 
       <footer className="bg-graphite border-t border-white/10 py-6 text-center text-xs text-white/50">
-        © FirstClass · Built for university students
+        <div>
+          Need help?{' '}
+          <a href={whatsappLink('Hello FirstClass support, ')} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 inline-block py-1.5">
+            WhatsApp {SUPPORT_PHONE_DISPLAY}
+          </a>
+          {' · '}
+          <a href={emailLink('FirstClass: help', '')} className="underline underline-offset-2 inline-block py-1.5">
+            {SUPPORT_EMAIL}
+          </a>
+        </div>
+        <div className="mt-1">© FirstClass · Built for university students</div>
       </footer>
     </div>
   )

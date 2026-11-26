@@ -127,21 +127,21 @@
             "38.70°C",
             "None of the above"
           ],
-          "correctIndex": 2,
-          "explanation": "Mass-weighted average: T_f = (100×30 + 20×80)/(100+20) ≈ 38.33°C, closest to 38.70°C.",
+          "correctIndex": 3,
+          "explanation": "Mass-weighted average: T_f = (100×30 + 20×80)/(100+20) = 4600/120 = 38.33°C. None of the listed values is 38.33°C, so the answer is 'None of the above'.",
           "source": "PHY103 June 2025, Q33"
         },
         {
           "id": "phy103-cal-04",
           "prompt": "The rate at which energy is wasted by a machine is 250W. If this energy is completely converted to heat, how many kilocalories are wasted in 5 seconds?",
           "options": [
-            "0.257 kcal",
+            "0.299 kcal",
             "3.4 kcal",
             "28.5 kcal",
             "4,196 kcal"
           ],
           "correctIndex": 0,
-          "explanation": "Energy wasted: Q = Pt = 250×5 = 1250J. Converting to kcal: 1250/4186 ≈ 0.299 kcal, closest to 0.257 kcal.",
+          "explanation": "Energy wasted: Q = Pt = 250 × 5 = 1250 J. In kilocalories: 1250/4186 = 0.299 kcal.",
           "source": "PHY103 June 2025, Q37"
         },
         {
@@ -621,11 +621,11 @@
           "options": [
             "16 kJ",
             "226 kJ",
-            "2,078 kJ",
+            "2,096 kJ",
             "1,930 kJ"
           ],
           "correctIndex": 2,
-          "explanation": "Heat absorbed: Q = mLᵥ = 2265 kJ. Work done by expansion: W = P·ΔV = 1.01×10⁵×(1.671−0.001) ≈ 168.7 kJ. ΔU = Q−W ≈ 2265−168.7 ≈ 2096 kJ, closest to 2,078 kJ.",
+          "explanation": "Heat absorbed: Q = mLᵥ = 2265 kJ. Work done by the expansion: W = PΔV = 1.01×10⁵ × (1.671 − 0.001) = 168.7 kJ. ΔU = Q − W = 2265 − 168.7 = 2096 kJ.",
           "source": "PHY103 June 2025, Q39"
         },
         {

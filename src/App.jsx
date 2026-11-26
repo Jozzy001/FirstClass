@@ -1,5 +1,5 @@
-import React from 'react'
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import React, { Suspense, lazy } from 'react'
+import { Routes, Route, Navigate, Link, useLocation } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Login from './pages/Login.jsx'
@@ -12,7 +12,11 @@ import Reader from './pages/Reader.jsx'
 import Practice from './pages/Practice.jsx'
 import Test from './pages/Test.jsx'
 import Results from './pages/Results.jsx'
+import Account from './pages/Account.jsx'
 import AppHeader from './components/AppHeader.jsx'
+
+// Admin code is only downloaded when an admin opens the page, so students never carry it.
+const Admin = lazy(() => import('./pages/Admin.jsx'))
 
 // Everything except the landing, sign-up and log-in pages needs a signed-in student.
 function RequireAuth({ children }) {
@@ -20,6 +24,19 @@ function RequireAuth({ children }) {
   const location = useLocation()
   if (!user) return <Navigate to="/login" replace state={{ from: location.pathname }} />
   return children
+}
+
+// After an admin sets a temporary password, the student is asked to choose their own.
+function PasswordBanner() {
+  const { profile } = useAuth()
+  const { pathname } = useLocation()
+  if (!profile?.mustChangePassword || pathname === '/account') return null
+  return (
+    <div className="bg-flame-pale border-b border-flame/20 px-4 py-2.5 text-center text-[13.5px]" data-testid="password-banner">
+      You are using a temporary password.{' '}
+      <Link to="/account" className="font-medium text-flame underline underline-offset-2 inline-block py-1">Choose your own password</Link>
+    </div>
+  )
 }
 
 function Splash() {
@@ -58,6 +75,7 @@ export default function App() {
   return (
     <>
     <AppHeader />
+    <PasswordBanner />
     <div key={location.pathname} className="page-in">
     <Routes location={location}>
       <Route path="/" element={<Root />} />
@@ -70,6 +88,17 @@ export default function App() {
       <Route path="/course/:code/practice/:topicId" element={<RequireAuth><Practice /></RequireAuth>} />
       <Route path="/course/:code/test" element={<RequireAuth><Test /></RequireAuth>} />
       <Route path="/results" element={<RequireAuth><Results /></RequireAuth>} />
+      <Route path="/account" element={<RequireAuth><Account /></RequireAuth>} />
+      <Route
+        path="/admin"
+        element={
+          <RequireAuth>
+            <Suspense fallback={<Splash />}>
+              <Admin />
+            </Suspense>
+          </RequireAuth>
+        }
+      />
     </Routes>
     </div>
     </>

@@ -17,17 +17,17 @@ export function scoreToGrade(scoreOutOf100) {
 
 /**
  * results: [{ courseCode, creditUnits, score }]
- * Returns the credit-unit-weighted GPA (0–5 scale) plus a per-course breakdown.
- * A course with no creditUnits set yet is excluded from the calculation
- * rather than silently assumed — surface it to the user as "pending" instead.
+ * Returns the credit-unit-weighted GPA (0-5 scale) plus a per-course breakdown.
+ * A course whose credit units have not been confirmed yet counts as 1 unit so the
+ * student still gets a CGPA. Those courses are flagged (`assumed`) so every screen can
+ * say plainly that the figure is an estimate until the real units are added.
  */
 export function calculateGPA(results) {
-  const usable = results.filter((r) => typeof r.creditUnits === 'number' && r.creditUnits > 0)
-  const skipped = results.filter((r) => !usable.includes(r))
-
-  const breakdown = usable.map((r) => {
+  const breakdown = results.map((r) => {
+    const confirmed = typeof r.creditUnits === 'number' && r.creditUnits > 0
+    const units = confirmed ? r.creditUnits : 1
     const { letter, point } = scoreToGrade(r.score)
-    return { ...r, letter, point, qualityPoints: point * r.creditUnits }
+    return { ...r, creditUnits: units, assumed: !confirmed, letter, point, qualityPoints: point * units }
   })
 
   const totalUnits = breakdown.reduce((sum, r) => sum + r.creditUnits, 0)
@@ -38,7 +38,7 @@ export function calculateGPA(results) {
     gpa,
     scale: 5.0,
     breakdown,
-    skipped: skipped.map((r) => r.courseCode) // courses missing credit-unit data
+    assumed: breakdown.filter((r) => r.assumed).map((r) => r.courseCode)
   }
 }
 

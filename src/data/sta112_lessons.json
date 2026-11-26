@@ -1,0 +1,1316 @@
+{
+ "courseCode": "STA112",
+ "topics": [
+  {
+   "id": "counting-and-factorials",
+   "intro": "Probability starts with counting. In this lesson you will simplify factorials, use the multiplication principle, count arrangements of letters, and count the ways to choose people for a group.",
+   "sections": [
+    {
+     "id": "fact",
+     "title": "Factorials and simplifying them",
+     "body": [
+      "**n!** (read 'n factorial') means n × (n − 1) × (n − 2) × … × 2 × 1. So 5! = 120 and **0! = 1.** Factorials grow very fast: 10! = 3,628,800.",
+      "The trick for simplifying is to **expand the bigger factorial only until it meets the smaller one**, then cancel. For example n!/(n − 2)! = n(n − 1)(n − 2)!/(n − 2)! = **n(n − 1).** And 10!/8! = 10 × 9 = **90.**",
+      "**Example.** (k + 2)!/(k − 1)!. Write (k + 2)! = (k + 2)(k + 1)(k)(k − 1)!, then cancel (k − 1)!. This leaves (k + 2)(k + 1)k = k(k² + 3k + 2) = **k³ + 3k² + 2k.**",
+      "**Example with the smaller factorial on top.** (n + 1)!/(n + 3)!. Now the bottom is bigger: (n + 3)! = (n + 3)(n + 2)(n + 1)!. Cancel (n + 1)! to get 1/((n + 3)(n + 2)) = **1/(n² + 5n + 6).**",
+      "**Careful:** (n − 1)! is not the same as n! − 1, and (2n)! is not 2 × n!. Only multiplication of the factors counts."
+     ],
+     "keyPoints": [
+      "n! = n × (n − 1) × … × 1; 0! = 1.",
+      "Expand the bigger factorial until it reaches the smaller one, then cancel."
+     ],
+     "example": {
+      "problem": "Simplify (n + 2)!/n!.",
+      "steps": [
+       "(n + 2)! = (n + 2)(n + 1)n!.",
+       "Cancel n!: (n + 2)(n + 1) = n² + 3n + 2."
+      ],
+      "answer": "(n + 2)(n + 1)"
+     },
+     "exercises": [
+      {
+       "prompt": "Simplify n!/(n − 2)!.",
+       "options": [
+        "n(n + 1)",
+        "n(n − 1)",
+        "n(n − 1)!",
+        "n!(n − 1)"
+       ],
+       "correctIndex": 1,
+       "explanation": "n! = n(n − 1)(n − 2)!, so the (n − 2)! cancels."
+      },
+      {
+       "prompt": "Simplify (k + 2)!/(k − 1)!.",
+       "options": [
+        "k³ + 3k² + 2k",
+        "k³ − 3k² + k",
+        "k(k − 1)!",
+        "k² + 3k + 2"
+       ],
+       "correctIndex": 0,
+       "explanation": "(k + 2)(k + 1)k = k³ + 3k² + 2k."
+      },
+      {
+       "prompt": "Simplify (n + 1)!/(n + 3)!.",
+       "options": [
+        "1/(n² + 5n + 6)",
+        "1/(n² + 3n + 6)",
+        "(n + 1)/(n² + 5n + 6)",
+        "n² + 5n + 6"
+       ],
+       "correctIndex": 0,
+       "explanation": "The bottom is (n + 3)(n + 2)(n + 1)!, so the fraction is 1/((n + 3)(n + 2))."
+      },
+      {
+       "prompt": "What is 10!/8!?",
+       "options": [
+        "2",
+        "90",
+        "10",
+        "80"
+       ],
+       "correctIndex": 1,
+       "explanation": "10 × 9 = 90."
+      },
+      {
+       "prompt": "What is the value of 0!?",
+       "options": [
+        "0",
+        "1",
+        "undefined",
+        "10"
+       ],
+       "correctIndex": 1,
+       "explanation": "By definition 0! = 1."
+      }
+     ]
+    },
+    {
+     "id": "arr",
+     "title": "The counting principle, permutations and arrangements",
+     "body": [
+      "**The multiplication principle.** If one stage can be done in a ways and a second stage in b ways, the two together can be done in a × b ways. A fair die thrown once and then a coin flipped twice: 6 × 2 × 2 = **24** outcomes in the combined sample space.",
+      "**Permutations (order matters).** The number of ways to arrange r items chosen from n different items is **ⁿPᵣ = n!/(n − r)! = n(n − 1)…(n − r + 1).** A product of four descending factors starting at 13 is 13 × 12 × 11 × 10 = **¹³P₄** = 17,160.",
+      "**Letters of a word with repeats.** If some letters repeat, divide by the factorial of each repeat count. 'MONOPOLY' has 8 letters, and O appears **3** times (M, O, N, O, P, O, L, Y). So the number of arrangements is 8!/3! = 40320/6 = **6720.**",
+      "**Counting the repeats is the main step.** Write the letters out one by one and tick them off. 'DEER' has 4 letters with E twice: 4!/2! = **12** arrangements.",
+      "**Picking and arranging.** A 3-letter code from 5 different letters (no repeats allowed) is ⁵P₃ = 5 × 4 × 3 = **60.**"
+     ],
+     "keyPoints": [
+      "Multiply the numbers of ways for each stage.",
+      "ⁿPᵣ = n!/(n − r)!. Repeated letters: divide by the factorials of the repeat counts."
+     ],
+     "example": {
+      "problem": "How many arrangements does the word 'BANANA' have?",
+      "steps": [
+       "6 letters: A three times, N twice, B once.",
+       "6!/(3! 2!) = 720/12 = 60."
+      ],
+      "answer": "60"
+     },
+     "exercises": [
+      {
+       "prompt": "A fair die is thrown once and then a fair coin is flipped twice. How many elements does the combined sample space have?",
+       "options": [
+        "12",
+        "16",
+        "20",
+        "24"
+       ],
+       "correctIndex": 3,
+       "explanation": "6 × 2 × 2 = 24."
+      },
+      {
+       "prompt": "13 × 12 × 11 × 10 can be written as:",
+       "options": [
+        "¹³P₁₀",
+        "¹³C₁₀",
+        "¹³P₄",
+        "¹³C₄"
+       ],
+       "correctIndex": 2,
+       "explanation": "Four descending factors from 13 is ¹³P₄."
+      },
+      {
+       "prompt": "In how many ways can the letters of MONOPOLY be arranged?",
+       "options": [
+        "6720",
+        "1680",
+        "280",
+        "40320"
+       ],
+       "correctIndex": 0,
+       "explanation": "8 letters with O three times: 8!/3! = 6720."
+      },
+      {
+       "prompt": "How many different arrangements does the word DEER have?",
+       "options": [
+        "24",
+        "12",
+        "6",
+        "4"
+       ],
+       "correctIndex": 1,
+       "explanation": "4!/2! = 12."
+      },
+      {
+       "prompt": "How many 3-letter codes can be made from 5 different letters with no letter repeated?",
+       "options": [
+        "15",
+        "60",
+        "125",
+        "10"
+       ],
+       "correctIndex": 1,
+       "explanation": "⁵P₃ = 5 × 4 × 3 = 60."
+      }
+     ]
+    },
+    {
+     "id": "comb",
+     "title": "Combinations: choosing without caring about order",
+     "body": [
+      "A **combination** is a choice where the order does not matter: **ⁿCᵣ = n!/(r!(n − r)!).** Choosing a committee, a team or a hand of cards are combinations.",
+      "**Example.** A company has 14 women and 10 men. A 6-person safety committee is formed from all 24 people, with no other rule. The number is ²⁴C₆ = **134,596.** (Only the total counts, so do not treat men and women separately unless the question asks for it.)",
+      "**Someone is never chosen.** To select 6 people from 10 when one particular person is **never** included, remove that person and choose from the other 9: **⁹C₆ = 84.** If one particular person is **always** included, choose the other 5 from the other 9: ⁹C₅ = 126.",
+      "**Two groups together.** From 14 women and 10 men, a committee of 3 women and 3 men has ¹⁴C₃ × ¹⁰C₃ = 364 × 120 = **43,680** possibilities. 'And' means multiply.",
+      "**Symmetry:** ⁿCᵣ = ⁿCₙ₋ᵣ. Choosing 6 to include is the same as choosing 4 to leave out: ¹⁰C₆ = ¹⁰C₄ = 210."
+     ],
+     "keyPoints": [
+      "ⁿCᵣ = n!/(r!(n − r)!). Order does not matter.",
+      "'Never included': remove that person. 'Always included': choose the rest."
+     ],
+     "example": {
+      "problem": "How many ways can 2 prizes (same prize) be given to 5 students?",
+      "steps": [
+       "Order does not matter, so ⁵C₂.",
+       "5 × 4/2 = 10."
+      ],
+      "answer": "10"
+     },
+     "exercises": [
+      {
+       "prompt": "A company with 14 women and 10 men forms a 6-person safety committee. How many different committees are possible?",
+       "options": [
+        "134,596",
+        "134,514",
+        "133,569",
+        "1,961,256"
+       ],
+       "correctIndex": 0,
+       "explanation": "There are 24 people, so ²⁴C₆ = 134,596."
+      },
+      {
+       "prompt": "In how many ways can we select 6 people out of 10 if a particular person is NEVER included?",
+       "options": [
+        "⁹C₆",
+        "¹⁰C₆",
+        "⁹C₅",
+        "¹⁰C₅"
+       ],
+       "correctIndex": 0,
+       "explanation": "Remove the person and choose 6 of the remaining 9."
+      },
+      {
+       "prompt": "In how many ways can 6 people be chosen from 10 if a particular person is ALWAYS included?",
+       "options": [
+        "⁹C₅",
+        "⁹C₆",
+        "¹⁰C₅",
+        "¹⁰C₆"
+       ],
+       "correctIndex": 0,
+       "explanation": "That person is in, so choose the other 5 from the other 9."
+      },
+      {
+       "prompt": "How many committees of 3 women and 3 men can be formed from 14 women and 10 men?",
+       "options": [
+        "43,680",
+        "134,596",
+        "484",
+        "1,960"
+       ],
+       "correctIndex": 0,
+       "explanation": "¹⁴C₃ × ¹⁰C₃ = 364 × 120."
+      },
+      {
+       "prompt": "What is ¹⁰C₆?",
+       "options": [
+        "210",
+        "151,200",
+        "60",
+        "720"
+       ],
+       "correctIndex": 0,
+       "explanation": "10!/(6! 4!) = 210."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "ⁿPᵣ = n!/(n − r)!; ⁿCᵣ = n!/(r!(n − r)!)"
+  },
+  {
+   "id": "probability-basics",
+   "intro": "Probability tells you how likely something is. This lesson covers the basic words and rules, finding probabilities by counting, the addition rule, independent events, conditional probability and reading a two-way table.",
+   "sections": [
+    {
+     "id": "lang",
+     "title": "The language of probability",
+     "body": [
+      "A **random experiment** is a process whose outcome you cannot predict with certainty (throwing a die). One performance of it is a **trial.** Each possible result is a **sample point** or outcome. The set of all possible outcomes is the **sample space**, written Ω (or S). An **event** is a collection of outcomes (for example 'an even number': {2, 4, 6}).",
+      "The **probability** of an event is a number from 0 to 1. **P(A) = 0** means impossible, **P(A) = 1** means certain. **The axioms and basic properties:** (1) **0 ≤ P(A) ≤ 1**; (2) **P(Ω) = 1**; (3) **P(∅) = 0** (the impossible event); (4) **P(Aᶜ) = 1 − P(A)**, where Aᶜ is the complement ('A does not happen').",
+      "**Complement example.** If a player has a 35% chance of winning a prize, the chance of NOT winning is 1 − 0.35 = **0.65.**",
+      "**Mutually exclusive events** cannot happen together: they share **no common sample point**, so P(A ∩ B) = 0. For such events **P(A or B) = P(A) + P(B).** (The two probabilities need not add to 1.) The words 'one event rules out the other' describe mutually exclusive events.",
+      "**Equally likely outcomes.** When all outcomes have the same chance, **P(A) = (number of outcomes in A)/(total number of outcomes).** For a fair die, P(at least 3) = 4/6 ≈ **0.67.**"
+     ],
+     "keyPoints": [
+      "0 ≤ P(A) ≤ 1; P(Ω) = 1; P(∅) = 0; P(Aᶜ) = 1 − P(A).",
+      "Mutually exclusive: P(A ∩ B) = 0.",
+      "Equally likely: favourable ÷ total."
+     ],
+     "example": {
+      "problem": "A bag has 3 red and 7 blue balls. Find P(not red) for one draw.",
+      "steps": [
+       "P(red) = 3/10.",
+       "P(not red) = 1 − 3/10 = 7/10."
+      ],
+      "answer": "0.7"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the set of all possible outcomes of an experiment called?",
+       "options": [
+        "Trial",
+        "Sample space",
+        "Event",
+        "Complement"
+       ],
+       "correctIndex": 1,
+       "explanation": "The set of all outcomes is the sample space."
+      },
+      {
+       "prompt": "A player has a 35% chance of winning a prize. What is the probability of NOT winning?",
+       "options": [
+        "0.75",
+        "0.55",
+        "0.65",
+        "0.70"
+       ],
+       "correctIndex": 2,
+       "explanation": "1 − 0.35 = 0.65."
+      },
+      {
+       "prompt": "A balanced die is thrown once. What is P(number at least 3)?",
+       "options": [
+        "0.33",
+        "0.67",
+        "0.83",
+        "0.5"
+       ],
+       "correctIndex": 1,
+       "explanation": "3, 4, 5 and 6 qualify: 4/6 ≈ 0.67."
+      },
+      {
+       "prompt": "If A and B are mutually exclusive, which statements are correct?",
+       "options": [
+        "P(A ∩ B) = 0 and P(A or B) = P(A) + P(B)",
+        "P(A) + P(B) = 1 always",
+        "P(A ∩ B) = P(A)P(B)",
+        "P(A or B) = 1"
+       ],
+       "correctIndex": 0,
+       "explanation": "They cannot happen together, so their intersection has probability 0."
+      },
+      {
+       "prompt": "Which of these is NOT a property of probability?",
+       "options": [
+        "P(Ω) = 1",
+        "P(∅) = 0",
+        "P(A) = 1 − P(Aᶜ)",
+        "P(A) can be −0.2"
+       ],
+       "correctIndex": 3,
+       "explanation": "Probabilities are never negative."
+      }
+     ]
+    },
+    {
+     "id": "count",
+     "title": "Probability by counting",
+     "body": [
+      "When outcomes are equally likely, count the favourable outcomes and the total, using the methods of counting.",
+      "**Example 1: 4-digit numbers.** Choose a number from 1000 to 9999 (9000 numbers). Numbers with 4 different digits: the first digit has 9 choices (1–9), the second 9 (anything but the first, 0 now allowed), the third 8, the fourth 7. That gives 9 × 9 × 8 × 7 = 4536. So P = 4536/9000 = **0.504.**",
+      "**Example 2: ATM PINs.** For PINs from 0000 to 9999 (10,000 of them), the first digit can be 0, so different-digit PINs number 10 × 9 × 8 × 7 = 5040. So P = 5040/10,000 = **0.504.** (Same answer, different counting.)",
+      "**Example 3: DEER.** The word has 4!/2! = 12 arrangements. With the two E's glued together we arrange D, EE, R: 3! = 6. So P = 6/12 = **0.5.**",
+      "**Example 4: EXAM.** The 4 letters are all different, and each is equally likely to come first. P(starts with X) = **1/4 = 0.25.**",
+      "**Example 5: committees.** Choose 3 men from 5. For a particular man to be on the committee, choose the other 2 from 4: ⁴C₂ = 6. Total ⁵C₃ = 10. So P = 6/10 = **0.6.**",
+      "**'At least one' trick.** P(at least one) = 1 − P(none). For 3 tosses of a fair coin, P(at least one head) = 1 − (1/2)³ = **7/8.** And P(at least two heads) = P(2) + P(3) = 3/8 + 1/8 = **1/2.**"
+     ],
+     "keyPoints": [
+      "Count favourable outcomes and the total, with the same method.",
+      "At least one = 1 − none.",
+      "A leading digit cannot be 0, but a PIN can start with 0."
+     ],
+     "example": {
+      "problem": "A fair die is rolled twice. Find P(both are 6).",
+      "steps": [
+       "Total outcomes 36; only (6, 6) works.",
+       "P = 1/36."
+      ],
+      "answer": "1/36"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the probability of selecting a 4-digit number with distinct digits from the numbers 1000–9999?",
+       "options": [
+        "0.5040",
+        "0.1512",
+        "0.0002",
+        "1"
+       ],
+       "correctIndex": 0,
+       "explanation": "9 × 9 × 8 × 7 = 4536 out of 9000."
+      },
+      {
+       "prompt": "What is the probability that the two E's are together in a random arrangement of DEER?",
+       "options": [
+        "0.3",
+        "0.4",
+        "0.5",
+        "0.6"
+       ],
+       "correctIndex": 2,
+       "explanation": "6 of the 12 arrangements."
+      },
+      {
+       "prompt": "A random arrangement of the letters of EXAM starts with X. What is the probability?",
+       "options": [
+        "0.125",
+        "0.667",
+        "0.25",
+        "0.5"
+       ],
+       "correctIndex": 2,
+       "explanation": "Each of the 4 letters is equally likely to be first."
+      },
+      {
+       "prompt": "Of all 3-man committees from 5 men, what is the probability that a particular man is on it?",
+       "options": [
+        "0.2",
+        "0.4",
+        "0.6",
+        "0.8"
+       ],
+       "correctIndex": 2,
+       "explanation": "⁴C₂/⁵C₃ = 6/10."
+      },
+      {
+       "prompt": "A fair coin is tossed three times. What is the probability of at least one head?",
+       "options": [
+        "7/8",
+        "3/8",
+        "1/4",
+        "3/4"
+       ],
+       "correctIndex": 0,
+       "explanation": "1 − (1/2)³ = 7/8."
+      },
+      {
+       "prompt": "A fair coin is tossed three times. What is the probability of at least two heads?",
+       "options": [
+        "7/8",
+        "1/8",
+        "5/8",
+        "1/2"
+       ],
+       "correctIndex": 3,
+       "explanation": "3/8 + 1/8 = 1/2."
+      }
+     ]
+    },
+    {
+     "id": "rules",
+     "title": "Addition rule, independence and conditional probability",
+     "body": [
+      "**The addition rule (OR).** **P(A or B) = P(A) + P(B) − P(A ∩ B).** We subtract the overlap so it is not counted twice. For mutually exclusive events the overlap is 0.",
+      "**Example.** Choose a number from 1 to 10. Primes: {2, 3, 5, 7}. Odds: {1, 3, 5, 7, 9}. Both: {3, 5, 7}. P(prime or odd) = 4/10 + 5/10 − 3/10 = **0.6.** Check by listing: {1, 2, 3, 5, 7, 9} has 6 numbers. For one die, 'odd or prime' = {1, 3, 5} ∪ {2, 3, 5} = {1, 2, 3, 5}, so the probability is 4/6 = **2/3.**",
+      "**Independent events.** A and B are independent if one does not change the chance of the other: **P(A ∩ B) = P(A) × P(B).** If P(A) = 0.6, P(B) = 0.3 and P(A ∩ B) = 0.18, then 0.6 × 0.3 = 0.18, so they are **independent.** To make P(X) = 0.6 and P(Y) = 0.4 independent, P(X ∩ Y) must be 0.6 × 0.4 = **0.24.**",
+      "**Mutually exclusive is not the same as independent.** Mutually exclusive events (with positive probabilities) are actually **dependent**: if one happens, the other cannot.",
+      "**Without replacement.** A bag has 5 red and 4 green balls. Two are picked one after the other without replacement. P(both green) = (4/9) × (3/8) = 12/72 = **1/6.** The second chance changes because one ball has gone.",
+      "**Conditional probability** is the chance of A given that B has happened: **P(A | B) = P(A ∩ B)/P(B).** Think of it as shrinking the sample space to B.",
+      "**Waiting for the first success.** If each hostel mate has probability 0.20 of being a course mate, the probability that the first course mate is the 5th person asked is four failures and then a success: (0.8)⁴ × 0.2 = 0.08192 ≈ **0.0819.**"
+     ],
+     "keyPoints": [
+      "P(A or B) = P(A) + P(B) − P(A ∩ B).",
+      "Independent: P(A ∩ B) = P(A)P(B).",
+      "P(A | B) = P(A ∩ B)/P(B). Without replacement, update the numbers."
+     ],
+     "example": {
+      "problem": "Find P(an ace or a heart) when one card is drawn from 52.",
+      "steps": [
+       "P(ace) = 4/52; P(heart) = 13/52; P(ace of hearts) = 1/52.",
+       "4/52 + 13/52 − 1/52 = 16/52 = 4/13."
+      ],
+      "answer": "4/13"
+     },
+     "exercises": [
+      {
+       "prompt": "A number from 1 to 10 is chosen at random. What is P(prime or odd)?",
+       "options": [
+        "0.8",
+        "0.6",
+        "0.4",
+        "0.2"
+       ],
+       "correctIndex": 1,
+       "explanation": "{1, 2, 3, 5, 7, 9} has 6 numbers."
+      },
+      {
+       "prompt": "If P(A) = 0.6, P(B) = 0.3 and P(A ∩ B) = 0.18, then A and B are:",
+       "options": [
+        "Mutually exclusive",
+        "Independent",
+        "Impossible",
+        "Complements"
+       ],
+       "correctIndex": 1,
+       "explanation": "0.6 × 0.3 = 0.18."
+      },
+      {
+       "prompt": "If P(X) = 0.6 and P(Y) = 0.4, what value of P(X ∩ Y) makes them independent?",
+       "options": [
+        "1.00",
+        "0.20",
+        "0.67",
+        "0.24"
+       ],
+       "correctIndex": 3,
+       "explanation": "0.6 × 0.4 = 0.24."
+      },
+      {
+       "prompt": "A bag contains 5 red and 4 green balls. Two are drawn without replacement. P(both green)?",
+       "options": [
+        "1/3",
+        "1/6",
+        "1/9",
+        "1/12"
+       ],
+       "correctIndex": 1,
+       "explanation": "(4/9)(3/8) = 1/6."
+      },
+      {
+       "prompt": "If A and B are independent, then:",
+       "options": [
+        "P(A and B) = P(A) + P(B)",
+        "P(A and B) = P(A) · P(B)",
+        "P(A and B) = P(A)/P(B)",
+        "P(A and B) = 0"
+       ],
+       "correctIndex": 1,
+       "explanation": "Independence means the probabilities multiply."
+      },
+      {
+       "prompt": "A student asks hostel mates (probability 0.20 each of being a course mate) until the first is found. What is the probability that this is the 5th person asked?",
+       "options": [
+        "0.0189",
+        "0.0277",
+        "0.0463",
+        "0.0819"
+       ],
+       "correctIndex": 3,
+       "explanation": "(0.8)⁴ × 0.2 = 0.08192."
+      }
+     ]
+    },
+    {
+     "id": "table",
+     "title": "Reading probabilities from a table",
+     "body": [
+      "Data are often given in a **two-way table.** Take this one, for 700 students:",
+      "Male: Chocolate 98, Vanilla 79, Others 123, total 300. Female: Chocolate 109, Vanilla 143, Others 148, total 400. Totals: Chocolate 207, Vanilla 222, Others 271, total 700.",
+      "**Joint probability (AND):** use the cell and divide by the **grand total.** P(likes Vanilla and is female) = 143/700 = **0.2043.**",
+      "**Marginal probability:** use a row or column total. P(male) = 300/700 = 0.4286 and P(Vanilla) = 222/700 = 0.3171.",
+      "**Conditional probability (GIVEN):** the 'given' column or row becomes the new total. P(male | Chocolate) = 98/207 = **0.4734.** P(Vanilla | female) = 143/400 = 0.3575. Be careful to divide by the total of the 'given' group, not 700.",
+      "**Order matters in conditionals.** P(male | Chocolate) = 98/207 differs from P(Chocolate | male) = 98/300 = 0.3267."
+     ],
+     "keyPoints": [
+      "AND: cell ÷ grand total.",
+      "GIVEN: cell ÷ total of the given group.",
+      "P(A | B) and P(B | A) are different."
+     ],
+     "example": {
+      "problem": "In the table, find P(Others | female).",
+      "steps": [
+       "The given group is the 400 females.",
+       "148/400 = 0.37."
+      ],
+      "answer": "0.37"
+     },
+     "exercises": [
+      {
+       "prompt": "Using the table, find the probability that a randomly selected student likes Vanilla and is female.",
+       "options": [
+        "0.2043",
+        "0.3024",
+        "0.4032",
+        "0.2302"
+       ],
+       "correctIndex": 0,
+       "explanation": "143/700 = 0.2043."
+      },
+      {
+       "prompt": "Using the table, find the probability that a student is male, given that they like Chocolate.",
+       "options": [
+        "0.7432",
+        "0.4734",
+        "0.3474",
+        "0.5"
+       ],
+       "correctIndex": 1,
+       "explanation": "98/207 = 0.4734."
+      },
+      {
+       "prompt": "Using the table, find P(Chocolate | male).",
+       "options": [
+        "98/207",
+        "98/300",
+        "98/700",
+        "207/700"
+       ],
+       "correctIndex": 1,
+       "explanation": "Now the given group is the 300 males."
+      },
+      {
+       "prompt": "Using the table, P(female) equals:",
+       "options": [
+        "400/700",
+        "300/700",
+        "143/700",
+        "0.5"
+       ],
+       "correctIndex": 0,
+       "explanation": "The female total is 400 out of 700."
+      },
+      {
+       "prompt": "In a conditional probability, you divide by:",
+       "options": [
+        "The grand total",
+        "The total of the 'given' group",
+        "The total of the other group",
+        "1"
+       ],
+       "correctIndex": 1,
+       "explanation": "The 'given' group is the new sample space."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "P(A or B) = P(A) + P(B) − P(A ∩ B); P(A | B) = P(A ∩ B)/P(B)"
+  },
+  {
+   "id": "random-variables",
+   "intro": "A random variable turns the outcome of an experiment into a number. This lesson shows the difference between discrete and continuous variables and how to use a probability mass function.",
+   "sections": [
+    {
+     "id": "types",
+     "title": "Random variables: discrete and continuous",
+     "body": [
+      "A **random variable** is a number that depends on the result of a random experiment. For example, X = the number of heads in 3 coin tosses. It gives each outcome a numerical value.",
+      "**Discrete random variable:** takes separate values that you can list or count (0, 1, 2, …). Examples: the number of defective parts in a vehicle, the number of students in a class, the number of typing errors. **Continuous random variable:** can take **any value in an interval.** Examples: temperature, height, time, speed. A variable that can take any value between two given points is continuous.",
+      "**The sample space for a count.** The number of eggs laid per day on a small poultry farm can be 0, 1, 2, 3, … So the sample space is **{0, 1, 2, 3, …}.** It includes 0 (no eggs laid) and has only whole numbers. The set {x : x ≥ 0} would wrongly allow fractions of an egg.",
+      "**Which distributions are discrete?** Binomial, geometric, Bernoulli and **Poisson** are discrete. Normal (Gaussian), exponential and Rayleigh distributions are continuous.",
+      "**How we describe each type.** A discrete variable has a **probability mass function (PMF)**: a table or formula giving P(X = x). A continuous variable has a **probability density function (PDF)**, and probabilities are areas under the curve. A **cumulative distribution function (CDF)**, F(x) = P(X ≤ x), works for both."
+     ],
+     "keyPoints": [
+      "Discrete: counted values. Continuous: any value in an interval.",
+      "Discrete: PMF. Continuous: PDF. Both: CDF.",
+      "Poisson, binomial, geometric are discrete; normal is continuous."
+     ],
+     "example": {
+      "problem": "Classify: (a) the number of goals in a match, (b) the time a runner takes for 100 m.",
+      "steps": [
+       "(a) Goals are counted: discrete.",
+       "(b) Time can be any value in an interval: continuous."
+      ],
+      "answer": "(a) discrete, (b) continuous"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of the following is a continuous variable?",
+       "options": [
+        "Temperature",
+        "Number of defective parts in a vehicle",
+        "Number of students in a class",
+        "Number of typing errors"
+       ],
+       "correctIndex": 0,
+       "explanation": "Temperature can take any value in an interval; the others are counts."
+      },
+      {
+       "prompt": "A random variable that can take any value in an interval is called a ________ random variable, described by a ________.",
+       "options": [
+        "discrete, PMF",
+        "discrete, PDF",
+        "continuous, PMF",
+        "continuous, PDF"
+       ],
+       "correctIndex": 3,
+       "explanation": "Continuous variables use a density function."
+      },
+      {
+       "prompt": "Which distribution applies to a discrete random variable?",
+       "options": [
+        "Normal",
+        "Poisson",
+        "Exponential",
+        "Rayleigh"
+       ],
+       "correctIndex": 1,
+       "explanation": "The Poisson distribution counts events and is discrete."
+      },
+      {
+       "prompt": "What is the sample space of the number of eggs laid per day on a small farm?",
+       "options": [
+        "{1, 2, 3, …}",
+        "{0, 1, 2, 3, …}",
+        "{x : x > 0}",
+        "{x : x ≥ 0}"
+       ],
+       "correctIndex": 1,
+       "explanation": "Whole numbers starting at 0."
+      },
+      {
+       "prompt": "A table showing the values of a discrete random variable with their probabilities is a:",
+       "options": [
+        "Probability mass function",
+        "Probability density function",
+        "Histogram of heights",
+        "Continuous curve"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is the PMF."
+      }
+     ]
+    },
+    {
+     "id": "pmf",
+     "title": "The probability mass function",
+     "body": [
+      "A PMF lists each value x of a discrete variable and its probability P(X = x). Two rules make it **valid:** every probability is between 0 and 1, and **all the probabilities add up to 1.**",
+      "**Finding a missing probability.** Suppose x = 0, 1, 2, 3 have probabilities 0.064, 0.288, 0.432 and t. The first three add to 0.784, so **t = 1 − 0.784 = 0.216.**",
+      "**Probabilities of ranges.** P(X ≥ 1) = 1 − P(X = 0) = 1 − 0.064 = **0.936.** (Adding 0.288 + 0.432 + 0.216 gives the same.) And P(X ≤ 1) = 0.064 + 0.288 = 0.352.",
+      "**Mean (expected value).** E(X) = Σ x·P(X = x) = 0(0.064) + 1(0.288) + 2(0.432) + 3(0.216) = **1.8.** **Variance** = E(X²) − [E(X)]² = (0.288 + 4 × 0.432 + 9 × 0.216) − 1.8² = 3.96 − 3.24 = **0.72.**",
+      "**A quick check.** This table is a binomial with n = 3 and p = 0.6. Its mean np = 1.8 and variance npq = 3 × 0.6 × 0.4 = 0.72 agree with the table."
+     ],
+     "keyPoints": [
+      "Valid PMF: every p between 0 and 1, and Σp = 1.",
+      "P(X ≥ 1) = 1 − P(X = 0).",
+      "E(X) = Σ xp; Var = E(X²) − [E(X)]²."
+     ],
+     "example": {
+      "problem": "X takes 1, 2, 3 with probabilities 0.2, 0.5, 0.3. Find E(X).",
+      "steps": [
+       "E(X) = 1(0.2) + 2(0.5) + 3(0.3).",
+       "= 0.2 + 1.0 + 0.9 = 2.1."
+      ],
+      "answer": "2.1"
+     },
+     "exercises": [
+      {
+       "prompt": "The table x = 0, 1, 2, 3 has P(X = x) = 0.064, 0.288, 0.432, t. Find t and P(X ≥ 1).",
+       "options": [
+        "0.125 and 0.814",
+        "0.216 and 0.936",
+        "0.250 and 0.216",
+        "0.012 and 0.936"
+       ],
+       "correctIndex": 1,
+       "explanation": "t = 1 − 0.784 = 0.216, and P(X ≥ 1) = 1 − 0.064 = 0.936."
+      },
+      {
+       "prompt": "For the same table, what is P(X ≤ 1)?",
+       "options": [
+        "0.352",
+        "0.288",
+        "0.784",
+        "0.936"
+       ],
+       "correctIndex": 0,
+       "explanation": "0.064 + 0.288 = 0.352."
+      },
+      {
+       "prompt": "For the same table, what is the mean of X?",
+       "options": [
+        "1.5",
+        "1.8",
+        "2",
+        "0.72"
+       ],
+       "correctIndex": 1,
+       "explanation": "Σ x·P = 0.288 + 0.864 + 0.648 = 1.8."
+      },
+      {
+       "prompt": "All the probabilities in a valid PMF must:",
+       "options": [
+        "Each equal 1",
+        "Add up to 1",
+        "Add up to 100",
+        "Be larger than 0.5"
+       ],
+       "correctIndex": 1,
+       "explanation": "The total probability is 1."
+      },
+      {
+       "prompt": "A PMF has P(1) = 0.2, P(2) = 0.5 and P(3) = k. Find k.",
+       "options": [
+        "0.3",
+        "0.7",
+        "0.2",
+        "0.5"
+       ],
+       "correctIndex": 0,
+       "explanation": "1 − 0.7 = 0.3."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Σ P(X = x) = 1; E(X) = Σ x·P(X = x)"
+  },
+  {
+   "id": "discrete-distributions",
+   "intro": "Some patterns of chance show up again and again. In this lesson you will learn the Bernoulli, binomial, Poisson and geometric distributions, when to use each, and how to find their means, variances and probabilities.",
+   "sections": [
+    {
+     "id": "bin",
+     "title": "Bernoulli and binomial distributions",
+     "body": [
+      "A **Bernoulli trial** has just two outcomes: success (probability p) or failure (probability q = 1 − p). Whether a drug works, or a coin lands heads, is one Bernoulli trial.",
+      "Repeat n **independent** Bernoulli trials with the same p, and let X count the successes. Then X has a **binomial distribution, X ~ Bin(n, p)**: **P(X = k) = ⁿCₖ pᵏ qⁿ⁻ᵏ.** The mean is **np** and the variance is **npq.**",
+      "**Mean and variance.** For Y ~ Bin(10, 0.75): mean = 10 × 0.75 = **7.5.** Variance = 10 × 0.75 × 0.25 = **1.875.** (The variance is always smaller than the mean for a binomial.)",
+      "**'At least one'.** 12 students each have a 40% chance of passing. P(at least one passes) = 1 − P(none pass) = 1 − (0.6)¹² = 1 − 0.0022 = **0.9978.**",
+      "**Exactly k.** In a family of 4 children with equal chances of boy or girl, P(exactly 2 boys) = ⁴C₂ (1/2)⁴ = 6/16 = **0.375.** For X ~ Bin(4, 1/2), P(X ≥ 1) = 1 − (1/2)⁴ = **15/16.**",
+      "**Conditions to check:** a fixed number of trials; each trial is success/failure; the same p each time; the trials are independent."
+     ],
+     "keyPoints": [
+      "P(X = k) = ⁿCₖ pᵏ qⁿ⁻ᵏ; mean np; variance npq.",
+      "At least one = 1 − qⁿ.",
+      "Bernoulli is the single-trial case."
+     ],
+     "example": {
+      "problem": "A fair coin is tossed 5 times. Find P(exactly 3 heads).",
+      "steps": [
+       "⁵C₃ (1/2)⁵ = 10/32.",
+       "= 0.3125."
+      ],
+      "answer": "0.3125"
+     },
+     "exercises": [
+      {
+       "prompt": "If Y ~ Binomial(10, 0.75), its mean and variance are respectively:",
+       "options": [
+        "10 and 0.75",
+        "10 and 7.5",
+        "7.5 and 1.875",
+        "10.75 and 7.5"
+       ],
+       "correctIndex": 2,
+       "explanation": "Mean np = 7.5 and variance npq = 1.875."
+      },
+      {
+       "prompt": "Twelve students each have a 40% chance of passing a quiz. What is the probability that at least one passes?",
+       "options": [
+        "0.0022",
+        "0.0196",
+        "0.9978",
+        "0.5000"
+       ],
+       "correctIndex": 2,
+       "explanation": "1 − 0.6¹² = 0.9978."
+      },
+      {
+       "prompt": "What is the probability that exactly 2 of 4 children are boys? (Equal chances.)",
+       "options": [
+        "0.375",
+        "0.500",
+        "0.552",
+        "0.153"
+       ],
+       "correctIndex": 0,
+       "explanation": "⁴C₂ (1/2)⁴ = 6/16."
+      },
+      {
+       "prompt": "If X ~ Bin(4, 1/2), find P(X ≥ 1).",
+       "options": [
+        "1/16",
+        "1/4",
+        "3/8",
+        "15/16"
+       ],
+       "correctIndex": 3,
+       "explanation": "1 − (1/2)⁴ = 15/16."
+      },
+      {
+       "prompt": "In a binomial distribution the mean is:",
+       "options": [
+        "np",
+        "npq",
+        "p",
+        "n/p"
+       ],
+       "correctIndex": 0,
+       "explanation": "The mean is n times p."
+      },
+      {
+       "prompt": "A single trial with a success or failure outcome is modelled by:",
+       "options": [
+        "Binomial",
+        "Bernoulli",
+        "Geometric",
+        "Poisson"
+       ],
+       "correctIndex": 1,
+       "explanation": "One trial: Bernoulli."
+      }
+     ]
+    },
+    {
+     "id": "poi",
+     "title": "The Poisson distribution",
+     "body": [
+      "The **Poisson distribution** counts how many times an event happens in a **fixed interval of time or space**, when events occur at random at an average rate λ. Examples: misprints per page, phone calls per minute at a switchboard, deaths per year. **P(X = k) = e^(−λ) λᵏ/k!.**",
+      "**The mean and the variance are both λ.** So if λ = 7 eggs per day, the mean is 7 and the variance is 7. This is the one distribution in this list with equal mean and variance. (A question may check that you do not pick 'normal' or 'binomial'.)",
+      "**Probability of none.** P(X = 0) = e^(−λ). For a book with 2.5 errors per page on average, P(no errors) = e^(−2.5) = **0.0821.**",
+      "**'No fewer than 2'.** For 3 errors per page on average, P(X ≥ 2) = 1 − P(0) − P(1) = 1 − e⁻³(1 + 3) = 1 − 0.1991 = **0.8009.**",
+      "**What is NOT a Poisson experiment?** Whether a drug is effective or not is a single yes/no trial (Bernoulli), not a count in an interval.",
+      "**Link with the binomial.** When n is large and p is small, Bin(n, p) behaves like a Poisson with λ = np. For example 1000 trials with p = 0.003 gives λ = 3."
+     ],
+     "keyPoints": [
+      "P(X = k) = e^(−λ) λᵏ/k!; mean = variance = λ.",
+      "P(X = 0) = e^(−λ).",
+      "Binomial with large n and small p ≈ Poisson(np)."
+     ],
+     "example": {
+      "problem": "Calls arrive at 2 per minute on average. Find P(exactly 2 calls in a minute).",
+      "steps": [
+       "P = e⁻² 2²/2! = 0.1353 × 4/2.",
+       "= 0.2707."
+      ],
+      "answer": "0.2707"
+     },
+     "exercises": [
+      {
+       "prompt": "A Poisson variable has P(X = x) = λˣe^(−λ)/x! with λ = 7. Find its mean and variance.",
+       "options": [
+        "7 and 7",
+        "7 and 0",
+        "Not enough information",
+        "7 and 49"
+       ],
+       "correctIndex": 0,
+       "explanation": "For a Poisson, mean = variance = λ."
+      },
+      {
+       "prompt": "A page has on average 3 errors. What is P(X ≥ 2)?",
+       "options": [
+        "0.8009",
+        "0.7008",
+        "0.6007",
+        "0.5006"
+       ],
+       "correctIndex": 0,
+       "explanation": "1 − e⁻³(1 + 3) = 0.8009."
+      },
+      {
+       "prompt": "A book has an average error rate of 2.5 per page. What is the probability that a page has no errors?",
+       "options": [
+        "0.1333",
+        "0.6667",
+        "0.0821",
+        "0.5252"
+       ],
+       "correctIndex": 2,
+       "explanation": "e^(−2.5) = 0.0821."
+      },
+      {
+       "prompt": "Which is NOT a Poisson experiment?",
+       "options": [
+        "Number of deaths per year",
+        "Misprints per page",
+        "Whether a drug is effective",
+        "Phone calls per minute"
+       ],
+       "correctIndex": 2,
+       "explanation": "That is a single yes/no trial, not a count in an interval."
+      },
+      {
+       "prompt": "For a large n and a small p, the binomial distribution:",
+       "options": [
+        "Loses its discreteness",
+        "Tends toward a Poisson distribution",
+        "Stays binomial",
+        "Becomes geometric"
+       ],
+       "correctIndex": 1,
+       "explanation": "Bin(n, p) ≈ Poisson(np)."
+      },
+      {
+       "prompt": "Which distribution has equal mean and variance?",
+       "options": [
+        "Normal",
+        "Poisson",
+        "Binomial",
+        "Geometric"
+       ],
+       "correctIndex": 1,
+       "explanation": "Poisson: both equal λ."
+      }
+     ]
+    },
+    {
+     "id": "geo",
+     "title": "The geometric distribution",
+     "body": [
+      "Repeat independent trials, each with success probability p, **until the first success.** Let X be the trial on which that first success happens. Then X has a **geometric distribution**: **P(X = k) = qᵏ⁻¹ p**, because you need k − 1 failures first.",
+      "**Mean = 1/p** and **variance = q/p²** (where q = 1 − p).",
+      "**Example (Post-UTME).** A student passes each sitting with probability 0.5. The probability of passing for the first time on the 4th sitting is (0.5)³ × 0.5 = **0.0625.**",
+      "**Example (tribesperson).** A student assumes that a course mate is from their tribe with probability 0.6, and asks course mates in turn until the first tribesperson is found. Third person asked: (0.4)² × 0.6 = **0.096.** First person asked: **0.6.** Average number asked: 1/0.6 = 1.67, so about **2.**",
+      "**Example (course mates).** With p = 0.20, the first course mate on the 5th hostel mate asked is (0.8)⁴ × 0.2 = **0.0819.** The average number asked is 1/0.2 = 5.",
+      "**Spotting it.** 'Until the first success' is geometric. 'In a fixed number of trials, how many successes' is binomial. 'Events in an interval' is Poisson."
+     ],
+     "keyPoints": [
+      "P(X = k) = qᵏ⁻¹p.",
+      "Mean 1/p; variance q/p².",
+      "'Until the first success' means geometric."
+     ],
+     "example": {
+      "problem": "A die is rolled until the first 6. Find P(first 6 on the 3rd roll) and the average number of rolls.",
+      "steps": [
+       "P = (5/6)² × (1/6) = 25/216 = 0.1157.",
+       "Mean = 1/(1/6) = 6 rolls."
+      ],
+      "answer": "0.1157 and 6"
+     },
+     "exercises": [
+      {
+       "prompt": "A student passes each sitting with probability 0.5. What is the probability of passing for the first time on the 4th sitting?",
+       "options": [
+        "0.536",
+        "0.0682",
+        "0.0562",
+        "0.0625"
+       ],
+       "correctIndex": 3,
+       "explanation": "(0.5)³ × 0.5 = 0.0625."
+      },
+      {
+       "prompt": "The mean and variance of the geometric distribution with parameter p are, respectively:",
+       "options": [
+        "1/p and q/p²",
+        "q/p and q²",
+        "p/q and q/p²",
+        "q/p and p/q²"
+       ],
+       "correctIndex": 0,
+       "explanation": "Mean 1/p, variance q/p²."
+      },
+      {
+       "prompt": "Each person asked has a 0.6 chance of being a fellow tribesperson. What is the probability that the third person asked is the first tribesperson?",
+       "options": [
+        "0.926",
+        "0.096",
+        "0.066",
+        "0.123"
+       ],
+       "correctIndex": 1,
+       "explanation": "(0.4)² × 0.6 = 0.096."
+      },
+      {
+       "prompt": "With p = 0.6, what is the probability that the first person asked is a tribesperson?",
+       "options": [
+        "0.4",
+        "0.5",
+        "0.6",
+        "0.7"
+       ],
+       "correctIndex": 2,
+       "explanation": "The first trial succeeds with probability p."
+      },
+      {
+       "prompt": "With p = 0.6, on average how many people are asked, to the nearest whole number?",
+       "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "correctIndex": 1,
+       "explanation": "1/0.6 = 1.67, which rounds to 2."
+      },
+      {
+       "prompt": "Repeating independent Bernoulli trials until the first success gives which distribution?",
+       "options": [
+        "Binomial",
+        "Bernoulli",
+        "Geometric",
+        "Poisson"
+       ],
+       "correctIndex": 2,
+       "explanation": "That is the geometric distribution."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Bin: np, npq; Poisson: λ, λ; Geometric: 1/p, q/p²"
+  },
+  {
+   "id": "normal-distribution",
+   "intro": "The normal distribution, or bell curve, is the most important continuous distribution. You will learn its parameters and shape, how to standardise a value to a z-score, how to use the table, and how to solve a real problem.",
+   "sections": [
+    {
+     "id": "shape",
+     "title": "The normal distribution",
+     "body": [
+      "The **normal (Gaussian) distribution** is the famous **bell-shaped curve.** It is **symmetric** about its centre, has a single peak there, and the **mean, median and mode are all equal.** Heights, measurement errors and exam scores are often close to normal.",
+      "We write **X ~ N(μ, σ²)**, where **μ is the mean** and **σ² is the variance** (σ is the standard deviation). So for Y ~ N(a, b²), the mean is a and the standard deviation is b. In N(10, 36) the mean is 10, the variance 36 and the standard deviation 6. In N(10, 16) the mean is 10 and the standard deviation is 4.",
+      "**The density function** is **f(x) = (1/(σ√(2π))) · e^(−½((x − μ)/σ)²).** Look at the signs: the exponent has **(x − μ)** (not x + μ), and a **minus** sign in front of ½, so the curve falls away from the mean. The total area under the curve is 1.",
+      "**Rule of thumb.** About **68%** of values lie within 1σ of the mean, **95%** within 2σ and **99.7%** within 3σ.",
+      "**Quick check:** if a question says 'find the mean of N(10, 16)', the answer is **10**, which comes straight from the notation. It is not a probability."
+     ],
+     "keyPoints": [
+      "X ~ N(μ, σ²): mean μ, variance σ².",
+      "Bell-shaped, symmetric; mean = median = mode.",
+      "68–95–99.7 rule."
+     ],
+     "example": {
+      "problem": "For X ~ N(50, 25), state the mean and standard deviation.",
+      "steps": [
+       "The mean is 50.",
+       "σ² = 25, so σ = 5."
+      ],
+      "answer": "Mean 50, standard deviation 5"
+     },
+     "exercises": [
+      {
+       "prompt": "A distribution that is symmetric, with a single central peak at the mean and a bell-shaped curve, is the ________ distribution.",
+       "options": [
+        "binomial",
+        "exponential",
+        "normal",
+        "gamma"
+       ],
+       "correctIndex": 2,
+       "explanation": "That describes the normal distribution."
+      },
+      {
+       "prompt": "If Y ~ Normal(a, b²), the mean of Y is:",
+       "options": [
+        "a",
+        "b",
+        "a²",
+        "b²"
+       ],
+       "correctIndex": 0,
+       "explanation": "The first parameter is the mean."
+      },
+      {
+       "prompt": "If X ~ N(10, 16), what is the mean?",
+       "options": [
+        "0.1056",
+        "0.8944",
+        "0.984",
+        "10"
+       ],
+       "correctIndex": 3,
+       "explanation": "The mean is 10, read straight from N(μ, σ²)."
+      },
+      {
+       "prompt": "Which is the probability density function of a normal variable with mean μ and variance σ²?",
+       "options": [
+        "(1/(σ√(2π))) e^(−½((x − μ)/σ)²)",
+        "(1/(2σ√(2π))) e^(−½((x − μ)/σ)²)",
+        "(1/(σ√(2π))) e^(+½((x − μ)/σ)²)",
+        "(1/(σ√(2π))) e^(−½((x + μ)/σ)²)"
+       ],
+       "correctIndex": 0,
+       "explanation": "The other options change the constant or a sign."
+      },
+      {
+       "prompt": "A data set is symmetric with mean = median = mode. Which distribution fits?",
+       "options": [
+        "Chi-square",
+        "Normal",
+        "Binomial",
+        "Geometric"
+       ],
+       "correctIndex": 1,
+       "explanation": "Symmetry with equal centre measures is the normal distribution."
+      }
+     ]
+    },
+    {
+     "id": "z",
+     "title": "Standardising and using the table",
+     "body": [
+      "To find a probability for any normal variable, convert it to the **standard normal Z ~ N(0, 1)** with **z = (x − μ)/σ.** The z-value counts how many standard deviations x is above (positive) or below (negative) the mean. Then read the area from the standard normal table, which gives **P(Z ≤ z).**",
+      "**Example.** X ~ N(10, 36), so σ = 6. P(X > 15): z = (15 − 10)/6 = 0.833. The table gives P(Z ≤ 0.833) ≈ 0.7977, so **P(X > 15) = 1 − 0.7977 = 0.2023.**",
+      "**Useful table values:** P(Z ≤ 0) = 0.5; P(Z ≤ 1) = 0.8413; P(Z ≤ 1.25) = 0.8944; P(Z ≤ 1.96) = 0.9750; P(Z ≤ 2) = 0.9772.",
+      "**Negative z-values** use symmetry: **P(Z ≤ −z) = 1 − P(Z ≤ z).** So P(Z ≤ −1.25) = 1 − 0.8944 = 0.1056 and P(Z > −1.25) = **0.8944.**",
+      "**Between two values:** P(a < X < b) = P(Z ≤ z_b) − P(Z ≤ z_a). For N(10, 4): P(8 < X < 12) means z from −1 to 1, which is 0.8413 − 0.1587 = **0.6827.**",
+      "**Always sketch the curve** and shade the area you want. Decide whether the area is to the left of z (read the table directly) or to the right (take 1 minus the table value)."
+     ],
+     "keyPoints": [
+      "z = (x − μ)/σ.",
+      "Table gives P(Z ≤ z); right-hand tail = 1 − table value.",
+      "P(Z ≤ −z) = 1 − P(Z ≤ z)."
+     ],
+     "example": {
+      "problem": "X ~ N(60, 25). Find P(X > 70).",
+      "steps": [
+       "z = (70 − 60)/5 = 2.",
+       "P(Z > 2) = 1 − 0.9772 = 0.0228."
+      ],
+      "answer": "0.0228"
+     },
+     "exercises": [
+      {
+       "prompt": "If X ~ Normal(10, 36), find P(X > 15).",
+       "options": [
+        "0.2023",
+        "0.7977",
+        "0.5606",
+        "0.4394"
+       ],
+       "correctIndex": 0,
+       "explanation": "z = 5/6 = 0.833 and P(Z > 0.833) = 1 − 0.7977."
+      },
+      {
+       "prompt": "What is z for x = 70 when X ~ N(60, 25)?",
+       "options": [
+        "2",
+        "10",
+        "0.5",
+        "−2"
+       ],
+       "correctIndex": 0,
+       "explanation": "z = (70 − 60)/5 = 2."
+      },
+      {
+       "prompt": "P(Z ≤ −1.25) equals:",
+       "options": [
+        "0.8944",
+        "0.1056",
+        "0.5",
+        "0.9056"
+       ],
+       "correctIndex": 1,
+       "explanation": "By symmetry, 1 − 0.8944 = 0.1056."
+      },
+      {
+       "prompt": "For a standard normal variable, P(Z ≤ 0) is:",
+       "options": [
+        "0",
+        "0.5",
+        "1",
+        "0.25"
+       ],
+       "correctIndex": 1,
+       "explanation": "The curve is symmetric about 0."
+      },
+      {
+       "prompt": "For N(10, 4), P(8 < X < 12) is about:",
+       "options": [
+        "0.6827",
+        "0.9545",
+        "0.5",
+        "0.8413"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is within 1 standard deviation of the mean."
+      }
+     ]
+    },
+    {
+     "id": "app",
+     "title": "Applying the normal distribution",
+     "body": [
+      "**Worked application: speed on campus.** Car speeds on campus are normally distributed with mean 25 km/h and variance 16 (km/h)². The speed limit is 20 km/h. So μ = 25 and σ = 4.",
+      "**Probability of exceeding the limit.** P(X > 20): z = (20 − 25)/4 = −1.25. P(Z > −1.25) = P(Z < 1.25) = **0.8944**, so about 89% of cars are faster than the limit.",
+      "**Probability of being within the limit.** P(X ≤ 20) = P(Z ≤ −1.25) = **0.1056**, which is **10.56%** of the drivers. The two answers add to 1 (0.8944 + 0.1056). Always check that complementary probabilities add up.",
+      "**Beware of the variance.** The question gives the variance 16, so the standard deviation is 4, not 16. Using 16 gives z = −0.31 and a wrong answer.",
+      "**Interpreting.** Since the average speed (25) is above the limit (20), most drivers are over the limit, which agrees with the answer 0.8944."
+     ],
+     "keyPoints": [
+      "Convert the variance to σ before standardising.",
+      "Complementary probabilities add to 1.",
+      "Compare your answer with common sense (mean above the limit means most cars are over it)."
+     ],
+     "example": {
+      "problem": "Test scores are N(60, 100). What fraction of students score above 70?",
+      "steps": [
+       "σ = 10, so z = (70 − 60)/10 = 1.",
+       "P(Z > 1) = 1 − 0.8413 = 0.1587."
+      ],
+      "answer": "About 15.9%"
+     },
+     "exercises": [
+      {
+       "prompt": "Car speeds are normal with mean 25 km/h and variance 16. The limit is 20 km/h. What is the probability that a car is faster than the limit?",
+       "options": [
+        "0%",
+        "0.8944",
+        "0.984",
+        "0.4878"
+       ],
+       "correctIndex": 1,
+       "explanation": "z = −1.25 and P(Z > −1.25) = 0.8944."
+      },
+      {
+       "prompt": "With the same speeds, what percentage of drivers keep within the limit?",
+       "options": [
+        "0%",
+        "89.44%",
+        "10.56%",
+        "Cannot be determined"
+       ],
+       "correctIndex": 2,
+       "explanation": "P(Z ≤ −1.25) = 0.1056."
+      },
+      {
+       "prompt": "The variance is 16. What do we use as σ in z = (x − μ)/σ?",
+       "options": [
+        "16",
+        "4",
+        "8",
+        "256"
+       ],
+       "correctIndex": 1,
+       "explanation": "σ = √16 = 4."
+      },
+      {
+       "prompt": "If the probability of being over a limit is 0.8944, the probability of being within it is:",
+       "options": [
+        "0.8944",
+        "0.1056",
+        "0.5",
+        "1"
+       ],
+       "correctIndex": 1,
+       "explanation": "1 − 0.8944."
+      },
+      {
+       "prompt": "About what percentage of normal data lies within 2 standard deviations of the mean?",
+       "options": [
+        "68%",
+        "95%",
+        "99.7%",
+        "50%"
+       ],
+       "correctIndex": 1,
+       "explanation": "The 68–95–99.7 rule."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "z = (x − μ)/σ; f(x) = (1/(σ√(2π))) e^(−½((x − μ)/σ)²)"
+  }
+ ]
+}

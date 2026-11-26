@@ -17,6 +17,22 @@ const BASE_DRAFT_PREFIX = 'fc_test_draft_v1_'
 const RECENT_PER_TOPIC = 5 // weak-topic accuracy looks at the latest N runs per topic
 
 let memory = null // used only when localStorage is unavailable
+const listeners = new Set()
+
+/** Subscribe to "something the student did was saved" (used by the cloud sync). */
+export function onStoreChange(fn) {
+  listeners.add(fn)
+  return () => listeners.delete(fn)
+}
+function notify() {
+  listeners.forEach((fn) => {
+    try {
+      fn()
+    } catch {
+      /* a listener must never break saving */
+    }
+  })
+}
 let scope = 'guest' // results belong to the signed-in account, so two students on one phone never mix
 
 /** Called by the auth layer whenever the signed-in student changes. */
@@ -47,6 +63,7 @@ function read() {
 
 function write(data) {
   memory = data
+  notify()
   try {
     window.localStorage.setItem(KEY_NOW(), JSON.stringify(data))
     return true
@@ -183,6 +200,7 @@ export function markStudied(courseCode, topicId) {
   } catch {
     /* non-fatal */
   }
+  notify()
 }
 
 /** Map of "COURSE::topicId" -> ISO time the notes were last opened. */
@@ -276,4 +294,106 @@ export function recordExercise(courseCode, topicId, sectionId, index, choice, ok
   } catch {
     /* non-fatal */
   }
+  notify()
+}
+
+// ----- cloud sync support -----
+// The cloud copy is a plain snapshot of everything above. Merging only ever ADDS what is
+// missing on one side, so a student's results can never be lost by logging in on a second device.
+
+const MAX_TESTS = 150
+const MAX_TOPIC_RUNS = 400
+
+/** Everything worth keeping, in a form that can be stored in Firestore. */
+export function exportProgress() {
+  const data = read()
+  const byTime = (a, b) => (a.takenAt < b.takenAt ? -1 : a.takenAt > b.takenAt ? 1 : 0)
+  return {
+    tests: [...data.tests].sort(byTime).slice(-MAX_TESTS),
+    topics: [...data.topics].sort(byTime).slice(-MAX_TOPIC_RUNS),
+    studied: readStudied(),
+    lessons: readLessons()
+  }
+}
+
+/** Is there anything saved on this device for the current account? */
+export function hasProgress() {
+  const p = exportProgress()
+  return p.tests.length + p.topics.length + Object.keys(p.studied).length + Object.keys(p.lessons).length > 0
+}
+
+/** Merge a cloud snapshot into this device. Returns true if the device gained anything. */
+export function mergeProgress(remote) {
+  if (!remote || typeof remote !== 'object') return false
+  let changed = false
+
+  const data = read()
+  const testKey = (t) => `${t.courseCode}@${t.takenAt}`
+  const seenTests = new Set(data.tests.map(testKey))
+  for (const t of Array.isArray(remote.tests) ? remote.tests : []) {
+    if (!t || !t.takenAt || !t.courseCode || seenTests.has(testKey(t))) continue
+    data.tests.push(t)
+    seenTests.add(testKey(t))
+    changed = true
+  }
+  const topicKey = (r) => `${r.courseCode}|${r.topicId}|${r.source}|${r.takenAt}`
+  const seenTopics = new Set(data.topics.map(topicKey))
+  for (const r of Array.isArray(remote.topics) ? remote.topics : []) {
+    if (!r || !r.takenAt || !r.courseCode || !r.topicId || seenTopics.has(topicKey(r))) continue
+    data.topics.push(r)
+    seenTopics.add(topicKey(r))
+    changed = true
+  }
+  if (changed) {
+    memory = data
+    try {
+      window.localStorage.setItem(KEY_NOW(), JSON.stringify(data))
+    } catch {
+      /* non-fatal */
+    }
+  }
+
+  const studied = readStudied()
+  let studiedChanged = false
+  for (const [k, at] of Object.entries(remote.studied && typeof remote.studied === 'object' ? remote.studied : {})) {
+    if (typeof at === 'string' && (!studied[k] || studied[k] < at)) {
+      studied[k] = at
+      studiedChanged = true
+    }
+  }
+  if (studiedChanged) {
+    changed = true
+    try {
+      window.localStorage.setItem(STUDIED_KEY + suffix(), JSON.stringify(studied))
+    } catch {
+      /* non-fatal */
+    }
+  }
+
+  const lessons = readLessons()
+  let lessonsChanged = false
+  for (const [k, rr] of Object.entries(remote.lessons && typeof remote.lessons === 'object' ? remote.lessons : {})) {
+    if (!rr || typeof rr !== 'object') continue
+    const local = (lessons[k] ||= {})
+    for (const [idx, ans] of Object.entries(rr)) {
+      if (idx === 'at') {
+        if (typeof ans === 'string' && (!local.at || local.at < ans)) {
+          local.at = ans
+          lessonsChanged = true
+        }
+      } else if (!local[idx] && ans && typeof ans === 'object') {
+        local[idx] = ans // the first answer ever given wins, on any device
+        lessonsChanged = true
+      }
+    }
+  }
+  if (lessonsChanged) {
+    changed = true
+    try {
+      window.localStorage.setItem(LESSON_KEY + suffix(), JSON.stringify(lessons))
+    } catch {
+      /* non-fatal */
+    }
+  }
+  return changed
 }

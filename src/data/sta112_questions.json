@@ -510,14 +510,12 @@
             "0.0189",
             "0.0277",
             "0.0463",
-            "0.0821",
+            "0.0819",
             "None of the above"
           ],
-          "correctIndex": null,
-          "explanation": "(0.8)⁴ × 0.2 = 0.08192, which is about 0.0819. Option D (0.0821) is close but not equal.",
-          "source": "STA 112, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)",
-          "needsReview": true,
-          "reviewNote": "Option D looks like a misprint of 0.0819. Needs the key."
+          "correctIndex": 3,
+          "explanation": "The first success on the 5th ask means four failures then a success: (0.8)⁴ × 0.2 = 0.08192, which is 0.0819.",
+          "source": "STA 112, June 2025 (typed; no answer key supplied, so answers are set from standard computing textbooks and by calculation)"
         }
       ]
     },

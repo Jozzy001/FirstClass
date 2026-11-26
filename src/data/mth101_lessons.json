@@ -1,0 +1,2701 @@
+{
+ "courseCode": "MTH101",
+ "topics": [
+  {
+   "id": "complex-numbers",
+   "intro": "Complex numbers look strange at first, but they follow ordinary algebra with one extra rule: i² = −1. Learn that rule, the conjugate and the polar form, and the rest is practice.",
+   "sections": [
+    {
+     "id": "basics",
+     "title": "Imaginary numbers and the form a + bi",
+     "body": [
+      "There is no real number whose square is −1. So mathematicians define one: **i = √−1**, so **i² = −1**. A **complex number** is written **z = a + bi**, where a and b are real. We call **a the real part** and **b the imaginary part** (b itself, not bi).",
+      "Powers of i repeat in a cycle of four: i¹ = i, i² = −1, i³ = −i, i⁴ = 1, then it starts over.",
+      "**Add and subtract** by treating the real parts together and the imaginary parts together: (3 + 2i) + (1 − 5i) = 4 − 3i.",
+      "**Multiply** by expanding brackets like normal algebra, then replace i² with −1. Example: (2 + 5i)(8 − 2i) = 16 − 4i + 40i − 10i² = 16 + 36i + 10 = **26 + 36i**. The last step is the key one: −10i² becomes +10."
+     ],
+     "keyPoints": [
+      "i² = −1; powers of i repeat every four.",
+      "Multiply by expanding, then replace i² with −1.",
+      "To compare, match real parts and imaginary parts separately."
+     ],
+     "example": {
+      "problem": "Calculate (3 + 2i)(1 − 4i).",
+      "steps": [
+       "Expand: 3·1 + 3·(−4i) + 2i·1 + 2i·(−4i) = 3 − 12i + 2i − 8i².",
+       "Collect: 3 − 10i − 8i².",
+       "Replace i² with −1: 3 − 10i + 8 = 11 − 10i."
+      ],
+      "answer": "11 − 10i"
+     },
+     "exercises": [
+      {
+       "prompt": "What is i³?",
+       "options": [
+        "i",
+        "−i",
+        "1",
+        "−1"
+       ],
+       "correctIndex": 1,
+       "explanation": "i³ = i² × i = (−1) × i = −i."
+      },
+      {
+       "prompt": "Find (2 + 5i)(8 − 2i).",
+       "options": [
+        "16 + 44i",
+        "16 − 44i",
+        "26 − 36i",
+        "26 + 36i"
+       ],
+       "correctIndex": 3,
+       "explanation": "Expand: 16 − 4i + 40i − 10i². Since i² = −1, −10i² = +10. So 16 + 10 + 36i = 26 + 36i.",
+       "hint": "Remember i² = −1."
+      },
+      {
+       "prompt": "Simplify (4 − i)(2 + 5i) − (6 + 3i)(2 − 2i).",
+       "options": [
+        "−5 + 24i",
+        "−5 − 24i",
+        "5 + 24i",
+        "5 − 24i"
+       ],
+       "correctIndex": 0,
+       "explanation": "First product: 8 + 20i − 2i − 5i² = 13 + 18i. Second: 12 − 12i + 6i − 6i² = 18 − 6i. Subtract: (13 − 18) + (18 + 6)i = −5 + 24i."
+      },
+      {
+       "prompt": "Given x + iy = (5 − 7i)(1 + i), find x and y.",
+       "options": [
+        "x = −12, y = 2",
+        "x = 12, y = −2",
+        "x = −2, y = 12",
+        "x = 2, y = −12"
+       ],
+       "correctIndex": 1,
+       "explanation": "Expand: 5 + 5i − 7i − 7i² = 5 + 7 − 2i = 12 − 2i. So x = 12 and y = −2.",
+       "hint": "Two complex numbers are equal when their real parts and imaginary parts match."
+      }
+     ]
+    },
+    {
+     "id": "conj",
+     "title": "The conjugate and division",
+     "body": [
+      "The **conjugate** of z = a + bi is **z̄ = a − bi**: change the sign of the imaginary part. Multiplying a number by its conjugate removes i: **(a + bi)(a − bi) = a² + b²**, which is always real. For example (1 + 2i)(1 − 2i) = 1 + 4 = 5.",
+      "Also useful: **z − z̄ = 2bi** and **z + z̄ = 2a**. For z = −4 + 5i: z − z̄ = 10i, so (z − z̄) ÷ 4 = 10i ÷ 4 = **5i/2**.",
+      "**To divide**, multiply the top and bottom by the conjugate of the bottom. That makes the denominator real. Example: (3 − 4i) ÷ (2 − 7i). The conjugate of 2 − 7i is 2 + 7i. Top: (3 − 4i)(2 + 7i) = 6 + 21i − 8i − 28i² = 34 + 13i. Bottom: 2² + 7² = 53. So the answer is **34/53 + 13i/53**."
+     ],
+     "keyPoints": [
+      "Conjugate: flip the sign of the imaginary part.",
+      "(a + bi)(a − bi) = a² + b².",
+      "Divide by multiplying top and bottom by the conjugate of the bottom."
+     ],
+     "example": {
+      "problem": "Write (3 + 4i) ÷ (1 + 2i) in the form a + bi.",
+      "steps": [
+       "Multiply top and bottom by 1 − 2i.",
+       "Top: (3 + 4i)(1 − 2i) = 3 − 6i + 4i − 8i² = 11 − 2i.",
+       "Bottom: 1² + 2² = 5. So the answer is 11/5 − 2i/5."
+      ],
+      "answer": "2.2 − 0.4i"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the conjugate of 3 − 4i?",
+       "options": [
+        "−3 + 4i",
+        "3 + 4i",
+        "−3 − 4i",
+        "4 − 3i"
+       ],
+       "correctIndex": 1,
+       "explanation": "Change only the sign of the imaginary part: 3 + 4i."
+      },
+      {
+       "prompt": "What is (1 + 2i)(1 − 2i)?",
+       "options": [
+        "−3",
+        "1",
+        "5",
+        "1 − 4i"
+       ],
+       "correctIndex": 2,
+       "explanation": "a² + b² = 1 + 4 = 5."
+      },
+      {
+       "prompt": "If z = −4 + 5i, find (z − z̄) ÷ 4.",
+       "options": [
+        "(−9 + 9i)/2",
+        "−5i/2",
+        "5i/2",
+        "−9/2"
+       ],
+       "correctIndex": 2,
+       "explanation": "z̄ = −4 − 5i, so z − z̄ = 10i. Then 10i ÷ 4 = 5i/2."
+      },
+      {
+       "prompt": "Find z₁/z₂ if z₁ = 3 − 4i and z₂ = 2 − 7i.",
+       "options": [
+        "−22/53 + 13i/53",
+        "34/53 + 13i/53",
+        "−34/53 + 13i/53",
+        "34/53 − 13i/53"
+       ],
+       "correctIndex": 1,
+       "explanation": "Multiply top and bottom by 2 + 7i. Top = 34 + 13i. Bottom = 4 + 49 = 53.",
+       "hint": "Use the conjugate of the bottom."
+      }
+     ]
+    },
+    {
+     "id": "quad",
+     "title": "Quadratics with no real roots",
+     "body": [
+      "For ax² + bx + c = 0, the **discriminant is b² − 4ac**. If it is negative, there is **no real solution**, but there are two complex ones.",
+      "Test x² − 2x + 2 = 0: b² − 4ac = 4 − 8 = −4, which is negative. So there is **no real solution**. If the question asks for complex roots, use the formula x = (−b ± √(b² − 4ac)) ÷ 2a. Here √−4 = 2i, so x = (2 ± 2i) ÷ 2 = **1 ± i**.",
+      "Notice the roots come as a conjugate pair (1 + i and 1 − i). This always happens when a, b and c are real."
+     ],
+     "keyPoints": [
+      "Discriminant b² − 4ac < 0 gives no real roots.",
+      "Real-coefficient quadratics give conjugate pairs of complex roots."
+     ],
+     "example": {
+      "problem": "Solve x² + 4x + 13 = 0.",
+      "steps": [
+       "b² − 4ac = 16 − 52 = −36, so √ = 6i.",
+       "x = (−4 ± 6i) ÷ 2.",
+       "x = −2 ± 3i."
+      ],
+      "answer": "x = −2 ± 3i"
+     },
+     "exercises": [
+      {
+       "prompt": "Solve x² − 2x + 2 = 0 where x is a real number.",
+       "options": [
+        "1 ± i",
+        "± i",
+        "1, 2",
+        "No real solution"
+       ],
+       "correctIndex": 3,
+       "explanation": "The discriminant is 4 − 8 = −4 < 0, so there is no real root. (The complex roots are 1 ± i.)",
+       "hint": "Read the question: x is real."
+      },
+      {
+       "prompt": "What are the complex roots of x² − 2x + 2 = 0?",
+       "options": [
+        "1 ± i",
+        "−1 ± i",
+        "2 ± i",
+        "1 ± 2i"
+       ],
+       "correctIndex": 0,
+       "explanation": "x = (2 ± √−4) ÷ 2 = (2 ± 2i) ÷ 2 = 1 ± i."
+      },
+      {
+       "prompt": "What is the discriminant of x² + 2x + 5 = 0?",
+       "options": [
+        "−16",
+        "16",
+        "−4",
+        "24"
+       ],
+       "correctIndex": 0,
+       "explanation": "b² − 4ac = 4 − 20 = −16. Negative, so the roots are complex."
+      }
+     ]
+    },
+    {
+     "id": "polar",
+     "title": "Modulus, argument and polar form",
+     "body": [
+      "Plot z = a + bi as the point (a, b) on a plane. The **modulus** is the distance from the origin: **r = |z| = √(a² + b²)**. The **argument θ** is the angle from the positive real axis. Use **tan θ = b ÷ a** and then check which quadrant the point is in.",
+      "The **polar form** is **z = r(cos θ + i sin θ)**.",
+      "Worked case: z = 1 − i√3. Modulus: r = √(1 + 3) = 2. The point (1, −√3) is in the **fourth quadrant**, and tan θ = −√3 gives a reference angle of 60°. In the fourth quadrant, θ = 360° − 60° = **300°** (or 5π/3 radians; or −60°). So z = **2(cos 300° + i sin 300°)**.",
+      "Common mistake: writing a minus sign in the polar form, like cos θ − i sin θ. The form is always **+ i sin θ**. The sign of the imaginary part is carried by the angle."
+     ],
+     "keyPoints": [
+      "r = √(a² + b²); tan θ = b ÷ a, then fix the quadrant.",
+      "Polar form: r(cos θ + i sin θ).",
+      "Fourth quadrant: θ = 360° − reference angle."
+     ],
+     "example": {
+      "problem": "Write −1 + i in polar form.",
+      "steps": [
+       "r = √(1 + 1) = √2.",
+       "Second quadrant, reference angle 45°, so θ = 135° (3π/4).",
+       "z = √2(cos 135° + i sin 135°)."
+      ],
+      "answer": "√2 (cos 135° + i sin 135°)"
+     },
+     "exercises": [
+      {
+       "prompt": "What is |3 + 4i|?",
+       "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+       ],
+       "correctIndex": 2,
+       "explanation": "√(9 + 16) = 5."
+      },
+      {
+       "prompt": "Express z = 1 − i√3 in polar form.",
+       "options": [
+        "2(cos 120° + i sin 120°)",
+        "2(cos 300° + i sin 300°)",
+        "2(cos 300° − i sin 300°)",
+        "2(cos 60° + i sin 60°)"
+       ],
+       "correctIndex": 1,
+       "explanation": "r = 2, and the point is in the fourth quadrant, so θ = 300° (5π/3)."
+      },
+      {
+       "prompt": "What is the modulus of −3 + 4i?",
+       "options": [
+        "−5",
+        "1",
+        "5",
+        "7"
+       ],
+       "correctIndex": 2,
+       "explanation": "√(9 + 16) = 5. A modulus is never negative."
+      },
+      {
+       "prompt": "In which quadrant is the point for z = −1 + i, and what is its argument?",
+       "options": [
+        "First quadrant, 45°",
+        "Second quadrant, 135°",
+        "Third quadrant, 225°",
+        "Fourth quadrant, 315°"
+       ],
+       "correctIndex": 1,
+       "explanation": "Real part negative and imaginary part positive is the second quadrant. The reference angle is 45°, so θ = 180° − 45° = 135°."
+      }
+     ]
+    },
+    {
+     "id": "log",
+     "title": "The logarithm of a complex number",
+     "body": [
+      "Write z in polar form with modulus r and argument θ. Then **ln z = ln r + i(θ + 2πn)**, where n is any integer. The 2πn appears because the angle θ describes the same point as θ + 2π, θ + 4π and so on, so a complex logarithm has infinitely many values. The **principal value** takes n = 0.",
+      "Example: ln(1 + i). Modulus r = √2. Argument θ = π/4. So **ln(1 + i) = ln √2 + i(π/4 + 2πn)**. Note n is an integer: it is a plain whole number, not i."
+     ],
+     "keyPoints": [
+      "ln z = ln r + i(θ + 2πn).",
+      "Principal value: n = 0."
+     ],
+     "example": {
+      "problem": "Find the principal value of ln(i).",
+      "steps": [
+       "i has modulus 1 and argument π/2.",
+       "ln i = ln 1 + i(π/2) = iπ/2."
+      ],
+      "answer": "iπ/2"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the general value of ln(1 + i)?",
+       "options": [
+        "ln√2 + i(π/4 + 2πn)",
+        "ln√2 + i(π/4 + 2πi)",
+        "ln√2",
+        "ln√2 − i(π/4 + 2πn)"
+       ],
+       "correctIndex": 0,
+       "explanation": "r = √2 and θ = π/4. The general value adds 2πn to the angle."
+      },
+      {
+       "prompt": "What is the principal value of ln(−1)?",
+       "options": [
+        "0",
+        "iπ",
+        "−iπ",
+        "1"
+       ],
+       "correctIndex": 1,
+       "explanation": "−1 has modulus 1 and argument π, so ln(−1) = ln 1 + iπ = iπ."
+      },
+      {
+       "prompt": "Why does a complex logarithm have many values?",
+       "options": [
+        "Because the modulus can vary",
+        "Because adding 2π to the angle gives the same point",
+        "Because i can be positive or negative",
+        "Because ln is not a function"
+       ],
+       "correctIndex": 1,
+       "explanation": "The angles θ, θ + 2π, θ + 4π … all describe the same complex number."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "i² = −1;  (a + bi)(a − bi) = a² + b²;  z = r(cos θ + i sin θ)"
+  },
+  {
+   "id": "sequences-series-induction",
+   "intro": "This topic is mostly pattern-spotting plus a handful of formulas. Learn what each formula needs (a, d, r, n) and always check your answer on the first few terms.",
+   "sections": [
+    {
+     "id": "nth",
+     "title": "Finding the nth term of a pattern",
+     "body": [
+      "A **sequence** is a list of numbers following a rule, and **Uₙ** (or Tₙ) is the nth term. To find the rule, look at how the terms change.",
+      "If the **same amount is added each time**, it is an **arithmetic progression (AP)**: Uₙ = a + (n − 1)d, where a is the first term and d the common difference. For 3, 5, 7, 9, … we have a = 3 and d = 2, so Uₙ = 3 + 2(n − 1) = **2n + 1**.",
+      "If each term is **multiplied by the same number**, it is a **geometric progression (GP)**: Uₙ = a rⁿ⁻¹, where r is the common ratio.",
+      "**Check your rule** by putting n = 1, 2, 3 into it and comparing with the sequence. It takes ten seconds and catches most mistakes.",
+      "Real-life problems hide an AP. A starting salary of ₦500,000 with a yearly rise of ₦20,000 has a = 500,000 and d = 20,000. The 10th-year salary is a + 9d = 500,000 + 180,000 = **₦680,000**. Note the 10th year needs only 9 increases."
+     ],
+     "keyPoints": [
+      "AP: Uₙ = a + (n − 1)d. GP: Uₙ = a rⁿ⁻¹.",
+      "Always test your rule with n = 1, 2, 3."
+     ],
+     "example": {
+      "problem": "Find the 20th term of the AP 7, 11, 15, …",
+      "steps": [
+       "a = 7 and d = 4.",
+       "U₂₀ = a + 19d = 7 + 19 × 4 = 7 + 76.",
+       "U₂₀ = 83."
+      ],
+      "answer": "83"
+     },
+     "exercises": [
+      {
+       "prompt": "Find the nth term of 3, 5, 7, 9, …",
+       "options": [
+        "(n + 1)²",
+        "2n + 1",
+        "(2n)²",
+        "2(n + 1)"
+       ],
+       "correctIndex": 1,
+       "explanation": "It is an AP with a = 3 and d = 2. Uₙ = 3 + 2(n − 1) = 2n + 1. Check: n = 1 gives 3, n = 2 gives 5."
+      },
+      {
+       "prompt": "A salary starts at ₦500,000 and rises by ₦20,000 each year. What is it in the 10th year?",
+       "options": [
+        "₦600,000",
+        "₦680,000",
+        "₦700,000",
+        "₦720,000"
+       ],
+       "correctIndex": 1,
+       "explanation": "Nine increases have happened by year 10: 500,000 + 9 × 20,000 = 680,000.",
+       "hint": "Count the increases, not the years."
+      },
+      {
+       "prompt": "A falling body drops 16 ft in the 1st second, 48 ft in the 2nd, 80 ft in the 3rd, and so on. How far in the 15th second?",
+       "options": [
+        "448",
+        "464",
+        "480",
+        "496"
+       ],
+       "correctIndex": 1,
+       "explanation": "AP with a = 16 and d = 32. U₁₅ = 16 + 14 × 32 = 464 ft."
+      },
+      {
+       "prompt": "The GP 8, 2, 1/2, … has nth term:",
+       "options": [
+        "2ⁿ⁺¹",
+        "2⁵⁻²ⁿ",
+        "2⁻²ⁿ",
+        "32(2)⁻²ⁿ"
+       ],
+       "correctIndex": 1,
+       "explanation": "a = 8 and r = 1/4. Uₙ = 8 (1/4)ⁿ⁻¹ = 2³ · 2⁻²⁽ⁿ⁻¹⁾ = 2⁵⁻²ⁿ. Check: n = 1 gives 2³ = 8.",
+       "hint": "Write 8 and 1/4 as powers of 2."
+      }
+     ]
+    },
+    {
+     "id": "sums",
+     "title": "Adding up an AP or a GP",
+     "body": [
+      "The **sum of the first n terms** is written Sₙ. For an AP: **Sₙ = n/2 × (2a + (n − 1)d)**, or n/2 × (first + last). For a GP: **Sₙ = a(rⁿ − 1) ÷ (r − 1)** (when r ≠ 1). If |r| < 1 the GP **converges** and the infinite sum is **S∞ = a ÷ (1 − r)**.",
+      "**A neat trick:** if you are given Sₙ, the nth term is **Uₙ = Sₙ − Sₙ₋₁**. For Sₙ = n(n + 2): Sₙ₋₁ = (n − 1)(n + 1) = n² − 1. So Uₙ = n² + 2n − n² + 1 = **2n + 1**.",
+      "Example: sum of the AP 3, 5, 7, … to 10 terms. a = 3, d = 2, last = 3 + 9 × 2 = 21. S₁₀ = 10/2 × (3 + 21) = **120**."
+     ],
+     "keyPoints": [
+      "AP: Sₙ = n/2 (2a + (n − 1)d). GP: Sₙ = a(rⁿ − 1) ÷ (r − 1).",
+      "Uₙ = Sₙ − Sₙ₋₁. S∞ = a ÷ (1 − r) when |r| < 1."
+     ],
+     "example": {
+      "problem": "Find the sum of the first 8 terms of 5, 10, 20, …",
+      "steps": [
+       "GP with a = 5 and r = 2.",
+       "S₈ = 5(2⁸ − 1) ÷ (2 − 1) = 5 × 255.",
+       "S₈ = 1,275."
+      ],
+      "answer": "1,275"
+     },
+     "exercises": [
+      {
+       "prompt": "The sum of n terms of an AP is n(n + 2) for all n. What is the nth term?",
+       "options": [
+        "2n + 1",
+        "2n + 2",
+        "2n + 3",
+        "2(n + 2)"
+       ],
+       "correctIndex": 0,
+       "explanation": "Uₙ = Sₙ − Sₙ₋₁ = n(n + 2) − (n − 1)(n + 1) = 2n + 1."
+      },
+      {
+       "prompt": "Find the sum of the first 10 terms of 3, 5, 7, …",
+       "options": [
+        "100",
+        "110",
+        "120",
+        "130"
+       ],
+       "correctIndex": 2,
+       "explanation": "S₁₀ = 10/2 × (2·3 + 9·2) = 5 × 24 = 120."
+      },
+      {
+       "prompt": "Find the sum of the GP 2, 6, 18, 54, 162 (five terms).",
+       "options": [
+        "242",
+        "244",
+        "486",
+        "324"
+       ],
+       "correctIndex": 0,
+       "explanation": "a = 2, r = 3, n = 5. S = 2(3⁵ − 1) ÷ 2 = 242."
+      },
+      {
+       "prompt": "What is the sum to infinity of 1 + 1/2 + 1/4 + …?",
+       "options": [
+        "1",
+        "1.5",
+        "2",
+        "Infinity"
+       ],
+       "correctIndex": 2,
+       "explanation": "a = 1 and r = 1/2. S∞ = 1 ÷ (1 − 1/2) = 2."
+      }
+     ]
+    },
+    {
+     "id": "sigma",
+     "title": "Sigma notation and standard sums",
+     "body": [
+      "The symbol **Σ** means 'add up'. **Σ 2ʳ for r = 3 to 7** means 2³ + 2⁴ + 2⁵ + 2⁶ + 2⁷ = 8 + 16 + 32 + 64 + 128 = **248**. Watch the start value: it begins at r = 3, not r = 1.",
+      "Three standard results (for r = 1 to n): **Σ r = n(n + 1) ÷ 2**, **Σ r² = n(n + 1)(2n + 1) ÷ 6**, **Σ r³ = [n(n + 1) ÷ 2]²**. A constant added n times is n × the constant.",
+      "So 6 Σ r² = **n(n + 1)(2n + 1)**: the 6 cancels the denominator. Check with n = 3: Σ r² = 1 + 4 + 9 = 14, and 3 × 4 × 7 ÷ 6 = 14. ✓.",
+      "**Other types of series to know.** The **p-series** Σ 1/nᵖ (n = 1 to ∞) **converges when p > 1** and diverges when p ≤ 1. So Σ 1/n² converges, while Σ 1/n (p = 1) diverges."
+     ],
+     "keyPoints": [
+      "Σ r = n(n + 1)/2; Σ r² = n(n + 1)(2n + 1)/6; Σ r³ = [n(n + 1)/2]².",
+      "p-series converges for p > 1."
+     ],
+     "example": {
+      "problem": "Evaluate Σ (2r + 1) for r = 1 to 5.",
+      "steps": [
+       "Terms: 3, 5, 7, 9, 11.",
+       "Add: 3 + 5 + 7 + 9 + 11 = 35.",
+       "Check with formulas: 2 × 15 + 5 = 35 ✓."
+      ],
+      "answer": "35"
+     },
+     "exercises": [
+      {
+       "prompt": "Evaluate Σ 2ʳ for r = 3 to 7.",
+       "options": [
+        "252",
+        "248",
+        "254",
+        "244"
+       ],
+       "correctIndex": 1,
+       "explanation": "8 + 16 + 32 + 64 + 128 = 248."
+      },
+      {
+       "prompt": "What is Σ r² for r = 1 to n?",
+       "options": [
+        "(n + 1)(2n + 1)/6",
+        "n(n + 1)(2n + 1)/6",
+        "n(n + 1)(3n + 2)/6",
+        "n²(n + 1)/2"
+       ],
+       "correctIndex": 1,
+       "explanation": "The standard result is n(n + 1)(2n + 1) ÷ 6. Check with n = 2: 1 + 4 = 5 and 2 × 3 × 5 ÷ 6 = 5."
+      },
+      {
+       "prompt": "What is 6 Σ r² for r = 1 to n?",
+       "options": [
+        "(n + 1)(2n + 1)",
+        "n(n + 2)(2n + 1)",
+        "n(n + 1)(2n + 1)",
+        "n(n + 1)(2n + 1)/6"
+       ],
+       "correctIndex": 2,
+       "explanation": "Multiply the standard result by 6: n(n + 1)(2n + 1)."
+      },
+      {
+       "prompt": "The p-series Σ 1/nᵖ converges if:",
+       "options": [
+        "p < 1",
+        "p > 1",
+        "p = 1",
+        "p ≤ 1"
+       ],
+       "correctIndex": 1,
+       "explanation": "The p-series converges only when p > 1."
+      },
+      {
+       "prompt": "Evaluate Σ r for r = 1 to 10.",
+       "options": [
+        "45",
+        "55",
+        "100",
+        "110"
+       ],
+       "correctIndex": 1,
+       "explanation": "n(n + 1) ÷ 2 = 10 × 11 ÷ 2 = 55."
+      }
+     ]
+    },
+    {
+     "id": "induction",
+     "title": "Proof by mathematical induction",
+     "body": [
+      "Induction proves a statement for **every positive integer n**. It is like a line of dominoes. There are three moves.",
+      "**Step 1, base case:** show the statement is true for **n = 1**.",
+      "**Step 2, assumption:** **assume it is true for n = k** (this is only an assumption, never n = k + 1).",
+      "**Step 3, inductive step:** using that assumption, **show it is true for n = k + 1**. Then, since it is true for 1, and true for k + 1 whenever true for k, it is true for all n.",
+      "Example: prove Σ 1/(r(r + 1)) from r = 1 to n equals n/(n + 1). **Base case (n = 1):** left side = 1/2, and right side = 1/2 ✓. **Assume** the sum to k equals k/(k + 1). **Inductive step:** the sum to k + 1 is k/(k + 1) + 1/((k + 1)(k + 2)). Combine over a common denominator: [k(k + 2) + 1] ÷ [(k + 1)(k + 2)] = (k + 1)² ÷ [(k + 1)(k + 2)] = **(k + 1)/(k + 2)**, which is the formula with n = k + 1. ✓"
+     ],
+     "keyPoints": [
+      "Base case n = 1; assume n = k; prove n = k + 1.",
+      "In the last step, show you reach the same formula with n replaced by k + 1."
+     ],
+     "example": {
+      "problem": "Prove 1 + 2 + … + n = n(n + 1)/2 by induction.",
+      "steps": [
+       "Base case: n = 1 gives 1 on both sides ✓.",
+       "Assume 1 + … + k = k(k + 1)/2. Add the (k + 1)th term: k(k + 1)/2 + (k + 1).",
+       "Factor: (k + 1)(k + 2)/2, which is the formula with n = k + 1. ✓"
+      ],
+      "answer": "Proven"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is NOT a valid step in induction?",
+       "options": [
+        "Show the statement is true for n = 1",
+        "Assume the statement is true for n = k",
+        "Assume the statement is true for n = k + 1",
+        "Show that truth for n = k implies truth for n = k + 1"
+       ],
+       "correctIndex": 2,
+       "explanation": "You assume n = k, and you must prove n = k + 1. Assuming n = k + 1 would be assuming what you want to prove."
+      },
+      {
+       "prompt": "In proving Σ 1/(r(r + 1)) = n/(n + 1) by induction, the inductive step at n = k + 1 simplifies:",
+       "options": [
+        "1/(k(k + 1)) + k/(k + 1)",
+        "k/(k + 1) + 1/((k + 1)(k + 2))",
+        "(k + 1)/(k + 2) + k/(k + 1)",
+        "k/(k + 1) + 1/(k(k + 1))"
+       ],
+       "correctIndex": 1,
+       "explanation": "The sum to k + 1 is the sum to k, which is k/(k + 1), plus the (k + 1)th term, 1/((k + 1)(k + 2))."
+      },
+      {
+       "prompt": "What does it simplify to?",
+       "options": [
+        "k/(k + 2)",
+        "(k + 1)/(k + 2)",
+        "(k + 2)/(k + 1)",
+        "1/(k + 2)"
+       ],
+       "correctIndex": 1,
+       "explanation": "[k(k + 2) + 1] ÷ [(k + 1)(k + 2)] = (k + 1)² ÷ [(k + 1)(k + 2)] = (k + 1)/(k + 2)."
+      },
+      {
+       "prompt": "What is the base case for a statement about all positive integers?",
+       "options": [
+        "n = 0",
+        "n = 1",
+        "n = k",
+        "n = k + 1"
+       ],
+       "correctIndex": 1,
+       "explanation": "Start with the smallest value, n = 1."
+      }
+     ]
+    },
+    {
+     "id": "maclaurin",
+     "title": "Maclaurin series",
+     "body": [
+      "Many functions can be written as an infinite sum of powers of x, called a **Maclaurin series**. Learn these standard ones.",
+      "**eˣ = 1 + x + x²/2! + x³/3! + …**   **sin x = x − x³/3! + x⁵/5! − …**   **cos x = 1 − x²/2! + x⁴/4! − …**   **ln(1 + x) = x − x²/2 + x³/3 − …** (for −1 < x ≤ 1).",
+      "To expand a **composite function** such as e^(sin x), substitute one series into the other and keep terms up to the power asked for. Let u = sin x = x − x³/6. Then e^u = 1 + u + u²/2 + u³/6 + u⁴/24. Substituting: u = x − x³/6, u² = x² − x⁴/3, u³ = x³ and u⁴ = x⁴ (to this order). Collect: 1 + x + x²/2 + (−1/6 + 1/6)x³ + (−1/6 + 1/24)x⁴. The x³ terms cancel, and the x⁴ coefficient is −1/8. So **e^(sin x) = 1 + x + x²/2 − x⁴/8 + …**"
+     ],
+     "keyPoints": [
+      "eˣ, sin x, cos x, ln(1 + x) standard series.",
+      "For a composite, substitute and collect powers."
+     ],
+     "example": {
+      "problem": "Write the first three non-zero terms of ln(1 + 2x).",
+      "steps": [
+       "Use ln(1 + u) = u − u²/2 + u³/3 with u = 2x.",
+       "u = 2x, u² = 4x², u³ = 8x³.",
+       "Result: 2x − 2x² + 8x³/3."
+      ],
+      "answer": "2x − 2x² + (8/3)x³"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is the Maclaurin series of eˣ?",
+       "options": [
+        "1 + x + x²/2 + x³/6 + …",
+        "x − x³/6 + …",
+        "1 − x²/2 + …",
+        "x − x²/2 + …"
+       ],
+       "correctIndex": 0,
+       "explanation": "eˣ = Σ xⁿ/n! = 1 + x + x²/2! + x³/3! + …"
+      },
+      {
+       "prompt": "What is the Maclaurin series of e^(sin x), to x⁴?",
+       "options": [
+        "1 + x + x²/2 − x⁴/8",
+        "x + x²/2 + x⁴/8",
+        "1 + x + x²/2 − x³/3",
+        "x + x²/2 − x³/3"
+       ],
+       "correctIndex": 0,
+       "explanation": "Substitute sin x = x − x³/6 into eᵘ and collect terms. The x³ terms cancel and the x⁴ coefficient is −1/8."
+      },
+      {
+       "prompt": "The first three terms of cos x are:",
+       "options": [
+        "1 − x²/2 + x⁴/24",
+        "x − x³/6 + x⁵/120",
+        "1 + x²/2 + x⁴/24",
+        "1 − x + x²/2"
+       ],
+       "correctIndex": 0,
+       "explanation": "cos x = 1 − x²/2! + x⁴/4! − …, and 4! = 24."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "AP: Uₙ = a + (n−1)d;  GP: Uₙ = a rⁿ⁻¹;  Σr² = n(n+1)(2n+1)/6"
+  },
+  {
+   "id": "quadratics-inequalities",
+   "intro": "Almost everything here starts from two facts: the sum and product of the roots, and a sign check for inequalities. Learn those two and the rest is substitution.",
+   "sections": [
+    {
+     "id": "roots",
+     "title": "Sum and product of roots",
+     "body": [
+      "For **ax² + bx + c = 0** with roots **α and β**, you do not need to solve the equation to know two things: **α + β = −b/a** and **αβ = c/a**. They come from comparing the equation with a(x − α)(x − β) = a[x² − (α + β)x + αβ].",
+      "Example: 2x² + 6x − 5 = 0 gives α + β = −6/2 = **−3** and αβ = **−5/2**.",
+      "Anything symmetric in α and β can be written with these two numbers. The most useful: **α² + β² = (α + β)² − 2αβ**. For the example: 9 − 2(−5/2) = 9 + 5 = **14**.",
+      "In general, if the equation is px² − qx + r = 0, then α + β = q/p and αβ = r/p, so **α² + β² = q²/p² − 2r/p**.",
+      "Use these to find unknown constants. If m and n are the roots of x² + kx + 20 = 0 and m² + n² = 24: m + n = −k and mn = 20. So (m + n)² = 24 + 2(20) = 64. So k² = 64 and **k = 8 or −8**."
+     ],
+     "keyPoints": [
+      "α + β = −b/a; αβ = c/a.",
+      "α² + β² = (α + β)² − 2αβ."
+     ],
+     "example": {
+      "problem": "If α and β are roots of x² − 5x + 3 = 0, find α² + β².",
+      "steps": [
+       "α + β = 5 and αβ = 3.",
+       "α² + β² = 25 − 2 × 3 = 19."
+      ],
+      "answer": "19"
+     },
+     "exercises": [
+      {
+       "prompt": "For wx² + yx + z = 0, the sum of the roots is:",
+       "options": [
+        "z/w",
+        "−y/w",
+        "y/w",
+        "w/z"
+       ],
+       "correctIndex": 1,
+       "explanation": "Sum = −b/a = −y/w."
+      },
+      {
+       "prompt": "α and β are the roots of px² − qx + r = 0. What is α² + β²?",
+       "options": [
+        "q²/p² − 2r/q",
+        "q²/p² − 2r/p",
+        "p²/q² − 2r/p",
+        "q²/p² + 2r/p"
+       ],
+       "correctIndex": 1,
+       "explanation": "α + β = q/p and αβ = r/p, so α² + β² = (q/p)² − 2(r/p) = q²/p² − 2r/p.",
+       "hint": "Use (α + β)² − 2αβ."
+      },
+      {
+       "prompt": "m and n are the roots of x² + kx + 20 = 0 and m² + n² = 24. Find k.",
+       "options": [
+        "k = 8 only",
+        "k = ±8",
+        "k = ±4",
+        "k = ±20"
+       ],
+       "correctIndex": 1,
+       "explanation": "m + n = −k and mn = 20, so k² = (m + n)² = 24 + 40 = 64. So k = ±8."
+      },
+      {
+       "prompt": "What is α + β for 2x² + 6x − 5 = 0?",
+       "options": [
+        "3",
+        "−3",
+        "5/2",
+        "−5/2"
+       ],
+       "correctIndex": 1,
+       "explanation": "−b/a = −6/2 = −3."
+      }
+     ]
+    },
+    {
+     "id": "newroots",
+     "title": "Forming a new equation from the old roots",
+     "body": [
+      "To build an equation with given roots, use **x² − (sum of new roots)x + (product of new roots) = 0**. Then multiply through to clear fractions.",
+      "Take 2x² + 6x − 5 = 0 again (α + β = −3, αβ = −5/2, α² + β² = 14).",
+      "**Roots α/β and β/α.** Sum = (α² + β²) ÷ αβ = 14 ÷ (−5/2) = −28/5. Product = 1. Equation: x² + (28/5)x + 1 = 0, i.e. **5x² + 28x + 5 = 0**.",
+      "**Roots α + 1/β and β + 1/α.** Sum = (α + β) + (α + β)/(αβ) = −3 + 6/5 = −9/5. Product = αβ + 1 + 1 + 1/(αβ) = −5/2 + 2 − 2/5 = −9/10. Equation: x² + (9/5)x − 9/10 = 0, i.e. **10x² + 18x − 9 = 0**.",
+      "**Roots α² and β².** Sum = 14. Product = (αβ)² = 25/4. Equation: x² − 14x + 25/4 = 0, i.e. 4x² − 56x + 25 = 0."
+     ],
+     "keyPoints": [
+      "New equation: x² − (new sum)x + (new product) = 0.",
+      "Write every new sum and product with α + β and αβ."
+     ],
+     "example": {
+      "problem": "If α and β are roots of x² − 5x + 3 = 0, form the equation with roots 2α and 2β.",
+      "steps": [
+       "New sum = 2(α + β) = 10.",
+       "New product = 4αβ = 12.",
+       "Equation: x² − 10x + 12 = 0."
+      ],
+      "answer": "x² − 10x + 12 = 0"
+     },
+     "exercises": [
+      {
+       "prompt": "α and β are the roots of 2x² + 6x − 5 = 0. Find the equation whose roots are α/β and β/α.",
+       "options": [
+        "5x² + 28x + 5 = 0",
+        "10x² + 18x − 9 = 0",
+        "x² + x − 5 = 0",
+        "2x² + 15x + 5 = 0"
+       ],
+       "correctIndex": 0,
+       "explanation": "Sum = (α² + β²)/αβ = 14/(−5/2) = −28/5, product = 1. So x² + (28/5)x + 1 = 0, i.e. 5x² + 28x + 5 = 0."
+      },
+      {
+       "prompt": "Find the equation whose roots are α + 1/β and β + 1/α.",
+       "options": [
+        "5x² + 28x + 5 = 0",
+        "6x² + 5x − 1 = 0",
+        "10x² + 18x − 9 = 0",
+        "x² + x − 5 = 0"
+       ],
+       "correctIndex": 2,
+       "explanation": "Sum = −9/5 and product = −9/10, so 10x² + 18x − 9 = 0."
+      },
+      {
+       "prompt": "Which equation has roots α² and β² for 2x² + 6x − 5 = 0?",
+       "options": [
+        "x² + 2x + 5 = 0",
+        "10x² + 18x − 9 = 0",
+        "4x² − 56x + 25 = 0",
+        "x² − 2x − 5/4 = 0"
+       ],
+       "correctIndex": 2,
+       "explanation": "Sum = 14 and product = 25/4, so x² − 14x + 25/4 = 0, which is 4x² − 56x + 25 = 0."
+      }
+     ]
+    },
+    {
+     "id": "turning",
+     "title": "Turning points of a quadratic",
+     "body": [
+      "The graph of y = ax² + bx + c is a parabola. It has one **turning point**. If **a > 0** it is a **minimum** (a U shape). If **a < 0** it is a **maximum** (an ∩ shape).",
+      "The turning point is at **x = −b/(2a)**. Substitute that x into the equation to get y.",
+      "Example: y = 14 − 3x − 2x². Here a = −2 (negative), so it is a **maximum**. x = −b/(2a) = −(−3)/(2 × −2) = 3/(−4) = **−3/4**. Then y = 14 + 9/4 − 2(9/16) = 14 + 9/4 − 9/8 = **121/8**. So the maximum point is (−3/4, 121/8)."
+     ],
+     "keyPoints": [
+      "Turning point at x = −b/(2a).",
+      "a > 0: minimum; a < 0: maximum."
+     ],
+     "example": {
+      "problem": "Find the maximum value of y = 5 + 6x − x².",
+      "steps": [
+       "a = −1, so there is a maximum.",
+       "x = −6/(2 × −1) = 3.",
+       "y = 5 + 18 − 9 = 14."
+      ],
+      "answer": "Maximum value 14, at x = 3"
+     },
+     "exercises": [
+      {
+       "prompt": "Find the turning point of y = 14 − 3x − 2x² and say what type it is.",
+       "options": [
+        "Minimum (1/4, −81/8)",
+        "Maximum (1/4, −81/8)",
+        "Maximum (−3/4, 121/8)",
+        "Minimum (−1/4, 3/8)"
+       ],
+       "correctIndex": 2,
+       "explanation": "a = −2 so it is a maximum. x = −b/2a = −3/4, and y = 14 + 9/4 − 9/8 = 121/8.",
+       "hint": "Check the sign of a first."
+      },
+      {
+       "prompt": "What is the turning point of y = x² − 4x + 7?",
+       "options": [
+        "Minimum at (2, 3)",
+        "Maximum at (2, 3)",
+        "Minimum at (−2, 19)",
+        "Minimum at (4, 7)"
+       ],
+       "correctIndex": 0,
+       "explanation": "a = 1 so it is a minimum. x = 4/2 = 2, and y = 4 − 8 + 7 = 3."
+      }
+     ]
+    },
+    {
+     "id": "ineq",
+     "title": "Solving inequalities",
+     "body": [
+      "**Quadratic inequality.** Move everything to one side, factorise, find the roots, and then decide which side of the roots to take. Solve x² + 3x > 28: x² + 3x − 28 > 0, so (x + 7)(x − 4) > 0. The roots are −7 and 4. A U-shaped graph is above zero **outside** the roots, so **x < −7 or x > 4**. (If the sign were '< 0' the answer would be between the roots: −7 < x < 4.)",
+      "**Modulus inequality.** |A| < k means **−k < A < k**. For |3x − 4| < 9: −9 < 3x − 4 < 9, so −5 < 3x < 13, so **−5/3 < x < 13/3**. (|A| > k means A < −k or A > k.)",
+      "**Logarithm inequality.** Convert using the base. log₃(x² + 13x + 67) < 3 means 0 < x² + 13x + 67 < 3³ = 27, because the thing inside a log must be positive. The left part is always true (the discriminant of x² + 13x + 67 is 169 − 268 < 0). The right part: x² + 13x + 40 < 0, so (x + 5)(x + 8) < 0, so **−8 < x < −5**."
+     ],
+     "keyPoints": [
+      "U-shaped: '> 0' is outside the roots; '< 0' is between them.",
+      "|A| < k: −k < A < k. |A| > k: A < −k or A > k.",
+      "log_b(f) < c: 0 < f < bᶜ."
+     ],
+     "example": {
+      "problem": "Solve x² − x − 12 ≤ 0.",
+      "steps": [
+       "Factorise: (x − 4)(x + 3) ≤ 0.",
+       "Roots are −3 and 4. A U-shape is ≤ 0 between and including the roots.",
+       "−3 ≤ x ≤ 4."
+      ],
+      "answer": "−3 ≤ x ≤ 4"
+     },
+     "exercises": [
+      {
+       "prompt": "Solve x² + 3x > 28.",
+       "options": [
+        "x < 7 or x < 4",
+        "x > −7 or x < 4",
+        "x < −7 or x > 4",
+        "−7 < x < 4"
+       ],
+       "correctIndex": 2,
+       "explanation": "(x + 7)(x − 4) > 0 outside the roots −7 and 4."
+      },
+      {
+       "prompt": "Find x if |3x − 4| < 9.",
+       "options": [
+        "5/3 < x < 13/3",
+        "−5/3 < x < 13/3",
+        "−13/3 < x < 5/3",
+        "x < −5/3 or x > 13/3"
+       ],
+       "correctIndex": 1,
+       "explanation": "−9 < 3x − 4 < 9, so −5 < 3x < 13."
+      },
+      {
+       "prompt": "Solve log₃(x² + 13x + 67) < 3.",
+       "options": [
+        "−5 < x < 8",
+        "−8 < x < −5",
+        "x < −8 or x > −5",
+        "−5 < x < 5"
+       ],
+       "correctIndex": 1,
+       "explanation": "x² + 13x + 67 < 27 gives (x + 5)(x + 8) < 0, which is −8 < x < −5. The positivity condition is always satisfied.",
+       "hint": "Convert 3 into 3³ = 27."
+      },
+      {
+       "prompt": "Solve x² − 5x + 6 < 0.",
+       "options": [
+        "x < 2 or x > 3",
+        "2 < x < 3",
+        "x > 3",
+        "x < 2"
+       ],
+       "correctIndex": 1,
+       "explanation": "(x − 2)(x − 3) < 0 between the roots."
+      },
+      {
+       "prompt": "Solve |x − 1| > 2.",
+       "options": [
+        "−1 < x < 3",
+        "x < −1 or x > 3",
+        "x > 3",
+        "x < −1"
+       ],
+       "correctIndex": 1,
+       "explanation": "|A| > 2 means A < −2 or A > 2, so x < −1 or x > 3."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "α + β = −b/a;  αβ = c/a;  turning point x = −b/(2a)"
+  },
+  {
+   "id": "partial-fractions",
+   "intro": "Partial fractions follow a recipe: check the degree, factorise the bottom, write the right form, and find the constants by cover-up or matching coefficients.",
+   "sections": [
+    {
+     "id": "idea",
+     "title": "What partial fractions do",
+     "body": [
+      "Adding fractions gives one fraction: 1/(x − 1) + 1/(x + 2) = (2x + 1)/((x − 1)(x + 2)). **Partial fractions go the other way**: they split one complicated fraction into simple ones. This is needed for integration and for series work.",
+      "**First check the degrees.** The fraction must be *proper*: the highest power in the numerator must be **smaller** than the highest power in the denominator. If it is not, divide first (see Part 4).",
+      "**Then factorise the denominator completely.** Each factor decides the shape of one partial fraction. A linear factor **(x − a)** gives **A/(x − a)**. A repeated factor **(x − a)²** gives **A/(x − a) + B/(x − a)²**. An irreducible quadratic **(x² + c)** gives **(Bx + C)/(x² + c)**."
+     ],
+     "keyPoints": [
+      "Check the degree first; factorise the denominator.",
+      "Linear factor: A/(x − a). Repeated: add a term for each power. Irreducible quadratic: (Bx + C)/(x² + c)."
+     ],
+     "example": {
+      "problem": "Write the form of the partial fractions for 1/(x(x − 2)).",
+      "steps": [
+       "Two different linear factors: x and (x − 2).",
+       "Form: A/x + B/(x − 2)."
+      ],
+      "answer": "A/x + B/(x − 2)"
+     },
+     "exercises": [
+      {
+       "prompt": "Which form is correct for 1/((x + 1)(x − 4))?",
+       "options": [
+        "A/(x + 1) + B/(x − 4)",
+        "(Ax + B)/((x + 1)(x − 4))",
+        "A/((x + 1)(x − 4))",
+        "A/(x + 1) × B/(x − 4)"
+       ],
+       "correctIndex": 0,
+       "explanation": "Each different linear factor gets its own constant over that factor."
+      },
+      {
+       "prompt": "The numerator has degree 3 and the denominator has degree 2. What must you do first?",
+       "options": [
+        "Factorise the numerator",
+        "Divide the numerator by the denominator",
+        "Nothing, go straight to partial fractions",
+        "Square the denominator"
+       ],
+       "correctIndex": 1,
+       "explanation": "The fraction is improper, so long division comes first."
+      }
+     ]
+    },
+    {
+     "id": "linear",
+     "title": "Distinct linear factors: the cover-up method",
+     "body": [
+      "For each linear factor, the constant is found quickly. Substitute the value that makes that factor zero into the **rest** of the fraction (cover the factor with your finger).",
+      "Example: (8x − 17)/((x + 1)(x − 4)) = A/(x + 1) + B/(x − 4). For A, put x = −1 and cover (x + 1): A = (8(−1) − 17)/(−1 − 4) = −25/−5 = **5**. For B, put x = 4 and cover (x − 4): B = (8(4) − 17)/(4 + 1) = 15/5 = **3**. So the answer is **5/(x + 1) + 3/(x − 4)**.",
+      "With three factors the idea is the same. For (25 − 11x)/((x + 1)(x − 2)(x − 3)): at x = −1, A = 36/((−3)(−4)) = 3. At x = 2, B = 3/((3)(−1)) = −1. At x = 3, C = −8/((4)(1)) = −2. So **3/(x + 1) − 1/(x − 2) − 2/(x − 3)**.",
+      "**Always check** by choosing an easy x value (for example x = 0) in the original and your answer. They must agree."
+     ],
+     "keyPoints": [
+      "Cover-up: put in the root of one factor and read off its constant.",
+      "Check with an easy value of x."
+     ],
+     "example": {
+      "problem": "Express (3x + 5)/((x + 1)(x + 2)).",
+      "steps": [
+       "A at x = −1: (−3 + 5)/(−1 + 2) = 2.",
+       "B at x = −2: (−6 + 5)/(−2 + 1) = 1.",
+       "Check at x = 0: 5/2 on the left, 2 + 1/2 = 5/2 on the right ✓."
+      ],
+      "answer": "2/(x + 1) + 1/(x + 2)"
+     },
+     "exercises": [
+      {
+       "prompt": "Express (8x − 17)/((x + 1)(x − 4)) in partial fractions.",
+       "options": [
+        "8/(x + 4) + 17/(x + 4)",
+        "5/(x − 4) + 3/(x + 4)",
+        "5/(x + 1) + 3/(x − 4)",
+        "1/(x − 1) + 1/(x + 4)"
+       ],
+       "correctIndex": 2,
+       "explanation": "A (at x = −1) = −25/−5 = 5. B (at x = 4) = 15/5 = 3."
+      },
+      {
+       "prompt": "Express (x + 7)/(x² − 16) in partial fractions.",
+       "options": [
+        "11/(8(x − 4)) − 3/(8(x + 4))",
+        "11/(8(x − 4)) + 3/(8(x + 4))",
+        "1/(x − 4) − 1/(x + 4)",
+        "(x + 7)/((x − 4)(x + 4))"
+       ],
+       "correctIndex": 0,
+       "explanation": "x² − 16 = (x − 4)(x + 4). At x = 4: A = 11/8. At x = −4: B = 3/(−8) = −3/8.",
+       "hint": "Factorise the difference of two squares first."
+      },
+      {
+       "prompt": "Express (25 − 11x)/((x + 1)(x − 2)(x − 3)) in partial fractions.",
+       "options": [
+        "3/(x + 1) − 1/(x − 2) − 2/(x − 3)",
+        "3/(x + 1) + 1/(x − 2) − 2/(x − 3)",
+        "3/(x + 1) + 1/(x − 2) + 2/(x − 3)",
+        "3/(x + 1) − 1/(x − 2) + 2/(x − 3)"
+       ],
+       "correctIndex": 0,
+       "explanation": "The three cover-up values are A = 3, B = −1, C = −2."
+      },
+      {
+       "prompt": "Express (28x − 17)/((x + 1)(x − 4)) in partial fractions.",
+       "options": [
+        "5/(x + 1) − 3/(x − 4)",
+        "5/(x − 4) + 3/(x + 1)",
+        "9/(x + 1) + 19/(x − 4)",
+        "4/(x + 1) + 3/(x − 4)"
+       ],
+       "correctIndex": 2,
+       "explanation": "At x = −1: A = (−28 − 17)/(−5) = 9. At x = 4: B = (112 − 17)/5 = 19. Check at x = 0: left side = −17/(−4) = 4.25 and right side = 9 + 19/(−4) = 4.25 ✓."
+      }
+     ]
+    },
+    {
+     "id": "repeated",
+     "title": "Repeated factors and quadratic factors",
+     "body": [
+      "A **repeated factor (x − a)²** needs two terms: **A/(x − a) + B/(x − a)²**. Cover-up works for the highest power. For the rest, compare coefficients or choose another x.",
+      "Example: (x + 1)/((x − 2)(x − 1)²) = A/(x − 2) + B/(x − 1) + C/(x − 1)². At x = 2: A = 3/1 = 3. At x = 1: C = 2/(1 − 2) = −2. To find B, put x = 0 into both sides: 1/(−2 × 1) = −1/2 on the left; on the right A/(−2) + B/(−1) + C/1 = −3/2 − B − 2. So −1/2 = −7/2 − B, so B = −3. Answer: **3/(x − 2) − 3/(x − 1) − 2/(x − 1)²**.",
+      "An **irreducible quadratic** (one that cannot be factorised with real numbers, like x² + 1 or x² + 2) needs a numerator with x: **(Bx + C)/(x² + 1)**. If it is repeated, add one term for each power: (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)².",
+      "So for (x⁴ + x)/(x(x² + 1)²), the degree of the top (4) is less than the bottom (5), and the form is **A/x + (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)²**. There is no extra '1 +' term since the fraction is proper.",
+      "Another standard result: (x³ + 3)/(x² + 2)² = **x/(x² + 2) − 2x/(x² + 2)² + 3/(x² + 2)²**."
+     ],
+     "keyPoints": [
+      "Repeated (x − a)²: A/(x − a) + B/(x − a)².",
+      "Irreducible quadratic: (Bx + C)/(x² + c).",
+      "Degree of top < degree of bottom."
+     ],
+     "example": {
+      "problem": "Split (2x + 1)/((x − 1)(x² + 1)).",
+      "steps": [
+       "Form: A/(x − 1) + (Bx + C)/(x² + 1).",
+       "Cover-up at x = 1: A = 3/2.",
+       "Multiply out: 2x + 1 = (3/2)(x² + 1) + (Bx + C)(x − 1). Matching x² terms: 0 = 3/2 + B, so B = −3/2. Matching constants: 1 = 3/2 − C, so C = 1/2.",
+       "Check the x terms: C − B = 1/2 + 3/2 = 2 ✓."
+      ],
+      "answer": "3/(2(x − 1)) + (−3x + 1)/(2(x² + 1))"
+     },
+     "exercises": [
+      {
+       "prompt": "Resolve (x + 1)/((x − 2)(x − 1)²) into partial fractions.",
+       "options": [
+        "3/(x − 1) + 3/(x − 1) − 2/(x − 2)²",
+        "2/(x − 2) − 3/(x − 1) − 2/(x − 2)²",
+        "1/(x − 2) + 3/(x − 1) − 2/(x − 2)²",
+        "3/(x − 2) − 3/(x − 1) − 2/(x − 1)²"
+       ],
+       "correctIndex": 3,
+       "explanation": "A = 3, C = −2, B = −3, so 3/(x − 2) − 3/(x − 1) − 2/(x − 1)²."
+      },
+      {
+       "prompt": "Which is a possible form for (x⁴ + x)/(x(x² + 1)²)?",
+       "options": [
+        "A/x + Bx/(x² + 1) + (x + 1)/(x² + 1)²",
+        "1 + A/x + (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)²",
+        "A/x + (Bx + C)/(x² + 1) + (Dx + E)/(x² + 1)²",
+        "1 + A/x + (Bx + C)²/(x² + 1)"
+       ],
+       "correctIndex": 2,
+       "explanation": "The fraction is proper (degree 4 over degree 5). It has the factor x, plus the irreducible quadratic x² + 1 repeated twice."
+      },
+      {
+       "prompt": "Resolve (x³ + 3)/(x² + 2)² into partial fractions.",
+       "options": [
+        "1/(x + 2) + (2x − 3)/(x + 2)²",
+        "x/(x² + 2) − 2x/(x² + 2)² + 3/(x² + 2)²",
+        "x/(x² + 2) − 2x/(x² + 2) − 3/(x² + 2)²",
+        "x/(x² + 2) + 2x/(x² + 2)² − 3/(x² + 2)²"
+       ],
+       "correctIndex": 1,
+       "explanation": "Write (Ax + B)/(x² + 2) + (Cx + D)/(x² + 2)². Then x³ + 3 = (Ax + B)(x² + 2) + Cx + D gives A = 1, B = 0, C = −2, D = 3."
+      },
+      {
+       "prompt": "Which form suits (x + 3)/(x + 1)²?",
+       "options": [
+        "A/(x + 1)",
+        "A/(x + 1)²",
+        "A/(x + 1) + B/(x + 1)²",
+        "(Ax + B)/(x + 1)²"
+       ],
+       "correctIndex": 2,
+       "explanation": "A repeated linear factor needs a term for each power. In fact (x + 3)/(x + 1)² = 1/(x + 1) + 2/(x + 1)²."
+      }
+     ]
+    },
+    {
+     "id": "improper",
+     "title": "Improper fractions: divide first",
+     "body": [
+      "If the **degree of the top is the same as, or larger than, the degree of the bottom**, the fraction is improper. Divide first to get a polynomial plus a proper fraction, then split the proper fraction.",
+      "Example: (x² + 1)/((x − 1)(x + 2)). The bottom is x² + x − 2, which has the same degree as the top. Divide: (x² + 1) ÷ (x² + x − 2) = 1 with remainder −x + 3. So the fraction is 1 + (3 − x)/((x − 1)(x + 2)). Cover-up: at x = 1, A = 2/3. At x = −2, B = 5/(−3) = −5/3. Answer: **1 + 2/(3(x − 1)) − 5/(3(x + 2))**."
+     ],
+     "keyPoints": [
+      "Top degree ≥ bottom degree: divide first.",
+      "The result is a polynomial plus partial fractions."
+     ],
+     "example": {
+      "problem": "Is (x + 5)/(x² − 1) proper? Split it.",
+      "steps": [
+       "Top degree 1 < bottom degree 2, so it is proper.",
+       "x² − 1 = (x − 1)(x + 1). At x = 1: A = 6/2 = 3. At x = −1: B = 4/(−2) = −2."
+      ],
+      "answer": "3/(x − 1) − 2/(x + 1)"
+     },
+     "exercises": [
+      {
+       "prompt": "Which fractions need long division before partial fractions?",
+       "options": [
+        "1/(x² − 1)",
+        "(x + 1)/(x² − 1)",
+        "(x² + 1)/(x² − 1)",
+        "3/(x(x + 1))"
+       ],
+       "correctIndex": 2,
+       "explanation": "Only the third has top degree (2) equal to the bottom degree (2)."
+      },
+      {
+       "prompt": "What is the polynomial part of (x² + 1)/((x − 1)(x + 2))?",
+       "options": [
+        "x",
+        "1",
+        "x + 1",
+        "0"
+       ],
+       "correctIndex": 1,
+       "explanation": "x² + 1 divided by x² + x − 2 gives quotient 1."
+      },
+      {
+       "prompt": "The partial fractions of (x² + 1)/((x − 1)(x + 2)) are:",
+       "options": [
+        "1 + 2/(3(x − 1)) − 5/(3(x + 2))",
+        "1 − 2/(3(x − 1)) + 5/(3(x + 2))",
+        "2/(x − 1) − 5/(x + 2)",
+        "x + 2/(x − 1)"
+       ],
+       "correctIndex": 0,
+       "explanation": "After dividing, the proper part is (3 − x)/((x − 1)(x + 2)) and the cover-up values are 2/3 and −5/3."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Linear factor: A/(x−a);  repeated: A/(x−a)+B/(x−a)²;  quadratic: (Bx+C)/(x²+c)"
+  },
+  {
+   "id": "trigonometry",
+   "intro": "Trigonometry links angles with the sides of triangles. You will learn the basic ratios, the identities that connect them, then the formulae for adding angles, doubling angles and turning sums into products. Most exam questions use only these tools.",
+   "sections": [
+    {
+     "id": "ratios",
+     "title": "Angles and the three basic ratios",
+     "body": [
+      "Trigonometry connects the **angles** of a right-angled triangle to the **ratios of its sides**. Stand at one angle (call it θ). The side opposite θ is the **opposite**, the side next to θ is the **adjacent**, and the longest side is the **hypotenuse**.",
+      "**sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent.** A memory trick is **SOH-CAH-TOA**. Three more ratios are just upside-down versions: **csc θ = 1/sin θ, sec θ = 1/cos θ, cot θ = 1/tan θ.**",
+      "Angles are measured in degrees or in **radians**. A half turn is 180° = π radians, so **multiply degrees by π/180** to get radians. For example 30° = π/6 and 90° = π/2.",
+      "Learn the exact values for three special angles. They come from two shapes: a square cut in half (45°) and an equilateral triangle cut in half (30° and 60°). **sin 30° = 1/2, sin 45° = 1/√2, sin 60° = √3/2.** The cosine values run backwards: **cos 30° = √3/2, cos 45° = 1/√2, cos 60° = 1/2.** And **tan 30° = 1/√3, tan 45° = 1, tan 60° = √3.**"
+     ],
+     "keyPoints": [
+      "SOH-CAH-TOA: sin = O/H, cos = A/H, tan = O/A.",
+      "csc, sec, cot are the reciprocals of sin, cos, tan.",
+      "Degrees to radians: multiply by π/180."
+     ],
+     "example": {
+      "problem": "Find tan θ if the opposite side is 5 and the adjacent side is 12. Then find the hypotenuse.",
+      "steps": [
+       "tan θ = opposite/adjacent = 5/12.",
+       "Use Pythagoras: hypotenuse² = 5² + 12² = 25 + 144 = 169.",
+       "So the hypotenuse is 13."
+      ],
+      "answer": "tan θ = 5/12 and hypotenuse = 13"
+     },
+     "exercises": [
+      {
+       "prompt": "In a right-angled triangle, the side opposite θ is 3, the adjacent is 4 and the hypotenuse is 5. What is sin θ?",
+       "options": [
+        "3/4",
+        "4/5",
+        "3/5",
+        "5/3"
+       ],
+       "correctIndex": 2,
+       "explanation": "sin θ = opposite/hypotenuse = 3/5."
+      },
+      {
+       "prompt": "Which of these equals sec θ?",
+       "options": [
+        "1/sin θ",
+        "1/cos θ",
+        "1/tan θ",
+        "cos θ/sin θ"
+       ],
+       "correctIndex": 1,
+       "explanation": "sec θ is the reciprocal of cos θ."
+      },
+      {
+       "prompt": "Convert 60° to radians.",
+       "options": [
+        "π/6",
+        "π/4",
+        "π/3",
+        "π/2"
+       ],
+       "correctIndex": 2,
+       "explanation": "60 × π/180 = π/3."
+      },
+      {
+       "prompt": "What is the exact value of cos 60°?",
+       "options": [
+        "√3/2",
+        "1/2",
+        "1/√2",
+        "1"
+       ],
+       "correctIndex": 1,
+       "explanation": "cos 60° = 1/2. Cosine values run backwards from sine: cos 60° = sin 30°."
+      }
+     ]
+    },
+    {
+     "id": "identities",
+     "title": "Finding every ratio from one: the triangle trick and the identities",
+     "body": [
+      "Exam questions often give you **one ratio** and ask for the rest. The easiest method is to **draw the triangle**. If sin x = 3/5, then the opposite is 3 and the hypotenuse is 5. Pythagoras gives the adjacent: √(25 − 9) = 4. Now read off everything: **cos x = 4/5, tan x = 3/4, cot x = 4/3, csc x = 5/3, sec x = 5/4.**",
+      "For 0° < x < 90° every ratio is positive. In other quadrants the sign matters, and we deal with that in Part 5.",
+      "Worked question: if sin x = 3/5, find cot x + 2 csc x. cot x = 4/3 and csc x = 5/3, so the sum is 4/3 + 10/3 = **14/3**. If a question also adds csc x sec x = (5/3)(5/4) = 25/12, the total is 14/3 + 25/12 = 56/12 + 25/12 = **81/12 = 27/4**. Take care: neither 14/3 nor 27/4 is in the usual list of options, so a careful student chooses 'None of the above' rather than guessing.",
+      "Now the **three identities**. They are true for every angle: **sin²θ + cos²θ = 1**, **1 + tan²θ = sec²θ**, and **1 + cot²θ = csc²θ.** The second and third come from dividing the first by cos²θ and sin²θ.",
+      "Use them to simplify. (1 − cos²x) csc²x: since 1 − cos²x = sin²x, this is sin²x × (1/sin²x) = **1**."
+     ],
+     "keyPoints": [
+      "Draw the triangle: sides from the given ratio, third side by Pythagoras.",
+      "sin² + cos² = 1; 1 + tan² = sec²; 1 + cot² = csc².",
+      "If your answer is not in the options, 'None of the above' may be the right choice."
+     ],
+     "example": {
+      "problem": "Given that tan x = 3/5 and x is acute, find (sin x + 2 cos x + 3)/(4 sec x).",
+      "steps": [
+       "The hypotenuse is √34, so sin x = 3/√34, cos x = 5/√34 and sec x = √34/5.",
+       "Top: 3/√34 + 10/√34 + 3 = 13/√34 + 3.",
+       "Bottom: 4 × √34/5 = 4√34/5.",
+       "Divide: (13/√34 + 3) × 5/(4√34) = (65/34 + 15/√34)/4. Write 15/√34 = 15√34/34, so the top is (65 + 15√34)/34 and the whole is (65 + 15√34)/136."
+      ],
+      "answer": "(65 + 15√34)/136"
+     },
+     "exercises": [
+      {
+       "prompt": "If sin x = 3/5 and x is acute, what is cos x?",
+       "options": [
+        "3/4",
+        "4/5",
+        "5/4",
+        "2/5"
+       ],
+       "correctIndex": 1,
+       "explanation": "The adjacent side is √(25 − 9) = 4, so cos x = 4/5."
+      },
+      {
+       "prompt": "If sin x = 3/5 and x is acute, what is cot x + 2 csc x?",
+       "options": [
+        "3/17",
+        "17/3",
+        "14/3",
+        "5/13"
+       ],
+       "correctIndex": 2,
+       "explanation": "cot x = 4/3 and csc x = 5/3, so 4/3 + 10/3 = 14/3."
+      },
+      {
+       "prompt": "Simplify (1 − cos²x) csc²x.",
+       "options": [
+        "0",
+        "1",
+        "−1",
+        "sin²x"
+       ],
+       "correctIndex": 1,
+       "explanation": "1 − cos²x = sin²x, and csc²x = 1/sin²x, so the product is 1."
+      },
+      {
+       "prompt": "Which identity is correct?",
+       "options": [
+        "1 + tan²θ = sec²θ",
+        "1 + tan²θ = csc²θ",
+        "sin²θ − cos²θ = 1",
+        "1 − tan²θ = sec²θ"
+       ],
+       "correctIndex": 0,
+       "explanation": "Divide sin²θ + cos²θ = 1 by cos²θ."
+      },
+      {
+       "prompt": "tan x = 3/5 with x acute. What is the hypotenuse of the triangle (to 2 decimal places)?",
+       "options": [
+        "5.83",
+        "8",
+        "4",
+        "34"
+       ],
+       "correctIndex": 0,
+       "explanation": "hypotenuse = √(3² + 5²) = √34 ≈ 5.83. So sin x = 3/√34 and cos x = 5/√34.",
+       "hint": "Use Pythagoras, then keep the square root."
+      }
+     ]
+    },
+    {
+     "id": "compound",
+     "title": "Compound angles: sin(A ± B), cos(A ± B), tan(A ± B)",
+     "body": [
+      "Be careful: sin(A + B) is **not** sin A + sin B. The correct rules are called the **compound angle formulae**:",
+      "**sin(A + B) = sin A cos B + cos A sin B**, and sin(A − B) = sin A cos B − cos A sin B.",
+      "**cos(A + B) = cos A cos B − sin A sin B**, and cos(A − B) = cos A cos B + sin A sin B. Notice the sign flips for cosine.",
+      "**tan(A + B) = (tan A + tan B)/(1 − tan A tan B)**, and tan(A − B) = (tan A − tan B)/(1 + tan A tan B).",
+      "To use them with given ratios, **find the missing ratios first**. If sin A = 4/5 and cos B = 3/5 (both acute), then cos A = 3/5 and sin B = 4/5. So cos(A + B) = (3/5)(3/5) − (4/5)(4/5) = 9/25 − 16/25 = **−7/25**.",
+      "**Watch the quadrant.** If A and B are both obtuse (between 90° and 180°), cosine is **negative**. With sin A = 12/13 we get cos A = −5/13, and with sin B = 4/5 we get cos B = −3/5. Then cos(A + B) = (−5/13)(−3/5) − (12/13)(4/5) = 15/65 − 48/65 = **−33/65**. (The acute-angle version of the same numbers would give a different answer.)",
+      "The formulae also give exact values of new angles. 15° = 45° − 30°, so cos 15° = cos 45° cos 30° + sin 45° sin 30° = (√6 + √2)/4."
+     ],
+     "keyPoints": [
+      "sin(A ± B) = sin A cos B ± cos A sin B.",
+      "cos(A ± B) = cos A cos B ∓ sin A sin B (sign flips).",
+      "Find the missing ratios first, and check the quadrant for signs."
+     ],
+     "example": {
+      "problem": "Find the exact value of sin 15°.",
+      "steps": [
+       "15° = 45° − 30°.",
+       "sin(45° − 30°) = sin 45° cos 30° − cos 45° sin 30°.",
+       "= (1/√2)(√3/2) − (1/√2)(1/2) = (√3 − 1)/(2√2).",
+       "Multiply top and bottom by √2: (√6 − √2)/4."
+      ],
+      "answer": "(√6 − √2)/4"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is the correct expansion of cos(A + B)?",
+       "options": [
+        "cos A cos B + sin A sin B",
+        "cos A cos B − sin A sin B",
+        "sin A cos B + cos A sin B",
+        "cos A + cos B"
+       ],
+       "correctIndex": 1,
+       "explanation": "For cosine of a sum, the sign in the middle is minus."
+      },
+      {
+       "prompt": "If sin A = 4/5 and cos B = 3/5 with A and B acute, find cos(A + B).",
+       "options": [
+        "7/25",
+        "−7/25",
+        "25/7",
+        "24/25"
+       ],
+       "correctIndex": 1,
+       "explanation": "cos A = 3/5 and sin B = 4/5. cos(A + B) = 9/25 − 16/25 = −7/25."
+      },
+      {
+       "prompt": "If sin A = 12/13 and sin B = 4/5 and both A and B are obtuse, find cos(A + B).",
+       "options": [
+        "63/65",
+        "−33/65",
+        "33/65",
+        "−63/65"
+       ],
+       "correctIndex": 1,
+       "explanation": "cos A = −5/13, cos B = −3/5. (−5/13)(−3/5) − (12/13)(4/5) = 15/65 − 48/65 = −33/65."
+      },
+      {
+       "prompt": "If tan A = 3/4 and tan B = 1/2, find tan(A + B).",
+       "options": [
+        "2",
+        "11/5",
+        "1/10",
+        "5/4"
+       ],
+       "correctIndex": 0,
+       "explanation": "(3/4 + 1/2)/(1 − 3/8) = (5/4)/(5/8) = 2."
+      }
+     ]
+    },
+    {
+     "id": "double",
+     "title": "Double and multiple angles",
+     "body": [
+      "Put B = A in the compound formulae and you get the **double angle formulae**: **sin 2θ = 2 sin θ cos θ**, and **cos 2θ = cos²θ − sin²θ.**",
+      "Using sin² + cos² = 1, cos 2θ has three forms: **cos²θ − sin²θ = 2cos²θ − 1 = 1 − 2sin²θ.** Pick the one that matches what the question contains. And **tan 2θ = 2 tan θ/(1 − tan²θ).**",
+      "Simplify sin²2θ/cos²θ: sin 2θ = 2 sin θ cos θ, so sin²2θ = 4 sin²θ cos²θ. Dividing by cos²θ leaves 4 sin²θ, which equals **4 − 4cos²θ**.",
+      "**Triple and higher angles** are built in steps. For 3θ, write 3θ = 2θ + θ. This gives sin 3θ = 3 sin θ − 4 sin³θ and cos 3θ = 4cos³θ − 3 cos θ. Rearranging the cos 3θ formula gives a **power reduction**: cos³θ = (cos 3θ + 3 cos θ)/4.",
+      "For **4θ**, just use the double angle formula twice: 4θ = 2(2θ). With t = tan θ, tan 2θ = 2t/(1 − t²). Then tan 4θ = 2(tan 2θ)/(1 − tan²2θ). Substituting and simplifying: **tan 4θ = 4t(1 − t²)/(1 − 6t² + t⁴).**",
+      "Check the simplification: top = 2 × 2t/(1 − t²) = 4t/(1 − t²). Bottom = 1 − 4t²/(1 − t²)² = ((1 − t²)² − 4t²)/(1 − t²)² = (1 − 6t² + t⁴)/(1 − t²)². Dividing: 4t/(1 − t²) × (1 − t²)²/(1 − 6t² + t⁴) = 4t(1 − t²)/(1 − 6t² + t⁴)."
+     ],
+     "keyPoints": [
+      "sin 2θ = 2 sin θ cos θ. cos 2θ = cos² − sin² = 2cos² − 1 = 1 − 2sin².",
+      "tan 2θ = 2 tan θ/(1 − tan²θ). Use it twice for 4θ.",
+      "cos³θ = (cos 3θ + 3 cos θ)/4."
+     ],
+     "example": {
+      "problem": "Show that cos 2θ = 7/25 when sin θ = 3/5 (θ acute).",
+      "steps": [
+       "Use cos 2θ = 1 − 2sin²θ, since we know sin θ.",
+       "= 1 − 2 × 9/25 = 1 − 18/25.",
+       "= 7/25."
+      ],
+      "answer": "7/25"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is NOT a correct form of cos 2θ?",
+       "options": [
+        "cos²θ − sin²θ",
+        "2cos²θ − 1",
+        "1 − 2sin²θ",
+        "2 sin θ cos θ"
+       ],
+       "correctIndex": 3,
+       "explanation": "2 sin θ cos θ is sin 2θ."
+      },
+      {
+       "prompt": "If sin θ = 3/5 and θ is acute, what is sin 2θ?",
+       "options": [
+        "6/5",
+        "24/25",
+        "7/25",
+        "12/25"
+       ],
+       "correctIndex": 1,
+       "explanation": "cos θ = 4/5. sin 2θ = 2 × 3/5 × 4/5 = 24/25."
+      },
+      {
+       "prompt": "Simplify sin²2θ/cos²θ.",
+       "options": [
+        "4 − 4cos²θ",
+        "4 + 4cos²θ",
+        "2sin²θ",
+        "4cos θ"
+       ],
+       "correctIndex": 0,
+       "explanation": "sin²2θ = 4 sin²θ cos²θ, so the fraction is 4 sin²θ = 4 − 4cos²θ."
+      },
+      {
+       "prompt": "Express cos³x in terms of multiple angles.",
+       "options": [
+        "(cos 3x + 3 cos x)/4",
+        "(cos 3x − 3 cos x)/4",
+        "4cos x − 3cos 3x",
+        "cos 3x + cos x"
+       ],
+       "correctIndex": 0,
+       "explanation": "From cos 3x = 4cos³x − 3 cos x, we get cos³x = (cos 3x + 3 cos x)/4."
+      },
+      {
+       "prompt": "Express tan 4θ in terms of tan θ.",
+       "options": [
+        "4tanθ(1 − tan²θ)/(1 + 6tan²θ − tan⁴θ)",
+        "4tanθ(1 − tan²θ)/(1 − 6tan²θ + tan⁴θ)",
+        "tanθ(1 − tan²θ)/(1 − 6tan²θ + tan⁴θ)",
+        "2tanθ/(1 − tan²θ)"
+       ],
+       "correctIndex": 1,
+       "explanation": "Apply the double angle formula twice, as shown in the lesson."
+      }
+     ]
+    },
+    {
+     "id": "sumprod",
+     "title": "Sums as products, and shifting an angle",
+     "body": [
+      "Sometimes you need to turn **a sum of sines or cosines into a product**. The formulae are: **sin C + sin D = 2 sin((C + D)/2) cos((C − D)/2)**, and **sin C − sin D = 2 cos((C + D)/2) sin((C − D)/2).**",
+      "For cosines: cos C + cos D = 2 cos((C + D)/2) cos((C − D)/2), and cos C − cos D = −2 sin((C + D)/2) sin((C − D)/2).",
+      "Take sin 4θ + sin 6θ. The average of the angles is (4θ + 6θ)/2 = 5θ and half the difference is (4θ − 6θ)/2 = −θ. Since cos(−θ) = cos θ, this is **2 sin 5θ cos θ**.",
+      "Now sin 4θ − sin 6θ. Using the minus formula: 2 cos 5θ sin(−θ). Since sin(−θ) = −sin θ, the answer is **−2 sin θ cos 5θ.** Take care with the order of C and D, because swapping them changes the sign.",
+      "**Shifting an angle by 90°.** Shifting by π/2 swaps sin with cos and cos with sin, and tan with cot, with a sign that depends on the quadrant. The ones to know: **sin(θ + π/2) = cos θ, cos(θ + π/2) = −sin θ, tan(θ + π/2) = −cot θ.**",
+      "So tan(2θ + π/2) = **−cot 2θ**. The shift is applied to the whole angle 2θ, and the 2 stays inside the cotangent."
+     ],
+     "keyPoints": [
+      "sin C + sin D = 2 sin((C + D)/2) cos((C − D)/2).",
+      "sin C − sin D = 2 cos((C + D)/2) sin((C − D)/2).",
+      "tan(x + π/2) = −cot x."
+     ],
+     "example": {
+      "problem": "Find the exact value of sin 75° + sin 15°.",
+      "steps": [
+       "Half the sum is 45° and half the difference is 30°.",
+       "sin 75° + sin 15° = 2 sin 45° cos 30°.",
+       "= 2 × (1/√2) × (√3/2) = √3/√2 = √6/2."
+      ],
+      "answer": "√6/2"
+     },
+     "exercises": [
+      {
+       "prompt": "Express sin 4θ + sin 6θ as a product.",
+       "options": [
+        "2 sin 5θ cos θ",
+        "−2 sin 5θ cos θ",
+        "2 sin θ cos 5θ",
+        "cot 3θ"
+       ],
+       "correctIndex": 0,
+       "explanation": "Half the sum is 5θ, half the difference is −θ, and cos(−θ) = cos θ."
+      },
+      {
+       "prompt": "Express sin 4θ − sin 6θ as a product.",
+       "options": [
+        "2 sin 5θ cos θ",
+        "2 cos 2θ sin 4θ",
+        "−2 sin θ cos 5θ",
+        "sin 5θ cos θ"
+       ],
+       "correctIndex": 2,
+       "explanation": "2 cos 5θ sin(−θ) = −2 sin θ cos 5θ."
+      },
+      {
+       "prompt": "Simplify tan(2θ + π/2).",
+       "options": [
+        "cot 2θ",
+        "−cot 2θ",
+        "−csc 2θ",
+        "tan 2θ"
+       ],
+       "correctIndex": 1,
+       "explanation": "tan(x + π/2) = −cot x, with x = 2θ."
+      },
+      {
+       "prompt": "What is sin(θ + π/2)?",
+       "options": [
+        "sin θ",
+        "−sin θ",
+        "cos θ",
+        "−cos θ"
+       ],
+       "correctIndex": 2,
+       "explanation": "Shifting sine by 90° gives cosine."
+      },
+      {
+       "prompt": "Use a sum-to-product formula: (sin 5θ + sin 3θ)/(cos 5θ + cos 3θ) equals:",
+       "options": [
+        "tan 4θ",
+        "cot 4θ",
+        "tan θ",
+        "sin 8θ"
+       ],
+       "correctIndex": 0,
+       "explanation": "Top = 2 sin 4θ cos θ, bottom = 2 cos 4θ cos θ. Cancel to get tan 4θ."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "sin(A ± B) = sin A cos B ± cos A sin B; cos(A ± B) = cos A cos B ∓ sin A sin B; sin 2θ = 2 sin θ cos θ"
+  },
+  {
+   "id": "sets-venn-diagrams",
+   "intro": "A set is a collection of things, and Venn diagrams are how we draw them. This lesson covers the language of sets, the operations ∪, ∩ and complement, the power set, and the counting rules that solve 'how many students like…' questions.",
+   "sections": [
+    {
+     "id": "basics",
+     "title": "Sets and the language of sets",
+     "body": [
+      "A **set** is a collection of distinct things, called **elements** or members. We write a set in curly brackets: A = {1, 2, 3}. We write 2 ∈ A to say '2 belongs to A', and 5 ∉ A to say '5 does not belong to A'. Order does not matter and repeats are not counted: {1, 2, 2, 3} is the same set as {3, 1, 2}.",
+      "**n(A)** means the number of elements in A. Here n(A) = 3. The **empty set** { } (also written ∅) has no elements, so n(∅) = 0.",
+      "**B is a subset of A** (written B ⊆ A) if every element of B is also in A. So {1, 2} ⊆ {1, 2, 3}.",
+      "The **universal set U** is the big set that holds everything we are talking about. For example, if we are talking about the digits, U = {0, 1, 2, …, 9}. When a question asks for the **smallest possible universal set** for two sets, it wants you to put all their elements together, with no repeats. For A = {a, c, k, s, u} and B = {y, t, p, l, m, a}, the smallest universal set is {a, c, k, l, m, p, s, t, u, y}. That has 10 elements (a appears in both, but is written once).",
+      "**Set-builder notation** describes a set by a rule. X = {n² + 1 : n = 0, 2, 3} means 'the numbers n² + 1 where n is 0, 2 or 3'. Work through each n: 0² + 1 = 1, 2² + 1 = 5, 3² + 1 = 10. So X = {1, 5, 10}."
+     ],
+     "keyPoints": [
+      "Order and repeats do not matter in a set.",
+      "n(A) is the number of elements.",
+      "Smallest universal set of two sets = all their elements together, no repeats."
+     ],
+     "example": {
+      "problem": "Find the smallest possible universal set for A = {1, 3, 5} and B = {3, 4, 5, 6}.",
+      "steps": [
+       "Join the elements: 1, 3, 5, 3, 4, 5, 6.",
+       "Remove repeats and sort: 1, 3, 4, 5, 6."
+      ],
+      "answer": "{1, 3, 4, 5, 6}"
+     },
+     "exercises": [
+      {
+       "prompt": "How many elements does {1, 2, 2, 3, 3, 3} have?",
+       "options": [
+        "6",
+        "3",
+        "2",
+        "1"
+       ],
+       "correctIndex": 1,
+       "explanation": "Repeats are not counted. The set is {1, 2, 3}."
+      },
+      {
+       "prompt": "If Q = {1, 2, 3, 5, 8, 9} and P = {4, 5, 7, 10, 11, 12}, what is the smallest possible universal set for Q and P?",
+       "options": [
+        "{5}",
+        "{1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12}",
+        "{1, 2, 3, 5, 8, 9}",
+        "{4, 5, 7, 10, 11, 12}"
+       ],
+       "correctIndex": 1,
+       "explanation": "Join all the elements, writing 5 only once. That gives 11 elements."
+      },
+      {
+       "prompt": "Write out X = {n² + 1 : n = 0, 2, 3}.",
+       "options": [
+        "{1, 5, 10}",
+        "{0, 4, 9}",
+        "{1, 4, 9}",
+        "{2, 5, 10}"
+       ],
+       "correctIndex": 0,
+       "explanation": "n = 0 gives 1, n = 2 gives 5 and n = 3 gives 10."
+      },
+      {
+       "prompt": "Which statement is true?",
+       "options": [
+        "{1, 2} ⊆ {1, 2, 3}",
+        "{1, 2, 3} ⊆ {1, 2}",
+        "4 ∈ {1, 2, 3}",
+        "n({1, 2, 3}) = 2"
+       ],
+       "correctIndex": 0,
+       "explanation": "Every element of {1, 2} is in {1, 2, 3}."
+      }
+     ]
+    },
+    {
+     "id": "ops",
+     "title": "Union, intersection and complement",
+     "body": [
+      "**Union, A ∪ B**: everything that is in A **or** in B (or in both). **Intersection, A ∩ B**: only what is in A **and** in B. **Complement, A′**: everything in the universal set that is **not** in A.",
+      "Take S = {1, 2, 3, 4, 5, 6}, T = {2, 4, 5, 7} and R = {1, 4, 5}. To find **(S ∩ T) ∪ R**, work inside the brackets first. S ∩ T = {2, 4, 5} (what S and T share). Then union with R gives {2, 4, 5} ∪ {1, 4, 5} = **{1, 2, 4, 5}**.",
+      "For a complement you need the universal set. If U = {1, 2, 3, 4}, P = {2, 3} and Q = {2, 4}, then P ∪ Q = {2, 3, 4}, so **(P ∪ Q)′ = {1}**.",
+      "Another one: U = {a, b, c, d, e, f, g, h} and Q = {c, f, g}. Then Q′ is everything in U that is not in Q: **{a, b, d, e, h}**.",
+      "If two sets share nothing, their intersection is empty. With X = {1, 5, 10} and Y = {n + 1 : n = 2, 3, 5} = {3, 4, 6}, there is no common element, so **X ∩ Y = { }.**",
+      "Fractions count as elements like any other number. For P = {2, 1, 3, 9, 1/2} and R = {4, 2, 1/2}, the common elements are 2 and 1/2, so **P ∩ R = {2, 1/2}.** Always check against the **exact** elements and not their look-alikes."
+     ],
+     "keyPoints": [
+      "∪ means 'or' (join). ∩ means 'and' (overlap). ′ means 'not in'.",
+      "Work brackets first.",
+      "A complement needs a universal set."
+     ],
+     "example": {
+      "problem": "U = {1, 2, 3, 4, 5, 6, 7, 8}, A = {1, 2, 3, 4} and B = {3, 4, 5, 6}. Find (A ∩ B)′.",
+      "steps": [
+       "A ∩ B = {3, 4}.",
+       "The complement is everything in U that is not 3 or 4."
+      ],
+      "answer": "{1, 2, 5, 6, 7, 8}"
+     },
+     "exercises": [
+      {
+       "prompt": "Let S = {1, 2, 3, 4, 5, 6}, T = {2, 4, 5, 7} and R = {1, 4, 5}. Find (S ∩ T) ∪ R.",
+       "options": [
+        "{4, 5}",
+        "{2, 4, 7}",
+        "{1, 2, 4, 5}",
+        "{1, 2, 3, 4, 5}"
+       ],
+       "correctIndex": 2,
+       "explanation": "S ∩ T = {2, 4, 5}. Add R = {1, 4, 5} to get {1, 2, 4, 5}."
+      },
+      {
+       "prompt": "U = {1, 2, 3, 4}, P = {2, 3}, Q = {2, 4}. Find (P ∪ Q)′.",
+       "options": [
+        "{2}",
+        "{4}",
+        "{1}",
+        "{1, 2}"
+       ],
+       "correctIndex": 2,
+       "explanation": "P ∪ Q = {2, 3, 4}. The only element of U left out is 1."
+      },
+      {
+       "prompt": "If P = {2, 1, 3, 9, 1/2} and R = {4, 2, 1/2}, find P ∩ R.",
+       "options": [
+        "{2, 1/2}",
+        "{4, 2, 1/2}",
+        "{2, 3, 9, 1/2}",
+        "{ }"
+       ],
+       "correctIndex": 0,
+       "explanation": "Only 2 and 1/2 are in both."
+      },
+      {
+       "prompt": "U = {a, b, c, d, e, f, g, h} and Q = {c, f, g}. Find Q′.",
+       "options": [
+        "{c, f, g}",
+        "{a, b, d, e, h}",
+        "{a, b, c}",
+        "{a, b, e, g, h}"
+       ],
+       "correctIndex": 1,
+       "explanation": "Take everything in U that is not c, f or g."
+      },
+      {
+       "prompt": "X = {n² + 1 : n = 0, 2, 3} and Y = {n + 1 : n = 2, 3, 5}. Find X ∩ Y.",
+       "options": [
+        "{1}",
+        "{5}",
+        "{ }",
+        "{3, 4, 6}"
+       ],
+       "correctIndex": 2,
+       "explanation": "X = {1, 5, 10} and Y = {3, 4, 6}. They share nothing."
+      }
+     ]
+    },
+    {
+     "id": "power",
+     "title": "The power set",
+     "body": [
+      "The **power set of A**, written P(A), is the set of **all subsets** of A, including the empty set and A itself. For A = {a, b} the subsets are { }, {a}, {b} and {a, b}. So there are 4.",
+      "To count: for each element you make a yes-or-no choice (in the subset or not). With n elements that is 2 × 2 × … × 2 (n times). So **n(P(A)) = 2ⁿ.**",
+      "A = {a, b, c, d, e} has 5 elements, so the power set has 2⁵ = **32** elements. A = {a, b, c, d, e, f} has 6 elements, so it has 2⁶ = **64**.",
+      "Take care with the difference: the **number of elements** of A is n, but the number of **subsets** is 2ⁿ. An exam option like '16' for a 5-element set is a trap for people who compute 2⁴."
+     ],
+     "keyPoints": [
+      "n(P(A)) = 2ⁿ.",
+      "The power set includes { } and A itself."
+     ],
+     "example": {
+      "problem": "List the power set of A = {1, 2, 3} and count it.",
+      "steps": [
+       "Subsets with 0 elements: { }.",
+       "With 1 element: {1}, {2}, {3}.",
+       "With 2 elements: {1, 2}, {1, 3}, {2, 3}.",
+       "With 3 elements: {1, 2, 3}.",
+       "Count: 1 + 3 + 3 + 1 = 8, which is 2³ ✓."
+      ],
+      "answer": "8 subsets"
+     },
+     "exercises": [
+      {
+       "prompt": "How many subsets does {a, b, c} have?",
+       "options": [
+        "3",
+        "6",
+        "8",
+        "9"
+       ],
+       "correctIndex": 2,
+       "explanation": "2³ = 8."
+      },
+      {
+       "prompt": "Find the cardinality of the power set of A = {a, b, c, d, e}.",
+       "options": [
+        "16",
+        "32",
+        "64",
+        "10"
+       ],
+       "correctIndex": 1,
+       "explanation": "2⁵ = 32."
+      },
+      {
+       "prompt": "Find the cardinality of the power set of A = {a, b, c, d, e, f}.",
+       "options": [
+        "32",
+        "12",
+        "36",
+        "64"
+       ],
+       "correctIndex": 3,
+       "explanation": "2⁶ = 64."
+      },
+      {
+       "prompt": "How many subsets does the empty set { } have?",
+       "options": [
+        "0",
+        "1",
+        "2",
+        "None, it has no subsets"
+       ],
+       "correctIndex": 1,
+       "explanation": "The empty set has exactly one subset: itself. 2⁰ = 1."
+      }
+     ]
+    },
+    {
+     "id": "two",
+     "title": "Counting with two sets",
+     "body": [
+      "When you need a number rather than a list, use the **counting rule for two sets**: **n(A ∪ B) = n(A) + n(B) − n(A ∩ B).** We subtract the overlap because adding n(A) and n(B) counts the people in both groups twice.",
+      "Example: 60 students, 36 like Economics, 28 like History, and 8 like neither. So 60 − 8 = 52 like at least one subject, and n(E ∪ H) = 52. Then 52 = 36 + 28 − n(E ∩ H), so n(E ∩ H) = 64 − 52 = **12.**",
+      "Percentages work the same way. In a gathering of 400, 60% like MTH112 and 77% like MTH110, and everyone likes at least one. Then 100 = 60 + 77 − both, so both = 37%. And 37% of 400 = **148 students.**",
+      "Draw a Venn diagram with two overlapping circles and fill in **the middle first** (the overlap). Then the 'only' regions are found by subtracting the overlap."
+     ],
+     "keyPoints": [
+      "n(A ∪ B) = n(A) + n(B) − n(A ∩ B).",
+      "Subtract 'neither' from the total to get 'at least one'.",
+      "Start from the overlap in a Venn diagram."
+     ],
+     "example": {
+      "problem": "In a class of 50, 30 play football, 25 play volleyball and 5 play neither. How many play both?",
+      "steps": [
+       "At least one sport: 50 − 5 = 45.",
+       "45 = 30 + 25 − both.",
+       "both = 55 − 45 = 10."
+      ],
+      "answer": "10 students play both"
+     },
+     "exercises": [
+      {
+       "prompt": "60 students: 36 like Economics, 28 like History, 8 like neither. How many like both?",
+       "options": [
+        "16",
+        "12",
+        "8",
+        "4"
+       ],
+       "correctIndex": 1,
+       "explanation": "52 like at least one. 36 + 28 − 52 = 12."
+      },
+      {
+       "prompt": "In a gathering of 400 students, 60% like MTH112 and 77% like MTH110, and everyone likes at least one. How many like both?",
+       "options": [
+        "74",
+        "148",
+        "222",
+        "296"
+       ],
+       "correctIndex": 1,
+       "explanation": "60% + 77% − 100% = 37%, and 37% of 400 = 148."
+      },
+      {
+       "prompt": "n(A) = 30, n(B) = 25 and n(A ∩ B) = 10. What is n(A ∪ B)?",
+       "options": [
+        "55",
+        "45",
+        "65",
+        "35"
+       ],
+       "correctIndex": 1,
+       "explanation": "30 + 25 − 10 = 45."
+      },
+      {
+       "prompt": "Of 100 people, 60 drink tea, 45 drink coffee and 25 drink both. How many drink neither?",
+       "options": [
+        "20",
+        "15",
+        "25",
+        "30"
+       ],
+       "correctIndex": 0,
+       "explanation": "At least one: 60 + 45 − 25 = 80. Neither: 100 − 80 = 20."
+      }
+     ]
+    },
+    {
+     "id": "three",
+     "title": "Counting with three sets",
+     "body": [
+      "For three sets the rule has three parts: **n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A ∩ B) − n(A ∩ C) − n(B ∩ C) + n(A ∩ B ∩ C).** Add the singles, subtract the pairs, add back the triple (the triple was subtracted too many times).",
+      "Example: 40 pupils, everyone studies at least one subject. 30 study Biology, 22 Physics, 21 Chemistry. 15 study Physics and Biology, 10 Physics and Chemistry, 13 Biology and Chemistry. Let x be the number who study all three. Then 40 = 30 + 22 + 21 − 15 − 10 − 13 + x = 73 − 38 + x = 35 + x. So **x = 5.**",
+      "Now use the diagram to find every region. Only Physics and Biology: 15 − 5 = 10. Only Physics and Chemistry: 10 − 5 = 5. Only Biology and Chemistry: 13 − 5 = 8. Only Biology: 30 − 10 − 8 − 5 = 7. Only Physics: 22 − 10 − 5 − 5 = 2. Only Chemistry: 21 − 5 − 8 − 5 = 3. Check: 7 + 2 + 3 + 10 + 5 + 8 + 5 = 40 ✓.",
+      "A probability question: what is the chance that a randomly chosen pupil studies Physics **or** Chemistry? Use n(P ∪ C) = 22 + 21 − 10 = 33. The probability is **33/40.**",
+      "**Always sanity-check.** Suppose a camp has 50 people, with 31, 36 and 42 in three sports, and 8, 11 and 13 in the pairs. The rule gives 50 = 31 + 36 + 42 − 8 − 11 − 13 + x = 77 + x, so x = −27. A count cannot be negative. The numbers contradict each other, and **no such camp exists.** If you meet a question like this, the right answer is that the data is impossible ('None of the above')."
+     ],
+     "keyPoints": [
+      "Singles − pairs + triple.",
+      "Fill the Venn diagram from the centre outwards.",
+      "A negative count means the question data is inconsistent."
+     ],
+     "example": {
+      "problem": "Of 100 students, 45 take Maths, 40 take Physics, 30 take Chemistry. 15 take Maths and Physics, 10 take Maths and Chemistry, 12 take Physics and Chemistry, and 6 take all three. How many take at least one?",
+      "steps": [
+       "Singles: 45 + 40 + 30 = 115.",
+       "Pairs: 15 + 10 + 12 = 37.",
+       "115 − 37 + 6 = 84."
+      ],
+      "answer": "84 students"
+     },
+     "exercises": [
+      {
+       "prompt": "40 pupils all study at least one of Biology (30), Physics (22) and Chemistry (21). Pairs: Physics and Biology 15, Physics and Chemistry 10, Biology and Chemistry 13. How many study all three?",
+       "options": [
+        "10",
+        "9",
+        "5",
+        "55"
+       ],
+       "correctIndex": 2,
+       "explanation": "40 = 73 − 38 + x, so x = 5."
+      },
+      {
+       "prompt": "Using the same class, what is the probability that a random pupil studies Physics or Chemistry?",
+       "options": [
+        "33/40",
+        "13/40",
+        "1",
+        "33"
+       ],
+       "correctIndex": 0,
+       "explanation": "n(P ∪ C) = 22 + 21 − 10 = 33, so the probability is 33/40."
+      },
+      {
+       "prompt": "In the same class, how many pupils study only Biology?",
+       "options": [
+        "5",
+        "7",
+        "10",
+        "13"
+       ],
+       "correctIndex": 1,
+       "explanation": "30 − 10 (with Physics only) − 8 (with Chemistry only) − 5 (all three) = 7."
+      },
+      {
+       "prompt": "In a group, n(A) = 12, n(B) = 9, n(C) = 8, n(A ∩ B) = 4, n(A ∩ C) = 3, n(B ∩ C) = 2 and n(A ∩ B ∩ C) = 1. Find n(A ∪ B ∪ C).",
+       "options": [
+        "21",
+        "29",
+        "24",
+        "18"
+       ],
+       "correctIndex": 0,
+       "explanation": "12 + 9 + 8 − 4 − 3 − 2 + 1 = 21."
+      },
+      {
+       "prompt": "A camp of 50: 31, 36 and 42 play three sports; the pairs are 8, 11 and 13. The rule gives the all-three number as:",
+       "options": [
+        "−27, so the data is impossible",
+        "27",
+        "18",
+        "14"
+       ],
+       "correctIndex": 0,
+       "explanation": "50 = 77 + x gives x = −27. Counts cannot be negative."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B); n(P(A)) = 2ⁿ"
+  },
+  {
+   "id": "binary-operations-number-systems",
+   "intro": "A binary operation is a rule that combines two numbers into one. Exams invent new rules and ask you to follow them, solve equations with them, and test their properties. We finish with closure, which is how mathematicians describe the number systems.",
+   "sections": [
+    {
+     "id": "what",
+     "title": "What is a binary operation?",
+     "body": [
+      "A **binary operation** is a rule that takes **two** numbers (that is what 'binary' means here) and gives back **one** number. You already know several: + , − , × and ÷. In exams, new operations are invented and given symbols like *, ∘, ∇ or Δ. A question tells you the **recipe**, and you follow it.",
+      "For example, 'a * b = (b² − a²)/(2ab)'. This is just a recipe saying: take the second number, square it; take the first number, square it; subtract; then divide by twice the product. To find **3 * 2**, replace a with 3 and b with 2: (2² − 3²)/(2 × 3 × 2) = (4 − 9)/12 = **−5/12.**",
+      "**Order matters.** The first number goes where a is, and the second where b is. If you swap them (2 * 3) you may get a different answer: (9 − 4)/12 = 5/12.",
+      "Another recipe: x * y = √(x + y) − √(x − y). For **9 * 2**: √11 − √7. This cannot be simplified into one square root, so it stays as √11 − √7. For **6 * 2**: √8 − √4 = 2√2 − 2. Check each option carefully, because a wrong option may look similar.",
+      "The recipe may use words. a ∇ b = max(a, b − 1) means 'take the larger of a and (b − 1)'. For 3 ∇ 5: b − 1 = 4, and max(3, 4) = **4.**"
+     ],
+     "keyPoints": [
+      "A binary operation turns two numbers into one by a given rule.",
+      "Put the first number where a is and the second where b is.",
+      "Order matters: a * b may differ from b * a."
+     ],
+     "example": {
+      "problem": "a * b = 2a + b. Find 3 * 4 and 4 * 3.",
+      "steps": [
+       "3 * 4: a = 3, b = 4, so 2(3) + 4 = 10.",
+       "4 * 3: a = 4, b = 3, so 2(4) + 3 = 11."
+      ],
+      "answer": "3 * 4 = 10 and 4 * 3 = 11"
+     },
+     "exercises": [
+      {
+       "prompt": "A binary operation is defined by a * b = (b² − a²)/(2ab). Find 3 * 2.",
+       "options": [
+        "−5/12",
+        "5/12",
+        "25/14",
+        "12/5"
+       ],
+       "correctIndex": 0,
+       "explanation": "(4 − 9)/(2 × 3 × 2) = −5/12."
+      },
+      {
+       "prompt": "With x * y = √(x + y) − √(x − y), find 9 * 2.",
+       "options": [
+        "√6",
+        "√11 − √7",
+        "√3",
+        "√9"
+       ],
+       "correctIndex": 1,
+       "explanation": "√(9 + 2) − √(9 − 2) = √11 − √7."
+      },
+      {
+       "prompt": "With x * y = √(x + y) − √(x − y), find 6 * 2.",
+       "options": [
+        "2√2 − 2",
+        "√6 − √6",
+        "√2",
+        "−6"
+       ],
+       "correctIndex": 0,
+       "explanation": "√8 − √4 = 2√2 − 2."
+      },
+      {
+       "prompt": "a ∇ b = max(a, b − 1). Evaluate 3 ∇ 5.",
+       "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+       ],
+       "correctIndex": 2,
+       "explanation": "b − 1 = 4. The larger of 3 and 4 is 4."
+      }
+     ]
+    },
+    {
+     "id": "nested",
+     "title": "Nested operations and surds",
+     "body": [
+      "When brackets appear, work **inside first**, then use that answer in the outer operation. Take a ∘ b = a + b + (1/2)ab.",
+      "**(2 ∘ 3) ∘ 4.** First 2 ∘ 3 = 2 + 3 + (1/2)(6) = 8. Then 8 ∘ 4 = 8 + 4 + (1/2)(32) = 8 + 4 + 16 = **28.**",
+      "**8 ∘ (4 ∘ 7).** First 4 ∘ 7 = 4 + 7 + (1/2)(28) = 25. Then 8 ∘ 25 = 8 + 25 + (1/2)(200) = 8 + 25 + 100 = **133.** If you meet this question with options like 8, 42, 28 and 78, none is right, so the answer is 'None of the above'.",
+      "Operations can involve surds. Let a * b = a + b − 2ab and find (5 − 3√2) * (6 − 5√2). Sum: a + b = 11 − 8√2. Product: ab = (5)(6) + (5)(−5√2) + (−3√2)(6) + (−3√2)(−5√2) = 30 − 25√2 − 18√2 + 30 = 60 − 43√2. So the answer is (11 − 8√2) − 2(60 − 43√2) = 11 − 8√2 − 120 + 86√2 = **−109 + 78√2.** Recall that √2 × √2 = 2, which is how the last product became +30.",
+      "Tip: do the sum and the product separately, then combine. This avoids sign errors."
+     ],
+     "keyPoints": [
+      "Brackets first, then the outer operation.",
+      "With surds, find a + b and ab separately; √2 × √2 = 2."
+     ],
+     "example": {
+      "problem": "a * b = a + b − 2ab. Find 3 * 4.",
+      "steps": [
+       "a + b = 7.",
+       "2ab = 2 × 12 = 24.",
+       "7 − 24 = −17."
+      ],
+      "answer": "−17"
+     },
+     "exercises": [
+      {
+       "prompt": "a ∘ b = a + b + (1/2)ab. Find (2 ∘ 3) ∘ 4.",
+       "options": [
+        "10",
+        "12",
+        "28",
+        "54"
+       ],
+       "correctIndex": 2,
+       "explanation": "2 ∘ 3 = 8, then 8 ∘ 4 = 28."
+      },
+      {
+       "prompt": "With the same operation, find 4 ∘ 7.",
+       "options": [
+        "11",
+        "25",
+        "28",
+        "18"
+       ],
+       "correctIndex": 1,
+       "explanation": "4 + 7 + (1/2)(28) = 25."
+      },
+      {
+       "prompt": "With the same operation, find 8 ∘ (4 ∘ 7).",
+       "options": [
+        "8",
+        "42",
+        "28",
+        "133"
+       ],
+       "correctIndex": 3,
+       "explanation": "4 ∘ 7 = 25 and 8 ∘ 25 = 8 + 25 + 100 = 133."
+      },
+      {
+       "prompt": "a * b = a + b − 2ab. Calculate (5 − 3√2) * (6 − 5√2).",
+       "options": [
+        "−109 + 78√2",
+        "4 + 7√2",
+        "√2",
+        "11 − 8√2"
+       ],
+       "correctIndex": 0,
+       "explanation": "a + b = 11 − 8√2 and ab = 60 − 43√2. Then 11 − 8√2 − 120 + 86√2 = −109 + 78√2."
+      }
+     ]
+    },
+    {
+     "id": "solve",
+     "title": "Solving equations that contain an operation",
+     "body": [
+      "Often the question is turned around: you know the answer and must find an unknown. Write the recipe with the unknown in the right place, then solve the ordinary equation.",
+      "**Example 1:** x * y = √(xy). If x * (2 * 8) = 6, find x. First 2 * 8 = √16 = 4. Then x * 4 = √(4x) = 6, so 4x = 36 and **x = 9.**",
+      "**Example 2:** a * b = a/b + b/a. Solve (x + 1) * 2 = 3. Let u = x + 1. Then u/2 + 2/u = 3. Multiply by 2u: u² + 4 = 6u, so u² − 6u + 4 = 0, giving u = 3 ± √5 (quadratic formula). Then x = u − 1 = **2 ± √5**, which can be written (4 ± √20)/2.",
+      "**Example 3:** x * y = x² − y² − y. Find M if 3 * M = 7. Here x = 3 and y = M: 9 − M² − M = 7, so M² + M − 2 = 0, which factorises as (M + 2)(M − 1) = 0. So **M = 1 or M = −2.**",
+      "**Example 4 (watch the set!):** On the integers ℤ, x * y = 3x + 2y − 1. Find x with x * 2 = 5. Then 3x + 4 − 1 = 5, so 3x = 2 and x = 2/3. But the operation is only defined on **integers**, and 2/3 is not an integer. So **there is no solution in ℤ**. Whenever an operation says 'on ℤ', 'on ℝ' or 'on ℝ \\ {0}', your answer must belong to that set."
+     ],
+     "keyPoints": [
+      "Substitute into the recipe, then solve the ordinary equation.",
+      "Do the inner bracket first.",
+      "The answer must belong to the set the operation is defined on."
+     ],
+     "example": {
+      "problem": "x * y = 3x + 2y − 1 on ℝ. Find x if x * 2 = 5.",
+      "steps": [
+       "Substitute y = 2: 3x + 4 − 1 = 5.",
+       "3x = 2, so x = 2/3.",
+       "This time the operation is on ℝ, so 2/3 is a valid answer."
+      ],
+      "answer": "x = 2/3"
+     },
+     "exercises": [
+      {
+       "prompt": "x * y = √(xy). If x * (2 * 8) = 6, find x.",
+       "options": [
+        "√3",
+        "9",
+        "√4",
+        "16"
+       ],
+       "correctIndex": 1,
+       "explanation": "2 * 8 = 4. Then √(4x) = 6, so x = 9."
+      },
+      {
+       "prompt": "a * b = a/b + b/a. Solve (x + 1) * 2 = 3.",
+       "options": [
+        "2",
+        "(4 ± √20)/2",
+        "√20",
+        "4"
+       ],
+       "correctIndex": 1,
+       "explanation": "With u = x + 1: u² − 6u + 4 = 0, so u = 3 ± √5 and x = 2 ± √5."
+      },
+      {
+       "prompt": "x * y = x² − y² − y. Find the values of M with 3 * M = 7.",
+       "options": [
+        "1 and −2",
+        "3 and 4",
+        "−1/3 or 1/4",
+        "9"
+       ],
+       "correctIndex": 0,
+       "explanation": "9 − M² − M = 7 gives M² + M − 2 = 0, so M = 1 or −2."
+      },
+      {
+       "prompt": "On ℤ, x * y = 3x + 2y − 1. Find the integer x with x * 2 = 5.",
+       "options": [
+        "2/3",
+        "0",
+        "8/3",
+        "None: no integer works"
+       ],
+       "correctIndex": 3,
+       "explanation": "3x + 3 = 5 gives x = 2/3, which is not an integer."
+      },
+      {
+       "prompt": "a * b = a + 2b. If x * 3 = 11, find x.",
+       "options": [
+        "5",
+        "4",
+        "8",
+        "17"
+       ],
+       "correctIndex": 0,
+       "explanation": "x + 6 = 11, so x = 5."
+      }
+     ]
+    },
+    {
+     "id": "laws",
+     "title": "The laws: commutative, associative, identity, inverse",
+     "body": [
+      "A binary operation can have these properties. They are called **laws**.",
+      "**Commutative law:** a * b = b * a for all a and b (order does not matter). Addition and multiplication are commutative; subtraction is not (5 − 3 ≠ 3 − 5). To test: swap a and b in the recipe and see whether you get the same expression.",
+      "Test p * q = (p − q)²/(p + q). Swapping gives (q − p)²/(q + p). Since (q − p)² = (p − q)², the two are equal, so the operation * **is commutative.** Test p Δ q = (p − q)/(pq). Swapping gives (q − p)/(qp), which is the **negative** of the original. So **Δ is not commutative.**",
+      "**Associative law:** (a * b) * c = a * (b * c) for all a, b, c. Addition is associative; subtraction is not: (5 − 3) − 1 = 1 but 5 − (3 − 1) = 3. For a ∘ b = a + b + (1/2)ab, both sides work out to a + b + c + (1/2)(ab + ac + bc) + (1/4)abc, so ∘ is associative.",
+      "**Identity element e:** a * e = a for every a. For a ∘ b = a + b + (1/2)ab, we need a + e + (1/2)ae = a, so e(1 + a/2) = 0, so **e = 0.** Check: a ∘ 0 = a + 0 + 0 = a ✓.",
+      "**Inverse of a:** the number a′ with a * a′ = e. For ∘: a + a′ + (1/2)aa′ = 0, so a′(1 + a/2) = −a and a′ = −2a/(2 + a). This works for every a except a = −2.",
+      "Note that **De Morgan's law** ((A ∪ B)′ = A′ ∩ B′) belongs to **sets**. It is not a law of binary operations. That is why a question 'all of these apply to binary operations EXCEPT…' has De Morgan's law as the answer, while commutative, associative and distributive laws all do apply."
+     ],
+     "keyPoints": [
+      "Commutative: a * b = b * a. Associative: (a * b) * c = a * (b * c).",
+      "Identity e: a * e = a. Inverse: a * a′ = e.",
+      "De Morgan's law is for sets, not operations."
+     ],
+     "example": {
+      "problem": "Is a * b = 2a + b commutative?",
+      "steps": [
+       "Swap: b * a = 2b + a.",
+       "Is 2a + b equal to 2b + a? Only when a = b.",
+       "Test with numbers: 1 * 2 = 4 but 2 * 1 = 5."
+      ],
+      "answer": "No, it is not commutative"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these is NOT a law that applies to binary operations?",
+       "options": [
+        "Commutative law",
+        "Associative law",
+        "Distributive law",
+        "De Morgan's law"
+       ],
+       "correctIndex": 3,
+       "explanation": "De Morgan's law is about sets, not operations."
+      },
+      {
+       "prompt": "p * q = (p − q)²/(p + q) and p Δ q = (p − q)/(pq). Which is commutative?",
+       "options": [
+        "* only",
+        "Δ only",
+        "Both",
+        "Neither"
+       ],
+       "correctIndex": 0,
+       "explanation": "(p − q)² equals (q − p)², so * is commutative. For Δ, swapping gives the negative."
+      },
+      {
+       "prompt": "Is subtraction on ℝ associative?",
+       "options": [
+        "Yes, always",
+        "No: (5 − 3) − 1 = 1 but 5 − (3 − 1) = 3",
+        "Yes, but only for positive numbers",
+        "Only for integers"
+       ],
+       "correctIndex": 1,
+       "explanation": "The two groupings give different results."
+      },
+      {
+       "prompt": "a ∘ b = a + b + (1/2)ab. What is the identity element?",
+       "options": [
+        "0",
+        "1",
+        "−1",
+        "2"
+       ],
+       "correctIndex": 0,
+       "explanation": "a ∘ 0 = a for every a."
+      },
+      {
+       "prompt": "For a * b = a + b − 2ab the identity is 0. What is the inverse of 1/4, that is, the number a′ with (1/4) * a′ = 0?",
+       "options": [
+        "−1/2",
+        "1/2",
+        "−1/4",
+        "4"
+       ],
+       "correctIndex": 0,
+       "explanation": "1/4 + a′ − 2(1/4)a′ = 0 gives 1/4 + a′/2 = 0, so a′ = −1/2."
+      }
+     ]
+    },
+    {
+     "id": "closure",
+     "title": "Closure and the number systems",
+     "body": [
+      "A set is **closed** under an operation if doing the operation on any two members of the set **always gives a member of the same set.** If even one pair escapes, the set is not closed.",
+      "The main number sets: **ℕ** (natural numbers 1, 2, 3, …), **ℤ** (integers …, −2, −1, 0, 1, 2, …), **ℚ** (rational numbers, which can be written as fractions p/q), **ℝ** (real numbers, rationals together with surds like √2 and π).",
+      "**ℕ** is closed under + and × but not under − (3 − 5 = −2 is not in ℕ) and not under ÷ (3 ÷ 5 is not in ℕ). **ℤ** is closed under +, − and × but not ÷ (1 ÷ 2 is not an integer). **Non-negative integers** (0, 1, 2, …) fail for the same reason as ℕ: 2 − 5 is negative.",
+      "**ℚ** is closed under +, −, × **and ÷** (excluding division by zero), because the sum, difference, product and quotient of fractions are still fractions. That is why the rational numbers are the answer to a question 'which set is closed under all four operations (excluding division by zero)?'",
+      "**ℝ** is also closed under all four. But watch out: the **irrational numbers alone** are not closed, because √2 × √2 = 2, which is not irrational."
+     ],
+     "keyPoints": [
+      "Closed: the result always stays in the set. One counter-example breaks it.",
+      "ℕ: + and × only. ℤ: +, −, ×. ℚ and ℝ: all four (÷ excluding 0)."
+     ],
+     "example": {
+      "problem": "Is the set {0, 1} closed under addition?",
+      "steps": [
+       "Check each pair: 0 + 0 = 0 ✓, 0 + 1 = 1 ✓, 1 + 1 = 2 ✗.",
+       "2 is not in {0, 1}."
+      ],
+      "answer": "No, 1 + 1 = 2 is outside the set"
+     },
+     "exercises": [
+      {
+       "prompt": "Which set is closed under addition, subtraction, multiplication and division (excluding zero)?",
+       "options": [
+        "Natural numbers",
+        "Integers",
+        "Rational numbers",
+        "Non-negative integers"
+       ],
+       "correctIndex": 2,
+       "explanation": "Fractions stay fractions under all four operations. Integers fail at division (1 ÷ 2)."
+      },
+      {
+       "prompt": "Is the set of natural numbers closed under subtraction?",
+       "options": [
+        "Yes",
+        "No, 3 − 5 = −2 is not a natural number",
+        "Only for even numbers",
+        "Only if the numbers are equal"
+       ],
+       "correctIndex": 1,
+       "explanation": "One counter-example is enough."
+      },
+      {
+       "prompt": "Is the set of integers closed under division?",
+       "options": [
+        "Yes",
+        "No, 1 ÷ 2 is not an integer",
+        "Yes, except by zero",
+        "Only for positive integers"
+       ],
+       "correctIndex": 1,
+       "explanation": "1 ÷ 2 = 1/2 is not an integer."
+      },
+      {
+       "prompt": "Are the irrational numbers closed under multiplication?",
+       "options": [
+        "Yes",
+        "No, √2 × √2 = 2",
+        "Only for surds",
+        "Yes, except π"
+       ],
+       "correctIndex": 1,
+       "explanation": "The product 2 is rational, so it has escaped the set."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Commutative: a * b = b * a. Associative: (a * b) * c = a * (b * c). Identity: a * e = a."
+  },
+  {
+   "id": "permutations-combinations",
+   "intro": "This topic counts the ways to arrange or choose things. You will learn permutations (order matters), combinations (order does not), how to count arrangements of letters, and the binomial theorem, which expands powers like (1 + x)⁵.",
+   "sections": [
+    {
+     "id": "count",
+     "title": "Counting and permutations",
+     "body": [
+      "**The multiplication principle.** If one job can be done in 3 ways and another in 4 ways, the two jobs together can be done in 3 × 4 = 12 ways. Everything in this topic grows from that simple idea.",
+      "**Factorial.** n! (say 'n factorial') means n × (n − 1) × … × 2 × 1. So 5! = 5 × 4 × 3 × 2 × 1 = 120. We define **0! = 1.**",
+      "A **permutation** is an **arrangement where order matters.** A selection in which the order of choice is important is a permutation. Arranging **all** n different objects in a row can be done in **n!** ways: the first place has n choices, the second n − 1, and so on. So **ⁿPₙ = n!**",
+      "Arranging only **r** of the n objects: the first place has n choices, the second n − 1, down to r choices, so **ⁿPᵣ = n!/(n − r)! = n(n − 1)(n − 2)…(n − r + 1).** Example: ¹⁰P₄ = 10 × 9 × 8 × 7 = **5040.** Also ¹²P₇ = 12 × 11 × 10 × 9 × 8 × 7 × 6 = **3,991,680.**",
+      "**Reading ⁿPᵣ backwards.** If ⁿPᵣ = 13 × 12 × 11 × 10 × 9, there are five factors starting from 13, so **n = 13 and r = 5.** If ⁿPᵣ = 20!/(20 − 14)!, compare with n!/(n − r)!: **n = 20 and r = 14.**"
+     ],
+     "keyPoints": [
+      "n! = n × (n − 1) × … × 1, and 0! = 1.",
+      "ⁿPᵣ = n!/(n − r)! (order matters).",
+      "ⁿPₙ = n!"
+     ],
+     "example": {
+      "problem": "In how many ways can a president, secretary and treasurer be chosen from 5 people?",
+      "steps": [
+       "Order matters, since the three jobs are different: ⁵P₃.",
+       "5 × 4 × 3 = 60."
+      ],
+      "answer": "60 ways"
+     },
+     "exercises": [
+      {
+       "prompt": "A selection in which the order of choice is important is called a:",
+       "options": [
+        "Combination",
+        "Permutation",
+        "Subset",
+        "Factorial"
+       ],
+       "correctIndex": 1,
+       "explanation": "Order matters means permutation."
+      },
+      {
+       "prompt": "Evaluate ¹⁰P₄.",
+       "options": [
+        "5040",
+        "30240",
+        "151200",
+        "210"
+       ],
+       "correctIndex": 0,
+       "explanation": "10 × 9 × 8 × 7 = 5040."
+      },
+      {
+       "prompt": "Evaluate ¹²P₇.",
+       "options": [
+        "84",
+        "95040",
+        "665280",
+        "3991680"
+       ],
+       "correctIndex": 3,
+       "explanation": "12 × 11 × 10 × 9 × 8 × 7 × 6 = 3,991,680."
+      },
+      {
+       "prompt": "Evaluate ⁿPₙ.",
+       "options": [
+        "0!",
+        "n!",
+        "n",
+        "(n − 1)!"
+       ],
+       "correctIndex": 1,
+       "explanation": "Arranging all n objects can be done in n! ways."
+      },
+      {
+       "prompt": "If ⁿPᵣ = 13 × 12 × 11 × 10 × 9, find (n, r).",
+       "options": [
+        "13, 5",
+        "13, 9",
+        "5, 13",
+        "13, 7"
+       ],
+       "correctIndex": 0,
+       "explanation": "Five factors starting at 13: n = 13 and r = 5."
+      },
+      {
+       "prompt": "If ⁿPᵣ = 20!/(20 − 14)!, find (n, r).",
+       "options": [
+        "20, 6",
+        "20, 14",
+        "20, 7",
+        "14, 20"
+       ],
+       "correctIndex": 1,
+       "explanation": "It matches n!/(n − r)! with n = 20 and r = 14."
+      }
+     ]
+    },
+    {
+     "id": "repeat",
+     "title": "Arranging letters, including repeated ones",
+     "body": [
+      "If all the objects are different, they can be arranged in n! ways. So the letters of **PENCIL** (6 different letters) can be arranged in **6! = 720** ways.",
+      "If some objects are **identical**, swapping them changes nothing, so we divide. **n!/(p! q! r! …)**, where p, q, r are the numbers of each repeated object.",
+      "**CALCULUS** has 8 letters: C appears 2 times, A once, L twice, U twice and S once. So the number of arrangements is **8!/(2! 2! 2!)** = 40320/8 = **5040.** (Check each letter: C, A, L, C, U, L, U, S gives C × 2, L × 2, U × 2.)",
+      "Another: BANANA has 6 letters with A three times and N twice, so 6!/(3! 2!) = 720/12 = **60.**",
+      "**A good habit.** Write the letter counts first, in a short list, and then write the fraction. Most mistakes come from missing a repeated letter."
+     ],
+     "keyPoints": [
+      "All different: n!.",
+      "Repeats: divide by the factorial of each repeat count."
+     ],
+     "example": {
+      "problem": "How many arrangements does the word LEVEL have?",
+      "steps": [
+       "5 letters: L twice, E twice, V once.",
+       "5!/(2! 2!) = 120/4 = 30."
+      ],
+      "answer": "30"
+     },
+     "exercises": [
+      {
+       "prompt": "In how many ways can the letters of PENCIL be rearranged?",
+       "options": [
+        "2!",
+        "4!",
+        "6!",
+        "7!"
+       ],
+       "correctIndex": 2,
+       "explanation": "All 6 letters are different, so 6! = 720."
+      },
+      {
+       "prompt": "In how many ways can the letters of CALCULUS be rearranged?",
+       "options": [
+        "8!/(3! 2! 2!)",
+        "8!/(2! 2! 2!)",
+        "8!/(3! 2!)",
+        "8!/(2! 2!)"
+       ],
+       "correctIndex": 1,
+       "explanation": "C, L and U each appear twice, so the denominator is 2! 2! 2!."
+      },
+      {
+       "prompt": "How many arrangements does BANANA have?",
+       "options": [
+        "720",
+        "60",
+        "120",
+        "30"
+       ],
+       "correctIndex": 1,
+       "explanation": "6!/(3! 2!) = 720/12 = 60."
+      },
+      {
+       "prompt": "How many different 4-letter arrangements use the letters of the word MATH?",
+       "options": [
+        "4",
+        "12",
+        "24",
+        "16"
+       ],
+       "correctIndex": 2,
+       "explanation": "4 different letters: 4! = 24."
+      }
+     ]
+    },
+    {
+     "id": "comb",
+     "title": "Combinations: order does not matter",
+     "body": [
+      "A **combination** is a selection where **order does not matter**. Choosing a committee is a combination: {Ada, Bayo, Chi} is the same committee as {Chi, Ada, Bayo}.",
+      "Every group of r objects can be arranged in r! ways. So the number of combinations is the number of permutations divided by r!: **ⁿCᵣ = n!/((n − r)! r!)**.",
+      "Example: ⁵C₃ = 5!/(2! 3!) = 120/12 = **10.** And ⁶C₄ = 6!/(2! 4!) = 720/48 = **15.** There is a useful symmetry, **ⁿCᵣ = ⁿCₙ₋ᵣ**, because choosing 3 to include is the same as choosing 2 to leave out. So ⁷C₃ = ⁷C₄ = 35.",
+      "**Several groups at once.** A committee of 3 boys and 4 girls is chosen from 5 boys and 6 girls. Choose the boys: ⁵C₃ = 10. Choose the girls: ⁶C₄ = 15. Multiply: 10 × 15 = **150.**",
+      "The formula in an exam might be given as a 'which is true' question. The correct one is **ⁿCᵣ = n!/((n − r)! r!)**. Be careful with look-alikes where the last factor is n! instead of r!; those are wrong."
+     ],
+     "keyPoints": [
+      "ⁿCᵣ = n!/((n − r)! r!). Order does not matter.",
+      "ⁿCᵣ = ⁿCₙ₋ᵣ.",
+      "Several independent groups: multiply the separate counts."
+     ],
+     "example": {
+      "problem": "From 6 men and 4 women, how many committees of 2 men and 2 women can be formed?",
+      "steps": [
+       "Men: ⁶C₂ = 15.",
+       "Women: ⁴C₂ = 6.",
+       "Total: 15 × 6 = 90."
+      ],
+      "answer": "90"
+     },
+     "exercises": [
+      {
+       "prompt": "Which formula is correct?",
+       "options": [
+        "ⁿPᵣ₋₁ = n!/(n − r)!",
+        "ⁿCᵣ = n!/((n − r)! r!)",
+        "ⁿCᵣ = n!/((n − r)! n!)",
+        "ⁿCᵣ = n!/(r!)"
+       ],
+       "correctIndex": 1,
+       "explanation": "Divide the permutations by r!, which gives the factor r! in the denominator."
+      },
+      {
+       "prompt": "Evaluate ⁵C₃.",
+       "options": [
+        "5",
+        "10",
+        "15",
+        "60"
+       ],
+       "correctIndex": 1,
+       "explanation": "5!/(3! 2!) = 10."
+      },
+      {
+       "prompt": "A committee of 3 boys and 4 girls is formed from 5 boys and 6 girls. How many committees are possible?",
+       "options": [
+        "15",
+        "150",
+        "300",
+        "350"
+       ],
+       "correctIndex": 1,
+       "explanation": "⁵C₃ × ⁶C₄ = 10 × 15 = 150."
+      },
+      {
+       "prompt": "In how many ways can a team of 2 be chosen from 8 people?",
+       "options": [
+        "56",
+        "28",
+        "16",
+        "64"
+       ],
+       "correctIndex": 1,
+       "explanation": "⁸C₂ = 8 × 7/2 = 28."
+      },
+      {
+       "prompt": "What is ⁷C₄?",
+       "options": [
+        "35",
+        "28",
+        "21",
+        "7"
+       ],
+       "correctIndex": 0,
+       "explanation": "⁷C₄ = ⁷C₃ = 35."
+      }
+     ]
+    },
+    {
+     "id": "binom",
+     "title": "The binomial theorem",
+     "body": [
+      "Expanding (a + b)ⁿ by hand is slow. The **binomial theorem** gives it directly: **(a + b)ⁿ = ⁿC₀aⁿ + ⁿC₁aⁿ⁻¹b + ⁿC₂aⁿ⁻²b² + … + ⁿCₙbⁿ.** The powers of a go down, the powers of b go up, and the coefficients are combinations.",
+      "The **general term** (the (k + 1)th term) is **Tₖ₊₁ = ⁿCₖ aⁿ⁻ᵏ bᵏ.**",
+      "Example: (1 + x)⁵. The coefficients are ⁵C₀ to ⁵C₅ = 1, 5, 10, 10, 5, 1. So (1 + x)⁵ = 1 + 5x + 10x² + 10x³ + 5x⁴ + x⁵. The coefficient of x³ is **10.**",
+      "**Finding one specific term.** Find the term in x⁹ in (2x² − 1/x)¹². Here a = 2x², b = −1/x, n = 12. The general term is ¹²Cₖ (2x²)¹²⁻ᵏ (−1/x)ᵏ. The power of x is 2(12 − k) − k = 24 − 3k. Set 24 − 3k = 9, so **k = 5.**",
+      "Now compute: ¹²C₅ = 792; (2x²)⁷ = 2⁷x¹⁴ = 128x¹⁴; (−1/x)⁵ = −x⁻⁵. Multiply: 792 × 128 × (−1) × x⁹ = **−101376x⁹.**",
+      "**Method:** (1) write the general term; (2) collect the power of x; (3) set it equal to the power you want and solve for k; (4) substitute k. Always check that k is a whole number between 0 and n."
+     ],
+     "keyPoints": [
+      "Tₖ₊₁ = ⁿCₖ aⁿ⁻ᵏ bᵏ.",
+      "Collect the power of x, solve for k, then substitute.",
+      "Keep the signs: (−1)ᵏ."
+     ],
+     "example": {
+      "problem": "Find the coefficient of x² in (1 + 2x)⁵.",
+      "steps": [
+       "General term: ⁵Cₖ (2x)ᵏ, since a = 1.",
+       "For x², k = 2: ⁵C₂ × 2² = 10 × 4 = 40."
+      ],
+      "answer": "40"
+     },
+     "exercises": [
+      {
+       "prompt": "Find the coefficient of x³ in the expansion of (1 + x)⁵.",
+       "options": [
+        "1",
+        "5",
+        "10",
+        "−1"
+       ],
+       "correctIndex": 2,
+       "explanation": "⁵C₃ = 10."
+      },
+      {
+       "prompt": "What is the general term (the (k + 1)th term) of (a + b)ⁿ?",
+       "options": [
+        "ⁿCₖ aᵏ bⁿ⁻ᵏ",
+        "ⁿCₖ aⁿ⁻ᵏ bᵏ",
+        "ⁿPₖ aⁿ⁻ᵏ bᵏ",
+        "ⁿCₖ (a + b)ᵏ"
+       ],
+       "correctIndex": 1,
+       "explanation": "Powers of a go down from n and powers of b go up from 0."
+      },
+      {
+       "prompt": "Find the term in x⁹ in the expansion of (2x² − 1/x)¹².",
+       "options": [
+        "101376x⁹",
+        "−101376x⁹",
+        "111376x⁹",
+        "−111376x⁹"
+       ],
+       "correctIndex": 1,
+       "explanation": "k = 5: ¹²C₅ × 2⁷ × (−1)⁵ = 792 × 128 × (−1) = −101376."
+      },
+      {
+       "prompt": "Find the coefficient of x² in (1 + 2x)⁵.",
+       "options": [
+        "10",
+        "20",
+        "40",
+        "80"
+       ],
+       "correctIndex": 2,
+       "explanation": "⁵C₂ × 2² = 10 × 4 = 40."
+      },
+      {
+       "prompt": "What is the coefficient of x³ in (x + 2)⁴?",
+       "options": [
+        "8",
+        "4",
+        "32",
+        "12"
+       ],
+       "correctIndex": 0,
+       "explanation": "⁴C₁ x³ × 2 = 4 × 2 = 8."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "ⁿPᵣ = n!/(n − r)!; ⁿCᵣ = n!/((n − r)! r!); Tₖ₊₁ = ⁿCₖ aⁿ⁻ᵏ bᵏ"
+  }
+ ]
+}

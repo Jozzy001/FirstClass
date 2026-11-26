@@ -1,0 +1,2118 @@
+{
+ "courseCode": "PHY101",
+ "topics": [
+  {
+   "id": "kinematics",
+   "intro": "Kinematics is the study of motion. You will start with units and dimensions, then work through distance and displacement, constant acceleration, free fall, projectiles and circular motion.",
+   "sections": [
+    {
+     "id": "units",
+     "title": "Units and dimensions",
+     "body": [
+      "Every physical quantity is built from a few **base (fundamental) quantities**. In the SI system there are seven: **length (metre), mass (kilogram), time (second), electric current (ampere), temperature (kelvin), amount of substance (mole) and luminous intensity (candela).** So the **mole** is a base quantity, while velocity, speed and acceleration are **derived** from length and time.",
+      "The **dimension** of a quantity says which base quantities it is made of. We write length as **L**, mass as **M** and time as **T**. Velocity is length per time, so its dimension is **LT⁻¹.** Acceleration is velocity per time, so **LT⁻².** Force is mass × acceleration, so **MLT⁻².**",
+      "**Rules.** You can only add or subtract quantities with the **same** dimensions. Both sides of a true equation must have the **same dimensions.** This is the way to test an equation. It does not tell you about numerical factors like ½.",
+      "**Test s = ut + at.** Dimension of s: L. Dimension of ut: (LT⁻¹)(T) = L ✓. Dimension of at: (LT⁻²)(T) = LT⁻¹ ✗. So the terms do not match and the equation is wrong. **Test v² = u² + 2as.** v² and u²: L²T⁻². as: (LT⁻²)(L) = L²T⁻² ✓. All three terms match, so it is dimensionally correct.",
+      "**Which has the dimension of time?** Distance divided by velocity: x/v = L/(LT⁻¹) = **T.** And x/a = L/(LT⁻²) = T², not T.",
+      "**Dimensions of G.** From F = Gm₁m₂/r², G = Fr²/(m₁m₂). Dimensions: (MLT⁻²)(L²)/(M²) = **M⁻¹L³T⁻².** And **pressure** = force/area = MLT⁻²/L² = **ML⁻¹T⁻²**, which is also the dimension of bulk modulus (stress/strain, where strain has no dimension)."
+     ],
+     "keyPoints": [
+      "Base quantities: length, mass, time, current, temperature, mole, luminous intensity.",
+      "Both sides of an equation must have the same dimensions.",
+      "Velocity LT⁻¹, acceleration LT⁻², force MLT⁻², pressure ML⁻¹T⁻²."
+     ],
+     "example": {
+      "problem": "Is the equation x = vt dimensionally correct?",
+      "steps": [
+       "Left side: x has dimension L.",
+       "Right side: vt = (LT⁻¹)(T) = L.",
+       "Both sides are L, so it is correct."
+      ],
+      "answer": "Yes"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these is a fundamental (base) quantity?",
+       "options": [
+        "Velocity",
+        "Mole",
+        "Speed",
+        "Acceleration"
+       ],
+       "correctIndex": 1,
+       "explanation": "The mole (amount of substance) is one of the seven SI base quantities."
+      },
+      {
+       "prompt": "Which has the same dimension as time?",
+       "options": [
+        "x/v",
+        "x/a",
+        "a/v",
+        "vx"
+       ],
+       "correctIndex": 0,
+       "explanation": "x/v = L/(LT⁻¹) = T."
+      },
+      {
+       "prompt": "Which equation is dimensionally correct?",
+       "options": [
+        "s = ut + at",
+        "v = u + at²",
+        "s = ut + a/t",
+        "v² = u² + 2as"
+       ],
+       "correctIndex": 3,
+       "explanation": "All three terms of v² = u² + 2as have dimension L²T⁻²."
+      },
+      {
+       "prompt": "What are the dimensions of the universal gravitational constant G?",
+       "options": [
+        "M L² T⁻²",
+        "M⁻¹ L³ T⁻²",
+        "M L³ T⁻²",
+        "M⁻² L³ T⁻¹"
+       ],
+       "correctIndex": 1,
+       "explanation": "G = Fr²/(m₁m₂) = (MLT⁻²)(L²)/M²."
+      },
+      {
+       "prompt": "What is the dimension of force?",
+       "options": [
+        "MLT⁻¹",
+        "ML²T⁻²",
+        "MLT⁻²",
+        "M²LT⁻²"
+       ],
+       "correctIndex": 2,
+       "explanation": "Force = mass × acceleration = M × LT⁻²."
+      }
+     ]
+    },
+    {
+     "id": "disp",
+     "title": "Distance, displacement, speed and velocity",
+     "body": [
+      "**Distance** is the total length of the path, a scalar. **Displacement** is the straight-line change in position from start to finish, a vector with direction. **Speed** is distance divided by time. **Velocity** is displacement divided by time.",
+      "**Example.** An object moves 4.0 m north and then 3.0 m east. The distance travelled is 4 + 3 = **7 m.** The displacement is the straight line from start to end. The two legs are at right angles, so by Pythagoras √(4² + 3²) = **5 m.** (A 3-4-5 triangle.)",
+      "**Average speed** = total distance/total time. A bus averaging 120 km/h from 11:08 am to 11:41 am travels for 33 minutes = 0.55 h, so the distance is 120 × 0.55 = **66 km.** Always convert the time to hours when the speed is in km/h.",
+      "**Converting speeds.** Divide km/h by 3.6 to get m/s. 90 km/h = 25 m/s, and 100 km/h = 27.78 m/s.",
+      "**Adding displacements in several directions.** Break each into **x (east)** and **y (north)** components, add them separately, then use Pythagoras. A boy walks 20 m south, then 50 m at 30° north of west, then 30 m north. Take north as +y and east as +x. Leg 1 is (0, −20). Leg 2 is (−50 cos 30°, 50 sin 30°) = (−43.30, 25). Leg 3 is (0, 30). The total is (−43.30, 35). The size is √(43.30² + 35²) = **55.68 m.**"
+     ],
+     "keyPoints": [
+      "Distance is a scalar path length. Displacement is a vector from start to end.",
+      "km/h ÷ 3.6 = m/s.",
+      "Resolve into x and y components, add, then use Pythagoras."
+     ],
+     "example": {
+      "problem": "A car travels 6 km east then 8 km north. Find the distance and the displacement.",
+      "steps": [
+       "Distance = 6 + 8 = 14 km.",
+       "Displacement = √(36 + 64) = √100 = 10 km."
+      ],
+      "answer": "Distance 14 km, displacement 10 km"
+     },
+     "exercises": [
+      {
+       "prompt": "An object moves 4.0 m north and then 3.0 m east. What are the total distance travelled and the magnitude of the displacement?",
+       "options": [
+        "8 m, 5.8 m",
+        "7 m, 5.8 m",
+        "7 m, 5 m",
+        "8 m, 5 m"
+       ],
+       "correctIndex": 2,
+       "explanation": "Distance = 4 + 3 = 7 m. Displacement = √(16 + 9) = 5 m."
+      },
+      {
+       "prompt": "A bus keeps an average speed of 120 km/h from 11:08 am to 11:41 am. What distance does it cover?",
+       "options": [
+        "66 km",
+        "26 km",
+        "96 km",
+        "73 km"
+       ],
+       "correctIndex": 0,
+       "explanation": "The time is 33 min = 0.55 h, and 120 × 0.55 = 66 km."
+      },
+      {
+       "prompt": "Convert 90 km/h to m/s.",
+       "options": [
+        "90 m/s",
+        "25 m/s",
+        "32.4 m/s",
+        "15 m/s"
+       ],
+       "correctIndex": 1,
+       "explanation": "90 ÷ 3.6 = 25."
+      },
+      {
+       "prompt": "A boy walks 20 m south, then 50 m at 30° north of west, then 30 m north. Find the magnitude of his resultant displacement.",
+       "options": [
+        "56.68 m",
+        "54.68 m",
+        "69.68 m",
+        "55.68 m"
+       ],
+       "correctIndex": 3,
+       "explanation": "The components add to (−43.30, 35), whose size is 55.68 m."
+      },
+      {
+       "prompt": "Which of these is a vector?",
+       "options": [
+        "Distance",
+        "Speed",
+        "Displacement",
+        "Time"
+       ],
+       "correctIndex": 2,
+       "explanation": "Displacement has both size and direction."
+      }
+     ]
+    },
+    {
+     "id": "suvat",
+     "title": "Straight-line motion with constant acceleration",
+     "body": [
+      "For constant acceleration a, with starting velocity u, final velocity v, time t and distance s: **v = u + at**, **s = ut + ½at²**, **v² = u² + 2as**, **s = ½(u + v)t.** Choose the formula that contains the three quantities you know and the one you want.",
+      "**Multi-stage journeys.** Treat each stage separately and pass the final velocity of one stage to the next as the starting velocity. A car starts from rest and accelerates at 4 m/s² for 5 s: v = 0 + 4(5) = 20 m/s. It keeps that speed for 10 s. Then it decelerates at 2 m/s² for 4 s: v = 20 − 2(4) = **12 m/s.**",
+      "**Total distance** is the area under a speed-time graph. A car accelerates from rest at 1 m/s² for 10 s (50 m, reaching 10 m/s), travels at 10 m/s for 20 s (200 m), then slows to rest in 5 s (½ × 10 × 5 = 25 m). The total is **275 m.** If the steady stage lasts 30 s instead, the total is 50 + 300 + 25 = **375 m.**",
+      "**Stopping.** A driver at 120 km/h (33.33 m/s) sees a pothole 72 m ahead. To stop in 72 m: v² = u² + 2as gives 0 = 1111.1 + 2a(72), so a = −1111.1/144 = **−7.71 m/s².** The minus sign means it is a deceleration.",
+      "**When the position is given as a formula in t,** use calculus. If x = 3t³ + 2t² + 4t + 5, then v = 9t² + 4t + 4 and **a = 18t + 4.** At t = 0.5 s, a = 9 + 4 = **13 m/s².**"
+     ],
+     "keyPoints": [
+      "v = u + at; s = ut + ½at²; v² = u² + 2as.",
+      "Do each stage separately; the end speed of one stage is the start speed of the next.",
+      "Total distance = area under the speed-time graph."
+     ],
+     "example": {
+      "problem": "A train at 30 m/s brakes at 2 m/s². How far does it travel before stopping?",
+      "steps": [
+       "u = 30, v = 0, a = −2.",
+       "v² = u² + 2as: 0 = 900 − 4s.",
+       "s = 225 m."
+      ],
+      "answer": "225 m"
+     },
+     "exercises": [
+      {
+       "prompt": "A car starts from rest, accelerates at 4 m/s² for 5 s, travels steadily for 10 s, then decelerates at 2 m/s² for 4 s. What is its final speed?",
+       "options": [
+        "12.15 m/s",
+        "12.10 m/s",
+        "12 m/s",
+        "11.5 m/s"
+       ],
+       "correctIndex": 2,
+       "explanation": "After 5 s: 20 m/s. After decelerating: 20 − 2 × 4 = 12 m/s."
+      },
+      {
+       "prompt": "A car accelerates from rest at 1 m/s² for 10 s, travels steadily for 30 s, then decelerates to rest in 5 s. Find the total distance.",
+       "options": [
+        "275 m",
+        "375 m",
+        "175 m",
+        "205 m"
+       ],
+       "correctIndex": 1,
+       "explanation": "50 + 300 + 25 = 375 m."
+      },
+      {
+       "prompt": "A driver at 120 km/h sees a pothole 72 m ahead. What is the minimum deceleration needed to stop in time?",
+       "options": [
+        "−9.78 m/s²",
+        "−8.21 m/s²",
+        "−7.71 m/s²",
+        "−6.17 m/s²"
+       ],
+       "correctIndex": 2,
+       "explanation": "v² = u² + 2as: a = −(33.33)²/(2 × 72) = −7.71."
+      },
+      {
+       "prompt": "x = 3t³ + 2t² + 4t + 5 metres. Find the acceleration at t = 0.5 s.",
+       "options": [
+        "11 m/s²",
+        "13 m/s²",
+        "0.15 m/s²",
+        "18 m/s²"
+       ],
+       "correctIndex": 1,
+       "explanation": "a = d²x/dt² = 18t + 4 = 13."
+      },
+      {
+       "prompt": "Which formula contains no time?",
+       "options": [
+        "v = u + at",
+        "s = ut + ½at²",
+        "v² = u² + 2as",
+        "s = ½(u + v)t"
+       ],
+       "correctIndex": 2,
+       "explanation": "v² = u² + 2as links u, v, a and s."
+      }
+     ]
+    },
+    {
+     "id": "free",
+     "title": "Free fall and vertical motion",
+     "body": [
+      "Near the Earth's surface, every falling object has the same acceleration **g = 9.8 m/s²** (often rounded to 10 m/s²) downwards. Use the same formulae as before, with a = ±g. **Pick a positive direction and stick with it.**",
+      "**Dropped from rest from a height h:** v² = 2gh. A 0.2 kg ball released from 50 m hits the ground at v = √(2 × 9.8 × 50) = √980 = **31.3 m/s.** The mass does not matter in free fall.",
+      "**Thrown upwards.** A stone thrown up at 10 m/s goes up and comes back past the starting point at 10 m/s downwards. When it is 10 m **below** the start, take up as positive: v² = u² + 2as = 100 + 2(10)(10) = 300 (the displacement is −10 and the acceleration −10, so the product is positive). So the speed is √300 = **17.32 m/s.** If a ball thrown upwards returns after 4.0 s, the rise took 2.0 s, so u = gt = 10 × 2 = **20 m/s** (with g = 10).",
+      "**Dropped with a speed to start.** A camera falls from a helicopter descending at 12.5 m/s, 60 m up. It starts with 12.5 m/s downwards: v² = 12.5² + 2(9.8)(60) = 156.25 + 1176 = 1332.25, so v = **36.5 m/s.** The helicopter's motion carries over to the camera.",
+      "**Finding the starting height.** A man falls from rest and at a height of 15.0 m above the ground his speed is 24.5 m/s. The distance fallen so far is v²/2g = 600.25/19.6 = 30.6 m. So the drop height is 15 + 30.6 ≈ **45.6 m** (the nearest option is 45 m)."
+     ],
+     "keyPoints": [
+      "g = 9.8 m/s² downwards; v² = u² + 2gh.",
+      "Up and back to the same level: same speed, reverse direction.",
+      "Keep the signs consistent."
+     ],
+     "example": {
+      "problem": "A stone is dropped from a cliff and takes 3 s to reach the sea. How high is the cliff? (g = 10)",
+      "steps": [
+       "u = 0, a = 10, t = 3.",
+       "s = ½at² = ½ × 10 × 9 = 45 m."
+      ],
+      "answer": "45 m"
+     },
+     "exercises": [
+      {
+       "prompt": "A 0.2 kg ball is released from 50 m. With g = 9.8 m/s², what is its speed when it hits the ground?",
+       "options": [
+        "31.31 m/s",
+        "33.30 m/s",
+        "31.10 m/s",
+        "19.8 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "v = √(2gh) = √980 = 31.3 m/s."
+      },
+      {
+       "prompt": "A stone is thrown upward at 10 m/s. What is its speed when it is 10 m below the starting point? (g = 10 m/s²)",
+       "options": [
+        "10 m/s",
+        "20 m/s",
+        "17.32 m/s",
+        "28.3 m/s"
+       ],
+       "correctIndex": 2,
+       "explanation": "v² = 100 + 2(10)(10) = 300, so v = 17.32 m/s."
+      },
+      {
+       "prompt": "A ball thrown upward returns to the thrower 4.0 s later. What was the initial speed? (g = 10 m/s²)",
+       "options": [
+        "20 m/s",
+        "30 m/s",
+        "40 m/s",
+        "10 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "The rise took 2 s: u = gt = 20 m/s."
+      },
+      {
+       "prompt": "A camera is dropped from a helicopter descending at 12.5 m/s, 60 m above the ground. What is the camera's speed on landing? (g = 9.8 m/s²)",
+       "options": [
+        "36.5 m/s",
+        "30.5 m/s",
+        "34.3 m/s",
+        "24.3 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "v² = 12.5² + 2(9.8)(60) = 1332.25, so v = 36.5 m/s."
+      },
+      {
+       "prompt": "Does a heavier ball fall faster than a lighter one (ignoring air)?",
+       "options": [
+        "Yes",
+        "No, both have the same acceleration g",
+        "Only if dropped from high up",
+        "Only on the Moon"
+       ],
+       "correctIndex": 1,
+       "explanation": "In free fall, the acceleration does not depend on mass."
+      }
+     ]
+    },
+    {
+     "id": "proj",
+     "title": "Projectiles",
+     "body": [
+      "A projectile moves under gravity alone. The key idea: **horizontal and vertical motions are independent.** Horizontally the velocity is **constant** (no horizontal force). Vertically there is a **constant acceleration g** downwards.",
+      "**Thrown horizontally.** From a cliff at 45 m/s, the horizontal speed stays 45 m/s. After 3 s the vertical speed is gt = 9.8 × 3 = 29.4 m/s. The speed is the combination: v = √(45² + 29.4²) = √2889 = **53.75 ≈ 54 m/s.** Another: 20 m/s horizontally, after 5 s the vertical speed is 49 m/s, so v = √(400 + 2401) = **52.9 ≈ 53 m/s.**",
+      "**Launched at an angle θ with speed u.** Components: **uₓ = u cos θ** and **u_y = u sin θ.** After time t: horizontal speed uₓ and vertical speed u sin θ − gt. A particle at 25 m/s and 65° has uₓ = 10.57 and u_y = 22.66. At t = 0.65 s the vertical speed is 22.66 − 6.37 = 16.29, so the speed is √(10.57² + 16.29²) = **19.4 m/s.**",
+      "**Standard results.** Time of flight **T = 2u sin θ/g.** Maximum height **H = u² sin²θ/(2g).** Range **R = u² sin 2θ/g.** The maximum range is at θ = 45°.",
+      "**Range equal to three times the height.** R = 3H gives u² · 2 sin θ cos θ/g = 3u² sin²θ/(2g). Cancel the common factors: 2 cos θ = (3/2) sin θ, so tan θ = 4/3 and **θ = 53.1°.**"
+     ],
+     "keyPoints": [
+      "Horizontal: constant speed. Vertical: acceleration g.",
+      "uₓ = u cos θ; u_y = u sin θ.",
+      "T = 2u sin θ/g; H = u² sin²θ/(2g); R = u² sin 2θ/g."
+     ],
+     "example": {
+      "problem": "A ball is kicked at 20 m/s at 30°. Find the time of flight and the maximum height. (g = 9.8)",
+      "steps": [
+       "T = 2u sin θ/g = 2 × 20 × 0.5/9.8 = 2.04 s.",
+       "H = (u sin θ)²/(2g) = 100/19.6 = 5.10 m."
+      ],
+      "answer": "T = 2.04 s, H = 5.10 m"
+     },
+     "exercises": [
+      {
+       "prompt": "A body is projected horizontally at 45 m/s from a cliff and hits the ground after 3 s. What is its speed at touchdown? (g = 9.8)",
+       "options": [
+        "84 m/s",
+        "74 m/s",
+        "64 m/s",
+        "54 m/s"
+       ],
+       "correctIndex": 3,
+       "explanation": "The vertical speed is 29.4, so v = √(45² + 29.4²) = 53.75, which is closest to 54 m/s."
+      },
+      {
+       "prompt": "A projectile is thrown horizontally at 20 m/s. What is its speed after 5 s? (g = 9.8)",
+       "options": [
+        "52 m/s",
+        "53 m/s",
+        "51 m/s",
+        "54 m/s"
+       ],
+       "correctIndex": 1,
+       "explanation": "v = √(20² + 49²) = 52.9 ≈ 53 m/s."
+      },
+      {
+       "prompt": "A particle is projected at 25 m/s at 65° elevation. Find its speed after 0.65 s. (g = 9.8)",
+       "options": [
+        "19.42 m/s",
+        "15.13 m/s",
+        "14.13 m/s",
+        "21.31 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "uₓ = 10.57. Vertical speed = 22.66 − 6.37 = 16.29. v = 19.4."
+      },
+      {
+       "prompt": "A ball is projected so that its horizontal range is three times its maximum height. What is the angle of projection?",
+       "options": [
+        "53.1°",
+        "85.2°",
+        "36.9°",
+        "42.8°"
+       ],
+       "correctIndex": 0,
+       "explanation": "tan θ = 4/3, so θ = 53.1°."
+      },
+      {
+       "prompt": "At which launch angle is the range largest (same speed, level ground)?",
+       "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+       ],
+       "correctIndex": 1,
+       "explanation": "R = u² sin 2θ/g is largest when sin 2θ = 1, so θ = 45°."
+      }
+     ]
+    },
+    {
+     "id": "circ",
+     "title": "Circular motion and angular speed",
+     "body": [
+      "An object moving in a circle at constant speed is still **accelerating**, since its direction keeps changing. The acceleration points **towards the centre**: **centripetal acceleration a = v²/r = ω²r.**",
+      "**Angular speed ω** is the angle turned per second, in radians per second: **ω = 2π/T = 2πf**, where T is the time for one lap (period) and f is the frequency. And **v = ωr.** One revolution is 2π radians. To convert rpm (revolutions per minute) to rad/s, multiply by 2π/60.",
+      "**Radius from speed and acceleration.** A racing car at 100 km/h = 27.78 m/s has a centripetal acceleration of 7.72 m/s². Then r = v²/a = 771.6/7.72 = **100 m.**",
+      "**Radius from lap time.** A boy runs at 12.57 m/s and takes 50 s per lap. The circumference is 12.57 × 50 = 628.5 m, so r = 628.5/(2π) = **100 m.**",
+      "**Angular acceleration.** An engine speeds up from 900 rpm to 4000 rpm in 7.0 s. First convert: 900 rpm = 94.25 rad/s and 4000 rpm = 418.88 rad/s. The change is 324.63 rad/s, so the average angular acceleration is 324.63/7 = **46.37 rad/s².**"
+     ],
+     "keyPoints": [
+      "a = v²/r = ω²r, towards the centre.",
+      "ω = 2π/T; v = ωr.",
+      "rpm × 2π/60 = rad/s."
+     ],
+     "example": {
+      "problem": "A wheel of radius 0.5 m turns at 120 rpm. Find ω and the speed of the rim.",
+      "steps": [
+       "120 rpm = 2 rev/s, so ω = 2 × 2π = 12.57 rad/s.",
+       "v = ωr = 12.57 × 0.5 = 6.28 m/s."
+      ],
+      "answer": "ω = 12.57 rad/s, v = 6.28 m/s"
+     },
+     "exercises": [
+      {
+       "prompt": "A racing car moves round a circular track at 100 km/h, with centripetal acceleration 7.72 m/s². What is the radius?",
+       "options": [
+        "102 m",
+        "100 m",
+        "107 m",
+        "177 m"
+       ],
+       "correctIndex": 1,
+       "explanation": "v = 27.78 m/s, so r = v²/a = 771.6/7.72 = 100 m."
+      },
+      {
+       "prompt": "A boy runs round a circle at 12.57 m/s, completing a lap every 50 s. What is the radius?",
+       "options": [
+        "100 m",
+        "130 m",
+        "105 m",
+        "107 m"
+       ],
+       "correctIndex": 0,
+       "explanation": "r = vT/(2π) = 628.5/6.283 = 100 m."
+      },
+      {
+       "prompt": "An engine's speed rises from 900 rpm to 4000 rpm in 7.0 s. What is the average angular acceleration?",
+       "options": [
+        "64.37 rad/s²",
+        "46.73 rad/s²",
+        "46.37 rad/s²",
+        "37.46 rad/s²"
+       ],
+       "correctIndex": 2,
+       "explanation": "Δω = 324.63 rad/s, and 324.63/7 = 46.37 rad/s²."
+      },
+      {
+       "prompt": "The centripetal acceleration points:",
+       "options": [
+        "Along the velocity",
+        "Away from the centre",
+        "Towards the centre",
+        "Upwards always"
+       ],
+       "correctIndex": 2,
+       "explanation": "It always points to the centre of the circle."
+      },
+      {
+       "prompt": "Convert 60 rpm to rad/s.",
+       "options": [
+        "2π",
+        "π",
+        "60",
+        "1"
+       ],
+       "correctIndex": 0,
+       "explanation": "60 rev/min = 1 rev/s = 2π rad/s."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "v = u + at; s = ut + ½at²; v² = u² + 2as; a = v²/r"
+  },
+  {
+   "id": "newtons-laws-forces",
+   "intro": "Forces explain why things move or stay still. This lesson covers Newton's laws, friction, pulleys, inclined planes and adding forces.",
+   "sections": [
+    {
+     "id": "laws",
+     "title": "Newton's laws, weight and the normal force",
+     "body": [
+      "**First law (inertia):** a body stays at rest, or moves at constant velocity in a straight line, unless a **net force** acts on it. **Second law:** the net force equals mass times acceleration, **F = ma** (equivalently, the rate of change of momentum). **Third law:** when A pushes on B, B pushes back on A with an equal and opposite force. The two forces act on **different** bodies.",
+      "**Mass and weight.** Mass (kg) is the amount of matter. **Weight** (newtons) is the pull of gravity on that mass: **W = mg.** On Earth a 1 kg mass weighs about 9.8 N. If a question gives a car's *weight* (for example 2.00 × 10³ N), you must first find the mass: m = W/g = 2000/10 = **200 kg.**",
+      "**Retardation force.** A car of weight 2000 N is brought to rest with a uniform retardation of 7.5 m/s². The force is F = ma = 200 × 7.5 = **1500 N** (1.50 × 10³ N). For a car of weight 2.00 × 10⁴ N the mass is 2000 kg, so the force is 2000 × 7.5 = **15,000 N.**",
+      "**The normal force N** is the push of a surface on an object, always **perpendicular** to the surface. On a horizontal floor with nothing else vertical, N = mg. It is not 'the reaction to the weight' in the Newton's-third-law sense. The third-law partner of the weight is the object's pull on the Earth.",
+      "**Forces in nature.** There are four basic forces: **gravity, electromagnetic, strong nuclear and weak nuclear.** The force that holds atoms and molecules together is the **electromagnetic force.** The strong force holds protons and neutrons together inside the nucleus."
+     ],
+     "keyPoints": [
+      "F = ma. Weight W = mg.",
+      "If given a weight in newtons, divide by g to find the mass.",
+      "Action and reaction act on different bodies."
+     ],
+     "example": {
+      "problem": "A 1500 kg car accelerates at 2 m/s². What net force is needed?",
+      "steps": [
+       "F = ma = 1500 × 2.",
+       "= 3000 N."
+      ],
+      "answer": "3000 N"
+     },
+     "exercises": [
+      {
+       "prompt": "A car of weight 2.00 × 10³ N is brought to rest with a uniform retardation of 7.5 m/s². What retardation force acts on it? (g = 10 m/s²)",
+       "options": [
+        "5.10 × 10⁻⁴ N",
+        "1.60 × 10² N",
+        "1.50 × 10³ N",
+        "2.00 × 10³ N"
+       ],
+       "correctIndex": 2,
+       "explanation": "m = 2000/10 = 200 kg, so F = 200 × 7.5 = 1500 N."
+      },
+      {
+       "prompt": "A car of weight 2.00 × 10⁴ N is brought to rest with a uniform retardation of 7.5 m/s². What is the retardation force? (g = 10 m/s²)",
+       "options": [
+        "5.10 × 10⁻⁴ N",
+        "1.60 × 10² N",
+        "1.50 × 10⁴ N",
+        "1.50 × 10³ N"
+       ],
+       "correctIndex": 2,
+       "explanation": "m = 2000 kg, so F = 2000 × 7.5 = 15,000 N."
+      },
+      {
+       "prompt": "Which force holds atoms and molecules together?",
+       "options": [
+        "Strong force",
+        "Weak force",
+        "Electromagnetic force",
+        "Gravity"
+       ],
+       "correctIndex": 2,
+       "explanation": "The electromagnetic force acts between electrons and nuclei and between atoms."
+      },
+      {
+       "prompt": "What is the weight of a 60 kg person? (g = 9.8)",
+       "options": [
+        "60 N",
+        "588 N",
+        "6.1 N",
+        "98 N"
+       ],
+       "correctIndex": 1,
+       "explanation": "W = mg = 60 × 9.8 = 588 N."
+      },
+      {
+       "prompt": "Newton's third law says that action and reaction forces:",
+       "options": [
+        "Act on the same body",
+        "Are equal and opposite and act on different bodies",
+        "Always cancel out on one body",
+        "Have different sizes"
+       ],
+       "correctIndex": 1,
+       "explanation": "The two forces are on different bodies, so they do not cancel."
+      }
+     ]
+    },
+    {
+     "id": "friction",
+     "title": "Friction and the circular road",
+     "body": [
+      "**Friction** is a force along the surface that opposes sliding (or the tendency to slide). It acts **parallel to the surface.** The maximum friction is **f = μN**, where μ is the coefficient of friction and N is the normal force.",
+      "**Static friction** acts when there is no sliding, and it can be any size up to μₛN. **Kinetic friction** acts when the surfaces slide, and it is μₖN, opposite to the relative sliding. Kinetic friction is parallel to the surface, **not** perpendicular. A statement saying friction is perpendicular to the contact surface confuses it with the normal force.",
+      "**A book held against a wall.** You press the book horizontally with a force N. The friction f = μN must hold up the weight mg. So N = mg/μ. For a 1.5 kg book with μ = 0.6 and g = 10: N = 15/0.6 = **25 N.** (A smaller push would let the book slip.)",
+      "**A car on a flat curve.** On a flat road, friction supplies the centripetal force: μmg = mv²/r. The mass cancels, so **v = √(μgr).** For μ = 0.5, r = 20 m: v = √(0.5 × 9.8 × 20) = √98 = **9.9 m/s.** If the car goes faster than this, it skids.",
+      "**Banked roads.** On a track banked at angle θ with no friction needed, **tan θ = v²/(rg).** For r = 100 m and v = 16 m/s: tan θ = 256/980 = 0.2612, so **θ = 14.64°.** (This is covered again under circular motion.)",
+      "**A pulled block.** A 15 kg block is pulled at constant speed along a rough floor by a force F at 45° above the horizontal, μ = 0.30. The vertical part of F lifts some of the weight, so N = mg − F sin 45°. Constant speed means F cos 45° = μN. So F cos 45° = 0.3(147 − F sin 45°), giving F(0.7071 + 0.2121) = 44.1 and F = **48 N.** If it moves 15 m in 60 s (speed 0.25 m/s), the power is F cos 45° × v = 48 × 0.7071 × 0.25 = **8.5 W.**"
+     ],
+     "keyPoints": [
+      "f = μN, parallel to the surface.",
+      "Flat curve: v = √(μgr). Banked: tan θ = v²/(rg).",
+      "A pull at an angle changes the normal force: N = mg − F sin θ."
+     ],
+     "example": {
+      "problem": "A 20 kg crate is pushed along a floor with μ = 0.3 at constant speed. Find the push needed. (g = 10)",
+      "steps": [
+       "N = mg = 200 N.",
+       "Friction = 0.3 × 200 = 60 N.",
+       "Constant speed means the push equals friction: 60 N."
+      ],
+      "answer": "60 N"
+     },
+     "exercises": [
+      {
+       "prompt": "A 1.5 kg book is pushed against a vertical wall, μ = 0.6 (minimum). What normal force keeps it still? (g = 10 m/s²)",
+       "options": [
+        "20.0 N",
+        "25.0 N",
+        "30.0 N",
+        "15.0 N"
+       ],
+       "correctIndex": 1,
+       "explanation": "N = mg/μ = 15/0.6 = 25 N."
+      },
+      {
+       "prompt": "A car rounds a flat circular road of radius 20 m. The coefficient of friction is 0.5. How fast can it go without skidding? (g = 9.8)",
+       "options": [
+        "9.9 m/s",
+        "9.5 m/s",
+        "9.3 m/s",
+        "9.1 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "v = √(μgr) = √98 = 9.9 m/s."
+      },
+      {
+       "prompt": "Which statement is correct?",
+       "options": [
+        "Static friction is perpendicular to the surface",
+        "Kinetic friction is parallel to the surface",
+        "The normal force is parallel to the surface",
+        "Friction acts to increase sliding"
+       ],
+       "correctIndex": 1,
+       "explanation": "Friction acts along the surface."
+      },
+      {
+       "prompt": "A 15 kg block is pulled at constant speed by a force at 45° above the horizontal with μ = 0.30. The force needed is about:",
+       "options": [
+        "48 N",
+        "15 N",
+        "147 N",
+        "31 N"
+       ],
+       "correctIndex": 0,
+       "explanation": "F cos 45° = 0.3(147 − F sin 45°) gives F ≈ 48 N."
+      },
+      {
+       "prompt": "A 10 kg box on a rough floor has μ = 0.2. What is the friction force when sliding? (g = 9.8)",
+       "options": [
+        "19.6 N",
+        "98 N",
+        "2 N",
+        "49 N"
+       ],
+       "correctIndex": 0,
+       "explanation": "f = μmg = 0.2 × 10 × 9.8 = 19.6 N."
+      }
+     ]
+    },
+    {
+     "id": "pulley",
+     "title": "Pulleys",
+     "body": [
+      "**The idea.** A light string over a smooth pulley has the **same tension T** on both sides. The two masses have the same size of acceleration. Apply F = ma to each mass separately, then solve together.",
+      "**Two hanging masses (Atwood machine), M₁ > M₂.** For M₁: M₁g − T = M₁a. For M₂: T − M₂g = M₂a. Adding: **a = (M₁ − M₂)g/(M₁ + M₂).** The tension is **T = 2M₁M₂g/(M₁ + M₂).** With masses 5 kg and 8 kg and g = 10: a = 3 × 10/13 = **2.3 m/s².**",
+      "**Force on the pulley.** The string pulls down on the pulley on both sides with the tension T. So the pulley feels **2T** downwards. For 7 kg and 9 kg: T = 2(7)(9)(9.8)/16 = 77.18 N, so the force on the pulley is **154.36 N.** (This is less than the combined weight (16 × 9.8 = 156.8 N) because the masses are accelerating.)",
+      "**Mass on a table plus a hanging mass.** A 2 kg glider on a frictionless air track is joined by a light string over a pulley to a hanging 5 kg mass. The glider: T = 2a. The hanging mass: 5g − T = 5a. Adding: a = 5g/7 = 7 m/s², and T = 14 N. The string pulls the pulley horizontally with T and vertically with T, so the force on the pulley is T√2 = 14 × 1.414 = **19.8 N.**",
+      "**Always check the limit.** If M₂ is very small, a approaches g (free fall). If M₁ = M₂, a = 0, so the tension equals the weight of each."
+     ],
+     "keyPoints": [
+      "Same tension on both sides of a smooth pulley.",
+      "Atwood: a = (M₁ − M₂)g/(M₁ + M₂); T = 2M₁M₂g/(M₁ + M₂).",
+      "Force on a pulley with two vertical strings = 2T."
+     ],
+     "example": {
+      "problem": "Masses 3 kg and 5 kg hang over a smooth pulley. Find a and T. (g = 10)",
+      "steps": [
+       "a = (5 − 3)(10)/8 = 2.5 m/s².",
+       "T = 2(3)(5)(10)/8 = 37.5 N."
+      ],
+      "answer": "a = 2.5 m/s², T = 37.5 N"
+     },
+     "exercises": [
+      {
+       "prompt": "Masses 5 kg and 8 kg hang over a smooth pulley. Find the common acceleration. (g = 10 m/s²)",
+       "options": [
+        "2.3 m/s²",
+        "1.3 m/s²",
+        "3.3 m/s²",
+        "4.3 m/s²"
+       ],
+       "correctIndex": 0,
+       "explanation": "a = (8 − 5)(10)/13 = 2.3."
+      },
+      {
+       "prompt": "Two masses M₁ and M₂ hang over a smooth pulley. Their common acceleration is:",
+       "options": [
+        "(M₁ + M₂)/(M₁ − M₂)",
+        "(M₁ − M₂)g/(M₁ + M₂)",
+        "2M₁M₂/(M₁ + M₂)",
+        "(M₁ + M₂)g"
+       ],
+       "correctIndex": 1,
+       "explanation": "From M₁g − T = M₁a and T − M₂g = M₂a."
+      },
+      {
+       "prompt": "Masses 7 kg and 9 kg hang over a smooth fixed pulley. Find the force on the pulley. (g = 9.8)",
+       "options": [
+        "122.5 N",
+        "77.18 N",
+        "154.36 N",
+        "88.25 N"
+       ],
+       "correctIndex": 2,
+       "explanation": "T = 77.18 N, and the pulley feels 2T = 154.36 N."
+      },
+      {
+       "prompt": "A 2 kg glider on a frictionless track is joined over a pulley to a hanging 5 kg mass (light string). What is the acceleration? (g = 9.8)",
+       "options": [
+        "7 m/s²",
+        "9.8 m/s²",
+        "3.5 m/s²",
+        "4.9 m/s²"
+       ],
+       "correctIndex": 0,
+       "explanation": "a = 5g/7 = 7 m/s²."
+      },
+      {
+       "prompt": "In an Atwood machine, if M₁ = M₂ the acceleration is:",
+       "options": [
+        "g",
+        "g/2",
+        "0",
+        "2g"
+       ],
+       "correctIndex": 2,
+       "explanation": "a = (M₁ − M₂)g/(M₁ + M₂) = 0."
+      }
+     ]
+    },
+    {
+     "id": "incline",
+     "title": "Inclined planes",
+     "body": [
+      "On a plane at angle θ, split the weight mg into two parts. **Along the slope: mg sin θ** (pulling the block down the slope). **Perpendicular to the slope: mg cos θ**, which the normal force N balances. On a smooth plane N = mg cos θ. With friction, f = μN = μmg cos θ.",
+      "**A block on a rough slope that is not moving** has three forces on it: **its weight, the normal force and friction.** So the answer is three.",
+      "**Block on a slope joined to a hanging mass.** A 15 kg block on a smooth 30° plane is joined over a pulley to a 13 kg block hanging. Taking the hanging mass as moving down: net force = 13g − 15g sin 30° = 127.4 − 73.5 = 53.9 N. Total mass 28 kg. **a = 53.9/28 = 1.93 m/s².**",
+      "**Slope given by height and length.** A plane is 4 m high and 20 m long, so sin θ = 4/20 = 0.2. A 5 kg particle on the plane is joined to a 3 kg hanging mass. Net force = 3g − 5g(0.2) = 29.4 − 9.8 = 19.6 N and the total mass is 8 kg, so **a = 2.45 m/s²** (with g = 10 it is exactly 2.5). The closest option should be chosen.",
+      "**The least force to hold a block on a smooth slope.** A force **parallel** to the slope: F₁ = mg sin θ. A **horizontal** force: its component along the slope is F₂ cos θ, which must equal mg sin θ, so F₂ = mg tan θ. The ratio is F₁/F₂ = sin θ/tan θ = **cos θ.**"
+     ],
+     "keyPoints": [
+      "Along the slope: mg sin θ. Perpendicular: mg cos θ.",
+      "Net force on the system ÷ total mass = acceleration.",
+      "sin θ = height/length."
+     ],
+     "example": {
+      "problem": "A 10 kg block slides down a smooth 30° slope. Find its acceleration. (g = 9.8)",
+      "steps": [
+       "Force along the slope = mg sin 30° = 10 × 9.8 × 0.5 = 49 N.",
+       "a = 49/10 = 4.9 m/s²."
+      ],
+      "answer": "4.9 m/s²"
+     },
+     "exercises": [
+      {
+       "prompt": "A block on a rough inclined plane is kept stationary by how many forces?",
+       "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+       ],
+       "correctIndex": 2,
+       "explanation": "Weight, the normal force and friction."
+      },
+      {
+       "prompt": "A 15 kg block on a smooth 30° plane is joined over a pulley to a 13 kg block hanging. Find the acceleration. (g = 9.8)",
+       "options": [
+        "4.92 m/s²",
+        "1.93 m/s²",
+        "1.02 m/s²",
+        "2.30 m/s²"
+       ],
+       "correctIndex": 1,
+       "explanation": "(127.4 − 73.5)/28 = 1.93."
+      },
+      {
+       "prompt": "A 5 kg particle lies on a smooth plane 4 m high and 20 m long, joined over a pulley to a 3 kg hanging mass. Find a. (g = 9.8)",
+       "options": [
+        "2.20 m/s²",
+        "2.50 m/s²",
+        "2.15 m/s²",
+        "2.75 m/s²"
+       ],
+       "correctIndex": 1,
+       "explanation": "The exact value is 2.45 m/s², and 2.50 is the closest option."
+      },
+      {
+       "prompt": "F₁ is the least force parallel to a smooth slope that prevents a block from sliding. F₂ is the least horizontal force that does so. What is F₁/F₂?",
+       "options": [
+        "cos θ",
+        "sin θ",
+        "tan θ",
+        "cosec θ"
+       ],
+       "correctIndex": 0,
+       "explanation": "F₁ = mg sin θ and F₂ = mg tan θ, so the ratio is cos θ."
+      },
+      {
+       "prompt": "The component of weight along a slope of angle θ is:",
+       "options": [
+        "mg cos θ",
+        "mg sin θ",
+        "mg tan θ",
+        "mg"
+       ],
+       "correctIndex": 1,
+       "explanation": "The part along the slope is mg sin θ; the part into the slope is mg cos θ."
+      }
+     ]
+    },
+    {
+     "id": "resolve",
+     "title": "Adding several forces",
+     "body": [
+      "When several forces act on a particle at different angles, **resolve each force into x and y components**, add the components, then combine them: **R = √(Rₓ² + R_y²)** and the angle **θ = tan⁻¹(R_y/Rₓ).**",
+      "**Example.** Four forces of 15 N, 10 N, 5 N and 20 N act on a particle, each successive pair making 30°. Put the first along 0°, so the angles are 0°, 30°, 60° and 90°.",
+      "x components: 15 + 10 cos 30° + 5 cos 60° + 20 cos 90° = 15 + 8.66 + 2.5 + 0 = **26.16 N.** y components: 0 + 10 sin 30° + 5 sin 60° + 20 sin 90° = 0 + 5 + 4.33 + 20 = **29.33 N.**",
+      "The resultant is √(26.16² + 29.33²) = **39.3 N** at tan⁻¹(29.33/26.16) = **48.3°** to the first force. So about 39 N at 48°.",
+      "**Equilibrium** means the resultant is zero: Rₓ = 0 and R_y = 0. This is how you find an unknown force that keeps a body still.",
+      "**Checking.** The resultant can never be bigger than the sum of the forces (15 + 10 + 5 + 20 = 50 N). 39 N is sensible."
+     ],
+     "keyPoints": [
+      "Resolve into components, add them, then use Pythagoras and tan⁻¹.",
+      "Equilibrium: the sum of components is zero in each direction."
+     ],
+     "example": {
+      "problem": "Forces of 6 N along x and 8 N along y act on a particle. Find the resultant.",
+      "steps": [
+       "R = √(36 + 64) = 10 N.",
+       "θ = tan⁻¹(8/6) = 53.1° from the x-axis."
+      ],
+      "answer": "10 N at 53.1°"
+     },
+     "exercises": [
+      {
+       "prompt": "Four forces 15 N, 10 N, 5 N and 20 N act on a particle, each successive pair at 30°. Find the resultant.",
+       "options": [
+        "39 N, 48°",
+        "29 N, 48°",
+        "48 N, 39°",
+        "39 N, 28°"
+       ],
+       "correctIndex": 0,
+       "explanation": "Components (26.16, 29.33), magnitude 39.3 N at 48.3°."
+      },
+      {
+       "prompt": "The x-component of a 10 N force acting at 30° to the x-axis is:",
+       "options": [
+        "5 N",
+        "8.66 N",
+        "10 N",
+        "17.3 N"
+       ],
+       "correctIndex": 1,
+       "explanation": "10 cos 30° = 8.66 N."
+      },
+      {
+       "prompt": "A body is in equilibrium. The resultant force is:",
+       "options": [
+        "The weight",
+        "Zero",
+        "The largest force",
+        "The friction"
+       ],
+       "correctIndex": 1,
+       "explanation": "In equilibrium, the forces balance exactly."
+      },
+      {
+       "prompt": "Two forces of 3 N and 4 N act at right angles. The resultant is:",
+       "options": [
+        "7 N",
+        "1 N",
+        "5 N",
+        "12 N"
+       ],
+       "correctIndex": 2,
+       "explanation": "√(9 + 16) = 5 N."
+      },
+      {
+       "prompt": "A resultant has components Rₓ = 6 N and R_y = 8 N. Its magnitude is:",
+       "options": [
+        "14 N",
+        "10 N",
+        "2 N",
+        "48 N"
+       ],
+       "correctIndex": 1,
+       "explanation": "√(36 + 64) = 10 N."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "F = ma; f = μN; a = (M₁ − M₂)g/(M₁ + M₂)"
+  },
+  {
+   "id": "work-energy-power",
+   "intro": "Work, energy and power describe how forces change motion. You will learn how to find work, kinetic and potential energy, comparing energies, and power.",
+   "sections": [
+    {
+     "id": "work",
+     "title": "Work and the work-energy idea",
+     "body": [
+      "In physics, **work** is done only when a force moves something. For a constant force: **W = F d cos θ**, where d is the distance moved and θ is the angle between the force and the movement. The unit is the **joule (J).** If the force is along the movement (θ = 0°), W = Fd. If the force is perpendicular to the movement (θ = 90°), the work is zero.",
+      "**Carrying a load.** A man carries a 10 kg load on his head round a horizontal square ABCDA and returns to the start. The force he applies on the load is **upwards** (equal to its weight) and the load moves **horizontally**, so the force and movement are at 90° and the work done on the load is **0 J.** Over a closed loop, the load also ends at the same height.",
+      "**Pulling at an angle.** A woman pulls a vacuum cleaner with a force of 80 N at 60° **with the vertical**, and moves it 5 m horizontally. The angle with the *horizontal* is therefore 30°, so the horizontal component is 80 sin 60° = 69.28 N. W = 69.28 × 5 = **346.4 J.** Always check which angle is given. If the angle were 60° with the horizontal, the work would be 80 cos 60° × 5 = 200 J.",
+      "**Kinetic energy (KE)** is the energy of motion: **KE = ½mv².** **Potential energy (PE)** near the Earth is **mgh.** The **work-energy theorem** says the net work done on a body equals its change in kinetic energy.",
+      "**Same KE problems.** For equal kinetic energies, ½m₁v₁² = ½m₂v₂², so v₂ = v₁√(m₁/m₂). A 2000 kg truck at 25 m/s (90 km/h) has the same KE as a 1000 kg car at v = 25√2 = **35.4 m/s.** A 30 kg truck at 400 m/s equals a 40 kg truck at 400√(30/40) = **346.4 m/s.** For mass: a 25 m/s truck matching a 1000 kg car at 35.4 m/s has mass 1000 × (35.4/25)² = **2005 kg.**",
+      "**KE turned into height.** A grasshopper of mass 2 × 10⁻² kg that leaves the ground with KE = 0.1176 J rises to h = KE/(mg) = 0.1176/(0.02 × 10) = **0.588 m ≈ 0.6 m.**"
+     ],
+     "keyPoints": [
+      "W = Fd cos θ. Perpendicular force does no work.",
+      "KE = ½mv²; PE = mgh.",
+      "Equal KE: v₂ = v₁√(m₁/m₂)."
+     ],
+     "example": {
+      "problem": "A 5 N force pulls a box 4 m along the floor at 60° to the floor. Find the work done.",
+      "steps": [
+       "W = Fd cos θ = 5 × 4 × cos 60°.",
+       "= 5 × 4 × 0.5 = 10 J."
+      ],
+      "answer": "10 J"
+     },
+     "exercises": [
+      {
+       "prompt": "A man carries a 10 kg load on his head around a horizontal square ABCDA and back to the start. The work done on the load is:",
+       "options": [
+        "40 J",
+        "400 J",
+        "392 J",
+        "0 J"
+       ],
+       "correctIndex": 3,
+       "explanation": "The force (up) is at 90° to the horizontal movement, so the work is zero."
+      },
+      {
+       "prompt": "A woman pulls a vacuum cleaner with 80 N at 60° with the vertical through 5 m horizontally. Find the work done.",
+       "options": [
+        "300 J",
+        "436.3 J",
+        "346.4 J",
+        "400 J"
+       ],
+       "correctIndex": 2,
+       "explanation": "The horizontal part is 80 sin 60° = 69.28 N. W = 69.28 × 5 = 346.4 J."
+      },
+      {
+       "prompt": "A 2000 kg truck moves at 90 km/h. How fast must a 1000 kg car go to have the same KE?",
+       "options": [
+        "33.4 m/s",
+        "35.4 m/s",
+        "31.4 m/s",
+        "34.4 m/s"
+       ],
+       "correctIndex": 1,
+       "explanation": "v = 25√2 = 35.4 m/s."
+      },
+      {
+       "prompt": "A 30 kg truck moves at 400 m/s. At what speed must a 40 kg truck move to have the same kinetic energy?",
+       "options": [
+        "344.6 m/s",
+        "366.4 m/s",
+        "346.4 m/s",
+        "464.3 m/s"
+       ],
+       "correctIndex": 2,
+       "explanation": "v = 400√(30/40) = 346.4 m/s."
+      },
+      {
+       "prompt": "How high can a grasshopper of mass 2 × 10⁻² kg jump if its take-off KE is 0.1176 J? (g = 10 m/s²)",
+       "options": [
+        "0.6 m",
+        "0.4 m",
+        "0.2 m",
+        "0.1 m"
+       ],
+       "correctIndex": 0,
+       "explanation": "h = KE/(mg) = 0.588 m."
+      }
+     ]
+    },
+    {
+     "id": "power",
+     "title": "Power",
+     "body": [
+      "**Power** is the rate of doing work: **P = W/t.** The unit is the **watt (W)** = 1 joule per second. 1 kW = 1000 W. When a force moves a body at speed v along its direction, **P = Fv.**",
+      "**A car at steady speed.** A car of mass 800 kg moves on a level road at a steady 10 m/s, and the total friction force is 400 N. Steady speed means no acceleration, so the engine force equals the friction: F = 400 N. **P = Fv = 400 × 10 = 4000 W = 4.00 kW.** Notice that the mass is not needed.",
+      "**Power to speed up.** If the car were accelerating, the engine force would be F = friction + ma. Then P = Fv.",
+      "**A pulled block.** A force at an angle: only the part along the motion counts, **P = F cos θ × v.**",
+      "**Efficiency** = useful output power ÷ input power × 100%. A machine with 80% efficiency that delivers 4 kW needs an input of 5 kW."
+     ],
+     "keyPoints": [
+      "P = W/t = Fv.",
+      "At steady speed the driving force equals the resistance.",
+      "Efficiency = output/input."
+     ],
+     "example": {
+      "problem": "A lift raises 200 kg through 15 m in 10 s. Find the power. (g = 10)",
+      "steps": [
+       "Work = mgh = 200 × 10 × 15 = 30,000 J.",
+       "P = 30,000/10 = 3000 W."
+      ],
+      "answer": "3000 W"
+     },
+     "exercises": [
+      {
+       "prompt": "A car of mass 800 kg moves at a steady 10 m/s on a horizontal road. The total friction force is 400 N. Find the power from the engine.",
+       "options": [
+        "3.95 kW",
+        "3.96 kW",
+        "3.98 kW",
+        "4.00 kW"
+       ],
+       "correctIndex": 3,
+       "explanation": "P = Fv = 400 × 10 = 4000 W."
+      },
+      {
+       "prompt": "What is the SI unit of power?",
+       "options": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Pascal"
+       ],
+       "correctIndex": 2,
+       "explanation": "1 watt = 1 J/s."
+      },
+      {
+       "prompt": "A machine does 600 J of work in 20 s. What is its power?",
+       "options": [
+        "12000 W",
+        "30 W",
+        "580 W",
+        "0.03 W"
+       ],
+       "correctIndex": 1,
+       "explanation": "P = W/t = 600/20 = 30 W."
+      },
+      {
+       "prompt": "A 500 N force moves a trolley at 2 m/s in the direction of the force. The power is:",
+       "options": [
+        "250 W",
+        "1000 W",
+        "502 W",
+        "2.5 W"
+       ],
+       "correctIndex": 1,
+       "explanation": "P = Fv = 500 × 2 = 1000 W."
+      },
+      {
+       "prompt": "A machine delivers 4 kW with an efficiency of 80%. The input power is:",
+       "options": [
+        "3.2 kW",
+        "4 kW",
+        "5 kW",
+        "6.4 kW"
+       ],
+       "correctIndex": 2,
+       "explanation": "Input = 4/0.8 = 5 kW."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "W = Fd cos θ; KE = ½mv²; P = W/t = Fv"
+  },
+  {
+   "id": "momentum-collisions",
+   "intro": "Momentum links force and time. In this lesson you will learn momentum and impulse, conservation of momentum in collisions, and how to use the coefficient of restitution.",
+   "sections": [
+    {
+     "id": "mom",
+     "title": "Momentum and impulse",
+     "body": [
+      "**Momentum** is mass times velocity: **p = mv.** It is a **vector**, so direction matters. The unit is kg·m/s. **Impulse** is force times the time it acts: **J = FΔt**, and it equals the **change in momentum: FΔt = mv − mu.**",
+      "**A ball hits a wall.** A 0.4 kg ball hits a wall moving left at 30 m/s and rebounds to the right at 20 m/s. The contact lasts 0.01 s. Take right as positive: the starting velocity is −30 and the final velocity is +20. Change in momentum = 0.4(20 − (−30)) = 0.4 × 50 = 20 kg·m/s. The average force is 20/0.01 = **2000 N** (2 × 10³ N).",
+      "**Total momentum of a system.** A 0.145 kg baseball moves +x at 3.40 m/s and a 0.0570 kg tennis ball moves −x at 6.20 m/s. Total = 0.145(3.40) + 0.0570(−6.20) = 0.493 − 0.353 = **+0.14 kg·m/s**, in the +x direction. The negative sign for the second ball is the whole point: add momenta as signed numbers.",
+      "**Newton's second law in momentum form:** F = (change in momentum)/(time).",
+      "**Why you bend your arms to catch a fast ball.** A longer contact time spreads the same change of momentum over more time, so the average force is smaller."
+     ],
+     "keyPoints": [
+      "p = mv (a vector). Impulse = FΔt = Δp.",
+      "Choose a positive direction and give velocities signs.",
+      "Longer contact time means smaller force."
+     ],
+     "example": {
+      "problem": "A 0.5 kg ball moving at 10 m/s is stopped in 0.05 s. Find the average force.",
+      "steps": [
+       "Δp = 0.5 × (0 − 10) = −5 kg·m/s.",
+       "F = −5/0.05 = −100 N.",
+       "The size is 100 N and it opposes the motion."
+      ],
+      "answer": "100 N"
+     },
+     "exercises": [
+      {
+       "prompt": "A 0.4 kg ball hits a wall at 30 m/s (left) and rebounds at 20 m/s (right). The contact time is 0.01 s. Find the average force on the ball.",
+       "options": [
+        "2 × 10³ N",
+        "2 × 10⁻³ N",
+        "2 × 10² N",
+        "2 × 10⁻² N"
+       ],
+       "correctIndex": 0,
+       "explanation": "Impulse = 0.4 × 50 = 20 kg·m/s, and F = 20/0.01 = 2000 N."
+      },
+      {
+       "prompt": "A 0.145 kg baseball moves +x at 3.40 m/s and a 0.0570 kg tennis ball moves −x at 6.20 m/s. What is the total momentum?",
+       "options": [
+        "0.14 kg·m/s, −x",
+        "0.41 kg·m/s, −x",
+        "0.41 kg·m/s, +x",
+        "0.14 kg·m/s, +x"
+       ],
+       "correctIndex": 3,
+       "explanation": "0.493 − 0.353 = +0.14 kg·m/s."
+      },
+      {
+       "prompt": "Impulse equals:",
+       "options": [
+        "Force × distance",
+        "Change in momentum",
+        "Mass × velocity",
+        "Energy ÷ time"
+       ],
+       "correctIndex": 1,
+       "explanation": "FΔt = mv − mu."
+      },
+      {
+       "prompt": "The unit of momentum is:",
+       "options": [
+        "kg·m/s",
+        "kg·m/s²",
+        "N·m",
+        "J/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "Mass (kg) times velocity (m/s)."
+      },
+      {
+       "prompt": "A 2 kg object changes velocity from 3 m/s to 8 m/s in the same direction in 0.5 s. What force acts?",
+       "options": [
+        "20 N",
+        "10 N",
+        "5 N",
+        "40 N"
+       ],
+       "correctIndex": 0,
+       "explanation": "Δp = 2 × 5 = 10 kg·m/s, and F = 10/0.5 = 20 N."
+      }
+     ]
+    },
+    {
+     "id": "cons",
+     "title": "Conservation of momentum",
+     "body": [
+      "When no external force acts on a system (the colliding bodies only push each other), the **total momentum before = total momentum after.** For two bodies: **m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂.**",
+      "**Bodies that stick together** (a perfectly inelastic collision): they leave with a common velocity v: m₁u₁ + m₂u₂ = (m₁ + m₂)v. A 3 kg particle hits a 4 kg particle at rest and they move together at 2.14 m/s. Then 3u = 7 × 2.14, so **u = 14.98/3 = 4.99 m/s.**",
+      "**Another example.** A 2 kg body at 3 m/s hits a stationary 1 kg body and they stick. v = (2 × 3 + 0)/3 = **2 m/s.**",
+      "**Energy is not always conserved.** In a sticking collision, some kinetic energy turns into heat and sound. Momentum is conserved, but energy usually is not (it is conserved only in a perfectly elastic collision).",
+      "**Direction matters.** If a body moves the opposite way, give it a negative sign. Always set up the equation with signs before you substitute numbers."
+     ],
+     "keyPoints": [
+      "Total momentum before = total momentum after.",
+      "Stuck together: m₁u₁ + m₂u₂ = (m₁ + m₂)v.",
+      "Momentum is conserved even when energy is not."
+     ],
+     "example": {
+      "problem": "A 1000 kg car at 6 m/s hits a stationary 500 kg car and they lock together. Find their speed.",
+      "steps": [
+       "Momentum: 1000 × 6 = 1500 × v.",
+       "v = 6000/1500 = 4 m/s."
+      ],
+      "answer": "4 m/s"
+     },
+     "exercises": [
+      {
+       "prompt": "A 3 kg particle collides with a 4 kg particle at rest. The two move together at 2.14 m/s. Find the initial speed of the 3 kg particle.",
+       "options": [
+        "7.50 m/s",
+        "8.25 m/s",
+        "3.05 m/s",
+        "4.99 m/s"
+       ],
+       "correctIndex": 3,
+       "explanation": "3u = 7 × 2.14, so u = 4.99 m/s."
+      },
+      {
+       "prompt": "A 2 kg body at 3 m/s sticks to a stationary 1 kg body. What is their common speed?",
+       "options": [
+        "1 m/s",
+        "2 m/s",
+        "3 m/s",
+        "1.5 m/s"
+       ],
+       "correctIndex": 1,
+       "explanation": "(2 × 3)/3 = 2 m/s."
+      },
+      {
+       "prompt": "In which collision is kinetic energy conserved?",
+       "options": [
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "Any collision",
+        "None"
+       ],
+       "correctIndex": 1,
+       "explanation": "Elastic collisions conserve both momentum and kinetic energy."
+      },
+      {
+       "prompt": "Momentum is conserved in a collision when:",
+       "options": [
+        "No external force acts on the system",
+        "The bodies stick together",
+        "The ground is rough",
+        "Energy is lost"
+       ],
+       "correctIndex": 0,
+       "explanation": "Only external forces change the total momentum."
+      },
+      {
+       "prompt": "A 1 kg cart at 4 m/s hits a 3 kg cart at rest and they couple. What is their speed?",
+       "options": [
+        "1 m/s",
+        "4 m/s",
+        "2 m/s",
+        "1.33 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "(1 × 4)/4 = 1 m/s."
+      }
+     ]
+    },
+    {
+     "id": "rest",
+     "title": "Restitution and elastic collisions",
+     "body": [
+      "The **coefficient of restitution e** measures how bouncy a collision is: **e = (speed of separation)/(speed of approach) = (v₂ − v₁)/(u₁ − u₂).** For a perfectly elastic collision e = 1. For a perfectly inelastic one (sticking) e = 0. Real collisions are between 0 and 1. **A negative e means the numbers are impossible.**",
+      "**Two equations, two unknowns.** Use (1) momentum conservation and (2) the restitution equation, then solve together. Example: a 3 kg sphere at 5 m/s catches up with a 2 kg sphere at 4 m/s in the same direction, with e = 3/4. Momentum: 3(5) + 2(4) = 23 = 3v₁ + 2v₂. Restitution: v₂ − v₁ = 0.75(5 − 4) = 0.75. Substituting v₂ = v₁ + 0.75: 23 = 3v₁ + 2v₁ + 1.5, so v₁ = **4.3 m/s** and v₂ = **5.05 m/s.**",
+      "**Energy check.** KE before = ½(3)(25) + ½(2)(16) = 37.5 + 16 = 53.5 J. KE after = ½(3)(4.3²) + ½(2)(5.05²) = 27.7 + 25.5 = **53.2 J.** A small amount is lost, as expected for e < 1.",
+      "**Check that a collision can happen at all.** The body behind must be **faster** than the body in front (u₁ > u₂), otherwise the approach speed is negative and the bodies never meet. If the numbers in a question put the faster body ahead, the collision as described cannot take place, and the restitution formula would give a meaningless result.",
+      "**A bouncing ball.** For a ball dropped onto the floor, e = √(h₂/h₁), where h₁ is the drop height and h₂ the rebound height. A ball dropped from 2 m that rebounds to 0.5 m has e = √(0.5/2) = **0.5.**"
+     ],
+     "keyPoints": [
+      "e = speed of separation ÷ speed of approach; 0 ≤ e ≤ 1.",
+      "Solve momentum + restitution equations together.",
+      "The rear body must be faster for a collision to happen."
+     ],
+     "example": {
+      "problem": "A 1 kg ball at 4 m/s hits a stationary 1 kg ball with e = 1 (elastic). Find the velocities after.",
+      "steps": [
+       "Momentum: 4 = v₁ + v₂.",
+       "Restitution: v₂ − v₁ = 1 × (4 − 0) = 4.",
+       "Adding: 2v₂ = 8, so v₂ = 4 m/s and v₁ = 0.",
+       "The balls swap speeds."
+      ],
+      "answer": "v₁ = 0, v₂ = 4 m/s"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the coefficient of restitution for a perfectly elastic collision?",
+       "options": [
+        "0",
+        "0.5",
+        "1",
+        "Greater than 1"
+       ],
+       "correctIndex": 2,
+       "explanation": "e = 1 means the bodies separate as fast as they approached."
+      },
+      {
+       "prompt": "A 3 kg sphere at 5 m/s catches up with a 2 kg sphere at 4 m/s (same direction), e = 3/4. What is the velocity of the 3 kg sphere afterwards?",
+       "options": [
+        "4.3 m/s",
+        "5.05 m/s",
+        "4.7 m/s",
+        "3.95 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "From 23 = 3v₁ + 2v₂ and v₂ − v₁ = 0.75, v₁ = 4.3 m/s."
+      },
+      {
+       "prompt": "For the same collision, what is the total kinetic energy afterwards?",
+       "options": [
+        "53.5 J",
+        "53.2 J",
+        "0 J",
+        "27.7 J"
+       ],
+       "correctIndex": 1,
+       "explanation": "27.7 + 25.5 = 53.2 J."
+      },
+      {
+       "prompt": "A ball dropped from 2 m rebounds to 0.5 m. What is e?",
+       "options": [
+        "0.25",
+        "0.5",
+        "0.75",
+        "2"
+       ],
+       "correctIndex": 1,
+       "explanation": "e = √(0.5/2) = 0.5."
+      },
+      {
+       "prompt": "A calculation gives e = −1. What does this tell you?",
+       "options": [
+        "The collision is perfectly elastic",
+        "The collision is inelastic",
+        "The data cannot describe a real collision",
+        "The bodies stuck together"
+       ],
+       "correctIndex": 2,
+       "explanation": "e must lie between 0 and 1, so a negative result signals impossible numbers."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "p = mv; FΔt = mv − mu; e = (v₂ − v₁)/(u₁ − u₂)"
+  },
+  {
+   "id": "circular-motion-gravitation",
+   "intro": "This topic joins circular motion with gravity. You will study the centripetal force, banked turns, Newton's law of gravitation, and the orbits of satellites using Kepler's laws.",
+   "sections": [
+    {
+     "id": "circ",
+     "title": "Centripetal force and banked turns",
+     "body": [
+      "A body moving in a circle needs a **net force towards the centre**, called the **centripetal force: F = mv²/r = mω²r.** It is not a new kind of force. It is the name for whichever real force (friction, tension, gravity, the normal force) is pointing to the centre.",
+      "**On a flat road,** friction supplies it: μmg = mv²/r, so the greatest safe speed is v = √(μgr). For μ = 0.5 and r = 20 m, v = **9.9 m/s.**",
+      "**On a banked road** the normal force has a sideways part that does the job, even without friction. For a bank at angle θ: **tan θ = v²/(rg).** For r = 100 m and v = 16 m/s, tan θ = 256/980 = 0.2612, so **θ = 14.64°.**",
+      "**The conical pendulum.** A particle of mass m on a string of length l moves in a horizontal circle of radius r. The vertical part of the tension holds the weight, T cos θ = mg. The horizontal part is the centripetal force, T sin θ = mv²/r. Dividing, tan θ = v²/(rg). From the geometry, sin θ = r/l and tan θ = r/√(l² − r²). So **v² = g r²/√(l² − r²).** For l = 1 m and r = 0.6 m: tan θ = 0.75 and v² = 9.8 × 0.36/0.8 = 4.41 m²/s², so v = 2.1 m/s.",
+      "**Common mistake.** Do not draw 'centrifugal force' as a real force on the body. In the ground frame, the body only has the inward net force."
+     ],
+     "keyPoints": [
+      "F = mv²/r = mω²r, towards the centre.",
+      "Flat road: v = √(μgr). Banked: tan θ = v²/(rg).",
+      "Conical pendulum: v² = gr²/√(l² − r²)."
+     ],
+     "example": {
+      "problem": "A 0.5 kg stone on a 0.8 m string is whirled at 4 m/s in a horizontal circle (ignore gravity). Find the tension.",
+      "steps": [
+       "T = mv²/r = 0.5 × 16/0.8.",
+       "= 10 N."
+      ],
+      "answer": "10 N"
+     },
+     "exercises": [
+      {
+       "prompt": "Find the banking angle for a car taking a turn of radius 100 m at 16 m/s with no friction. (g = 9.8)",
+       "options": [
+        "12.70°",
+        "14.64°",
+        "17.20°",
+        "16.44°"
+       ],
+       "correctIndex": 1,
+       "explanation": "tan θ = v²/(rg) = 256/980 = 0.2612, so θ = 14.64°."
+      },
+      {
+       "prompt": "A car rounds a flat road of radius 20 m, μ = 0.5. The greatest speed without skidding is:",
+       "options": [
+        "9.9 m/s",
+        "14 m/s",
+        "98 m/s",
+        "4.9 m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "v = √(μgr) = √98 = 9.9 m/s."
+      },
+      {
+       "prompt": "Centripetal force acts:",
+       "options": [
+        "Away from the centre",
+        "Along the velocity",
+        "Towards the centre",
+        "Upwards"
+       ],
+       "correctIndex": 2,
+       "explanation": "It points to the centre of the circle."
+      },
+      {
+       "prompt": "A particle on a string of length l describes a horizontal circle of radius r at speed v. Which relationship is right?",
+       "options": [
+        "v² = gr²/√(l² − r²)",
+        "v² = gr²/l",
+        "v = √(gr²/l)",
+        "v² = gr"
+       ],
+       "correctIndex": 0,
+       "explanation": "tan θ = v²/(rg) = r/√(l² − r²)."
+      },
+      {
+       "prompt": "The centripetal force on a 2 kg body at 3 m/s in a circle of radius 1.5 m is:",
+       "options": [
+        "12 N",
+        "6 N",
+        "18 N",
+        "9 N"
+       ],
+       "correctIndex": 0,
+       "explanation": "F = mv²/r = 2 × 9/1.5 = 12 N."
+      }
+     ]
+    },
+    {
+     "id": "grav",
+     "title": "Gravitation",
+     "body": [
+      "**Newton's law of gravitation:** every two masses attract with force **F = Gm₁m₂/r²**, where r is the distance between their centres and **G = 6.67 × 10⁻¹¹ N·m²/kg².** This is an **inverse-square law.** If the distance doubles, the force becomes **¼.** (A question that says the force is F at 2d and asks for the force at 4d, which is double the distance, also has the answer F/4.)",
+      "**Acceleration due to gravity** at a distance r from the centre of the Earth is g = GM/r². At the surface (r = R), g₀ = GM/R² ≈ 9.8 m/s². At a height h: **g_h = g₀ R²/(R + h)².** At h = 10 km, with R = 6380 km: g_h = 9.8 × (6380/6390)² = **9.77 m/s².** (Using M = 5.93 × 10²⁴ kg directly gives 9.69 m/s². The nearest option is the one to choose.)",
+      "**Finding the altitude.** Where is g equal to 2/3 of its surface value? (R/(R + h))² = 2/3, so R + h = R√(3/2) = 1.2247R, and h = 0.2247R = 0.2247 × 6.4 × 10⁶ = **1.438 × 10⁶ m.**",
+      "**Dimensions of G.** From F = Gm₁m₂/r², G = Fr²/(m₁m₂), with dimensions **M⁻¹L³T⁻².**",
+      "**Gravitational potential.** The potential energy of a mass m at distance r from the Earth's centre is **−GMm/r.** It is negative because gravity is attractive. Moving the mass further away increases it (towards zero)."
+     ],
+     "keyPoints": [
+      "F = Gm₁m₂/r² (inverse-square).",
+      "g_h = g₀R²/(R + h)².",
+      "G has dimensions M⁻¹L³T⁻²."
+     ],
+     "example": {
+      "problem": "How does g at a height R above the surface (distance 2R from the centre) compare with g at the surface?",
+      "steps": [
+       "g ∝ 1/r², and r doubles.",
+       "g becomes ¼ of the surface value: 9.8/4 = 2.45 m/s²."
+      ],
+      "answer": "2.45 m/s²"
+     },
+     "exercises": [
+      {
+       "prompt": "The force between two masses at a distance 2d is F. What is the force when the distance becomes 4d?",
+       "options": [
+        "4F",
+        "F/4",
+        "2F",
+        "F/2"
+       ],
+       "correctIndex": 1,
+       "explanation": "Doubling the distance quarters the force."
+      },
+      {
+       "prompt": "Find the acceleration due to gravity 10 km above the Earth's surface. (R = 6380 km, g₀ = 9.8 m/s²)",
+       "options": [
+        "9.77 m/s²",
+        "5.85 m/s²",
+        "7.25 m/s²",
+        "4.25 m/s²"
+       ],
+       "correctIndex": 0,
+       "explanation": "g_h = 9.8 × (6380/6390)² = 9.77 m/s²."
+      },
+      {
+       "prompt": "At what altitude is g equal to 2/3 of its surface value? (R = 6.4 × 10⁶ m)",
+       "options": [
+        "7.834 × 10³ m",
+        "1.384 × 10³ m",
+        "1.438 × 10⁶ m",
+        "7.734 × 10³ m"
+       ],
+       "correctIndex": 2,
+       "explanation": "h = R(√1.5 − 1) = 1.438 × 10⁶ m."
+      },
+      {
+       "prompt": "Gravitation obeys which kind of law?",
+       "options": [
+        "Inverse-square",
+        "Direct proportion to distance",
+        "Inverse-cube",
+        "Linear"
+       ],
+       "correctIndex": 0,
+       "explanation": "F ∝ 1/r²."
+      },
+      {
+       "prompt": "The value of G is about:",
+       "options": [
+        "6.67 × 10⁻¹¹ N·m²/kg²",
+        "9.8 m/s²",
+        "6.67 × 10¹¹ N·m²/kg²",
+        "3 × 10⁸ m/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "G is the universal gravitational constant."
+      }
+     ]
+    },
+    {
+     "id": "sat",
+     "title": "Satellites and Kepler's laws",
+     "body": [
+      "**Kepler's three laws:** (1) Each planet moves in an **ellipse** with the Sun at one **focus.** (2) The line from the Sun to a planet sweeps out **equal areas in equal times.** (3) The **square of the period is proportional to the cube of the mean distance: T² ∝ r³.** A statement about 'universal interaction between all bodies with mass' is Newton's law of gravitation, not one of Kepler's laws.",
+      "**Elliptical orbit.** From the second law, the satellite moves **fastest at perigee** (closest to the Earth) and **slowest at apogee** (farthest). Its speed varies, so it is not constant.",
+      "**Circular orbit.** Gravity supplies the centripetal force: GMm/r² = mv²/r, so **v = √(GM/r).** A satellite twice as far away moves slower. If the outer satellite's radius is 4 times the inner one's, v ∝ 1/√r gives v_outer = v_inner/2, so **v_inner = 2V.**",
+      "**Centripetal acceleration of a satellite.** At an altitude of 500 km the orbit radius is r = 6.4 × 10⁶ + 5 × 10⁵ = 6.9 × 10⁶ m. One revolution takes 90 min = 5400 s, so ω = 2π/5400 = 1.164 × 10⁻³ rad/s and **a = ω²r = 9.34 m/s².**",
+      "**Geostationary orbit.** A satellite that stays above the same point has period T = 24 h. From T² = 4π²r³/(GM): r = (GMT²/4π²)^(1/3) = 4.22 × 10⁷ m. The altitude is r − R = 4.22 × 10⁷ − 6.37 × 10⁶ = **3.59 × 10⁷ m = 3.59 × 10⁴ km.**",
+      "**Using T² ∝ r³.** A geostationary satellite is at height 6R, so its orbit radius is 7R and T = 24 h. Another satellite at height 2.5R has radius 3.5R. Then T = 24 × (3.5/7)^(3/2) = 24/(2√2) = **6√2 h ≈ 8.49 h.**",
+      "**Energy to put a satellite in orbit.** A 1000 kg satellite goes into a circular orbit of radius 8000 km (Earth's radius 6400 km, g = 10). GM = gR² = 4.096 × 10¹⁴. Energy in orbit = −GMm/(2r) = −2.56 × 10¹⁰ J. Energy at rest on the surface = −GMm/R = −6.4 × 10¹⁰ J. The energy needed is the difference: **3.84 × 10¹⁰ J.**"
+     ],
+     "keyPoints": [
+      "Kepler: ellipses; equal areas in equal times; T² ∝ r³.",
+      "Circular orbit: v = √(GM/r).",
+      "Geostationary: T = 24 h, altitude about 3.6 × 10⁴ km."
+     ],
+     "example": {
+      "problem": "A satellite's orbit radius is 4 times that of another satellite. By what factor is its period bigger?",
+      "steps": [
+       "T² ∝ r³, so T ∝ r^1.5.",
+       "(4)^1.5 = 8."
+      ],
+      "answer": "8 times"
+     },
+     "exercises": [
+      {
+       "prompt": "An earth satellite moves in an elliptical orbit. Which statement is correct?",
+       "options": [
+        "Speed is constant",
+        "Speed is greatest at perigee and least at apogee",
+        "Speed is greatest at apogee and least at perigee",
+        "Speed is zero at perigee"
+       ],
+       "correctIndex": 1,
+       "explanation": "By Kepler's second law, it moves fastest when closest to the Earth."
+      },
+      {
+       "prompt": "Two satellites orbit the Earth in circles. The outer one's radius is 4 times the inner one's. If V is the outer speed and v the inner speed:",
+       "options": [
+        "v = V/2",
+        "v = V/√2",
+        "v = √2 V",
+        "v = 2V"
+       ],
+       "correctIndex": 3,
+       "explanation": "v ∝ 1/√r, so the inner satellite is √4 = 2 times faster."
+      },
+      {
+       "prompt": "A satellite at altitude 500 km orbits once every 90 minutes. Its centripetal acceleration (R = 6.4 × 10⁶ m) is about:",
+       "options": [
+        "9.34 m/s²",
+        "9.45 m/s²",
+        "9.54 m/s²",
+        "1.2 m/s²"
+       ],
+       "correctIndex": 0,
+       "explanation": "a = ω²r with ω = 2π/5400 and r = 6.9 × 10⁶ m."
+      },
+      {
+       "prompt": "A geostationary satellite is at height 6R. What is the period of a satellite at a height of 2.5R?",
+       "options": [
+        "6√2 hrs",
+        "6 hrs",
+        "5√2 hrs",
+        "10 hrs"
+       ],
+       "correctIndex": 0,
+       "explanation": "T = 24 × (3.5/7)^1.5 = 6√2 h."
+      },
+      {
+       "prompt": "Find the altitude of a geostationary satellite.",
+       "options": [
+        "3.59 × 10⁴ km",
+        "5.39 × 10⁴ km",
+        "5.93 × 10⁴ km",
+        "9.10 × 10⁴ km"
+       ],
+       "correctIndex": 0,
+       "explanation": "r = 4.22 × 10⁷ m and r − R = 3.59 × 10⁷ m."
+      },
+      {
+       "prompt": "A 1000 kg satellite is placed in a circular orbit of radius 8000 km from rest on the Earth's surface (R = 6400 km, g = 10). The energy needed is:",
+       "options": [
+        "2.84 × 10¹⁰ J",
+        "3.84 × 10¹⁰ J",
+        "1.84 × 10¹⁰ J",
+        "4.84 × 10¹⁰ J"
+       ],
+       "correctIndex": 1,
+       "explanation": "−2.56 × 10¹⁰ − (−6.4 × 10¹⁰) = 3.84 × 10¹⁰ J."
+      },
+      {
+       "prompt": "Which is NOT one of Kepler's laws?",
+       "options": [
+        "Planets move in ellipses with the Sun at a focus",
+        "Equal areas in equal times",
+        "T² ∝ r³",
+        "Every body attracts every other with a force ∝ 1/r²"
+       ],
+       "correctIndex": 3,
+       "explanation": "The last is Newton's law of universal gravitation."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "F = mv²/r; F = Gm₁m₂/r²; v = √(GM/r); T² ∝ r³"
+  },
+  {
+   "id": "rotational-motion",
+   "intro": "Rotation has its own versions of mass, force and momentum. You will learn moment of inertia, rotational kinetic energy, rolling, angular momentum, and how flowing liquids speed up in narrow pipes.",
+   "sections": [
+    {
+     "id": "inertia",
+     "title": "Moment of inertia and radius of gyration",
+     "body": [
+      "**Moment of inertia I** is rotation's version of mass: it says how hard it is to change an object's spin. It depends on the mass **and how far from the axis it is spread.** For a point mass, I = mr². For a body, add up mr² for all parts.",
+      "Standard results (axis through the centre): **solid sphere: I = (2/5)mr²; solid cylinder or disc about its axis: I = ½mr²; thin ring or hoop: I = mr²; uniform rod about its centre, length L: I = (1/12)mL².**",
+      "**Example.** A solid sphere of mass 3 kg and diameter 50 cm. The radius is 0.25 m, so I = 0.4 × 3 × 0.0625 = **0.075 kg·m².** Take care to halve the diameter first.",
+      "**Radius of gyration k** is the distance from the axis at which the whole mass could be placed to give the same I: **I = mk², so k = √(I/m).** For a uniform rod of mass 20 kg and length 6 m about its centre: k² = L²/12 = 3, so **k = √3 m.**",
+      "**Torque and angular acceleration.** A torque produces angular acceleration, **τ = Iα**, the same pattern as F = ma."
+     ],
+     "keyPoints": [
+      "Sphere (2/5)mr²; cylinder ½mr²; hoop mr²; rod (1/12)mL².",
+      "k = √(I/m).",
+      "τ = Iα."
+     ],
+     "example": {
+      "problem": "Find I for a solid disc of mass 4 kg and radius 0.5 m about its axis.",
+      "steps": [
+       "I = ½mr² = ½ × 4 × 0.25.",
+       "= 0.5 kg·m²."
+      ],
+      "answer": "0.5 kg·m²"
+     },
+     "exercises": [
+      {
+       "prompt": "Find the moment of inertia of a solid sphere of mass 3 kg and diameter 50 cm about an axis through its centre.",
+       "options": [
+        "0.072 kg·m²",
+        "0.073 kg·m²",
+        "0.074 kg·m²",
+        "0.075 kg·m²"
+       ],
+       "correctIndex": 3,
+       "explanation": "I = (2/5)(3)(0.25²) = 0.075."
+      },
+      {
+       "prompt": "Find the radius of gyration of a uniform rod of mass 20 kg and length 6 m about its centre.",
+       "options": [
+        "4√3 m",
+        "3√3 m",
+        "2√3 m",
+        "√3 m"
+       ],
+       "correctIndex": 3,
+       "explanation": "k = √(L²/12) = L/(2√3) = √3 m."
+      },
+      {
+       "prompt": "Which is the moment of inertia of a solid cylinder about its axis?",
+       "options": [
+        "mr²",
+        "½mr²",
+        "(2/5)mr²",
+        "(1/12)mL²"
+       ],
+       "correctIndex": 1,
+       "explanation": "I = ½mr² for a solid cylinder."
+      },
+      {
+       "prompt": "The relation between torque and angular acceleration is:",
+       "options": [
+        "τ = Iα",
+        "τ = Iω",
+        "τ = mα",
+        "τ = I/α"
+       ],
+       "correctIndex": 0,
+       "explanation": "It is the rotational form of F = ma."
+      },
+      {
+       "prompt": "A 2 kg ring of radius 0.5 m has a moment of inertia of:",
+       "options": [
+        "0.5 kg·m²",
+        "0.25 kg·m²",
+        "1 kg·m²",
+        "2 kg·m²"
+       ],
+       "correctIndex": 0,
+       "explanation": "I = mr² = 2 × 0.25 = 0.5."
+      }
+     ]
+    },
+    {
+     "id": "rke",
+     "title": "Rotational kinetic energy and rolling",
+     "body": [
+      "The kinetic energy of a spinning body is **KE = ½Iω²**, where ω is the angular speed in rad/s. For the flywheel in a question: mass 10 kg, k = 3 m, one turn every second. I = mk² = 90 kg·m². ω = 2π rad/s. KE = ½ × 90 × (2π)² = **180π² J ≈ 1776 J.**",
+      "**A solid cylinder.** Mass 2 kg, radius 0.25 m, ω = 200 rad/s. I = ½mr² = 0.0625 kg·m². KE = ½(0.0625)(200²) = **1250 J.**",
+      "**Rolling without slipping** combines both kinds: **total KE = ½mv² + ½Iω²**, with **v = ωr.** For a solid cylinder, ½Iω² = ½(½MR²)(V/R)² = ¼MV². So the total is ½MV² + ¼MV² = **¾MV².**",
+      "**A bicycle wheel.** r = 0.25 m, m = 0.80 kg, I = 4 × 10⁻² kg·m², 7 turns per second. ω = 2π(7) = 43.98 rad/s. Rotational KE = ½(0.04)(43.98²) = 38.7 J. The centre moves at v = ωr = 11.0 m/s, so the translational KE = ½(0.8)(11.0²) = 48.4 J. The total is **87.1 J.**"
+     ],
+     "keyPoints": [
+      "Rotational KE = ½Iω².",
+      "Rolling: KE = ½mv² + ½Iω², with v = ωr.",
+      "Solid cylinder rolling: ¾MV²."
+     ],
+     "example": {
+      "problem": "A solid sphere of mass m rolls at speed v. What is its total KE? (I = (2/5)mr²)",
+      "steps": [
+       "Rotational: ½(2/5)mr²(v/r)² = (1/5)mv².",
+       "Translational: ½mv².",
+       "Total = (7/10)mv²."
+      ],
+      "answer": "(7/10)mv²"
+     },
+     "exercises": [
+      {
+       "prompt": "A solid cylinder of mass 2 kg and radius 0.25 m spins about its axis at 200 rad/s. Find its rotational KE.",
+       "options": [
+        "1250 J",
+        "1520 J",
+        "1052 J",
+        "1025 J"
+       ],
+       "correctIndex": 0,
+       "explanation": "I = 0.0625 kg·m², and KE = ½Iω² = 1250 J."
+      },
+      {
+       "prompt": "What is the total kinetic energy of a solid cylinder of mass M rolling without slipping at speed V?",
+       "options": [
+        "½MR²ω²",
+        "½MV²",
+        "¾MV²",
+        "½MRV"
+       ],
+       "correctIndex": 2,
+       "explanation": "½MV² + ¼MV² = ¾MV²."
+      },
+      {
+       "prompt": "A flywheel of mass 10 kg with a radius of gyration of 3 m rotates once every second. Find its KE.",
+       "options": [
+        "120,000 J",
+        "40,000 J",
+        "180π² J",
+        "90,000π² J"
+       ],
+       "correctIndex": 2,
+       "explanation": "I = 90, ω = 2π, so KE = ½ × 90 × 4π² = 180π²."
+      },
+      {
+       "prompt": "A bicycle wheel (m = 0.80 kg, r = 0.25 m, I = 0.04 kg·m²) rolls at 7 rotations per second. Find its total KE.",
+       "options": [
+        "78.1 J",
+        "87.1 J",
+        "17.8 J",
+        "18.7 J"
+       ],
+       "correctIndex": 1,
+       "explanation": "Rotational 38.7 J plus translational 48.4 J."
+      },
+      {
+       "prompt": "What does 'rolling without slipping' mean for the speed of the centre?",
+       "options": [
+        "v = ω/r",
+        "v = ωr",
+        "v = ω²r",
+        "v = 0"
+       ],
+       "correctIndex": 1,
+       "explanation": "The rim speed relative to the centre equals the centre's speed: v = ωr."
+      }
+     ]
+    },
+    {
+     "id": "angmom",
+     "title": "Angular momentum and the continuity equation",
+     "body": [
+      "**Angular momentum** is rotation's momentum: **L = Iω.** It is conserved when no outside torque acts. That is why a skater spins faster when pulling their arms in: I falls, so ω rises.",
+      "**Example of conservation.** A skater with I = 3 kg·m² spins at 2 rad/s. She pulls in her arms, so I = 1 kg·m². L = 3 × 2 = 6 stays the same, so ω = 6/1 = **6 rad/s.**",
+      "**The continuity equation for flowing liquids.** For a fluid that cannot be squashed, the volume that enters a pipe each second equals the volume that leaves: **A₁v₁ = A₂v₂.** The area of a circular pipe is πr². If the pipe narrows to **half the radius,** the area becomes ¼, so the speed becomes **4 times.** Water at 4.0 m/s in the wide section moves at **16 m/s** in the narrow section.",
+      "**Always use the area, not the radius.** A common mistake is to double the speed when the radius is halved."
+     ],
+     "keyPoints": [
+      "L = Iω, conserved with no outside torque.",
+      "Continuity: A₁v₁ = A₂v₂, and A = πr².",
+      "Halving the radius means four times the speed."
+     ],
+     "example": {
+      "problem": "A pipe of radius 3 cm carries water at 2 m/s and narrows to radius 1 cm. Find the new speed.",
+      "steps": [
+       "Area ratio = (3/1)² = 9.",
+       "v₂ = 9 × 2 = 18 m/s."
+      ],
+      "answer": "18 m/s"
+     },
+     "exercises": [
+      {
+       "prompt": "The angular momentum of a rotating flywheel is given by:",
+       "options": [
+        "Iω",
+        "τω",
+        "I²ω",
+        "τω²"
+       ],
+       "correctIndex": 0,
+       "explanation": "L = Iω."
+      },
+      {
+       "prompt": "An ideal fluid flows at 4.0 m/s in a horizontal circular pipe. The pipe narrows to half its original radius. What is the flow speed in the narrow part?",
+       "options": [
+        "12 m/s",
+        "8 m/s",
+        "14 m/s",
+        "16 m/s"
+       ],
+       "correctIndex": 3,
+       "explanation": "The area is ¼, so the speed is 4 × 4.0 = 16 m/s."
+      },
+      {
+       "prompt": "A spinning skater pulls in her arms. Her angular speed:",
+       "options": [
+        "Decreases",
+        "Stays the same",
+        "Increases",
+        "Becomes zero"
+       ],
+       "correctIndex": 2,
+       "explanation": "I decreases and L = Iω is conserved, so ω increases."
+      },
+      {
+       "prompt": "A skater has I = 3 kg·m² and ω = 2 rad/s. After pulling in her arms, I = 1 kg·m². Her new ω is:",
+       "options": [
+        "6 rad/s",
+        "2 rad/s",
+        "0.67 rad/s",
+        "3 rad/s"
+       ],
+       "correctIndex": 0,
+       "explanation": "3 × 2 = 1 × ω, so ω = 6."
+      },
+      {
+       "prompt": "Pipe radius is reduced to one third. By what factor does the flow speed rise?",
+       "options": [
+        "3",
+        "9",
+        "6",
+        "1/9"
+       ],
+       "correctIndex": 1,
+       "explanation": "The area falls to 1/9, so the speed rises 9 times."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "I = ½mr² (cylinder); KE = ½Iω²; L = Iω; A₁v₁ = A₂v₂"
+  },
+  {
+   "id": "shm",
+   "intro": "Simple harmonic motion is the smooth back-and-forth motion of springs and pendulums. This lesson covers amplitude, frequency, speed at any position, and the periods of a spring and a pendulum.",
+   "sections": [
+    {
+     "id": "shm",
+     "title": "Simple harmonic motion",
+     "body": [
+      "In **simple harmonic motion (SHM)**, an object moves back and forth about a centre so that its acceleration points to the centre and is proportional to the displacement: **a = −ω²x.** The two key numbers are the **amplitude A** (the greatest displacement) and the **frequency f** (swings per second, in hertz). The angular frequency is **ω = 2πf** and the period is **T = 1/f.**",
+      "**Displacement and speed.** x = A sin ωt (starting at the centre). The speed at displacement x is **v = ω√(A² − x²).** The speed is greatest at the centre (**v_max = Aω**) and zero at the ends.",
+      "**Example.** A body vibrates with frequency 50 Hz and amplitude 6 cm. Find the speed at 3 cm from the centre. ω = 2π × 50 = 314.16 rad/s. v = 314.16 × √(0.06² − 0.03²) = 314.16 × 0.05196 = **16.32 m/s.** Work in metres: 6 cm is 0.06 m.",
+      "**The maximum speed** of the same body is Aω = 0.06 × 314.16 = 18.85 m/s, and the maximum acceleration is Aω² = 0.06 × 314.16² = 5921 m/s².",
+      "**Mass on a spring and pendulum.** A mass m on a spring of stiffness k: **T = 2π√(m/k).** A simple pendulum of length l: **T = 2π√(l/g).** A 1 m pendulum has T = 2π√(1/9.8) = 2.0 s."
+     ],
+     "keyPoints": [
+      "ω = 2πf; a = −ω²x.",
+      "v = ω√(A² − x²); v_max = Aω.",
+      "Spring: T = 2π√(m/k). Pendulum: T = 2π√(l/g)."
+     ],
+     "example": {
+      "problem": "A particle in SHM has amplitude 0.2 m and period 2 s. Find its maximum speed.",
+      "steps": [
+       "ω = 2π/T = π rad/s.",
+       "v_max = Aω = 0.2π = 0.63 m/s."
+      ],
+      "answer": "0.63 m/s"
+     },
+     "exercises": [
+      {
+       "prompt": "A body vibrates in SHM with frequency 50 Hz and amplitude 6 cm. Find its speed at 3 cm from the centre.",
+       "options": [
+        "15.33 m/s",
+        "16.33 m/s",
+        "17.33 m/s",
+        "18.33 m/s"
+       ],
+       "correctIndex": 1,
+       "explanation": "v = ω√(A² − x²) = 314.16 × 0.05196 = 16.32 m/s, closest to 16.33."
+      },
+      {
+       "prompt": "Where is the speed greatest in SHM?",
+       "options": [
+        "At the ends",
+        "At the centre",
+        "Halfway",
+        "It is constant"
+       ],
+       "correctIndex": 1,
+       "explanation": "v = ω√(A² − x²) is greatest when x = 0."
+      },
+      {
+       "prompt": "What is ω if the frequency is 5 Hz?",
+       "options": [
+        "5",
+        "10π",
+        "π/5",
+        "25"
+       ],
+       "correctIndex": 1,
+       "explanation": "ω = 2πf = 10π rad/s."
+      },
+      {
+       "prompt": "A mass of 0.5 kg hangs on a spring with k = 200 N/m. What is the period?",
+       "options": [
+        "0.314 s",
+        "3.14 s",
+        "0.0314 s",
+        "31.4 s"
+       ],
+       "correctIndex": 0,
+       "explanation": "T = 2π√(0.5/200) = 0.314 s."
+      },
+      {
+       "prompt": "In SHM, the acceleration is:",
+       "options": [
+        "Constant",
+        "Proportional to the displacement and directed to the centre",
+        "Zero at the ends",
+        "Greatest at the centre"
+       ],
+       "correctIndex": 1,
+       "explanation": "a = −ω²x."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "a = −ω²x; v = ω√(A² − x²); T = 2π√(m/k)"
+  },
+  {
+   "id": "kinetic-theory-gases",
+   "intro": "Gases behave in simple ways because of the motion of their molecules. This lesson covers the speed of gas molecules, temperature, the ideal gas law, and the elastic modulus of materials.",
+   "sections": [
+    {
+     "id": "ktg",
+     "title": "Kinetic theory of gases",
+     "body": [
+      "The kinetic theory explains a gas as a huge number of tiny molecules moving at random and bouncing off the walls. The pressure of the gas comes from the molecules hitting the walls.",
+      "**Root-mean-square (rms) speed.** For a gas of density ρ at pressure P: **v_rms = √(3P/ρ).** For hydrogen at 0 °C and 1 atm, ρ = 8.99 × 10⁻² kg/m³ and P = 1.013 × 10⁵ Pa. Then 3P/ρ = 3.380 × 10⁶, so **v_rms = 1838.6 m/s ≈ 1.84 × 10³ m/s.** Hydrogen molecules are very fast.",
+      "**In terms of temperature:** the average kinetic energy of one molecule is **(3/2)kT**, and **v_rms = √(3kT/m)** (or √(3RT/M) per mole). Heavier molecules are slower at the same temperature, and a hotter gas has faster molecules.",
+      "**The ideal gas law:** **PV = nRT**, with R = 8.31 J/(mol·K). Temperature must be in kelvin (add 273 to °C).",
+      "**Check by hand.** For hydrogen at 273 K, with molar mass 0.002016 kg/mol, v_rms = √(3 × 8.31 × 273/0.002016) = 1838 m/s, which agrees with the value found from pressure and density."
+     ],
+     "keyPoints": [
+      "v_rms = √(3P/ρ) = √(3kT/m).",
+      "Average KE per molecule = (3/2)kT.",
+      "PV = nRT; use kelvin."
+     ],
+     "example": {
+      "problem": "Find the rms speed of a gas with pressure 2 × 10⁵ Pa and density 1.5 kg/m³.",
+      "steps": [
+       "v_rms = √(3P/ρ) = √(3 × 2 × 10⁵/1.5).",
+       "= √(4 × 10⁵) = 632 m/s."
+      ],
+      "answer": "632 m/s"
+     },
+     "exercises": [
+      {
+       "prompt": "Calculate the rms speed of hydrogen molecules at 0 °C and 1 atm. The density is 8.99 × 10⁻² kg/m³ and 1 atm = 1.013 × 10⁵ Pa.",
+       "options": [
+        "1930 m/s",
+        "1838 m/s",
+        "1730 m/s",
+        "320 m/s"
+       ],
+       "correctIndex": 1,
+       "explanation": "v_rms = √(3P/ρ) = √(3.380 × 10⁶) = 1838 m/s."
+      },
+      {
+       "prompt": "If the temperature of a gas rises, the rms speed of its molecules:",
+       "options": [
+        "Falls",
+        "Rises",
+        "Stays the same",
+        "Becomes zero"
+       ],
+       "correctIndex": 1,
+       "explanation": "v_rms ∝ √T."
+      },
+      {
+       "prompt": "The average kinetic energy of a molecule is:",
+       "options": [
+        "(3/2)kT",
+        "kT²",
+        "mgh",
+        "PV"
+       ],
+       "correctIndex": 0,
+       "explanation": "Average KE = (3/2)kT."
+      },
+      {
+       "prompt": "Convert 27 °C to kelvin.",
+       "options": [
+        "27 K",
+        "300 K",
+        "246 K",
+        "−246 K"
+       ],
+       "correctIndex": 1,
+       "explanation": "27 + 273 = 300 K."
+      },
+      {
+       "prompt": "Which gas has molecules with the higher rms speed at the same temperature, hydrogen or oxygen?",
+       "options": [
+        "Oxygen",
+        "Hydrogen",
+        "They are equal",
+        "It depends on pressure only"
+       ],
+       "correctIndex": 1,
+       "explanation": "Lighter molecules move faster: v_rms ∝ 1/√m."
+      }
+     ]
+    },
+    {
+     "id": "elast",
+     "title": "Elasticity and the bulk modulus",
+     "body": [
+      "When a material is squeezed or stretched, it deforms. **Stress** is the force per unit area, and **strain** is the fractional change in size. Their ratio, the **modulus of elasticity**, tells you how stiff the material is.",
+      "**Bulk modulus (volume elasticity)** K = **volume stress ÷ volume strain** = −ΔP/(ΔV/V). Strain is a ratio of two volumes, so it has **no dimension.** So the dimension of K is the same as pressure.",
+      "**Dimensions of pressure.** Pressure = force/area = MLT⁻²/L² = **ML⁻¹T⁻².** So the bulk modulus has the dimensions **ML⁻¹T⁻²**, and its unit is the pascal (N/m²).",
+      "**Other moduli** have the same dimension: Young's modulus (stress/linear strain) and the shear modulus. All are ML⁻¹T⁻².",
+      "**A quick check.** If someone says the answer is ML⁻²T⁻², the length power is wrong: a force per area gives L⁻¹ because force already carries one L."
+     ],
+     "keyPoints": [
+      "Stress = force/area; strain has no dimension.",
+      "Bulk modulus has the dimension of pressure: ML⁻¹T⁻²."
+     ],
+     "example": {
+      "problem": "Find the dimensions of energy per unit volume.",
+      "steps": [
+       "Energy has dimensions ML²T⁻².",
+       "Divide by volume L³: ML⁻¹T⁻².",
+       "It is the same as pressure."
+      ],
+      "answer": "ML⁻¹T⁻²"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the dimensional formula for volume elasticity (bulk modulus)?",
+       "options": [
+        "ML⁻²T⁻²",
+        "ML⁻¹T⁻²",
+        "ML²T⁻²",
+        "ML⁻¹T⁻¹"
+       ],
+       "correctIndex": 1,
+       "explanation": "Stress ÷ dimensionless strain has the dimension of pressure, ML⁻¹T⁻²."
+      },
+      {
+       "prompt": "Strain is:",
+       "options": [
+        "Force per area",
+        "A fractional change in size, with no dimension",
+        "Force × distance",
+        "Energy per volume"
+       ],
+       "correctIndex": 1,
+       "explanation": "Strain is a ratio of two lengths or two volumes."
+      },
+      {
+       "prompt": "The SI unit of the bulk modulus is:",
+       "options": [
+        "Newton",
+        "Joule",
+        "Pascal",
+        "Watt"
+       ],
+       "correctIndex": 2,
+       "explanation": "It has the same unit as pressure, N/m²."
+      },
+      {
+       "prompt": "Which has the same dimensions as pressure?",
+       "options": [
+        "Young's modulus",
+        "Energy",
+        "Force",
+        "Power"
+       ],
+       "correctIndex": 0,
+       "explanation": "Young's modulus is stress divided by a dimensionless strain."
+      },
+      {
+       "prompt": "What are the dimensions of pressure?",
+       "options": [
+        "MLT⁻²",
+        "ML⁻¹T⁻²",
+        "ML²T⁻²",
+        "M²L⁻¹T⁻²"
+       ],
+       "correctIndex": 1,
+       "explanation": "Force MLT⁻² divided by area L²."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "v_rms = √(3P/ρ) = √(3kT/m); PV = nRT"
+  }
+ ]
+}

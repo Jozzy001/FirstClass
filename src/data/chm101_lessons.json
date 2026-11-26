@@ -358,6 +358,3344 @@
      ]
     }
    ]
+  },
+  {
+   "id": "gas-laws",
+   "intro": "By the end of this lesson you will be able to move between pressure, volume, temperature and moles with confidence, and handle mixtures and the speed of gases.",
+   "sections": [
+    {
+     "id": "units",
+     "title": "Pressure, temperature and the units that trip people up",
+     "body": [
+      "A gas is described by four things: its **pressure** (P), **volume** (V), **temperature** (T) and the amount of gas in **moles** (n). Every gas law is a rule about how these change together.",
+      "**Temperature must always be in kelvin.** To change degrees Celsius to kelvin, add 273: K = °C + 273. So 27 °C is 300 K. Using °C inside a gas law is the most common mistake in this topic, because 0 °C is not a true zero and the formulas would give nonsense.",
+      "Pressure has three units you will meet again and again: **1 atm = 760 mmHg = 760 torr**. To change atm to mmHg or torr, multiply by 760. To go back, divide by 760.",
+      "**STP** means standard temperature and pressure: 0 °C (273 K) and 1 atm. At STP, **one mole of any gas fills 22.4 L**. This is called the molar volume and it saves a lot of working."
+     ],
+     "keyPoints": [
+      "K = °C + 273, always.",
+      "1 atm = 760 mmHg = 760 torr.",
+      "At STP one mole of any gas occupies 22.4 L."
+     ],
+     "example": {
+      "problem": "Change 27 °C to kelvin and 1,140 torr to atm.",
+      "steps": [
+       "Temperature: 27 + 273 = 300 K.",
+       "Pressure: divide by 760, so 1,140 ÷ 760 = 1.5."
+      ],
+      "answer": "300 K and 1.5 atm"
+     },
+     "exercises": [
+      {
+       "prompt": "Change 127 °C to kelvin.",
+       "options": [
+        "146 K",
+        "273 K",
+        "400 K",
+        "127 K"
+       ],
+       "correctIndex": 2,
+       "explanation": "K = °C + 273 = 127 + 273 = 400 K.",
+       "hint": "Add 273."
+      },
+      {
+       "prompt": "Express 1.5 atm in mmHg.",
+       "options": [
+        "760 mmHg",
+        "1,140 mmHg",
+        "507 mmHg",
+        "1.5 mmHg"
+       ],
+       "correctIndex": 1,
+       "explanation": "Multiply by 760: 1.5 × 760 = 1,140 mmHg."
+      },
+      {
+       "prompt": "Change −73 °C to kelvin.",
+       "options": [
+        "−346 K",
+        "73 K",
+        "200 K",
+        "346 K"
+       ],
+       "correctIndex": 2,
+       "explanation": "K = −73 + 273 = 200 K."
+      }
+     ]
+    },
+    {
+     "id": "boyle",
+     "title": "Boyle's law: squeeze a gas and its pressure rises",
+     "body": [
+      "Imagine pressing the plunger of a sealed syringe. The gas is squashed into a smaller space, so its particles hit the walls more often and the pressure goes up. **Boyle's law** says that for a fixed amount of gas at a constant temperature, pressure and volume are inversely related: when one goes up, the other goes down by the same factor.",
+      "The formula is **P₁V₁ = P₂V₂**. The subscript 1 is the start and 2 is the end. Fill in the three numbers you know, then solve for the fourth. The units only need to match on both sides, so atm can stay as atm and litres as litres."
+     ],
+     "keyPoints": [
+      "P₁V₁ = P₂V₂ (constant temperature and amount of gas).",
+      "Pressure and volume change in opposite directions."
+     ],
+     "example": {
+      "problem": "A gas occupies 5.0 L at 2.0 atm. It is squeezed to 2.5 L at the same temperature. What is the new pressure?",
+      "steps": [
+       "Write the law: P₁V₁ = P₂V₂.",
+       "Substitute: 2.0 × 5.0 = P₂ × 2.5.",
+       "Solve: P₂ = 10.0 ÷ 2.5 = 4.0 atm."
+      ],
+      "answer": "4.0 atm"
+     },
+     "exercises": [
+      {
+       "prompt": "A gas occupies 6.0 L at 1.0 atm. What volume will it occupy at 3.0 atm, at constant temperature?",
+       "options": [
+        "18 L",
+        "2.0 L",
+        "0.5 L",
+        "9 L"
+       ],
+       "correctIndex": 1,
+       "explanation": "P₁V₁ = P₂V₂, so V₂ = (1.0 × 6.0) ÷ 3.0 = 2.0 L. Pressure tripled, so volume fell to a third.",
+       "hint": "Pressure goes up, so volume must go down."
+      },
+      {
+       "prompt": "12 L of gas at 2 atm is compressed until the pressure is 6 atm (temperature constant). What is the new volume?",
+       "options": [
+        "36 L",
+        "4 L",
+        "1 L",
+        "24 L"
+       ],
+       "correctIndex": 1,
+       "explanation": "V₂ = (2 × 12) ÷ 6 = 4 L."
+      }
+     ]
+    },
+    {
+     "id": "charles",
+     "title": "Charles's law: heat a gas and it expands",
+     "body": [
+      "Heat a gas and its particles move faster and push outwards, so (if the pressure is allowed to stay the same) the gas takes up more space. **Charles's law** says that at constant pressure, the volume of a fixed amount of gas is directly proportional to its **kelvin** temperature.",
+      "The formula is **V₁ ÷ T₁ = V₂ ÷ T₂**. Both temperatures **must be in kelvin**. Direct proportion means that if the temperature doubles (in kelvin), the volume doubles."
+     ],
+     "keyPoints": [
+      "V₁ ÷ T₁ = V₂ ÷ T₂ (constant pressure), with T in kelvin.",
+      "Temperature up means volume up."
+     ],
+     "example": {
+      "problem": "3.0 L of gas at 27 °C is heated to 127 °C at constant pressure. Find the new volume.",
+      "steps": [
+       "Change to kelvin: T₁ = 27 + 273 = 300 K and T₂ = 127 + 273 = 400 K.",
+       "Write the law: V₁ ÷ T₁ = V₂ ÷ T₂.",
+       "Solve: V₂ = 3.0 × 400 ÷ 300 = 4.0 L."
+      ],
+      "answer": "4.0 L"
+     },
+     "exercises": [
+      {
+       "prompt": "10 L of gas at 200 K is warmed to 300 K at constant pressure. What is the new volume?",
+       "options": [
+        "6.7 L",
+        "15 L",
+        "20 L",
+        "30 L"
+       ],
+       "correctIndex": 1,
+       "explanation": "V₂ = V₁ × T₂ ÷ T₁ = 10 × 300 ÷ 200 = 15 L."
+      },
+      {
+       "prompt": "4.0 L of gas at 300 K is cooled to 150 K at constant pressure. What is the new volume?",
+       "options": [
+        "8.0 L",
+        "1.0 L",
+        "2.0 L",
+        "0.5 L"
+       ],
+       "correctIndex": 2,
+       "explanation": "V₂ = 4.0 × 150 ÷ 300 = 2.0 L. Halving the kelvin temperature halves the volume."
+      },
+      {
+       "prompt": "Why must the temperature be in kelvin in Charles's law?",
+       "options": [
+        "Kelvin numbers are bigger",
+        "Volume is proportional to kelvin temperature, and °C can be zero or negative",
+        "Celsius is not a scientific unit",
+        "The law was written in kelvin by tradition only"
+       ],
+       "correctIndex": 1,
+       "explanation": "Volume is directly proportional to the kelvin temperature. A °C value of 0 would wrongly suggest zero volume, so °C cannot be used."
+      }
+     ]
+    },
+    {
+     "id": "combined",
+     "title": "The combined gas law: when everything changes",
+     "body": [
+      "Often pressure, volume and temperature all change at once. Boyle's and Charles's laws join into one: **P₁V₁ ÷ T₁ = P₂V₂ ÷ T₂**. Keep T in kelvin. If a quantity does not change, it simply cancels out and you are back to Boyle's or Charles's law.",
+      "A reliable method: write the formula, list the six values (put a question mark on the unknown), convert the temperatures to kelvin, then rearrange. When a question asks for the volume \"at STP\", the final conditions are 1 atm and 273 K."
+     ],
+     "keyPoints": [
+      "P₁V₁ ÷ T₁ = P₂V₂ ÷ T₂ with T in kelvin.",
+      "STP: 1 atm and 273 K."
+     ],
+     "example": {
+      "problem": "10 L of gas at 1.0 atm and 27 °C is changed to 2.0 atm and 127 °C. Find the new volume.",
+      "steps": [
+       "Convert: T₁ = 300 K and T₂ = 400 K.",
+       "Write the law: P₁V₁ ÷ T₁ = P₂V₂ ÷ T₂.",
+       "Solve: V₂ = (P₁ × V₁ × T₂) ÷ (T₁ × P₂) = (1.0 × 10 × 400) ÷ (300 × 2.0) = 6.67 L."
+      ],
+      "answer": "6.7 L"
+     },
+     "exercises": [
+      {
+       "prompt": "5 L of gas at 2 atm and 300 K is changed to 1 atm and 600 K. What is the new volume?",
+       "options": [
+        "5 L",
+        "10 L",
+        "20 L",
+        "2.5 L"
+       ],
+       "correctIndex": 2,
+       "explanation": "V₂ = V₁ × (P₁ ÷ P₂) × (T₂ ÷ T₁) = 5 × 2 × 2 = 20 L."
+      },
+      {
+       "prompt": "22 L of gas at 27 °C and 1.5 atm is brought to STP. What is the volume at STP, to the nearest litre?",
+       "options": [
+        "30 L",
+        "22 L",
+        "24 L",
+        "36 L"
+       ],
+       "correctIndex": 0,
+       "explanation": "T₁ = 300 K, P₂ = 1 atm and T₂ = 273 K. V₂ = 22 × 1.5 × 273 ÷ (300 × 1) ≈ 30 L.",
+       "hint": "STP means 1 atm and 273 K."
+      }
+     ]
+    },
+    {
+     "id": "ideal",
+     "title": "The ideal gas law: PV = nRT",
+     "body": [
+      "The ideal gas law ties all four properties together in one formula: **PV = nRT**. Here R is the gas constant, **R = 0.0821 L·atm/(mol·K)**. Because of this value of R, you must use **P in atm, V in litres, T in kelvin** and n in moles.",
+      "Use it when a question gives you a single set of conditions and asks for the missing one: moles, pressure, volume or temperature. Rearranged: n = PV ÷ RT, P = nRT ÷ V, V = nRT ÷ P.",
+      "If the question gives a mass, first change it to moles: n = mass ÷ molar mass. And if the pressure is in torr or mmHg, divide by 760 to get atm before you start."
+     ],
+     "keyPoints": [
+      "PV = nRT with R = 0.0821 L·atm/(mol·K).",
+      "P in atm, V in litres, T in kelvin.",
+      "n = mass ÷ molar mass."
+     ],
+     "example": {
+      "problem": "How many moles of gas are in a 5.0 L container at 2.0 atm and 27 °C?",
+      "steps": [
+       "Convert: T = 27 + 273 = 300 K.",
+       "Rearrange PV = nRT to n = PV ÷ RT.",
+       "Substitute: n = (2.0 × 5.0) ÷ (0.0821 × 300) = 10.0 ÷ 24.63 = 0.41."
+      ],
+      "answer": "0.41 mol"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the pressure of 2.0 mol of gas in a 10 L container at 27 °C? (R = 0.0821)",
+       "options": [
+        "0.49 atm",
+        "4.9 atm",
+        "49 atm",
+        "2.0 atm"
+       ],
+       "correctIndex": 1,
+       "explanation": "T = 300 K. P = nRT ÷ V = (2.0 × 0.0821 × 300) ÷ 10 = 4.9 atm."
+      },
+      {
+       "prompt": "What volume does 14 g of nitrogen gas, N₂, occupy at STP? (N₂ = 28 g/mol)",
+       "options": [
+        "22.4 L",
+        "5.6 L",
+        "11.2 L",
+        "44.8 L"
+       ],
+       "correctIndex": 2,
+       "explanation": "n = 14 ÷ 28 = 0.5 mol. At STP one mole is 22.4 L, so 0.5 mol is 11.2 L."
+      },
+      {
+       "prompt": "What pressure is exerted by 0.50 mol of gas in a 5.0 L vessel at 300 K? (R = 0.0821)",
+       "options": [
+        "0.25 atm",
+        "2.5 atm",
+        "12 atm",
+        "1.0 atm"
+       ],
+       "correctIndex": 1,
+       "explanation": "P = nRT ÷ V = (0.50 × 0.0821 × 300) ÷ 5.0 = 2.46 ≈ 2.5 atm."
+      }
+     ]
+    },
+    {
+     "id": "density",
+     "title": "Gas density and molar mass",
+     "body": [
+      "Density is mass ÷ volume. Starting from PV = nRT and replacing n with mass ÷ M gives two handy forms: **density ρ = (M × P) ÷ (R × T)** and **M = ρRT ÷ P**. So you can find a gas's density from its molar mass, or its molar mass from its density.",
+      "At STP there is a shortcut: **density = M ÷ 22.4** g/L. For example, methane (M = 16) has a density of 16 ÷ 22.4 = 0.714 g/L at STP."
+     ],
+     "keyPoints": [
+      "ρ = MP ÷ RT and M = ρRT ÷ P.",
+      "At STP, density = M ÷ 22.4."
+     ],
+     "example": {
+      "problem": "Find the density of oxygen, O₂ (32 g/mol), at 1.0 atm and 27 °C.",
+      "steps": [
+       "Convert: T = 300 K.",
+       "Write the formula: ρ = MP ÷ RT.",
+       "Substitute: ρ = (32 × 1.0) ÷ (0.0821 × 300) = 32 ÷ 24.63 = 1.30."
+      ],
+      "answer": "1.30 g/L"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the density of methane, CH₄ (16 g/mol), at STP?",
+       "options": [
+        "0.714 g/L",
+        "1.40 g/L",
+        "16 g/L",
+        "22.4 g/L"
+       ],
+       "correctIndex": 0,
+       "explanation": "At STP, density = M ÷ 22.4 = 16 ÷ 22.4 = 0.714 g/L."
+      },
+      {
+       "prompt": "A gas has a density of 3.0 g/L at 27 °C and 1.0 atm. What is its molar mass? (R = 0.0821)",
+       "options": [
+        "24.6 g/mol",
+        "36.9 g/mol",
+        "73.9 g/mol",
+        "147.8 g/mol"
+       ],
+       "correctIndex": 2,
+       "explanation": "M = ρRT ÷ P = (3.0 × 0.0821 × 300) ÷ 1.0 = 73.9 g/mol."
+      }
+     ]
+    },
+    {
+     "id": "dalton",
+     "title": "Mixtures of gases: Dalton's law of partial pressures",
+     "body": [
+      "In a mixture, each gas behaves as if the others were not there. Its share of the pressure is called its **partial pressure**. **Dalton's law** says the total pressure is the sum of the partial pressures: P_total = P₁ + P₂ + P₃ + …",
+      "To find one gas's partial pressure, find its **mole fraction** first: mole fraction = moles of that gas ÷ total moles. Then **P_gas = mole fraction × P_total**.",
+      "A common exam twist is a gas **collected over water**. The gas you collect is mixed with water vapour, so P_gas = P_atmosphere − P_water vapour."
+     ],
+     "keyPoints": [
+      "P_total = P₁ + P₂ + …",
+      "P_gas = mole fraction × P_total.",
+      "Over water: P_gas = P_atm − P_water vapour."
+     ],
+     "example": {
+      "problem": "A container holds 2 mol of H₂ and 3 mol of N₂ at a total pressure of 5 atm. Find the partial pressure of H₂.",
+      "steps": [
+       "Total moles = 2 + 3 = 5.",
+       "Mole fraction of H₂ = 2 ÷ 5 = 0.4.",
+       "Partial pressure = 0.4 × 5 atm = 2 atm."
+      ],
+      "answer": "2 atm"
+     },
+     "exercises": [
+      {
+       "prompt": "A mixture holds 0.5 mol of O₂ and 1.5 mol of He at a total pressure of 4.0 atm. What is the partial pressure of O₂?",
+       "options": [
+        "0.5 atm",
+        "1.0 atm",
+        "2.0 atm",
+        "3.0 atm"
+       ],
+       "correctIndex": 1,
+       "explanation": "Mole fraction of O₂ = 0.5 ÷ (0.5 + 1.5) = 0.25. Partial pressure = 0.25 × 4.0 = 1.0 atm."
+      },
+      {
+       "prompt": "Oxygen is collected over water at 760 mmHg. The vapour pressure of water at that temperature is 24 mmHg. What is the pressure of the dry oxygen?",
+       "options": [
+        "784 mmHg",
+        "760 mmHg",
+        "736 mmHg",
+        "24 mmHg"
+       ],
+       "correctIndex": 2,
+       "explanation": "P(O₂) = P(total) − P(water vapour) = 760 − 24 = 736 mmHg."
+      }
+     ]
+    },
+    {
+     "id": "graham",
+     "title": "Graham's law: lighter gases move faster",
+     "body": [
+      "Light gas particles move faster than heavy ones at the same temperature. **Graham's law** says the rate at which a gas effuses (escapes through a tiny hole) or diffuses (spreads out) is inversely proportional to the square root of its molar mass:",
+      "**rate₁ ÷ rate₂ = √(M₂ ÷ M₁)**. The molar masses swap places, so the lighter gas goes on top of the lower side. Time works the other way round: a heavier gas takes **longer**, so **time₁ ÷ time₂ = √(M₁ ÷ M₂)**.",
+      "Tip: do the square root last. First divide the two molar masses, then take the square root of the result."
+     ],
+     "keyPoints": [
+      "rate₁ ÷ rate₂ = √(M₂ ÷ M₁).",
+      "Heavier gas: slower, and takes more time."
+     ],
+     "example": {
+      "problem": "How many times faster does hydrogen (M = 2) effuse than oxygen (M = 32)?",
+      "steps": [
+       "Write the law: rate(H₂) ÷ rate(O₂) = √(M(O₂) ÷ M(H₂)).",
+       "Divide the molar masses: 32 ÷ 2 = 16.",
+       "Take the square root: √16 = 4."
+      ],
+      "answer": "4 times faster"
+     },
+     "exercises": [
+      {
+       "prompt": "How many times faster does helium (M = 4) effuse than methane (M = 16)?",
+       "options": [
+        "2 times",
+        "4 times",
+        "16 times",
+        "1.4 times"
+       ],
+       "correctIndex": 0,
+       "explanation": "rate(He) ÷ rate(CH₄) = √(16 ÷ 4) = √4 = 2."
+      },
+      {
+       "prompt": "Hydrogen (M = 2) takes 5 s to effuse. How long does the same amount of oxygen (M = 32) take under the same conditions?",
+       "options": [
+        "10 s",
+        "20 s",
+        "80 s",
+        "2.5 s"
+       ],
+       "correctIndex": 1,
+       "explanation": "time(O₂) ÷ time(H₂) = √(32 ÷ 2) = 4, so time = 4 × 5 = 20 s."
+      },
+      {
+       "prompt": "An unknown gas effuses 3 times more slowly than hydrogen (M = 2). What is its molar mass?",
+       "options": [
+        "6 g/mol",
+        "9 g/mol",
+        "18 g/mol",
+        "54 g/mol"
+       ],
+       "correctIndex": 2,
+       "explanation": "Rate ratio: rate(H₂) ÷ rate(X) = 3 = √(M_X ÷ 2). Square both sides: 9 = M_X ÷ 2, so M_X = 18 g/mol.",
+       "hint": "Square both sides to remove the root."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "PV = nRT  (R = 0.0821 L·atm/mol·K)"
+  },
+  {
+   "id": "atomic-structure",
+   "intro": "Atoms are described by a few simple counting rules. Learn what the numbers mean, and most questions on this topic become a matter of counting carefully.",
+   "sections": [
+    {
+     "id": "particles",
+     "title": "Protons, neutrons, electrons and the atom symbol",
+     "body": [
+      "Every atom is built from three particles. **Protons** carry a charge of +1 and a mass of 1 unit. **Neutrons** carry no charge and also have a mass of 1 unit. **Electrons** carry a charge of −1 and have almost no mass.",
+      "The number of protons is the **atomic number (Z)**. It decides which element you have: 6 protons always means carbon. The **mass number (A)** is protons plus neutrons, so **neutrons = A − Z**. Atoms of the same element with different numbers of neutrons are called **isotopes**.",
+      "In the symbol ᴬ_Z X, A is written top left and Z bottom left. A neutral atom has as many electrons as protons. An **ion** has gained or lost electrons: a positive ion (cation) has **lost** electrons, so electrons = Z − charge. A negative ion (anion) has gained electrons, so electrons = Z + charge. Only electrons move; the protons never change.",
+      "A quick example of the rule: the nucleus of europium has a charge of +63, so Z = 63. The ion Eu³⁺ has lost three electrons, so it has 63 − 3 = 60 electrons."
+     ],
+     "keyPoints": [
+      "Z = protons; A = protons + neutrons; neutrons = A − Z.",
+      "Cation: electrons = Z − charge. Anion: electrons = Z + charge.",
+      "Isotopes have the same Z but different A."
+     ],
+     "example": {
+      "problem": "How many protons, neutrons and electrons are in ⁵⁶₂₆Fe³⁺?",
+      "steps": [
+       "Protons = Z = 26.",
+       "Neutrons = A − Z = 56 − 26 = 30.",
+       "The ion has lost 3 electrons, so electrons = 26 − 3 = 23."
+      ],
+      "answer": "26 protons, 30 neutrons, 23 electrons"
+     },
+     "exercises": [
+      {
+       "prompt": "The nucleus of iridium has a charge of +77. How many electrons are in the Ir³⁺ ion?",
+       "options": [
+        "80",
+        "77",
+        "74",
+        "78"
+       ],
+       "correctIndex": 2,
+       "explanation": "Z = 77. A 3+ ion has lost 3 electrons: 77 − 3 = 74.",
+       "hint": "Positive charge means electrons were lost."
+      },
+      {
+       "prompt": "A species has 24 protons, 26 neutrons and 22 electrons. Which is it?",
+       "options": [
+        "Cr with mass number 50 and charge 2+",
+        "Cr with mass number 50 and charge 2−",
+        "Mn with mass number 50 and charge 2+",
+        "Cr with mass number 46 and charge 2+"
+       ],
+       "correctIndex": 0,
+       "explanation": "24 protons makes it chromium. A = 24 + 26 = 50. It has 2 fewer electrons than protons, so the charge is 2+.",
+       "hint": "Mass number counts protons and neutrons only."
+      },
+      {
+       "prompt": "Which particle decides which element an atom is?",
+       "options": [
+        "Electron",
+        "Neutron",
+        "Proton",
+        "Photon"
+       ],
+       "correctIndex": 2,
+       "explanation": "The number of protons (atomic number) fixes the element."
+      }
+     ]
+    },
+    {
+     "id": "qnumbers",
+     "title": "The four quantum numbers: an address for every electron",
+     "body": [
+      "Think of each electron as having a four-part address in the atom. Each number answers one question.",
+      "**n, the principal quantum number**, tells you the shell (energy level): n = 1, 2, 3 and so on. Bigger n means farther from the nucleus and higher energy.",
+      "**l, the angular momentum (azimuthal) quantum number**, tells you the subshell and the **shape** of the orbital. l can be any whole number from 0 up to n − 1. The values have letter names: l = 0 is s, l = 1 is p, l = 2 is d, l = 3 is f.",
+      "**mₗ, the magnetic quantum number**, tells you which orbital in the subshell, that is, its orientation in space. mₗ can be any whole number from −l to +l, including 0.",
+      "**mₛ, the spin quantum number**, is either +½ or −½. These are the two possible spins of an electron.",
+      "To check whether a set (n, l, mₗ, mₛ) is allowed, test the rules in order: is l less than n? is mₗ between −l and +l? is mₛ equal to ±½? If any test fails, the set is impossible."
+     ],
+     "keyPoints": [
+      "l runs from 0 to n − 1. mₗ runs from −l to +l. mₛ is ±½.",
+      "l = 0, 1, 2, 3 correspond to s, p, d, f."
+     ],
+     "example": {
+      "problem": "Is the set n = 3, l = 3, mₗ = 2, mₛ = −½ allowed?",
+      "steps": [
+       "Check l against n: l must be at most n − 1 = 2.",
+       "Here l = 3, which is too big.",
+       "So the set is impossible (it would be a '3f' electron, and no 3f subshell exists)."
+      ],
+      "answer": "Not allowed"
+     },
+     "exercises": [
+      {
+       "prompt": "Which quantum number describes the shape of an orbital?",
+       "options": [
+        "n",
+        "l",
+        "mₗ",
+        "mₛ"
+       ],
+       "correctIndex": 1,
+       "explanation": "The angular momentum (azimuthal) number l decides the subshell and so the shape."
+      },
+      {
+       "prompt": "Which set (n, l, mₗ, mₛ) is NOT allowed?",
+       "options": [
+        "3, 1, −1, +½",
+        "4, 2, 2, +½",
+        "2, 2, 0, +½",
+        "4, 3, −2, −½"
+       ],
+       "correctIndex": 2,
+       "explanation": "When n = 2, l can only be 0 or 1. So l = 2 is impossible. The other sets obey all the rules.",
+       "hint": "l must be smaller than n."
+      },
+      {
+       "prompt": "An electron has n = 4, l = 2, mₗ = 0, mₛ = +½. Which type of electron is it?",
+       "options": [
+        "3d",
+        "4d",
+        "4p",
+        "4s"
+       ],
+       "correctIndex": 1,
+       "explanation": "n = 4 gives the shell, and l = 2 means d. So it is a 4d electron."
+      },
+      {
+       "prompt": "Which set is NOT allowed?",
+       "options": [
+        "n = 1, l = 1, mₗ = 0",
+        "n = 8, l = 7, mₗ = −6",
+        "n = 3, l = 0, mₗ = 0",
+        "n = 2, l = 1, mₗ = 0"
+       ],
+       "correctIndex": 0,
+       "explanation": "When n = 1, l can only be 0. So l = 1 is not allowed. For n = 8, l = 7 is allowed because l can go up to n − 1 = 7."
+      }
+     ]
+    },
+    {
+     "id": "counting",
+     "title": "Counting subshells, orbitals and electrons",
+     "body": [
+      "Past questions love counting. Three facts do most of the work.",
+      "**Every orbital holds at most 2 electrons** (with opposite spins).",
+      "**Number of orbitals in a subshell = 2l + 1.** So s (l = 0) has 1 orbital, p has 3, d has 5, f has 7, and g (l = 4) has 9. The number of orbitals in a subshell is also called its degeneracy. Multiply by 2 for the electron capacity: s holds 2, p holds 6, d holds 10, f holds 14.",
+      "**Each shell n has n subshells, n² orbitals and 2n² electrons.** For n = 3: subshells 3s, 3p, 3d; orbitals 9; electrons 18. For n = 4: 16 orbitals and 32 electrons."
+     ],
+     "keyPoints": [
+      "Orbitals in a subshell = 2l + 1: s1, p3, d5, f7, g9.",
+      "Shell n: n subshells, n² orbitals, 2n² electrons.",
+      "Max electrons in subshells: s2, p6, d10, f14."
+     ],
+     "example": {
+      "problem": "What is the maximum number of electrons in all the orbitals of the n = 4 shell?",
+      "steps": [
+       "Use 2n².",
+       "Substitute: 2 × 4² = 2 × 16 = 32.",
+       "Check: 4s (2) + 4p (6) + 4d (10) + 4f (14) = 32."
+      ],
+      "answer": "32 electrons"
+     },
+     "exercises": [
+      {
+       "prompt": "How many orbitals are in the shell with n = 5?",
+       "options": [
+        "10",
+        "25",
+        "18",
+        "50"
+       ],
+       "correctIndex": 1,
+       "explanation": "n² = 25."
+      },
+      {
+       "prompt": "What is the maximum number of electrons in the n = 3 shell?",
+       "options": [
+        "8",
+        "9",
+        "18",
+        "32"
+       ],
+       "correctIndex": 2,
+       "explanation": "2n² = 2 × 9 = 18."
+      },
+      {
+       "prompt": "How many orbitals are in a 5g subshell?",
+       "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+       ],
+       "correctIndex": 2,
+       "explanation": "g has l = 4, so 2l + 1 = 9."
+      },
+      {
+       "prompt": "What is the maximum number of electrons that can have n = 5 and l = 2?",
+       "options": [
+        "2",
+        "6",
+        "10",
+        "14"
+       ],
+       "correctIndex": 2,
+       "explanation": "n = 5, l = 2 is the 5d subshell. It has 5 orbitals, so it holds 2 × 5 = 10 electrons."
+      },
+      {
+       "prompt": "List all the subshells for n = 5.",
+       "options": [
+        "5s, 5p, 5d, 5f",
+        "5s, 5p, 5d, 5f, 5g",
+        "5p, 5d, 5f, 5g",
+        "4s, 4p, 4d, 4f"
+       ],
+       "correctIndex": 1,
+       "explanation": "l runs from 0 to 4, giving s, p, d, f and g. That is 5 subshells."
+      }
+     ]
+    },
+    {
+     "id": "filling",
+     "title": "Writing electron configurations",
+     "body": [
+      "An electron configuration lists which subshells hold electrons, for example 1s² 2s² 2p⁶. The big number is the shell, the letter is the subshell, and the small raised number is how many electrons it holds.",
+      "Three rules decide how electrons fill. The **Aufbau principle**: fill the lowest-energy subshell first. **Pauli exclusion**: an orbital holds at most 2 electrons, and they must have opposite spins. **Hund's rule**: in a subshell with several orbitals, electrons go one into each orbital first (all with the same spin) before any orbital gets a second electron.",
+      "The filling order is **1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p, 7s**. Notice that 4s fills **before** 3d.",
+      "To save writing, use a **noble gas core** in brackets. Argon has 18 electrons, so for iron (Z = 26) write [Ar] 4s² 3d⁶, and then only the electrons beyond argon need listing.",
+      "**Groups give shortcuts.** Alkali metals end in ns¹. Alkaline earth metals end in ns². Halogens end in ns²np⁵. Noble gases end in ns²np⁶."
+     ],
+     "keyPoints": [
+      "Filling order: 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p 7s.",
+      "Hund: one electron in each orbital before pairing.",
+      "Halogens end ns²np⁵. Alkaline earths end ns²."
+     ],
+     "example": {
+      "problem": "How many electrons are in the p orbitals of ruthenium, Z = 44?",
+      "steps": [
+       "Write the configuration: [Kr] 5s¹ 4d⁷, where [Kr] is 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶.",
+       "The p subshells in the core are 2p, 3p and 4p, each holding 6.",
+       "The outer part (5s and 4d) has no p electrons. Total = 6 + 6 + 6 = 18."
+      ],
+      "answer": "18 electrons"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the electron configuration of sulfur, Z = 16?",
+       "options": [
+        "1s² 2s² 2p⁶ 3s² 3p⁴",
+        "1s² 2s² 2p⁶ 3s² 3p⁶",
+        "1s² 2s² 2p⁶ 3s² 3p²",
+        "1s² 2s² 2p⁴ 3s² 3p⁶"
+       ],
+       "correctIndex": 0,
+       "explanation": "Fill in order: 2 + 2 + 6 + 2 = 12, leaving 4 electrons for 3p."
+      },
+      {
+       "prompt": "The configuration of a halogen always ends with:",
+       "options": [
+        "ns²np⁴",
+        "ns²np⁵",
+        "ns²np⁶",
+        "ns¹"
+       ],
+       "correctIndex": 1,
+       "explanation": "Halogens are in Group 17, with 7 outer electrons: ns² plus np⁵."
+      },
+      {
+       "prompt": "Which configuration represents an alkaline earth element?",
+       "options": [
+        "[Ar] 4s¹",
+        "[Xe] 5s²",
+        "[Kr] 5s¹",
+        "[Rn] 7s¹"
+       ],
+       "correctIndex": 1,
+       "explanation": "Alkaline earth metals end in ns², so [Xe] 5s² (barium) fits. The others end in s¹, which is an alkali metal."
+      },
+      {
+       "prompt": "How many electrons are in the p orbitals of a chlorine atom, Z = 17?",
+       "options": [
+        "5",
+        "7",
+        "11",
+        "17"
+       ],
+       "correctIndex": 2,
+       "explanation": "Cl: 1s² 2s² 2p⁶ 3s² 3p⁵. p electrons: 6 + 5 = 11.",
+       "hint": "Count 2p and 3p together."
+      },
+      {
+       "prompt": "Which subshell fills first?",
+       "options": [
+        "3d",
+        "4s",
+        "4p",
+        "4f"
+       ],
+       "correctIndex": 1,
+       "explanation": "4s is lower in energy than 3d, so it fills first."
+      }
+     ]
+    },
+    {
+     "id": "unpaired",
+     "title": "Unpaired electrons and the chromium surprise",
+     "body": [
+      "An **unpaired electron** is alone in its orbital. To count them, draw the orbitals of the outer subshell as boxes, put one electron in each box first (Hund's rule), and then pair up the rest.",
+      "For example oxygen is 1s² 2s² 2p⁴. The p subshell has 3 boxes and 4 electrons: three go in singly, the fourth pairs with one of them. So oxygen has 2 unpaired electrons and 3 − 1 = 2 paired ones in its p subshell.",
+      "**Chromium and copper break the filling order.** A half-filled or completely filled d subshell is unusually stable, so one electron moves from 4s into 3d. Chromium is **[Ar] 4s¹ 3d⁵** (not 4s² 3d⁴), and copper is **[Ar] 4s¹ 3d¹⁰** (not 4s² 3d⁹). Chromium therefore has 1 + 5 = **6 unpaired electrons**.",
+      "**Ions: remove from the outermost shell first.** When a transition metal forms a cation, it loses its 4s electrons before the 3d ones. Gadolinium (Z = 64) is [Xe] 4f⁷ 5d¹ 6s². Gd³⁺ loses the 6s² and 5d¹ electrons to give [Xe] 4f⁷, with 7 half-filled f orbitals and so **7 unpaired electrons**."
+     ],
+     "keyPoints": [
+      "Cr is [Ar] 4s¹3d⁵ (6 unpaired). Cu is [Ar] 4s¹3d¹⁰.",
+      "Draw boxes: single electrons first, then pair.",
+      "Cations lose the outermost s electrons before d or f electrons."
+     ],
+     "example": {
+      "problem": "How many unpaired electrons does Fe²⁺ have? (Fe, Z = 26)",
+      "steps": [
+       "Fe is [Ar] 4s² 3d⁶. Fe²⁺ loses the two 4s electrons: [Ar] 3d⁶.",
+       "Draw 5 d boxes. Put one electron in each (5 electrons), then pair the sixth.",
+       "One box is now paired, and the other four hold single electrons."
+      ],
+      "answer": "4 unpaired electrons"
+     },
+     "exercises": [
+      {
+       "prompt": "How many unpaired electrons are in a chromium atom, Z = 24?",
+       "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+       ],
+       "correctIndex": 2,
+       "explanation": "Cr is [Ar] 4s¹ 3d⁵: one in 4s and five in 3d, all unpaired. That is 6.",
+       "hint": "Use the half-filled d exception."
+      },
+      {
+       "prompt": "How many unpaired electrons are in a manganese atom, Z = 25?",
+       "options": [
+        "1",
+        "3",
+        "5",
+        "7"
+       ],
+       "correctIndex": 2,
+       "explanation": "Mn is [Ar] 4s² 3d⁵. The 4s pair is paired, and the five 3d electrons are each alone, so there are 5."
+      },
+      {
+       "prompt": "How many unpaired electrons are in Gd³⁺ (Gd, Z = 64)?",
+       "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+       ],
+       "correctIndex": 2,
+       "explanation": "Gd³⁺ is [Xe] 4f⁷. Seven f orbitals each hold one electron, so 7 are unpaired."
+      },
+      {
+       "prompt": "How many paired electrons are in the ground state of sodium and oxygen respectively?",
+       "options": [
+        "10 and 6",
+        "3 and 4",
+        "6 and 2",
+        "5 and 3"
+       ],
+       "correctIndex": 0,
+       "explanation": "Na: 1s² 2s² 2p⁶ 3s¹. Ten electrons are paired and the 3s one is alone. O: 1s² 2s² 2p⁴. The 1s and 2s pairs give 4, and the 2p subshell has one pair, giving 2 more, for 6 in total.",
+       "hint": "Subtract the unpaired electrons from the total."
+      },
+      {
+       "prompt": "Which is the correct ground-state configuration of chromium?",
+       "options": [
+        "[Ar] 3d⁴ 4s²",
+        "[Ar] 3d⁵ 4s¹",
+        "[Ar] 3d⁶",
+        "[Ar] 4s² 3d⁴"
+       ],
+       "correctIndex": 1,
+       "explanation": "A half-filled 3d subshell is more stable, so one 4s electron moves to 3d."
+      }
+     ]
+    },
+    {
+     "id": "hydrogen",
+     "title": "The hydrogen atom: energy levels and light",
+     "body": [
+      "In hydrogen, an electron can only have certain energies. They depend on n: **Eₙ = −RH ÷ n²**, where **RH = 2.179 × 10⁻¹⁸ J**. The energy is negative because the electron is held by the nucleus. It is lowest (most negative) when n = 1.",
+      "When an electron falls from a higher level (n_i) to a lower one (n_f), the atom gives out a photon. The energy of the photon is **ΔE = RH × (1/n_f² − 1/n_i²)**, where we take the positive value. The wavelength comes from **E = hc ÷ λ**, with h = 6.626 × 10⁻³⁴ J·s and c = 3.0 × 10⁸ m/s. So **λ = hc ÷ E**.",
+      "**Ionization energy** is the energy needed to remove the electron completely, which means taking it from n = 1 to n = ∞. For hydrogen that equals RH, so you need **2.179 × 10⁻¹⁸ J** per atom. The energy is put in, so the value is positive."
+     ],
+     "keyPoints": [
+      "ΔE = RH (1/n_f² − 1/n_i²), with RH = 2.179 × 10⁻¹⁸ J.",
+      "λ = hc ÷ E.",
+      "Ionization energy of hydrogen = RH."
+     ],
+     "example": {
+      "problem": "Find the wavelength of light emitted when hydrogen falls from n = 3 to n = 2.",
+      "steps": [
+       "ΔE = 2.179 × 10⁻¹⁸ × (1/4 − 1/9) = 2.179 × 10⁻¹⁸ × 0.1389 = 3.03 × 10⁻¹⁹ J.",
+       "λ = hc ÷ ΔE = (6.626 × 10⁻³⁴ × 3.0 × 10⁸) ÷ 3.03 × 10⁻¹⁹.",
+       "λ = 6.57 × 10⁻⁷ m, which is about 657 nm (red light)."
+      ],
+      "answer": "About 657 nm"
+     },
+     "exercises": [
+      {
+       "prompt": "How much energy is needed to remove the electron from a ground-state hydrogen atom? (RH = 2.179 × 10⁻¹⁸ J)",
+       "options": [
+        "2.18 × 10⁻¹⁸ J",
+        "4.36 × 10⁻¹⁸ J",
+        "1.09 × 10⁻¹⁸ J",
+        "5.45 × 10⁻¹⁹ J"
+       ],
+       "correctIndex": 0,
+       "explanation": "Going from n = 1 to infinity needs RH × (1/1² − 0) = 2.179 × 10⁻¹⁸ J."
+      },
+      {
+       "prompt": "Which transition gives out a photon in hydrogen?",
+       "options": [
+        "n = 2 to n = 5",
+        "n = 1 to n = 3",
+        "n = 5 to n = 2",
+        "n = 2 to n = 2"
+       ],
+       "correctIndex": 2,
+       "explanation": "A photon is emitted when the electron falls to a lower level, here from 5 to 2."
+      },
+      {
+       "prompt": "What is the wavelength of the photon emitted when an electron in hydrogen falls from n = 5 to n = 2?",
+       "options": [
+        "43.4 nm",
+        "434 nm",
+        "656 nm",
+        "4.34 nm"
+       ],
+       "correctIndex": 1,
+       "explanation": "ΔE = 2.179 × 10⁻¹⁸ × (1/4 − 1/25) = 2.179 × 10⁻¹⁸ × 0.21 = 4.58 × 10⁻¹⁹ J. Then λ = (6.626 × 10⁻³⁴ × 3.0 × 10⁸) ÷ 4.58 × 10⁻¹⁹ = 4.34 × 10⁻⁷ m = 434 nm.",
+       "hint": "Work out 1/4 − 1/25 first."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Mass number A = protons + neutrons;  orbitals in a subshell = 2l + 1"
+  },
+  {
+   "id": "chemical-bonding",
+   "intro": "Bonding questions follow a handful of patterns. Learn to count groups, bonds and lone pairs, and shape, angle and hybridization all follow.",
+   "sections": [
+    {
+     "id": "ionic",
+     "title": "Ionic or covalent? Who takes the electrons",
+     "body": [
+      "Atoms bond to reach a more stable arrangement of outer electrons, usually eight (the **octet rule**).",
+      "In an **ionic bond**, one atom hands electrons to another. This happens between a **metal** (which loses electrons easily) and a **non-metal** (which gains them). Sodium gives one electron to chlorine, producing Na⁺ and Cl⁻, which stick together by opposite charges.",
+      "In a **covalent bond**, two atoms **share** electrons. This happens between **non-metals**, such as C and O, H and Cl, or O and O.",
+      "A quick test: is one element a metal from the far left of the table and the other a non-metal from the right? Then expect ionic. Two non-metals? Covalent."
+     ],
+     "keyPoints": [
+      "Metal + non-metal: ionic (electrons transferred).",
+      "Non-metal + non-metal: covalent (electrons shared)."
+     ],
+     "example": {
+      "problem": "Classify MgO and CO₂.",
+      "steps": [
+       "Mg is a metal and O is a non-metal, so MgO is ionic.",
+       "In CO₂, carbon and oxygen are both non-metals, so the bonds are covalent."
+      ],
+      "answer": "MgO is ionic; CO₂ is covalent"
+     },
+     "exercises": [
+      {
+       "prompt": "Which pair is most likely to form an ionic bond?",
+       "options": [
+        "C and O",
+        "N and O",
+        "Na and Cl",
+        "H and Cl"
+       ],
+       "correctIndex": 2,
+       "explanation": "Sodium is a metal and chlorine is a non-metal, so electrons are transferred. The other pairs are all non-metal with non-metal."
+      },
+      {
+       "prompt": "Which bond forms by sharing electrons?",
+       "options": [
+        "Ionic",
+        "Covalent",
+        "Neither",
+        "Both"
+       ],
+       "correctIndex": 1,
+       "explanation": "A covalent bond is a shared pair of electrons."
+      }
+     ]
+    },
+    {
+     "id": "sigmapi",
+     "title": "Counting sigma (σ) and pi (π) bonds",
+     "body": [
+      "Every covalent bond contains one **sigma (σ) bond**, formed when orbitals overlap **head-on**, along the line between the two nuclei. Extra bonds in a double or triple bond are **pi (π) bonds**, formed by **sideways** overlap of p orbitals.",
+      "So: **single bond = 1σ. Double bond = 1σ + 1π. Triple bond = 1σ + 2π.**",
+      "To count, go through the structure and give every bond one σ. Then add one π for each double bond and two π for each triple bond. Remember the C–H bonds, which are easy to forget because they are often not drawn."
+     ],
+     "keyPoints": [
+      "Single: 1σ. Double: 1σ + 1π. Triple: 1σ + 2π.",
+      "π bonds come from sideways p-orbital overlap."
+     ],
+     "example": {
+      "problem": "Count the σ and π bonds in ethene, H₂C=CH₂.",
+      "steps": [
+       "There are four C–H single bonds, which give 4σ.",
+       "The C=C double bond gives 1σ and 1π.",
+       "Total: 5σ and 1π."
+      ],
+      "answer": "5σ and 1π"
+     },
+     "exercises": [
+      {
+       "prompt": "Which overlap makes a pi bond?",
+       "options": [
+        "Head-on overlap of two orbitals",
+        "Sideways overlap of two p orbitals",
+        "Overlap of two s orbitals",
+        "Overlap of an s and a p orbital"
+       ],
+       "correctIndex": 1,
+       "explanation": "π bonds come from sideways overlap of p orbitals above and below the bond axis."
+      },
+      {
+       "prompt": "How many σ and π bonds does a triple bond contain?",
+       "options": [
+        "3σ",
+        "2σ and 1π",
+        "1σ and 2π",
+        "3π"
+       ],
+       "correctIndex": 2,
+       "explanation": "One σ plus two π."
+      },
+      {
+       "prompt": "How many σ and π bonds are in benzene, C₆H₆ (a six-carbon ring with three C=C double bonds)?",
+       "options": [
+        "6σ, 6π",
+        "12σ, 3π",
+        "6σ, 3π",
+        "9σ, 6π"
+       ],
+       "correctIndex": 1,
+       "explanation": "σ bonds: 6 C–C plus 6 C–H = 12. The three double bonds each add one π, so 3π.",
+       "hint": "Count the C–H bonds too."
+      },
+      {
+       "prompt": "How many σ and π bonds are in CH₃–CH=CH–C≡C–H?",
+       "options": [
+        "9σ, 3π",
+        "10σ, 3π",
+        "8σ, 4π",
+        "4σ, 2π"
+       ],
+       "correctIndex": 0,
+       "explanation": "σ: 3 (CH₃ C–H) + 1 (C–C) + 1 (C–H) + 1 (C=C) + 1 (C–C) + 1 (C≡C) + 1 (C–H) = 9. π: 1 from C=C and 2 from C≡C = 3."
+      }
+     ]
+    },
+    {
+     "id": "hybrid",
+     "title": "Hybridization: count the groups around the atom",
+     "body": [
+      "**Hybridization** is the mixing of an atom's own orbitals to make new, equal orbitals that suit the molecule's shape. To find it, count the **groups** around the central atom. A group is either an atom bonded to it (a double or triple bond still counts as one group) or a lone pair.",
+      "**2 groups = sp (linear). 3 groups = sp² (trigonal planar). 4 groups = sp³ (tetrahedral). 5 groups = sp³d (trigonal bipyramidal). 6 groups = sp³d² (octahedral).**",
+      "Examples. In BCl₃ boron has 3 bonded atoms and no lone pairs, so it is sp². In CH₄ carbon has 4 bonded atoms, so it is sp³. In NH₃ nitrogen has 3 bonded atoms and 1 lone pair, 4 groups, so sp³. In PCl₅ phosphorus has 5 bonded atoms, so sp³d. In CO₂ and in H–C≡C–H each carbon has 2 groups, so sp."
+     ],
+     "keyPoints": [
+      "Groups = bonded atoms + lone pairs (a double or triple bond counts as one).",
+      "2 sp, 3 sp², 4 sp³, 5 sp³d, 6 sp³d²."
+     ],
+     "example": {
+      "problem": "Find the hybridization of the nitrogen in NH₃ and the carbons in C₂H₄.",
+      "steps": [
+       "NH₃: 3 bonded atoms plus 1 lone pair gives 4 groups, so sp³.",
+       "C₂H₄: each carbon has 2 H atoms and the other carbon (the double bond counts once), so 3 groups.",
+       "3 groups gives sp²."
+      ],
+      "answer": "N in NH₃ is sp³; each C in C₂H₄ is sp²"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the hybridization of boron in BCl₃?",
+       "options": [
+        "sp",
+        "sp²",
+        "sp³",
+        "sp³d"
+       ],
+       "correctIndex": 1,
+       "explanation": "3 groups around boron, so sp²."
+      },
+      {
+       "prompt": "What is the hybridization of the central atom in PCl₅?",
+       "options": [
+        "sp³",
+        "sp³d",
+        "sp²",
+        "sp³d²"
+       ],
+       "correctIndex": 1,
+       "explanation": "5 groups gives sp³d."
+      },
+      {
+       "prompt": "What hybrid orbitals do the triple-bonded carbons in H–C≡C–CH₃ use?",
+       "options": [
+        "sp",
+        "sp²",
+        "sp³",
+        "sp³d"
+       ],
+       "correctIndex": 0,
+       "explanation": "Each triple-bonded carbon has two groups: one carbon or hydrogen neighbour, plus the other carbon. 2 groups gives sp."
+      },
+      {
+       "prompt": "Which species does NOT have an sp³ central atom?",
+       "options": [
+        "CH₄",
+        "NH₃",
+        "BH₃",
+        "NH₄⁺"
+       ],
+       "correctIndex": 2,
+       "explanation": "BH₃ has 3 groups, so boron is sp². CH₄, NH₃ (3 bonds and 1 lone pair) and NH₄⁺ all have 4 groups."
+      },
+      {
+       "prompt": "What name is given to the mixing of atomic orbitals to form new ones?",
+       "options": [
+        "Promotion",
+        "Hybridization",
+        "Allocation",
+        "Electron configuration"
+       ],
+       "correctIndex": 1,
+       "explanation": "That process is called hybridization."
+      }
+     ]
+    },
+    {
+     "id": "shape",
+     "title": "Shapes of molecules (VSEPR)",
+     "body": [
+      "**VSEPR** says electron groups around a central atom repel each other, so they spread as far apart as possible. The pattern of the groups sets the shape. **Lone pairs** take up more room than bonding pairs and push the bonded atoms closer together.",
+      "With no lone pairs: **2 groups, linear, 180°. 3 groups, trigonal planar, 120° (BF₃). 4 groups, tetrahedral, 109.5° (CH₄). 5 groups, trigonal bipyramidal (PCl₅, with 5 atoms attached). 6 groups, octahedral, 90° (PCl₆⁻).**",
+      "With lone pairs, the **shape** names only the atoms. 3 bonded atoms plus 1 lone pair is **trigonal pyramidal** (NH₃, about 107°). 2 bonded atoms plus 2 lone pairs is **bent** (H₂O, about 104.5°). Both start from a tetrahedral arrangement of 4 groups, but lone pairs squeeze the bond angle below 109.5°. For 6 groups with 2 lone pairs on opposite sides, as in XeF₄, the atoms form a **square planar** shape with 90° angles."
+     ],
+     "keyPoints": [
+      "2 linear 180°; 3 planar 120°; 4 tetrahedral 109.5°; 5 trigonal bipyramidal; 6 octahedral 90°.",
+      "Lone pairs squeeze angles: NH₃ about 107°, H₂O about 104.5°."
+     ],
+     "example": {
+      "problem": "Give the shape and hybridization of NH₃.",
+      "steps": [
+       "Count the groups on nitrogen: 3 bonds + 1 lone pair = 4.",
+       "Four groups means sp³ and a tetrahedral arrangement.",
+       "One group is a lone pair, so the atoms form a trigonal pyramid."
+      ],
+      "answer": "sp³, trigonal pyramidal, angle about 107°"
+     },
+     "exercises": [
+      {
+       "prompt": "What shape has a central atom with two bonding pairs and two lone pairs?",
+       "options": [
+        "Linear",
+        "Trigonal planar",
+        "Bent",
+        "Tetrahedral"
+       ],
+       "correctIndex": 2,
+       "explanation": "Four groups gives a tetrahedral arrangement, and with two of them lone pairs the molecule is bent."
+      },
+      {
+       "prompt": "What is the F–B–F bond angle in planar BF₃?",
+       "options": [
+        "90°",
+        "109.5°",
+        "120°",
+        "180°"
+       ],
+       "correctIndex": 2,
+       "explanation": "Trigonal planar, so 120°."
+      },
+      {
+       "prompt": "Why is the H–O–H angle in water about 104.5° and not 109.5°?",
+       "options": [
+        "Oxygen is sp²",
+        "The two lone pairs repel the bonding pairs more strongly",
+        "Oxygen has no lone pairs",
+        "The hydrogens repel each other more"
+       ],
+       "correctIndex": 1,
+       "explanation": "Lone pairs take more space than bonding pairs and squeeze the O–H bonds closer together."
+      },
+      {
+       "prompt": "What is the shape of PCl₆⁻?",
+       "options": [
+        "Tetrahedral",
+        "Trigonal bipyramidal",
+        "Square planar",
+        "Octahedral"
+       ],
+       "correctIndex": 3,
+       "explanation": "Six groups around P and no lone pairs gives an octahedral shape."
+      },
+      {
+       "prompt": "How many atoms are bonded to the central atom in a trigonal bipyramidal molecule?",
+       "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "correctIndex": 2,
+       "explanation": "Five groups with no lone pairs means five bonded atoms."
+      },
+      {
+       "prompt": "What is the shape of XeF₄?",
+       "options": [
+        "Tetrahedral",
+        "Square planar",
+        "Trigonal pyramidal",
+        "Octahedral"
+       ],
+       "correctIndex": 1,
+       "explanation": "Xe has 4 bonded atoms and 2 lone pairs on opposite sides, which makes it square planar."
+      }
+     ]
+    },
+    {
+     "id": "octet",
+     "title": "Breaking the octet rule, and complexes",
+     "body": [
+      "The octet rule is a guide, and past questions test the exceptions. **Electron-deficient** atoms stop at fewer than 8: boron and aluminium in BF₃, BCl₃ and AlI₃ have only **6** electrons around them. That is why they are sp² and are strong Lewis acids (they accept an electron pair).",
+      "**Hypervalent** atoms go beyond 8. Elements from period 3 onward, such as P in PCl₅ (10 electrons) or S in SF₆ (12), can do this because they have d orbitals available. Compounds such as SiCl₄ (8 electrons) obey the octet rule.",
+      "In a **complex** like [Co(NH₃)₆]³⁺, a central metal ion is surrounded by molecules or ions called **ligands**. The **coordination number** is the number of ligand donor atoms attached to the metal. Here six NH₃ molecules are attached, so it is 6."
+     ],
+     "keyPoints": [
+      "Electron-deficient: B and Al often stop at 6 electrons.",
+      "Hypervalent: period 3 and beyond can have more than 8 (PCl₅, SF₆).",
+      "Coordination number = number of ligand atoms bonded to the metal ion."
+     ],
+     "example": {
+      "problem": "Is the central atom in BF₃ obeying the octet rule?",
+      "steps": [
+       "Boron has 3 outer electrons and forms 3 bonds, giving 6 electrons around it.",
+       "That is fewer than 8."
+      ],
+      "answer": "No, it is electron-deficient"
+     },
+     "exercises": [
+      {
+       "prompt": "Which central atom is electron-deficient (fewer than 8 electrons)?",
+       "options": [
+        "P in PCl₅",
+        "Al in AlI₃",
+        "Si in SiCl₄",
+        "S in SF₆"
+       ],
+       "correctIndex": 1,
+       "explanation": "Al in AlI₃ has only 3 bonds, which makes 6 electrons. P and S exceed 8, and Si has exactly 8."
+      },
+      {
+       "prompt": "What is the hybridization of aluminium in AlI₃?",
+       "options": [
+        "sp",
+        "sp²",
+        "sp³",
+        "sp³d"
+       ],
+       "correctIndex": 1,
+       "explanation": "Three groups around Al and no lone pairs gives sp²."
+      },
+      {
+       "prompt": "What is the coordination number of the metal in [Co(NH₃)₆]³⁺?",
+       "options": [
+        "3",
+        "4",
+        "6",
+        "9"
+       ],
+       "correctIndex": 2,
+       "explanation": "Six NH₃ ligands are attached to cobalt, so 6."
+      },
+      {
+       "prompt": "Why can phosphorus form PCl₅ but nitrogen cannot form NCl₅?",
+       "options": [
+        "Phosphorus is a metal",
+        "Phosphorus has d orbitals available, so it can hold more than 8 electrons",
+        "Nitrogen is too large",
+        "Chlorine will not bond to nitrogen"
+       ],
+       "correctIndex": 1,
+       "explanation": "Period 3 atoms like phosphorus can use d orbitals to hold more than eight electrons. Nitrogen (period 2) cannot."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Groups → hybridization: 2 sp, 3 sp², 4 sp³, 5 sp³d, 6 sp³d²"
+  },
+  {
+   "id": "acids-bases",
+   "intro": "Acids and bases come down to three ideas: who gives and takes H⁺, what the log scale of pH means, and how a buffer balances an acid and its partner.",
+   "sections": [
+    {
+     "id": "defs",
+     "title": "What is an acid? Three definitions",
+     "body": [
+      "**Arrhenius:** an acid gives H⁺ in water and a base gives OH⁻. This is the simplest idea and the oldest.",
+      "**Brønsted–Lowry:** an acid is a **proton (H⁺) donor** and a base is a **proton acceptor**. When an acid gives away H⁺, what is left behind is its **conjugate base**. When a base picks up H⁺, it becomes its **conjugate acid**. Acid and conjugate base differ by exactly one H⁺.",
+      "**Lewis:** an acid **accepts** an electron pair and a base **donates** an electron pair. This is the broadest definition. In Ag⁺ + 2NH₃ → [Ag(NH₃)₂]⁺, NH₃ donates lone pairs, so it is the Lewis base, and Ag⁺ accepts them, so it is the Lewis acid. Molecules with a lone pair (NH₃, H₂O) are Lewis bases. Electron-deficient species (BF₃, AlCl₃, H⁺) are Lewis acids.",
+      "A **dative (coordinate) bond** is a bond in which both electrons come from one atom. The species that donates the pair is the Lewis base."
+     ],
+     "keyPoints": [
+      "Brønsted–Lowry: acid donates H⁺, base accepts H⁺.",
+      "Conjugate pairs differ by one H⁺.",
+      "Lewis acid accepts an electron pair; Lewis base donates one."
+     ],
+     "example": {
+      "problem": "Identify the conjugate pairs in HCl + H₂O → Cl⁻ + H₃O⁺.",
+      "steps": [
+       "HCl donates H⁺, so HCl is the acid and Cl⁻ is its conjugate base.",
+       "H₂O accepts H⁺, so it is the base and H₃O⁺ is its conjugate acid."
+      ],
+      "answer": "HCl/Cl⁻ and H₂O/H₃O⁺"
+     },
+     "exercises": [
+      {
+       "prompt": "In N₂H₅⁺ + NH₃ ⇌ N₂H₄ + NH₄⁺, which is the conjugate acid of NH₃?",
+       "options": [
+        "N₂H₅⁺",
+        "N₂H₄",
+        "NH₄⁺",
+        "NH₃"
+       ],
+       "correctIndex": 2,
+       "explanation": "NH₃ gains an H⁺ and becomes NH₄⁺, so NH₄⁺ is its conjugate acid."
+      },
+      {
+       "prompt": "In N₂H₅⁺ + NH₂⁻ → N₂H₄ + NH₃, which is the conjugate base of N₂H₅⁺?",
+       "options": [
+        "N₂H₄",
+        "NH₂⁻",
+        "NH₃",
+        "None of these"
+       ],
+       "correctIndex": 0,
+       "explanation": "N₂H₅⁺ gives away H⁺ and becomes N₂H₄, so N₂H₄ is its conjugate base.",
+       "hint": "Remove one H⁺ from the acid."
+      },
+      {
+       "prompt": "In Ag⁺ + 2NH₃ → [Ag(NH₃)₂]⁺, which species is the Lewis acid?",
+       "options": [
+        "NH₃",
+        "Ag⁺",
+        "[Ag(NH₃)₂]⁺",
+        "All of them"
+       ],
+       "correctIndex": 1,
+       "explanation": "Ag⁺ accepts the electron pairs from NH₃, so it is the Lewis acid."
+      },
+      {
+       "prompt": "Which of these can act as a Lewis base?",
+       "options": [
+        "BF₃",
+        "NH₃",
+        "AlCl₃",
+        "H⁺"
+       ],
+       "correctIndex": 1,
+       "explanation": "NH₃ has a lone pair to donate. BF₃, AlCl₃ and H⁺ are all electron-pair acceptors."
+      },
+      {
+       "prompt": "Which cannot act as a Brønsted–Lowry acid?",
+       "options": [
+        "HCO₃⁻",
+        "HSO₄⁻",
+        "HBr",
+        "CH₃COO⁻"
+       ],
+       "correctIndex": 3,
+       "explanation": "CH₃COO⁻ has no H⁺ available to donate. It is a base."
+      }
+     ]
+    },
+    {
+     "id": "ph",
+     "title": "pH, pOH and the logarithm",
+     "body": [
+      "**pH = −log[H⁺]** and **pOH = −log[OH⁻]**. In water at 25 °C, **pH + pOH = 14** and [H⁺] × [OH⁻] = 1.0 × 10⁻¹⁴.",
+      "Because pH is a logarithm, each pH step is a factor of 10. A solution of pH 3 has ten times more H⁺ than one of pH 4. **When pH rises from 1 to 2, [H⁺] falls** to one tenth.",
+      "To go from pH back to concentration, use **[H⁺] = 10^(−pH)**.",
+      "For a **strong acid** (HCl, HNO₃), [H⁺] equals the acid concentration, so 0.0001 M HCl has pH 4. For a **strong base**, find [OH⁻] first, then pOH, then pH = 14 − pOH. **Ba(OH)₂ gives two OH⁻ per formula unit**, so [OH⁻] is double the concentration."
+     ],
+     "keyPoints": [
+      "pH = −log[H⁺]; pOH = −log[OH⁻]; pH + pOH = 14.",
+      "[H⁺] = 10^(−pH). Each pH unit is a factor of 10.",
+      "Ba(OH)₂ and similar bases give two OH⁻."
+     ],
+     "example": {
+      "problem": "A cider has pH 3.15. Find [OH⁻].",
+      "steps": [
+       "[H⁺] = 10⁻³·¹⁵ = 7.08 × 10⁻⁴ M.",
+       "[OH⁻] = 1.0 × 10⁻¹⁴ ÷ 7.08 × 10⁻⁴ = 1.41 × 10⁻¹¹ M.",
+       "Check with pOH: 14 − 3.15 = 10.85, and 10⁻¹⁰·⁸⁵ = 1.41 × 10⁻¹¹."
+      ],
+      "answer": "1.41 × 10⁻¹¹ M"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the pH of 0.0001 M HCl?",
+       "options": [
+        "1",
+        "2",
+        "4",
+        "10"
+       ],
+       "correctIndex": 2,
+       "explanation": "[H⁺] = 10⁻⁴, so pH = 4."
+      },
+      {
+       "prompt": "What is the pH of a solution with [H⁺] = 2.5 × 10⁻⁴ mol/L?",
+       "options": [
+        "1.20",
+        "2.60",
+        "3.60",
+        "10.40"
+       ],
+       "correctIndex": 2,
+       "explanation": "pH = −log(2.5 × 10⁻⁴) = 4 − log 2.5 = 4 − 0.40 = 3.60."
+      },
+      {
+       "prompt": "What is the pH of 0.02 M NaOH?",
+       "options": [
+        "1.70",
+        "7.00",
+        "11.50",
+        "12.30"
+       ],
+       "correctIndex": 3,
+       "explanation": "[OH⁻] = 0.02, so pOH = 1.70 and pH = 14 − 1.70 = 12.30."
+      },
+      {
+       "prompt": "What is the pH of 0.020 M Ba(OH)₂?",
+       "options": [
+        "12.30",
+        "12.60",
+        "1.40",
+        "11.86"
+       ],
+       "correctIndex": 1,
+       "explanation": "Each Ba(OH)₂ gives 2 OH⁻, so [OH⁻] = 0.040 M. pOH = 1.40, so pH = 12.60.",
+       "hint": "Double the concentration."
+      },
+      {
+       "prompt": "The pH of seawater is 8.5. What is [H⁺]?",
+       "options": [
+        "8.5 × 10⁻¹⁴ M",
+        "3.16 × 10⁻⁹ M",
+        "1 × 10⁻⁹ M",
+        "5.0 × 10⁻⁹ M"
+       ],
+       "correctIndex": 1,
+       "explanation": "[H⁺] = 10⁻⁸·⁵ = 3.16 × 10⁻⁹ M."
+      },
+      {
+       "prompt": "When pH rises from 1 to 2, the hydrogen ion concentration:",
+       "options": [
+        "Increases",
+        "Decreases",
+        "Stays the same",
+        "Becomes zero"
+       ],
+       "correctIndex": 1,
+       "explanation": "Higher pH means less H⁺. [H⁺] drops from 0.1 M to 0.01 M."
+      }
+     ]
+    },
+    {
+     "id": "weak",
+     "title": "Strong and weak acids, and Ka",
+     "body": [
+      "A **strong acid** splits completely into ions in water. A **weak acid** only splits a little, reaching an equilibrium: HA ⇌ H⁺ + A⁻. Its strength is measured by **Ka = [H⁺][A⁻] ÷ [HA]**. **A larger Ka means a stronger acid.** Strength depends on how easily the acid gives up H⁺, not on its concentration.",
+      "For a weak acid with starting concentration C, [H⁺] = [A⁻] = x and [HA] ≈ C. So **Ka ≈ x² ÷ C**, which gives **x = √(Ka × C)**. If you know the pH and want the concentration, rearrange: **C = x² ÷ Ka** (plus x, if you want to be exact).",
+      "Trends worth knowing. Across a period the hydrides get more acidic as the atom gets more electronegative: CH₄ < NH₃ < H₂O < HF. The **conjugate base of a strong acid is a very weak base**, so Cl⁻ (from HCl) is far weaker than F⁻ or CH₃COO⁻. Adding electronegative chlorine atoms to an organic acid strengthens it, so Cl₂CHCOOH is a much stronger acid than CH₃COOH."
+     ],
+     "keyPoints": [
+      "Ka = [H⁺][A⁻] ÷ [HA]; bigger Ka is a stronger acid.",
+      "Weak acid: [H⁺] ≈ √(Ka × C).",
+      "Conjugate base of a strong acid is a very weak base."
+     ],
+     "example": {
+      "problem": "Find the pH of 0.10 M acetic acid. (Ka = 1.8 × 10⁻⁵)",
+      "steps": [
+       "x = √(Ka × C) = √(1.8 × 10⁻⁵ × 0.10) = √(1.8 × 10⁻⁶).",
+       "x = 1.34 × 10⁻³ M.",
+       "pH = −log(1.34 × 10⁻³) = 2.87."
+      ],
+      "answer": "pH ≈ 2.87"
+     },
+     "exercises": [
+      {
+       "prompt": "Which solution is the most acidic? (all 0.10 M)",
+       "options": [
+        "CH₃COOH, Ka = 1.8 × 10⁻⁵",
+        "HCOOH, Ka = 1.8 × 10⁻⁴",
+        "ClCH₂COOH, Ka = 1.4 × 10⁻³",
+        "Cl₂CHCOOH, Ka = 5.1 × 10⁻²"
+       ],
+       "correctIndex": 3,
+       "explanation": "Same concentration, so the largest Ka wins: 5.1 × 10⁻²."
+      },
+      {
+       "prompt": "Arrange in order of increasing acidity: NH₃, CH₄, H₂O, HF.",
+       "options": [
+        "CH₄ < NH₃ < H₂O < HF",
+        "NH₃ < CH₄ < H₂O < HF",
+        "HF < H₂O < NH₃ < CH₄",
+        "H₂O < HF < NH₃ < CH₄"
+       ],
+       "correctIndex": 0,
+       "explanation": "Acidity rises across the period as the atom becomes more electronegative: C < N < O < F."
+      },
+      {
+       "prompt": "Which is the weakest base?",
+       "options": [
+        "OH⁻",
+        "NH₃",
+        "CH₃COO⁻",
+        "Cl⁻"
+       ],
+       "correctIndex": 3,
+       "explanation": "Cl⁻ is the conjugate base of the strong acid HCl, so it has almost no tendency to take back H⁺."
+      },
+      {
+       "prompt": "An acetic acid solution has pH 2.68. What is its concentration? (Ka = 1.8 × 10⁻⁵)",
+       "options": [
+        "0.12 M",
+        "0.24 M",
+        "0.52 M",
+        "0.65 M"
+       ],
+       "correctIndex": 1,
+       "explanation": "[H⁺] = 10⁻²·⁶⁸ = 2.09 × 10⁻³ M. C ≈ x² ÷ Ka + x = (4.37 × 10⁻⁶ ÷ 1.8 × 10⁻⁵) + 0.0021 = 0.243 + 0.002 ≈ 0.24 M.",
+       "hint": "Use C = x² ÷ Ka."
+      },
+      {
+       "prompt": "The strength of an acid depends on:",
+       "options": [
+        "Its concentration",
+        "How readily it donates protons (its tendency to ionize)",
+        "The size of the beaker",
+        "The amount of water"
+       ],
+       "correctIndex": 1,
+       "explanation": "Strength is about how far the acid ionizes. Concentration is a separate matter."
+      }
+     ]
+    },
+    {
+     "id": "buffers",
+     "title": "Buffers and the Henderson–Hasselbalch equation",
+     "body": [
+      "A **buffer** resists changes in pH when a little acid or base is added. It needs **both a weak acid and its conjugate base** (for example CH₃COOH and CH₃COONa), or a weak base and its conjugate acid. Added acid is mopped up by the conjugate base, and added base is mopped up by the weak acid. A buffer works best when the two are in **roughly equal amounts**.",
+      "The pH is found with **pH = pKa + log([A⁻] ÷ [HA])**, where pKa = −log Ka, A⁻ is the salt (conjugate base) and HA is the weak acid. If [A⁻] = [HA], the log is zero and **pH = pKa**.",
+      "Not a buffer: a strong acid with its strong base (NaOH/HCl), or a strong acid alone, because nothing is present to absorb the extra H⁺ or OH⁻.",
+      "When a strong base is added to a weak acid, work in **moles**. The base converts some HA into A⁻. Subtract the moles of base from HA, add the same to A⁻, and then use the equation (the volumes cancel in the ratio)."
+     ],
+     "keyPoints": [
+      "Buffer = weak acid + its conjugate base (or weak base + conjugate acid).",
+      "pH = pKa + log([A⁻] ÷ [HA]); equal amounts gives pH = pKa.",
+      "With added strong base: work in moles first."
+     ],
+     "example": {
+      "problem": "10.0 mL of 0.100 M NaOH is added to 25.0 mL of 0.100 M CH₃COOH. Find the pH. (Ka = 1.8 × 10⁻⁵)",
+      "steps": [
+       "Moles of acid = 0.0250 × 0.100 = 2.50 mmol. Moles of NaOH = 0.0100 × 0.100 = 1.00 mmol.",
+       "NaOH converts 1.00 mmol of acid into acetate: HA left = 2.50 − 1.00 = 1.50 mmol, A⁻ made = 1.00 mmol.",
+       "pH = pKa + log(1.00 ÷ 1.50) = 4.745 − 0.176 = 4.57."
+      ],
+      "answer": "pH ≈ 4.57"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the pH of 1.0 M CH₃COOH with 1.0 M CH₃COONa? (Ka = 1.8 × 10⁻⁵)",
+       "options": [
+        "2.37",
+        "4.74",
+        "7.00",
+        "9.26"
+       ],
+       "correctIndex": 1,
+       "explanation": "The ratio is 1, so log = 0 and pH = pKa = −log(1.8 × 10⁻⁵) = 4.74."
+      },
+      {
+       "prompt": "What is the pH of 0.20 M CH₃COONa with 0.05 M CH₃COOH? (Ka = 1.8 × 10⁻⁵)",
+       "options": [
+        "3.76",
+        "4.74",
+        "5.35",
+        "9.65"
+       ],
+       "correctIndex": 2,
+       "explanation": "pH = 4.74 + log(0.20 ÷ 0.05) = 4.74 + log 4 = 4.74 + 0.60 = 5.35."
+      },
+      {
+       "prompt": "What is the pH of 0.12 M benzoic acid with 0.20 M sodium benzoate? (Ka = 6.5 × 10⁻⁵)",
+       "options": [
+        "3.31",
+        "4.19",
+        "4.41",
+        "5.36"
+       ],
+       "correctIndex": 2,
+       "explanation": "pKa = −log(6.5 × 10⁻⁵) = 4.19. pH = 4.19 + log(0.20 ÷ 0.12) = 4.19 + 0.22 = 4.41."
+      },
+      {
+       "prompt": "Which is NOT a buffer?",
+       "options": [
+        "NaClO₂ / HClO₂",
+        "CH₃NH₂ / CH₃NH₃Cl",
+        "Na₂CO₃ / NaHCO₃",
+        "NaOH / HCl"
+       ],
+       "correctIndex": 3,
+       "explanation": "NaOH and HCl are a strong base and a strong acid. They simply neutralize each other and leave no weak acid and conjugate base pair."
+      },
+      {
+       "prompt": "A buffer is most effective when:",
+       "options": [
+        "It contains only a strong acid",
+        "It contains a weak acid and its conjugate base in about equal amounts",
+        "It is very dilute",
+        "It contains only water"
+       ],
+       "correctIndex": 1,
+       "explanation": "Both partners must be present, and a ratio near 1 gives the most resistance in both directions."
+      }
+     ]
+    },
+    {
+     "id": "salts",
+     "title": "Salts, hydrolysis and the common-ion effect",
+     "body": [
+      "A **normal salt** has no replaceable H or OH (NaCl). An **acid salt** still has a replaceable hydrogen, such as NaHSO₄. A **basic salt** still contains OH or O.",
+      "**Hydrolysis** is a salt reacting with water. A salt of a weak base and a strong acid, such as NH₄Cl, has a cation (NH₄⁺) that gives H⁺ to water, so the solution is **acidic**. This is called **cationic hydrolysis**.",
+      "The **common-ion effect**: adding a substance that shares an ion with an equilibrium pushes it backwards (Le Chatelier). In NH₄OH ⇌ NH₄⁺ + OH⁻, adding NH₄Cl adds NH₄⁺, so the equilibrium shifts to the left. Dissociation drops and [OH⁻] falls. In general, adding a salt with a common ion **decreases** the degree of dissociation of the original salt or weak electrolyte."
+     ],
+     "keyPoints": [
+      "Acid salts keep a replaceable H (NaHSO₄).",
+      "Weak base + strong acid salt (NH₄Cl) is acidic.",
+      "A common ion lowers the dissociation of the original electrolyte."
+     ],
+     "example": {
+      "problem": "Is a solution of NH₄Cl acidic, basic or neutral?",
+      "steps": [
+       "NH₄Cl comes from a weak base (NH₃) and a strong acid (HCl).",
+       "NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺, which releases H⁺.",
+       "Cl⁻ does not react with water."
+      ],
+      "answer": "Acidic"
+     },
+     "exercises": [
+      {
+       "prompt": "NaHSO₄ is an example of:",
+       "options": [
+        "A normal salt",
+        "An acid salt",
+        "A basic salt",
+        "A double salt"
+       ],
+       "correctIndex": 1,
+       "explanation": "It still contains a replaceable hydrogen, so it is an acid salt."
+      },
+      {
+       "prompt": "Cationic hydrolysis gives a solution that is:",
+       "options": [
+        "Acidic",
+        "Basic",
+        "Neutral",
+        "Amphoteric"
+       ],
+       "correctIndex": 0,
+       "explanation": "The cation (such as NH₄⁺) releases H⁺ to water, making the solution acidic."
+      },
+      {
+       "prompt": "NH₄Cl is added to NH₄OH ⇌ NH₄⁺ + OH⁻. The equilibrium shifts:",
+       "options": [
+        "Forward, increasing OH⁻",
+        "Backward, reducing dissociation",
+        "Not at all",
+        "To complete dissociation"
+       ],
+       "correctIndex": 1,
+       "explanation": "The extra NH₄⁺ pushes the equilibrium backward: the common-ion effect."
+      },
+      {
+       "prompt": "Adding a salt with a common ion to a solution of another salt makes the degree of dissociation of the original salt:",
+       "options": [
+        "Increase",
+        "Decrease",
+        "Remain unchanged",
+        "Become complete"
+       ],
+       "correctIndex": 1,
+       "explanation": "The common ion shifts the equilibrium toward the undissociated salt, so dissociation decreases."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "pH = −log[H⁺];  pH + pOH = 14;  pH = pKa + log([A⁻]/[HA])"
+  },
+  {
+   "id": "periodic-trends",
+   "intro": "The periodic table is a map. Learn how to read position (period, group, block) and the two directions of every trend, and you can answer most questions without memorizing facts.",
+   "sections": [
+    {
+     "id": "layout",
+     "title": "How the table is laid out: periods, groups and blocks",
+     "body": [
+      "The periodic table is arranged by increasing **atomic number** (number of protons), not by atomic mass. This is the answer to the question 'on what basis are the elements arranged'.",
+      "A **period** is a horizontal row. The period number equals the **highest shell (n) that holds electrons**. A **group** is a vertical column. Elements in a group have the same number of outer (valence) electrons, so they behave alike.",
+      "The **block** is named after the subshell the last electron enters. Groups 1 and 2 are the **s-block**. Groups 13 to 18 are the **p-block**. The transition metals are the **d-block**, and the lanthanides and actinides are the **f-block**.",
+      "Use the configuration to place an element. Atomic number 12 is magnesium, 1s² 2s² 2p⁶ 3s², so it has 2 outer electrons and sits in Group 2 (IIA) with the same chemistry as calcium. Atomic number 38 is strontium, [Kr] 5s², so its highest shell is n = 5 and it is in **period 5**. Tin (Z = 50) is [Kr] 4d¹⁰ 5s² 5p², ending in a p subshell, so it is **p-block**.",
+      "Know your families. Group 1: alkali metals. Group 2: alkaline earths (Be, Mg, Ca, Sr, Ba, Ra). Group 13: B, Al, Ga, In, Tl. Group 16 (VIA): O, S, Se, Te, Po. Group 17: halogens. Group 18: noble gases. **Metalloids** (B, Si, Ge, As, Sb, Te) sit on the diagonal 'staircase' between metals and non-metals."
+     ],
+     "keyPoints": [
+      "Table order: increasing atomic number.",
+      "Period = highest shell n; group = number of outer electrons.",
+      "Blocks: s (groups 1–2), p (13–18), d (transition), f."
+     ],
+     "example": {
+      "problem": "Place the element with configuration [Ar] 4s² 3d¹⁰ 4p³ in the table.",
+      "steps": [
+       "The highest shell is n = 4, so it is in period 4.",
+       "The last electron enters 4p, so it is a p-block element.",
+       "Outer electrons = 4s² 4p³ = 5, so it is in Group 15 (VA). It is arsenic (Z = 33)."
+      ],
+      "answer": "Period 4, Group 15, p-block (arsenic)"
+     },
+     "exercises": [
+      {
+       "prompt": "On what basis are the elements arranged in the modern periodic table?",
+       "options": [
+        "Increasing atomic mass",
+        "Increasing atomic number",
+        "Increasing boiling point",
+        "Alphabetical order of symbols"
+       ],
+       "correctIndex": 1,
+       "explanation": "The table is ordered by atomic number, the number of protons."
+      },
+      {
+       "prompt": "An element with atomic number 12 has similar chemical properties to elements in:",
+       "options": [
+        "Group IA",
+        "Group IIA",
+        "Group IIIA",
+        "Group VA"
+       ],
+       "correctIndex": 1,
+       "explanation": "Z = 12 is 1s² 2s² 2p⁶ 3s², with two outer electrons, so it is in Group IIA."
+      },
+      {
+       "prompt": "An element with atomic number 38 belongs to which period?",
+       "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "correctIndex": 2,
+       "explanation": "Strontium is [Kr] 5s². Its outermost shell is n = 5, so it is in period 5.",
+       "hint": "The period equals the highest n."
+      },
+      {
+       "prompt": "To which block does tin (Z = 50) belong?",
+       "options": [
+        "s-block",
+        "p-block",
+        "d-block",
+        "f-block"
+       ],
+       "correctIndex": 1,
+       "explanation": "Its last electrons go into 5p, so it is in the p-block."
+      },
+      {
+       "prompt": "Which is NOT a Group 13 element?",
+       "options": [
+        "Al",
+        "Ga",
+        "In",
+        "Sr"
+       ],
+       "correctIndex": 3,
+       "explanation": "Sr is in Group 2. Group 13 is B, Al, Ga, In, Tl."
+      },
+      {
+       "prompt": "Which is a metalloid?",
+       "options": [
+        "Li",
+        "Be",
+        "B",
+        "C"
+       ],
+       "correctIndex": 2,
+       "explanation": "Boron lies on the metalloid staircase."
+      },
+      {
+       "prompt": "Which of these is NOT in Group VIA?",
+       "options": [
+        "Selenium",
+        "Potassium",
+        "Tellurium",
+        "Sulfur"
+       ],
+       "correctIndex": 1,
+       "explanation": "Potassium is in Group 1. The Group VIA elements are O, S, Se, Te, Po."
+      }
+     ]
+    },
+    {
+     "id": "trends",
+     "title": "Trends in size, ionization energy and electronegativity",
+     "body": [
+      "**Atomic radius** is the size of the atom. **Ionization energy** is the energy needed to remove one electron from an isolated gaseous atom. **Electron affinity** is the energy change when a gaseous atom gains an electron. **Electronegativity** is how strongly an atom pulls on shared electrons in a bond.",
+      "**Across a period (left to right):** the nuclear charge rises but electrons are added to the *same* shell, so the nucleus pulls harder. Radius **decreases**. Ionization energy and electronegativity **increase**. Metallic character and electropositivity **decrease**.",
+      "**Down a group:** a whole new shell is added each row, so the outer electrons are farther away and better shielded. Radius **increases**. Ionization energy, electron affinity and electronegativity **decrease**. So Be, Mg and Ca have radii of 1.13, 1.60 and 1.97 Å because the **number of electron shells increases**.",
+      "Remember: **fluorine is the most electronegative element** and has the smallest atom among the main-group elements in period 2 (ignoring the noble gas). **Cs and Fr are the most electropositive.**",
+      "These properties depend on electronic structure, which is why they repeat in a pattern (periodicity)."
+     ],
+     "keyPoints": [
+      "Across a period: radius ↓, ionization energy ↑, electronegativity ↑.",
+      "Down a group: radius ↑, ionization energy ↓, electronegativity ↓.",
+      "Radius grows down a group because more shells are added."
+     ],
+     "example": {
+      "problem": "Which is larger, Mg or Cl? Which has higher ionization energy?",
+      "steps": [
+       "Both are in period 3, so Mg is on the left and Cl on the right.",
+       "Across a period radius decreases, so Mg is larger.",
+       "Ionization energy increases across a period, so Cl is higher."
+      ],
+      "answer": "Mg is larger; Cl has the higher ionization energy"
+     },
+     "exercises": [
+      {
+       "prompt": "Arrange in order of increasing electronegativity: Li, Be, O, F, N, C.",
+       "options": [
+        "Li < Be < C < N < O < F",
+        "Be < Li < N < C < O < F",
+        "F < O < N < C < Be < Li",
+        "Li < Be < O < F < N < C"
+       ],
+       "correctIndex": 0,
+       "explanation": "Electronegativity rises across period 2: Li < Be < C < N < O < F."
+      },
+      {
+       "prompt": "Arrange in order of decreasing atomic radius: Na, Al, P, Cl, Mg.",
+       "options": [
+        "Na > Mg > Al > P > Cl",
+        "Cl > P > Al > Mg > Na",
+        "Na > Al > Mg > P > Cl",
+        "Mg > Na > P > Cl > Al"
+       ],
+       "correctIndex": 0,
+       "explanation": "All are in period 3, and the radius shrinks to the right: Na > Mg > Al > P > Cl."
+      },
+      {
+       "prompt": "Which property DECREASES from left to right across a period?",
+       "options": [
+        "Ionization energy",
+        "Electronegativity",
+        "Electropositivity",
+        "Number of protons"
+       ],
+       "correctIndex": 2,
+       "explanation": "Metals on the left lose electrons easily. Electropositivity falls across a period, while ionization energy and electronegativity rise."
+      },
+      {
+       "prompt": "Which arrangement shows increasing atomic radius?",
+       "options": [
+        "Cs < Rb < Sr < Ca < Al",
+        "Al < Ca < Sr < Rb < Cs",
+        "Rb < Al < Ca < Sr < Cs",
+        "Ca > Sr < Al < Rb < Cs"
+       ],
+       "correctIndex": 1,
+       "explanation": "Al is in period 3 and is the smallest. Ca and Sr are in periods 4 and 5, Rb in period 5 is larger than Sr, and Cs in period 6 is the largest."
+      },
+      {
+       "prompt": "All of these decrease down a group EXCEPT:",
+       "options": [
+        "Ionization energy",
+        "Electronegativity",
+        "Atomic radius",
+        "Electron affinity"
+       ],
+       "correctIndex": 2,
+       "explanation": "Atomic radius increases down a group, while the other three decrease."
+      },
+      {
+       "prompt": "The energy needed to remove an electron from an isolated gaseous atom is called:",
+       "options": [
+        "Electron affinity",
+        "Ionization energy",
+        "Electronegativity",
+        "Kinetic energy"
+       ],
+       "correctIndex": 1,
+       "explanation": "That definition is ionization energy."
+      }
+     ]
+    },
+    {
+     "id": "formulas",
+     "title": "Predicting the formula of a compound",
+     "body": [
+      "Atoms try to reach a full outer shell. Metals **lose** their outer electrons to form positive ions, and non-metals **gain** electrons to complete the octet. The ion charge follows the group: Group 1 gives +1, Group 2 gives +2, Group 13 gives +3, Group 16 gives −2, Group 17 gives −1.",
+      "Write the two ions and **cross the charges** to give subscripts so the total charge is zero. Aluminium (3 outer electrons) forms Al³⁺ and oxygen (6 outer electrons) forms O²⁻. Cross over: Al₂O₃ (2 × 3 = 6 and 3 × 2 = 6)."
+     ],
+     "keyPoints": [
+      "Ion charges follow the group: 1 → +1, 2 → +2, 13 → +3, 16 → −2, 17 → −1.",
+      "Cross the charges to get the formula."
+     ],
+     "example": {
+      "problem": "Write the formula of calcium nitride, from Ca (Z = 20) and N (Z = 7).",
+      "steps": [
+       "Ca is [Ar] 4s², so it forms Ca²⁺. N is 1s² 2s² 2p³, so it forms N³⁻.",
+       "Cross the charges: Ca₃N₂ (3 × 2 = 6 and 2 × 3 = 6)."
+      ],
+      "answer": "Ca₃N₂"
+     },
+     "exercises": [
+      {
+       "prompt": "X is 1s² 2s² 2p⁴ and Y is 1s² 2s² 2p⁶ 3s² 3p¹. What is the formula of their compound?",
+       "options": [
+        "XY",
+        "YX₂",
+        "Y₂X₃",
+        "X₂Y₃"
+       ],
+       "correctIndex": 2,
+       "explanation": "X needs 2 electrons (X²⁻) and Y gives 3 (Y³⁺). Crossing charges gives Y₂X₃: 2 × 3 = 6 and 3 × 2 = 6.",
+       "hint": "Write the ion charges first."
+      },
+      {
+       "prompt": "What is the charge on a Group 2 ion?",
+       "options": [
+        "+1",
+        "+2",
+        "−2",
+        "+3"
+       ],
+       "correctIndex": 1,
+       "explanation": "Group 2 elements lose two electrons, giving +2."
+      },
+      {
+       "prompt": "What is the formula of the compound formed by Mg and Cl?",
+       "options": [
+        "MgCl",
+        "Mg₂Cl",
+        "MgCl₂",
+        "Mg₂Cl₃"
+       ],
+       "correctIndex": 2,
+       "explanation": "Mg²⁺ and Cl⁻ need two chlorides to balance one magnesium."
+      }
+     ]
+    },
+    {
+     "id": "oxides",
+     "title": "Oxides: basic, acidic and amphoteric",
+     "body": [
+      "The oxide of an element tells you its character. **Metal oxides from the left of the table are basic** (Li₂O, Rb₂O, MgO, CaO, SrO, BaO). They react with acids and, if soluble, make alkaline solutions. **Non-metal oxides are acidic** (CO₂, SO₃, N₂O₅, P₄O₁₀, B₂O₃). **Amphoteric** oxides react with both acids and bases. They sit near the metalloid staircase: Al₂O₃, PbO, GeO₂, ZnO, SnO₂.",
+      "Across a period the oxides go from basic to amphoteric to acidic. Higher oxidation states are also more acidic.",
+      "**Oxides of nitrogen:** NO, N₂O and NO₂ are gases at room temperature, but **N₂O₅** is a **solid**.",
+      "**Thermal decomposition.** Group 1 carbonates are very stable: Na₂CO₃ does not decompose on ordinary heating, though Li₂CO₃ and the carbonates of Mg, Ca and Pb do. Heating a nitrate such as Mg(NO₃)₂ gives the metal oxide, nitrogen(IV) oxide and oxygen: 2Mg(NO₃)₂ → 2MgO + 4NO₂ + O₂.",
+      "**Peroxides.** Sodium and the larger Group 1 and 2 metals form peroxides, but small lithium cannot form a stable one and gives the oxide Li₂O instead."
+     ],
+     "keyPoints": [
+      "Left-hand metal oxides: basic. Non-metal oxides: acidic. Near the staircase: amphoteric.",
+      "N₂O₅ is a solid; NO, N₂O and NO₂ are gases.",
+      "Nitrate heated: metal oxide + NO₂ + O₂ (for Mg)."
+     ],
+     "example": {
+      "problem": "Classify Na₂O, Al₂O₃ and P₄O₁₀.",
+      "steps": [
+       "Na is a metal from the far left, so Na₂O is basic.",
+       "Al is near the staircase, so Al₂O₃ is amphoteric.",
+       "P is a non-metal, so P₄O₁₀ is acidic."
+      ],
+      "answer": "Basic, amphoteric, acidic"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is an acidic oxide?",
+       "options": [
+        "Li₂O",
+        "CaO",
+        "SO₃",
+        "MgO"
+       ],
+       "correctIndex": 2,
+       "explanation": "SO₃ is a non-metal oxide and dissolves to give sulfuric acid. The others are metal oxides on the left of the table, which are basic."
+      },
+      {
+       "prompt": "All of these are basic oxides EXCEPT:",
+       "options": [
+        "Rb₂O",
+        "MgO",
+        "SO₃",
+        "Li₂O"
+       ],
+       "correctIndex": 2,
+       "explanation": "SO₃ is acidic."
+      },
+      {
+       "prompt": "All of these are amphoteric oxides EXCEPT:",
+       "options": [
+        "PbO",
+        "Al₂O₃",
+        "GeO₂",
+        "MgO"
+       ],
+       "correctIndex": 3,
+       "explanation": "MgO is a basic oxide."
+      },
+      {
+       "prompt": "Which nitrogen oxide is a solid at room temperature?",
+       "options": [
+        "NO",
+        "N₂O",
+        "NO₂",
+        "N₂O₅"
+       ],
+       "correctIndex": 3,
+       "explanation": "N₂O₅ is a solid, and the others are gases."
+      },
+      {
+       "prompt": "What are the products of heating Mg(NO₃)₂?",
+       "options": [
+        "Mg, O₂ and NO₂",
+        "MgO, NO₂ and O₂",
+        "Mg and N₂",
+        "MgO and N₂"
+       ],
+       "correctIndex": 1,
+       "explanation": "Magnesium nitrate gives MgO, brown NO₂ and O₂."
+      },
+      {
+       "prompt": "Which Group 1 carbonate does NOT decompose on ordinary heating?",
+       "options": [
+        "Li₂CO₃",
+        "Na₂CO₃",
+        "MgCO₃",
+        "CaCO₃"
+       ],
+       "correctIndex": 1,
+       "explanation": "Na₂CO₃ is thermally stable. Li₂CO₃ and the Group 2 carbonates decompose."
+      },
+      {
+       "prompt": "Which element cannot form a stable peroxide?",
+       "options": [
+        "Li",
+        "Na",
+        "Ba",
+        "Ca"
+       ],
+       "correctIndex": 0,
+       "explanation": "Li is too small and forms the oxide instead."
+      }
+     ]
+    },
+    {
+     "id": "groups",
+     "title": "Noble gases and halogen acids",
+     "body": [
+      "The **noble gases** (Group 18) are chemically inert mainly because their **outer shells are full** (a stable octet; helium has a stable pair), so they do not need to gain, lose or share electrons.",
+      "Among the hydrogen halides, acid strength increases down the group because the H–X bond gets longer and weaker: **HF < HCl < HBr < HI**. Perchloric acid, HClO₄, is among the strongest acids of all."
+     ],
+     "keyPoints": [
+      "Noble gases are inert because their valence shells are full.",
+      "HF < HCl < HBr < HI in acid strength."
+     ],
+     "example": {
+      "problem": "Why is HI a stronger acid than HCl?",
+      "steps": [
+       "Iodine is larger than chlorine, so the H–I bond is longer.",
+       "A longer bond is weaker, so H⁺ is released more easily."
+      ],
+      "answer": "The H–I bond is weaker"
+     },
+     "exercises": [
+      {
+       "prompt": "Why are noble gases chemically inert?",
+       "options": [
+        "They have very high boiling points",
+        "They have filled valence shells",
+        "They are metals",
+        "They have high electronegativity"
+       ],
+       "correctIndex": 1,
+       "explanation": "A full outer shell leaves them with no tendency to react."
+      },
+      {
+       "prompt": "Which lists the acids in order of increasing strength?",
+       "options": [
+        "HF < HCl < HBr < HI",
+        "HI < HBr < HCl < HF",
+        "HCl < HF < HI < HBr",
+        "HF < HI < HCl < HBr"
+       ],
+       "correctIndex": 0,
+       "explanation": "Acid strength rises down the group as H–X weakens."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Across a period: radius ↓, IE ↑, EN ↑.  Down a group: the reverse"
+  },
+  {
+   "id": "nuclear-chemistry",
+   "intro": "Nuclear questions come in three kinds: balance the equation, halve it repeatedly, or use the log formula. Each one is a short routine once you know it.",
+   "sections": [
+    {
+     "id": "symbol",
+     "title": "Reading nuclear symbols",
+     "body": [
+      "A nuclide is written ᴬ_Z X. **A** is the mass number (protons + neutrons), **Z** is the atomic number (protons). The number of neutrons is **A − Z**. Protactinium-233 has Z = 91, so it has 233 − 91 = 142 neutrons.",
+      "To name an ion from its particles, find Z from the protons, A from protons + neutrons, and the charge from protons − electrons. A nucleus with mass number 81 and 46 neutrons has 81 − 46 = 35 protons, which is bromine. An ion with 36 electrons has one extra electron, so it is Br⁻."
+     ],
+     "keyPoints": [
+      "Neutrons = A − Z.",
+      "Charge = protons − electrons."
+     ],
+     "example": {
+      "problem": "How many protons, neutrons and electrons are in ⁶⁰₂₇Co²⁺?",
+      "steps": [
+       "Protons = Z = 27.",
+       "Neutrons = 60 − 27 = 33.",
+       "The 2+ ion has lost two electrons: 27 − 2 = 25."
+      ],
+      "answer": "27 protons, 33 neutrons, 25 electrons"
+     },
+     "exercises": [
+      {
+       "prompt": "How many neutrons are in ²³³₉₁Pa?",
+       "options": [
+        "91",
+        "142",
+        "146",
+        "233"
+       ],
+       "correctIndex": 1,
+       "explanation": "233 − 91 = 142."
+      },
+      {
+       "prompt": "A nucleus of mass number 81 has 46 neutrons, and the ion has 36 electrons. Which ion is it?",
+       "options": [
+        "⁸¹₃₅Br⁻",
+        "⁸¹₃₅Br⁺",
+        "⁸¹₃₆Kr⁺",
+        "⁸¹₃₄Se²⁻"
+       ],
+       "correctIndex": 0,
+       "explanation": "Protons = 81 − 46 = 35 (bromine). 36 electrons is one more than 35, so the charge is 1−."
+      }
+     ]
+    },
+    {
+     "id": "decay",
+     "title": "Types of radioactive decay and balancing equations",
+     "body": [
+      "An unstable nucleus gives off radiation. In every nuclear equation, **the mass numbers add up to the same total on both sides, and so do the atomic numbers.**",
+      "**Alpha (α), ⁴₂He:** the nucleus loses 2 protons and 2 neutrons, so A falls by 4 and Z falls by 2. Example: ²¹²₈₂Pb → ²⁰⁸₈₁Tl + ⁴₂He is alpha decay.",
+      "**Beta (β⁻), ⁰₋₁e:** a neutron changes into a proton, so A stays the same and Z rises by 1. Example: ²³⁴₉₀Th → ²³⁴₉₁Pa + ⁰₋₁e. Zinc-73 by beta emission becomes ⁷³₃₁Ga.",
+      "**Positron (β⁺), ⁰₊₁e:** a proton changes into a neutron, so A stays the same and Z falls by 1. Example: ¹¹₆C → ¹¹₅B + ⁰₊₁e.",
+      "**Electron capture:** the nucleus captures an inner electron, so A stays the same and Z falls by 1. Example: ¹⁹⁷₇₉Au + ⁰₋₁e → ¹⁹⁷₇₈Pt.",
+      "**Gamma (γ):** pure energy with no mass and no charge, so **A and Z do not change**."
+     ],
+     "keyPoints": [
+      "Alpha: A − 4, Z − 2. Beta: Z + 1. Positron and electron capture: Z − 1. Gamma: no change.",
+      "Totals of A and of Z must balance."
+     ],
+     "example": {
+      "problem": "Complete: ²³⁸₉₂U → ²³⁴₉₀Th + X.",
+      "steps": [
+       "Mass numbers: 238 = 234 + A, so A = 4.",
+       "Atomic numbers: 92 = 90 + Z, so Z = 2.",
+       "A particle with A = 4 and Z = 2 is an alpha particle."
+      ],
+      "answer": "X is an alpha particle, ⁴₂He"
+     },
+     "exercises": [
+      {
+       "prompt": "In ²³⁴₉₀Th → ²³⁴ᵧPa + β, what is the atomic number y of Pa?",
+       "options": [
+        "89",
+        "90",
+        "91",
+        "92"
+       ],
+       "correctIndex": 2,
+       "explanation": "Beta emission raises Z by one: 90 + 1 = 91. The mass number stays 234."
+      },
+      {
+       "prompt": "What is the product when zinc-73 (Z = 30) decays by beta emission?",
+       "options": [
+        "⁷³Cu",
+        "⁷²Cu",
+        "⁷³Ga",
+        "⁷³Ni"
+       ],
+       "correctIndex": 2,
+       "explanation": "Z rises to 31, which is gallium, and A stays 73."
+      },
+      {
+       "prompt": "What is produced when ¹¹₆C emits a positron?",
+       "options": [
+        "¹¹₅B",
+        "¹¹₇N",
+        "¹⁰₅B",
+        "¹¹₆C"
+       ],
+       "correctIndex": 0,
+       "explanation": "A stays 11 and Z falls from 6 to 5, giving boron-11."
+      },
+      {
+       "prompt": "Which particle completes ²²⁶₈₈Ra → ²²²₈₆Rn + X?",
+       "options": [
+        "Beta particle",
+        "Alpha particle",
+        "Positron",
+        "Neutron"
+       ],
+       "correctIndex": 1,
+       "explanation": "Mass: 226 − 222 = 4. Charge: 88 − 86 = 2. A particle with A = 4 and Z = 2 is an alpha particle.",
+       "hint": "Balance both numbers."
+      },
+      {
+       "prompt": "When a nucleus undergoes gamma decay, its mass number is:",
+       "options": [
+        "Reduced by two",
+        "Increased by one",
+        "Unchanged",
+        "Reduced by one"
+       ],
+       "correctIndex": 2,
+       "explanation": "Gamma rays carry energy only, so A and Z stay the same."
+      }
+     ]
+    },
+    {
+     "id": "bombard",
+     "title": "Bombardment reactions: finding the missing particle",
+     "body": [
+      "Many questions give a nuclear equation with one particle missing. Add up the mass numbers on each side, then the atomic numbers, and find what is needed to balance them. The particles to know are: **neutron ¹₀n, proton ¹₁H, alpha ⁴₂He, electron ⁰₋₁e, positron ⁰₊₁e**.",
+      "Example: ⁶⁴₂₈Ni + ²₁H → ⁶⁵₂₉Cu + X. Left side: A = 64 + 2 = 66, Z = 28 + 1 = 29. Right side so far: A = 65, Z = 29. So X has A = 1 and Z = 0: a **neutron**."
+     ],
+     "keyPoints": [
+      "Balance A and Z separately, then identify the particle.",
+      "n = ¹₀n, p = ¹₁H, α = ⁴₂He, β = ⁰₋₁e, positron = ⁰₊₁e."
+     ],
+     "example": {
+      "problem": "Find X in ¹⁴₇N + ⁴₂He → ¹⁷₈O + X.",
+      "steps": [
+       "Left side: A = 14 + 4 = 18, Z = 7 + 2 = 9.",
+       "Right side: A = 17 + x and Z = 8 + y.",
+       "So x = 1 and y = 1: a proton (¹₁H)."
+      ],
+      "answer": "A proton"
+     },
+     "exercises": [
+      {
+       "prompt": "Find X: ²⁷₁₃Al + X → ³⁰₁₅P + ¹₀n.",
+       "options": [
+        "Alpha particle",
+        "Beta particle",
+        "Proton",
+        "Positron"
+       ],
+       "correctIndex": 0,
+       "explanation": "A: 27 + a = 30 + 1, so a = 4. Z: 13 + z = 15 + 0, so z = 2. That is an alpha particle."
+      },
+      {
+       "prompt": "Find X: ⁶⁴₂₈Ni + ²₁H → ⁶⁵₂₉Cu + X.",
+       "options": [
+        "⁴He",
+        "²H",
+        "¹n",
+        "²n"
+       ],
+       "correctIndex": 2,
+       "explanation": "A: 66 − 65 = 1. Z: 29 − 29 = 0. That is a neutron."
+      },
+      {
+       "prompt": "Complete: ¹⁶₈O → ¹²₆C + ?",
+       "options": [
+        "⁴₂He",
+        "¹₁H",
+        "¹₀n",
+        "⁰₋₁e"
+       ],
+       "correctIndex": 0,
+       "explanation": "A: 16 − 12 = 4. Z: 8 − 6 = 2. That is an alpha particle, ⁴₂He."
+      },
+      {
+       "prompt": "Which particle is needed in ¹⁹⁷₇₉Au + ? → ¹⁹⁷₇₈Pt?",
+       "options": [
+        "Electron",
+        "Positron",
+        "Proton",
+        "Alpha particle"
+       ],
+       "correctIndex": 0,
+       "explanation": "A stays 197 and Z drops by 1, so the nucleus captured an electron (⁰₋₁e)."
+      }
+     ]
+    },
+    {
+     "id": "halflife",
+     "title": "Half-life: halving again and again",
+     "body": [
+      "The **half-life (t½)** is the time for half of a radioactive sample to decay. After 1 half-life, ½ remains. After 2, ¼. After 3, ⅛. In general, the fraction left is (½)ⁿ, where n = time ÷ t½.",
+      "Sulfur-35 has a half-life of 88 days. For 8 g, after 264 days: n = 264 ÷ 88 = 3, so 8 × (½)³ = 8 ÷ 8 = 1.0 g remains.",
+      "To go the other way, count how many halvings give the fraction. Phosphorus-32 (t½ = 14.3 days) falls to ⅛ after 3 half-lives, so after 3 × 14.3 = 42.9 days."
+     ],
+     "keyPoints": [
+      "Fraction left = (½)ⁿ, with n = time ÷ t½."
+     ],
+     "example": {
+      "problem": "A sample has 80 g and a half-life of 6 hours. How much is left after 12 hours?",
+      "steps": [
+       "n = 12 ÷ 6 = 2 half-lives.",
+       "80 → 40 → 20."
+      ],
+      "answer": "20 g"
+     },
+     "exercises": [
+      {
+       "prompt": "The half-life of S-35 is 88 days. 8 g is present on day one. What mass remains after 264 days?",
+       "options": [
+        "4 g",
+        "2 g",
+        "1.0 g",
+        "0.5 g"
+       ],
+       "correctIndex": 2,
+       "explanation": "264 ÷ 88 = 3 half-lives. 8 → 4 → 2 → 1 g."
+      },
+      {
+       "prompt": "The half-life of P-32 is 14.3 days. How long until only ⅛ remains?",
+       "options": [
+        "14.3 days",
+        "28.6 days",
+        "42.9 days",
+        "114 days"
+       ],
+       "correctIndex": 2,
+       "explanation": "⅛ = (½)³, so 3 half-lives: 3 × 14.3 = 42.9 days."
+      },
+      {
+       "prompt": "A sample has a half-life of 10 days. What fraction remains after 20 days?",
+       "options": [
+        "½",
+        "¼",
+        "⅛",
+        "1/20"
+       ],
+       "correctIndex": 1,
+       "explanation": "20 ÷ 10 = 2 half-lives, so (½)² = ¼."
+      }
+     ]
+    },
+    {
+     "id": "dating",
+     "title": "Decay equations and carbon dating",
+     "body": [
+      "When the time is not a whole number of half-lives, use logarithms: **t = t½ × ln(N₀ ÷ N) ÷ ln 2**, where N₀ is the starting amount and N is what remains. You can also write the fraction remaining as N ÷ N₀. Alternatively, with a decay constant λ, **t = ln(N₀ ÷ N) ÷ λ**, and **λ = ln 2 ÷ t½**.",
+      "**Carbon-14 dating.** Living things keep a constant ratio of carbon-14. After death no more is taken in, and the carbon-14 decays with a half-life of about 5,730 years. Measure the fraction left, then find the age with the equation. Activities (counts per minute) work in the same way as amounts.",
+      "Check: if the sample is 25% of the original, that is exactly 2 half-lives, so the age is 2 × 5,730 = 11,460 years. A sample with 15% left must be older than 2 half-lives but less than 3, and the equation gives about 15,700 years."
+     ],
+     "keyPoints": [
+      "t = t½ × ln(N₀/N) ÷ ln 2; λ = ln 2 ÷ t½; t = ln(N₀/N) ÷ λ.",
+      "C-14: t½ ≈ 5,730 years."
+     ],
+     "example": {
+      "problem": "A fossil has 10% of its original carbon-14 (t½ = 5,730 years). Estimate its age.",
+      "steps": [
+       "Fraction left = 0.10, so N₀ ÷ N = 10.",
+       "ln 10 = 2.303 and ln 2 = 0.693.",
+       "t = 5,730 × 2.303 ÷ 0.693 = 19,040 years."
+      ],
+      "answer": "About 19,000 years"
+     },
+     "exercises": [
+      {
+       "prompt": "A bone has 15% of the carbon-14 of living bone (t½ = 5,730 years). Roughly how old is it?",
+       "options": [
+        "380 years",
+        "5,730 years",
+        "15,600 years",
+        "25,400 years"
+       ],
+       "correctIndex": 2,
+       "explanation": "t = 5,730 × ln(1/0.15) ÷ ln 2 = 5,730 × 1.897 ÷ 0.693 ≈ 15,700 years. The nearest option is 15,600 years.",
+       "hint": "It must be between 2 and 3 half-lives."
+      },
+      {
+       "prompt": "A bone has a ¹⁴C/¹²C ratio 0.477 times that of a living organism. Its age is (t½ = 5,730 years):",
+       "options": [
+        "2,500 yr",
+        "3,010 yr",
+        "5,220 yr",
+        "6,120 yr"
+       ],
+       "correctIndex": 3,
+       "explanation": "t = 5,730 × ln(1/0.477) ÷ ln 2 = 5,730 × 0.740 ÷ 0.693 ≈ 6,120 years. About one half-life and a little more, as expected."
+      },
+      {
+       "prompt": "An old wooden tool shows 2.0 counts per minute per gram, and fresh wood shows 15.2. Its age is (t½ = 5,760 years):",
+       "options": [
+        "5,760 years",
+        "11,500 years",
+        "16,900 years",
+        "22,300 years"
+       ],
+       "correctIndex": 2,
+       "explanation": "t = 5,760 × ln(15.2 ÷ 2.0) ÷ ln 2 = 5,760 × 2.028 ÷ 0.693 ≈ 16,850 years."
+      },
+      {
+       "prompt": "Cobalt-60 has λ = 0.131 yr⁻¹. How long until only 2.0% remains?",
+       "options": [
+        "10 years",
+        "20 years",
+        "30 years",
+        "45 years"
+       ],
+       "correctIndex": 2,
+       "explanation": "t = ln(100 ÷ 2) ÷ 0.131 = 3.912 ÷ 0.131 ≈ 30 years."
+      },
+      {
+       "prompt": "A radioactive isotope has a half-life of 45 days. How long to decay to 15% of its original amount?",
+       "options": [
+        "45 days",
+        "90 days",
+        "123 days",
+        "150 days"
+       ],
+       "correctIndex": 2,
+       "explanation": "t = 45 × ln(1/0.15) ÷ ln 2 = 45 × 2.737 ≈ 123 days.",
+       "hint": "Between 2 and 3 half-lives, so between 90 and 135 days."
+      }
+     ]
+    },
+    {
+     "id": "binding",
+     "title": "Mass defect and binding energy",
+     "body": [
+      "The mass of a nucleus is **less** than the total mass of its separate protons and neutrons. The missing mass is the **mass defect**, and it was released as energy when the nucleus formed. That energy is the **binding energy**: **E = Δm × 931.5 MeV per amu**.",
+      "The binding energy **per nucleon** (divide by the mass number) shows how stable a nucleus is. A higher value means more stable.",
+      "Method: (1) add the masses of the Z protons and the (A − Z) neutrons, (2) subtract the actual mass, (3) multiply by 931.5, (4) divide by A. When the **atomic mass** (which includes electrons) is given, use the mass of a **hydrogen atom**, 1.00783 amu, for each proton so that the electrons cancel."
+     ],
+     "keyPoints": [
+      "Δm = (mass of separate nucleons) − (actual mass).",
+      "Binding energy = Δm × 931.5 MeV; divide by A for per-nucleon."
+     ],
+     "example": {
+      "problem": "Find the binding energy per nucleon of ⁶⁰Ni (atomic mass 59.9332 amu, H atom = 1.00783, neutron = 1.00866).",
+      "steps": [
+       "Protons: 28 × 1.00783 = 28.2192. Neutrons: 32 × 1.00866 = 32.2771. Total = 60.4963 amu.",
+       "Δm = 60.4963 − 59.9332 = 0.5631 amu.",
+       "E = 0.5631 × 931.5 = 524.5 MeV. Per nucleon: 524.5 ÷ 60 = 8.74 MeV."
+      ],
+      "answer": "About 8.7 MeV per nucleon"
+     },
+     "exercises": [
+      {
+       "prompt": "Helium-4 has an atomic mass of 4.0026 amu. Using H atom = 1.00783 amu and neutron = 1.00866 amu, what is the mass defect?",
+       "options": [
+        "0.0304 amu",
+        "0.304 amu",
+        "4.0 amu",
+        "0.0030 amu"
+       ],
+       "correctIndex": 0,
+       "explanation": "2 × 1.00783 + 2 × 1.00866 = 4.03298. Mass defect = 4.03298 − 4.0026 = 0.0304 amu."
+      },
+      {
+       "prompt": "What is the binding energy of helium-4 in MeV (1 amu = 931.5 MeV)?",
+       "options": [
+        "0.0304 MeV",
+        "2.83 MeV",
+        "28.3 MeV",
+        "283 MeV"
+       ],
+       "correctIndex": 2,
+       "explanation": "0.03038 × 931.5 = 28.3 MeV."
+      },
+      {
+       "prompt": "What is the binding energy per nucleon of helium-4?",
+       "options": [
+        "28.3 MeV",
+        "14.2 MeV",
+        "7.07 MeV",
+        "1.0 MeV"
+       ],
+       "correctIndex": 2,
+       "explanation": "28.3 ÷ 4 = 7.07 MeV per nucleon."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "t = t½ × ln(N₀/N) ÷ ln 2;  E = Δm × 931.5 MeV"
+  },
+  {
+   "id": "chemical-equilibrium",
+   "intro": "Equilibrium questions break into a few moves: write K correctly, convert between Kp and Kc, predict a shift, or turn solubility into Ksp.",
+   "sections": [
+    {
+     "id": "dynamic",
+     "title": "Equilibrium is a balance, not a stop",
+     "body": [
+      "Many reactions are **reversible**: reactants make products, and products turn back into reactants. At **equilibrium**, the forward and reverse reactions are both still running, but at **equal rates**, so the amounts of each substance stop changing. Nothing has stopped. It is a **dynamic** balance.",
+      "For example, 1 mol of HI in a 1 dm³ vessel at 698 K partly decomposes: 2HI ⇌ H₂ + I₂. It does not all decompose and it does not all stay as HI. It settles at a mixture of all three.",
+      "The **equilibrium constant K** measures where the balance sits. For aA + bB ⇌ cC + dD:",
+      "**K = [C]ᶜ [D]ᵈ ÷ ([A]ᵃ [B]ᵇ)**. Products go on top, reactants below, and each concentration is raised to the power of its coefficient. **Pure solids and pure liquids are left out** of K because their concentration does not change. A large K means mostly products at equilibrium; a small K means mostly reactants."
+     ],
+     "keyPoints": [
+      "Equilibrium: forward rate = reverse rate (dynamic).",
+      "K = [products]^coeff ÷ [reactants]^coeff; solids and liquids left out."
+     ],
+     "example": {
+      "problem": "Write Kc for 2NO₂ ⇌ N₂O₄ and for CaCO₃(s) ⇌ CaO(s) + CO₂(g).",
+      "steps": [
+       "First: product N₂O₄ on top, reactant NO₂ squared below: Kc = [N₂O₄] ÷ [NO₂]².",
+       "Second: CaCO₃ and CaO are solids and are left out, so Kc = [CO₂]."
+      ],
+      "answer": "Kc = [N₂O₄]/[NO₂]²  and  Kc = [CO₂]"
+     },
+     "exercises": [
+      {
+       "prompt": "1 mol of HI is placed in a 1 dm³ vessel at 698 K. Which describes the equilibrium?",
+       "options": [
+        "All HI decomposes",
+        "All HI remains",
+        "Some HI decomposes into H₂ and I₂ until equilibrium is reached",
+        "Nothing happens"
+       ],
+       "correctIndex": 2,
+       "explanation": "The reaction runs until the forward and reverse rates are equal, which leaves a mixture."
+      },
+      {
+       "prompt": "Write Kc for SiH₄ + 2Cl₂ ⇌ SiCl₄ + 2H₂.",
+       "options": [
+        "[SiCl₄][H₂]² ÷ ([SiH₄][Cl₂]²)",
+        "[SiH₄][Cl₂]² ÷ ([SiCl₄][H₂]²)",
+        "[SiCl₄] ÷ [SiH₄]",
+        "[SiCl₄][H₂] ÷ ([SiH₄][Cl₂])"
+       ],
+       "correctIndex": 0,
+       "explanation": "Products over reactants, each raised to its coefficient."
+      },
+      {
+       "prompt": "At equilibrium, the forward and reverse reaction rates are:",
+       "options": [
+        "Both zero",
+        "Equal",
+        "Forward faster",
+        "Reverse faster"
+       ],
+       "correctIndex": 1,
+       "explanation": "The rates are equal but not zero."
+      }
+     ]
+    },
+    {
+     "id": "kpkc",
+     "title": "Kp and Kc",
+     "body": [
+      "For gas reactions you can write K using **partial pressures** instead of concentrations. That is **Kp**. The two are related by **Kp = Kc (RT)^Δn**, where **Δn = moles of gas in the products − moles of gas in the reactants**. Use R = 0.0821 L·atm/(mol·K) and T in kelvin.",
+      "For N₂ + 3H₂ ⇌ 2NH₃: Δn = 2 − 4 = −2. If Kp = 1.50 × 10⁻⁵ at 500 °C (773 K), then Kc = Kp ÷ (RT)^Δn = Kp × (RT)². RT = 0.0821 × 773 = 63.5, and (63.5)² = 4,027, so Kc = 1.50 × 10⁻⁵ × 4,027 = **0.0604**."
+     ],
+     "keyPoints": [
+      "Kp = Kc (RT)^Δn.",
+      "Δn counts gas moles only, products minus reactants."
+     ],
+     "example": {
+      "problem": "Kc = 0.0604 for N₂ + 3H₂ ⇌ 2NH₃ at 773 K. Find Kp.",
+      "steps": [
+       "Δn = 2 − 4 = −2.",
+       "Kp = Kc (RT)⁻² = 0.0604 ÷ (63.5)² = 0.0604 ÷ 4,027.",
+       "Kp = 1.5 × 10⁻⁵."
+      ],
+      "answer": "1.5 × 10⁻⁵"
+     },
+     "exercises": [
+      {
+       "prompt": "For N₂ + 3H₂ ⇌ 2NH₃, Kp = 1.50 × 10⁻⁵ at 500 °C. What is Kc?",
+       "options": [
+        "1.5 × 10⁻⁵",
+        "0.0604",
+        "0.906",
+        "3.7 × 10⁻⁹"
+       ],
+       "correctIndex": 1,
+       "explanation": "Δn = −2, so Kc = Kp × (RT)² = 1.5 × 10⁻⁵ × (0.0821 × 773)² ≈ 0.0604.",
+       "hint": "Convert °C to K first."
+      },
+      {
+       "prompt": "For which reaction does Kp equal Kc?",
+       "options": [
+        "N₂ + 3H₂ ⇌ 2NH₃",
+        "H₂ + I₂ ⇌ 2HI",
+        "2SO₂ + O₂ ⇌ 2SO₃",
+        "PCl₅ ⇌ PCl₃ + Cl₂"
+       ],
+       "correctIndex": 1,
+       "explanation": "Only when Δn = 0, and for H₂ + I₂ ⇌ 2HI the moles of gas are 2 on each side."
+      },
+      {
+       "prompt": "What is Δn for CO₂(g) + C(s) ⇌ 2CO(g)?",
+       "options": [
+        "−1",
+        "0",
+        "+1",
+        "+2"
+       ],
+       "correctIndex": 2,
+       "explanation": "Gas moles: products 2, reactants 1 (the solid carbon is not counted). Δn = +1."
+      }
+     ]
+    },
+    {
+     "id": "lechat",
+     "title": "Le Chatelier's principle",
+     "body": [
+      "If you disturb a system at equilibrium, it shifts to **partly cancel the disturbance**.",
+      "**Add a reactant** (or remove a product): it shifts toward the products. **Add a product** (or remove a reactant): it shifts toward the reactants.",
+      "**Raise the pressure (by reducing the volume)** of a gas mixture: it shifts toward the side with **fewer moles of gas**. If both sides have equal gas moles, nothing shifts.",
+      "**Temperature** is the only change that alters K itself. Heating favours the endothermic direction.",
+      "A **catalyst** makes equilibrium arrive faster but does **not** change the position or K, because it speeds the forward and reverse reactions equally.",
+      "Pure solids and liquids do not matter. In 2Fe(s) + 3H₂O(g) ⇌ Fe₂O₃(s) + 3H₂(g), adding more Fe changes nothing. To make **more Fe₂O₃**, push the equilibrium to the right by removing H₂ or adding H₂O."
+     ],
+     "keyPoints": [
+      "The system shifts to oppose the change.",
+      "More moles of gas on one side: pressure shifts toward fewer moles.",
+      "Catalyst: no change in position or K. Only temperature changes K."
+     ],
+     "example": {
+      "problem": "For PCl₅ ⇌ PCl₃ + Cl₂, what happens if the volume is decreased?",
+      "steps": [
+       "Left side: 1 mole of gas. Right side: 2 moles of gas.",
+       "A volume decrease raises the pressure, so the system moves to the side with fewer moles."
+      ],
+      "answer": "It shifts left, toward PCl₅"
+     },
+     "exercises": [
+      {
+       "prompt": "Which change does NOT affect a system at equilibrium?",
+       "options": [
+        "Adding a catalyst",
+        "Changing the temperature",
+        "Changing a reactant concentration",
+        "Changing the volume of a gas mixture"
+       ],
+       "correctIndex": 0,
+       "explanation": "A catalyst changes only the speed, not the position of equilibrium."
+      },
+      {
+       "prompt": "Raising the pressure on a gas equilibrium by decreasing the volume shifts it toward the side with:",
+       "options": [
+        "More moles of gas",
+        "Fewer moles of gas",
+        "Higher temperature",
+        "No shift ever"
+       ],
+       "correctIndex": 1,
+       "explanation": "The system relieves the pressure by reducing the number of gas molecules."
+      },
+      {
+       "prompt": "For 2Fe(s) + 3H₂O(g) ⇌ Fe₂O₃(s) + 3H₂(g), which change increases the amount of Fe₂O₃?",
+       "options": [
+        "Removing H₂O",
+        "Adding Fe",
+        "Removing H₂",
+        "None, since Fe is solid"
+       ],
+       "correctIndex": 2,
+       "explanation": "Removing H₂ pulls the equilibrium to the right. Adding a solid changes nothing, and removing H₂O pushes it left."
+      },
+      {
+       "prompt": "For N₂ + 3H₂ ⇌ 2NH₃, raising the pressure will:",
+       "options": [
+        "Favour NH₃",
+        "Favour N₂ and H₂",
+        "Have no effect",
+        "Stop the reaction"
+       ],
+       "correctIndex": 0,
+       "explanation": "The right side has 2 moles of gas against 4 on the left, so it shifts right to NH₃."
+      }
+     ]
+    },
+    {
+     "id": "ksp",
+     "title": "Solubility and Ksp",
+     "body": [
+      "For a slightly soluble salt, the dissolved ions are in equilibrium with the solid. The **solubility product Ksp** is K for that dissolving: leave out the solid and write the ion concentrations.",
+      "For AB (such as CuBr): **Ksp = s²**, where s is the solubility in mol/L. For AB₂ (such as SrI₂): **Ksp = 4s³**. For A₃B₂ (such as Ca₃(PO₄)₂): **Ksp = 108s⁵**.",
+      "To find s from Ksp, go the other way. SrI₂ has Ksp = 2.5 × 10⁻⁹. Ksp = 4s³ gives s³ = 6.25 × 10⁻¹⁰, so **s = 8.5 × 10⁻⁴ mol/L**.",
+      "Precipitation rule: compare the **ionic product** (the Ksp expression with the actual concentrations) to Ksp. If the ionic product is **greater** than Ksp, a precipitate forms. If it is less, the solution is unsaturated. If equal, it is saturated."
+     ],
+     "keyPoints": [
+      "AB: Ksp = s². AB₂: Ksp = 4s³. A₃B₂: Ksp = 108s⁵.",
+      "Precipitation occurs when ionic product > Ksp."
+     ],
+     "example": {
+      "problem": "The solubility of Ag₂CrO₄ is 1.0 × 10⁻⁴ mol/L. Find Ksp.",
+      "steps": [
+       "Ag₂CrO₄ ⇌ 2Ag⁺ + CrO₄²⁻, so [Ag⁺] = 2s and [CrO₄²⁻] = s.",
+       "Ksp = (2s)² × s = 4s³ = 4 × (1.0 × 10⁻⁴)³.",
+       "Ksp = 4.0 × 10⁻¹²."
+      ],
+      "answer": "4.0 × 10⁻¹²"
+     },
+     "exercises": [
+      {
+       "prompt": "The solubility of CuBr is 4 × 10⁻⁵ mol/L. What is Ksp?",
+       "options": [
+        "8.0 × 10⁻⁵",
+        "1.6 × 10⁻⁹",
+        "4.0 × 10⁻⁵",
+        "1.6 × 10⁻¹⁰"
+       ],
+       "correctIndex": 1,
+       "explanation": "CuBr ⇌ Cu⁺ + Br⁻, so Ksp = s² = (4 × 10⁻⁵)² = 1.6 × 10⁻⁹."
+      },
+      {
+       "prompt": "The solubility of Ca₃(PO₄)₂ is 1.5 × 10⁻⁷ mol/L. What is Ksp?",
+       "options": [
+        "2.25 × 10⁻¹⁴",
+        "1.1 × 10⁻²⁶",
+        "8.2 × 10⁻³³",
+        "3.4 × 10⁻²⁸"
+       ],
+       "correctIndex": 2,
+       "explanation": "Ca₃(PO₄)₂ ⇌ 3Ca²⁺ + 2PO₄³⁻. Ksp = (3s)³(2s)² = 108s⁵ = 108 × (1.5 × 10⁻⁷)⁵ = 8.2 × 10⁻³³.",
+       "hint": "Ksp = 108 s⁵."
+      },
+      {
+       "prompt": "Ksp of SrI₂ is 2.5 × 10⁻⁹. What is its solubility in mol/L?",
+       "options": [
+        "8.5 × 10⁻⁴",
+        "5.0 × 10⁻⁵",
+        "7.1 × 10⁻³",
+        "2.5 × 10⁻⁹"
+       ],
+       "correctIndex": 0,
+       "explanation": "Ksp = 4s³, so s = (2.5 × 10⁻⁹ ÷ 4)^(1/3) = (6.25 × 10⁻¹⁰)^(1/3) = 8.5 × 10⁻⁴ mol/L."
+      },
+      {
+       "prompt": "A precipitate forms when the ionic product is:",
+       "options": [
+        "Less than Ksp",
+        "Greater than Ksp",
+        "Equal to zero",
+        "Never"
+       ],
+       "correctIndex": 1,
+       "explanation": "When the ionic product exceeds Ksp, the solution is oversaturated and solid separates out."
+      }
+     ]
+    },
+    {
+     "id": "pressure",
+     "title": "Equilibrium with partial pressures",
+     "body": [
+      "For gas equilibria you can set up the problem with partial pressures. Write the Kp expression, put the unknown into it, and solve. Total pressure is the sum of the partial pressures.",
+      "Take CO₂(g) + C(s) ⇌ 2CO(g). Carbon is a solid, so **Kp = P(CO)² ÷ P(CO₂)**. Suppose P(CO₂) = 0.50 atm and P(CO) = 1.00 atm. Kp = 1.00² ÷ 0.50 = **2.0 atm**, and the total pressure is 1.50 atm.",
+      "When Kp and the total pressure are given, let P(CO₂) = x. Then P(CO) = total − x, and solve Kp = (total − x)² ÷ x. It gives a quadratic equation, so be careful with the choice of root: it must be between 0 and the total pressure."
+     ],
+     "keyPoints": [
+      "Kp uses partial pressures; solids are left out.",
+      "Total pressure = sum of partial pressures."
+     ],
+     "example": {
+      "problem": "For H₂ + I₂ ⇌ 2HI, P(H₂) = 0.10, P(I₂) = 0.10 and P(HI) = 0.50 atm. Find Kp.",
+      "steps": [
+       "Kp = P(HI)² ÷ (P(H₂) × P(I₂)).",
+       "= 0.50² ÷ (0.10 × 0.10) = 0.25 ÷ 0.010 = 25."
+      ],
+      "answer": "25"
+     },
+     "exercises": [
+      {
+       "prompt": "CO₂(g) + C(s) ⇌ 2CO(g). At equilibrium P(CO₂) = 0.50 atm and P(CO) = 1.00 atm. What is Kp?",
+       "options": [
+        "0.50",
+        "1.0",
+        "2.0",
+        "4.0"
+       ],
+       "correctIndex": 2,
+       "explanation": "Kp = 1.00² ÷ 0.50 = 2.0."
+      },
+      {
+       "prompt": "What is the total pressure in that mixture?",
+       "options": [
+        "0.50 atm",
+        "1.00 atm",
+        "1.50 atm",
+        "2.0 atm"
+       ],
+       "correctIndex": 2,
+       "explanation": "0.50 + 1.00 = 1.50 atm (carbon is a solid and has no partial pressure)."
+      },
+      {
+       "prompt": "What is Kp for 2SO₂ + O₂ ⇌ 2SO₃ if P(SO₂) = 0.20, P(O₂) = 0.10 and P(SO₃) = 0.40 atm?",
+       "options": [
+        "20",
+        "40",
+        "80",
+        "200"
+       ],
+       "correctIndex": 1,
+       "explanation": "Kp = P(SO₃)² ÷ (P(SO₂)² × P(O₂)) = 0.16 ÷ (0.04 × 0.10) = 0.16 ÷ 0.004 = 40.",
+       "hint": "Square the pressures first."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "K = [C]ᶜ[D]ᵈ ÷ ([A]ᵃ[B]ᵇ);  Kp = Kc(RT)^Δn"
+  },
+  {
+   "id": "colligative-properties",
+   "intro": "Colligative properties all come from one idea: the number of dissolved particles. Learn the four formulas and which concentration unit each needs.",
+   "sections": [
+    {
+     "id": "conc",
+     "title": "Ways to say how concentrated: mole fraction and molality",
+     "body": [
+      "Colligative properties depend only on **how many solute particles** there are, not on what they are. To use them you need two concentration measures.",
+      "**Mole fraction (X)** = moles of one component ÷ total moles. The mole fractions of all components add to 1.",
+      "**Molality (m)** = moles of solute ÷ **kilograms of solvent**. It uses the mass of the solvent, not the volume of the solution, so it does not change with temperature.",
+      "Example: a 36% HCl solution by mass. Take 100 g: 36 g HCl and 64 g water. Moles of HCl = 36 ÷ 36.5 = 0.986. Moles of water = 64 ÷ 18 = 3.556. Mole fraction of HCl = 0.986 ÷ (0.986 + 3.556) = **0.217**."
+     ],
+     "keyPoints": [
+      "X = moles of component ÷ total moles.",
+      "m = moles of solute ÷ kg of solvent."
+     ],
+     "example": {
+      "problem": "Find the mole fraction of glucose when 18 g (M = 180) is in 90 g of water (M = 18).",
+      "steps": [
+       "Moles of glucose = 18 ÷ 180 = 0.10.",
+       "Moles of water = 90 ÷ 18 = 5.0.",
+       "X(glucose) = 0.10 ÷ 5.10 = 0.0196."
+      ],
+      "answer": "About 0.020"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the mole fraction of HCl in a 36% HCl solution by mass? (Cl = 35.5, H = 1.0)",
+       "options": [
+        "0.128",
+        "0.182",
+        "0.217",
+        "0.500"
+       ],
+       "correctIndex": 2,
+       "explanation": "36 g ÷ 36.5 = 0.986 mol HCl. 64 g ÷ 18 = 3.556 mol H₂O. X = 0.986 ÷ 4.542 = 0.217."
+      },
+      {
+       "prompt": "What is the molality of 6.0 g of urea (M = 60 g/mol) in 200 g of water?",
+       "options": [
+        "0.10 m",
+        "0.30 m",
+        "0.50 m",
+        "0.83 m"
+       ],
+       "correctIndex": 2,
+       "explanation": "Moles = 6.0 ÷ 60 = 0.10. Kilograms of water = 0.200. Molality = 0.10 ÷ 0.200 = 0.50 m.",
+       "hint": "The denominator is kg of solvent."
+      },
+      {
+       "prompt": "Why does molality not change with temperature?",
+       "options": [
+        "It uses mass, not volume",
+        "It ignores the solute",
+        "It uses mole fractions",
+        "It is always 1"
+       ],
+       "correctIndex": 0,
+       "explanation": "Mass does not change when the solution is heated, but volume does."
+      }
+     ]
+    },
+    {
+     "id": "raoult",
+     "title": "Raoult's law: vapour pressure lowering",
+     "body": [
+      "A dissolved non-volatile solute takes up some of the surface, so fewer solvent molecules escape. The vapour pressure falls. **Raoult's law: P(solution) = X(solvent) × P°(solvent)**, where P° is the vapour pressure of the pure solvent.",
+      "Example: 1.00 g of sulfanilamide (M = 156.2) in 10.0 g of acetone (M = 58.08), P° = 400 mmHg. Moles of solute = 0.0064. Moles of acetone = 0.1722. X(acetone) = 0.1722 ÷ 0.1786 = 0.964. P = 0.964 × 400 = **386 mmHg**, which is the nearest option to 387 mmHg in the exam."
+     ],
+     "keyPoints": [
+      "P(solution) = X(solvent) × P°.",
+      "Solute added: vapour pressure falls."
+     ],
+     "example": {
+      "problem": "Find the vapour pressure of water at 25 °C (P° = 23.8 mmHg) when X(water) = 0.95.",
+      "steps": [
+       "P = X × P° = 0.95 × 23.8.",
+       "P = 22.6 mmHg."
+      ],
+      "answer": "22.6 mmHg"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the vapour pressure of a solution with X(solvent) = 0.98 if pure solvent is 100 mmHg?",
+       "options": [
+        "2 mmHg",
+        "98 mmHg",
+        "100 mmHg",
+        "102 mmHg"
+       ],
+       "correctIndex": 1,
+       "explanation": "P = 0.98 × 100 = 98 mmHg."
+      },
+      {
+       "prompt": "1.00 g of sulfanilamide (M = 156.2) is in 10.0 g of acetone (M = 58.08) at a temperature where pure acetone is 400 mmHg. The solution's vapour pressure is closest to:",
+       "options": [
+        "296 mmHg",
+        "342 mmHg",
+        "387 mmHg",
+        "400 mmHg"
+       ],
+       "correctIndex": 2,
+       "explanation": "X(acetone) = 0.1722 ÷ (0.1722 + 0.0064) = 0.964, and 0.964 × 400 ≈ 386 mmHg.",
+       "hint": "The solute lowers the pressure only slightly."
+      },
+      {
+       "prompt": "Dissolving a non-volatile solute in a liquid will:",
+       "options": [
+        "Raise its vapour pressure",
+        "Lower its vapour pressure",
+        "Leave it unchanged",
+        "Make it zero"
+       ],
+       "correctIndex": 1,
+       "explanation": "Solute particles block some surface and reduce the solvent's mole fraction."
+      }
+     ]
+    },
+    {
+     "id": "bpfp",
+     "title": "Boiling point rise and freezing point fall",
+     "body": [
+      "A solution boils at a **higher** temperature and freezes at a **lower** temperature than the pure solvent. **ΔT = K × m**, where m is molality and K is a constant for the solvent. For freezing use **Kf** (water: 1.86 °C·kg/mol). For boiling use **Kb** (water: 0.512 °C·kg/mol).",
+      "Use it to find molar mass. Method: (1) ΔT from the data, (2) molality = ΔT ÷ K, (3) moles = molality × kg of solvent, (4) molar mass = grams ÷ moles.",
+      "Example: 0.320 g of compound in 25.0 g of water freezes at −0.201 °C. ΔT = 0.201. m = 0.201 ÷ 1.86 = 0.1081 mol/kg. Moles = 0.1081 × 0.0250 = 0.002702. Molar mass = 0.320 ÷ 0.002702 = **118 g/mol**."
+     ],
+     "keyPoints": [
+      "ΔT = K × m (Kf for freezing, Kb for boiling).",
+      "Molar mass = grams ÷ moles, with moles = (ΔT ÷ K) × kg of solvent."
+     ],
+     "example": {
+      "problem": "5.0 g of a non-electrolyte (M = 100) is dissolved in 100 g of water. Find the boiling point rise (Kb = 0.512).",
+      "steps": [
+       "Moles = 5.0 ÷ 100 = 0.050; kg of water = 0.100.",
+       "m = 0.050 ÷ 0.100 = 0.50 mol/kg.",
+       "ΔT = 0.512 × 0.50 = 0.256 °C."
+      ],
+      "answer": "0.256 °C"
+     },
+     "exercises": [
+      {
+       "prompt": "0.320 g of a compound is dissolved in 25.0 g of water and the solution freezes at −0.201 °C (Kf = 1.86). What is the molar mass?",
+       "options": [
+        "107 g/mol",
+        "119 g/mol",
+        "179 g/mol",
+        "238 g/mol"
+       ],
+       "correctIndex": 1,
+       "explanation": "m = 0.201 ÷ 1.86 = 0.108; moles = 0.108 × 0.025 = 0.0027; M = 0.320 ÷ 0.0027 ≈ 118 g/mol, so 119 g/mol is the nearest option.",
+       "hint": "The mass of solvent must be in kg."
+      },
+      {
+       "prompt": "What is the freezing point depression of a 0.50 m solution in water (Kf = 1.86)?",
+       "options": [
+        "0.93 °C",
+        "1.86 °C",
+        "3.72 °C",
+        "0.50 °C"
+       ],
+       "correctIndex": 0,
+       "explanation": "ΔT = 1.86 × 0.50 = 0.93 °C."
+      },
+      {
+       "prompt": "Which is true for a solution compared with its pure solvent?",
+       "options": [
+        "Higher boiling point and lower freezing point",
+        "Lower boiling point and higher freezing point",
+        "Both higher",
+        "Both lower"
+       ],
+       "correctIndex": 0,
+       "explanation": "Dissolved particles raise the boiling point and lower the freezing point."
+      }
+     ]
+    },
+    {
+     "id": "osmo",
+     "title": "Osmotic pressure",
+     "body": [
+      "**Osmosis** is the movement of solvent through a membrane from dilute to concentrated solution. The pressure needed to stop it is the **osmotic pressure π**, and it follows an equation like the ideal gas law: **π = MRT**, with M in mol/L, R = 0.0821 L·atm/(mol·K) and T in kelvin.",
+      "Example: 10 g of urea (M = 60) in 500 cm³ at 12 °C. Moles = 10 ÷ 60 = 0.1667. Volume = 0.500 L, so M = 0.3333 mol/L. T = 12 + 273 = 285 K. π = 0.3333 × 0.0821 × 285 = **7.80 atm**."
+     ],
+     "keyPoints": [
+      "π = MRT.",
+      "Convert cm³ to L (÷ 1000) and °C to K (+ 273)."
+     ],
+     "example": {
+      "problem": "Find π for 0.20 mol of a non-electrolyte in 2.0 L at 300 K.",
+      "steps": [
+       "M = 0.20 ÷ 2.0 = 0.10 mol/L.",
+       "π = 0.10 × 0.0821 × 300 = 2.46 atm."
+      ],
+      "answer": "2.46 atm"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the osmotic pressure of 10 g of urea (M = 60) in 500 cm³ of solution at 12 °C?",
+       "options": [
+        "7.80 atm",
+        "8.27 atm",
+        "10.92 atm",
+        "14.56 atm"
+       ],
+       "correctIndex": 0,
+       "explanation": "M = (10 ÷ 60) ÷ 0.500 = 0.333 mol/L. π = 0.333 × 0.0821 × 285 = 7.80 atm.",
+       "hint": "Volume in litres and T in kelvin."
+      },
+      {
+       "prompt": "What is π for a 0.10 M solution at 27 °C?",
+       "options": [
+        "0.82 atm",
+        "2.46 atm",
+        "24.6 atm",
+        "0.0082 atm"
+       ],
+       "correctIndex": 1,
+       "explanation": "π = 0.10 × 0.0821 × 300 = 2.46 atm."
+      },
+      {
+       "prompt": "Osmosis moves solvent from:",
+       "options": [
+        "Concentrated to dilute",
+        "Dilute to concentrated",
+        "Cold to hot",
+        "It does not move"
+       ],
+       "correctIndex": 1,
+       "explanation": "Solvent flows toward the more concentrated solution."
+      }
+     ]
+    },
+    {
+     "id": "ions",
+     "title": "Electrolytes count more particles",
+     "body": [
+      "Colligative properties count **particles**. A compound that splits into ions gives more particles. The **van't Hoff factor i** is the number of particles per formula unit: about 1 for sugar and urea, about 2 for NaCl, about 3 for CaCl₂. Use **ΔT = i × K × m** and **π = i × MRT**.",
+      "So a 0.10 m NaCl solution (i ≈ 2) behaves like a 0.20 m non-electrolyte, and its freezing point drops by 2 × 0.10 × 1.86 = 0.372 °C."
+     ],
+     "keyPoints": [
+      "ΔT = i K m; π = i MRT.",
+      "More ions means a larger colligative effect."
+     ],
+     "example": {
+      "problem": "Which has the lower freezing point: 0.1 m glucose or 0.1 m KCl?",
+      "steps": [
+       "Glucose does not split, so i = 1.",
+       "KCl gives K⁺ and Cl⁻, so i ≈ 2.",
+       "KCl produces more particles and a larger drop."
+      ],
+      "answer": "0.1 m KCl"
+     },
+     "exercises": [
+      {
+       "prompt": "Which gives the largest freezing point depression at the same molality?",
+       "options": [
+        "Glucose",
+        "NaCl",
+        "CaCl₂",
+        "Urea"
+       ],
+       "correctIndex": 2,
+       "explanation": "CaCl₂ gives about three ions per formula unit, the most particles."
+      },
+      {
+       "prompt": "What is ΔTf for 0.10 m NaCl in water, taking i = 2 (Kf = 1.86)?",
+       "options": [
+        "0.186 °C",
+        "0.372 °C",
+        "0.93 °C",
+        "1.86 °C"
+       ],
+       "correctIndex": 1,
+       "explanation": "ΔT = 2 × 1.86 × 0.10 = 0.372 °C."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "P = X·P°;  ΔT = K·m;  π = MRT"
+  },
+  {
+   "id": "redox-electrochemistry",
+   "intro": "Redox is about tracking electrons. Master oxidation numbers first, and agents, balancing and cells all follow from them.",
+   "sections": [
+    {
+     "id": "oxnum",
+     "title": "Oxidation numbers: the bookkeeping of electrons",
+     "body": [
+      "**Oxidation** is the loss of electrons (oxidation number goes up). **Reduction** is the gain of electrons (oxidation number goes down). Think **OIL RIG**: Oxidation Is Loss, Reduction Is Gain. They always happen together.",
+      "The **oxidation number** is the charge an atom would have if all its bonds were ionic. The rules, in order of priority: (1) an uncombined element is 0. (2) A simple ion equals its charge. (3) **Oxygen is −2** (except in peroxides, where it is −1). (4) **Hydrogen is +1** (except in metal hydrides, where it is −1). (5) The numbers in a neutral compound add to 0, and in an ion they add to the ion's charge.",
+      "Most questions are a one-line equation. Chromium in HgCrO₄: Hg is +2 (it forms Hg²⁺ here), O is −2 × 4 = −8, so +2 + x − 8 = 0 and x = **+6**. Chromium in Cr₂O₇²⁻: 2x + 7(−2) = −2, so 2x = 12 and x = **+6**."
+     ],
+     "keyPoints": [
+      "Uncombined element 0; O is −2; H is +1; the sum equals the overall charge.",
+      "Oxidation: number increases. Reduction: number decreases."
+     ],
+     "example": {
+      "problem": "Find the oxidation number of N in NO₃⁻.",
+      "steps": [
+       "Oxygen is −2, so three oxygens = −6.",
+       "x + (−6) = −1, so x = +5."
+      ],
+      "answer": "+5"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the oxidation number of Cr in HgCrO₄?",
+       "options": [
+        "+1",
+        "+2",
+        "+4",
+        "+6"
+       ],
+       "correctIndex": 3,
+       "explanation": "Hg = +2 and four oxygens = −8. So +2 + x − 8 = 0, x = +6."
+      },
+      {
+       "prompt": "What is the oxidation number of Cr in Cr₂O₇²⁻?",
+       "options": [
+        "+3",
+        "+6",
+        "+7",
+        "+12"
+       ],
+       "correctIndex": 1,
+       "explanation": "2x + 7(−2) = −2, so 2x = 12 and x = +6."
+      },
+      {
+       "prompt": "What is the oxidation number of Mn in KMnO₄?",
+       "options": [
+        "+2",
+        "+4",
+        "+6",
+        "+7"
+       ],
+       "correctIndex": 3,
+       "explanation": "K = +1 and four oxygens = −8. So +1 + x − 8 = 0, x = +7."
+      },
+      {
+       "prompt": "What is the oxidation number of S in SO₄²⁻?",
+       "options": [
+        "+2",
+        "+4",
+        "+6",
+        "+8"
+       ],
+       "correctIndex": 2,
+       "explanation": "x + 4(−2) = −2, so x = +6."
+      },
+      {
+       "prompt": "What happens to the oxidation number of an element that is oxidized?",
+       "options": [
+        "It decreases",
+        "It increases",
+        "It stays the same",
+        "It becomes zero"
+       ],
+       "correctIndex": 1,
+       "explanation": "Oxidation is loss of electrons, so the oxidation number increases."
+      }
+     ]
+    },
+    {
+     "id": "agents",
+     "title": "Oxidizing and reducing agents",
+     "body": [
+      "The **reducing agent** is the substance that **is oxidized**: it gives electrons to the other species and so reduces it. The **oxidizing agent** is the substance that **is reduced**: it takes electrons. The names describe what each does to the other species.",
+      "To find them: write the oxidation number of every element, see which goes up (oxidized) and which goes down (reduced). In Zn + I₂ → ZnI₂, zinc goes from 0 to +2 (oxidized) and iodine goes from 0 to −1 (reduced). So **Zn is the reducing agent** and I₂ is the oxidizing agent."
+     ],
+     "keyPoints": [
+      "Reducing agent: oxidized, loses electrons.",
+      "Oxidizing agent: reduced, gains electrons."
+     ],
+     "example": {
+      "problem": "In 2Mg + O₂ → 2MgO, name the oxidizing and reducing agents.",
+      "steps": [
+       "Mg goes from 0 to +2, so it is oxidized.",
+       "O goes from 0 to −2, so it is reduced."
+      ],
+      "answer": "Mg is the reducing agent; O₂ is the oxidizing agent"
+     },
+     "exercises": [
+      {
+       "prompt": "Identify the reducing agent in Zn + I₂ → ZnI₂.",
+       "options": [
+        "Zn",
+        "I₂",
+        "Both",
+        "ZnI₂"
+       ],
+       "correctIndex": 0,
+       "explanation": "Zn goes from 0 to +2, so it is oxidized and acts as the reducing agent."
+      },
+      {
+       "prompt": "In Fe + CuSO₄ → FeSO₄ + Cu, which species is oxidized?",
+       "options": [
+        "Cu²⁺",
+        "Fe",
+        "SO₄²⁻",
+        "Cu"
+       ],
+       "correctIndex": 1,
+       "explanation": "Fe goes from 0 to +2."
+      },
+      {
+       "prompt": "The oxidizing agent is the species that:",
+       "options": [
+        "Loses electrons",
+        "Gains electrons",
+        "Has the lowest mass",
+        "Is a metal"
+       ],
+       "correctIndex": 1,
+       "explanation": "The oxidizing agent takes electrons, so it is reduced itself."
+      }
+     ]
+    },
+    {
+     "id": "disp",
+     "title": "Disproportionation",
+     "body": [
+      "In **disproportionation**, the **same element** is both oxidized and reduced in the one reaction: one species splits into products where the element has a higher and a lower oxidation number.",
+      "Example: 3K₂MnO₄ + 4HCl → 2KMnO₄ + MnO₂ + 4KCl + 2H₂O. Manganese starts at +6 in K₂MnO₄. In KMnO₄ it is +7 (oxidized), and in MnO₂ it is +4 (reduced). The same element goes both up and down, so this is disproportionation.",
+      "Another standard example: Cl₂ + 2NaOH → NaCl + NaClO + H₂O. Chlorine goes from 0 to −1 and to +1."
+     ],
+     "keyPoints": [
+      "Disproportionation: one element is both oxidized and reduced."
+     ],
+     "example": {
+      "problem": "Is 2H₂O₂ → 2H₂O + O₂ a disproportionation?",
+      "steps": [
+       "Oxygen in H₂O₂ is −1.",
+       "In H₂O it is −2 (reduced). In O₂ it is 0 (oxidized).",
+       "One element goes both up and down."
+      ],
+      "answer": "Yes"
+     },
+     "exercises": [
+      {
+       "prompt": "Which reaction is a disproportionation?",
+       "options": [
+        "3K₂MnO₄ + 4HCl → 2KMnO₄ + MnO₂ + 4KCl + 2H₂O",
+        "K₂Cr₂O₇ + 14HCl → 2CrCl₃ + 3Cl₂ + 2KCl + 7H₂O",
+        "2KMnO₄ + 3KNO₂ + H₂O → 2MnO₂ + 3KNO₃ + 2KOH",
+        "KIO + Cl₂ + 2KOH → KIO₃ + 2KCl + H₂O"
+       ],
+       "correctIndex": 0,
+       "explanation": "Only in the first does one element, Mn (+6), form products with both higher (+7) and lower (+4) oxidation numbers. In the others, different elements are oxidized and reduced."
+      },
+      {
+       "prompt": "In Cl₂ + 2NaOH → NaCl + NaClO + H₂O, chlorine goes from 0 to:",
+       "options": [
+        "−1 only",
+        "+1 only",
+        "−1 and +1",
+        "+5 and −1"
+       ],
+       "correctIndex": 2,
+       "explanation": "Chlorine forms Cl⁻ (−1) in NaCl and ClO⁻ (+1) in NaClO."
+      }
+     ]
+    },
+    {
+     "id": "balance",
+     "title": "Balancing a redox equation",
+     "body": [
+      "Use the **half-reaction method** for reactions in acid. (1) Split into oxidation and reduction half-reactions. (2) Balance atoms other than O and H. (3) Balance O with H₂O. (4) Balance H with H⁺. (5) Balance charge with electrons. (6) Multiply so electrons match, add, and cancel.",
+      "Example: MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺. Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O. Oxidation: Fe²⁺ → Fe³⁺ + e⁻, times 5. Add: **MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺**. Check charge: left −1 + 8 + 10 = +17, right +2 + 15 = +17."
+     ],
+     "keyPoints": [
+      "Balance O with H₂O, H with H⁺, charge with e⁻; make the electrons equal."
+     ],
+     "example": {
+      "problem": "Balance the oxidation half-reaction Sn²⁺ → Sn⁴⁺.",
+      "steps": [
+       "Tin is already balanced.",
+       "Left charge +2, right charge +4, so add 2 electrons to the right."
+      ],
+      "answer": "Sn²⁺ → Sn⁴⁺ + 2e⁻"
+     },
+     "exercises": [
+      {
+       "prompt": "How many electrons are needed to balance MnO₄⁻ + 8H⁺ → Mn²⁺ + 4H₂O?",
+       "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+       ],
+       "correctIndex": 2,
+       "explanation": "Left charge = −1 + 8 = +7. Right charge = +2. Five electrons on the left bring +7 down to +2."
+      },
+      {
+       "prompt": "In the balanced MnO₄⁻/Fe²⁺ equation, how many Fe²⁺ react with one MnO₄⁻?",
+       "options": [
+        "1",
+        "2",
+        "3",
+        "5"
+       ],
+       "correctIndex": 3,
+       "explanation": "MnO₄⁻ takes 5 electrons, and each Fe²⁺ gives 1."
+      },
+      {
+       "prompt": "How many water molecules appear in MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + ?H₂O?",
+       "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+       ],
+       "correctIndex": 1,
+       "explanation": "Four oxygens in MnO₄⁻ need four H₂O, which uses 8 H."
+      }
+     ]
+    },
+    {
+     "id": "cells",
+     "title": "Electrochemical cells",
+     "body": [
+      "In an electrochemical (galvanic) cell, a redox reaction is split into two half-cells joined by a wire and a salt bridge. Electrons flow through the wire and make an electric current. **Oxidation occurs at the anode and reduction occurs at the cathode** (a memory aid: **An Ox, Red Cat**). Electrons travel from anode to cathode.",
+      "Each half-reaction has a **standard electrode potential E°** (reduction potentials). The cell voltage is **E°cell = E°cathode − E°anode**. A positive E°cell means the reaction is spontaneous.",
+      "For the Daniell cell, Zn²⁺/Zn has E° = −0.76 V and Cu²⁺/Cu has E° = +0.34 V. Copper has the higher value, so it is the cathode: E°cell = 0.34 − (−0.76) = **+1.10 V**."
+     ],
+     "keyPoints": [
+      "Anode: oxidation. Cathode: reduction.",
+      "E°cell = E°cathode − E°anode."
+     ],
+     "example": {
+      "problem": "E°(Ag⁺/Ag) = +0.80 V and E°(Zn²⁺/Zn) = −0.76 V. Find E°cell.",
+      "steps": [
+       "Silver has the higher E°, so it is the cathode and zinc is the anode.",
+       "E°cell = 0.80 − (−0.76) = 1.56 V."
+      ],
+      "answer": "+1.56 V"
+     },
+     "exercises": [
+      {
+       "prompt": "Where does oxidation occur in a galvanic cell?",
+       "options": [
+        "Cathode",
+        "Anode",
+        "Salt bridge",
+        "Wire"
+       ],
+       "correctIndex": 1,
+       "explanation": "Oxidation happens at the anode."
+      },
+      {
+       "prompt": "E°(Zn²⁺/Zn) = −0.76 V and E°(Cu²⁺/Cu) = +0.34 V. What is E°cell for the Zn/Cu cell?",
+       "options": [
+        "−1.10 V",
+        "−0.42 V",
+        "+0.42 V",
+        "+1.10 V"
+       ],
+       "correctIndex": 3,
+       "explanation": "E°cell = E°cathode − E°anode = 0.34 − (−0.76) = +1.10 V."
+      },
+      {
+       "prompt": "A positive E°cell means the reaction is:",
+       "options": [
+        "Spontaneous",
+        "Non-spontaneous",
+        "At equilibrium",
+        "Impossible"
+       ],
+       "correctIndex": 0,
+       "explanation": "Positive E°cell indicates a spontaneous reaction."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Oxidation = loss of electrons (number ↑);  E°cell = E°cathode − E°anode"
   }
  ]
 }

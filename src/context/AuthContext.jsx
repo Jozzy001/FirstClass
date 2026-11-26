@@ -8,18 +8,16 @@ import {
 import { doc, setDoc, getDoc } from 'firebase/firestore'
 import { auth, db } from '../lib/firebase.js'
 import { setStoreUser } from '../lib/store.js'
+import { startAutoSync, stopAutoSync, syncDown } from '../lib/sync.js'
+import { checkIsAdmin, claimAdminIfListed } from '../lib/admin.js'
+import { isValidPhone, logInWithCandidates, normalizePhone, phoneToEmail } from '../lib/phone.js'
 
 const AuthContext = createContext(null)
 
 // Students log in with a WhatsApp/phone number + a chosen password.
-// Internally we map the number to a synthetic email so we can use
-// Firebase's normal email/password auth and avoid SMS/OTP costs.
-// Username and real email are stored as profile info only — they are
-// NOT valid login credentials, by design (keeps auth logic to one path).
-function numberToSyntheticEmail(phoneNumber) {
-  const digitsOnly = phoneNumber.replace(/\D/g, '')
-  return `${digitsOnly}@firstclass.app`
-}
+// Internally the number (always in its standard form, see lib/phone.js) is turned into a
+// made-up email so we can use Firebase's normal email/password auth without SMS/OTP costs.
+// Username and real email are stored as profile info only. They are NOT login credentials.
 
 // undefined = still loading the saved profile, null = this account has no profile yet.
 async function fetchProfile(uid) {
@@ -36,11 +34,14 @@ export function AuthProvider({ children }) {
   const [profile, setProfile] = useState(null)
   const [profileError, setProfileError] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [isAdmin, setIsAdmin] = useState(false)
   const signingUp = useRef(false) // sign-up writes the profile itself, so the listener must not race it
 
   const handleAuthChange = useCallback(async (firebaseUser) => {
+    stopAutoSync()
     setStoreUser(firebaseUser ? firebaseUser.uid : null)
     setProfileError(false)
+    setIsAdmin(false)
     if (!firebaseUser) {
       setUser(null)
       setProfile(null)
@@ -52,12 +53,24 @@ export function AuthProvider({ children }) {
     setLoading(true)
     setUser(firebaseUser)
     if (signingUp.current) {
+      startAutoSync(firebaseUser.uid)
       setLoading(false)
       return
     }
     setProfile(undefined)
     try {
       setProfile(await fetchProfile(firebaseUser.uid))
+      // Bring in results saved from other devices before the dashboard first draws.
+      await syncDown(firebaseUser.uid)
+      startAutoSync(firebaseUser.uid)
+      const already = await checkIsAdmin(firebaseUser.uid)
+      setIsAdmin(already)
+      if (!already) {
+        // In the background: if this account's number is on the server's admin list, make it an admin.
+        claimAdminIfListed(firebaseUser.uid).then((granted) => {
+          if (granted) setIsAdmin(true)
+        })
+      }
     } catch {
       setProfile(null)
       setProfileError(true) // offline or a rules problem: show a retry screen, never new-student set-up
@@ -77,9 +90,12 @@ export function AuthProvider({ children }) {
   }, [handleAuthChange])
 
   async function signUp({ phoneNumber, password, username, email, faculty }) {
-    const loginEmail = numberToSyntheticEmail(phoneNumber)
+    if (!isValidPhone(phoneNumber)) {
+      throw Object.assign(new Error('bad phone'), { code: 'auth/invalid-phone' })
+    }
+    const loginEmail = phoneToEmail(phoneNumber)
     const profileDoc = {
-      phoneNumber,
+      phoneNumber: normalizePhone(phoneNumber),
       username,
       email: email || null,
       faculty: faculty || null,
@@ -100,8 +116,8 @@ export function AuthProvider({ children }) {
   }
 
   async function logIn({ phoneNumber, password }) {
-    const loginEmail = numberToSyntheticEmail(phoneNumber)
-    return signInWithEmailAndPassword(auth, loginEmail, password)
+    // Also tries the older ways a number may have been typed at sign-up, so no existing account is locked out.
+    return logInWithCandidates(phoneNumber, password, (email, pw) => signInWithEmailAndPassword(auth, email, pw))
   }
 
   function logOut() {
@@ -119,7 +135,7 @@ export function AuthProvider({ children }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, profile, profileError, loading, signUp, logIn, logOut, refreshProfile }}>
+    <AuthContext.Provider value={{ user, profile, profileError, loading, isAdmin, signUp, logIn, logOut, refreshProfile }}>
       {children}
     </AuthContext.Provider>
   )

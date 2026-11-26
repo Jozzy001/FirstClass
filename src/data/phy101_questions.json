@@ -211,7 +211,9 @@
           ],
           "correctIndex": 1,
           "explanation": "Let T be total fall time. Distance in the last second = ½g·T² − ½g·(T−1)² = 2.5. Solving gives T ≈ 0.755s, so the fall time before the last second is negative — meaning this actually describes T≈1.755s total (the ball fell for a bit under a second before the final second began). Distance before the last second = ½g(T−1)² ≈ 0.29m.",
-          "source": "PHY101 Sept 2024, Q34 (hand-typed retype)"
+          "source": "PHY101 Sept 2024, Q34 (hand-typed retype)",
+          "needsReview": true,
+          "reviewNote": "Impossible as stated: for a body falling from rest, the distance covered in the final second is at least ½g = 4.9 m once the fall lasts at least 1 s, so 2.5 m cannot be the last-second distance. Held back until the original paper is checked."
         },
         {
           "id": "phy101-kin-17",
@@ -260,12 +262,12 @@
           "prompt": "A car starts from rest and accelerates at 1 m/s² for 10 seconds. It then continues at a steady speed for a further 20 seconds, and finally decelerates to rest in 5 seconds. Find the total distance travelled.",
           "options": [
             "290 m",
-            "273 m",
+            "275 m",
             "27 m",
             "207 m"
           ],
           "correctIndex": 1,
-          "explanation": "Phase 1 (accelerating): reaches 10 m/s, covers ½(1)(10²)=50m. Phase 2 (steady): 10×20=200m. Phase 3 (decelerating to rest in 5s from 10m/s): ½(10)(5)=25m. Total ≈ 275m, closest to 273m.",
+          "explanation": "Phase 1 (accelerating): reaches 10 m/s, covers ½(1)(10²) = 50 m. Phase 2 (steady): 10 × 20 = 200 m. Phase 3 (decelerating to rest in 5 s from 10 m/s): ½(10)(5) = 25 m. Total = 275 m.",
           "source": "PHY101 Sept 2024, Q40 (hand-typed retype)"
         },
         {
@@ -974,8 +976,8 @@
             "5√2 hrs",
             "10 hrs"
           ],
-          "correctIndex": 2,
-          "explanation": "By Kepler's third law, T² ∝ r³. The geostationary satellite (T=24hrs) orbits at radius 7R (6R altitude + R). The other orbits at radius 3.5R. T_other = 24×(3.5/7)^1.5 ≈ 8.49 hrs = 5√2 hrs.",
+          "correctIndex": 0,
+          "explanation": "By Kepler's third law, T² ∝ r³. The geostationary satellite (T = 24 hrs) orbits at radius 7R (altitude 6R plus R). The other satellite orbits at radius 3.5R. T = 24 × (3.5/7)^1.5 = 24/(2√2) = 6√2 hrs ≈ 8.49 hrs.",
           "source": "PHY101&103 Oct 2023 (compendium, verified answer key)"
         },
         {

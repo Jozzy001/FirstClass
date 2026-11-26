@@ -1,9 +1,31 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Each student can read and write only their own profile.
+
+    // An admin is anyone who has a document in the "admins" collection.
+    // That collection can only be edited in the Firebase console, never from the app,
+    // so nobody can make themselves an admin.
+    function isAdmin() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Each student can read and write their own profile. Admins can read every profile.
     match /users/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      allow read: if request.auth != null && (request.auth.uid == uid || isAdmin());
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // A signed-in person can check whether THEY are an admin. Nobody can list or edit this.
+    match /admins/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+
+    // Record of admin actions (password resets and so on). Written only by the server.
+    match /adminLog/{id} {
+      allow read: if isAdmin();
+      allow write: if false;
     }
   }
 }

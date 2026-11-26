@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import { friendlyAuthError } from '../lib/authErrors.js'
+import { SUPPORT_EMAIL, SUPPORT_PHONE_DISPLAY, emailLink, whatsappLink } from '../lib/support.js'
 
 export default function Login() {
   const { user, logIn } = useAuth()
@@ -37,6 +38,8 @@ export default function Login() {
             <span className="text-[13px] font-medium text-graphite/80">Phone number</span>
             <input
               type="tel"
+            inputMode="tel"
+            placeholder="0803 123 4567"
               required
               autoComplete="tel"
               value={form.phoneNumber}
@@ -64,7 +67,27 @@ export default function Login() {
             {loading ? 'Logging in…' : 'Log in'}
           </button>
         </form>
-        <p className="text-sm text-graphite/60 mt-6 text-center">
+        <div className="mt-5 rounded-lg bg-paper-2 border border-line px-4 py-3 text-[13px] text-graphite/70" data-testid="forgot-help">
+          <div className="font-medium text-graphite/90 mb-1">Forgot your password?</div>
+          Message us with the phone number you signed up with and we will help you get back in.
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
+            <a
+              href={whatsappLink('Hello FirstClass support, I forgot my password. My sign-up phone number is: ')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cobalt font-medium py-1.5 inline-block"
+            >
+              WhatsApp {SUPPORT_PHONE_DISPLAY}
+            </a>
+            <a
+              href={emailLink('FirstClass: password help', 'Hello, I forgot my FirstClass password. My sign-up phone number is: ')}
+              className="text-cobalt font-medium py-1.5 inline-block break-all"
+            >
+              {SUPPORT_EMAIL}
+            </a>
+          </div>
+        </div>
+        <p className="text-sm text-graphite/60 mt-4 text-center">
           New here? <Link to="/signup" className="text-cobalt font-medium inline-block py-2 px-1">Create an account</Link>
         </p>
       </div>

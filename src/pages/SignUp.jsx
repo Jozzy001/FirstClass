@@ -41,6 +41,8 @@ export default function SignUp() {
           <Field
             label="Phone number"
             type="tel"
+            inputMode="tel"
+            placeholder="0803 123 4567"
             value={form.phoneNumber}
             onChange={update('phoneNumber')}
             required
@@ -51,7 +53,7 @@ export default function SignUp() {
             type="email"
             value={form.email}
             onChange={update('email')}
-            hint="Optional — for account recovery only"
+            hint="Optional. It helps us confirm it is you if you ask for password help."
           />
           <Field
             label="Password"
@@ -70,6 +72,9 @@ export default function SignUp() {
           >
             {loading ? 'Creating account…' : 'Create account'}
           </button>
+          <p className="text-[12px] text-graphite/50 leading-relaxed">
+            Your progress and test results are saved to your account. FirstClass staff can see them so we can support you. We never show your password to anyone.
+          </p>
         </form>
         <p className="text-sm text-graphite/60 mt-6 text-center">
           Already have an account?{' '}

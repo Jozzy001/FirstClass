@@ -172,11 +172,10 @@ export default function Dashboard() {
                 {cls.nextName && ` · ${cls.pointsToNext.toFixed(2)} points to ${cls.nextName}`}
               </>
             )}
-            {tested.length > 0 && gpa.gpa === null && 'Your tests are saved. Credit units for your courses are still being added, so CGPA will appear soon.'}
           </div>
-          {gpa.gpa !== null && gpa.skipped.length > 0 && (
-            <div className="text-[11.5px] text-white/50 mt-2">
-              Not counted yet (units pending): {gpa.skipped.join(', ')}
+          {gpa.gpa !== null && gpa.assumed.length > 0 && (
+            <div className="text-[11.5px] text-white/50 mt-2" data-testid="cgpa-estimate">
+              Estimate: credit units are still being added, so {gpa.assumed.join(', ')} count as 1 unit each.
             </div>
           )}
           <Link to="/results" className="inline-block text-sm text-white/80 underline underline-offset-4 mt-2 py-2">
@@ -288,6 +287,11 @@ export default function Dashboard() {
             <p className="text-sm text-graphite/70 leading-relaxed">{tip.body}</p>
           </section>
         </div>
+      </div>
+      <div className="mt-8 text-center text-[13px] text-graphite/55">
+        <Link to="/account" className="inline-block py-2 px-2 underline underline-offset-4" data-testid="account-link">
+          Account and password
+        </Link>
       </div>
     </div>
   )
