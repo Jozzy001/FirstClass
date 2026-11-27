@@ -1,0 +1,1842 @@
+{
+ "courseCode": "CSC101",
+ "topics": [
+  {
+   "id": "history-and-generations",
+   "intro": "This topic tells the story of computing, from the abacus and the early calculating machines to the five generations of computers. You will learn who invented what, and what technology marks each generation.",
+   "sections": [
+    {
+     "id": "early",
+     "title": "Early calculating devices",
+     "body": [
+      "Long before electricity, people built tools to help them count and calculate. Learning them in order tells the story of computing.",
+      "**The abacus** is a frame with beads on rods. It is thousands of years old, and it is still used in some countries. A skilled abacus operator can add and subtract at the speed of a **person using a hand calculator.**",
+      "**John Napier** (Scotland, early 1600s) invented **logarithms**, which turn multiplication into addition. He also made **Napier's bones**, rods used for multiplication. The **slide rule** was built soon after, using logarithms.",
+      "**Blaise Pascal** (France, 1642) built the **Pascaline**, the first mechanical calculator. It added and subtracted using gears. **Gottfried Wilhelm Leibniz** (Germany, 1670s) built the **Stepped Reckoner**, a four-function calculator: it could add, subtract, multiply and divide.",
+      "**Joseph-Marie Jacquard** (France, 1801) used **punched cards** to control a weaving loom. Punched cards later became the way to feed programs and data into computers.",
+      "**Charles Babbage** (England, 1800s), often called the father of the computer, designed two machines. The **Difference Engine** (a steam-driven calculating machine for tables) and the **Analytical Engine**, which had the same main parts as a modern computer: input, a store, a processing 'mill' and output. **Ada Lovelace** wrote notes on it that are considered the first computer program.",
+      "**Herman Hollerith** (USA, 1890) built a punched-card machine for the census, and his company later became part of IBM.",
+      "**ENIAC** did not exist before the 19th century. It was built in the 1940s, so it is the odd one out among the old devices."
+     ],
+     "keyPoints": [
+      "Napier: logarithms and Napier's bones. Pascal: Pascaline (first mechanical calculator). Leibniz: Stepped Reckoner.",
+      "Babbage: Difference Engine and Analytical Engine.",
+      "Jacquard: punched cards for looms."
+     ],
+     "example": {
+      "problem": "Match each inventor to the machine: Pascal, Leibniz, Babbage.",
+      "steps": [
+       "Pascal built the Pascaline (adds and subtracts).",
+       "Leibniz built the Stepped Reckoner (all four operations).",
+       "Babbage designed the Difference and Analytical Engines."
+      ],
+      "answer": "Pascal: Pascaline. Leibniz: Stepped Reckoner. Babbage: Difference and Analytical Engines"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these did NOT exist before the 19th century?",
+       "options": [
+        "Napier's bones",
+        "Abacus",
+        "ENIAC",
+        "Slide rule"
+       ],
+       "correctIndex": 2,
+       "explanation": "ENIAC was built in the 1940s. The others are much older."
+      },
+      {
+       "prompt": "The computing devices invented by Charles Babbage were the:",
+       "options": [
+        "Difference Engine and Abacus",
+        "Analytical Engine and Slide rule",
+        "Abacus and Slide rule",
+        "Analytical Engine and Difference Engine"
+       ],
+       "correctIndex": 3,
+       "explanation": "Babbage designed the Difference Engine and the Analytical Engine."
+      },
+      {
+       "prompt": "The first mechanical calculator, the Pascaline, was built by:",
+       "options": [
+        "Marie Jacquard",
+        "Blaise Pascal",
+        "Charles Babbage",
+        "John Napier"
+       ],
+       "correctIndex": 1,
+       "explanation": "It is named after its inventor, Blaise Pascal."
+      },
+      {
+       "prompt": "Gottfried Wilhelm Leibniz built a four-function calculator called the:",
+       "options": [
+        "Abacus",
+        "Stepped Reckoner",
+        "Pascaline",
+        "Difference Engine"
+       ],
+       "correctIndex": 1,
+       "explanation": "The Stepped Reckoner could add, subtract, multiply and divide."
+      },
+      {
+       "prompt": "Who invented logarithms?",
+       "options": [
+        "Leonardo",
+        "Babylonians",
+        "John Napier",
+        "Pascal"
+       ],
+       "correctIndex": 2,
+       "explanation": "John Napier published logarithms in the early 1600s."
+      },
+      {
+       "prompt": "A skilled abacus operator can add and subtract as fast as a ________ using a hand calculator.",
+       "options": [
+        "computer",
+        "person",
+        "programmer",
+        "machine"
+       ],
+       "correctIndex": 1,
+       "explanation": "The abacus can match a person with a calculator."
+      }
+     ]
+    },
+    {
+     "id": "gens",
+     "title": "The five generations of computers",
+     "body": [
+      "Computers are grouped into **generations**, based on the main technology inside them. The first machine often called the forefather of today's all-electronic digital computers is **ENIAC** (Electronic Numerical Integrator and Computer, 1940s). EDVAC and UNIVAC followed, and **UNIVAC I** was the first commercial computer.",
+      "**First generation (1940s to mid-1950s): vacuum tubes.** Machines were huge, hot and used machine language. Input was by punched cards and tapes, and magnetic drums were used for memory.",
+      "**Second generation (late 1950s to 1960s): transistors** replaced vacuum tubes. Computers became smaller, faster and cheaper. Assembly languages and early high-level languages such as **FORTRAN** and **COBOL** appeared. Input was still mostly **punched cards**. **Grace Hopper** created **FLOW-MATIC**, an early English-like language that led to COBOL.",
+      "**Third generation (1960s to 1970s): integrated circuits (ICs)**, many transistors on one small chip. Keyboards and monitors replaced punched cards, and operating systems let several programs run together.",
+      "**Fourth generation (1970s onwards): microprocessors**, a whole CPU on one chip. This brought **personal computers** and **graphical user interfaces (GUIs)**, with icons, windows and a mouse.",
+      "**Fifth generation (now and future): artificial intelligence.** The goals include computers that understand **natural (human) language**, learn and reason, and use parallel processing.",
+      "**Classes of computers by size:** supercomputers (fastest, speed measured in **FLOPS**, floating point operations per second), mainframes (large organisations), minicomputers, and **microcomputers** (desktop, laptop, notebook). EDVAC is an early machine, **not** a microcomputer."
+     ],
+     "keyPoints": [
+      "1st vacuum tubes; 2nd transistors; 3rd integrated circuits; 4th microprocessors and GUIs; 5th artificial intelligence.",
+      "Second generation used punched cards for input.",
+      "Supercomputers are measured in FLOPS."
+     ],
+     "example": {
+      "problem": "Put these in order: microprocessor, vacuum tube, transistor, integrated circuit.",
+      "steps": [
+       "Vacuum tube (1st generation).",
+       "Transistor (2nd).",
+       "Integrated circuit (3rd).",
+       "Microprocessor (4th)."
+      ],
+      "answer": "vacuum tube, transistor, integrated circuit, microprocessor"
+     },
+     "exercises": [
+      {
+       "prompt": "The development of the integrated circuit was the hallmark of the ________ generation.",
+       "options": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+       ],
+       "correctIndex": 2,
+       "explanation": "Third generation: integrated circuits."
+      },
+      {
+       "prompt": "Second-generation computers replaced vacuum tubes with:",
+       "options": [
+        "integrated circuits",
+        "transistors",
+        "microprocessors",
+        "COBOL"
+       ],
+       "correctIndex": 1,
+       "explanation": "Transistors made computers smaller and more reliable."
+      },
+      {
+       "prompt": "GUIs were popularised in the ________ generation.",
+       "options": [
+        "2nd",
+        "3rd",
+        "4th",
+        "5th"
+       ],
+       "correctIndex": 2,
+       "explanation": "The 4th generation brought personal computers and GUIs."
+      },
+      {
+       "prompt": "The fifth generation of computers is based on:",
+       "options": [
+        "Artificial intelligence",
+        "Multimedia",
+        "Virtual reality",
+        "Nanotechnology"
+       ],
+       "correctIndex": 0,
+       "explanation": "Fifth generation aims at AI and natural-language use."
+      },
+      {
+       "prompt": "Which type of computer has its speed measured in FLOPS?",
+       "options": [
+        "Minicomputer",
+        "Supercomputer",
+        "Microcomputer",
+        "Notebook"
+       ],
+       "correctIndex": 1,
+       "explanation": "Supercomputers are rated in floating point operations per second."
+      },
+      {
+       "prompt": "Which of these is NOT a microcomputer?",
+       "options": [
+        "Notebook",
+        "Laptop",
+        "EDVAC",
+        "Desktop"
+       ],
+       "correctIndex": 2,
+       "explanation": "EDVAC was an early large computer."
+      },
+      {
+       "prompt": "ENIAC stands for:",
+       "options": [
+        "Electronic Numerical Integrator and Computer",
+        "Electronic Number Integrated Calculator",
+        "Electric Numeric Input and Computer",
+        "Easy Numerical Integrator and Calculator"
+       ],
+       "correctIndex": 0,
+       "explanation": "Electronic Numerical Integrator and Computer."
+      },
+      {
+       "prompt": "The first compiler-based language precursor, created by Grace Hopper, was:",
+       "options": [
+        "COBOL",
+        "FLOW-MATIC",
+        "BASIC",
+        "Pascal"
+       ],
+       "correctIndex": 1,
+       "explanation": "FLOW-MATIC led later to COBOL."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "data-representation",
+   "intro": "Computers store everything in binary. This topic covers bits, bytes, words, the number of values n bits can hold, character codes, and converting numbers between decimal, binary, octal and hexadecimal.",
+   "sections": [
+    {
+     "id": "units",
+     "title": "Bits, bytes and storage units",
+     "body": [
+      "A computer stores everything as **0s and 1s.** One binary digit is a **bit.** Bits are grouped to make bigger units.",
+      "**4 bits = 1 nibble.** A nibble is enough to hold one **hexadecimal** digit or one **BCD** digit. **8 bits = 1 byte**, the **smallest addressable** unit of memory, and enough for one character. A **word** is the group of bits a computer handles at once: a 32-bit word has 32 ÷ 8 = **4 bytes** (and 8 nibbles).",
+      "**Counting values.** With n bits you can make **2ⁿ** different values. 8 bits give 2⁸ = 256. 16 bits give 2¹⁶ = **65,536.** Each extra bit doubles the number.",
+      "**Big units:** 1 kilobyte (KB) is about a thousand bytes (exactly 1024), 1 megabyte (MB) is about a million, 1 gigabyte (GB) is about a **billion** bytes, and 1 terabyte (TB) is about a trillion. So 5 GB is roughly **five billion** bytes.",
+      "**Character codes.** Letters, digits and symbols are stored as numbers. **ASCII** uses 7 bits, so it has **128** characters. **Extended ASCII** uses 8 bits and has **256** characters. **Unicode** is bigger and covers the world's languages.",
+      "**BCD (Binary Coded Decimal)** writes each decimal digit using **4 bits.** The number 259 is 0010 0101 1001 in BCD (2, 5 and 9 each in four bits)."
+     ],
+     "keyPoints": [
+      "4 bits = nibble. 8 bits = byte. A 32-bit word = 4 bytes.",
+      "n bits give 2ⁿ values.",
+      "ASCII 128, extended ASCII 256. BCD uses 4 bits per digit."
+     ],
+     "example": {
+      "problem": "How many different values can 10 bits represent?",
+      "steps": [
+       "Each bit has 2 choices.",
+       "2¹⁰ = 1024."
+      ],
+      "answer": "1024"
+     },
+     "exercises": [
+      {
+       "prompt": "A ________ is used to represent hexadecimal and BCD digits.",
+       "options": [
+        "nibble",
+        "byte",
+        "bit",
+        "word"
+       ],
+       "correctIndex": 0,
+       "explanation": "A nibble is 4 bits, which holds one hex or BCD digit."
+      },
+      {
+       "prompt": "The smallest addressable unit of memory is a:",
+       "options": [
+        "bit",
+        "byte",
+        "string",
+        "word"
+       ],
+       "correctIndex": 1,
+       "explanation": "A byte is 8 bits and is the smallest addressable unit."
+      },
+      {
+       "prompt": "A 32-bit word contains:",
+       "options": [
+        "four nibbles",
+        "four bytes",
+        "eight bytes",
+        "two nibbles"
+       ],
+       "correctIndex": 1,
+       "explanation": "32 ÷ 8 = 4 bytes."
+      },
+      {
+       "prompt": "With 16 bits, how many different values can be represented?",
+       "options": [
+        "56,356",
+        "36,656",
+        "65,536",
+        "53,356"
+       ],
+       "correctIndex": 2,
+       "explanation": "2¹⁶ = 65,536."
+      },
+      {
+       "prompt": "5 gigabytes is about ________ bytes.",
+       "options": [
+        "five billion",
+        "five million",
+        "five trillion",
+        "fifty million"
+       ],
+       "correctIndex": 0,
+       "explanation": "1 GB is about a billion bytes."
+      },
+      {
+       "prompt": "In BCD, each decimal digit is encoded using ________ bits.",
+       "options": [
+        "2",
+        "4",
+        "8",
+        "16"
+       ],
+       "correctIndex": 1,
+       "explanation": "Four bits per decimal digit."
+      },
+      {
+       "prompt": "How many characters are there in standard ASCII and Extended ASCII respectively?",
+       "options": [
+        "64 and 128",
+        "128 and 256",
+        "256 and 512",
+        "256 and 1024"
+       ],
+       "correctIndex": 1,
+       "explanation": "7 bits give 128 and 8 bits give 256."
+      },
+      {
+       "prompt": "A string of 8 bits is called a:",
+       "options": [
+        "binary string",
+        "byte",
+        "character",
+        "digit"
+       ],
+       "correctIndex": 1,
+       "explanation": "8 bits make a byte."
+      }
+     ]
+    },
+    {
+     "id": "bin",
+     "title": "Converting between binary and decimal",
+     "body": [
+      "A number system is described by its **base.** Decimal is base 10 (digits 0-9). Binary is base 2 (digits 0 and 1). Octal is base 8 (0-7). Hexadecimal is base 16 (0-9 and A-F, where A = 10, B = 11, C = 12, D = 13, E = 14, F = 15).",
+      "**Binary to decimal.** Write the place values from the right: 1, 2, 4, 8, 16, 32, 64, 128… Add the place values where the digit is 1. For **1100111₂:** 64 + 32 + 0 + 0 + 4 + 2 + 1 = **103.**",
+      "Another: **1001001100₂** has 1s in the places 512, 64, 8 and 4, so 512 + 64 + 8 + 4 = **588.**",
+      "**Fractions in binary.** After the point the places are ½, ¼, ⅛… For **11011.101₂:** the whole part 11011 = 16 + 8 + 2 + 1 = 27. The fraction .101 = ½ + ⅛ = 0.625. So the answer is **27.625.**",
+      "**Decimal to binary (whole numbers).** Divide by 2 again and again, and write the remainders from bottom to top. Example 45: 45 ÷ 2 = 22 r 1, 22 ÷ 2 = 11 r 0, 11 ÷ 2 = 5 r 1, 5 ÷ 2 = 2 r 1, 2 ÷ 2 = 1 r 0, 1 ÷ 2 = 0 r 1. Reading upwards: **101101₂.**",
+      "**Decimal fractions to binary.** Multiply the fraction by 2 again and again, and take the whole-number part each time. 15.15: 15 = 1111₂. For 0.15: 0.15 × 2 = 0.3 (0), 0.6 (0), 1.2 (1), 0.4 (0), 0.8 (0), 1.6 (1), 1.2 (1), 0.4 (0)… so 0.15 = 0.00100110…₂ and it never ends. So 15.15 is **1111.00100110…₂**. A question that offers 1111.11 or 1111.01 is wrong. Hint: the fraction .15 is less than ¼, so the first two binary places are 0.",
+      "**512 in binary** is 2⁹, so a 1 followed by nine 0s: **1000000000₂.** Powers of 2 are always a 1 followed by zeros."
+     ],
+     "keyPoints": [
+      "Binary place values: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512…",
+      "Whole numbers to binary: divide by 2, read remainders upwards.",
+      "Fractions to binary: multiply by 2, take the whole parts."
+     ],
+     "example": {
+      "problem": "Convert 10110₂ to decimal.",
+      "steps": [
+       "Place values from the right: 1, 2, 4, 8, 16.",
+       "The 1s are in 2, 4 and 16.",
+       "2 + 4 + 16 = 22."
+      ],
+      "answer": "22"
+     },
+     "exercises": [
+      {
+       "prompt": "Convert 1100111₂ to decimal.",
+       "options": [
+        "103",
+        "201",
+        "187",
+        "131"
+       ],
+       "correctIndex": 0,
+       "explanation": "64 + 32 + 4 + 2 + 1 = 103."
+      },
+      {
+       "prompt": "Convert 1001001100₂ to decimal.",
+       "options": [
+        "256",
+        "2048",
+        "1024",
+        "588"
+       ],
+       "correctIndex": 3,
+       "explanation": "512 + 64 + 8 + 4 = 588."
+      },
+      {
+       "prompt": "Convert 11011.101₂ to decimal.",
+       "options": [
+        "27.625",
+        "34.90",
+        "44.56",
+        "24.55"
+       ],
+       "correctIndex": 0,
+       "explanation": "27 + 0.5 + 0.125 = 27.625."
+      },
+      {
+       "prompt": "Convert 45₁₀ to binary.",
+       "options": [
+        "101101₂",
+        "110101₂",
+        "101011₂",
+        "100111₂"
+       ],
+       "correctIndex": 0,
+       "explanation": "Divide by 2 repeatedly and read the remainders upwards."
+      },
+      {
+       "prompt": "Convert 15.15₁₀ to binary.",
+       "options": [
+        "1111.11",
+        "1111.01",
+        "1111.1100",
+        "1111.00100110…"
+       ],
+       "correctIndex": 3,
+       "explanation": "0.15 × 2 = 0.3, 0.6, 1.2, 0.4… gives 0.00100110… (it never ends)."
+      },
+      {
+       "prompt": "Convert 512₁₀ to binary.",
+       "options": [
+        "1000000000₂",
+        "100000000₂",
+        "1000000₂",
+        "1010101010₂"
+       ],
+       "correctIndex": 0,
+       "explanation": "512 = 2⁹, a 1 followed by nine 0s."
+      },
+      {
+       "prompt": "In hexadecimal, what decimal value does the digit C stand for?",
+       "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+       ],
+       "correctIndex": 2,
+       "explanation": "A = 10, B = 11, C = 12."
+      }
+     ]
+    },
+    {
+     "id": "octhex",
+     "title": "Octal and hexadecimal",
+     "body": [
+      "Octal and hex are shortcuts for writing long binary numbers. **One octal digit = 3 binary bits. One hex digit = 4 binary bits.**",
+      "**Binary to octal:** group the bits in threes **from the point outwards** (add zeros if needed). **11100101₂:** 011 100 101 = 3, 4, 5. So **345₈.**",
+      "**Binary to octal with a fraction:** **110000111.011100₂:** the whole part 110 000 111 = 607 and the fraction 011 100 = 34. So **607.34₈.** And **1100101.001010₂:** 001 100 101 . 001 010 = **145.12₈.**",
+      "**Hex to binary:** replace each hex digit with its 4 bits. **12₁₆:** 1 = 0001, 2 = 0010, so 00010010 = **10010₂.**",
+      "**Hex to octal:** go through binary. **A45₁₆:** A = 1010, 4 = 0100, 5 = 0101, giving 101001000101. Regroup in threes: 101 001 000 101 = 5, 1, 0, 5. So **5105₈.** (An option list like 5739, 5379 or 3957 would not contain this answer.)",
+      "**AFC54₁₆:** 1010 1111 1100 0101 0100. Regroup in threes (from the right): 010 101 111 111 000 101 010 100 gives 2 5 7 6 1 2 4, so **2576124₈.**",
+      "**1056₁₆:** 0001 0000 0101 0110 → 1 000 001 010 110 → **10126₈.**",
+      "**Decimal to hex.** Divide by 16. **4188:** 4188 = 16 × 261 + 12 (C), 261 = 16 × 16 + 5, 16 = 16 × 1 + 0. Reading up: 1 0 5 C, so **105C₁₆.** The fraction .625 × 16 = 10 = A, so **4188.625₁₀ = 105C.A₁₆.**",
+      "**Decimal fraction to octal.** Multiply the fraction by 8 and take the whole parts. 0.527 × 8 = 4.216 (4), 0.216 × 8 = 1.728 (1), 0.728 × 8 = 5.824 (5), 0.824 × 8 = 6.592 (6), 0.592 × 8 = 4.736 (4), 0.736 × 8 = 5.888 (5). So 0.527 = **0.415645₈** to six places."
+     ],
+     "keyPoints": [
+      "Octal digit = 3 bits. Hex digit = 4 bits.",
+      "Group from the point outwards; pad with zeros.",
+      "Hex to octal: go through binary."
+     ],
+     "example": {
+      "problem": "Convert 110110₂ to octal and 11010110₂ to hexadecimal.",
+      "steps": [
+       "110 110 = 6 6, so 66₈.",
+       "1101 0110 = D 6, so D6₁₆."
+      ],
+      "answer": "66₈ and D6₁₆"
+     },
+     "exercises": [
+      {
+       "prompt": "Convert 11100101₂ to octal.",
+       "options": [
+        "534",
+        "351",
+        "135",
+        "345"
+       ],
+       "correctIndex": 3,
+       "explanation": "011 100 101 = 3 4 5."
+      },
+      {
+       "prompt": "Convert 12₁₆ to binary.",
+       "options": [
+        "10001",
+        "10010",
+        "10100",
+        "11000"
+       ],
+       "correctIndex": 1,
+       "explanation": "1 = 0001 and 2 = 0010, so 10010."
+      },
+      {
+       "prompt": "Convert 110000111.011100₂ to octal.",
+       "options": [
+        "22.34₈",
+        "66.343₈",
+        "56.77₈",
+        "607.34₈"
+       ],
+       "correctIndex": 3,
+       "explanation": "110 000 111 . 011 100 = 607.34."
+      },
+      {
+       "prompt": "The octal equivalent of 1100101.001010₂ is:",
+       "options": [
+        "624.2",
+        "154.12",
+        "145.12",
+        "624.12"
+       ],
+       "correctIndex": 2,
+       "explanation": "001 100 101 . 001 010 = 145.12."
+      },
+      {
+       "prompt": "What is the octal equivalent of AFC54₁₆?",
+       "options": [
+        "2576124",
+        "5721624",
+        "2567142",
+        "2756142"
+       ],
+       "correctIndex": 0,
+       "explanation": "Go through binary and regroup in threes."
+      },
+      {
+       "prompt": "Convert A45₁₆ to octal.",
+       "options": [
+        "5739",
+        "5379",
+        "3957",
+        "5105"
+       ],
+       "correctIndex": 3,
+       "explanation": "1010 0100 0101 = 101 001 000 101 = 5105."
+      },
+      {
+       "prompt": "Convert 4188.625₁₀ to hexadecimal.",
+       "options": [
+        "FFFA.D",
+        "102.D",
+        "105C.A",
+        "4AF.C"
+       ],
+       "correctIndex": 2,
+       "explanation": "4188 = 105C₁₆ and 0.625 = 0.A₁₆."
+      },
+      {
+       "prompt": "Convert 1056₁₆ to octal.",
+       "options": [
+        "101265",
+        "102465",
+        "20488",
+        "10126"
+       ],
+       "correctIndex": 3,
+       "explanation": "0001 0000 0101 0110 regrouped in threes gives 10126."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "n bits give 2ⁿ values; octal digit = 3 bits; hex digit = 4 bits"
+  },
+  {
+   "id": "hardware-and-memory",
+   "intro": "This topic covers the physical parts of a computer: the system unit and peripherals, the CPU and its machine cycle, and the different kinds of memory and storage.",
+   "sections": [
+    {
+     "id": "parts",
+     "title": "Hardware: system unit and peripherals",
+     "body": [
+      "**Hardware** is every physical part of a computer that you can touch. It is classified into two groups: the **system unit** and the **peripherals**.",
+      "The **system unit** is the box that holds the motherboard, the **CPU**, memory, the power supply and the drives. **Peripherals** are the devices connected to it: input devices (keyboard, mouse), output devices (monitor, printer) and storage devices.",
+      "**Pointing and drawing devices.** A **stylus** looks like a ballpoint pen but uses pressure, not ink, to write text and draw lines on a pad or screen. A **light pen** is pointed at the screen. A **trackball** is like an upside-down mouse: you roll the ball with your thumb. A **joystick** is a lever used mostly for games.",
+      "**Hardcopy and softcopy.** Output on paper, such as a **printout**, is **hardcopy.** Output on a screen is **softcopy.**",
+      "**Data and information.** **Data** is raw facts and figures. **Information** is data that has been processed so that it is useful.",
+      "**Network hardware** lets computers talk to each other: **modem, router, hub, switch, repeater, bridge and gateway.** A **repeater** boosts a weak signal so it can travel further. **Bandwidth** is the data transfer capacity of a connection.",
+      "**Auxiliary devices** are extra devices, such as a UPS, a scanner or an external drive. A **bridge** is a network device, not an auxiliary device."
+     ],
+     "keyPoints": [
+      "Hardware = system unit + peripherals.",
+      "Printout = hardcopy; screen = softcopy.",
+      "Network devices: modem, router, hub, repeater, bridge, gateway.",
+      "Bandwidth is transfer capacity."
+     ],
+     "example": {
+      "problem": "Classify: keyboard, printer, repeater.",
+      "steps": [
+       "Keyboard is an input peripheral.",
+       "Printer is an output peripheral (hardcopy).",
+       "Repeater is network hardware."
+      ],
+      "answer": "Input peripheral; output peripheral; network hardware"
+     },
+     "exercises": [
+      {
+       "prompt": "Computer hardware can be classified into:",
+       "options": [
+        "Input and output",
+        "System unit and peripherals",
+        "Software and data",
+        "Memory and CPU"
+       ],
+       "correctIndex": 1,
+       "explanation": "The two groups are the system unit and the peripherals."
+      },
+      {
+       "prompt": "Which of these looks like a ballpoint pen but uses pressure instead of ink?",
+       "options": [
+        "Light pen",
+        "Stylus",
+        "Joystick",
+        "Trackball"
+       ],
+       "correctIndex": 1,
+       "explanation": "A stylus writes by pressure on a pad."
+      },
+      {
+       "prompt": "A printout is an example of:",
+       "options": [
+        "softcopy",
+        "hardcopy",
+        "bandwidth",
+        "data"
+       ],
+       "correctIndex": 1,
+       "explanation": "Paper output is hardcopy."
+      },
+      {
+       "prompt": "Which of these is a network hardware device?",
+       "options": [
+        "Repeater",
+        "Stylus",
+        "Joystick",
+        "Monitor"
+       ],
+       "correctIndex": 0,
+       "explanation": "A repeater boosts signals on a network."
+      },
+      {
+       "prompt": "The data transfer capacity of an Internet connection is called:",
+       "options": [
+        "Storage capacity",
+        "Bandwidth",
+        "Clock speed",
+        "Resolution"
+       ],
+       "correctIndex": 1,
+       "explanation": "Bandwidth is the transfer capacity of a link."
+      },
+      {
+       "prompt": "The property of a disk that decides how much data it can hold is its:",
+       "options": [
+        "Storage capacity",
+        "Speed",
+        "Bandwidth",
+        "Colour"
+       ],
+       "correctIndex": 0,
+       "explanation": "Storage capacity."
+      }
+     ]
+    },
+    {
+     "id": "cpu",
+     "title": "The CPU and the machine cycle",
+     "body": [
+      "The **central processing unit (CPU)** is the brain of the computer. It has three main parts.",
+      "The **control unit** reads program instructions one after another (**sequential** interpretation and execution) and directs the other parts. The **arithmetic and logic unit (ALU)** does arithmetic (+, −, ×, ÷) and logical comparisons, so it resolves expressions such as x − y = x + 1. **Registers** are tiny, very fast storage places inside the CPU.",
+      "**The machine cycle** is the set of steps the CPU repeats for every instruction: **fetch** (get the instruction from memory), **decode** (work out what it means), **execute** (carry it out) and **store** (write the result). **Coding** is something a programmer does, so it is **not** part of the machine cycle.",
+      "**Speed.** CPU speed is measured by the **clock speed** in hertz: megahertz (MHz) or gigahertz (GHz). A higher clock speed means more cycles per second."
+     ],
+     "keyPoints": [
+      "CPU = control unit + ALU + registers.",
+      "Machine cycle: fetch, decode, execute, store.",
+      "Coding is not part of the machine cycle."
+     ],
+     "example": {
+      "problem": "Which step of the machine cycle writes the answer back?",
+      "steps": [
+       "Fetch gets the instruction.",
+       "Decode interprets it.",
+       "Execute does the work.",
+       "Store writes the result."
+      ],
+      "answer": "Store"
+     },
+     "exercises": [
+      {
+       "prompt": "Which unit handles sequential interpretation and execution of program lines?",
+       "options": [
+        "ALU",
+        "Control unit",
+        "Register",
+        "RAM"
+       ],
+       "correctIndex": 1,
+       "explanation": "The control unit directs execution."
+      },
+      {
+       "prompt": "Which part of the CPU performs arithmetic and logic?",
+       "options": [
+        "Control unit",
+        "ALU",
+        "Cache",
+        "Bus"
+       ],
+       "correctIndex": 1,
+       "explanation": "ALU = arithmetic and logic unit."
+      },
+      {
+       "prompt": "All but one are part of the machine cycle:",
+       "options": [
+        "Fetch",
+        "Decode",
+        "Coding",
+        "Execute"
+       ],
+       "correctIndex": 2,
+       "explanation": "Coding is done by programmers, not by the CPU cycle."
+      },
+      {
+       "prompt": "The correct order of the machine cycle begins with:",
+       "options": [
+        "Execute",
+        "Store",
+        "Fetch",
+        "Decode"
+       ],
+       "correctIndex": 2,
+       "explanation": "Fetch, decode, execute, store."
+      },
+      {
+       "prompt": "CPU speed is measured in:",
+       "options": [
+        "Pixels",
+        "Hertz",
+        "Bytes",
+        "Dots per inch"
+       ],
+       "correctIndex": 1,
+       "explanation": "Clock speed is in MHz or GHz."
+      }
+     ]
+    },
+    {
+     "id": "memory",
+     "title": "Memory and storage",
+     "body": [
+      "**Primary memory** is directly used by the CPU. **Secondary storage** keeps data permanently (hard disk, flash drive, DVD).",
+      "**RAM (random access memory)** lets any location be reached in a fixed, short time after its address is given. It is **volatile**: when power goes off, the contents are lost. **DRAM** (dynamic) needs refreshing and is cheaper. **SRAM** (static) is faster and is used for cache.",
+      "**ROM (read-only memory)** is **non-volatile** and holds start-up instructions. The family: **ROM** (fixed at the factory), **PROM** (programmable once), **EPROM** (erasable with ultraviolet light and reprogrammable) and **EEPROM** (erased electrically).",
+      "**Storage capacity** is how much a disk can hold. Common units are KB, MB, GB and TB."
+     ],
+     "keyPoints": [
+      "RAM volatile; ROM non-volatile.",
+      "ROM, PROM, EPROM (UV), EEPROM (electric).",
+      "SRAM faster (cache); DRAM cheaper."
+     ],
+     "example": {
+      "problem": "A user loses unsaved work in a power cut. Which memory held it and why?",
+      "steps": [
+       "Unsaved work sits in RAM.",
+       "RAM is volatile, so it empties without power."
+      ],
+      "answer": "RAM, because it is volatile"
+     },
+     "exercises": [
+      {
+       "prompt": "Memories where any location is reached in a fixed, short time after giving its address are called:",
+       "options": [
+        "Sequential memory",
+        "Random access memory (RAM)",
+        "Read-only memory",
+        "Tape"
+       ],
+       "correctIndex": 1,
+       "explanation": "This is the definition of RAM."
+      },
+      {
+       "prompt": "Which memory loses its contents when power is switched off?",
+       "options": [
+        "ROM",
+        "RAM",
+        "EPROM",
+        "PROM"
+       ],
+       "correctIndex": 1,
+       "explanation": "RAM is volatile."
+      },
+      {
+       "prompt": "Which memory is erased by ultraviolet light?",
+       "options": [
+        "PROM",
+        "EPROM",
+        "DRAM",
+        "SRAM"
+       ],
+       "correctIndex": 1,
+       "explanation": "EPROM is erasable by UV light."
+      },
+      {
+       "prompt": "Start-up instructions are stored in:",
+       "options": [
+        "RAM",
+        "ROM",
+        "Cache only",
+        "Registers"
+       ],
+       "correctIndex": 1,
+       "explanation": "ROM is non-volatile and holds the boot instructions."
+      },
+      {
+       "prompt": "Which RAM type is faster and used for cache?",
+       "options": [
+        "SRAM",
+        "DRAM",
+        "PROM",
+        "EEPROM"
+       ],
+       "correctIndex": 0,
+       "explanation": "Static RAM is faster than dynamic RAM."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "software-and-systems",
+   "intro": "This topic explains software types, what the operating system does, how a computer boots, and how programs are translated, linked and loaded.",
+   "sections": [
+    {
+     "id": "types",
+     "title": "What software is and its types",
+     "body": [
+      "**Software** is a set of instructions that directs a computer to perform a task. A single set of such instructions is called a **program.**",
+      "**System software** controls and runs the computer. Examples: operating systems, translators, utilities. **Application software** does a user's task: word processing, spreadsheets, games.",
+      "**Examples of operating systems:** Windows, Linux, macOS, Android, Unix. **HP** is a computer manufacturer, not an operating system.",
+      "**Office suites** bundle applications. In Microsoft Office, **Outlook** supports communication and email, Word is for documents, Excel for spreadsheets and PowerPoint for presentations."
+     ],
+     "keyPoints": [
+      "System software runs the computer; application software serves the user.",
+      "HP is not an OS.",
+      "Outlook = email in MS Office."
+     ],
+     "example": {
+      "problem": "Classify Windows and Excel.",
+      "steps": [
+       "Windows runs the computer: system software.",
+       "Excel does user tasks: application software."
+      ],
+      "answer": "Windows: system. Excel: application"
+     },
+     "exercises": [
+      {
+       "prompt": "The set of instructions that directs a computer to do a task is called a:",
+       "options": [
+        "Program",
+        "Hardware",
+        "Port",
+        "Network"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is a program."
+      },
+      {
+       "prompt": "Which of these is NOT an operating system?",
+       "options": [
+        "Linux",
+        "Windows",
+        "HP",
+        "Unix"
+       ],
+       "correctIndex": 2,
+       "explanation": "HP is a manufacturer."
+      },
+      {
+       "prompt": "Which Microsoft Office application supports email communication?",
+       "options": [
+        "Excel",
+        "Word",
+        "Outlook",
+        "PowerPoint"
+       ],
+       "correctIndex": 2,
+       "explanation": "Outlook is the communication software."
+      },
+      {
+       "prompt": "A word processor is an example of:",
+       "options": [
+        "System software",
+        "Application software",
+        "Hardware",
+        "Firmware"
+       ],
+       "correctIndex": 1,
+       "explanation": "It does a user's task."
+      }
+     ]
+    },
+    {
+     "id": "os",
+     "title": "The operating system and booting",
+     "body": [
+      "The **operating system (OS)** manages hardware and software resources. Its jobs include managing memory, files, processes and devices, and giving the user an interface.",
+      "The OS has two kinds of parts. The **control program** (also called the **master program**, containing the **kernel**) supervises everything. **Service programs** do extra jobs.",
+      "**Booting** is starting a computer. A **cold boot** is switching on a computer that is off. A **warm boot** is restarting a computer that is already on (for example Ctrl+Alt+Del). It is **not** true that a warm boot is turning on a computer after it has been shut down.",
+      "At start-up the **POST** (power-on self-test) checks the hardware, then the **BIOS** in ROM loads the operating system.",
+      "**Virtual machine** operating systems **do** let a single user run two or more operating systems at the same time."
+     ],
+     "keyPoints": [
+      "Control (master) program contains the kernel.",
+      "Cold boot = from off; warm boot = restart.",
+      "POST then BIOS (in ROM) then OS."
+     ],
+     "example": {
+      "problem": "Is pressing Ctrl+Alt+Del on a running PC a cold or warm boot?",
+      "steps": [
+       "The computer is already on.",
+       "So it is a restart, a warm boot."
+      ],
+      "answer": "Warm boot"
+     },
+     "exercises": [
+      {
+       "prompt": "Which part of the OS is also called the master program?",
+       "options": [
+        "Control program",
+        "Service program",
+        "Compiler",
+        "Linker"
+       ],
+       "correctIndex": 0,
+       "explanation": "The control program is the master program."
+      },
+      {
+       "prompt": "Which is NOT true?",
+       "options": [
+        "A warm boot restarts a computer that is already on",
+        "A warm boot is turning on a computer after it has been shut down",
+        "POST checks the hardware",
+        "A cold boot starts from power-off"
+       ],
+       "correctIndex": 1,
+       "explanation": "Turning on from power-off is a cold boot."
+      },
+      {
+       "prompt": "Which is NOT true about virtual machine OSs?",
+       "options": [
+        "They allow a single user to run two OSs",
+        "They do not allow a single user to run two or more OSs",
+        "They share hardware",
+        "They run on a host"
+       ],
+       "correctIndex": 1,
+       "explanation": "They do allow it."
+      },
+      {
+       "prompt": "The BIOS is stored in:",
+       "options": [
+        "RAM",
+        "ROM",
+        "Hard disk only",
+        "Registers"
+       ],
+       "correctIndex": 1,
+       "explanation": "BIOS sits in ROM."
+      },
+      {
+       "prompt": "The first check made at start-up is called:",
+       "options": [
+        "POST",
+        "FTP",
+        "URL",
+        "ASCII"
+       ],
+       "correctIndex": 0,
+       "explanation": "Power-on self-test."
+      }
+     ]
+    },
+    {
+     "id": "translators",
+     "title": "Translators, utilities and language generations",
+     "body": [
+      "A computer only understands **machine language.** **Translators** convert programs into it: an **assembler** (assembly language), a **compiler** (whole program at once) and an **interpreter** (line by line).",
+      "A **linker** brings together object modules, operating system routines and other utility software to produce an **executable program.** The **loader** places it in memory. **Linking and loading** are done by system programs. Linking and loading are system-software jobs that prepare a program to run.",
+      "**Utility programs** do housekeeping jobs: backup, disk clean-up, virus scan, file compression.",
+      "**Generations of languages.** 1GL machine language; 2GL assembly language; 3GL high-level languages such as C and Java; **4GL** are **non-procedural and problem-oriented** (SQL, report generators). So the statement '4GLs are not problem-oriented' is **false.**",
+      "**Gopher** is an older menu-based document-retrieval protocol. The protocol governing the transfer of hypertext is **HTTP**, not Gopher."
+     ],
+     "keyPoints": [
+      "Assembler, compiler, interpreter are translators.",
+      "Linker produces executables.",
+      "4GL: non-procedural, problem-oriented.",
+      "HTTP transfers hypertext."
+     ],
+     "example": {
+      "problem": "Order the language generations 1GL to 4GL.",
+      "steps": [
+       "1GL machine language.",
+       "2GL assembly.",
+       "3GL high-level.",
+       "4GL non-procedural."
+      ],
+      "answer": "Machine, assembly, high-level, 4GL"
+     },
+     "exercises": [
+      {
+       "prompt": "Which brings together object modules, OS routines and utilities to produce an executable program?",
+       "options": [
+        "Linker",
+        "Editor",
+        "Assembler",
+        "Browser"
+       ],
+       "correctIndex": 0,
+       "explanation": "The linker."
+      },
+      {
+       "prompt": "An executable program produced through module-object interaction occurs through:",
+       "options": [
+        "Linkers",
+        "Browsers",
+        "Modems",
+        "Scanners"
+       ],
+       "correctIndex": 0,
+       "explanation": "Linkers combine object modules."
+      },
+      {
+       "prompt": "Which is NOT true?",
+       "options": [
+        "4GLs are problem-oriented",
+        "4GLs are not problem-oriented",
+        "4GLs are non-procedural",
+        "SQL is a 4GL"
+       ],
+       "correctIndex": 1,
+       "explanation": "4GLs are problem-oriented."
+      },
+      {
+       "prompt": "The protocol that governs transfer of hypertext is:",
+       "options": [
+        "HTTP",
+        "Gopher",
+        "FTP",
+        "Telnet"
+       ],
+       "correctIndex": 0,
+       "explanation": "HTTP."
+      },
+      {
+       "prompt": "A translator that converts a program line by line is a(n):",
+       "options": [
+        "Compiler",
+        "Interpreter",
+        "Linker",
+        "Loader"
+       ],
+       "correctIndex": 1,
+       "explanation": "An interpreter works line by line."
+      },
+      {
+       "prompt": "First generation language is:",
+       "options": [
+        "Assembly",
+        "Machine language",
+        "C",
+        "SQL"
+       ],
+       "correctIndex": 1,
+       "explanation": "1GL is machine language."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "internet-and-networking",
+   "intro": "This topic covers how the Internet began, the protocols and services it provides, and the words you must know: ISP, modem, browser, host, URL and caching.",
+   "sections": [
+    {
+     "id": "basics",
+     "title": "What the Internet is and how it began",
+     "body": [
+      "The **Internet** is a worldwide network of computers. It began with **ARPANET**, the first network that planted the seed of the Internet (funded by the US Department of Defense, late 1960s).",
+      "Computers talk through **protocols**, agreed rules. **TCP/IP** is the foundational protocol suite of the Internet. Every device has an **IP address**, and IP addresses are **unique**. A **domain name** (for example example.com) is an easy name for an IP address.",
+      "A **server** on the Internet is also called a **host.** A **browser** is the application software that lets you view information on the **World Wide Web (WWW)**. The first page you normally see at a website is its **home page.**",
+      "To connect a home to the Internet you need a **modem** and an **Internet Service Provider (ISP)**, the company that gives you access.",
+      "**Caching** keeps frequently accessed pages or addresses in memory for future use, which makes loading faster.",
+      "**WAP (Wireless Application Protocol)** was used for Internet access on early mobile phones."
+     ],
+     "keyPoints": [
+      "ARPANET began it; TCP/IP is the protocol suite.",
+      "IP addresses are unique.",
+      "Server = host; browser views the Web.",
+      "Modem + ISP connect a home."
+     ],
+     "example": {
+      "problem": "What two things does a home need to get online?",
+      "steps": [
+       "A modem to connect.",
+       "An ISP to provide the service."
+      ],
+      "answer": "A modem and an ISP"
+     },
+     "exercises": [
+      {
+       "prompt": "The first network that planted the seed of the Internet was:",
+       "options": [
+        "ARPANET",
+        "WWW",
+        "Ethernet",
+        "Intranet"
+       ],
+       "correctIndex": 0,
+       "explanation": "ARPANET."
+      },
+      {
+       "prompt": "What does ISP stand for?",
+       "options": [
+        "Internet Service Provider",
+        "Internal Server Protocol",
+        "Internet Speed Plan",
+        "Integrated Service Program"
+       ],
+       "correctIndex": 0,
+       "explanation": "Internet Service Provider."
+      },
+      {
+       "prompt": "Software used to view pages on the World Wide Web is a:",
+       "options": [
+        "Browser",
+        "Compiler",
+        "Modem",
+        "Router"
+       ],
+       "correctIndex": 0,
+       "explanation": "A browser."
+      },
+      {
+       "prompt": "The equipment that lets a home connect to the Internet is a:",
+       "options": [
+        "Modem",
+        "Printer",
+        "Scanner",
+        "Monitor"
+       ],
+       "correctIndex": 0,
+       "explanation": "A modem."
+      },
+      {
+       "prompt": "A server on the Internet is also known as a:",
+       "options": [
+        "Host",
+        "Client",
+        "Node only",
+        "Cable"
+       ],
+       "correctIndex": 0,
+       "explanation": "Host."
+      },
+      {
+       "prompt": "Keeping frequently used data in memory for later use is called:",
+       "options": [
+        "Caching",
+        "Linking",
+        "Booting",
+        "Compiling"
+       ],
+       "correctIndex": 0,
+       "explanation": "Caching."
+      },
+      {
+       "prompt": "Which is NOT true?",
+       "options": [
+        "IP addresses are unique",
+        "IP addresses are not unique",
+        "TCP/IP is the Internet's protocol suite",
+        "A domain name stands for an IP address"
+       ],
+       "correctIndex": 1,
+       "explanation": "Each IP address is unique."
+      },
+      {
+       "prompt": "Early mobile phones reached the Internet using:",
+       "options": [
+        "WAP",
+        "FTP",
+        "SMTP",
+        "HTTP only"
+       ],
+       "correctIndex": 0,
+       "explanation": "WAP."
+      }
+     ]
+    },
+    {
+     "id": "protocols",
+     "title": "Protocols, URLs and services",
+     "body": [
+      "**HTTP** transfers web pages (hypertext) and is the protocol for the WWW. **FTP** transfers files between computers, so users get files from the Internet using FTP. **SMTP** sends email. **Telnet** is for remote login.",
+      "A **URL** (Uniform Resource Locator) is a web address, for example https://www.example.com/page.html. It has a protocol, a domain name and a path. A URL is not made of letters and numbers only: it also contains symbols such as : / and .",
+      "**Services of the Internet:** email, web browsing, file transfer, online chat and video calls, e-commerce. **Word processing** is not an Internet service; it is application software.",
+      "**Email** is fast, but **viruses can spread through email attachments**, so the statement 'viruses cannot be spread via email' is false.",
+      "**Distance learning (e-learning)** is education where the tutor and the learner are geographically apart.",
+      "**Benefits of the Internet:** easy access to information, and online marketing and e-commerce opportunities for businesses."
+     ],
+     "keyPoints": [
+      "HTTP web, FTP files, SMTP email.",
+      "URLs contain symbols.",
+      "Viruses can spread by email.",
+      "Word processing is not an Internet service."
+     ],
+     "example": {
+      "problem": "Which protocol would you use to download a file from a server?",
+      "steps": [
+       "Transferring files is the job of FTP."
+      ],
+      "answer": "FTP"
+     },
+     "exercises": [
+      {
+       "prompt": "Which protocol is used to send emails?",
+       "options": [
+        "SMTP",
+        "HTTP",
+        "FTP",
+        "Telnet"
+       ],
+       "correctIndex": 0,
+       "explanation": "SMTP."
+      },
+      {
+       "prompt": "Which protocol transfers web pages?",
+       "options": [
+        "HTTP",
+        "FTP",
+        "SMTP",
+        "POP"
+       ],
+       "correctIndex": 0,
+       "explanation": "HTTP."
+      },
+      {
+       "prompt": "Which allows files to be transferred between computers?",
+       "options": [
+        "FTP",
+        "HTTP",
+        "URL",
+        "ISP"
+       ],
+       "correctIndex": 0,
+       "explanation": "FTP."
+      },
+      {
+       "prompt": "Which is NOT a service provided by the Internet?",
+       "options": [
+        "Email",
+        "Word processing",
+        "File transfer",
+        "Web browsing"
+       ],
+       "correctIndex": 1,
+       "explanation": "Word processing is local application software."
+      },
+      {
+       "prompt": "Which statement about email is NOT true?",
+       "options": [
+        "It is fast",
+        "Viruses cannot be spread via email",
+        "Attachments can carry viruses",
+        "It uses SMTP"
+       ],
+       "correctIndex": 1,
+       "explanation": "Viruses can spread through email."
+      },
+      {
+       "prompt": "Education with tutor and learner far apart is:",
+       "options": [
+        "Distance learning",
+        "Classroom learning",
+        "Edutainment",
+        "Simulation"
+       ],
+       "correctIndex": 0,
+       "explanation": "Distance learning."
+      },
+      {
+       "prompt": "Which is NOT true?",
+       "options": [
+        "A URL is a web address",
+        "A URL consists of letters and numbers only",
+        "A URL names a protocol",
+        "A URL can contain a path"
+       ],
+       "correctIndex": 1,
+       "explanation": "URLs contain symbols too."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "applications-and-ethics",
+   "intro": "This topic shows where computers are used, from healthcare to manufacturing, and covers computer ethics, intellectual property and plagiarism.",
+   "sections": [
+    {
+     "id": "uses",
+     "title": "Computer applications in different fields",
+     "body": [
+      "Computers are used in almost every field.",
+      "**Healthcare:** diagnosing diseases and keeping patient records. **Education:** online learning and virtual classrooms; ICT makes teaching and learning more effective. **Law:** legal research and managing case files. **Transportation:** **GPS** (global positioning system) for navigation.",
+      "**Manufacturing:** **CAD** (computer-aided design) helps design products; **CAM** (computer-aided manufacturing) controls machines, such as robots assembling cars.",
+      "**Simulation** uses software and hardware to create an artificial model of a real situation, for training or testing. **Virtual reality (VR)** gives a 3D experience; architects use it to show clients a 3D preview of a building and landscape.",
+      "**Command and control systems** (such as air-traffic control or defence) must be designed as **fault-tolerant systems**, which keep working even if a part fails.",
+      "A **barcode** is a product identification code made of vertical lines and spaces, read by a scanner. **Edutainment** simplifies learning through songs and animations."
+     ],
+     "keyPoints": [
+      "CAD designs; CAM manufactures.",
+      "VR 3D preview; simulation models reality.",
+      "Command and control = fault-tolerant.",
+      "Barcode = vertical lines and spaces."
+     ],
+     "example": {
+      "problem": "A factory uses robots to weld cars. Is that CAD or CAM?",
+      "steps": [
+       "The robots make the product.",
+       "That is manufacturing, so CAM."
+      ],
+      "answer": "CAM"
+     },
+     "exercises": [
+      {
+       "prompt": "Computers used for diagnosing diseases and keeping patient records are used in:",
+       "options": [
+        "Healthcare",
+        "Law",
+        "Banking",
+        "Sport"
+       ],
+       "correctIndex": 0,
+       "explanation": "Healthcare."
+      },
+      {
+       "prompt": "GPS is a computer application in:",
+       "options": [
+        "Transportation",
+        "Cooking",
+        "Farming only",
+        "Printing"
+       ],
+       "correctIndex": 0,
+       "explanation": "Transportation and navigation."
+      },
+      {
+       "prompt": "Robots building cars are an example of:",
+       "options": [
+        "CAM",
+        "CAD",
+        "VR",
+        "GPS"
+       ],
+       "correctIndex": 0,
+       "explanation": "Computer-aided manufacturing."
+      },
+      {
+       "prompt": "Architects use ________ to show clients a 3D preview of a building.",
+       "options": [
+        "Virtual reality",
+        "Barcode",
+        "Email",
+        "Spreadsheet"
+       ],
+       "correctIndex": 0,
+       "explanation": "Virtual reality."
+      },
+      {
+       "prompt": "Which system must be fault-tolerant?",
+       "options": [
+        "Command and control",
+        "Word processing",
+        "A game",
+        "A calculator"
+       ],
+       "correctIndex": 0,
+       "explanation": "Command and control."
+      },
+      {
+       "prompt": "A product code of vertical lines and spaces is a:",
+       "options": [
+        "Barcode",
+        "Pixel",
+        "URL",
+        "Icon"
+       ],
+       "correctIndex": 0,
+       "explanation": "Barcode."
+      },
+      {
+       "prompt": "Learning through songs and animations is called:",
+       "options": [
+        "Edutainment",
+        "Simulation",
+        "Caching",
+        "Booting"
+       ],
+       "correctIndex": 0,
+       "explanation": "Edutainment."
+      },
+      {
+       "prompt": "Legal research and case-file management benefit which vocation?",
+       "options": [
+        "Law",
+        "Mining",
+        "Farming",
+        "Fishing"
+       ],
+       "correctIndex": 0,
+       "explanation": "Law."
+      }
+     ]
+    },
+    {
+     "id": "ethics",
+     "title": "Ethics, intellectual property and plagiarism",
+     "body": [
+      "**Ethics** is the set of principles and moral standards for using computers. **Ethical standards** promote trust, good behaviour and fairness, and govern conduct.",
+      "The **Ten Commandments of Computer Ethics** were created by the **Computer Ethics Institute.**",
+      "**Intellectual property rights** are entitlements of persons for the creativity of their minds. Legal protection of an invention takes these forms: **patents, trade secrets, trademarks and copyrights.** 'Trade Rights' is not one of them.",
+      "Owning a **patent** means others must seek and receive the owner's permission to use the technology.",
+      "**Plagiarism** is copying and publishing someone else's work without proper citation. **Open source software** has few or no copyright restrictions: users can see and change its code.",
+      "**Social effects** of computers can be a double-edged sword: online social networks connect people but can also foster misinformation, a problem of information veracity and control."
+     ],
+     "keyPoints": [
+      "Forms of protection: patent, trade secret, trademark, copyright.",
+      "Plagiarism = no citation.",
+      "Ten Commandments: Computer Ethics Institute."
+     ],
+     "example": {
+      "problem": "A student copies a paragraph into an essay without citing it. What is this?",
+      "steps": [
+       "Using another's work as your own, without credit.",
+       "That is plagiarism."
+      ],
+      "answer": "Plagiarism"
+     },
+     "exercises": [
+      {
+       "prompt": "The principles and moral standards for using computers are called:",
+       "options": [
+        "Ethics",
+        "Hardware",
+        "Protocol",
+        "Bandwidth"
+       ],
+       "correctIndex": 0,
+       "explanation": "Ethics."
+      },
+      {
+       "prompt": "The Ten Commandments of Computer Ethics were created by the:",
+       "options": [
+        "Computer Ethics Institute",
+        "ARPANET",
+        "IEEE only",
+        "Microsoft"
+       ],
+       "correctIndex": 0,
+       "explanation": "Computer Ethics Institute."
+      },
+      {
+       "prompt": "Legal protection of an invention can be in all these forms EXCEPT:",
+       "options": [
+        "Patents",
+        "Copyrights",
+        "Trade Rights",
+        "Trademarks"
+       ],
+       "correctIndex": 2,
+       "explanation": "Trade rights is not a form."
+      },
+      {
+       "prompt": "Owning the ________ to a technology means permission must be sought from the owner.",
+       "options": [
+        "Patent",
+        "Bandwidth",
+        "Cache",
+        "Domain"
+       ],
+       "correctIndex": 0,
+       "explanation": "Patent."
+      },
+      {
+       "prompt": "Copying and publishing another's work without citation is:",
+       "options": [
+        "Plagiarism",
+        "Caching",
+        "Simulation",
+        "Piracy only"
+       ],
+       "correctIndex": 0,
+       "explanation": "Plagiarism."
+      },
+      {
+       "prompt": "Open source software has few or no:",
+       "options": [
+        "Copyright restrictions",
+        "Programs",
+        "Users",
+        "Files"
+       ],
+       "correctIndex": 0,
+       "explanation": "Few or no copyright restrictions."
+      },
+      {
+       "prompt": "Entitlements of persons for the creativity of their minds are:",
+       "options": [
+        "Intellectual property rights",
+        "Ethical standards",
+        "Patents only",
+        "Domain rights"
+       ],
+       "correctIndex": 0,
+       "explanation": "Intellectual property rights."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "program-development-and-errors",
+   "intro": "This topic covers the stages of program development, algorithms, flowcharts and pseudocode, the three control structures, and the three types of programming error.",
+   "sections": [
+    {
+     "id": "cycle",
+     "title": "The program development cycle and algorithms",
+     "body": [
+      "**Analysis, design, coding and execution** are stages of the **program development cycle.** The usual stages: problem definition and analysis, design (algorithm, flowchart, pseudocode), coding, testing and debugging, documentation and maintenance.",
+      "**Problem definition and analysis** is critical, because an incomplete understanding here produces a program that correctly solves the wrong problem.",
+      "An **algorithm** is a step-by-step solution to a problem. To develop one, you understand the problem, plan the steps and check them. **Coding the plan** is a later stage, so it is not a step in developing the algorithm itself.",
+      "A good program has qualities such as correctness, efficiency and **maintainability**, which makes it easy for others to understand and modify."
+     ],
+     "keyPoints": [
+      "Cycle: analyse, design, code, test, document.",
+      "Poor analysis gives a program solving the wrong problem.",
+      "Maintainability = easy to modify."
+     ],
+     "example": {
+      "problem": "Why spend time on analysis before coding?",
+      "steps": [
+       "Mistakes in understanding carry through every later stage.",
+       "The result may work but solve the wrong problem."
+      ],
+      "answer": "To avoid solving the wrong problem"
+     },
+     "exercises": [
+      {
+       "prompt": "Analysis, design, coding and execution are stages of the:",
+       "options": [
+        "Program development cycle",
+        "Machine cycle",
+        "Boot process",
+        "Network layer"
+       ],
+       "correctIndex": 0,
+       "explanation": "Program development cycle."
+      },
+      {
+       "prompt": "An incomplete problem analysis may give:",
+       "options": [
+        "A program that solves the wrong problem",
+        "A faster CPU",
+        "A bigger screen",
+        "A virus"
+       ],
+       "correctIndex": 0,
+       "explanation": "It solves the wrong problem."
+      },
+      {
+       "prompt": "In developing an algorithm, which is NOT a step?",
+       "options": [
+        "Understand the problem",
+        "Plan the steps",
+        "Code the plan",
+        "Check the steps"
+       ],
+       "correctIndex": 2,
+       "explanation": "Coding comes after the algorithm."
+      },
+      {
+       "prompt": "The quality that makes a program easy to understand and modify is:",
+       "options": [
+        "Maintainability",
+        "Portability only",
+        "Speed",
+        "Size"
+       ],
+       "correctIndex": 0,
+       "explanation": "Maintainability."
+      }
+     ]
+    },
+    {
+     "id": "flow",
+     "title": "Flowcharts, pseudocode and control structures",
+     "body": [
+      "A **flowchart** is a diagram of the steps of a solution, with symbols joined by arrows. Advantages: it gives a **visual representation** of the logic, which aids understanding. Limitation: for complex systems it can become **cumbersome and difficult** to draw and change. A flowchart is **not** ambiguous; it must be clear.",
+      "**Guideline:** each processing symbol should have **only one entry point and exactly one exit point.**",
+      "**Pseudocode** is the algorithm written in plain, code-like English. Its correct order is: **header, declaration, body, termination.**",
+      "**Control structures** decide the order of execution. **Sequence** runs steps in order. **Selection** chooses a path: IF-THEN-ELSE, and the CASE (switch-case) statement, which is a specialised selection. **Repetition (iteration)** repeats steps: WHILE and FOR loops.",
+      "Example of repetition: summing 1 to 5 with a loop. total = 0; for i in 1..5: total = total + i. Result 15."
+     ],
+     "keyPoints": [
+      "Flowchart: visual, one entry/one exit per process symbol, can be cumbersome when large.",
+      "Pseudocode order: header, declaration, body, termination.",
+      "Sequence, selection (IF, CASE), repetition (WHILE, FOR)."
+     ],
+     "example": {
+      "problem": "Trace: total = 0; for i = 1 to 5: total = total + i. Find total.",
+      "steps": [
+       "Add 1+2+3+4+5.",
+       "1+2=3, +3=6, +4=10, +5=15."
+      ],
+      "answer": "15"
+     },
+     "exercises": [
+      {
+       "prompt": "A main advantage of flowcharts is that they:",
+       "options": [
+        "Show logic visually",
+        "Run faster",
+        "Replace code",
+        "Store data"
+       ],
+       "correctIndex": 0,
+       "explanation": "Visual representation."
+      },
+      {
+       "prompt": "A limitation of flowcharts for complex systems is that they:",
+       "options": [
+        "Become cumbersome",
+        "Never change",
+        "Are too short",
+        "Use no symbols"
+       ],
+       "correctIndex": 0,
+       "explanation": "They become cumbersome."
+      },
+      {
+       "prompt": "Which is NOT true of a flowchart?",
+       "options": [
+        "It is a diagram",
+        "It allows a form of ambiguity",
+        "It uses arrows",
+        "It shows the logic"
+       ],
+       "correctIndex": 1,
+       "explanation": "Flowcharts should not be ambiguous."
+      },
+      {
+       "prompt": "Processing symbols should have:",
+       "options": [
+        "Only one entry and exactly one exit",
+        "Two exits",
+        "No exit",
+        "Many entries"
+       ],
+       "correctIndex": 0,
+       "explanation": "One entry, one exit."
+      },
+      {
+       "prompt": "Correct order of pseudocode sections:",
+       "options": [
+        "Header, declaration, body, termination",
+        "Body, header, termination, declaration",
+        "Declaration, header, body, termination",
+        "Termination, body, header, declaration"
+       ],
+       "correctIndex": 0,
+       "explanation": "Header, declaration, body, termination."
+      },
+      {
+       "prompt": "IF-THEN-ELSE is a ________ control structure.",
+       "options": [
+        "Selection",
+        "Repetition",
+        "Sequence only",
+        "Input"
+       ],
+       "correctIndex": 0,
+       "explanation": "Selection."
+      },
+      {
+       "prompt": "WHILE loop is a ________ control structure.",
+       "options": [
+        "Repetition",
+        "Selection",
+        "Sequence",
+        "Output"
+       ],
+       "correctIndex": 0,
+       "explanation": "Repetition."
+      },
+      {
+       "prompt": "A switch-case statement is a specialised form of:",
+       "options": [
+        "Selection",
+        "Repetition",
+        "Sequence",
+        "Compilation"
+       ],
+       "correctIndex": 0,
+       "explanation": "Selection."
+      }
+     ]
+    },
+    {
+     "id": "errors",
+     "title": "Types of programming errors",
+     "body": [
+      "There are three types of errors.",
+      "**Syntax error:** a rule of the language is broken, for example a **missing semicolon or curly bracket**, or using a **keyword or reserved word as a variable name.** The compiler detects it, so it is found during compilation. **Data mismatch** is not a syntax error.",
+      "**Runtime error:** the program is correct to the compiler, but it fails when it runs because it attempts an operation that is syntactically valid but impossible. Example: finding the square root of a negative number in real arithmetic, or dividing by zero.",
+      "**Logical error:** the program runs and gives an **incorrect result** because the logic is wrong. Example: entering a wrong salary scale in payroll. Logical errors are the **most difficult to detect**, because no error message appears.",
+      "So 'missing curly brackets and semicolons are runtime errors' is false: they are syntax errors."
+     ],
+     "keyPoints": [
+      "Syntax: grammar rules; found at compilation.",
+      "Runtime: fails while running (sqrt of negative).",
+      "Logical: wrong results, hardest to detect."
+     ],
+     "example": {
+      "problem": "Classify: (a) missing semicolon, (b) square root of -4, (c) wrong tax rate.",
+      "steps": [
+       "(a) breaks a grammar rule: syntax.",
+       "(b) impossible when running: runtime.",
+       "(c) runs but wrong result: logical."
+      ],
+      "answer": "(a) syntax, (b) runtime, (c) logical"
+     },
+     "exercises": [
+      {
+       "prompt": "Which error is detected during compilation?",
+       "options": [
+        "Syntax",
+        "Runtime",
+        "Logical",
+        "Data"
+       ],
+       "correctIndex": 0,
+       "explanation": "Syntax errors."
+      },
+      {
+       "prompt": "Using a reserved word as a variable name is a ________ error.",
+       "options": [
+        "Syntax",
+        "Runtime",
+        "Logical",
+        "Hardware"
+       ],
+       "correctIndex": 0,
+       "explanation": "Syntax."
+      },
+      {
+       "prompt": "A wrong salary scale in payroll is a:",
+       "options": [
+        "Logical error",
+        "Syntax error",
+        "Runtime error",
+        "Compile error"
+       ],
+       "correctIndex": 0,
+       "explanation": "Logical error."
+      },
+      {
+       "prompt": "Finding the square root of a negative number (real arithmetic) is a:",
+       "options": [
+        "Runtime error",
+        "Syntax error",
+        "Logical error",
+        "Spelling error"
+       ],
+       "correctIndex": 0,
+       "explanation": "Runtime error."
+      },
+      {
+       "prompt": "Which is the most difficult error to detect?",
+       "options": [
+        "Logical",
+        "Syntax",
+        "Compile-time",
+        "Keyword"
+       ],
+       "correctIndex": 0,
+       "explanation": "Logical."
+      },
+      {
+       "prompt": "Which is NOT true?",
+       "options": [
+        "Missing semicolons are syntax errors",
+        "Missing curly brackets and semicolons are runtime errors",
+        "Logical errors give wrong results",
+        "Syntax errors are caught by the compiler"
+       ],
+       "correctIndex": 1,
+       "explanation": "They are syntax errors."
+      },
+      {
+       "prompt": "Which is NOT an example of a syntax error?",
+       "options": [
+        "Missing semicolon",
+        "Keyword as a variable name",
+        "Data mismatch",
+        "Missing bracket"
+       ],
+       "correctIndex": 2,
+       "explanation": "Data mismatch is not a syntax error."
+      },
+      {
+       "prompt": "A runtime error appears when:",
+       "options": [
+        "The program runs",
+        "The program is typed",
+        "The file is saved",
+        "The PC is off"
+       ],
+       "correctIndex": 0,
+       "explanation": "It shows as the program runs."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1433 @@
+{
+ "courseCode": "CHM107",
+ "topics": [
+  {
+   "id": "molarity-solution-preparation",
+   "intro": "This topic is about how strong a solution is and how to make one. You will use molarity, prepare solutions from a solid, dilute stock solutions, convert from percentages and density, and learn what a primary standard is.",
+   "sections": [
+    {
+     "id": "molarity",
+     "title": "Molarity: how much solute is in a litre",
+     "body": [
+      "A **solution** is a solute (the thing that dissolves) mixed into a solvent (usually water). To say how strong a solution is, we give its **concentration.** The most common way in chemistry is **molarity (M)**: the number of **moles** of solute in **one litre** of solution.",
+      "**Molarity = moles ÷ volume in litres.** Written with symbols: **M = n/V.** One litre is the same as one **dm³** and 1000 cm³ (or 1000 mL). So 'mol/L' and 'mol/dm³' mean exactly the same thing.",
+      "To get moles from grams, use the **molar mass:** **n = mass ÷ molar mass.** NaOH has molar mass 23 + 16 + 1 = 40 g/mol. Na₂CO₃ has molar mass 2(23) + 12 + 3(16) = 106 g/mol.",
+      "**Worked example.** What is the concentration of a solution with 16 g of NaOH in 200 cm³? Moles = 16 ÷ 40 = 0.40 mol. Volume = 200 cm³ = 0.200 dm³ (divide cm³ by 1000). Concentration = 0.40 ÷ 0.200 = **2.0 mol/dm³.**",
+      "**Another.** 0.4 g of NaOH in 250 mL: moles = 0.4 ÷ 40 = 0.010 mol. Volume = 0.250 L. Concentration = 0.010 ÷ 0.250 = **0.04 mol/L.** And 10.6 g of Na₂CO₃ in 1 litre: moles = 10.6 ÷ 106 = 0.10 mol, so the concentration is **0.1 mol/L.**",
+      "**The most common slip** is forgetting to change cm³ or mL into litres. Always convert first, then divide."
+     ],
+     "keyPoints": [
+      "Molarity M = moles ÷ litres.",
+      "Moles = mass ÷ molar mass.",
+      "Change cm³ or mL to litres by dividing by 1000."
+     ],
+     "example": {
+      "problem": "Find the molarity of 4.0 g of NaOH dissolved to make 500 cm³ of solution.",
+      "steps": [
+       "Moles = 4.0 ÷ 40 = 0.10 mol.",
+       "Volume = 500 cm³ = 0.500 dm³.",
+       "Molarity = 0.10 ÷ 0.500 = 0.20 mol/dm³."
+      ],
+      "answer": "0.20 mol/dm³"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the concentration of a solution containing 16 g of NaOH in 200 cm³ of solution? [Na = 23, O = 16, H = 1]",
+       "options": [
+        "2.5 mol/dm³",
+        "2.0 mol/dm³",
+        "0.2 mol/dm³",
+        "1.0 mol/dm³"
+       ],
+       "correctIndex": 1,
+       "explanation": "Moles = 16/40 = 0.40. Volume = 0.200 dm³. 0.40/0.200 = 2.0."
+      },
+      {
+       "prompt": "What is the molarity when 0.4 g of NaOH is dissolved in 250 mL of water? [Na = 23, O = 16, H = 1]",
+       "options": [
+        "0.4",
+        "0.04",
+        "0.02",
+        "0.004"
+       ],
+       "correctIndex": 1,
+       "explanation": "0.4/40 = 0.010 mol, and 0.010/0.250 = 0.04 mol/L."
+      },
+      {
+       "prompt": "What is the concentration of a solution made by dissolving 10.6 g of Na₂CO₃ in 1 litre? [Na = 23, C = 12, O = 16]",
+       "options": [
+        "0.01 mol/L",
+        "0.001 mol/L",
+        "0.1 mol/L",
+        "0.2 mol/L"
+       ],
+       "correctIndex": 2,
+       "explanation": "M(Na₂CO₃) = 106, so 10.6/106 = 0.10 mol in 1 L."
+      },
+      {
+       "prompt": "What is the concentration of 5.85 g of NaCl in 500 mL of solution? [Na = 23, Cl = 35.5]",
+       "options": [
+        "0.1 mol/L",
+        "0.2 mol/L",
+        "0.5 mol/L",
+        "2.0 mol/L"
+       ],
+       "correctIndex": 1,
+       "explanation": "5.85/58.5 = 0.10 mol. 0.10/0.500 = 0.2 mol/L."
+      },
+      {
+       "prompt": "1 mol/L is the same as:",
+       "options": [
+        "1 mol/dm³",
+        "1 mol/cm³",
+        "1 g/L",
+        "1000 mol/dm³"
+       ],
+       "correctIndex": 0,
+       "explanation": "One litre equals one dm³."
+      }
+     ]
+    },
+    {
+     "id": "prepare",
+     "title": "Preparing a solution of a known strength",
+     "body": [
+      "In the lab you often need to **make** a solution of a certain molarity. You work backwards from the molarity formula: **moles needed = M × V** (V in litres). Then **mass to weigh = moles × molar mass.**",
+      "**Example 1.** How many grams of KCl make 1.0 L of 0.02 M solution? Moles = 0.02 × 1.0 = 0.02 mol. M(KCl) = 39 + 35.5 = 74.5 g/mol. Mass = 0.02 × 74.5 = **1.49 g.**",
+      "**Example 2.** Sodium dichromate, Na₂Cr₂O₇, 100.00 mL of 0.025 M. M = 2(23) + 2(52) + 7(16) = 262 g/mol. Moles = 0.025 × 0.1000 = 0.0025 mol. Mass = 0.0025 × 262 = 0.655 g, which is about **0.66 g.**",
+      "**Example 3.** 250 mL of 0.05 M Na₂CO₃ (anhydrous). Moles = 0.05 × 0.250 = 0.0125 mol. Mass = 0.0125 × 106 = **1.325 g.**",
+      "**The method in the lab (volumetric flask).** (1) Weigh the exact mass on a balance. (2) Dissolve it in a beaker with a little distilled water. (3) Pour into the volumetric flask and rinse the beaker into it. (4) Add water until the bottom of the meniscus touches the mark. (5) Stopper and invert to mix. The solution is made up to the mark so that the **final volume** is exactly what you want, not the amount of water you added."
+     ],
+     "keyPoints": [
+      "Mass to weigh = M × V (litres) × molar mass.",
+      "Dissolve first, then make up to the mark.",
+      "Use the anhydrous formula mass unless told the solid has water."
+     ],
+     "example": {
+      "problem": "How many grams of NaCl are needed for 250 mL of 0.10 M solution? [Na = 23, Cl = 35.5]",
+      "steps": [
+       "Moles = 0.10 × 0.250 = 0.025 mol.",
+       "Molar mass = 58.5 g/mol.",
+       "Mass = 0.025 × 58.5 = 1.4625 g."
+      ],
+      "answer": "About 1.46 g"
+     },
+     "exercises": [
+      {
+       "prompt": "How many grams of KCl are needed to prepare 1.0 L of a 0.02 M solution? [K = 39, Cl = 35.5]",
+       "options": [
+        "1.49 g",
+        "2.98 g",
+        "1.59 g",
+        "0.35 g"
+       ],
+       "correctIndex": 0,
+       "explanation": "0.02 × 74.5 = 1.49 g."
+      },
+      {
+       "prompt": "What mass of anhydrous Na₂CO₃ is needed to make 250 mL of a 0.05 M solution? [Na = 23, C = 12, O = 16]",
+       "options": [
+        "0.6625 g",
+        "2.65 g",
+        "13.35 g",
+        "1.325 g"
+       ],
+       "correctIndex": 3,
+       "explanation": "0.05 × 0.250 = 0.0125 mol, and 0.0125 × 106 = 1.325 g."
+      },
+      {
+       "prompt": "How many grams of Na₂Cr₂O₇ (262 g/mol) go into 100.00 mL of a 0.025 M solution?",
+       "options": [
+        "0.33 g",
+        "0.55 g",
+        "0.66 g",
+        "0.88 g"
+       ],
+       "correctIndex": 2,
+       "explanation": "0.025 × 0.1 = 0.0025 mol, and 0.0025 × 262 = 0.655 g, about 0.66 g."
+      },
+      {
+       "prompt": "What mass of NaOH is needed for 500 mL of 0.1 M solution? [Na = 23, O = 16, H = 1]",
+       "options": [
+        "2.0 g",
+        "4.0 g",
+        "0.2 g",
+        "20 g"
+       ],
+       "correctIndex": 0,
+       "explanation": "0.1 × 0.5 = 0.05 mol, and 0.05 × 40 = 2.0 g."
+      },
+      {
+       "prompt": "When making up a solution in a volumetric flask, you fill with water until:",
+       "options": [
+        "The flask is full to the top",
+        "The bottom of the meniscus touches the mark",
+        "You have added 1 litre of water",
+        "The solid disappears"
+       ],
+       "correctIndex": 1,
+       "explanation": "The final volume must equal the marked volume."
+      }
+     ]
+    },
+    {
+     "id": "dilution",
+     "title": "Diluting a stock solution",
+     "body": [
+      "Often a lab keeps a **concentrated stock solution** and makes weaker ones from it by adding water. When you add water, the **amount of solute does not change**, only the volume. So moles before = moles after: **C₁V₁ = C₂V₂** (C is concentration, V is volume, 1 is the stock, 2 is the final solution).",
+      "**Example 1.** How many mL of 15.8 M nitric acid make 1.00 L of 0.12 M HNO₃? V₁ = C₂V₂/C₁ = (0.12 × 1000 mL)/15.8 = **7.60 mL.** (Keep V₂ in mL, and you get V₁ in mL.)",
+      "**Example 2.** 20 mL of 0.5 M solution is diluted to 100 mL. New concentration = (0.5 × 20)/100 = **0.1 M.**",
+      "**Example 3 (two steps).** A stock was made by dissolving 89.3 g of K₂Cr₂O₇ in 1.10 L of solution. How many mL of stock are needed for 1.00 L of 0.100 M? First the stock concentration. M(K₂Cr₂O₇) = 2(39.1) + 2(52.0) + 7(16.0) = 294.2 g/mol. Moles = 89.3 ÷ 294.2 = 0.3035 mol. Stock = 0.3035 ÷ 1.10 = 0.276 M. Then V₁ = (0.100 × 1000)/0.276 = **362 mL.** If none of the options listed shows about 362 mL, the right choice is 'None of the above'.",
+      "**Safety rule for acids:** when diluting a concentrated acid, always add the **acid to the water,** slowly, never water to acid. The mixing releases heat."
+     ],
+     "keyPoints": [
+      "C₁V₁ = C₂V₂ (moles of solute stay the same).",
+      "Keep both volumes in the same unit.",
+      "Acid to water, never water to acid."
+     ],
+     "example": {
+      "problem": "What volume of 6.0 M HCl is needed to make 300 mL of 1.0 M HCl?",
+      "steps": [
+       "C₁V₁ = C₂V₂, so V₁ = (1.0 × 300)/6.0.",
+       "V₁ = 50 mL."
+      ],
+      "answer": "50 mL"
+     },
+     "exercises": [
+      {
+       "prompt": "How many mL of 15.8 M HNO₃ are needed to make 1.00 L of 0.12 M HNO₃?",
+       "options": [
+        "0.76 mL",
+        "7.60 mL",
+        "25.20 mL",
+        "76.00 mL"
+       ],
+       "correctIndex": 1,
+       "explanation": "V₁ = 0.12 × 1000/15.8 = 7.60 mL."
+      },
+      {
+       "prompt": "A stock solution has 89.3 g of K₂Cr₂O₇ (294.2 g/mol) in 1.10 L. How many mL are needed to make 1.00 L of 0.100 M K₂Cr₂O₇?",
+       "options": [
+        "110 mL",
+        "165 mL",
+        "274 mL",
+        "494 mL",
+        "None of the above"
+       ],
+       "correctIndex": 4,
+       "explanation": "Stock = 0.276 M. V₁ = 100/0.276 = 362 mL, which is not listed."
+      },
+      {
+       "prompt": "20 mL of 0.5 M solution is diluted to 100 mL. What is the new concentration?",
+       "options": [
+        "0.1 M",
+        "0.5 M",
+        "2.5 M",
+        "0.05 M"
+       ],
+       "correctIndex": 0,
+       "explanation": "C₂ = 0.5 × 20/100 = 0.1 M."
+      },
+      {
+       "prompt": "What volume of 2.0 M stock is needed to make 100 mL of 0.5 M solution?",
+       "options": [
+        "12.5 mL",
+        "25 mL",
+        "50 mL",
+        "400 mL"
+       ],
+       "correctIndex": 1,
+       "explanation": "V₁ = 0.5 × 100/2.0 = 25 mL."
+      },
+      {
+       "prompt": "When diluting a concentrated acid you should:",
+       "options": [
+        "Add water to the acid quickly",
+        "Add the acid slowly to water",
+        "Heat the acid first",
+        "Mix them in a closed bottle"
+       ],
+       "correctIndex": 1,
+       "explanation": "Add acid to water slowly, because mixing gives out heat."
+      }
+     ]
+    },
+    {
+     "id": "percent",
+     "title": "Concentration from percentages and density",
+     "body": [
+      "A bottle of concentrated acid is labelled with a **percentage by mass** and a **density**, not a molarity. You can convert these into molarity by taking **1 litre (1000 mL)** of the acid and working out the moles.",
+      "**Concentrated HCl, 37.7% by mass, density 1.195 g/mL.** Mass of 1000 mL = 1.195 × 1000 = 1195 g. Mass of HCl in it = 0.377 × 1195 = 450.5 g. Moles = 450.5 ÷ 36.5 = 12.3 mol. So the molarity is **12.3 M.** (M(HCl) = 1.0 + 35.5 = 36.5.)",
+      "**Mass percent** = (mass of solute ÷ total mass of solution) × 100. If 1.00 g of ethanol is mixed with 100.0 g of water, the total mass is 101.0 g. Mass percent = 1.00 ÷ 101.0 × 100 = **0.99%.** Notice that the total mass includes the solute, not just the water.",
+      "**Another.** 10 g of salt in 90 g of water gives a total of 100 g, so the mass percent is 10 ÷ 100 × 100 = **10%.**",
+      "Concentrated sulfuric acid works the same way: 98% by mass, density 1.84 g/mL. In 1 L: mass 1840 g, H₂SO₄ = 0.98 × 1840 = 1803 g, moles = 1803 ÷ 98 = 18.4. So it is about **18.4 M.**"
+     ],
+     "keyPoints": [
+      "Take 1000 mL: mass = density × 1000; solute mass = % × mass; moles = solute mass ÷ molar mass.",
+      "Mass percent = solute mass ÷ total mass × 100."
+     ],
+     "example": {
+      "problem": "A bottle says 36% HCl by mass, density 1.18 g/mL. Find the molarity. [M(HCl) = 36.5]",
+      "steps": [
+       "1000 mL has mass 1.18 × 1000 = 1180 g.",
+       "HCl mass = 0.36 × 1180 = 424.8 g.",
+       "Moles = 424.8 ÷ 36.5 = 11.6 mol, so 11.6 M."
+      ],
+      "answer": "11.6 M"
+     },
+     "exercises": [
+      {
+       "prompt": "Calculate the molarity of concentrated HCl that is 37.7% HCl by mass with density 1.195 g/mL. [H = 1.0, Cl = 35.5]",
+       "options": [
+        "11.8 M",
+        "12.3 M",
+        "13.3 M",
+        "15.2 M"
+       ],
+       "correctIndex": 1,
+       "explanation": "1195 g × 0.377 = 450.5 g. 450.5/36.5 = 12.3 mol per litre."
+      },
+      {
+       "prompt": "1.00 g of ethanol is mixed with 100.0 g of water. What is the mass percent of ethanol?",
+       "options": [
+        "1.01%",
+        "0.99%",
+        "0.97%",
+        "1.15%"
+       ],
+       "correctIndex": 1,
+       "explanation": "1.00/101.0 × 100 = 0.99%."
+      },
+      {
+       "prompt": "10 g of salt is dissolved in 90 g of water. What is the mass percent of salt?",
+       "options": [
+        "9%",
+        "10%",
+        "11.1%",
+        "90%"
+       ],
+       "correctIndex": 1,
+       "explanation": "10/(10 + 90) × 100 = 10%."
+      },
+      {
+       "prompt": "Concentrated H₂SO₄ is 98% by mass with density 1.84 g/mL. Its molarity is about: [H = 1, S = 32, O = 16]",
+       "options": [
+        "9.2 M",
+        "18.4 M",
+        "1.84 M",
+        "98 M"
+       ],
+       "correctIndex": 1,
+       "explanation": "1 L has 1840 g, so H₂SO₄ = 1803 g = 18.4 mol."
+      },
+      {
+       "prompt": "In a mass percent calculation, the denominator is:",
+       "options": [
+        "The mass of the solvent only",
+        "The mass of the solute only",
+        "The total mass of the solution",
+        "The volume of the solution"
+       ],
+       "correctIndex": 2,
+       "explanation": "Divide by solute plus solvent."
+      }
+     ]
+    },
+    {
+     "id": "standards",
+     "title": "Primary standards and standard solutions",
+     "body": [
+      "A **standard solution** is a solution whose concentration is **accurately known.** You can make one by weighing a pure solid very carefully and dissolving it, or by checking (standardising) a solution against a primary standard.",
+      "A **primary standard** is a solid used to make a standard solution directly. It must be: **very pure; of definite composition (a known formula); stable at room temperature; not hygroscopic** (it must not absorb water from the air); and ideally have a **high molar mass** so that weighing errors matter less.",
+      "**Good primary standards:** anhydrous Na₂CO₃, K₂Cr₂O₇, NaCl, potassium hydrogen phthalate (KHP).",
+      "**NaOH is NOT a primary standard.** The solid is **hygroscopic:** it takes in water (and CO₂) from the air, so its true mass is never certain. So we cannot make a standard NaOH solution just by weighing it. Instead we make an approximate solution and **standardise** it by titrating against a primary standard acid or carbonate.",
+      "**Words to know.** **Hygroscopic:** absorbs water from the air. **Deliquescent:** absorbs so much water that it dissolves. **Efflorescent:** loses water of crystallisation and becomes powdery. **Effervescent:** gives off bubbles of gas. **Desiccant:** a drying agent.",
+      "So being hygroscopic is the **opposite** of what a primary standard needs."
+     ],
+     "keyPoints": [
+      "Primary standard: pure, definite formula, stable, not hygroscopic.",
+      "NaOH is hygroscopic, so it must be standardised.",
+      "Standard solution = accurately known concentration."
+     ],
+     "example": {
+      "problem": "Why is anhydrous Na₂CO₃ a good primary standard but NaOH is not?",
+      "steps": [
+       "Na₂CO₃ is pure, stable and does not absorb much water.",
+       "NaOH absorbs water and CO₂ from air, so its mass is uncertain."
+      ],
+      "answer": "Na₂CO₃ is stable; NaOH is hygroscopic"
+     },
+     "exercises": [
+      {
+       "prompt": "All of the following are suitable primary standards EXCEPT:",
+       "options": [
+        "NaOH",
+        "Na₂CO₃",
+        "K₂Cr₂O₇",
+        "NaCl"
+       ],
+       "correctIndex": 0,
+       "explanation": "NaOH absorbs water and CO₂ from the air."
+      },
+      {
+       "prompt": "A standard NaOH solution cannot be made by weighing the solid and making it up to volume because solid NaOH is:",
+       "options": [
+        "Effervescent",
+        "Hygroscopic",
+        "Efflorescent",
+        "A desiccant"
+       ],
+       "correctIndex": 1,
+       "explanation": "It absorbs water from the air."
+      },
+      {
+       "prompt": "A standard solution is:",
+       "options": [
+        "A solution made by dissolving a solute in a solvent",
+        "A solution whose concentration is accurately known",
+        "A solution used only with acids",
+        "A solution of NaOH"
+       ],
+       "correctIndex": 1,
+       "explanation": "A standard solution has an accurately known concentration."
+      },
+      {
+       "prompt": "All of the following are needed for a primary standard EXCEPT being:",
+       "options": [
+        "Highly pure",
+        "Of definite composition",
+        "Stable at room temperature",
+        "Hygroscopic"
+       ],
+       "correctIndex": 3,
+       "explanation": "Absorbing water would change the mass."
+      },
+      {
+       "prompt": "A substance that absorbs water from the air is called:",
+       "options": [
+        "Hygroscopic",
+        "Efflorescent",
+        "Effervescent",
+        "Inert"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is the meaning of hygroscopic."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "M = n/V; n = mass/molar mass; C₁V₁ = C₂V₂"
+  },
+  {
+   "id": "titration-stoichiometry",
+   "intro": "Titration is how we find an unknown concentration by reacting it with a known one. You will learn to calculate amounts from an equation, do titration calculations, pick an indicator, and avoid common lab mistakes.",
+   "sections": [
+    {
+     "id": "stoich",
+     "title": "Calculating amounts from an equation",
+     "body": [
+      "A balanced chemical equation shows the **mole ratio** in which substances react. To find how much is formed or used, follow three steps: **(1) grams → moles** (÷ molar mass); **(2) use the mole ratio** from the equation; **(3) moles → grams** (× molar mass).",
+      "**Example.** CaCO₃ → CaO + CO₂. How much CaO forms from 60 g of CaCO₃ (M = 100 g/mol; CaO = 56 g/mol)? Step 1: 60 ÷ 100 = 0.60 mol CaCO₃. Step 2: the ratio is 1:1, so 0.60 mol CaO. Step 3: 0.60 × 56 = **33.6 g.**",
+      "**Ratios other than 1:1.** In 2H₂ + O₂ → 2H₂O, 4 g of H₂ is 2 mol (M = 2). The ratio H₂ : H₂O is 2:2 = 1:1, so 2 mol of water forms, which is 2 × 18 = **36 g.**",
+      "Always check the **balanced** equation first. The numbers in front of each formula are the ratio."
+     ],
+     "keyPoints": [
+      "grams → moles → (mole ratio) → moles → grams.",
+      "Use the balanced equation's numbers as the ratio."
+     ],
+     "example": {
+      "problem": "How many grams of CO₂ form when 10 g of CaCO₃ decomposes? [CaCO₃ = 100, CO₂ = 44]",
+      "steps": [
+       "10 ÷ 100 = 0.10 mol CaCO₃.",
+       "Ratio 1:1, so 0.10 mol CO₂.",
+       "0.10 × 44 = 4.4 g."
+      ],
+      "answer": "4.4 g"
+     },
+     "exercises": [
+      {
+       "prompt": "CaCO₃(s) → CaO(s) + CO₂(g). What mass of CaO (56 g/mol) forms when 60 g of CaCO₃ (100 g/mol) decomposes completely?",
+       "options": [
+        "28 g",
+        "18.5 g",
+        "60 g",
+        "33.6 g"
+       ],
+       "correctIndex": 3,
+       "explanation": "0.60 mol CaCO₃ gives 0.60 mol CaO, and 0.60 × 56 = 33.6 g."
+      },
+      {
+       "prompt": "In CaCO₃ → CaO + CO₂, how many moles of CaO form from 0.25 mol of CaCO₃?",
+       "options": [
+        "0.125",
+        "0.25",
+        "0.50",
+        "1.0"
+       ],
+       "correctIndex": 1,
+       "explanation": "The ratio is 1:1."
+      },
+      {
+       "prompt": "2H₂ + O₂ → 2H₂O. What mass of water forms from 4 g of H₂? [H = 1, O = 16]",
+       "options": [
+        "18 g",
+        "36 g",
+        "72 g",
+        "4 g"
+       ],
+       "correctIndex": 1,
+       "explanation": "4 g = 2 mol H₂, which gives 2 mol H₂O = 36 g."
+      },
+      {
+       "prompt": "The numbers in front of the formulae in a balanced equation give:",
+       "options": [
+        "The masses",
+        "The mole ratios",
+        "The volumes in litres",
+        "The molar masses"
+       ],
+       "correctIndex": 1,
+       "explanation": "They are the ratios in moles."
+      },
+      {
+       "prompt": "Mg + 2HCl → MgCl₂ + H₂. How many moles of HCl react with 2.43 g of Mg (24.3 g/mol)?",
+       "options": [
+        "0.1",
+        "0.2",
+        "0.05",
+        "0.4"
+       ],
+       "correctIndex": 1,
+       "explanation": "2.43/24.3 = 0.1 mol Mg. The ratio is 1:2, so 0.2 mol HCl."
+      }
+     ]
+    },
+    {
+     "id": "titr",
+     "title": "Titration calculations",
+     "body": [
+      "A **titration** finds the unknown concentration of one solution by slowly adding a solution of known concentration from a **burette** until the reaction is exactly finished (the **end point**, shown by an indicator). The volume added is the **titre.**",
+      "**The method.** (1) Write the balanced equation. (2) Find moles of the solution whose concentration you know: **n = C × V** (V in litres, or use mL and divide by 1000). (3) Use the mole ratio to find moles of the other substance. (4) Divide by its volume (in litres) to get its concentration, or divide by its concentration to get its volume.",
+      "**Example 1 (1:1).** 25 cm³ of HCl is titrated against 0.1 mol/dm³ NaOH, and the average titre is 30 cm³. HCl + NaOH → NaCl + H₂O. Moles NaOH = 0.1 × 0.030 = 0.0030 mol. Ratio 1:1, so 0.0030 mol HCl. Concentration = 0.0030 ÷ 0.025 = **0.12 mol/dm³.**",
+      "**Example 2 (1:2).** What volume of 0.250 M HNO₃ reacts with 44.8 mL of 0.150 M Na₂CO₃? 2HNO₃ + Na₂CO₃ → 2NaNO₃ + CO₂ + H₂O. Moles Na₂CO₃ = 0.0448 × 0.150 = 0.00672. Moles HNO₃ = 2 × 0.00672 = 0.01344. Volume = 0.01344 ÷ 0.250 = 0.0538 L = **53.8 mL.**",
+      "**Example 3 (mass to volume).** How many mL of 0.150 M H₂SO₄ react with 8.20 g of NaHCO₃? H₂SO₄ + 2NaHCO₃ → Na₂SO₄ + 2CO₂ + 2H₂O. M(NaHCO₃) = 23 + 1 + 12 + 48 = 84. Moles = 8.20 ÷ 84 = 0.0976. Moles H₂SO₄ = 0.0976 ÷ 2 = 0.0488. Volume = 0.0488 ÷ 0.150 = 0.325 L = **325 mL.**",
+      "**A shortcut formula** for a 1:1 reaction is C_A V_A = C_B V_B. For other ratios, it is **(C_A V_A)/n_A = (C_B V_B)/n_B**, where n_A and n_B are the numbers in front of each formula in the equation."
+     ],
+     "keyPoints": [
+      "n = C × V (litres). Use the equation's ratio.",
+      "Titre = volume from the burette at the end point.",
+      "Check the units: mL ÷ 1000 = litres."
+     ],
+     "example": {
+      "problem": "20.0 cm³ of 0.100 M NaOH is neutralised by 25.0 cm³ of HCl. Find the HCl concentration.",
+      "steps": [
+       "Moles NaOH = 0.100 × 0.0200 = 0.00200 mol.",
+       "Ratio 1:1, so HCl = 0.00200 mol.",
+       "Concentration = 0.00200 ÷ 0.0250 = 0.0800 M."
+      ],
+      "answer": "0.0800 M"
+     },
+     "exercises": [
+      {
+       "prompt": "25 cm³ of HCl is titrated against 0.1 mol/dm³ NaOH. The average titre is 30 cm³. What is the concentration of the acid?",
+       "options": [
+        "0.5 mol/dm³",
+        "0.12 mol/dm³",
+        "1.25 mol/dm³",
+        "1.0 mol/dm³",
+        "None of the above"
+       ],
+       "correctIndex": 1,
+       "explanation": "0.1 × 0.030 = 0.0030 mol NaOH = mol HCl. 0.0030/0.025 = 0.12."
+      },
+      {
+       "prompt": "What volume of 0.250 M HNO₃ reacts with 44.8 mL of 0.150 M Na₂CO₃? (2HNO₃ + Na₂CO₃ → 2NaNO₃ + CO₂ + H₂O)",
+       "options": [
+        "13.45 mL",
+        "26.90 mL",
+        "53.80 mL",
+        "80.70 mL"
+       ],
+       "correctIndex": 2,
+       "explanation": "0.00672 mol Na₂CO₃ needs 0.01344 mol HNO₃, which is 53.8 mL."
+      },
+      {
+       "prompt": "How many mL of 0.150 M H₂SO₄ react with 8.20 g of NaHCO₃? [Na = 23, H = 1, C = 12, O = 16] (H₂SO₄ + 2NaHCO₃ → Na₂SO₄ + 2CO₂ + 2H₂O)",
+       "options": [
+        "162.5 mL",
+        "325 mL",
+        "650 mL",
+        "16.25 mL"
+       ],
+       "correctIndex": 1,
+       "explanation": "0.0976 mol NaHCO₃ needs 0.0488 mol H₂SO₄, which is 325 mL."
+      },
+      {
+       "prompt": "20 cm³ of HCl needs 24 cm³ of 0.1 M NaOH. What is the HCl concentration?",
+       "options": [
+        "0.083 M",
+        "0.12 M",
+        "0.2 M",
+        "1.2 M"
+       ],
+       "correctIndex": 1,
+       "explanation": "0.1 × 0.024 = 0.0024 mol. 0.0024/0.020 = 0.12 M."
+      },
+      {
+       "prompt": "The volume of a solution run from the burette to reach the end point is called the:",
+       "options": [
+        "Titre",
+        "Aliquot",
+        "Standard",
+        "Residue"
+       ],
+       "correctIndex": 0,
+       "explanation": "The titre is the volume added from the burette."
+      }
+     ]
+    },
+    {
+     "id": "indic",
+     "title": "Choosing an indicator and doing the titration well",
+     "body": [
+      "An **indicator** changes colour near the end point. Choose one whose colour change happens near the pH of the finished mixture. **Phenolphthalein** changes between about **pH 8.3 and 10** (colourless in acid, pink in alkali). **Methyl orange** changes between about **pH 3.1 and 4.4** (red in acid, yellow in alkali).",
+      "**Strong acid + strong base** (HCl and NaOH; H₂SO₄ and KOH): the pH jumps from about 3 to 11 at the end point, so **both** indicators work. **Weak acid + strong base** (CH₃COOH and NaOH): the end point is basic (about pH 8.7), so **phenolphthalein** works but methyl orange does not. **Strong acid + weak base** (HCl and NH₃): the end point is acidic, so **methyl orange** works and phenolphthalein does not. **Weak acid + weak base:** no sharp end point, so no ordinary indicator works well.",
+      "So the titration where phenolphthalein is suitable but methyl orange is not is **CH₃COOH and NaOH.**",
+      "**Good practice.** Rinse the burette with the solution it will hold and the pipette with the solution it will measure. Remove air bubbles from the burette tip. Read the bottom of the meniscus at eye level. Repeat until you have **concordant titres** (two or three within about 0.10 cm³) and **average** them. Add the last drops one at a time near the end point, and swirl the flask.",
+      "**Mistakes to avoid.** Do not rinse the conical flask with the solution (the pipette already measured the exact moles). It is fine if the flask is wet with distilled water, because water adds no moles."
+     ],
+     "keyPoints": [
+      "Phenolphthalein: pH 8.3 to 10. Methyl orange: pH 3.1 to 4.4.",
+      "Weak acid + strong base: phenolphthalein. Strong acid + weak base: methyl orange.",
+      "Repeat until concordant, then average."
+     ],
+     "example": {
+      "problem": "Which indicator would you use for HNO₃ with KOH?",
+      "steps": [
+       "Both are strong, so the end point is near pH 7.",
+       "The jump is steep, so either indicator works."
+      ],
+      "answer": "Either methyl orange or phenolphthalein"
+     },
+     "exercises": [
+      {
+       "prompt": "In which titration is phenolphthalein suitable but methyl orange is not?",
+       "options": [
+        "HCl and NaOH",
+        "CH₃COOH and NaOH",
+        "CH₃COOH and NH₃",
+        "H₂SO₄ and KOH"
+       ],
+       "correctIndex": 1,
+       "explanation": "A weak acid with a strong base has a basic end point, which suits phenolphthalein."
+      },
+      {
+       "prompt": "Which indicator suits a titration of HCl with NH₃ (strong acid, weak base)?",
+       "options": [
+        "Phenolphthalein",
+        "Methyl orange",
+        "Starch",
+        "None can be used"
+       ],
+       "correctIndex": 1,
+       "explanation": "The end point is acidic, so methyl orange."
+      },
+      {
+       "prompt": "The pH range over which phenolphthalein changes colour is about:",
+       "options": [
+        "3.1 to 4.4",
+        "8.3 to 10",
+        "1 to 2",
+        "12 to 14"
+       ],
+       "correctIndex": 1,
+       "explanation": "Phenolphthalein is colourless below 8.3 and pink above."
+      },
+      {
+       "prompt": "Concordant titres are:",
+       "options": [
+        "Titres that are very different",
+        "Titres that agree within about 0.10 cm³",
+        "The largest titre",
+        "Titres from different people"
+       ],
+       "correctIndex": 1,
+       "explanation": "Repeat until two or three results agree closely, then average."
+      },
+      {
+       "prompt": "Which should NOT be rinsed with the solution it will hold or measure?",
+       "options": [
+        "The burette",
+        "The pipette",
+        "The conical flask",
+        "None of these"
+       ],
+       "correctIndex": 2,
+       "explanation": "The conical flask holds a measured number of moles, so extra solution would change it."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "n = C × V; (C_A V_A)/n_A = (C_B V_B)/n_B"
+  },
+  {
+   "id": "acids-bases-ph",
+   "intro": "This topic covers pH, how strong and weak acids differ, the Brønsted-Lowry and Lewis ideas, acidic oxides, and picking an indicator. The key idea is that stronger acids ionise more and have lower pH.",
+   "sections": [
+    {
+     "id": "ph",
+     "title": "pH and hydrogen ion concentration",
+     "body": [
+      "**pH** tells us how acidic a solution is. It is a number, usually between 0 and 14. **pH = 7** is neutral (pure water). **Below 7** is acidic. **Above 7** is basic (alkaline). The lower the pH, the stronger the acid.",
+      "pH is linked to the hydrogen ion concentration [H⁺] (in mol/L): **pH = −log[H⁺]** and **[H⁺] = 10⁻ᵖᴴ.** For example, if [H⁺] = 1 × 10⁻³ mol/L, then pH = 3. If [H⁺] = 0.01 mol/L, pH = 2.",
+      "**Each pH step is a factor of 10.** A solution of pH 2 has 10 times more H⁺ than pH 3, and 100 times more than pH 4.",
+      "**Worked example.** What is [H⁺] when pH = 5.3? [H⁺] = 10⁻⁵·³. Write 10⁻⁵·³ as 10⁰·⁷ × 10⁻⁶. Since 10⁰·⁷ ≈ 5.0, [H⁺] = **5.0 × 10⁻⁶ mol/L.** Check: it must lie between 10⁻⁶ (pH 6) and 10⁻⁵ (pH 5), and it does.",
+      "At room temperature, **pH + pOH = 14.** So a solution with pOH 3 has pH 11. Strong acids such as HCl ionise fully, so [H⁺] equals the acid concentration. A 0.01 M HCl solution has pH 2.",
+      "**Rain.** Clean rain is already a little acidic (about pH 5.6) because CO₂ dissolves in it to make carbonic acid. Burning fuel, including gas flaring, adds acidic gases such as SO₂ and NOₓ, so polluted rain has a pH lower than 5.6, often near 5 or below."
+     ],
+     "keyPoints": [
+      "pH = −log[H⁺]; [H⁺] = 10⁻ᵖᴴ.",
+      "pH 7 neutral, below 7 acidic, above 7 basic.",
+      "pH + pOH = 14. Each pH unit is a factor of 10."
+     ],
+     "example": {
+      "problem": "Find the pH of a solution with [H⁺] = 2 × 10⁻⁴ mol/L.",
+      "steps": [
+       "pH = −log(2 × 10⁻⁴).",
+       "log 2 ≈ 0.30, so log(2 × 10⁻⁴) = 0.30 − 4 = −3.70.",
+       "pH = 3.70."
+      ],
+      "answer": "pH ≈ 3.70"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the hydrogen ion concentration of a solution whose pH is 5.3?",
+       "options": [
+        "5.0 × 10⁻⁵ mol/L",
+        "5.0 × 10⁻⁶ mol/L",
+        "5.0 × 10⁻⁷ mol/L",
+        "5.0 × 10⁻⁸ mol/L"
+       ],
+       "correctIndex": 1,
+       "explanation": "[H⁺] = 10⁻⁵·³ = 5.0 × 10⁻⁶ mol/L. It lies between 10⁻⁶ and 10⁻⁵."
+      },
+      {
+       "prompt": "A solution has [H⁺] = 1 × 10⁻³ mol/L. What is its pH?",
+       "options": [
+        "3",
+        "−3",
+        "11",
+        "0.003"
+       ],
+       "correctIndex": 0,
+       "explanation": "pH = −log(10⁻³) = 3."
+      },
+      {
+       "prompt": "How many times more H⁺ does a pH 2 solution have than a pH 4 solution?",
+       "options": [
+        "2",
+        "10",
+        "100",
+        "1000"
+       ],
+       "correctIndex": 2,
+       "explanation": "Two pH steps, so 10 × 10 = 100 times."
+      },
+      {
+       "prompt": "A solution has pOH = 3. What is its pH?",
+       "options": [
+        "3",
+        "7",
+        "11",
+        "14"
+       ],
+       "correctIndex": 2,
+       "explanation": "pH = 14 − 3 = 11."
+      },
+      {
+       "prompt": "What is the pH of 0.01 M HCl (a strong acid)?",
+       "options": [
+        "1",
+        "2",
+        "0.01",
+        "12"
+       ],
+       "correctIndex": 1,
+       "explanation": "HCl ionises completely, so [H⁺] = 0.01 = 10⁻². pH = 2."
+      },
+      {
+       "prompt": "Rain falling where gas is burned releases acidic gases. Which pH is most likely for this rain?",
+       "options": [
+        "5",
+        "7",
+        "7.5",
+        "10"
+       ],
+       "correctIndex": 0,
+       "explanation": "Acidic gases push the rain below clean-rain pH (about 5.6), so about 5 fits best. It cannot be 7 or higher."
+      }
+     ]
+    },
+    {
+     "id": "strong",
+     "title": "Strong and weak acids",
+     "body": [
+      "A **strong acid** ionises (splits into ions) **completely** in water. A **weak acid** only ionises a little. The strong acids to remember are **HCl, HNO₃, H₂SO₄, HBr, HI and HClO₄.** Most others, such as **H₂CO₃, H₃PO₄, CH₃COOH and HF,** are weak.",
+      "**Oxyacid pattern.** For acids with the same central atom, more oxygen atoms make the acid stronger. For chlorine: **HClO < HClO₂ < HClO₃ < HClO₄.** HClO₄ (perchloric acid) is the strongest. The extra oxygens pull electrons away and make the ion left behind more stable.",
+      "**Comparing with pH.** For equal concentrations, the lowest pH is the strongest acid. For 0.10 M solutions of H₃PO₄ (pH 1.4), H₂PO₄⁻ (4.4), HPO₄²⁻ (9.3) and PO₄³⁻ (12.0), H₃PO₄ is the most acidic. Each step removes an H⁺, and the acid gets weaker each time.",
+      "**Hydroxides.** NaOH is a strong base. **Al(OH)₃** is mainly a very weak base that can act as a very weak acid, so among HClO₄, H₃PO₄, H₂CO₃, H₂SO₄ and Al(OH)₃ it is the weakest acid.",
+      "**Salts can change pH.** When HCl and NH₃ are mixed in equal amounts, they make NH₄Cl. The NH₄⁺ ion is a weak acid, so the solution is a little acidic, about **pH 5.** A strong acid with a weak base gives an acidic salt solution."
+     ],
+     "keyPoints": [
+      "Strong: HCl, HNO₃, H₂SO₄, HBr, HI, HClO₄.",
+      "More oxygens on the same central atom means a stronger acid.",
+      "Strong acid + weak base gives an acidic salt solution."
+     ],
+     "example": {
+      "problem": "Which is stronger, HNO₃ or H₂CO₃?",
+      "steps": [
+       "HNO₃ is on the strong list, so it ionises fully.",
+       "H₂CO₃ is weak and ionises only a little."
+      ],
+      "answer": "HNO₃"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these is the strongest acid in the chlorine oxyacid series?",
+       "options": [
+        "HClO",
+        "HClO₂",
+        "HClO₃",
+        "HClO₄"
+       ],
+       "correctIndex": 3,
+       "explanation": "Acid strength rises with more oxygen atoms on chlorine, so HClO₄ is strongest."
+      },
+      {
+       "prompt": "All of these are strong acids EXCEPT:",
+       "options": [
+        "H₂SO₄",
+        "HCl",
+        "HNO₃",
+        "H₂CO₃"
+       ],
+       "correctIndex": 3,
+       "explanation": "H₂CO₃ is a weak acid."
+      },
+      {
+       "prompt": "Which of these is the weakest acid?",
+       "options": [
+        "HClO₄",
+        "H₂SO₄",
+        "Al(OH)₃",
+        "HNO₃"
+       ],
+       "correctIndex": 2,
+       "explanation": "Al(OH)₃ is mainly a base and is a very weak acid. The other three are strong."
+      },
+      {
+       "prompt": "Which 0.10 M species is the most acidic?",
+       "options": [
+        "H₃PO₄, pH 1.4",
+        "H₂PO₄⁻, pH 4.4",
+        "HPO₄²⁻, pH 9.3",
+        "PO₄³⁻, pH 12.0"
+       ],
+       "correctIndex": 0,
+       "explanation": "At the same concentration, the lowest pH is the most acidic."
+      },
+      {
+       "prompt": "Equal amounts of HCl and NH₃ are mixed. What is the likely pH?",
+       "options": [
+        "About 5",
+        "Exactly 7",
+        "About 9",
+        "About 13"
+       ],
+       "correctIndex": 0,
+       "explanation": "They form NH₄Cl. NH₄⁺ is a weak acid, so the solution is slightly acidic."
+      },
+      {
+       "prompt": "Which order is correct, from weakest to strongest?",
+       "options": [
+        "HClO₄, HClO₃, HClO₂, HClO",
+        "HClO, HClO₂, HClO₃, HClO₄",
+        "HClO₂, HClO, HClO₄, HClO₃",
+        "HClO₃, HClO₄, HClO, HClO₂"
+       ],
+       "correctIndex": 1,
+       "explanation": "More oxygen means stronger, so HClO is weakest and HClO₄ strongest."
+      }
+     ]
+    },
+    {
+     "id": "theory",
+     "title": "Brønsted-Lowry and Lewis definitions",
+     "body": [
+      "A **Brønsted-Lowry acid** gives away an H⁺ (a proton). A **Brønsted-Lowry base** takes an H⁺. In HF + H₂O ⇌ F⁻ + H₃O⁺, HF is the acid and H₂O is the base.",
+      "**Conjugate pairs.** When an acid loses H⁺ it becomes its **conjugate base.** **The stronger the acid, the weaker its conjugate base,** and the other way round. So to find the strongest base, look for the conjugate base of the weakest acid.",
+      "**Strongest base.** O²⁻ is the conjugate base of OH⁻, which is an extremely weak acid. So O²⁻ is the strongest base in the list H₂O, SH⁻, OH⁻, S²⁻, O²⁻. It reacts fully with water: O²⁻ + H₂O → 2OH⁻.",
+      "**Strongest acid in water.** **H₃O⁺** is the strongest acid that can exist in water. It is stronger than HF (weak) and than NaHSO₄ (its HSO₄⁻ ion has pKa about 2). NH₃ and NaOH are bases.",
+      "A **Lewis acid** accepts an **electron pair.** A **Lewis base** donates one. **BF₃** is a Lewis acid because boron has an empty orbital and only six electrons. **CH₃⁻** has a lone pair, so it is a Lewis base. **CH₄** has no lone pair and no empty orbital, and Cl₂ does not accept a pair, so neither is a Lewis acid."
+     ],
+     "keyPoints": [
+      "Brønsted-Lowry acid gives H⁺, base takes H⁺.",
+      "Strong acid means weak conjugate base.",
+      "Lewis acid accepts an electron pair; Lewis base donates one."
+     ],
+     "example": {
+      "problem": "What is the conjugate base of H₂O in H₂O + NH₃ ⇌ OH⁻ + NH₄⁺?",
+      "steps": [
+       "Water loses an H⁺.",
+       "What is left is OH⁻."
+      ],
+      "answer": "OH⁻"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these can act as a Lewis acid?",
+       "options": [
+        "CH₄",
+        "BF₃",
+        "CH₃⁻",
+        "Cl₂"
+       ],
+       "correctIndex": 1,
+       "explanation": "BF₃ has an empty orbital on boron, so it accepts an electron pair."
+      },
+      {
+       "prompt": "Which is the strongest Brønsted-Lowry acid?",
+       "options": [
+        "H₃O⁺",
+        "HF",
+        "NH₃",
+        "NaOH"
+       ],
+       "correctIndex": 0,
+       "explanation": "H₃O⁺ is the strongest acid that exists in water. HF is weak, and NH₃ and NaOH are bases."
+      },
+      {
+       "prompt": "Which is the strongest Brønsted-Lowry base?",
+       "options": [
+        "H₂O",
+        "SH⁻",
+        "OH⁻",
+        "O²⁻"
+       ],
+       "correctIndex": 3,
+       "explanation": "O²⁻ is the conjugate base of OH⁻, a very weak acid, so it is the strongest base."
+      },
+      {
+       "prompt": "What is the conjugate base of NH₄⁺?",
+       "options": [
+        "NH₃",
+        "NH₂⁻",
+        "N₂",
+        "NH₄OH"
+       ],
+       "correctIndex": 0,
+       "explanation": "NH₄⁺ loses one H⁺ to give NH₃."
+      },
+      {
+       "prompt": "A Lewis acid is a species that:",
+       "options": [
+        "donates a proton",
+        "accepts an electron pair",
+        "donates an electron pair",
+        "accepts a proton"
+       ],
+       "correctIndex": 1,
+       "explanation": "Lewis acid = electron-pair acceptor."
+      }
+     ]
+    },
+    {
+     "id": "oxides",
+     "title": "Acidic oxides and choosing an indicator",
+     "body": [
+      "**Non-metal oxides are acidic** (for example CO₂, SO₃, SeO₃, NO₂). They react with water to make acids: SO₃ + H₂O → H₂SO₄, and in the same way SeO₃ gives selenic acid. **Metal oxides are mostly basic** (CaO, Na₂O, and the peroxides and superoxides such as Na₂O₂ and RbO₂, which form bases in water).",
+      "So, among CaO, RbO₂, SeO₃ and Na₂O₂, only **SeO₃** is an acidic oxide.",
+      "**Indicators.** An indicator changes colour near the **end point** of a titration. **Phenolphthalein** changes at pH 8.3 to 10 (colourless in acid, pink in base). **Methyl orange** changes at pH 3.1 to 4.4 (red in acid, yellow in base). Starch is only for iodine titrations.",
+      "**Choosing.** Strong acid with strong base: the pH jumps steeply, so either works. H₂SO₄ with NaOH is strong acid with strong base, and phenolphthalein is the usual choice when NaOH is run from the burette, because the first pink colour is easy to see. Weak acid with strong base: use phenolphthalein. Strong acid with weak base: use methyl orange."
+     ],
+     "keyPoints": [
+      "Non-metal oxides are acidic; metal oxides are basic.",
+      "Phenolphthalein pH 8.3–10; methyl orange pH 3.1–4.4.",
+      "Weak acid + strong base: phenolphthalein."
+     ],
+     "example": {
+      "problem": "Is Na₂O or CO₂ acidic?",
+      "steps": [
+       "Na₂O is a metal oxide, so it is basic.",
+       "CO₂ is a non-metal oxide, so it is acidic."
+      ],
+      "answer": "CO₂ is acidic"
+     },
+     "exercises": [
+      {
+       "prompt": "Which of these is an acidic oxide?",
+       "options": [
+        "CaO",
+        "SeO₃",
+        "Na₂O₂",
+        "RbO₂"
+       ],
+       "correctIndex": 1,
+       "explanation": "SeO₃ is a non-metal oxide and makes an acid with water. The others are metal oxides."
+      },
+      {
+       "prompt": "What forms when SO₃ dissolves in water?",
+       "options": [
+        "H₂SO₄",
+        "NaOH",
+        "SO₂ only",
+        "H₂S"
+       ],
+       "correctIndex": 0,
+       "explanation": "SO₃ + H₂O → H₂SO₄."
+      },
+      {
+       "prompt": "Which indicator changes colour at pH 8.3 to 10?",
+       "options": [
+        "Methyl orange",
+        "Phenolphthalein",
+        "Starch",
+        "Litmus only"
+       ],
+       "correctIndex": 1,
+       "explanation": "That is the range of phenolphthalein."
+      },
+      {
+       "prompt": "Which indicator suits a weak acid titrated with a strong base?",
+       "options": [
+        "Methyl orange",
+        "Phenolphthalein",
+        "Starch",
+        "None of these"
+       ],
+       "correctIndex": 1,
+       "explanation": "The end point is above pH 7, so phenolphthalein is best."
+      },
+      {
+       "prompt": "Which indicator suits a strong acid titrated with a weak base?",
+       "options": [
+        "Phenolphthalein",
+        "Methyl orange",
+        "Starch",
+        "Neither"
+       ],
+       "correctIndex": 1,
+       "explanation": "The end point is below pH 7, so methyl orange is best."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "pH = −log[H⁺]; [H⁺] = 10⁻ᵖᴴ; pH + pOH = 14"
+  },
+  {
+   "id": "redox-reactions",
+   "intro": "Redox reactions involve electrons moving from one species to another. You will learn to find oxidation numbers, spot redox and disproportionation, compare oxidising agents, and balance equations in acid and in base.",
+   "sections": [
+    {
+     "id": "oxnum",
+     "title": "Oxidation numbers and spotting redox",
+     "body": [
+      "**Redox** means reduction and oxidation happening together. **Oxidation** is **loss** of electrons (oxidation number goes up). **Reduction** is **gain** of electrons (oxidation number goes down). Remember **OIL RIG:** Oxidation Is Loss, Reduction Is Gain.",
+      "**Oxidation-number rules:** an element on its own is 0. Oxygen is usually −2. Hydrogen is usually +1. The numbers in a species add up to its charge.",
+      "**Worked example.** Chromium in CrO₄²⁻: x + 4(−2) = −2, so x = **+6.** Chromium in Cr₂O₇²⁻: 2x + 7(−2) = −2, so 2x = 12 and x = **+6.** Chromium is +6 in both, so **nothing changes.**",
+      "**So:** 2CrO₄²⁻ + 2H⁺ → Cr₂O₇²⁻ + H₂O is **not redox.** It is just an acid-base (condensation) reaction. Compare Cr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O: Cr goes from +6 to +3 (reduced) and Fe from +2 to +3 (oxidised). That is redox.",
+      "**Disproportionation** is when **one species** is both oxidised and reduced. In 3ClO⁻ → ClO₃⁻ + 2Cl⁻, chlorine is +1 in ClO⁻, +5 in ClO₃⁻ and −1 in Cl⁻. It goes up and down, so this is disproportionation.",
+      "**Oxidising agent** = the species that is reduced (it takes the electrons). **Reducing agent** = the species that is oxidised (it gives the electrons)."
+     ],
+     "keyPoints": [
+      "OIL RIG: oxidation is loss, reduction is gain.",
+      "If no oxidation number changes, it is not redox.",
+      "Disproportionation: one species is both oxidised and reduced."
+     ],
+     "example": {
+      "problem": "Find the oxidation number of Mn in MnO₄⁻.",
+      "steps": [
+       "x + 4(−2) = −1.",
+       "x = +7."
+      ],
+      "answer": "+7"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the oxidation number of Cr in Cr₂O₇²⁻?",
+       "options": [
+        "+3",
+        "+6",
+        "+7",
+        "+12"
+       ],
+       "correctIndex": 1,
+       "explanation": "2x + 7(−2) = −2, so x = +6."
+      },
+      {
+       "prompt": "Which reaction is NOT a redox reaction?",
+       "options": [
+        "2CrO₄²⁻ + 2H⁺ → Cr₂O₇²⁻ + H₂O",
+        "Cr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O",
+        "2MnO₄⁻ + 5NO₂⁻ + 6H⁺ → 2Mn²⁺ + 5NO₃⁻ + 3H₂O",
+        "2IO₃⁻ + 12H⁺ + 10I⁻ → 6I₂ + 6H₂O"
+       ],
+       "correctIndex": 0,
+       "explanation": "Cr is +6 on both sides, so no oxidation number changes. The others all change."
+      },
+      {
+       "prompt": "The reaction 3ClO⁻ → ClO₃⁻ + 2Cl⁻ is an example of:",
+       "options": [
+        "Decomposition only",
+        "Disproportionation",
+        "Neutralisation",
+        "Precipitation"
+       ],
+       "correctIndex": 1,
+       "explanation": "Cl goes from +1 to +5 and to −1: it is oxidised and reduced at the same time."
+      },
+      {
+       "prompt": "Oxidation is:",
+       "options": [
+        "gain of electrons",
+        "loss of electrons",
+        "gain of protons",
+        "loss of neutrons"
+       ],
+       "correctIndex": 1,
+       "explanation": "OIL RIG: oxidation is loss."
+      },
+      {
+       "prompt": "In Cr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O, which is the reducing agent?",
+       "options": [
+        "Cr₂O₇²⁻",
+        "Fe²⁺",
+        "H⁺",
+        "H₂O"
+       ],
+       "correctIndex": 1,
+       "explanation": "Fe²⁺ is oxidised (+2 to +3), so it is the reducing agent."
+      }
+     ]
+    },
+    {
+     "id": "agent",
+     "title": "Strength of oxidising agents",
+     "body": [
+      "A **strong oxidising agent** takes electrons easily. We compare them using the **standard electrode potential E°.** The **higher (more positive) E°,** the stronger the oxidising agent.",
+      "**Example.** MnO₄⁻ in acid (to Mn²⁺) has E° = **+1.51 V.** Cr₂O₇²⁻ in acid (to Cr³⁺) has E° = **+1.33 V.** So permanganate in acid is the stronger oxidising agent.",
+      "**Acid or base?** Oxidising agents such as MnO₄⁻ and Cr₂O₇²⁻ use up H⁺ when they react. So they are **stronger in acid solution** and weaker in basic solution. Among MnO₄⁻ in acid, MnO₄⁻ in base, MnO₂ in base, Cr₂O₇²⁻ in acid and Cr₂O₇²⁻ in base, the strongest is **MnO₄⁻ in acid.**"
+     ],
+     "keyPoints": [
+      "Higher E° means stronger oxidising agent.",
+      "MnO₄⁻ (+1.51 V) is stronger than Cr₂O₇²⁻ (+1.33 V) in acid.",
+      "Oxidants are stronger in acid."
+     ],
+     "example": {
+      "problem": "Which is the stronger oxidising agent: a species with E° = +0.80 V or one with E° = +1.36 V?",
+      "steps": [
+       "Higher E° means stronger oxidant.",
+       "1.36 is higher than 0.80."
+      ],
+      "answer": "The +1.36 V species"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is the strongest oxidising agent?",
+       "options": [
+        "MnO₄⁻ in acid",
+        "MnO₄⁻ in base",
+        "Cr₂O₇²⁻ in acid",
+        "Cr₂O₇²⁻ in base"
+       ],
+       "correctIndex": 0,
+       "explanation": "E° = +1.51 V is the highest, and acid makes oxidants stronger."
+      },
+      {
+       "prompt": "A higher E° means:",
+       "options": [
+        "a stronger oxidising agent",
+        "a stronger reducing agent",
+        "a weaker oxidising agent",
+        "nothing about strength"
+       ],
+       "correctIndex": 0,
+       "explanation": "More positive E° means the species takes electrons more easily."
+      },
+      {
+       "prompt": "Which is stronger in acid, MnO₄⁻ (+1.51 V) or Cr₂O₇²⁻ (+1.33 V)?",
+       "options": [
+        "Cr₂O₇²⁻",
+        "MnO₄⁻",
+        "They are equal",
+        "Cannot be compared"
+       ],
+       "correctIndex": 1,
+       "explanation": "+1.51 is higher than +1.33."
+      },
+      {
+       "prompt": "Why are oxidising agents like MnO₄⁻ stronger in acid?",
+       "options": [
+        "They use up H⁺ when they react",
+        "They give out H⁺",
+        "Acid has no effect",
+        "Acid removes electrons"
+       ],
+       "correctIndex": 0,
+       "explanation": "Their half-reactions use H⁺, so more H⁺ pushes the reaction forward."
+      }
+     ]
+    },
+    {
+     "id": "balance",
+     "title": "Balancing redox equations (half-reaction method)",
+     "body": [
+      "**Steps in acid:** (1) Split into two half-reactions. (2) Balance the atoms other than O and H. (3) Balance O by adding **H₂O.** (4) Balance H by adding **H⁺.** (5) Balance charge with **electrons (e⁻).** (6) Multiply so the electrons match, add, and cancel.",
+      "**Example in acid:** Cr₂O₇²⁻ + H₂S → Cr³⁺ + S. Reduction: Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. Oxidation: H₂S → S + 2H⁺ + 2e⁻. Multiply the oxidation by 3 to get 6 e⁻ and add: Cr₂O₇²⁻ + 14H⁺ + 3H₂S → 2Cr³⁺ + 7H₂O + 3S + 6H⁺. Cancel 6H⁺: **Cr₂O₇²⁻ + 8H⁺ + 3H₂S → 2Cr³⁺ + 3S + 7H₂O.**",
+      "**In base:** do the acid steps first. Then add **OH⁻** to **both sides** equal to the number of H⁺, turn each H⁺ + OH⁻ into H₂O, and cancel the extra water.",
+      "**Example in base:** MnO₄⁻ + I⁻ → MnO₂ + I₂. Reduction (in base): MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻. Oxidation: 2I⁻ → I₂ + 2e⁻. Multiply the first by 2 and the second by 3 so each has 6 e⁻, then add: **2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8OH⁻.**",
+      "**Always check** atoms and charge on both sides. Left: charge 2(−1) + 6(−1) = −8. Right: 8(−1) = −8. ✓"
+     ],
+     "keyPoints": [
+      "Balance atoms, then O with H₂O, H with H⁺, charge with e⁻.",
+      "In base, add OH⁻ to both sides to remove H⁺.",
+      "Always check atoms and charge at the end."
+     ],
+     "example": {
+      "problem": "Balance in acid: MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺.",
+      "steps": [
+       "Reduction: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O.",
+       "Oxidation: Fe²⁺ → Fe³⁺ + e⁻, multiplied by 5.",
+       "Add: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O."
+      ],
+      "answer": "MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O"
+     },
+     "exercises": [
+      {
+       "prompt": "Balance in acid: Cr₂O₇²⁻ + H₂S → Cr³⁺ + S. Which is correct?",
+       "options": [
+        "3H₂S + 8H⁺ + Cr₂O₇²⁻ → 2Cr³⁺ + 3S + 7H₂O",
+        "Cr₂O₇²⁻ + H₂S → 2Cr³⁺ + 2H⁺ + S",
+        "Cr₂O₇²⁻ + 14H⁺ + H₂S → 2Cr³⁺ + 2H⁺ + S + 7H₂O",
+        "Cr₂O₇²⁻ + H₂S + 5e⁻ → Cr³⁺ + S"
+       ],
+       "correctIndex": 0,
+       "explanation": "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O and 3 × (H₂S → S + 2H⁺ + 2e⁻). Adding and cancelling 6H⁺ gives option A."
+      },
+      {
+       "prompt": "Balance in base: MnO₄⁻ + I⁻ → MnO₂ + I₂.",
+       "options": [
+        "2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8OH⁻",
+        "MnO₄⁻ + 2I⁻ + 4H₂O → MnO₂ + I₂ + 8OH⁻",
+        "2MnO₄⁻ + 6I⁻ + 8H⁺ → 2MnO₂ + 3I₂ + 4H₂O",
+        "2MnO₄⁻ + 6I⁻ + 4H₂O → 2MnO₂ + 3I₂ + 8H⁺"
+       ],
+       "correctIndex": 0,
+       "explanation": "Reduction ×2 and oxidation ×3 give 6 e⁻ each. Charge on both sides is −8."
+      },
+      {
+       "prompt": "How many electrons are in Cr₂O₇²⁻ + 14H⁺ + ?e⁻ → 2Cr³⁺ + 7H₂O?",
+       "options": [
+        "2",
+        "3",
+        "6",
+        "14"
+       ],
+       "correctIndex": 2,
+       "explanation": "Left charge: −2 + 14 = +12. Right charge: +6. So 6 electrons are needed."
+      },
+      {
+       "prompt": "In basic solution, which species appears in the balanced equation instead of H⁺?",
+       "options": [
+        "OH⁻",
+        "H₃O⁺",
+        "Cl⁻",
+        "e⁻ only"
+       ],
+       "correctIndex": 0,
+       "explanation": "We neutralise the H⁺ with OH⁻."
+      },
+      {
+       "prompt": "Why can't the half-reaction equations be added directly if the electrons differ?",
+       "options": [
+        "Electrons lost must equal electrons gained",
+        "Water must be removed",
+        "Charges must be 0",
+        "They can always be added"
+       ],
+       "correctIndex": 0,
+       "explanation": "The electrons must cancel, so we multiply first."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Oxidation = loss of e⁻ (number up); reduction = gain of e⁻ (number down)"
+  },
+  {
+   "id": "lab-practice-safety",
+   "intro": "This topic is about staying safe in the lab, using the right gas tests, and knowing how to make solids dissolve faster.",
+   "sections": [
+    {
+     "id": "safety",
+     "title": "Laboratory safety and practice",
+     "body": [
+      "A lab is safe only when everyone follows the rules. The main ones: **wear a lab coat, goggles and gloves;** **avoid skin contact with chemicals;** **keep the workspace clean;** **never eat, drink or taste anything** in the lab.",
+      "**Flammable liquids** (ethanol, acetone, ether) must be kept **away from naked flames.** Use a water bath or hot plate for heating.",
+      "**Hazardous bottles** should be held with **one hand on the neck or label side and the other under the base,** and carried with care. Do not hold them loosely by the neck alone.",
+      "**Waste:** never throw **solid waste** into the sink, because it blocks drains. Put solids in the proper bin. Liquid waste goes in the correct waste container, not down the sink, unless you are told it is safe.",
+      "**Spills and burns:** tell the teacher at once. Rinse skin with plenty of water. Know where the eye wash, shower and fire blanket are."
+     ],
+     "keyPoints": [
+      "No eating or tasting in the lab.",
+      "Keep flames away from flammable liquids.",
+      "Solid waste goes in the bin, not the sink."
+     ],
+     "example": {
+      "problem": "Is it safe to heat ethanol over a Bunsen flame?",
+      "steps": [
+       "Ethanol is flammable.",
+       "Naked flames must be kept away from it."
+      ],
+      "answer": "No. Use a water bath or hot plate."
+     },
+     "exercises": [
+      {
+       "prompt": "All of these are necessary lab precautions EXCEPT:",
+       "options": [
+        "avoiding skin contact with chemicals",
+        "keeping the workspace clean",
+        "wearing a laboratory coat",
+        "eating in the laboratory"
+       ],
+       "correctIndex": 3,
+       "explanation": "Eating in a lab risks swallowing chemicals and is never allowed."
+      },
+      {
+       "prompt": "What should you do with flammable liquids?",
+       "options": [
+        "Keep naked flames away",
+        "Heat them over a flame",
+        "Store near the Bunsen burner",
+        "Pour them in the sink"
+       ],
+       "correctIndex": 0,
+       "explanation": "Flames can ignite flammable vapour."
+      },
+      {
+       "prompt": "Where should solid waste go?",
+       "options": [
+        "Into the sink",
+        "Into the proper waste bin",
+        "Down the drain with water",
+        "On the bench"
+       ],
+       "correctIndex": 1,
+       "explanation": "Solids block drains and can be dangerous, so use the bin."
+      },
+      {
+       "prompt": "Which is correct practice?",
+       "options": [
+        "Tasting a chemical to identify it",
+        "Wearing a lab coat and goggles",
+        "Working with no eye protection",
+        "Leaving spills for later"
+       ],
+       "correctIndex": 1,
+       "explanation": "Protective clothing is essential."
+      },
+      {
+       "prompt": "If a chemical touches your skin, you should first:",
+       "options": [
+        "Rinse with plenty of water and tell your teacher",
+        "Wipe it with a cloth and continue",
+        "Ignore it",
+        "Rub it in"
+       ],
+       "correctIndex": 0,
+       "explanation": "Rinse well and report it straight away."
+      }
+     ]
+    },
+    {
+     "id": "tests",
+     "title": "Gas tests and speeding up dissolving",
+     "body": [
+      "**Gas tests** let us name a gas in the lab. **Oxygen** relights (rekindles) a **glowing splint.** **Hydrogen** makes a lighted splint go out with a **pop** sound. **Carbon dioxide** turns **limewater milky.** **Chlorine** turns **damp blue litmus paper red and then bleaches it white.** **Ammonia** turns damp red litmus blue.",
+      "So in the question 'Which is the confirmatory test for oxygen?', the answer is the one that rekindles a glowing splint. The pop sound is hydrogen, and the bleaching of damp litmus is chlorine.",
+      "**Dissolving faster.** A solid dissolves faster when you **stir,** **heat,** **shake,** or **grind it into a powder** (more surface for the solvent to touch). Grinding and pulverising mean the same thing here.",
+      "So in a list of Stirring, Heating and shaking, Grinding, Pulverising, **none** of them slows dissolving down. They all help."
+     ],
+     "keyPoints": [
+      "O₂ relights a glowing splint; H₂ gives a pop.",
+      "CO₂ turns limewater milky; Cl₂ bleaches damp litmus.",
+      "Stir, heat, shake or grind to dissolve faster."
+     ],
+     "example": {
+      "problem": "A gas relights a glowing splint. What is it?",
+      "steps": [
+       "Only oxygen supports burning enough to relight a glowing splint."
+      ],
+      "answer": "Oxygen"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is the confirmatory test for oxygen gas?",
+       "options": [
+        "Damp blue litmus turns red and bleaches white",
+        "It rekindles a glowing splint",
+        "It extinguishes a lighted splint with a pop",
+        "It turns limewater milky"
+       ],
+       "correctIndex": 1,
+       "explanation": "Oxygen supports burning, so a glowing splint relights."
+      },
+      {
+       "prompt": "A lighted splint goes out with a pop. Which gas?",
+       "options": [
+        "Oxygen",
+        "Hydrogen",
+        "Chlorine",
+        "Carbon dioxide"
+       ],
+       "correctIndex": 1,
+       "explanation": "The squeaky pop is the test for hydrogen."
+      },
+      {
+       "prompt": "Which gas turns limewater milky?",
+       "options": [
+        "Hydrogen",
+        "Carbon dioxide",
+        "Oxygen",
+        "Ammonia"
+       ],
+       "correctIndex": 1,
+       "explanation": "CO₂ forms insoluble calcium carbonate."
+      },
+      {
+       "prompt": "Damp blue litmus turns red and then bleaches white. Which gas?",
+       "options": [
+        "Chlorine",
+        "Ammonia",
+        "Oxygen",
+        "Hydrogen"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is the test for chlorine."
+      },
+      {
+       "prompt": "Which of these is NOT a way to make a solid dissolve faster: stirring, heating and shaking, grinding to a powder, pulverizing?",
+       "options": [
+        "Stirring",
+        "Grinding to a powder",
+        "Pulverizing",
+        "None of them; all of these speed up dissolving"
+       ],
+       "correctIndex": 3,
+       "explanation": "Every method listed speeds up dissolving, so the correct choice is 'none of them'."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

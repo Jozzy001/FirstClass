@@ -1,0 +1,1598 @@
+{
+ "courseCode": "CSC102",
+ "topics": [
+  {
+   "id": "python-fundamentals",
+   "intro": "Python is one of the easiest languages to start with. This lesson shows you how to run a program, store values in variables, make decisions, repeat things in loops, and write your own functions.",
+   "sections": [
+    {
+     "id": "start",
+     "title": "Your first Python program",
+     "body": [
+      "**Python** is a programming language. You write instructions in a plain text file that ends with **.py** (for example **hello.py**), and the Python program reads and runs them one line at a time. Python itself is written in the **C** language.",
+      "**Showing output.** The **print()** function displays something on the screen: **print(\"Hello\")** shows Hello. It is used to display output. To get something typed in by the user, use **input()**.",
+      "**input() always gives you text.** Even if the user types 25, **input()** returns the string \"25\", not the number 25. The type is **str**. To use it as a number you must convert it: **int(input())**. You can check any type with **type()**: **type(\"25\")** shows the class str.",
+      "**Comments.** A line that starts with **#** is a comment. Python ignores it. It is a note for people. In Python, a single-line comment uses **#**, not // and not /* */.",
+      "**Indentation.** Python uses the **spaces at the start of a line** to show which lines belong together in a block (for example, the lines inside an if or a loop). Other languages use braces { }, but Python uses indentation."
+     ],
+     "keyPoints": [
+      "Python files end with .py. print() shows output. input() returns a string.",
+      "# starts a comment. Indentation marks blocks.",
+      "Python is written in C."
+     ],
+     "example": {
+      "problem": "A user types 7 when the program asks for a number, using x = input(). What is type(x)?",
+      "steps": [
+       "input() returns whatever was typed as text.",
+       "So x is the string \"7\"."
+      ],
+      "answer": "<class 'str'>"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the correct file extension for a Python file?",
+       "options": [
+        ".py",
+        ".python",
+        ".pp",
+        ".pyt"
+       ],
+       "correctIndex": 0,
+       "explanation": "Python files end with .py."
+      },
+      {
+       "prompt": "What is the output of this code?\n\nprint(type(\"25\"))",
+       "options": [
+        "<class 'str'>",
+        "<class 'int'>",
+        "<class 'bool'>",
+        "<class 'char'>"
+       ],
+       "correctIndex": 0,
+       "explanation": "\"25\" is in quotation marks, so it is a string (str)."
+      },
+      {
+       "prompt": "What data type does the input() function return in Python 3?",
+       "options": [
+        "int",
+        "str",
+        "float",
+        "bool"
+       ],
+       "correctIndex": 1,
+       "explanation": "input() always returns text, a string. Convert it with int() or float() if you need a number."
+      },
+      {
+       "prompt": "How do you write a single-line comment in Python?",
+       "options": [
+        "// comment",
+        "# comment",
+        "/* comment */",
+        "-- comment"
+       ],
+       "correctIndex": 1,
+       "explanation": "Python comments start with #."
+      },
+      {
+       "prompt": "What does Python use to show which lines belong to a block of code?",
+       "options": [
+        "Braces { }",
+        "Indentation",
+        "Semicolons ;",
+        "Parentheses ( )"
+       ],
+       "correctIndex": 1,
+       "explanation": "The spaces at the start of the line (indentation) mark the block."
+      }
+     ]
+    },
+    {
+     "id": "vars",
+     "title": "Variables, data types and operators",
+     "body": [
+      "A **variable** is a named box that **stores a value**. You create one by assigning: **x = 5**. Later you can change it: **x = x + 1** makes x equal to 6. A variable's purpose is to store a value so that you can use it again.",
+      "**Naming rules.** A name may contain letters, digits and underscores, but it must **not start with a digit** and must **not contain spaces or symbols** like $ or -. So **name_3** and **COMPUTER_1** are valid, but **3name**, **$name**, **name-3**, **JOE 1** and **COE-1** are not.",
+      "**Main data types.** **int** is a whole number (5). **float** has a decimal point (2.5). **str** is text (\"hello\"). **bool** is True or False. You can also store several values together. A **list** can be changed, in square brackets: [1, 2, 3]. A **tuple** cannot be changed (it is immutable), in round brackets: (\"Ada\", 19, \"A\"). A tuple is the best choice for a record such as a student's name, age and grade that should stay fixed. A **dictionary** stores key-value pairs.",
+      "**Printing a tuple.** If x = (\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\"), then **print(x)** shows the whole tuple in round brackets, not square brackets and not curly brackets. (Real Python shows the text in single quotes, but the brackets are the part to notice.)",
+      "**Arithmetic operators.** **+ - * /** work as normal. **/** always gives a decimal: 9 / 2 = 4.5. **//** is **floor division** (the whole part only): **9 // 2 = 4**. **%** gives the remainder: 9 % 2 = 1. **\\*\\*** is the power: 2 ** 3 = 8.",
+      "**Comparison and logic.** **==** tests whether two values are equal, **<=**, **>**, and so on. **and** is True only when both sides are True. **or** is True when at least one side is True. **not** reverses True and False. For example **3 < 4 or 4 < 3** is True (the first part is True). **5 <= 2 and 4 > 3** is False. **not(4 < 5)** is False. **5 == \"5\"** is False (a number is never equal to text)."
+     ],
+     "keyPoints": [
+      "Names: no spaces or symbols, cannot start with a digit.",
+      "int, float, str, bool; list [ ] can change, tuple ( ) cannot.",
+      "// = whole part, % = remainder, == = equal test."
+     ],
+     "example": {
+      "problem": "Work out 17 // 5 and 17 % 5.",
+      "steps": [
+       "17 divided by 5 is 3 with 2 left over.",
+       "// gives the 3. % gives the 2."
+      ],
+      "answer": "17 // 5 = 3 and 17 % 5 = 2"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the purpose of a variable in programming?",
+       "options": [
+        "To store a value",
+        "To display output",
+        "To control program flow",
+        "To perform a calculation"
+       ],
+       "correctIndex": 0,
+       "explanation": "A variable stores a value so that it can be used later."
+      },
+      {
+       "prompt": "Which is a valid variable name in Python?",
+       "options": [
+        "3name",
+        "name_3",
+        "$name",
+        "name-3"
+       ],
+       "correctIndex": 1,
+       "explanation": "Names cannot start with a digit and cannot contain $ or -."
+      },
+      {
+       "prompt": "What is the result of 9 // 2?",
+       "options": [
+        "4",
+        "4.5",
+        "5",
+        "1"
+       ],
+       "correctIndex": 0,
+       "explanation": "// is floor division: the whole part of 4.5 is 4."
+      },
+      {
+       "prompt": "Which of these expressions prints True?",
+       "options": [
+        "print(5 == \"5\")",
+        "print(5 <= 2 and 4 > 3)",
+        "print(not(4 < 5))",
+        "print(3 < 4 or 4 < 3)"
+       ],
+       "correctIndex": 3,
+       "explanation": "With or, one True side is enough, and 3 < 4 is True."
+      },
+      {
+       "prompt": "Which data structure is best for an unchangeable record of a student's name, age and grade?",
+       "options": [
+        "List",
+        "Tuple",
+        "String",
+        "Dictionary"
+       ],
+       "correctIndex": 1,
+       "explanation": "A tuple is immutable (it cannot be changed)."
+      },
+      {
+       "prompt": "What does this code print?\n\nx = (\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\")\nprint(x)",
+       "options": [
+        "Mr Joseph, Mr. Idehen, Mr. Obaseki",
+        "(\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\")",
+        "[\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\"]",
+        "{\"Mr Joseph\", \"Mr. Idehen\", \"Mr. Obaseki\"}"
+       ],
+       "correctIndex": 1,
+       "explanation": "A tuple prints inside round brackets. (Python actually uses single quotes around each name, but the round brackets show it is the closest option.)"
+      }
+     ]
+    },
+    {
+     "id": "flow",
+     "title": "Decisions and loops",
+     "body": [
+      "**if** runs a block only **when its condition is true.** **elif** (short for 'else if') checks another condition when the earlier ones were false. **else** runs when none were true. Use **elif**, not elseif or else if.",
+      "**Example.** With age = 15: **if age >= 18** is false, so Python checks **elif age >= 13**, which is true, so it prints Teen. The else part is skipped.",
+      "**for loop.** A **for** loop runs a block **repeatedly over a sequence.** **for i in range(5)** repeats with i = 0, 1, 2, 3, 4. **range(2, 5)** gives 2, 3, 4 (it stops **before** the end number).",
+      "**while loop.** A **while** loop repeats **as long as** its condition is True. **n = 3**, then **while n > 0: print(n); n = n - 1** prints 3 2 1 and stops when n reaches 0. Always change something inside the loop, or it will never end.",
+      "**continue and break.** **continue** skips the **rest of the current round** and jumps to the next one. **break** stops the whole loop. For example, a loop over 0 to 4 that says **if i == 2: continue** prints 0 1 3 4 (it skips 2), but **if i == 3: break** prints 0 1 2 (it stops at 3).",
+      "**Adding things up.** Start with **total = 0**. In a loop over 2, 4 and 6, do **total = total + n** each time. The final total is 12."
+     ],
+     "keyPoints": [
+      "if / elif / else choose one path.",
+      "for repeats over a sequence; while repeats while a condition is true.",
+      "continue skips one round; break ends the loop. range(2, 5) is 2, 3, 4."
+     ],
+     "example": {
+      "problem": "What does this code print? total = 0, then for n in [2, 4, 6]: total = total + n, then print(total).",
+      "steps": [
+       "Start: total = 0.",
+       "After 2: 2. After 4: 6. After 6: 12."
+      ],
+      "answer": "12"
+     },
+     "exercises": [
+      {
+       "prompt": "Which keyword checks another condition after an if?",
+       "options": [
+        "elseif",
+        "else if",
+        "elif",
+        "ifelse"
+       ],
+       "correctIndex": 2,
+       "explanation": "Python uses elif."
+      },
+      {
+       "prompt": "Which keyword skips the current round of a loop?",
+       "options": [
+        "stop",
+        "continue",
+        "skip",
+        "break"
+       ],
+       "correctIndex": 1,
+       "explanation": "continue jumps to the next round. break would end the loop."
+      },
+      {
+       "prompt": "What does this code print?\n\nfor i in range(5):\n    if i == 2:\n        continue\n    print(i, end=\" \")",
+       "options": [
+        "0 1 2 3 4",
+        "0 1 3 4",
+        "0 1",
+        "2"
+       ],
+       "correctIndex": 1,
+       "explanation": "When i is 2, continue skips the print, so 2 is missing."
+      },
+      {
+       "prompt": "What does this code print?\n\nn = 3\nwhile n > 0:\n    print(n, end=\" \")\n    n = n - 1",
+       "options": [
+        "1 2 3",
+        "3 2 1",
+        "3 2 1 0",
+        "It never stops"
+       ],
+       "correctIndex": 1,
+       "explanation": "n goes 3, 2, 1, and the loop stops when n is 0."
+      },
+      {
+       "prompt": "What is the purpose of the for loop?",
+       "options": [
+        "To run a block repeatedly over a sequence",
+        "To run a block once",
+        "To skip a block",
+        "To exit the program"
+       ],
+       "correctIndex": 0,
+       "explanation": "A for loop repeats a block for each item in a sequence."
+      },
+      {
+       "prompt": "What is the purpose of the if statement?",
+       "options": [
+        "To run a block when the condition is false",
+        "To skip every block",
+        "To run a block when the condition is true",
+        "To exit the program"
+       ],
+       "correctIndex": 2,
+       "explanation": "The block under if runs only when its condition is true."
+      }
+     ]
+    },
+    {
+     "id": "func",
+     "title": "Functions and modules",
+     "body": [
+      "A **function** is a named block of code that you can run again and again. You **define** it with the keyword **def**: **def square(n):** followed by an indented body. The def keyword defines a function (not a variable, class or module).",
+      "Defining a function does **not** run it. You must **call** it by writing its name with round brackets: **square(5)**. A valid function call looks like **function()** and not function[] or function{}.",
+      "**return** sends a value back. With **def square(n): return n * n**, the call **print(square(5))** shows 25.",
+      "A **module** is a file of ready-made code. The **import** statement brings a module into your program. For example, after **import math** you can write **math.sqrt(49)**, which gives 7.0. Python has many built-in modules, such as **math**, **statistics** and **io**.",
+      "**Other languages are similar.** In C you must declare a variable with its type before using it, for example **int x;**, **float x;** or **char x;**. All of these are valid declarations."
+     ],
+     "keyPoints": [
+      "def defines a function; calling it uses name().",
+      "import brings in a module (math, statistics, io are built in).",
+      "return sends a value back."
+     ],
+     "example": {
+      "problem": "Write what is printed by: def double(n): return n * 2, then print(double(8)).",
+      "steps": [
+       "double(8) means n = 8.",
+       "It returns 8 × 2 = 16."
+      ],
+      "answer": "16"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the purpose of the def keyword in Python?",
+       "options": [
+        "To define a variable",
+        "To define a class",
+        "To define a function",
+        "To define a module"
+       ],
+       "correctIndex": 2,
+       "explanation": "def starts a function definition."
+      },
+      {
+       "prompt": "Which of these is a valid Python function call?",
+       "options": [
+        "function[]",
+        "function()",
+        "function{}",
+        "function<>"
+       ],
+       "correctIndex": 1,
+       "explanation": "A call uses round brackets."
+      },
+      {
+       "prompt": "What is the purpose of the import statement?",
+       "options": [
+        "To import a module",
+        "To export a module",
+        "To create a module",
+        "To delete a module"
+       ],
+       "correctIndex": 0,
+       "explanation": "import brings in a module so you can use its code."
+      },
+      {
+       "prompt": "Which of these is a built-in Python module?",
+       "options": [
+        "statistics",
+        "io",
+        "math",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All three are built-in modules."
+      },
+      {
+       "prompt": "What does this code print?\n\ndef square(n):\n    return n * n\nprint(square(5))",
+       "options": [
+        "5",
+        "10",
+        "25",
+        "square(5)"
+       ],
+       "correctIndex": 2,
+       "explanation": "square(5) returns 5 × 5 = 25."
+      },
+      {
+       "prompt": "Which of these is a valid C variable declaration?",
+       "options": [
+        "int x;",
+        "float x;",
+        "char x;",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "Each one declares a variable of a different type."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "print() shows output; input() returns text; // is whole-number division; def defines a function"
+  },
+  {
+   "id": "algorithms-and-problem-solving",
+   "intro": "Before you write any code, you need a plan. This lesson covers how to solve a problem step by step, what an algorithm is, how flowcharts and pseudocode differ, and the Tower of Hanoi, a classic example of recursion.",
+   "sections": [
+    {
+     "id": "steps",
+     "title": "How to solve a problem",
+     "body": [
+      "Programming starts with **problem solving.** The goal of problem solving is to find the **root cause** of the problem and a good solution to it, not a quick temporary fix.",
+      "**The first step is always to identify the problem.** You cannot solve what you have not understood. After that comes planning or brainstorming, trying a solution (implementation), and then evaluating it.",
+      "**Feedback** is how you check your result. In problem solving, feedback tells you **how well your solution worked**, so you can improve it.",
+      "**Strategies.** An **algorithmic** strategy follows a fixed set of steps that always works. A **heuristic** strategy is a quick rule of thumb. **Intuitive** thinking uses your instinct. All of these are problem-solving strategies. **Divide and conquer** breaks a big problem into smaller ones. **Trial and error** tries things until one works. **Working backwards** starts from the goal.",
+      "**Barriers.** Things that get in the way include **limited information**, **insufficient resources** and **biased thinking**. All of them are barriers."
+     ],
+     "keyPoints": [
+      "First step: identify the problem. Goal: find the root cause.",
+      "Feedback tells you how well your solution worked.",
+      "Strategies: algorithmic, heuristic, intuitive, divide and conquer, trial and error, working backwards."
+     ],
+     "example": {
+      "problem": "You want to plan a school sports day. Which problem-solving idea fits 'split it into venue, teams and refreshments'?",
+      "steps": [
+       "The big task is cut into smaller tasks.",
+       "That is divide and conquer."
+      ],
+      "answer": "Divide and conquer"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the first step in solving a problem?",
+       "options": [
+        "Brainstorming",
+        "Identifying the problem",
+        "Evaluating the result",
+        "Implementation"
+       ],
+       "correctIndex": 1,
+       "explanation": "You must understand the problem before anything else."
+      },
+      {
+       "prompt": "What is the primary goal of problem solving?",
+       "options": [
+        "To find a temporary solution",
+        "To identify the root cause of the problem",
+        "To implement a solution quickly",
+        "To remove every possible solution"
+       ],
+       "correctIndex": 1,
+       "explanation": "The aim is to find the root cause and fix it properly."
+      },
+      {
+       "prompt": "What is the role of feedback in problem solving?",
+       "options": [
+        "To provide new information only",
+        "To evaluate how effective a solution is",
+        "To create more problems",
+        "To remove all solutions"
+       ],
+       "correctIndex": 1,
+       "explanation": "Feedback shows whether the solution worked."
+      },
+      {
+       "prompt": "Which strategy breaks a complex problem into smaller ones?",
+       "options": [
+        "Divide and conquer",
+        "Trial and error",
+        "Working backwards",
+        "Lateral thinking"
+       ],
+       "correctIndex": 0,
+       "explanation": "Divide and conquer splits a problem into smaller parts."
+      },
+      {
+       "prompt": "Which is a barrier to effective problem solving?",
+       "options": [
+        "Limited information",
+        "Insufficient resources",
+        "Biased thinking",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All three make problem solving harder."
+      }
+     ]
+    },
+    {
+     "id": "algo",
+     "title": "Algorithms, flowcharts and pseudocode",
+     "body": [
+      "An **algorithm** is a **set of rules (steps) to solve a problem.** It is usually written in an English-like structure, such as pseudocode. It is not a programming language.",
+      "**Characteristics of an algorithm:** **finiteness** (it must end after a limited number of steps), **generality** (it works for a whole class of inputs, not one case), **exactness** (every step is clear and precise, with no ambiguity). All of these belong to a good algorithm. An algorithm does not necessarily have to take an input.",
+      "**Flowchart** and **pseudocode** are two ways to write an algorithm. A **flowchart** is **graphical** (it uses boxes and arrows). **Pseudocode** is **textual** (it uses English-like words). A flowchart is not text, and pseudocode is not a picture.",
+      "**Pseudocode and source code.** Pseudocode is **not directly executable**; the computer cannot run it. **Source code** (written in a language like Python) is run by an interpreter or a compiler.",
+      "**Two ideas used in programming.** **Divide and conquer** is the technique of breaking a problem into smaller sub-problems. **Abstraction** is the concept of hiding the details and showing only what is necessary (for example, you drive a car without knowing how the engine works). **Java** is famous for 'write once, run anywhere'."
+     ],
+     "keyPoints": [
+      "Algorithm: finite, general, exact steps to solve a problem.",
+      "Flowchart = graphical; pseudocode = textual and not directly executable.",
+      "Divide and conquer splits a problem; abstraction hides detail."
+     ],
+     "example": {
+      "problem": "Write pseudocode to find the larger of two numbers A and B.",
+      "steps": [
+       "INPUT A and B.",
+       "IF A > B THEN print A, ELSE print B.",
+       "It is finite, exact and works for any two numbers."
+      ],
+      "answer": "IF A > B print A ELSE print B"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is a characteristic of an algorithm?",
+       "options": [
+        "Finiteness",
+        "Generality",
+        "Exactness",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "A good algorithm is finite, general and exact."
+      },
+      {
+       "prompt": "What is the difference between a flowchart and pseudocode?",
+       "options": [
+        "A flowchart is textual and pseudocode is graphical",
+        "A flowchart is graphical and pseudocode is textual",
+        "A flowchart is for data and pseudocode is for rules",
+        "They are exactly the same"
+       ],
+       "correctIndex": 1,
+       "explanation": "A flowchart is a diagram; pseudocode is written words."
+      },
+      {
+       "prompt": "What is the difference between pseudocode and source code?",
+       "options": [
+        "Pseudocode is graphical and source code is textual",
+        "Pseudocode is executable and source code is not",
+        "Pseudocode is not directly executable, but source code can be run",
+        "There is no difference"
+       ],
+       "correctIndex": 2,
+       "explanation": "A computer cannot run pseudocode directly."
+      },
+      {
+       "prompt": "Which concept hides implementation details and shows only what is necessary?",
+       "options": [
+        "Encapsulation",
+        "Abstraction",
+        "Inheritance",
+        "Polymorphism"
+       ],
+       "correctIndex": 1,
+       "explanation": "That is the idea of abstraction."
+      },
+      {
+       "prompt": "Which language is best known for 'write once, run anywhere'?",
+       "options": [
+        "Java",
+        "Python",
+        "C++",
+        "JavaScript"
+       ],
+       "correctIndex": 0,
+       "explanation": "Java programs run on any computer with the Java platform."
+      },
+      {
+       "prompt": "In what form is an algorithm typically written?",
+       "options": [
+        "A programming language only",
+        "An English-like structure",
+        "A hardware circuit",
+        "A video"
+       ],
+       "correctIndex": 1,
+       "explanation": "Algorithms are normally written in English-like steps or pseudocode."
+      }
+     ]
+    },
+    {
+     "id": "hanoi",
+     "title": "Recursion and the Tower of Hanoi",
+     "body": [
+      "**Recursion** means a function **calls itself** to solve a smaller version of the same problem. Every recursion needs a **base condition**, a case so small that it can be answered directly (for example n = 1). When the base condition is reached, the calls stop and the answers come back.",
+      "**Example: factorial.** 5! means 5 × 4 × 3 × 2 × 1 = 120. As a recursive rule: factorial(n) = n × factorial(n − 1), and factorial(1) = 1 is the base condition. So 4! = 4 × 3! = 4 × 3 × 2! = 4 × 3 × 2 × 1 = 24.",
+      "**The Tower of Hanoi.** There are three pegs (call them A, B, C) and n disks of different sizes stacked on A with the largest at the bottom. The rules: move one disk at a time, and never put a larger disk on a smaller one. The goal is to move the whole stack to C. The **auxiliary (spare) peg** B is used to **temporarily hold disks** so that others can move.",
+      "**The recursive idea.** To move n disks from A to C: first move the top n − 1 disks from A to B (using C as the spare), then move the biggest disk from A to C, then move the n − 1 disks from B to C (using A as the spare).",
+      "**How many moves?** With 1 disk you need 1 move, with 2 disks 3 moves, with 3 disks 7 moves, with 4 disks 15 moves. The pattern is **2ⁿ − 1** for n disks. With 10 disks that is 2¹⁰ − 1 = 1023 moves.",
+      "**The first move with 3 disks.** When n is odd, the smallest disk goes straight to the target peg. So moving 3 disks from A to C using B, the first printed move is **Move disk 1 from A to C.** (With 2 disks the first move is disk 1 from A to the spare peg B.)"
+     ],
+     "keyPoints": [
+      "Recursion: a function calls itself, and stops at a base condition.",
+      "Tower of Hanoi needs 2ⁿ − 1 moves.",
+      "The auxiliary peg only holds disks temporarily."
+     ],
+     "example": {
+      "problem": "How many moves does the Tower of Hanoi need for 5 disks?",
+      "steps": [
+       "Use 2ⁿ − 1 with n = 5.",
+       "2⁵ = 32, so 32 − 1 = 31."
+      ],
+      "answer": "31 moves"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the minimum number of moves needed to solve the Tower of Hanoi puzzle with n disks?",
+       "options": [
+        "n²",
+        "n² − 2",
+        "n + 2",
+        "2ⁿ − 1"
+       ],
+       "correctIndex": 3,
+       "explanation": "1, 3, 7, 15, … which is 2ⁿ − 1."
+      },
+      {
+       "prompt": "How many moves does the Tower of Hanoi with 4 disks need?",
+       "options": [
+        "8",
+        "15",
+        "16",
+        "31"
+       ],
+       "correctIndex": 1,
+       "explanation": "2⁴ − 1 = 15."
+      },
+      {
+       "prompt": "What is the first printed move when solving the Tower of Hanoi with 3 disks, from peg A to peg C using peg B?",
+       "options": [
+        "Move disk 1 from A to B",
+        "Move disk 3 from A to C",
+        "Move disk 1 from A to C",
+        "Move disk 2 from A to B"
+       ],
+       "correctIndex": 2,
+       "explanation": "For an odd number of disks the smallest disk goes first to the target peg C."
+      },
+      {
+       "prompt": "What is the role of the auxiliary peg?",
+       "options": [
+        "It holds the largest disk for ever",
+        "It is not used",
+        "It temporarily holds disks so others can be moved",
+        "It is where all the disks must end"
+       ],
+       "correctIndex": 2,
+       "explanation": "It is a spare resting place for disks."
+      },
+      {
+       "prompt": "Which statement about recursion is true?",
+       "options": [
+        "The function calls itself only once, always",
+        "Recursion ends when a base condition is reached",
+        "There are always exactly two recursive calls",
+        "Recursion is never used"
+       ],
+       "correctIndex": 1,
+       "explanation": "The base condition stops the chain of calls."
+      },
+      {
+       "prompt": "What is factorial(4) when factorial(n) = n × factorial(n − 1) and factorial(1) = 1?",
+       "options": [
+        "10",
+        "16",
+        "24",
+        "12"
+       ],
+       "correctIndex": 2,
+       "explanation": "4 × 3 × 2 × 1 = 24."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Tower of Hanoi moves = 2ⁿ − 1"
+  },
+  {
+   "id": "reading-python-code",
+   "intro": "Exam questions on code are easy marks if you stay calm and trace the code line by line with real numbers. This lesson trains you to read functions, if/else, loops, find_max and a Fibonacci flowchart.",
+   "sections": [
+    {
+     "id": "rpc-func",
+     "title": "Reading a function: def, call and output",
+     "body": [
+      "Reading code is like reading a short story: go from the top, one line at a time, and ask 'what does this line do?'. You do not need to be a genius. You just need to follow the steps.",
+      "Here is a tiny program. **def greet(name):** is Line 1, **print(\"Hello, \" + name + \"!\")** is Line 2 (it is indented, so it belongs to the function) and **greet(\"John\")** is Line 3.",
+      "**def** means 'define'. It only teaches Python a new function called greet. Nothing is printed at this point. Think of it as writing a recipe in a book. You have not cooked anything yet.",
+      "Line 3, **greet(\"John\")**, is the call. It is the moment you cook. Python jumps into the function with name = \"John\", and Line 2 runs: **\"Hello, \" + \"John\" + \"!\"** joins into **Hello, John!**. Notice the comma and space come from \"Hello, \" and nothing else, so the output is exactly: Hello, John!",
+      "If you delete the call line, the function is still defined, but nobody calls it, so the program prints nothing and does not crash. To print Goodbye, John! you only change the word inside the print line in Line 2."
+     ],
+     "keyPoints": [
+      "def defines a function; it does not run it.",
+      "A call is the function name with brackets and a value, for example greet(\"John\").",
+      "Text inside quotes is printed exactly as written, including spaces."
+     ],
+     "example": {
+      "problem": "What does this print?  def greet(name): print(\"Hi \" + name)  then greet(\"Ada\")",
+      "steps": [
+       "def only stores the function.",
+       "The call greet(\"Ada\") sets name to \"Ada\".",
+       "print joins \"Hi \" and \"Ada\"."
+      ],
+      "answer": "Hi Ada"
+     },
+     "exercises": [
+      {
+       "prompt": "Which keyword defines the function in this code?\n\ndef greet(name):\n    print(\"Hello, \" + name + \"!\")\ngreet(\"John\")",
+       "options": [
+        "def",
+        "print",
+        "greet",
+        "name"
+       ],
+       "correctIndex": 0,
+       "explanation": "def starts a function definition.",
+       "hint": "It is the very first word of Line 1."
+      },
+      {
+       "prompt": "Which line calls the function?\n\ndef greet(name):          # Line 1\n    print(\"Hello, \" + name + \"!\")  # Line 2\ngreet(\"John\")             # Line 3",
+       "options": [
+        "Line 1",
+        "Line 2",
+        "Line 3",
+        "No line"
+       ],
+       "correctIndex": 2,
+       "explanation": "Line 3 uses the function name followed by brackets, which is a call. Line 1 only defines it.",
+       "hint": "The call is the line that is not indented and not def."
+      },
+      {
+       "prompt": "What is the output?\n\ndef greet(name):\n    print(\"Hello, \" + name + \"!\")\ngreet(\"John\")",
+       "options": [
+        "Hello,John!",
+        "Hello+John+!",
+        "Hello John!",
+        "Hello, John!"
+       ],
+       "correctIndex": 3,
+       "explanation": "\"Hello, \" has a comma and a space inside the quotes, then John, then !. So it prints Hello, John!"
+      },
+      {
+       "prompt": "What would happen if the line greet(\"John\") were removed?",
+       "options": [
+        "The function greet would not be defined",
+        "The function greet would not be called",
+        "The program would crash",
+        "The function greet would be deleted"
+       ],
+       "correctIndex": 1,
+       "explanation": "The def block still defines the function. Nothing calls it, so nothing prints and nothing crashes."
+      },
+      {
+       "prompt": "How do you change the program so that it prints Goodbye, John!?",
+       "options": [
+        "Change \"Hello, \" to \"Goodbye, \" inside the print line",
+        "Change greet(\"John\") to goodbye(\"John\")",
+        "Delete the def line",
+        "Add an extra bracket"
+       ],
+       "correctIndex": 0,
+       "explanation": "The words are printed by the print line, so that is the place to change. Renaming the call to goodbye would give an error because no such function exists."
+      }
+     ]
+    },
+    {
+     "id": "rpc-ifloop",
+     "title": "Reading if/else, comments, for and while",
+     "body": [
+      "A **comment** starts with # . Python ignores it completely. It is only a note for humans, so it is called a non-executable statement. In **# This code determines the status by age**, nothing happens when the program runs.",
+      "An **if/else** picks one path. Take **age = 17** and **if age >= 18:**. Is 17 at least 18? No. So Python skips the Adult line and runs the else part, and the output is **Minor**. Always plug the number in and check the question honestly.",
+      "A **while** loop repeats as long as the test is true. Look at **count = 0**, **while count <= 3:**, **print(\"Hi\")**, **count += 1**. Count goes 0, 1, 2, 3. At each of these the test is true, so Hi prints 4 times. When count becomes 4, 4 <= 3 is false and the loop stops. The mistake to avoid is to say 3 times. The = in <= includes 3.",
+      "A **for** loop with **range(2, 5)** starts at 2 and stops BEFORE 5. So i takes 2, 3, 4. With **end=\" \"** each print adds a space instead of a new line, so everything shows on one line as: 2 3 4"
+     ],
+     "keyPoints": [
+      "# starts a comment and is ignored.",
+      "Plug the real value into an if test before choosing the path.",
+      "<= includes the number; range(a, b) stops before b."
+     ],
+     "example": {
+      "problem": "How many times does this loop run? n = 1, while n <= 3: print(n), n += 1",
+      "steps": [
+       "n = 1 passes the test 1 <= 3.",
+       "n = 2 passes, n = 3 passes.",
+       "n = 4 fails because 4 <= 3 is false."
+      ],
+      "answer": "3 times"
+     },
+     "exercises": [
+      {
+       "prompt": "Which part is a comment?\n\n# This code determines the status of the user by age\nage = 17\nif age >= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")",
+       "options": [
+        "age = 17",
+        "if age >= 18:",
+        "# This code determines the status of the user by age",
+        "else:"
+       ],
+       "correctIndex": 2,
+       "explanation": "A line that starts with # is ignored by Python, so it is a non-executable comment."
+      },
+      {
+       "prompt": "What is the output?\n\nage = 17\nif age >= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")",
+       "options": [
+        "Adult",
+        "Minor",
+        "17",
+        "Error"
+       ],
+       "correctIndex": 1,
+       "explanation": "17 >= 18 is false, so the else part runs and Minor prints."
+      },
+      {
+       "prompt": "How many times is Hi printed?\n\ncount = 0\nwhile count <= 3:\n    print(\"Hi\")\n    count += 1",
+       "options": [
+        "0",
+        "3",
+        "4",
+        "Infinite"
+       ],
+       "correctIndex": 2,
+       "explanation": "count is 0, 1, 2 and 3 when the test is true. That is four times. At count = 4 the test fails."
+      },
+      {
+       "prompt": "How many times would Hi print if the test were count < 3 (everything else the same)?",
+       "options": [
+        "2",
+        "3",
+        "4",
+        "Infinite"
+       ],
+       "correctIndex": 1,
+       "explanation": "Now count = 0, 1, 2 pass. At 3, 3 < 3 is false. So 3 times."
+      },
+      {
+       "prompt": "Which output matches this code?\n\nfor i in range(2, 5):\n    print(i, end=\" \")",
+       "options": [
+        "2 3 4 5",
+        "2 3 4",
+        "3 4 5",
+        "2 3 4 on separate lines"
+       ],
+       "correctIndex": 1,
+       "explanation": "range(2, 5) stops before 5, and end=\" \" keeps everything on one line.",
+       "hint": "The last number of range is never reached."
+      }
+     ]
+    },
+    {
+     "id": "rpc-max",
+     "title": "Reading find_max and the Fibonacci flowchart",
+     "body": [
+      "**find_max(a, b, c)** has an if, an elif and an else. The first test, **a > b and a > c**, means a is bigger than BOTH others. The elif checks the same for b. If neither is true, the else returns c.",
+      "With 5, 10, 15: is 5 > 10? No. Is 10 > 5 and 10 > 15? No (10 is not bigger than 15). So else runs and returns **15**.",
+      "Careful with ties. With 10, 20, 20: the first test fails. For the elif, b > a is true (20 > 10) but b > c is false (20 > 20 is false). Both tests fail, so else returns c, which is **20**. That happens to be correct here. But with 20, 20, 10 the else returns 10, which is a wrong maximum. So the code is only safe when the biggest number is not repeated. Good programmers notice this.",
+      "To find the minimum, you flip the comparison signs: change each > to <. To find the largest of FOUR numbers, a loop or the built-in max() is the neat way, because adding more elif lines becomes long and messy.",
+      "Now the flowchart idea. Start with **First = 0** and **Second = 1**. In each pass: **COS102 = First + Second**, then **First = Second**, then **Second = COS102**. The values of COS102 on passes 1 to 7 are 1, 2, 3, 5, 8, 13, 21. So on the 7th pass it is **21**. This is the Fibonacci sequence, where each number is the sum of the two before it.",
+      "In this flowchart COS102 is just a variable that stores the sum (a calculation variable). It is not a counter and it is not a loop."
+     ],
+     "keyPoints": [
+      "and means BOTH conditions must be true.",
+      "Trace code with real numbers, line by line.",
+      "Fibonacci: each term is the sum of the two before it."
+     ],
+     "example": {
+      "problem": "First = 0, Second = 1. What is COS102 on the 4th pass?",
+      "steps": [
+       "Pass 1: 0 + 1 = 1. Now First = 1, Second = 1.",
+       "Pass 2: 1 + 1 = 2. Now First = 1, Second = 2.",
+       "Pass 3: 1 + 2 = 3. Now First = 2, Second = 3.",
+       "Pass 4: 2 + 3 = 5."
+      ],
+      "answer": "5"
+     },
+     "exercises": [
+      {
+       "prompt": "What does the test a > b and a > c check?",
+       "options": [
+        "a equals b and c",
+        "a is greater than both b and c",
+        "a is less than b and c",
+        "a is less than c only"
+       ],
+       "correctIndex": 1,
+       "explanation": "and needs both parts to be true, so a must beat b and c."
+      },
+      {
+       "prompt": "What does find_max(5, 10, 15) return?",
+       "options": [
+        "5",
+        "10",
+        "15",
+        "16"
+       ],
+       "correctIndex": 2,
+       "explanation": "Neither if nor elif is true, so else returns c, which is 15."
+      },
+      {
+       "prompt": "What does find_max(10, 20, 20) return?",
+       "options": [
+        "An error",
+        "20",
+        "10",
+        "Both 10 and 20"
+       ],
+       "correctIndex": 1,
+       "explanation": "b > c is false because 20 is not greater than 20, so else returns c = 20."
+      },
+      {
+       "prompt": "To change find_max into a function that finds the minimum, what is the simplest change?",
+       "options": [
+        "Change the > signs to < signs",
+        "Add a new function",
+        "Delete the else",
+        "Remove the return lines"
+       ],
+       "correctIndex": 0,
+       "explanation": "Flip the comparison from 'bigger than both' to 'smaller than both'."
+      },
+      {
+       "prompt": "A flowchart starts with First = 0 and Second = 1. Each pass: COS102 = First + Second, First = Second, Second = COS102. What is COS102 on the 7th pass?",
+       "options": [
+        "21",
+        "15",
+        "8",
+        "13"
+       ],
+       "correctIndex": 0,
+       "explanation": "The values are 1, 2, 3, 5, 8, 13, 21.",
+       "hint": "Write the values one by one."
+      },
+      {
+       "prompt": "What is the role of COS102 in COS102 = First + Second?",
+       "options": [
+        "Counter",
+        "Loop",
+        "Calculation variable that stores the sum",
+        "Input statement"
+       ],
+       "correctIndex": 2,
+       "explanation": "It holds the calculated sum of First and Second."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "Trace line by line; range(a, b) stops before b; Fibonacci: next = sum of previous two"
+  },
+  {
+   "id": "reading-c-code",
+   "intro": "C programs follow a clear pattern: include a library, write main, declare variables, print, then return 0. Once you know the pattern, these questions are straightforward.",
+   "sections": [
+    {
+     "id": "c-structure",
+     "title": "The shape of a C program",
+     "body": [
+      "C looks scary, but this program is short. Read it as a list of instructions from the top.",
+      "**#include <stdio.h>** brings in the standard input/output library. Without it, printf would not be known. So its purpose is to include the standard input/output library.",
+      "**int main() { ... }** is where the program starts. Everything inside the curly brackets runs in order. Every statement inside ends with a semicolon.",
+      "**return 0;** is the last line. It tells the operating system the program ended normally. A non-zero number would signal a problem."
+     ],
+     "keyPoints": [
+      "#include <stdio.h> gives printf.",
+      "main() is the starting point.",
+      "return 0; means normal end."
+     ],
+     "example": {
+      "problem": "Which line lets you use printf?",
+      "steps": [
+       "printf lives in the standard input/output library.",
+       "That library is added by #include <stdio.h>."
+      ],
+      "answer": "#include <stdio.h>"
+     },
+     "exercises": [
+      {
+       "prompt": "What is the purpose of #include <stdio.h>?",
+       "options": [
+        "To define a new function",
+        "To include the standard input/output library",
+        "To declare a variable"
+       ],
+       "correctIndex": 1,
+       "explanation": "stdio.h gives access to printf and other input/output functions."
+      },
+      {
+       "prompt": "What is the purpose of return 0; in main?",
+       "options": [
+        "To return the sum of x and y",
+        "To show normal termination of the program",
+        "To return an error code",
+        "To display an error code"
+       ],
+       "correctIndex": 1,
+       "explanation": "0 tells the system the program finished normally."
+      },
+      {
+       "prompt": "Where does a C program start running?",
+       "options": [
+        "#include line",
+        "main()",
+        "return 0;",
+        "The last printf"
+       ],
+       "correctIndex": 1,
+       "explanation": "Execution begins in main()."
+      }
+     ]
+    },
+    {
+     "id": "c-vars",
+     "title": "Variables, printf and changing the output",
+     "body": [
+      "**int x = 5;** and **int y = 10;** create two whole-number variables. **int sum = x + y;** stores 5 + 10 = 15 in sum.",
+      "**printf(\"The sum is: %d\\n\", sum);** prints the text, and %d is a hole where the whole number sum is placed. \\n starts a new line. The output is: **The sum is: 15**.",
+      "If you remove **int** from **int sum = x + y;**, C does not know what sum is, because variables must be declared with a type first. That gives a compilation error.",
+      "To print the product instead, change the declaration to **int product = x * y;** (5 × 10 = 50) and print product with the text 'The product is: %d'. Changing only the words would still print the wrong number."
+     ],
+     "keyPoints": [
+      "Declare each variable with its type, for example int.",
+      "%d is a placeholder for a whole number."
+     ],
+     "example": {
+      "problem": "If x = 7 and y = 3 and sum = x + y, what does printf(\"Sum: %d\\n\", sum); print?",
+      "steps": [
+       "sum = 7 + 3 = 10.",
+       "%d is replaced by 10."
+      ],
+      "answer": "Sum: 10"
+     },
+     "exercises": [
+      {
+       "prompt": "What does the program print?\n\n#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 10;\n    int sum = x + y;\n    printf(\"The sum is: %d\\n\", sum);\n    return 0;\n}",
+       "options": [
+        "The sum is: 12",
+        "The sum is: sum",
+        "The sum is: 15",
+        "The sum is: 20"
+       ],
+       "correctIndex": 2,
+       "explanation": "%d is replaced by the value of sum, which is 5 + 10 = 15."
+      },
+      {
+       "prompt": "What happens if int is removed so the line reads sum = x + y;?",
+       "options": [
+        "The program crashes while running",
+        "sum becomes a float",
+        "sum becomes a char",
+        "A compilation error, because sum is not declared"
+       ],
+       "correctIndex": 3,
+       "explanation": "In C every variable must be declared with a type before use."
+      },
+      {
+       "prompt": "To print The product is: 50, which change is correct?",
+       "options": [
+        "Use x * y, name the variable product, and change the printf text and variable to match",
+        "Only change the word sum to product in the text",
+        "Add return 50;",
+        "Change %d to %p"
+       ],
+       "correctIndex": 0,
+       "explanation": "You need the calculation x * y (5 × 10 = 50) and matching text and variable."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "#include → main → declare → calculate → printf(\"%d\") → return 0;"
+  },
+  {
+   "id": "qbasic-programming",
+   "intro": "QBasic questions are mostly definitions and small calculations. This lesson covers program planning, variables, IF, nested loops and arrays with the exact facts your exams test.",
+   "sections": [
+    {
+     "id": "qb-basics",
+     "title": "Programs, algorithms and design tools",
+     "body": [
+      "A **program** is a set of instructions given to a computer to execute (obey). **QBasic** is a simple language used to teach programming. The window where you type your instructions is called the **editor**.",
+      "Before you write a program you plan it. An **algorithm** is a finite list of clear steps that solves a problem. It must be unambiguous (no confusing steps), it must end after a finite number of steps, and it does not necessarily need an input. A **flowchart** is a pictorial (drawn) representation of the steps. Other design tools are **pseudocode** and **decision tables**. So algorithm, pseudocode, decision table and flowchart are all design tools.",
+      "A good program has these qualities: **reliability**, **efficiency**, **robustness** and **maintainability**. If a question asks which one is NOT a quality and the list has only these, the answer is 'none of the above'.",
+      "Errors are of three kinds: **syntax errors** (you broke the language rules, for example a misspelt keyword), **logical errors** (the program runs but gives wrong results because your thinking was wrong) and **execution (run-time) errors** (something goes wrong while running, like dividing by zero). **Debugging** is the act of locating and removing errors.",
+      "QBasic uses an **interpreter**. It translates and runs your program one line at a time, unlike a compiler which translates the whole program first."
+     ],
+     "keyPoints": [
+      "Design tools: algorithm, flowchart, pseudocode, decision table.",
+      "Qualities: reliability, efficiency, robustness, maintainability.",
+      "Errors: syntax, logical, execution. QBasic uses an interpreter."
+     ],
+     "example": {
+      "problem": "A program runs but shows 8 when it should show 12 because you used the wrong formula. What type of error is this?",
+      "steps": [
+       "The program did not break any language rule, so it is not a syntax error.",
+       "It did not crash while running, so it is not an execution error.",
+       "The thinking behind it was wrong."
+      ],
+      "answer": "Logical error"
+     },
+     "exercises": [
+      {
+       "prompt": "A ________ is a set of instructions given to a computer to execute.",
+       "options": [
+        "program",
+        "virus",
+        "monitor",
+        "folder"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is the definition of a program."
+      },
+      {
+       "prompt": "A ________ is a pictorial representation of the steps to the solution of a problem.",
+       "options": [
+        "Flowchart",
+        "Compiler",
+        "Editor",
+        "Array"
+       ],
+       "correctIndex": 0,
+       "explanation": "A flowchart draws the steps as symbols and arrows."
+      },
+      {
+       "prompt": "Which of these is NOT a tool for program design: algorithm, decision table, pseudocode?",
+       "options": [
+        "Algorithm",
+        "Decision table",
+        "Pseudocode",
+        "None of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All three are design tools, so none of them is the exception."
+      },
+      {
+       "prompt": "Which is NOT a quality of a good program? Reliability, efficiency, robustness, maintainability.",
+       "options": [
+        "Reliability",
+        "Efficiency",
+        "Maintainability",
+        "None of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All four listed are qualities of a good program."
+      },
+      {
+       "prompt": "Which of these is NOT a type of error in BASIC: logical, syntax, execution?",
+       "options": [
+        "Logical error",
+        "Syntax error",
+        "Execution error",
+        "None of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All three are genuine types of error."
+      },
+      {
+       "prompt": "________ is the act of locating and removing errors from a program.",
+       "options": [
+        "Debugging",
+        "Compiling",
+        "Printing",
+        "Declaring"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is debugging."
+      },
+      {
+       "prompt": "Which translator does QBasic use?",
+       "options": [
+        "Interpreter",
+        "Assembler",
+        "Linker",
+        "Compiler only"
+       ],
+       "correctIndex": 0,
+       "explanation": "QBasic translates and runs the program line by line, which is what an interpreter does."
+      },
+      {
+       "prompt": "The interface where a programmer types source code is the ________.",
+       "options": [
+        "editor",
+        "printer",
+        "array",
+        "loop"
+       ],
+       "correctIndex": 0,
+       "explanation": "You type your code in the editor."
+      }
+     ]
+    },
+    {
+     "id": "qb-statements",
+     "title": "CLS, REM, END and the first statements",
+     "body": [
+      "**CLS** means 'clear screen'. It is an **executable** statement because the computer actually does something when it reaches it: it wipes the screen.",
+      "**REM** (remark) is for comments. It is **not executable**: QBasic ignores it. You use it to explain your code to people.",
+      "**END** marks the logical end of a QBasic program.",
+      "**INPUT** asks the user to type a value and stores it in a variable. **PRINT** shows something on the screen. For example **INPUT \"A=\", A** shows A= and waits for you to type."
+     ],
+     "keyPoints": [
+      "CLS = clear screen (executable).",
+      "REM = comment (not executable).",
+      "END marks the end of the program."
+     ],
+     "example": {
+      "problem": "Is REM Calculate area an executable statement?",
+      "steps": [
+       "REM starts a remark.",
+       "QBasic ignores remarks."
+      ],
+      "answer": "No, it is not executable"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is true about CLS?",
+       "options": [
+        "It stands for clear screen and is executable",
+        "It is a comment",
+        "It ends the program",
+        "It declares an array"
+       ],
+       "correctIndex": 0,
+       "explanation": "CLS clears the screen, so it is an executable statement."
+      },
+      {
+       "prompt": "Which is NOT true about REM?",
+       "options": [
+        "It is used for remarks",
+        "It is ignored when the program runs",
+        "It is an executable statement",
+        "It helps to explain code"
+       ],
+       "correctIndex": 2,
+       "explanation": "REM is non-executable."
+      },
+      {
+       "prompt": "Which statement marks the logical end of a QBasic program?",
+       "options": [
+        "END",
+        "CLS",
+        "REM",
+        "INPUT"
+       ],
+       "correctIndex": 0,
+       "explanation": "END finishes the program."
+      },
+      {
+       "prompt": "INPUT \"A=\", A does what?",
+       "options": [
+        "Prints A twice",
+        "Shows A= and waits for the user to type a value for A",
+        "Ends the program",
+        "Declares an array"
+       ],
+       "correctIndex": 1,
+       "explanation": "INPUT asks the user for a value and stores it in the variable."
+      }
+     ]
+    },
+    {
+     "id": "qb-vars",
+     "title": "Variables, names, suffixes and operators",
+     "body": [
+      "A **variable** is an abstraction of a memory location. It has a name, an address and a type, and its content CAN change (that is why it is called a variable). The statement 'its content cannot be changed' is false.",
+      "**Naming rules**: start with a letter, use letters and digits, and never use a reserved word (a keyword) such as **ELSE**, **IF**, **PRINT**. So Offiong, OffiongMe and Offiong! are valid names but Else is not.",
+      "**Type suffixes** go at the end of a name: **$** string (text), **%** integer, **&** long integer, **!** single precision, **#** double precision. Four of them are numeric. **$** is the odd one out because it marks text.",
+      "In **Y = B - D**, the minus is a **binary (dyadic)** operator because it works on two values. The statement is read as 'B minus D is assigned to Y' and it is an arithmetic statement. All of those are true.",
+      "To write B² − 4AC in BASIC, use **B ^ 2 - 4 * A * C** or **B * B - 4 * A * C**. BASIC uses ^ for powers. ** is not used. Write the multiplication signs: 4AC must be 4 * A * C.",
+      "Check yourself with numbers. If A = 4, B = 5, C = -2: B^2 = 25, 4*A*C = 4*4*(-2) = -32, so D = 25 - (-32) = **57**. And if X = 11 and Y = 3, Z = X * Y = **33**."
+     ],
+     "keyPoints": [
+      "Names cannot be reserved words like ELSE.",
+      "$ string, % integer, & long, ! single, # double.",
+      "Use ^ for power and write every * explicitly."
+     ],
+     "example": {
+      "problem": "With A = 1, B = -5, C = 6, find D = B^2 - 4 * A * C.",
+      "steps": [
+       "B^2 = (-5)^2 = 25.",
+       "4 * A * C = 4 * 1 * 6 = 24.",
+       "D = 25 - 24."
+      ],
+      "answer": "1"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is NOT true about a variable?",
+       "options": [
+        "It is an abstraction of a memory location",
+        "It must have an address",
+        "Its content cannot be changed",
+        "It must have a type"
+       ],
+       "correctIndex": 2,
+       "explanation": "The content of a variable can change."
+      },
+      {
+       "prompt": "Which is NOT a valid variable name in QBasic?",
+       "options": [
+        "Offiong",
+        "OffiongMe",
+        "Offiong!",
+        "Else"
+       ],
+       "correctIndex": 3,
+       "explanation": "Else is a reserved word."
+      },
+      {
+       "prompt": "Which symbol is the odd one: ! & $ # %?",
+       "options": [
+        "!",
+        "&",
+        "$",
+        "%"
+       ],
+       "correctIndex": 2,
+       "explanation": "$ marks text; all the others mark numbers."
+      },
+      {
+       "prompt": "Which is NOT a type suffix in QBasic: String ($), Integer (%), Single (!), Long (&)?",
+       "options": [
+        "String ($)",
+        "Integer (%)",
+        "Long (&)",
+        "None of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All four are valid."
+      },
+      {
+       "prompt": "In Y = B - D, which is true?",
+       "options": [
+        "- is a binary operator",
+        "The statement is read as B minus D is assigned to Y",
+        "It is an arithmetic statement",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All of the statements are true."
+      },
+      {
+       "prompt": "Which is the correct way of writing B² − 4AC in BASIC?",
+       "options": [
+        "B^2 - 4 * A * C",
+        "B * B - 4 * A * C",
+        "B ** 2 - 4 * A * C",
+        "Both of the first two"
+       ],
+       "correctIndex": 3,
+       "explanation": "^ and B * B both work. ** is not BASIC."
+      },
+      {
+       "prompt": "If A = 4, B = 5, C = -2, what is D = B^2 - 4 * A * C?",
+       "options": [
+        "7",
+        "168",
+        "-32",
+        "57"
+       ],
+       "correctIndex": 3,
+       "explanation": "D = 25 - 4*4*(-2) = 25 + 32 = 57.",
+       "hint": "Minus times minus is plus."
+      },
+      {
+       "prompt": "Z = X * Y when X = 11 and Y = 3. What is Z?",
+       "options": [
+        "3.67",
+        "3",
+        "33",
+        "1"
+       ],
+       "correctIndex": 2,
+       "explanation": "* is multiplication, so 11 × 3 = 33. (11 / 3 would be about 3.67.)"
+      }
+     ]
+    },
+    {
+     "id": "qb-select",
+     "title": "IF statements and the quadratic program",
+     "body": [
+      "The three control structures are **sequence** (one after another), **selection** (choosing, with IF) and **iteration** (repeating, with loops). 'Invocation' is not one of them.",
+      "A **block IF** needs **END IF**. A single-line IF...THEN...ELSE does not need END IF. So the statement 'an IF must always have END IF' is false. An IF inside another IF is called a **nested IF**.",
+      "**AND** needs both conditions true. In **IF ((A > B) AND (C > D)) THEN A = C + B**, the assignment happens only if A > B and also C > D. The word 'either' describes OR, so 'executed if either is true' is the false statement.",
+      "Now the quadratic program. It uses **CLS**, **DIM A, B, C, D, DS AS DOUBLE** (DIM declares variables, and AS DOUBLE gives double-precision numbers), then three INPUTs for A, B and C. It finds **D = B * B - 4 * A * C**, the discriminant.",
+      "If **D > 0** there are two different real roots (this is why a quadratic typically gives 2 solutions). If **D = 0** the roots are equal. Otherwise the roots are complex. The program is therefore computing the roots of a quadratic equation, in all three cases.",
+      "Check with an example: A = 1, B = -5, C = 6 gives D = 1, which is above 0, so the roots are (5 - 1)/2 = **2** and (5 + 1)/2 = **3**."
+     ],
+     "keyPoints": [
+      "Sequence, selection, iteration.",
+      "AND needs both true; OR needs at least one.",
+      "D = B*B - 4*A*C decides the type of roots."
+     ],
+     "example": {
+      "problem": "A = 1, B = 2, C = 1. What does the program print?",
+      "steps": [
+       "D = 4 - 4 = 0.",
+       "D = 0, so the roots are equal.",
+       "Root = -B / (2 * A) = -2 / 2 = -1."
+      ],
+      "answer": "EQUAL ROOTS: -1"
+     },
+     "exercises": [
+      {
+       "prompt": "Which is NOT a control structure?",
+       "options": [
+        "Invocation",
+        "Selection",
+        "Iteration",
+        "None of the above"
+       ],
+       "correctIndex": 0,
+       "explanation": "The basic ones are sequence, selection and iteration."
+      },
+      {
+       "prompt": "Which is NOT correct?",
+       "options": [
+        "An IF statement must always have an END IF",
+        "A nested IF is an IF inside an IF",
+        "IF is used for selection",
+        "None of the above"
+       ],
+       "correctIndex": 0,
+       "explanation": "A single-line IF needs no END IF."
+      },
+      {
+       "prompt": "Which is NOT true about IF ((A > B) AND (C > D)) THEN A = C + B?",
+       "options": [
+        "It runs only if both conditions are true",
+        "It runs if either condition is true",
+        "A > B and C > D must both be true",
+        "None of the above"
+       ],
+       "correctIndex": 1,
+       "explanation": "'Either' describes OR, not AND."
+      },
+      {
+       "prompt": "What does the quadratic program compute?",
+       "options": [
+        "Only complex roots",
+        "Only real roots",
+        "The roots of a quadratic equation",
+        "The values of A, B and C"
+       ],
+       "correctIndex": 2,
+       "explanation": "It handles real, equal and complex cases."
+      },
+      {
+       "prompt": "What does DIM A, B, C, D, DS AS DOUBLE do?",
+       "options": [
+        "Deletes the variables",
+        "Declares variables to hold double-precision numbers",
+        "Draws a box",
+        "Ends the program"
+       ],
+       "correctIndex": 1,
+       "explanation": "DIM declares variables and AS DOUBLE sets the number type."
+      },
+      {
+       "prompt": "For A = 1, B = -5, C = 6 the program prints which roots?",
+       "options": [
+        "2 and 3",
+        "-2 and -3",
+        "1 and 6",
+        "Complex roots"
+       ],
+       "correctIndex": 0,
+       "explanation": "D = 1 > 0, roots (5 - 1)/2 = 2 and (5 + 1)/2 = 3."
+      },
+      {
+       "prompt": "How many root solutions does a quadratic usually have?",
+       "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "correctIndex": 1,
+       "explanation": "A quadratic equation typically has two roots."
+      }
+     ]
+    },
+    {
+     "id": "qb-loops",
+     "title": "FOR/NEXT loops and nesting",
+     "body": [
+      "A **FOR...NEXT** loop repeats a block a known number of times. **FOR I = 1 TO 4** runs the body with I = 1, 2, 3, 4, so 4 times. **STEP** changes the jump size: FOR I = 1 TO 10 STEP 2 uses 1, 3, 5, 7, 9 (5 times).",
+      "Loops can sit inside loops. Look at the program: **FOR I = 1 TO 4**, then **FOR J = 1 TO 3**, then PRINT, then **NEXT J**, then **NEXT I**. For each of the 4 values of I, the inner loop runs 3 times. So PRINT runs 4 × 3 = **12** times.",
+      "Nesting must be proper: the inner loop must finish before the outer one. If the lines end with NEXT I first and then NEXT J, the loops cross each other and the code is NOT properly nested. QBasic will give an error.",
+      "A **WHILE ... WEND** loop repeats while a test stays true, just like Python's while."
+     ],
+     "keyPoints": [
+      "Nested loops multiply: outer count × inner count.",
+      "Inner loop closes first.",
+      "STEP changes the jump size."
+     ],
+     "example": {
+      "problem": "FOR I = 1 TO 3 contains FOR J = 1 TO 2. How many times does the inner body run?",
+      "steps": [
+       "Outer runs 3 times.",
+       "Inner runs 2 times for each.",
+       "3 × 2."
+      ],
+      "answer": "6"
+     },
+     "exercises": [
+      {
+       "prompt": "How many times does PRINT run?\n\n5 FOR I = 1 TO 4\n10     FOR J = 1 TO 3\n15         PRINT \"NaMeKnow\"\n20     NEXT J\n25 NEXT I",
+       "options": [
+        "7",
+        "12",
+        "3",
+        "4"
+       ],
+       "correctIndex": 1,
+       "explanation": "4 × 3 = 12."
+      },
+      {
+       "prompt": "Which is true about this code?\n\n5 FOR I = 1 TO 4\n10     FOR J = 1 TO 3\n15         PRINT \"NaMeKnow\"\n20     NEXT I\n25 NEXT J",
+       "options": [
+        "The loop is NOT properly nested",
+        "It prints 12 times",
+        "It prints 7 times",
+        "It is perfect"
+       ],
+       "correctIndex": 0,
+       "explanation": "The inner loop must close first (NEXT J before NEXT I)."
+      },
+      {
+       "prompt": "How many times does the body run for FOR I = 1 TO 10 STEP 2?",
+       "options": [
+        "10",
+        "5",
+        "2",
+        "9"
+       ],
+       "correctIndex": 1,
+       "explanation": "I = 1, 3, 5, 7, 9."
+      },
+      {
+       "prompt": "An outer loop runs 5 times and an inner loop runs 6 times. How many times does the inner body run?",
+       "options": [
+        "11",
+        "30",
+        "56",
+        "6"
+       ],
+       "correctIndex": 1,
+       "explanation": "5 × 6 = 30."
+      }
+     ]
+    },
+    {
+     "id": "qb-arrays",
+     "title": "Arrays and functions",
+     "body": [
+      "An **array** is a contiguous collection of elements of the same data type. It can be single-dimensional or multi-dimensional. The subscript (index) must be an integer value and it may be an expression like A(I + 1). An array variable is also called a **subscripted variable**.",
+      "**DIM A(6, 5)** with the default lower bound 0 means rows 0 to 6 (that is 7 rows) and columns 0 to 5 (6 columns). So it holds 7 × 6 = **42** elements. A common mistake is to say 6 × 5 = 30.",
+      "A **function** has a name, may be defined with or without parameters, and returns a value to the caller. The parameters written in the function header are called **formal (dummy) parameters**."
+     ],
+     "keyPoints": [
+      "DIM A(m, n) holds (m + 1) × (n + 1) elements.",
+      "Subscript must be an integer.",
+      "Header parameters are formal (dummy) parameters."
+     ],
+     "example": {
+      "problem": "How many elements are in DIM C(2, 3)?",
+      "steps": [
+       "Rows 0 to 2 give 3.",
+       "Columns 0 to 3 give 4.",
+       "3 × 4."
+      ],
+      "answer": "12"
+     },
+     "exercises": [
+      {
+       "prompt": "An ________ is a contiguous collection of elements of the same data type.",
+       "options": [
+        "array",
+        "editor",
+        "loop",
+        "remark"
+       ],
+       "correctIndex": 0,
+       "explanation": "That is an array."
+      },
+      {
+       "prompt": "How many elements can DIM A(6, 5) hold with the default lower bound 0?",
+       "options": [
+        "30",
+        "35",
+        "42",
+        "11"
+       ],
+       "correctIndex": 2,
+       "explanation": "(6 + 1) × (5 + 1) = 42."
+      },
+      {
+       "prompt": "Which is true about arrays in QBasic?",
+       "options": [
+        "They can be one- or multi-dimensional",
+        "The subscript can be an expression",
+        "The subscript must evaluate to an integer",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All of these are true."
+      },
+      {
+       "prompt": "Which is true about a function?",
+       "options": [
+        "It can be defined with or without parameters",
+        "Header parameters are called formal or dummy parameters",
+        "It has a name and returns a value",
+        "All of the above"
+       ],
+       "correctIndex": 3,
+       "explanation": "All of these are true."
+      },
+      {
+       "prompt": "How many elements does DIM B(4) hold with lower bound 0?",
+       "options": [
+        "4",
+        "5",
+        "3",
+        "6"
+       ],
+       "correctIndex": 1,
+       "explanation": "Indexes 0 to 4 give 5 elements."
+      }
+     ]
+    }
+   ],
+   "keyFormula": "D = B*B - 4*A*C; nested loops multiply; DIM A(m,n) holds (m+1)(n+1) elements"
+  }
+ ]
+}

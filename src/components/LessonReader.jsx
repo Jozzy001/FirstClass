@@ -92,6 +92,14 @@ export default function LessonReader({ course, topic, lesson, prevTopic, nextTop
             <p key={i} className="text-[15.5px] leading-[1.75] text-graphite mb-4"><Rich text={p} /></p>
           ))}
 
+          {section.figure && (
+            <figure className="my-6" data-testid="lesson-figure">
+              <img src={`${import.meta.env.BASE_URL}figures/${section.figure.file}`} alt={section.figure.alt}
+                   loading="lazy" className="w-full max-w-xl mx-auto rounded-lg border border-line bg-white" />
+              {section.figure.caption && <figcaption className="text-[13px] text-graphite/60 text-center mt-2">{section.figure.caption}</figcaption>}
+            </figure>
+          )}
+
           {section.keyPoints?.length > 0 && (
             <div className="bg-cobalt-pale border border-cobalt/15 rounded-lg px-5 py-4 my-6">
               <div className="font-mono text-[11px] text-cobalt-deep uppercase tracking-wide mb-2">Remember</div>
